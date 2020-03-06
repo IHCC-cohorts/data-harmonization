@@ -17,6 +17,16 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
+ROBOT = java -jar build/robot.jar
+
+### Pre-build Tasks
+
+build:
+	mkdir -p $@
+
+build/robot.jar: | build
+	curl -Lk -o $@ https://github.com/ontodev/robot/releases/download/v1.6.0/robot.jar
+
 
 ### CINECA Tasks
 
@@ -30,10 +40,20 @@ build/cineca.owl: build/cineca.tsv | build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
 
-### General Tasks
+### Maelstrom Tasks
 
-build:
-	mkdir -p $@
+data/maelstrom.yml:
+	curl -L -o $@ https://raw.githubusercontent.com/maelstrom-research/maelstrom-taxonomies/master/AreaOfInformation.yml
+
+build/maelstrom.tsv: src/maelstrom.py data/maelstrom.yml | build
+	python3 $^ $@
+
+build/maelstrom.owl: metadata/maelstrom.ttl build/maelstrom.tsv | build/robot.jar
+	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
+	annotate --ontology-iri http://example.com/maelstrom.owl --output $@
+
+
+### General Tasks
 
 .PHONY: refresh
 refresh:
