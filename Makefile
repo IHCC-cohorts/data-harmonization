@@ -17,23 +17,33 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
+ROBOT = java -jar build/robot.jar
+
+### Pre-build Tasks
+
+build:
+	mkdir -p $@
+
+build/robot.jar: | build
+	curl -Lk -o $@ https://github.com/ontodev/robot/releases/download/v1.6.0/robot.jar
+
 
 ### CINECA Tasks
 
 data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
 
-build/cineca.tsv: src/cineca.py
+build/cineca.tsv: src/cineca.py data/cineca.tsv | build
 	python3 $^ $@
 
-build/cineca.owl: build/cineca.tsv | build/robot.jar
+build/properties.owl: src/properties.tsv | build/robot.jar
 	$(ROBOT) template --template $< --output $@
+
+build/cineca.owl: build/properties.owl build/cineca.tsv | build/robot.jar
+	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) --output $@
 
 
 ### General Tasks
-
-build:
-	mkdir -p $@
 
 .PHONY: refresh
 refresh:
