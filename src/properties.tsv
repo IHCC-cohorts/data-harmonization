@@ -1,0 +1,10 @@
+IRI	Type	Label
+ID	TYPE	LABEL
+http://example.com/question-description	owl:AnnotationProperty	question description
+http://example.com/answer-type	owl:AnnotationProperty	answer type
+IAO:0000115	owl:AnnotationProperty	definition
+rdfs:seeAlso	owl:AnnotationProperty	see also
+http://example.com/number-of-cohorts	owl:AnnotationProperty	number of cohorts
+http://example.com/use-cases-requirements	owl:AnnotationProperty	use cases requirements
+rdfs:comment	owl:AnnotationProperty	comment
+IAO:0000118	owl:AnnotationProperty	alternative term
