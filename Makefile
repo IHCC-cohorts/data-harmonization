@@ -46,13 +46,16 @@ build/properties.owl: src/properties.tsv | build/robot.jar
 build/cineca.owl: build/properties.owl build/cineca.tsv | build/robot.jar
 	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) --output $@
 
+build/ncit.owl: | build
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/ncit.owl
+
 build/ncit-terms.txt: build/cineca.owl src/cineca/get-ncit-ids.rq src/cineca/ncit-annotation-properites.txt | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 	tail -n +2 $@ > $@.tmp
 	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
 
-build/ncit-module.owl: build/ncit-terms.txt | build/robot-rdfxml.jar
-	$(ROBOT_RDFXML) extract --input ncit.owl --term-file $< --method rdfxml --intermediates minimal --output $@
+build/ncit-module.owl: build/ncit.owl build/ncit-terms.txt | build/robot-rdfxml.jar
+	$(ROBOT_RDFXML) extract --input $< --term-file $(word 2,$^) --method rdfxml --intermediates minimal --output $@
 
 
 ### General Tasks
