@@ -32,6 +32,7 @@ SHELL := bash
 .SECONDARY:
 
 ROBOT = java -jar build/robot.jar
+ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 
 ### Pre-build Tasks
 
@@ -47,12 +48,15 @@ build/robot-tree.jar: | build
 build/robot-validate.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/validate/lastSuccessfulBuild/artifact/bin/robot.jar
 
+build/robot-rdfxml.jar: | build
+	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/mireot-rdfxml/lastSuccessfulBuild/artifact/bin/robot.jar
+
 ### CINECA Tasks
 
 data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
 
-build/cineca.tsv: src/cineca.py data/cineca.tsv | build
+build/cineca.tsv: src/cineca/cineca.py data/cineca.tsv | build
 	python3 $^ $@
 
 build/properties.owl: src/properties.tsv | build/robot.jar
@@ -60,6 +64,17 @@ build/properties.owl: src/properties.tsv | build/robot.jar
 
 build/cineca.owl: build/properties.owl build/cineca.tsv | build/robot.jar
 	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) --output $@
+
+build/ncit.owl: | build
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/ncit.owl
+
+build/ncit-terms.txt: build/cineca.owl src/cineca/get-ncit-ids.rq src/cineca/ncit-annotation-properites.txt | build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+	tail -n +2 $@ > $@.tmp
+	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
+
+build/ncit-module.owl: build/ncit.owl build/ncit-terms.txt | build/robot-rdfxml.jar
+	$(ROBOT_RDFXML) extract --input $< --term-file $(word 2,$^) --method rdfxml --intermediates minimal --output $@
 
 
 ### Genomics England Tasks
