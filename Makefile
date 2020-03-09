@@ -11,8 +11,12 @@
 #   [term table](build/cineca.html),
 #   [tree view](build/cineca-tree.html),
 #   [cineca.owl](build/cineca.owl)
+# - Genomics England
+#   [term table](build/genomics-england.html),
+#   [tree view](build/genomics-england-tree.html),
+#   [genomics-england.owl](build/genomics-england.owl)
 #
-# [Refresh](all)
+# [Rebuild](all)
 
 ### Configuration
 #
@@ -93,11 +97,12 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 .PHONY: refresh
 refresh:
-	rm -r data/cineca.tsv
+	rm -rf data/cineca.tsv
+	touch data/genomics-england.xlsx
 
 .PHONY: clean
 clean:
 	rm -rf build
 
 .PHONY: all
-all: build/cineca.html build/cineca-tree.html
+all: build/cineca.html build/cineca-tree.html build/genomics-england.html build/genomics-england-tree.html

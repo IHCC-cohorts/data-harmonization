@@ -115,12 +115,14 @@ def main():
             else:
                 comments[short_id] = [comment]
 
-    # Write template headers
+    # Write template headers, ROBOT template strings, ROBOT validation strings
     writer = csv.writer(output_file, delimiter='\t')
     writer.writerow(['ID', 'Label', 'Alternative Term(s)', 'Definition(s)', 'Parent(s)', 'Value(s)',
                      'Comment(s)'])
     writer.writerow(['ID', 'LABEL', 'A alternative term SPLIT=|', 'A definition SPLIT=|', 'SC %SPLIT=|',
                      'A value SPLIT=|', 'A rdfs:comment SPLIT=|'])
+    writer.writerow(['', '', '', '', '',
+                     '', ''])
 
     # Add the top-level categories
     if '' in all_categories:
