@@ -57,7 +57,6 @@ build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england
 	annotate --ontology-iri "http://example.com/genomics-england.owl" --output $@
 
 
-
 ### General Tasks
 
 .PHONY: refresh
