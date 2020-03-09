@@ -11,6 +11,9 @@
 #   [term table](build/cineca.html),
 #   [tree view](build/cineca-tree.html),
 #   [cineca.owl](build/cineca.owl)
+#     - CINECA NCIT
+#       [tree view](build/ncit-module-tree.html),
+#       [ncit-module.owl](build/ncit-module.owl)
 # - Genomics England
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
@@ -120,4 +123,6 @@ clean:
 	rm -rf build
 
 .PHONY: all
-all: build/cineca.html build/cineca-tree.html build/genomics-england.html build/genomics-england-tree.html
+all: build/cineca.html build/cineca-tree.html
+all: build/ncit-module-tree.html
+all: build/genomics-england.html build/genomics-england-tree.html
