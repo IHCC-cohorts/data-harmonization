@@ -120,7 +120,7 @@ def main():
     writer.writerow(['ID', 'Label', 'Alternative Term(s)', 'Definition(s)', 'Parent(s)', 'Value(s)',
                      'Comment(s)'])
     writer.writerow(['ID', 'LABEL', 'A alternative term SPLIT=|', 'A definition SPLIT=|', 'SC %SPLIT=|',
-                     'A value SPLIT=|', 'A comment SPLIT=|'])
+                     'A value SPLIT=|', 'A rdfs:comment SPLIT=|'])
 
     # Add the top-level categories
     if '' in all_categories:

@@ -51,8 +51,10 @@ data/genomics-england.xlsx:
 build/genomics-england.tsv: src/genomics-england/genomics-england.py data/genomics-england.xlsx
 	python3 $^ $@
 
-build/genomics-england.owl: build/properties.owl build/genomics-england.tsv | build/robot.jar
-	$(ROBOT) --prefix "ex: http://example.com/" template --input $< --merge-before --template $(word 2,$^) --output $@
+build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england.tsv | build/robot.jar
+	$(ROBOT) --prefix "ex: http://example.com/" \
+	template --input $< --merge-before --template $(word 2,$^) \
+	annotate --ontology-iri "http://example.com/genomics-england.owl" --output $@
 
 
 
