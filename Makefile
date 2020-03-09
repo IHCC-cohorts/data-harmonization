@@ -43,6 +43,19 @@ build/cineca.owl: build/properties.owl build/cineca.tsv | build/robot.jar
 	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) --output $@
 
 
+### Genomics England Tasks
+
+data/genomics-england.xlsx:
+	curl -L -o $@ "https://cnfl.extge.co.uk/download/attachments/113189195/Data%20Dictionary%20Main%20Programme%20v6%20%281%29.xlsx?version=1&modificationDate=1551371214157&api=v2"
+
+build/genomics-england.tsv: src/genomics-england/genomics-england.py data/genomics-england.xlsx
+	python3 $^ $@
+
+build/genomics-england.owl: build/properties.owl build/genomics-england.tsv | build/robot.jar
+	$(ROBOT) --prefix "ex: http://example.com/" template --input $< --merge-before --template $(word 2,$^) --output $@
+
+
+
 ### General Tasks
 
 .PHONY: refresh
