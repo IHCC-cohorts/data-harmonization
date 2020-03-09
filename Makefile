@@ -4,6 +4,23 @@
 # WARN: This file contains significant whitespace, i.e. tabs!
 # Ensure that your text editor shows you those characters.
 
+### Workflow
+#
+# - CINECA
+#   [source table](https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4),
+#   [term table](build/cineca.html),
+#   [tree view](build/cineca-tree.html),
+#   [cineca.owl](build/cineca.owl)
+#     - CINECA NCIT
+#       [tree view](build/ncit-module-tree.html),
+#       [ncit-module.owl](build/ncit-module.owl)
+# - Genomics England
+#   [term table](build/genomics-england.html),
+#   [tree view](build/genomics-england-tree.html),
+#   [genomics-england.owl](build/genomics-england.owl)
+#
+# [Rebuild](all)
+
 ### Configuration
 #
 # These are standard options to make Make sane:
@@ -28,9 +45,14 @@ build:
 build/robot.jar: | build
 	curl -Lk -o $@ https://github.com/ontodev/robot/releases/download/v1.6.0/robot.jar
 
+build/robot-tree.jar: | build
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
+
+build/robot-validate.jar: | build
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/validate/lastSuccessfulBuild/artifact/bin/robot.jar
+
 build/robot-rdfxml.jar: | build
 	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/mireot-rdfxml/lastSuccessfulBuild/artifact/bin/robot.jar
-
 
 ### CINECA Tasks
 
@@ -72,15 +94,35 @@ build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england
 	annotate --ontology-iri "http://example.com/genomics-england.owl" --output $@
 
 
+### Trees and Tables
+
+build/%-tree.html: build/%.owl | build/robot-tree.jar
+	java -jar build/robot-tree.jar tree \
+	--input $< \
+	--tree $@
+
+build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
+	java -jar build/robot-validate.jar validate \
+	--input $< \
+	--table $(word 2,$^) \
+	--skip-row 2 \
+	--format HTML \
+	--standalone true \
+	--output-dir build/
+
+
 ### General Tasks
 
 .PHONY: refresh
 refresh:
-	rm -r data/cineca.tsv
+	rm -rf data/cineca.tsv
+	touch data/genomics-england.xlsx
 
 .PHONY: clean
 clean:
 	rm -rf build
 
 .PHONY: all
-all: build/cineca.owl
+all: build/cineca.html build/cineca-tree.html
+all: build/ncit-module-tree.html
+all: build/genomics-england.html build/genomics-england-tree.html
