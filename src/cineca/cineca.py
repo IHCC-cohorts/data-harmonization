@@ -151,7 +151,7 @@ def main():
     writer.writerow(['IRI', 'Label', 'Definition', 'Parent', 'Synonym', 'Comment', 'Question Description',
                      'Expected Answer Type', 'See Also ID', 'Known Number of Cohorts', 'Use Cases Requirements'])
     writer.writerow(['ID', 'LABEL', 'A definition', 'SC %', 'A alternative term', 'A comment', 'A question description',
-                     'A answer type', 'A see also', 'A number of cohorts', 'A use cases requirements'])
+                     'A answer type', 'A see also SPLIT=/', 'A number of cohorts', 'A use cases requirements'])
     for iri, parent_iri in child_parents.items():
         # Each class must have a parent_iri and a label
         label = labels[iri]
