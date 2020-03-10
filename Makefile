@@ -56,10 +56,10 @@ build/robot-rdfxml.jar: | build
 
 ### GECKO Tasks
 
-data/gecko.tsv:
+data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
 
-build/gecko.tsv: src/gecko/gecko.py data/gecko.tsv | build
+build/gecko.tsv: src/gecko/gecko.py data/cineca.tsv | build
 	python3 $^ $@
 
 build/properties.owl: src/properties.tsv | build/robot.jar
@@ -117,7 +117,7 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 .PHONY: refresh
 refresh:
-	rm -rf data/gecko.tsv
+	rm -rf data/cineca.tsv
 	touch data/genomics-england.xlsx
 
 .PHONY: clean
