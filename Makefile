@@ -6,12 +6,12 @@
 
 ### Workflow
 #
-# - CINECA
+# - GECKO
 #   [source table](https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4),
-#   [term table](build/cineca.html),
-#   [tree view](build/cineca-tree.html),
-#   [cineca.owl](build/cineca.owl)
-#     - CINECA NCIT
+#   [term table](build/gecko.html),
+#   [tree view](build/gecko-tree.html),
+#   [gecko.owl](build/gecko.owl)
+#     - GECKO NCIT
 #       [tree view](build/ncit-module-tree.html),
 #       [ncit-module.owl](build/ncit-module.owl)
 # - Genomics England
@@ -54,24 +54,26 @@ build/robot-validate.jar: | build
 build/robot-rdfxml.jar: | build
 	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/mireot-rdfxml/lastSuccessfulBuild/artifact/bin/robot.jar
 
-### CINECA Tasks
+### GECKO Tasks
 
 data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
 
-build/cineca.tsv: src/cineca/cineca.py data/cineca.tsv | build
+build/gecko.tsv: src/gecko/gecko.py data/cineca.tsv | build
 	python3 $^ $@
 
 build/properties.owl: src/properties.tsv | build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
-build/cineca.owl: build/properties.owl build/cineca.tsv | build/robot.jar
-	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) --output $@
+build/gecko.owl: build/properties.owl build/gecko.tsv metadata/gecko.ttl | build/robot.jar
+	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
+	merge --input $(word 3,$^) --include-annotations true \
+	annotate --ontology-iri "http://example.com/gecko.owl" --output $@
 
 build/ncit.owl: | build
 	curl -Lk -o $@ http://purl.obolibrary.org/obo/ncit.owl
 
-build/ncit-terms.txt: build/cineca.owl src/cineca/get-ncit-ids.rq src/cineca/ncit-annotation-properites.txt | build/robot.jar
+build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-annotation-properites.txt | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 	tail -n +2 $@ > $@.tmp
 	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
@@ -123,6 +125,6 @@ clean:
 	rm -rf build
 
 .PHONY: all
-all: build/cineca.html build/cineca-tree.html
+all: build/gecko.html build/gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
