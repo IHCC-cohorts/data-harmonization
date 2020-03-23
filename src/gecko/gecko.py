@@ -4,6 +4,32 @@ import re
 from argparse import ArgumentParser, FileType
 
 
+def create_label_map(index_file_path):
+    global global_id
+
+    label_map = {}
+    with open(index_file_path, 'r') as index_file:
+        index_reader = csv.reader(index_file, delimiter='\t')
+        # Skip header
+        next(index_reader)
+
+        for row in index_reader:
+            curie = row[0]
+            label = row[1]
+
+            # Keep track of the latest ID number
+            local_id = curie.split(':')[-1].lstrip('0')
+            if local_id == '':
+                local_id = 0
+            else:
+                local_id = int(local_id)
+            if local_id > global_id:
+                global_id = local_id
+
+            label_map[label] = curie
+    return label_map
+
+
 def create_label(text):
     # Strip text in parentheses and return as a comment
     m = re.match(r'([^()]+) \((.+)\)$', text)
@@ -14,28 +40,53 @@ def create_label(text):
     return text, comment
 
 
-def create_iri(label):
-    # Replace illegal characters and return full IRI
-    # TODO - replace with CURIE when we have a true namespace
-    local_id = label.strip().replace(' ', '-').replace('/', '-').replace('(', '').replace(')', '').replace('.', '')
-    return 'http://example.com/' + local_id
+def create_id(label, label_map):
+    global global_id
+
+    if label in label_map:
+        # Term already has an ID, return this
+        return label_map[label]
+
+    # New term, create a new ID
+    global_id += 1
+    if global_id < 10:
+        spaces = 6
+    elif 9 < global_id < 100:
+        spaces = 5
+    elif 99 < global_id < 1000:
+        spaces = 4
+    else:
+        spaces = 3
+    return 'gecko:' + ('0' * spaces) + str(global_id)
 
 
 def main():
+    global global_id
+
     p = ArgumentParser()
     p.add_argument('input', type=FileType('r'))
+    p.add_argument('index', type=str)
     p.add_argument('output', type=FileType('w'))
     args = p.parse_args()
 
     input_file = args.input
+    index_file_path = args.index
     output_file = args.output
 
     reader = csv.reader(input_file, delimiter='\t')
     read = False
 
+    # Create map of label -> ID
+    # Also updates global ID to latest ID
+    label_map = create_label_map(index_file_path)
+
+    # Tracked variables
     broad_cat_iri = ''
+    bc_label = ''
     sub_cat_iri = ''
+    sc_label = ''
     sub_cat_var_iri = ''
+    scv_label = ''
     var_iri = ''
 
     # Required fields
@@ -44,13 +95,7 @@ def main():
 
     # Optional annotations
     comments = {}
-    definitions = {}
-    synonyms = {}
-    question_descriptions = {}
-    answer_types = {}
-    alt_ids = {}
-    number_cohorts = {}
-    use_case_requirements = {}
+    details = {}
 
     row_num = 1
     for row in reader:
@@ -71,7 +116,7 @@ def main():
                 if broad_cat.startswith('*'):
                     continue
                 bc_label, bc_comment = create_label(broad_cat)
-                broad_cat_iri = create_iri(bc_label)
+                broad_cat_iri = create_id(bc_label, label_map)
                 child_parents[broad_cat_iri] = ''
                 labels[broad_cat_iri] = bc_label
                 if bc_comment:
@@ -82,8 +127,8 @@ def main():
                 if sub_cat.startswith('*'):
                     continue
                 sc_label, sc_comment = create_label(sub_cat)
-                sub_cat_iri = create_iri(sc_label)
-                child_parents[sub_cat_iri] = broad_cat_iri
+                sub_cat_iri = create_id(sc_label, label_map)
+                child_parents[sub_cat_iri] = bc_label
                 labels[sub_cat_iri] = sc_label
                 if sc_comment:
                     comments[sub_cat_iri] = sc_comment
@@ -93,8 +138,8 @@ def main():
                 if sub_cat_var.startswith('*'):
                     continue
                 scv_label, scv_comment = create_label(sub_cat_var)
-                sub_cat_var_iri = create_iri(scv_label)
-                child_parents[sub_cat_var_iri] = sub_cat_iri
+                sub_cat_var_iri = create_id(scv_label, label_map)
+                child_parents[sub_cat_var_iri] = sc_label
                 labels[sub_cat_var_iri] = scv_label
                 if scv_comment:
                     comments[sub_cat_var_iri] = scv_comment
@@ -104,8 +149,8 @@ def main():
                 if var.startswith('*'):
                     continue
                 v_label, v_comment = create_label(var)
-                var_iri = create_iri(v_label)
-                child_parents[var_iri] = sub_cat_var_iri
+                var_iri = create_id(v_label, label_map)
+                child_parents[var_iri] = scv_label
                 labels[var_iri] = v_label
                 if v_comment:
                     comments[var_iri] = v_comment
@@ -130,71 +175,76 @@ def main():
                 print('Unknown target for row ' + str(row_num))
                 continue
 
+            entity = {'Question Description': question_desc,
+                      'Expected Answer Type': answer_type,
+                      'See Also ID': see_also,
+                      'Definition': definition,
+                      'Known Number of Cohorts': num_cohorts,
+                      'Use Cases Requirements': use_case_reqs}
+
             if ontology_label != '':
-                # Replace predicted label and add synonym
-                synonyms[target] = labels[target]
-                labels[target] = ontology_label
+                # Add ontology label to synonyms
+                entity['Synonym'] = ontology_label
+            else:
+                entity['Synonym'] = ''
 
-            question_descriptions[target] = question_desc
-            answer_types[target] = answer_type
-            alt_ids[target] = see_also
-            definitions[target] = definition
-            number_cohorts[target] = num_cohorts
-            use_case_requirements[target] = use_case_reqs
-
+            details[target] = entity
             row_num += 1
 
     input_file.close()
 
-    # Write template headers, ROBOT template strings, ROBOT validation strings
-    writer = csv.writer(output_file, delimiter='\t')
-    writer.writerow(['IRI', 'Label', 'Definition', 'Parent', 'Synonym', 'Comment', 'Question Description',
-                     'Expected Answer Type', 'See Also ID', 'Known Number of Cohorts', 'Use Cases Requirements'])
-    writer.writerow(['ID', 'LABEL', 'A definition', 'SC %', 'A alternative term', 'A comment', 'A question description',
-                     'A answer type', 'A see also SPLIT=/', 'A number of cohorts', 'A use cases requirements'])
-    writer.writerow(['', '', '', '', '', '', '',
-                     '', '', '', ''])
-    for iri, parent_iri in child_parents.items():
-        # Each class must have a parent_iri and a label
-        label = labels[iri]
+    # Write template headers, ROBOT template strings
+    # TODO - ROBOT validation strings
+    writer = csv.DictWriter(output_file, delimiter='\t', fieldnames=['Short ID', 'Label', 'Definition', 'Parent',
+                                                                     'Synonym', 'Comment', 'Question Description',
+                                                                     'Expected Answer Type', 'See Also ID',
+                                                                     'Known Number of Cohorts',
+                                                                     'Use Cases Requirements'])
+    writer.writeheader()
+    writer.writerow({'Short ID': 'ID',
+                     'Label': 'LABEL',
+                     'Definition': 'A definition',
+                     'Parent': 'SC %',
+                     'Synonym': 'A alternative term',
+                     'Comment': 'A comment',
+                     'Question Description': 'A question description',
+                     'Expected Answer Type': 'A answer type',
+                     'See Also ID': 'A see also SPLIT=/',
+                     'Known Number of Cohorts': 'A number of cohorts',
+                     'Use Cases Requirements': 'A use cases requirements'})
 
+    # Also remake the index file, adding new IDs
+    index_file = open(index_file_path, 'w')
+    index_writer = csv.writer(index_file, delimiter='\t')
+    index_writer.writerow(['Short ID', 'Label'])
+
+    for curie, parent in child_parents.items():
         # The following are optional annotations
-        definition = ''
-        if iri in definitions:
-            definition = definitions[iri]
+        if curie in details:
+            entity = details[curie]
+        else:
+            entity = {'Question Description': '',
+                      'Expected Answer Type': '',
+                      'See Also ID': '',
+                      'Definition': '',
+                      'Known Number of Cohorts': '',
+                      'Use Cases Requirements': '',
+                      'Synonym': ''}
+        entity['Short ID'] = curie
+        entity['Label'] = labels[curie]
+        entity['Parent'] = parent
+        if curie in comments:
+            entity['Comment'] = comments[curie]
+        else:
+            entity['Comment'] = ''
 
-        synonym = ''
-        if iri in synonyms:
-            synonym = synonyms[iri]
+        writer.writerow(entity)
+        index_writer.writerow([curie, labels[curie]])
 
-        comment = ''
-        if iri in comments:
-            comment = comments[iri]
-
-        question_desc = ''
-        if iri in question_descriptions:
-            question_desc = question_descriptions[iri]
-
-        answer_type = ''
-        if iri in answer_types:
-            answer_type = answer_types[iri]
-
-        see_also = ''
-        if iri in alt_ids:
-            see_also = alt_ids[iri]
-
-        num_cohorts = ''
-        if iri in number_cohorts:
-            num_cohorts = number_cohorts[iri]
-
-        use_case_reqs = ''
-        if iri in use_case_requirements:
-            use_case_reqs = use_case_requirements[iri]
-
-        writer.writerow([iri, label, definition, parent_iri, synonym, comment, question_desc, answer_type, see_also,
-                         num_cohorts, use_case_reqs])
     output_file.close()
+    index_file.close()
 
 
 if __name__ == '__main__':
+    global_id = 0
     main()
