@@ -140,7 +140,7 @@ def main():
         # Create a short ID and write to template
         short_id = re.sub(
             r'_+', '_', category.lower().replace(' ', '_').replace('/', '_').replace(';', '').replace('(', '').replace(
-                ')', ''))
+                ')', '').replace('-', '_'))
         writer.writerow(['ge:' + short_id, category, '', '', 'owl:Thing', '', ''])
 
     # Add the values from the sheet
