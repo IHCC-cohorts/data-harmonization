@@ -112,6 +112,32 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 	--output-dir build/
 
 
+### Browser
+
+build/categories.tsv:
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
+
+browser/categories.json: src/tsv2json.py build/categories.tsv
+	python3 $^ > $@
+
+browser/gecko.json: build/gecko.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|definition|question description|see also|subclasses" \
+	--sort "LABEL" \
+	--export $@
+
+browser/genomics-england.json: build/genomics-england.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|definition" \
+	--sort "ID|LABEL" \
+	--export $@
+
+serve: browser/index.html browser/gecko.json browser/genomics-england.json
+	cd browser && python3 -m http.server 8000
+
+
 ### General Tasks
 
 .PHONY: refresh
