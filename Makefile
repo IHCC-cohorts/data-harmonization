@@ -112,26 +112,6 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 	--output-dir build/
 
 
-### Browser
-
-gecko.json: build/gecko.owl | build/robot.jar
-	$(ROBOT) export \
-	--input $< \
-	--header "ID|LABEL|definition|question description|see also|subclasses" \
-	--sort "LABEL" \
-	--export $@
-
-genomics-england.json: build/genomics-england.owl | build/robot.jar
-	$(ROBOT) export \
-	--input $< \
-	--header "ID|LABEL|definition" \
-	--sort "ID|LABEL" \
-	--export $@
-
-serve: index.html gecko.json genomics-england.json
-	python3 -m http.server 8000
-
-
 ### General Tasks
 
 .PHONY: refresh
