@@ -140,8 +140,8 @@ def main():
         # Create a short ID and write to template
         short_id = re.sub(
             r'_+', '_', category.lower().replace(' ', '_').replace('/', '_').replace(';', '').replace('(', '').replace(
-                ')', '').replace('-', '_'))
-        writer.writerow(['ex:' + short_id, category, '', '', 'owl:Thing', '', ''])
+                ')', ''))
+        writer.writerow(['ge:' + short_id, category, '', '', 'owl:Thing', '', ''])
 
     # Add the values from the sheet
     for short_id in all_ids:
@@ -179,7 +179,10 @@ def main():
         else:
             label = this_labels[0]
 
-        writer.writerow(['ex:' + short_id, label, '|'.join(synonyms), '|'.join(this_definitions),
+        if label.strip() == '':
+            label = short_id
+
+        writer.writerow(['ge:' + short_id, label, '|'.join(synonyms), '|'.join(this_definitions),
                          '|'.join(this_categories), '|'.join(this_values), '|'.join(this_comments)])
 
     output_file.close()

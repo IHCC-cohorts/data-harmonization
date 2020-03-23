@@ -4,6 +4,32 @@ import re
 from argparse import ArgumentParser, FileType
 
 
+def create_label_map(index_file_path):
+    global global_id
+
+    label_map = {}
+    with open(index_file_path, 'r') as index_file:
+        index_reader = csv.reader(index_file, delimiter='\t')
+        # Skip header
+        next(index_reader)
+
+        for row in index_reader:
+            curie = row[0]
+            label = row[1]
+
+            # Keep track of the latest ID number
+            local_id = curie.split(':')[-1].lstrip('0')
+            if local_id == '':
+                local_id = 0
+            else:
+                local_id = int(local_id)
+            if local_id > global_id:
+                global_id = local_id
+
+            label_map[label] = curie
+    return label_map
+
+
 def create_label(text):
     # Strip text in parentheses and return as a comment
     m = re.match(r'([^()]+) \((.+)\)$', text)
@@ -14,28 +40,53 @@ def create_label(text):
     return text, comment
 
 
-def create_iri(label):
-    # Replace illegal characters and return full IRI
-    # TODO - replace with CURIE when we have a true namespace
-    local_id = label.strip().replace(' ', '-').replace('/', '-').replace('(', '').replace(')', '').replace('.', '')
-    return 'http://example.com/' + local_id
+def create_id(label, label_map):
+    global global_id
+
+    if label in label_map:
+        # Term already has an ID, return this
+        return label_map[label]
+
+    # New term, create a new ID
+    global_id += 1
+    if global_id < 10:
+        spaces = 6
+    elif 9 < global_id < 100:
+        spaces = 5
+    elif 99 < global_id < 1000:
+        spaces = 4
+    else:
+        spaces = 3
+    return 'gecko:' + ('0' * spaces) + str(global_id)
 
 
 def main():
+    global global_id
+
     p = ArgumentParser()
     p.add_argument('input', type=FileType('r'))
+    p.add_argument('index', type=str)
     p.add_argument('output', type=FileType('w'))
     args = p.parse_args()
 
     input_file = args.input
+    index_file_path = args.index
     output_file = args.output
 
     reader = csv.reader(input_file, delimiter='\t')
     read = False
 
+    # Create map of label -> ID
+    # Also updates global ID to latest ID
+    label_map = create_label_map(index_file_path)
+
+    # Tracked variables
     broad_cat_iri = ''
+    bc_label = ''
     sub_cat_iri = ''
+    sc_label = ''
     sub_cat_var_iri = ''
+    scv_label = ''
     var_iri = ''
 
     # Required fields
@@ -71,7 +122,7 @@ def main():
                 if broad_cat.startswith('*'):
                     continue
                 bc_label, bc_comment = create_label(broad_cat)
-                broad_cat_iri = create_iri(bc_label)
+                broad_cat_iri = create_id(bc_label, label_map)
                 child_parents[broad_cat_iri] = ''
                 labels[broad_cat_iri] = bc_label
                 if bc_comment:
@@ -82,8 +133,8 @@ def main():
                 if sub_cat.startswith('*'):
                     continue
                 sc_label, sc_comment = create_label(sub_cat)
-                sub_cat_iri = create_iri(sc_label)
-                child_parents[sub_cat_iri] = broad_cat_iri
+                sub_cat_iri = create_id(sc_label, label_map)
+                child_parents[sub_cat_iri] = bc_label
                 labels[sub_cat_iri] = sc_label
                 if sc_comment:
                     comments[sub_cat_iri] = sc_comment
@@ -93,8 +144,8 @@ def main():
                 if sub_cat_var.startswith('*'):
                     continue
                 scv_label, scv_comment = create_label(sub_cat_var)
-                sub_cat_var_iri = create_iri(scv_label)
-                child_parents[sub_cat_var_iri] = sub_cat_iri
+                sub_cat_var_iri = create_id(scv_label, label_map)
+                child_parents[sub_cat_var_iri] = sc_label
                 labels[sub_cat_var_iri] = scv_label
                 if scv_comment:
                     comments[sub_cat_var_iri] = scv_comment
@@ -104,8 +155,8 @@ def main():
                 if var.startswith('*'):
                     continue
                 v_label, v_comment = create_label(var)
-                var_iri = create_iri(v_label)
-                child_parents[var_iri] = sub_cat_var_iri
+                var_iri = create_id(v_label, label_map)
+                child_parents[var_iri] = scv_label
                 labels[var_iri] = v_label
                 if v_comment:
                     comments[var_iri] = v_comment
@@ -131,9 +182,8 @@ def main():
                 continue
 
             if ontology_label != '':
-                # Replace predicted label and add synonym
-                synonyms[target] = labels[target]
-                labels[target] = ontology_label
+                # Add ontology label to synonyms
+                synonyms[target] = ontology_label
 
             question_descriptions[target] = question_desc
             answer_types[target] = answer_type
@@ -148,53 +198,63 @@ def main():
 
     # Write template headers, ROBOT template strings, ROBOT validation strings
     writer = csv.writer(output_file, delimiter='\t')
-    writer.writerow(['IRI', 'Label', 'Definition', 'Parent', 'Synonym', 'Comment', 'Question Description',
+    writer.writerow(['Short ID', 'Label', 'Definition', 'Parent', 'Synonym', 'Comment', 'Question Description',
                      'Expected Answer Type', 'See Also ID', 'Known Number of Cohorts', 'Use Cases Requirements'])
     writer.writerow(['ID', 'LABEL', 'A definition', 'SC %', 'A alternative term', 'A comment', 'A question description',
                      'A answer type', 'A see also SPLIT=/', 'A number of cohorts', 'A use cases requirements'])
     writer.writerow(['', '', '', '', '', '', '',
                      '', '', '', ''])
-    for iri, parent_iri in child_parents.items():
+
+    # Also remake the index file, adding new IDs
+    index_file = open(index_file_path, 'w')
+    index_writer = csv.writer(index_file, delimiter='\t')
+    index_writer.writerow(['Short ID', 'Label'])
+
+    for curie, parent in child_parents.items():
         # Each class must have a parent_iri and a label
-        label = labels[iri]
+        label = labels[curie]
 
         # The following are optional annotations
         definition = ''
-        if iri in definitions:
-            definition = definitions[iri]
+        if curie in definitions:
+            definition = definitions[curie]
 
         synonym = ''
-        if iri in synonyms:
-            synonym = synonyms[iri]
+        if curie in synonyms:
+            synonym = synonyms[curie]
 
         comment = ''
-        if iri in comments:
-            comment = comments[iri]
+        if curie in comments:
+            comment = comments[curie]
 
         question_desc = ''
-        if iri in question_descriptions:
-            question_desc = question_descriptions[iri]
+        if curie in question_descriptions:
+            question_desc = question_descriptions[curie]
 
         answer_type = ''
-        if iri in answer_types:
-            answer_type = answer_types[iri]
+        if curie in answer_types:
+            answer_type = answer_types[curie]
 
         see_also = ''
-        if iri in alt_ids:
-            see_also = alt_ids[iri]
+        if curie in alt_ids:
+            see_also = alt_ids[curie]
 
         num_cohorts = ''
-        if iri in number_cohorts:
-            num_cohorts = number_cohorts[iri]
+        if curie in number_cohorts:
+            num_cohorts = number_cohorts[curie]
 
         use_case_reqs = ''
-        if iri in use_case_requirements:
-            use_case_reqs = use_case_requirements[iri]
+        if curie in use_case_requirements:
+            use_case_reqs = use_case_requirements[curie]
 
-        writer.writerow([iri, label, definition, parent_iri, synonym, comment, question_desc, answer_type, see_also,
+        writer.writerow([curie, label, definition, parent, synonym, comment, question_desc, answer_type, see_also,
                          num_cohorts, use_case_reqs])
+        index_writer.writerow([curie, label])
+
     output_file.close()
+    index_file.close()
 
 
 if __name__ == '__main__':
+    global_id = 0
     main()
