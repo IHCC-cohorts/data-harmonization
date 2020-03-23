@@ -1,0 +1,7 @@
+{
+	"@context": {
+		"gecko": "http://example.com/gecko_",
+		"ge": "http://example.com/ge_",
+		"vz": "http://example.com/vz_"
+	}
+}

@@ -34,7 +34,7 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
-ROBOT = java -jar build/robot.jar --prefix "gecko: http://example.com/gecko_" --prefix "ge: http://example.com/ge_"
+ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 
 ### Pre-build Tasks
@@ -93,6 +93,19 @@ build/genomics-england.tsv: src/genomics-england/genomics-england.py data/genomi
 build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england.tsv | build/robot.jar
 	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
 	annotate --ontology-iri "http://example.com/genomics-england.owl" --output $@
+
+
+### Vukuzazi Tasks
+
+data/vukuzazi.xlsx:
+	curl -L -o $@ "https://drive.google.com/uc?export=download&id=1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC"
+
+build/vukuzazi.tsv: src/vukuzazi/vukuzazi.py data/vukuzazi.xlsx | build
+	python3 $^ $@
+
+build/vukuzazi.owl: metadata/vukuzazi.ttl build/vukuzazi.tsv | build/robot.jar
+	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
+	annotate --ontology-iri "http://example.com/vukuzazi.owl" --output $@
 
 
 ### Trees and Tables
