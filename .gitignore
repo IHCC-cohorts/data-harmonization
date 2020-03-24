@@ -2,4 +2,3 @@
 junk/
 build/
 __pycache__/
-browser/*.json
