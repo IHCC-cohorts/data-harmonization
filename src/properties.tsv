@@ -8,3 +8,6 @@ http://example.com/number-of-cohorts	owl:AnnotationProperty	number of cohorts
 http://example.com/use-cases-requirements	owl:AnnotationProperty	use cases requirements
 rdfs:comment	owl:AnnotationProperty	comment
 IAO:0000118	owl:AnnotationProperty	alternative term
+http://example.com/value	owl:AnnotationProperty	value
+http://example.com/formula	owl:AnnotationProperty	formula
+http://example.com/measurement-time	owl:AnnotationProperty	measurement time

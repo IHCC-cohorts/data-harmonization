@@ -95,6 +95,20 @@ build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england
 	annotate --ontology-iri "http://example.com/genomics-england.owl" --output $@
 
 
+### Golestan Cohort Study (GCS) Tasks
+
+data/golestan-cohort-study.xlsx:
+	curl -L -o $@ "https://drive.google.com/uc?export=download&id=1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ"
+
+build/gcs.tsv: src/gcs/golestan-cohort-study.py data/golestan-cohort-study.xlsx | build
+	python3 $^ $@
+
+build/gcs.owl: build/properties.owl build/gcs.tsv metadata/gcs.ttl | build/robot.jar
+	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
+	merge --input $(word 3,$^) --include-annotations true \
+	annotate --ontology-iri "http://example.com/gcs.owl" --output $@
+
+
 ### Vukuzazi Tasks
 
 data/vukuzazi.xlsx:
