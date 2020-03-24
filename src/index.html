@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+.aggregations-wrapper, .search-results-wrapper {
+    overflow-y: auto;
+    height: calc(100vh - 94px) !important;
+    position: relative !important;
+}
+td, th {
+  word-wrap: break-word;
+}
+
+.ds-col {
+  max-width: 80px;
+}
+
+.name-col, .term-col {
+  max-width: 100px !important;
+}
+
+.def-col {
+  max-width: 200px !important;
+}
+
+.question-col {
+  max-width: 175px !important;
+}
+
+</style>
+<title>IHCC Browser Mockup</title>
+</head>
+<body>
+	<div class="container-fluid" style="margin-top: 10px;">
+		<div class="row">
+			<div class="col-3"><h1>IHCC Browser Mockup</h1></div>
+      <div class="col">
+        <div class="search" style="margin-bottom: 10px; margin-top: 10px;">
+            <form class="form-inline">
+              <div class="form-group mb-2">
+                <input type="text" id="searchBox" class="form-control" placeholder="Search results...">
+              </div>
+              <div class="form-group mb-2">
+                <button type="button" onclick="searchTable()" class="btn btn-primary">Search</button>
+              </div>
+            </form>
+          </div>
+      </div>
+		</div>
+		<div class="row">
+			<div class="col-2" style="flex: 1 1 0%; position: relative; outline: none;">
+				<div class="aggregations-wrapper">
+					<div class="aggregations"></div>
+				</div>
+			</div>
+			<div class="col-10" style="flex: 1 1 0%; position: relative; outline: none;">
+				<div class="search-results-wrapper">
+					<div class="search-results"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+function createIDMap(data) {
+  let map = new Map();
+  for (var i = 0; i < data.length; i++) {
+    var node = data[i];
+    var thisID = node.ID;
+    var thisLabel = node.LABEL[0];
+    if (thisLabel == "") {
+      thisLabel = thisID;
+    }
+    map.set(thisLabel, thisID);
+  }
+  return map;
+}
+
+function createCategoryMap(data) {
+  let map = new Map();
+  for (var i = 0; i < data.length; i++) {
+    var node = data[i];
+    var thisID = node['Field ID'];
+    var thisCategory = node['GECKO ID'];
+    map.set(thisID, thisCategory);
+  }
+  return map;
+}
+
+function createAggregations(data) {
+	// TODO - fix undefined to only show top-levels that have no children
+  var idMap = createIDMap(gecko);
+
+	var aggs = document.getElementsByClassName("aggregations")[0];
+	for (var i = 0; i < data.length; i++) {
+		var div = document.createElement("div");
+		div.setAttribute("style", "margin-bottom: 8px;");
+
+		var title = document.createElement("h4");
+		title.innerHTML = data[i].LABEL;
+		div.appendChild(title);
+
+		var bucket = document.createElement("div");
+		var children = data[i].subclasses;
+		if (!children) {
+			continue;
+		}
+		for (var c = 0; c < children.length; c++) {
+			var bucketItem = document.createElement("div");
+			var checkbox = document.createElement("input");
+			checkbox.setAttribute("type", "checkbox");
+      var childID = idMap.get(children[c])
+			checkbox.setAttribute("id", childID);
+			bucketItem.appendChild(checkbox);
+
+			var span = document.createElement("span");
+			span.setAttribute("style", "margin-left: 5px;");
+			span.innerHTML = children[c];
+			bucketItem.appendChild(span);
+
+			bucket.appendChild(bucketItem);
+		}
+		div.appendChild(bucket);
+		aggs.appendChild(div);
+	}
+
+	var div = document.createElement("div");
+	div.setAttribute("style", "margin-bottom: 8px;");
+	div.appendChild(bucket);
+	aggs.appendChild(div);
+}
+
+function addSearchResults(tbody, source, data) {
+  for (var i = 0; i < data.length; i++) {
+    var node = data[i];
+    var row = document.createElement("tr");
+    row.setAttribute("id", node.ID);
+    
+    var definitionNode = node.definition;
+    var definition = "";
+    if (definitionNode) {
+      definition = definitionNode[0];
+    }
+
+    var dsCell = document.createElement("td");
+    dsCell.setAttribute("class", "ds-col");
+    var a = document.createElement("a");
+    var base = "";
+    if (source == "Genomics England") {
+      base = "https://ihcc.ontodev.com/branches/master/views/build/genomics-england-tree.html";
+    } else {
+      base = "https://ihcc.ontodev.com/branches/master/views/build/gecko-tree.html";
+    }
+    a.setAttribute("href", base);
+    a.innerHTML = source;
+    dsCell.appendChild(a);
+
+    var nameCell = document.createElement("td");
+    nameCell.setAttribute("class", "name-col");
+
+    var link = document.createElement("a");
+    var label = node.LABEL[0];
+    if (label == "") {
+      label = node.ID;
+    }
+    link.innerHTML = label;
+    var iri = base + "?text=" + label;
+    link.setAttribute("href", iri);
+    nameCell.appendChild(link);
+
+    var defCell = document.createElement("td");
+    defCell.setAttribute("class", "def-col");
+    defCell.innerHTML = definition;
+
+    var questionCell = document.createElement("td");
+    questionCell.setAttribute("class", "question-col");
+    var question = "";
+    if (node.hasOwnProperty("question description")) {
+      question = node["question description"][0];
+    }
+    questionCell.innerHTML = question;
+
+    termCell = document.createElement("td");
+    termCell.setAttribute("class", "term-col");
+    var term = "";
+    if (node.hasOwnProperty("see also")) {
+      term = node["see also"][0];
+    }
+    termCell.innerHTML = term;
+
+    row.appendChild(dsCell);
+    row.appendChild(nameCell);
+    row.appendChild(defCell);
+    row.appendChild(questionCell);
+    row.appendChild(termCell);
+    tbody.appendChild(row);
+  }
+}
+
+function createSearchResults(dataSets) {
+	var res = document.getElementsByClassName("search-results")[0];
+
+	var wrapper = document.createElement("div");
+
+	var table = document.createElement("table");
+	table.setAttribute("class", "table");
+
+	var thead = document.createElement("thead");
+
+  var dsHeader = document.createElement("th");
+  dsHeader.setAttribute("scope", "col");
+  dsHeader.setAttribute("clas", "ds-col");
+  dsHeader.innerHTML = "dataset";
+  thead.appendChild(dsHeader);
+
+	var nameHeader = document.createElement("th");
+	nameHeader.setAttribute("scope", "col");
+  nameHeader.setAttribute("class", "name-col");
+	nameHeader.innerHTML = "name";
+	thead.appendChild(nameHeader);
+
+	var defHeader = document.createElement("th");
+	defHeader.setAttribute("scope", "col");
+  defHeader.setAttribute("class", "def-col");
+	defHeader.innerHTML = "definition";
+	thead.appendChild(defHeader);
+
+	var questionHeader = document.createElement("th");
+	questionHeader.setAttribute("scope", "col");
+  questionHeader.setAttribute("class", "question-col");
+	questionHeader.innerHTML = "question";
+	thead.appendChild(questionHeader);
+
+	var termHeader = document.createElement("th");
+	termHeader.setAttribute("scope", "col");
+  termHeader.setAttribute("class", "term-col");
+	termHeader.innerHTML = "ontology term";
+	thead.appendChild(termHeader);
+
+	table.appendChild(thead);
+
+	var tbody = document.createElement("tbody");
+
+  addSearchResults(tbody, "CINECA", dataSets.get("CINECA"));
+  addSearchResults(tbody, "Genomics England", dataSets.get("Genomics England"));
+	table.appendChild(tbody);
+	wrapper.appendChild(table);
+	res.appendChild(wrapper);
+}
+
+function get_json(path) {
+  var content = "";
+  $.ajax({
+    url: path,
+    type: 'get',
+    async: false,
+    success: function(res) {
+       content = res;
+    }
+  });
+  return content;
+}
+
+function filterTable(catMap, checked) {
+  table = document.getElementsByClassName("table")[0];
+  rows = table.getElementsByTagName("tr");
+
+  if (checked.length == 0) {
+    for (i = 0; i < rows.length; i ++) {
+      rows[i].style.display = "";
+    }
+  } else {
+    for (i = 0; i < rows.length; i ++) {
+      var rowID = rows[i].id;
+      var category = -1;
+      if (catMap.has(rowID)) {
+        category = catMap.get(rowID);
+      }
+      if (checked.indexOf(rowID) > -1 || checked.indexOf(category) > -1) {
+        rows[i].style.display = "";
+      } else {
+        rows[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function searchTable() {
+  var ipt = document.getElementById('searchBox');
+  filter = ipt.value.toUpperCase();
+
+  table = document.getElementsByClassName("table")[0];
+  rows = table.getElementsByTagName("tr");
+
+  for (i = 0; i < rows.length; i++) {
+    var hasMatch = false;
+    td = rows[i].getElementsByTagName("td");
+    for (t = 0; t < td.length; t++) {
+      var txtValue = td[t].textContent || td[t].innerText;
+      if (txtValue.toUpperCase().search(filter) > -1) {
+        hasMatch = true;
+      }
+    }
+    if (hasMatch) {
+      rows[i].style.display = "";
+    } else {
+      rows[i].style.display = "none";
+    }
+  }
+}
+
+var gecko = get_json('./gecko.json');
+var genomicsEngland = get_json('./genomics-england.json');
+var categories = get_json('./categories.json');
+var catMap = createCategoryMap(categories);
+
+var allDataSets = new Map();
+allDataSets.set("CINECA", gecko);
+allDataSets.set("Genomics England", genomicsEngland);
+
+createAggregations(gecko);
+createSearchResults(allDataSets);
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  // Set highlights to ones we can filter
+  // var bloodPressure = document.getElementById("gecko:0000058").parentElement;
+  // bloodPressure.setAttribute("style", "background-color: yellow;");
+
+  var _selectors = document.getElementsByClassName("aggregations")[0];
+  _selectors.addEventListener('change', function (event) {
+      var checkboxes = _selectors.getElementsByTagName("INPUT");
+
+      var checked = []
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          var thisID = checkboxes[i].id;
+          checked.push(thisID);
+        }
+      }
+      filterTable(catMap, checked);
+  });
+});
+</script>
+</body>
+</html>
