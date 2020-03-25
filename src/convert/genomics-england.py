@@ -116,13 +116,18 @@ def main():
                 comments[short_id] = [comment]
 
     # Write template headers, ROBOT template strings, ROBOT validation strings
-    writer = csv.writer(output_file, delimiter='\t')
-    writer.writerow(['ID', 'Label', 'Alternative Term(s)', 'Definition(s)', 'Parent(s)', 'Value(s)',
-                     'Comment(s)'])
-    writer.writerow(['ID', 'LABEL', 'A alternative term SPLIT=|', 'A definition SPLIT=|', 'SC %SPLIT=|',
-                     'A value SPLIT=|', 'A rdfs:comment SPLIT=|'])
-    writer.writerow(['', '', '', '', '',
-                     '', ''])
+    writer = csv.DictWriter(output_file, fieldnames=['ID', 'Label', 'Alternative Terms', 'Definitions', 'Parents',
+                                                     'Values', 'Comments'], delimiter='\t', lineterminator='\n')
+    writer.writeheader()
+    writer.writerow({'ID': 'ID',
+                     'Label': 'LABEL',
+                     'Alternative Terms': 'A alternative term SPLIT=|',
+                     'Definitions': 'A definition SPLIT=|',
+                     'Parents': 'SC %SPLIT=|',
+                     'Values': 'A value SPLIT=|',
+                     'Comments': 'A rdfs:comment SPLIT=|'})
+    # TODO: Add validation
+    writer.writerow({})
 
     # Add the top-level categories
     if '' in all_categories:
@@ -137,11 +142,13 @@ def main():
         if skip:
             continue
 
-        # Create a short ID and write to template
-        short_id = re.sub(
-            r'_+', '_', category.lower().replace(' ', '_').replace('/', '_').replace(';', '').replace('(', '').replace(
-                ')', '').replace('-', '_'))
-        writer.writerow(['ge:' + short_id, category, '', '', 'owl:Thing', '', ''])
+        # Create a short ID and write to template (ID is not given)
+        short_id = re.sub(r'[ /-]', '_', category.lower())
+        short_id = re.sub(r'[;()]', '', short_id)
+        short_id = re.sub(r'_+', '_', short_id)
+        writer.writerow({'ID': 'GE:' + short_id,
+                         'Label': category,
+                         'Parents': 'owl:Thing'})
 
     # Add the values from the sheet
     for short_id in all_ids:
@@ -182,8 +189,13 @@ def main():
         if label.strip() == '':
             label = short_id
 
-        writer.writerow(['ge:' + short_id, label, '|'.join(synonyms), '|'.join(this_definitions),
-                         '|'.join(this_categories), '|'.join(this_values), '|'.join(this_comments)])
+        writer.writerow({'ID': 'GE:' + short_id,
+                         'Label': label,
+                         'Alternative Terms': '|'.join(synonyms),
+                         'Definitions': '|'.join(this_definitions),
+                         'Parents': '|'.join(this_categories),
+                         'Values': '|'.join(this_values),
+                         'Comments': '|'.join(this_comments)})
 
     output_file.close()
 

@@ -1,0 +1,13 @@
+{
+	"@context": {
+		"GCS": "http://example.com/GCS_",
+		"GE": "http://example.com/GE_",
+		"GECKO": "http://example.com/GECKO_",
+		"IAO": "http://purl.obolibrary.org/obo/IAO_",
+		"IHCC": "http://example.com/",
+		"obo": "http://purl.obolibrary.org/obo/",
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"rdfs": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"VZ": "http://example.com/VZ_"
+	}
+}

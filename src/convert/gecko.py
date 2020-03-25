@@ -57,7 +57,7 @@ def create_id(label, label_map):
         spaces = 4
     else:
         spaces = 3
-    return 'gecko:' + ('0' * spaces) + str(global_id)
+    return 'GECKO:' + ('0' * spaces) + str(global_id)
 
 
 def main():
@@ -212,11 +212,12 @@ def main():
                      'See Also ID': 'A see also SPLIT=/',
                      'Known Number of Cohorts': 'A number of cohorts',
                      'Use Cases Requirements': 'A use cases requirements'})
-    writer.writerow({}) # TODO: Add validation
+    # TODO: Add validation
+    writer.writerow({})
 
     # Also remake the index file, adding new IDs
     index_file = open(index_file_path, 'w')
-    index_writer = csv.writer(index_file, delimiter='\t')
+    index_writer = csv.writer(index_file, delimiter='\t', lineterminator='\n')
     index_writer.writerow(['Short ID', 'Label'])
 
     for curie, parent in child_parents.items():

@@ -18,6 +18,14 @@
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
 #   [genomics-england.owl](build/genomics-england.owl)
+# - Golestan Cohort Study (GCS)
+#	[term table](build/gcs.html)
+#	[tree view](build/gcs-tree.html)
+#	[gcs.owl](build/gcs.owl)
+# - Vukuzazi
+#	[term table](build/vukuzazi.html)
+#	[tree view](build/vukuzazi-tree.html)
+#	[vukuzazi.owl](build/vukuzazi.owl)
 # - [View mockup](build/index.html)
 # - [Rebuild](all)
 
@@ -34,7 +42,7 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
-ROBOT = java -jar build/robot.jar --prefix "gecko: http://example.com/gecko_" --prefix "ge: http://example.com/ge_"
+ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 
 ### Pre-build Tasks
@@ -59,27 +67,37 @@ build/robot-rdfxml.jar: | build
 data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
 
-build/gecko.tsv: src/gecko/gecko.py data/cineca.tsv src/gecko/index.tsv | build
+build/gecko.tsv: src/convert/gecko.py data/cineca.tsv src/gecko/index.tsv | build
 	python3 $^ $@
 
 build/properties.owl: src/properties.tsv | build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
 build/gecko.owl: build/properties.owl build/gecko.tsv metadata/gecko.ttl | build/robot.jar
-	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
-	merge --input $(word 3,$^) --include-annotations true \
-	annotate --ontology-iri "http://example.com/gecko.owl" --output $@
+	$(ROBOT) template --input $< \
+	--merge-before \
+	--template $(word 2,$^) \
+	merge --input $(word 3,$^) \
+	--include-annotations true \
+	annotate --ontology-iri "http://example.com/gecko.owl" \
+	--output $@
 
-build/ncit.owl: | build
-	curl -Lk -o $@ http://purl.obolibrary.org/obo/ncit.owl
+.PRECIOUS: build/ncit.owl.gz
+build/ncit.owl.gz: | build/robot.jar
+	$(ROBOT) convert --input-iri http://purl.obolibrary.org/obo/ncit.owl --output $@
 
 build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-annotation-properites.txt | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 	tail -n +2 $@ > $@.tmp
 	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
 
-build/ncit-module.owl: build/ncit.owl build/ncit-terms.txt | build/robot-rdfxml.jar
-	$(ROBOT_RDFXML) extract --input $< --term-file $(word 2,$^) --method rdfxml --intermediates minimal --output $@
+build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfxml.jar
+	gunzip $<
+	$(ROBOT_RDFXML) extract --input $(basename $<) \
+	--term-file $(word 2,$^) \
+	--method rdfxml \
+	--intermediates minimal --output $@ \
+	&& gzip $(basename $<) || gzip $(basename $<)
 
 
 ### Genomics England Tasks
@@ -87,12 +105,15 @@ build/ncit-module.owl: build/ncit.owl build/ncit-terms.txt | build/robot-rdfxml.
 data/genomics-england.xlsx:
 	curl -L -o $@ "https://cnfl.extge.co.uk/download/attachments/113189195/Data%20Dictionary%20Main%20Programme%20v6%20%281%29.xlsx?version=1&modificationDate=1551371214157&api=v2"
 
-build/genomics-england.tsv: src/genomics-england/genomics-england.py data/genomics-england.xlsx | build
+build/genomics-england.tsv: src/convert/genomics-england.py data/genomics-england.xlsx | build
 	python3 $^ $@
 
 build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england.tsv | build/robot.jar
-	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
-	annotate --ontology-iri "http://example.com/genomics-england.owl" --output $@
+	$(ROBOT) template --input $< \
+	--merge-before \
+	--template $(word 2,$^) \
+	annotate --ontology-iri "http://example.com/genomics-england.owl" \
+	--output $@
 
 
 ### Golestan Cohort Study (GCS) Tasks
@@ -100,13 +121,17 @@ build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england
 data/golestan-cohort-study.xlsx:
 	curl -L -o $@ "https://drive.google.com/uc?export=download&id=1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ"
 
-build/gcs.tsv: src/gcs/golestan-cohort-study.py data/golestan-cohort-study.xlsx | build
+build/gcs.tsv: src/convert/golestan-cohort-study.py data/golestan-cohort-study.xlsx | build
 	python3 $^ $@
 
 build/gcs.owl: build/properties.owl build/gcs.tsv metadata/gcs.ttl | build/robot.jar
-	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
-	merge --input $(word 3,$^) --include-annotations true \
-	annotate --ontology-iri "http://example.com/gcs.owl" --output $@
+	$(ROBOT) template --input $< \
+	--merge-before \
+	--template $(word 2,$^) \
+	merge --input $(word 3,$^) \
+	--include-annotations true \
+	annotate --ontology-iri "http://example.com/gcs.owl" \
+	--output $@
 
 
 ### Vukuzazi Tasks
@@ -114,12 +139,15 @@ build/gcs.owl: build/properties.owl build/gcs.tsv metadata/gcs.ttl | build/robot
 data/vukuzazi.xlsx:
 	curl -L -o $@ "https://drive.google.com/uc?export=download&id=1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC"
 
-build/vukuzazi.tsv: src/vukuzazi/vukuzazi.py data/vukuzazi.xlsx | build
+build/vukuzazi.tsv: src/convert/vukuzazi.py data/vukuzazi.xlsx | build
 	python3 $^ $@
 
 build/vukuzazi.owl: metadata/vukuzazi.ttl build/vukuzazi.tsv | build/robot.jar
-	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
-	annotate --ontology-iri "http://example.com/vukuzazi.owl" --output $@
+	$(ROBOT) template --input $< \
+	--merge-before \
+	--template $(word 2,$^) \
+	annotate --ontology-iri "http://example.com/vukuzazi.owl" \
+	--output $@
 
 
 ### Trees and Tables
@@ -176,6 +204,8 @@ serve: $(BROWSER)
 refresh:
 	rm -rf data/cineca.tsv
 	touch data/genomics-england.xlsx
+	touch data/golestan-cohort-study.xlsx
+	touch data/vukuzazi.xlsx
 
 .PHONY: clean
 clean:
@@ -185,4 +215,6 @@ clean:
 all: build/gecko.html build/gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
+all: build/gcs.html build/gcs-tree.html
+all: build/vukuzazi.html build/vukuzazi-tree.html
 all: $(BROWSER)
