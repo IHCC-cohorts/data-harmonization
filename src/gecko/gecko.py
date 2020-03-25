@@ -95,13 +95,7 @@ def main():
 
     # Optional annotations
     comments = {}
-    definitions = {}
-    synonyms = {}
-    question_descriptions = {}
-    answer_types = {}
-    alt_ids = {}
-    number_cohorts = {}
-    use_case_requirements = {}
+    details = {}
 
     row_num = 1
     for row in reader:
@@ -181,29 +175,43 @@ def main():
                 print('Unknown target for row ' + str(row_num))
                 continue
 
+            entity = {'Question Description': question_desc,
+                      'Expected Answer Type': answer_type,
+                      'See Also ID': see_also,
+                      'Definition': definition,
+                      'Known Number of Cohorts': num_cohorts,
+                      'Use Cases Requirements': use_case_reqs}
+
             if ontology_label != '':
                 # Add ontology label to synonyms
-                synonyms[target] = ontology_label
+                entity['Synonym'] = ontology_label
+            else:
+                entity['Synonym'] = ''
 
-            question_descriptions[target] = question_desc
-            answer_types[target] = answer_type
-            alt_ids[target] = see_also
-            definitions[target] = definition
-            number_cohorts[target] = num_cohorts
-            use_case_requirements[target] = use_case_reqs
-
+            details[target] = entity
             row_num += 1
 
     input_file.close()
 
-    # Write template headers, ROBOT template strings, ROBOT validation strings
-    writer = csv.writer(output_file, delimiter='\t')
-    writer.writerow(['Short ID', 'Label', 'Definition', 'Parent', 'Synonym', 'Comment', 'Question Description',
-                     'Expected Answer Type', 'See Also ID', 'Known Number of Cohorts', 'Use Cases Requirements'])
-    writer.writerow(['ID', 'LABEL', 'A definition', 'SC %', 'A alternative term', 'A comment', 'A question description',
-                     'A answer type', 'A see also SPLIT=/', 'A number of cohorts', 'A use cases requirements'])
-    writer.writerow(['', '', '', '', '', '', '',
-                     '', '', '', ''])
+    # Write template headers, ROBOT template strings
+    # TODO - ROBOT validation strings
+    writer = csv.DictWriter(output_file, delimiter='\t', fieldnames=['Short ID', 'Label', 'Definition', 'Parent',
+                                                                     'Synonym', 'Comment', 'Question Description',
+                                                                     'Expected Answer Type', 'See Also ID',
+                                                                     'Known Number of Cohorts',
+                                                                     'Use Cases Requirements'])
+    writer.writeheader()
+    writer.writerow({'Short ID': 'ID',
+                     'Label': 'LABEL',
+                     'Definition': 'A definition',
+                     'Parent': 'SC %',
+                     'Synonym': 'A alternative term',
+                     'Comment': 'A comment',
+                     'Question Description': 'A question description',
+                     'Expected Answer Type': 'A answer type',
+                     'See Also ID': 'A see also SPLIT=/',
+                     'Known Number of Cohorts': 'A number of cohorts',
+                     'Use Cases Requirements': 'A use cases requirements'})
 
     # Also remake the index file, adding new IDs
     index_file = open(index_file_path, 'w')
@@ -211,45 +219,27 @@ def main():
     index_writer.writerow(['Short ID', 'Label'])
 
     for curie, parent in child_parents.items():
-        # Each class must have a parent_iri and a label
-        label = labels[curie]
-
         # The following are optional annotations
-        definition = ''
-        if curie in definitions:
-            definition = definitions[curie]
-
-        synonym = ''
-        if curie in synonyms:
-            synonym = synonyms[curie]
-
-        comment = ''
+        if curie in details:
+            entity = details[curie]
+        else:
+            entity = {'Question Description': '',
+                      'Expected Answer Type': '',
+                      'See Also ID': '',
+                      'Definition': '',
+                      'Known Number of Cohorts': '',
+                      'Use Cases Requirements': '',
+                      'Synonym': ''}
+        entity['Short ID'] = curie
+        entity['Label'] = labels[curie]
+        entity['Parent'] = parent
         if curie in comments:
-            comment = comments[curie]
+            entity['Comment'] = comments[curie]
+        else:
+            entity['Comment'] = ''
 
-        question_desc = ''
-        if curie in question_descriptions:
-            question_desc = question_descriptions[curie]
-
-        answer_type = ''
-        if curie in answer_types:
-            answer_type = answer_types[curie]
-
-        see_also = ''
-        if curie in alt_ids:
-            see_also = alt_ids[curie]
-
-        num_cohorts = ''
-        if curie in number_cohorts:
-            num_cohorts = number_cohorts[curie]
-
-        use_case_reqs = ''
-        if curie in use_case_requirements:
-            use_case_reqs = use_case_requirements[curie]
-
-        writer.writerow([curie, label, definition, parent, synonym, comment, question_desc, answer_type, see_also,
-                         num_cohorts, use_case_reqs])
-        index_writer.writerow([curie, label])
+        writer.writerow(entity)
+        index_writer.writerow([curie, labels[curie]])
 
     output_file.close()
     index_file.close()
