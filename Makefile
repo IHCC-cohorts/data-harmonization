@@ -18,8 +18,8 @@
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
 #   [genomics-england.owl](build/genomics-england.owl)
-#
-# [Rebuild](all)
+# - [View mockup](build/browser/index.html)
+# - [Rebuild](all)
 
 ### Configuration
 #
