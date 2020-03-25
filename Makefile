@@ -18,7 +18,7 @@
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
 #   [genomics-england.owl](build/genomics-england.owl)
-# - [View mockup](build/browser/index.html)
+# - [View mockup](build/index.html)
 # - [Rebuild](all)
 
 ### Configuration
@@ -164,7 +164,9 @@ build/genomics-england.json: build/genomics-england.owl | build/robot.jar
 build/index.html: src/index.html | build
 	cp $< $@
 
-serve: build/index.html build/gecko.json build/genomics-england.json
+BROWSER := build/index.html build/gecko.json build/genomics-england.json
+
+serve: $(BROWSER)
 	cd build && python3 -m http.server 8000
 
 
@@ -183,3 +185,4 @@ clean:
 all: build/gecko.html build/gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
+all: $(BROWSER)
