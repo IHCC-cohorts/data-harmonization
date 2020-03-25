@@ -97,12 +97,10 @@ build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-a
 	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
 
 build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfxml.jar
-	gunzip $<
-	$(ROBOT_RDFXML) extract --input $(basename $<) \
+	$(ROBOT_RDFXML) extract --input $< \
 	--term-file $(word 2,$^) \
 	--method rdfxml \
-	--intermediates minimal --output $@ \
-	&& gzip $(basename $<) || gzip $(basename $<)
+	--intermediates minimal --output $@ 
 
 
 ### Genomics England Tasks
