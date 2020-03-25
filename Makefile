@@ -18,8 +18,8 @@
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
 #   [genomics-england.owl](build/genomics-england.owl)
-#
-# [Rebuild](all)
+# - [View mockup](build/index.html)
+# - [Rebuild](all)
 
 ### Configuration
 #
@@ -95,6 +95,33 @@ build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england
 	annotate --ontology-iri "http://example.com/genomics-england.owl" --output $@
 
 
+### Golestan Cohort Study (GCS) Tasks
+
+data/golestan-cohort-study.xlsx:
+	curl -L -o $@ "https://drive.google.com/uc?export=download&id=1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ"
+
+build/gcs.tsv: src/gcs/golestan-cohort-study.py data/golestan-cohort-study.xlsx | build
+	python3 $^ $@
+
+build/gcs.owl: build/properties.owl build/gcs.tsv metadata/gcs.ttl | build/robot.jar
+	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
+	merge --input $(word 3,$^) --include-annotations true \
+	annotate --ontology-iri "http://example.com/gcs.owl" --output $@
+
+
+### Vukuzazi Tasks
+
+data/vukuzazi.xlsx:
+	curl -L -o $@ "https://drive.google.com/uc?export=download&id=1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC"
+
+build/vukuzazi.tsv: src/vukuzazi/vukuzazi.py data/vukuzazi.xlsx | build
+	python3 $^ $@
+
+build/vukuzazi.owl: metadata/vukuzazi.ttl build/vukuzazi.tsv | build/robot.jar
+	$(ROBOT) template --input $< --merge-before --template $(word 2,$^) \
+	annotate --ontology-iri "http://example.com/vukuzazi.owl" --output $@
+
+
 ### Trees and Tables
 
 build/%-tree.html: build/%.owl | build/robot-tree.jar
@@ -137,7 +164,9 @@ build/genomics-england.json: build/genomics-england.owl | build/robot.jar
 build/index.html: src/index.html | build
 	cp $< $@
 
-serve: build/index.html build/gecko.json build/genomics-england.json
+BROWSER := build/index.html build/gecko.json build/genomics-england.json
+
+serve: $(BROWSER)
 	cd build && python3 -m http.server 8000
 
 
@@ -156,3 +185,4 @@ clean:
 all: build/gecko.html build/gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
+all: $(BROWSER)
