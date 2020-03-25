@@ -26,7 +26,7 @@ def main():
         definition = str(row['Description'])
         table_names.append(short_id)
         label_map[short_id] = label
-        details.append({'Short ID': 'gcs:' + short_id, 'Label': label, 'Definition': definition})
+        details.append({'Short ID': 'GCS:' + short_id, 'Label': label, 'Definition': definition})
 
     for tn in table_names:
         sheet = pd.read_excel(xlsx, tn)
@@ -63,7 +63,7 @@ def main():
                     # Maybe add unit in parentheses
                     value = '{0} ({1})'.format(value, unit)
 
-            details.append({'Short ID': 'gcs:' + short_id,
+            details.append({'Short ID': 'GCS:' + short_id,
                             'Parent': parent,
                             'Label': short_id,
                             'Definition': definition,
@@ -83,6 +83,8 @@ def main():
                      'Value': 'A value',
                      'Formula': 'A formula',
                      'Measurement Time': 'A measurement time'})
+    # TODO: Add validation
+    writer.writerow({})
 
     for d in details:
         writer.writerow(d)

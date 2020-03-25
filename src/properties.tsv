@@ -1,13 +1,13 @@
 IRI	Type	Label
 ID	TYPE	LABEL
-http://example.com/question-description	owl:AnnotationProperty	question description
-http://example.com/answer-type	owl:AnnotationProperty	answer type
 IAO:0000115	owl:AnnotationProperty	definition
-rdfs:seeAlso	owl:AnnotationProperty	see also
-http://example.com/number-of-cohorts	owl:AnnotationProperty	number of cohorts
-http://example.com/use-cases-requirements	owl:AnnotationProperty	use cases requirements
-rdfs:comment	owl:AnnotationProperty	comment
 IAO:0000118	owl:AnnotationProperty	alternative term
-http://example.com/value	owl:AnnotationProperty	value
-http://example.com/formula	owl:AnnotationProperty	formula
-http://example.com/measurement-time	owl:AnnotationProperty	measurement time
+IHCC:answer-type	owl:AnnotationProperty	answer type
+IHCC:formula	owl:AnnotationProperty	formula
+IHCC:measurement-time	owl:AnnotationProperty	measurement time
+IHCC:number-of-cohorts	owl:AnnotationProperty	number of cohorts
+IHCC:question-description	owl:AnnotationProperty	question description
+IHCC:use-cases-requirements	owl:AnnotationProperty	use cases requirements
+IHCC:value	owl:AnnotationProperty	value
+rdfs:comment	owl:AnnotationProperty	comment
+rdfs:seeAlso	owl:AnnotationProperty	see also
