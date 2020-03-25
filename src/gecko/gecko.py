@@ -212,6 +212,7 @@ def main():
                      'See Also ID': 'A see also SPLIT=/',
                      'Known Number of Cohorts': 'A number of cohorts',
                      'Use Cases Requirements': 'A use cases requirements'})
+    writer.writerow({}) # TODO: Add validation
 
     # Also remake the index file, adding new IDs
     index_file = open(index_file_path, 'w')
