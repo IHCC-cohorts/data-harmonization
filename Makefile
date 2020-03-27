@@ -18,14 +18,19 @@
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
 #   [genomics-england.owl](build/genomics-england.owl)
-# - Golestan Cohort Study (GCS)
-#	[term table](build/gcs.html)
-#	[tree view](build/gcs-tree.html)
-#	[gcs.owl](build/gcs.owl)
+# - Golestan Cohort Study (GCS),
+#   [term table](build/gcs.html),
+#   [tree view](build/gcs-tree.html),
+#   [gcs.owl](build/gcs.owl)
+# - SAPRIN
+#   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
+#   [term table](build/saprin.html),
+#   [tree view](build/saprin-tree.html),
+#   [saprin.owl](build/saprin.owl)
 # - Vukuzazi
-#	[term table](build/vukuzazi.html)
-#	[tree view](build/vukuzazi-tree.html)
-#	[vukuzazi.owl](build/vukuzazi.owl)
+#   [term table](build/vukuzazi.html),
+#   [tree view](build/vukuzazi-tree.html),
+#   [vukuzazi.owl](build/vukuzazi.owl)
 # - [View mockup](build/index.html)
 # - [Rebuild](all)
 
@@ -180,6 +185,24 @@ build/gcs.owl: build/properties.owl build/gcs.tsv metadata/gcs.ttl | build/robot
 	--output $@
 
 
+### SAPRIN Tasks
+
+data/saprin.tsv:
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/export?format=tsv"
+
+build/saprin.tsv: src/convert/saprin.py data/saprin.tsv | build
+	python3 $^ $@
+
+build/saprin.owl: build/properties.owl build/saprin.tsv metadata/saprin.ttl | build/robot.jar
+	$(ROBOT) template --input $< \
+	--merge-before \
+	--template $(word 2,$^) \
+	merge --input $(word 3,$^) \
+	--include-annotations true \
+	annotate --ontology-iri "http://example.com/saprin.owl" \
+	--output $@
+
+
 ### Vukuzazi Tasks
 
 data/vukuzazi.xlsx:
@@ -270,6 +293,7 @@ serve: $(BROWSER)
 .PHONY: refresh
 refresh:
 	rm -rf data/cineca.tsv
+	rm -rf data/saprin.tsv
 	touch data/genomics-england.xlsx
 	touch data/golestan-cohort-study.xlsx
 	touch data/vukuzazi.xlsx
@@ -283,5 +307,6 @@ all: build/gecko.html build/gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
 all: build/gcs.html build/gcs-tree.html
+all: build/saprin.html build/saprin-tree.html
 all: build/vukuzazi.html build/vukuzazi-tree.html
 all: $(BROWSER)
