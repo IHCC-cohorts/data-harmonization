@@ -1,8 +1,11 @@
 {
 	"@context": {
+		"CHEBI": "http://purl.obolibrary.org/obo/CHEBI_",
+		"CMO": "http://purl.obolibrary.org/obo/CMO_",
 		"GCS": "http://example.com/GCS_",
 		"GE": "http://example.com/GE_",
 		"GECKO": "http://example.com/GECKO_",
+		"HP": "http://purl.obolibrary.org/obo/HP_",
 		"IAO": "http://purl.obolibrary.org/obo/IAO_",
 		"IHCC": "http://example.com/",
 		"obo": "http://purl.obolibrary.org/obo/",

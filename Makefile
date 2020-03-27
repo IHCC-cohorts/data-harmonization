@@ -42,7 +42,8 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
-ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
+#ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
+ROBOT = robot --prefixes src/prefixes.json
 ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 
 ### Pre-build Tasks
@@ -97,6 +98,52 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 	--method rdfxml \
 	--intermediates minimal --output $@ 
 
+build/gecko-mapping.tsv: | build
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
+
+build/gecko-terms.txt: build/gecko-mapping.tsv
+	tail -n+2 $< | awk '{ print $$4 }' FS='\t' | awk '!seen[$$0]++' > $@
+
+build/cmo.owl: | build
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/cmo.owl
+
+build/hp.owl: | build
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/hp.owl
+
+build/chebi.owl.gz: | build
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/chebi.owl.gz
+
+build/cmo-module.owl: build/cmo.owl build/gecko-terms.txt src/gecko/measurement.ru | build/robot.jar
+	$(ROBOT) extract --input $< \
+	--method MIREOT \
+	--lower-terms $(word 2,$^) \
+	--intermediates none \
+	query --update $(word 3,$^) \
+	--output $@
+
+build/hp-module.owl: build/hp.owl build/gecko-terms.txt src/gecko/clinical-finding.ru | build/robot.jar
+	$(ROBOT) extract --input $< \
+	--method MIREOT \
+	--lower-terms $(word 2,$^) \
+	--intermediates none \
+	query --update $(word 3,$^) \
+	--output $@
+
+build/chebi-module.owl: build/chebi.owl.gz build/gecko-terms.txt src/gecko/exposure-event.ru | build/robot.jar
+	$(ROBOT) extract --input $< \
+	--method RDFXML \
+	--term-file $(word 2,$^) \
+	--intermediates none \
+	query --update $(word 3,$^) \
+	--output $@
+
+build/gecko-ext.owl: src/gecko/gecko-upper.ttl build/cmo-module.owl build/hp-module.owl build/chebi-module.owl | build/robot.jar
+	$(ROBOT) merge --input $< \
+	--input $(word 2,$^) \
+	--input $(word 3,$^) \
+	--input $(word 4,$^) \
+	--output $@
+
 
 ### Genomics England Tasks
 
@@ -106,10 +153,12 @@ data/genomics-england.xlsx:
 build/genomics-england.tsv: src/convert/genomics-england.py data/genomics-england.xlsx | build
 	python3 $^ $@
 
-build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england.tsv | build/robot.jar
+build/genomics-england.owl: build/properties.owl build/genomics-england.tsv metadata/genomics-england.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
+	merge --input $(word 3,$^) \
+	--include-annotations true \
 	annotate --ontology-iri "http://example.com/genomics-england.owl" \
 	--output $@
 
@@ -140,10 +189,12 @@ data/vukuzazi.xlsx:
 build/vukuzazi.tsv: src/convert/vukuzazi.py data/vukuzazi.xlsx | build
 	python3 $^ $@
 
-build/vukuzazi.owl: metadata/vukuzazi.ttl build/vukuzazi.tsv | build/robot.jar
+build/vukuzazi.owl: build/properties.owl build/vukuzazi.tsv metadata/vukuzazi.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
+	merge --input $(word 3,$^) \
+	--include-annotations true \
 	annotate --ontology-iri "http://example.com/vukuzazi.owl" \
 	--output $@
 
@@ -167,30 +218,49 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 ### Browser
 
-build/categories.tsv: | build
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
+build/gecko-ext.json: build/gecko-ext.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|definition|subclasses" \
+	--sort "LABEL" \
+	--export $@
 
-build/categories.json: src/tsv2json.py build/categories.tsv
+build/gecko-mapping.json: src/tsv2json.py build/gecko-mapping.tsv
 	python3 $^ > $@
+
+build/gcs.json: build/gcs.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|definition|question description|value|see also" \
+	--sort "LABEL" \
+	--export $@
 
 build/gecko.json: build/gecko.owl | build/robot.jar
 	$(ROBOT) export \
 	--input $< \
-	--header "ID|LABEL|definition|question description|see also|subclasses" \
+	--header "ID|LABEL|definition|question description|value|see also" \
 	--sort "LABEL" \
 	--export $@
 
 build/genomics-england.json: build/genomics-england.owl | build/robot.jar
 	$(ROBOT) export \
 	--input $< \
-	--header "ID|LABEL|definition" \
-	--sort "ID|LABEL" \
+	--header "ID|LABEL|definition|question description|value|see also" \
+	--sort "LABEL" \
+	--export $@
+
+build/vukuzazi.json: build/vukuzazi.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|definition|question description|value|see also" \
+	--sort "LABEL" \
 	--export $@
 
 build/index.html: src/index.html | build
 	cp $< $@
 
-BROWSER := build/index.html build/gecko.json build/genomics-england.json
+BROWSER := build/index.html build/gcs.json build/gecko.json build/gecko-ext.json build/gecko-mapping.json build/genomics-england.json build/vukuzazi.json
+browser: $(BROWSER)
 
 serve: $(BROWSER)
 	cd build && python3 -m http.server 8000
