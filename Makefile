@@ -64,6 +64,8 @@ build/robot-rdfxml.jar: | build
 
 ### GECKO Tasks
 
+# GECKO from CINECA
+
 data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
 
@@ -82,6 +84,8 @@ build/gecko.owl: build/properties.owl build/gecko.tsv metadata/gecko.ttl | build
 	annotate --ontology-iri "http://example.com/gecko.owl" \
 	--output $@
 
+# NCIT Module - NCIT terms that have been mapped to GECKO terms
+
 .PRECIOUS: build/ncit.owl.gz
 build/ncit.owl.gz: | build/robot.jar
 	$(ROBOT) convert --input-iri http://purl.obolibrary.org/obo/ncit.owl --output $@
@@ -95,7 +99,9 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 	$(ROBOT_RDFXML) extract --input $< \
 	--term-file $(word 2,$^) \
 	--method rdfxml \
-	--intermediates minimal --output $@ 
+	--intermediates minimal --output $@
+
+# GECKO External - OBO terms used for IHCC mappings
 
 build/gecko-mapping.tsv: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
@@ -103,14 +109,8 @@ build/gecko-mapping.tsv: | build
 build/gecko-terms.txt: build/gecko-mapping.tsv
 	tail -n+2 $< | awk '{ print $$4 }' FS='\t' | awk '!seen[$$0]++' > $@
 
-build/cmo.owl: | build
-	curl -Lk -o $@ http://purl.obolibrary.org/obo/cmo.owl
-
-build/hp.owl: | build
-	curl -Lk -o $@ http://purl.obolibrary.org/obo/hp.owl
-
-build/chebi.owl.gz: | build
-	curl -Lk -o $@ http://purl.obolibrary.org/obo/chebi.owl.gz
+build/cmo.owl build/hp.owl build/chebi.owl.gz: | build
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/$(notdir $@)
 
 build/cmo-module.owl: build/cmo.owl build/gecko-terms.txt src/gecko/measurement.ru | build/robot.jar
 	$(ROBOT) extract --input $< \
