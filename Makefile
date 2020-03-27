@@ -42,8 +42,7 @@ SHELL := bash
 .SUFFIXES:
 .SECONDARY:
 
-#ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
-ROBOT = robot --prefixes src/prefixes.json
+ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 
 ### Pre-build Tasks
@@ -130,7 +129,7 @@ build/hp-module.owl: build/hp.owl build/gecko-terms.txt src/gecko/clinical-findi
 	--output $@
 
 build/chebi-module.owl: build/chebi.owl.gz build/gecko-terms.txt src/gecko/exposure-event.ru | build/robot.jar
-	$(ROBOT) extract --input $< \
+	$(ROBOT_RDFXML) extract --input $< \
 	--method RDFXML \
 	--term-file $(word 2,$^) \
 	--intermediates none \
