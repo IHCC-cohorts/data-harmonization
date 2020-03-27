@@ -6,10 +6,6 @@
 
 ### Workflow
 #
-# |-------|
-# | GECKO |
-# |-------|
-#
 # - GECKO
 #   [source table](https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4),
 #   [term table](build/gecko.html),
