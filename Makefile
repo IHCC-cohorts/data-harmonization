@@ -6,6 +6,10 @@
 
 ### Workflow
 #
+# |-------|
+# | GECKO |
+# |-------|
+#
 # - GECKO
 #   [source table](https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4),
 #   [term table](build/gecko.html),
@@ -18,19 +22,19 @@
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
 #   [genomics-england.owl](build/genomics-england.owl)
-# - Golestan Cohort Study (GCS)
-#	[term table](build/gcs.html)
-#	[tree view](build/gcs-tree.html)
-#	[gcs.owl](build/gcs.owl)
+# - Golestan Cohort Study (GCS),
+#   [term table](build/gcs.html),
+#   [tree view](build/gcs-tree.html),
+#   [gcs.owl](build/gcs.owl)
 # - SAPRIN
-#	[source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing)
-#	[term table](build/saprin.html)
-#	[tree view](build/saprin-tree.html)
-#	[saprin.owl](build/saprin.owl)
+#   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
+#   [term table](build/saprin.html),
+#   [tree view](build/saprin-tree.html),
+#   [saprin.owl](build/saprin.owl)
 # - Vukuzazi
-#	[term table](build/vukuzazi.html)
-#	[tree view](build/vukuzazi-tree.html)
-#	[vukuzazi.owl](build/vukuzazi.owl)
+#   [term table](build/vukuzazi.html),
+#   [tree view](build/vukuzazi-tree.html),
+#   [vukuzazi.owl](build/vukuzazi.owl)
 # - [View mockup](build/index.html)
 # - [Rebuild](all)
 
