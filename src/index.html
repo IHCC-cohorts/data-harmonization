@@ -398,10 +398,11 @@ function get_json(path) {
 }
 
 // Get the JSON for the datasets
-var gcs = get_json('./gcs.json');
-var gecko = get_json('./gecko.json');
-var genomicsEngland = get_json('./genomics-england.json');
-var vukuzazi = get_json('./vukuzazi.json')
+var gcs = get_json('./gcs-data.json');
+var gecko = get_json('./gecko-data.json');
+var genomicsEngland = get_json('./genomics-england-data.json');
+var saprin = get_json('./saprin-data.json');
+var vukuzazi = get_json('./vukuzazi-data.json');
 
 // Get the JSON for the aggregations
 var geckoExt = get_json('./gecko-ext.json');
@@ -414,6 +415,7 @@ var allDataSets = new Map();
 allDataSets.set("CINECA", gecko);
 allDataSets.set("Genomics England", genomicsEngland);
 allDataSets.set("GCS", gcs);
+allDataSets.set("SAPRIN", saprin);
 allDataSets.set("Vukuzazi", vukuzazi);
 
 // Create the tables

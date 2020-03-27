@@ -11,6 +11,7 @@
 		"obo": "http://purl.obolibrary.org/obo/",
 		"owl": "http://www.w3.org/2002/07/owl#",
 		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"SAPRIN": "http://example.com/SAPRIN_",
 		"VZ": "http://example.com/VZ_"
 	}
 }
