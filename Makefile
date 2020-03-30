@@ -52,7 +52,7 @@ ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 
 ### Pre-build Tasks
 
-build:
+build build/ext:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -67,7 +67,12 @@ build/robot-validate.jar: | build
 build/robot-rdfxml.jar: | build
 	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/mireot-rdfxml/lastSuccessfulBuild/artifact/bin/robot.jar
 
+build/properties.owl: src/properties.tsv | build/robot.jar
+	$(ROBOT) template --template $< --output $@
+
 ### GECKO Tasks
+
+# GECKO from CINECA
 
 data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
@@ -75,17 +80,7 @@ data/cineca.tsv:
 build/gecko.tsv: src/convert/gecko.py data/cineca.tsv src/gecko/index.tsv | build
 	python3 $^ $@
 
-build/properties.owl: src/properties.tsv | build/robot.jar
-	$(ROBOT) template --template $< --output $@
-
-build/gecko.owl: build/properties.owl build/gecko.tsv metadata/gecko.ttl | build/robot.jar
-	$(ROBOT) template --input $< \
-	--merge-before \
-	--template $(word 2,$^) \
-	merge --input $(word 3,$^) \
-	--include-annotations true \
-	annotate --ontology-iri "http://example.com/gecko.owl" \
-	--output $@
+# NCIT Module - NCIT terms that have been mapped to GECKO terms
 
 .PRECIOUS: build/ncit.owl.gz
 build/ncit.owl.gz: | build/robot.jar
@@ -100,7 +95,51 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 	$(ROBOT_RDFXML) extract --input $< \
 	--term-file $(word 2,$^) \
 	--method rdfxml \
-	--intermediates minimal --output $@ 
+	--intermediates minimal --output $@
+
+# GECKO External - OBO terms used for IHCC mappings
+
+build/gecko-mapping.tsv: | build
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
+
+build/gecko-terms.txt: build/gecko-mapping.tsv
+	tail -n+2 $< | awk '{ print $$4 }' FS='\t' | awk '!seen[$$0]++' > $@
+
+build/ext/cmo.owl build/ext/hp.owl build/ext/chebi.owl.gz: | build/ext
+	curl -Lk -o $@ http://purl.obolibrary.org/obo/$(notdir $@)
+
+EXT_MODS := build/ext/cmo-module.owl build/ext/hp-module.owl build/ext/chebi-module.owl
+
+build/ext/cmo-module.owl: build/ext/cmo.owl build/gecko-terms.txt src/gecko/measurement.ru | build/ext build/robot.jar
+	$(ROBOT) extract --input $< \
+	--method MIREOT \
+	--lower-terms $(word 2,$^) \
+	--intermediates none \
+	query --update $(word 3,$^) \
+	--output $@
+
+build/ext/hp-module.owl: build/ext/hp.owl build/gecko-terms.txt src/gecko/clinical-finding.ru | build/ext build/robot.jar
+	$(ROBOT) extract --input $< \
+	--method MIREOT \
+	--lower-terms $(word 2,$^) \
+	--intermediates none \
+	query --update $(word 3,$^) \
+	--output $@
+
+build/ext/chebi-module.owl: build/ext/chebi.owl.gz build/gecko-terms.txt src/gecko/exposure-event.ru | build/ext build/robot.jar
+	$(ROBOT_RDFXML) extract --input $< \
+	--method RDFXML \
+	--term-file $(word 2,$^) \
+	--intermediates none \
+	query --update $(word 3,$^) \
+	--output $@
+
+build/ext/gecko-ext.owl: src/gecko/gecko-upper.ttl $(EXT_MODS) | build/robot.jar
+	$(ROBOT) merge --input $< \
+	--input $(word 2,$^) \
+	--input $(word 3,$^) \
+	--input $(word 4,$^) \
+	--output $@
 
 
 ### Genomics England Tasks
@@ -111,13 +150,6 @@ data/genomics-england.xlsx:
 build/genomics-england.tsv: src/convert/genomics-england.py data/genomics-england.xlsx | build
 	python3 $^ $@
 
-build/genomics-england.owl: metadata/genomics-england.ttl build/genomics-england.tsv | build/robot.jar
-	$(ROBOT) template --input $< \
-	--merge-before \
-	--template $(word 2,$^) \
-	annotate --ontology-iri "http://example.com/genomics-england.owl" \
-	--output $@
-
 
 ### Golestan Cohort Study (GCS) Tasks
 
@@ -126,15 +158,6 @@ data/golestan-cohort-study.xlsx:
 
 build/gcs.tsv: src/convert/golestan-cohort-study.py data/golestan-cohort-study.xlsx | build
 	python3 $^ $@
-
-build/gcs.owl: build/properties.owl build/gcs.tsv metadata/gcs.ttl | build/robot.jar
-	$(ROBOT) template --input $< \
-	--merge-before \
-	--template $(word 2,$^) \
-	merge --input $(word 3,$^) \
-	--include-annotations true \
-	annotate --ontology-iri "http://example.com/gcs.owl" \
-	--output $@
 
 
 ### SAPRIN Tasks
@@ -145,15 +168,6 @@ data/saprin.tsv:
 build/saprin.tsv: src/convert/saprin.py data/saprin.tsv | build
 	python3 $^ $@
 
-build/saprin.owl: build/properties.owl build/saprin.tsv metadata/saprin.ttl | build/robot.jar
-	$(ROBOT) template --input $< \
-	--merge-before \
-	--template $(word 2,$^) \
-	merge --input $(word 3,$^) \
-	--include-annotations true \
-	annotate --ontology-iri "http://example.com/saprin.owl" \
-	--output $@
-
 
 ### Vukuzazi Tasks
 
@@ -163,11 +177,18 @@ data/vukuzazi.xlsx:
 build/vukuzazi.tsv: src/convert/vukuzazi.py data/vukuzazi.xlsx | build
 	python3 $^ $@
 
-build/vukuzazi.owl: metadata/vukuzazi.ttl build/vukuzazi.tsv | build/robot.jar
+
+### Templates -> OWL 
+
+ONTS := build/gecko.owl build/gcs.owl build/genomics-england.owl build/saprin.owl build/vukuzazi.owl
+
+build/%.owl: build/properties.owl build/%.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
-	annotate --ontology-iri "http://example.com/vukuzazi.owl" \
+	merge --input $(word 3,$^) \
+	--include-annotations true \
+	annotate --ontology-iri "http://example.com/$(notdir $@)" \
 	--output $@
 
 
@@ -190,30 +211,30 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 ### Browser
 
-build/categories.tsv: | build
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
-
-build/categories.json: src/tsv2json.py build/categories.tsv
-	python3 $^ > $@
-
-build/gecko.json: build/gecko.owl | build/robot.jar
+build/gecko-ext.json: build/ext/gecko-ext.owl | build/robot.jar
 	$(ROBOT) export \
 	--input $< \
-	--header "ID|LABEL|definition|question description|see also|subclasses" \
+	--header "ID|LABEL|definition|subclasses" \
 	--sort "LABEL" \
 	--export $@
 
-build/genomics-england.json: build/genomics-england.owl | build/robot.jar
+build/gecko-mapping.json: src/tsv2json.py build/gecko-mapping.tsv
+	python3 $^ > $@
+
+DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/saprin-data.json build/vukuzazi-data.json
+
+build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
 	--input $< \
-	--header "ID|LABEL|definition" \
-	--sort "ID|LABEL" \
+	--header "ID|LABEL|definition|question description|value|see also" \
+	--sort "LABEL" \
 	--export $@
 
 build/index.html: src/index.html | build
 	cp $< $@
 
-BROWSER := build/index.html build/gecko.json build/genomics-england.json
+BROWSER := build/index.html build/gecko-ext.json build/gecko-mapping.json $(DATA)
+browser: $(BROWSER)
 
 serve: $(BROWSER)
 	cd build && python3 -m http.server 8000
