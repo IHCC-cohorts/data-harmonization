@@ -96,17 +96,38 @@ function createIDMap(data) {
 // Create map of category -> IDs
 function createCategoryMap(data) {
     let map = new Map();
-    for (var i = 0; i < data.length; i++) {
+    var len = data.length;
+    for (var i = 0; i < len; i++) {
         var node = data[i];
         var thisID = node['Field ID'].trim();
         var thisCategory = node['GECKO ID'].trim();
 
-        var ids = [];
-        if (Array.from(map.keys()).indexOf(thisCategory) >= 0) {
-            ids = map.get(thisCategory);
+        // Support for multiple categories
+        var allCats = []
+        if (thisCategory.includes(' ')) {
+            var cats = thisCategory.split(' ');
+            var catLen = cats.length
+            for (var c = 0; c < catLen; c++) {
+                var cat = cats[c];
+                if (cat == 'and' || cat == 'or') {
+                    continue;
+                }
+                allCats.push(cat);
+            }
+        } else {
+            allCats.push(thisCategory);
         }
-        ids.push(thisID);
-        map.set(thisCategory, ids);
+
+        var catLen = allCats.length;
+        for (var c = 0; c < catLen; c++) {
+            var cat = allCats[c];
+            var ids = [];
+            if (Array.from(map.keys()).indexOf(cat) >= 0) {
+                ids = map.get(cat);
+            }
+            ids.push(thisID);
+            map.set(cat, ids);
+        }
     }
     return map;
 }
@@ -401,6 +422,7 @@ function get_json(path) {
 var gcs = get_json('./gcs-data.json');
 var gecko = get_json('./gecko-data.json');
 var genomicsEngland = get_json('./genomics-england-data.json');
+var koges = get_json('./koges-data.json');
 var saprin = get_json('./saprin-data.json');
 var vukuzazi = get_json('./vukuzazi-data.json');
 
@@ -415,6 +437,7 @@ var allDataSets = new Map();
 allDataSets.set("CINECA", gecko);
 allDataSets.set("Genomics England", genomicsEngland);
 allDataSets.set("GCS", gcs);
+allDataSets.set("KoGES", koges);
 allDataSets.set("SAPRIN", saprin);
 allDataSets.set("Vukuzazi", vukuzazi);
 

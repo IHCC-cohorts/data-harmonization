@@ -22,6 +22,11 @@
 #   [term table](build/gcs.html),
 #   [tree view](build/gcs-tree.html),
 #   [gcs.owl](build/gcs.owl)
+# - Korean Genome and Epidemiology Study (KoGES)
+#   [source document](https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view),
+#   [term table](build/koges.html),
+#   [tree view](build/koges-tree.html),
+#   [koges.owl](build/koges.owl)
 # - SAPRIN
 #   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
 #   [term table](build/saprin.html),
@@ -50,6 +55,15 @@ SHELL := bash
 ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 
+# Detect the OS and provide proper command
+# WARNING - will not work with Windows OS
+UNAME = $(shell uname)
+ifeq ($(UNAME), Darwin)
+	SED = sed -i .bak
+else
+	SED = sed -i
+endif
+
 ### Pre-build Tasks
 
 build build/ext:
@@ -77,7 +91,7 @@ build/properties.owl: src/properties.tsv | build/robot.jar
 data/cineca.tsv:
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4/export?format=tsv"
 
-build/gecko.tsv: src/convert/gecko.py data/cineca.tsv src/gecko/index.tsv | build
+build/gecko.tsv: src/convert/gecko.py data/cineca.tsv src/indexes/gecko.tsv | build
 	python3 $^ $@
 
 # NCIT Module - NCIT terms that have been mapped to GECKO terms
@@ -102,20 +116,23 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 build/gecko-mapping.tsv: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
 
-build/gecko-terms.txt: build/gecko-mapping.tsv
-	tail -n+2 $< | awk '{ print $$4 }' FS='\t' | awk '!seen[$$0]++' > $@
+build/gecko-terms.txt: src/gecko/parse-mappings.py build/gecko-mapping.tsv
+	python3 $^ $@
 
 build/ext/cmo.owl build/ext/hp.owl build/ext/chebi.owl.gz: | build/ext
 	curl -Lk -o $@ http://purl.obolibrary.org/obo/$(notdir $@)
 
 EXT_MODS := build/ext/cmo-module.owl build/ext/hp-module.owl build/ext/chebi-module.owl
 
+# CMO has weird escape characters that break Jena - workaround using `sed`
 build/ext/cmo-module.owl: build/ext/cmo.owl build/gecko-terms.txt src/gecko/measurement.ru | build/ext build/robot.jar
 	$(ROBOT) extract --input $< \
 	--method MIREOT \
 	--lower-terms $(word 2,$^) \
-	--intermediates none \
-	query --update $(word 3,$^) \
+	--intermediates none --output $@
+	$(SED) 's/\\//g' $@ && rm -rf $@.bak
+	$(ROBOT) query --input $@ \
+	--update $(word 3,$^) \
 	--output $@
 
 build/ext/hp-module.owl: build/ext/hp.owl build/gecko-terms.txt src/gecko/clinical-finding.ru | build/ext build/robot.jar
@@ -160,6 +177,15 @@ build/gcs.tsv: src/convert/golestan-cohort-study.py data/golestan-cohort-study.x
 	python3 $^ $@
 
 
+### KoGES Tasks
+
+data/koges.tsv:
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1hPcCzjFWHJ7iiqMHBpuodFCrrTvSmCKfQu0f93JPhU8/export?format=tsv"
+
+build/koges.tsv: src/convert/koges.py data/koges.tsv src/indexes/koges.tsv | build
+	python3 $^ $@
+
+
 ### SAPRIN Tasks
 
 data/saprin.tsv:
@@ -180,7 +206,7 @@ build/vukuzazi.tsv: src/convert/vukuzazi.py data/vukuzazi.xlsx | build
 
 ### Templates -> OWL 
 
-ONTS := build/gecko.owl build/gcs.owl build/genomics-england.owl build/saprin.owl build/vukuzazi.owl
+ONTS := build/gecko.owl build/gcs.owl build/genomics-england.owl build/koges.owl build/saprin.owl build/vukuzazi.owl
 
 build/%.owl: build/properties.owl build/%.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
@@ -221,7 +247,7 @@ build/gecko-ext.json: build/ext/gecko-ext.owl | build/robot.jar
 build/gecko-mapping.json: src/tsv2json.py build/gecko-mapping.tsv
 	python3 $^ > $@
 
-DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/saprin-data.json build/vukuzazi-data.json
+DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json
 
 build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
@@ -245,6 +271,7 @@ serve: $(BROWSER)
 .PHONY: refresh
 refresh:
 	rm -rf data/cineca.tsv
+	rm -rf data/koges.tsv
 	rm -rf data/saprin.tsv
 	touch data/genomics-england.xlsx
 	touch data/golestan-cohort-study.xlsx
@@ -259,6 +286,7 @@ all: build/gecko.html build/gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
 all: build/gcs.html build/gcs-tree.html
+all: build/koges.html build/koges-tree.html
 all: build/saprin.html build/saprin-tree.html
 all: build/vukuzazi.html build/vukuzazi-tree.html
 all: $(BROWSER)
