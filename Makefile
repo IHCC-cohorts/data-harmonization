@@ -125,7 +125,7 @@ build/ext/cmo.owl build/ext/hp.owl build/ext/chebi.owl.gz: | build/ext
 EXT_MODS := build/ext/cmo-module.owl build/ext/hp-module.owl build/ext/chebi-module.owl
 
 # CMO has weird escape characters that break Jena - workaround using `sed`
-build/ext/cmo-module.owl: build/ext/cmo.owl build/gecko-terms.txt src/gecko/measurement.ru | build/ext build/robot.jar
+build/ext/cmo-module.owl: build/ext/cmo.owl build/gecko-terms.txt src/gecko/measurement.ru | build/ext build/robot-rdfxml.jar
 	$(ROBOT) extract --input $< \
 	--method MIREOT \
 	--lower-terms $(word 2,$^) \
