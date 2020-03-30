@@ -23,10 +23,10 @@
 #   [tree view](build/gcs-tree.html),
 #   [gcs.owl](build/gcs.owl)
 # - Korean Genome and Epidemiology Study (KoGES)
-#	[source document](https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view),
-#	[term table](build/koges.html),
-#	[tree view](build/koges-tree.html),
-#	[koges.owl](build/koges.owl)
+#   [source document](https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view),
+#   [term table](build/koges.html),
+#   [tree view](build/koges-tree.html),
+#   [koges.owl](build/koges.owl)
 # - SAPRIN
 #   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
 #   [term table](build/saprin.html),
