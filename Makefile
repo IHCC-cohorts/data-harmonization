@@ -119,7 +119,7 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 
 # GECKO External - OBO terms used for IHCC mappings
 
-build/mapping/gecko-mapping.xlsx: | build
+build/mapping/gecko-mapping.xlsx: | build/mapping
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
 build/mapping/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
