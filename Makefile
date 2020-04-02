@@ -122,13 +122,13 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 build/mapping/gecko-mapping.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
-build/mapping/index.tsv: src/xlsx2tsv.py build/gecko-mapping.xlsx | build/mapping
+build/mapping/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Index > $@
 
-build/mapping/properties.tsv: src/xlsx2tsv.py build/gecko-mapping.xlsx | build/mapping
+build/mapping/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Properties > $@
 
-build/mapping/koges.tsv: src/xlsx2tsv.py build/gecko-mapping.xlsx | build/mapping
+build/mapping/koges.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ KoGES > $@
 
 build/mapping/index.owl: build/mapping/properties.tsv build/mapping/index.tsv
