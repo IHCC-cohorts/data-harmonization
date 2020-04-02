@@ -14,6 +14,9 @@
 #     - GECKO NCIT
 #       [tree view](build/ncit-module-tree.html),
 #       [ncit-module.owl](build/ncit-module.owl)
+#     - GECKO full 
+#       [tree view](build/gecko-full-tree.html),
+#       [gecko-full.owl](build/gecko-full.owl)
 # - Genomics England
 #   [term table](build/genomics-england.html),
 #   [tree view](build/genomics-england-tree.html),
@@ -27,6 +30,9 @@
 #   [term table](build/koges.html),
 #   [tree view](build/koges-tree.html),
 #   [koges.owl](build/koges.owl)
+#     - KoGES to GECKO mapping
+#       [tree view](build/koges-to-gecko-tree.html),
+#       [koges-to-gecko.owl](build/koges-to-gecko.owl)
 # - SAPRIN
 #   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
 #   [term table](build/saprin.html),
@@ -66,7 +72,7 @@ endif
 
 ### Pre-build Tasks
 
-build build/ext:
+build build/mapping:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -113,50 +119,36 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 
 # GECKO External - OBO terms used for IHCC mappings
 
-build/gecko-mapping.tsv: | build
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=tsv"
+build/mapping/gecko-mapping.xlsx: | build
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
-build/gecko-terms.txt: src/gecko/parse-mappings.py build/gecko-mapping.tsv
-	python3 $^ $@
+build/mapping/index.tsv: src/xlsx2tsv.py build/gecko-mapping.xlsx | build/mapping
+	python3 $^ Index > $@
 
-build/ext/cmo.owl build/ext/hp.owl build/ext/chebi.owl.gz: | build/ext
-	curl -Lk -o $@ http://purl.obolibrary.org/obo/$(notdir $@)
+build/mapping/properties.tsv: src/xlsx2tsv.py build/gecko-mapping.xlsx | build/mapping
+	python3 $^ Properties > $@
 
-EXT_MODS := build/ext/cmo-module.owl build/ext/hp-module.owl build/ext/chebi-module.owl
+build/mapping/koges.tsv: src/xlsx2tsv.py build/gecko-mapping.xlsx | build/mapping
+	python3 $^ KoGES > $@
 
-# CMO has weird escape characters that break Jena - workaround using `sed`
-build/ext/cmo-module.owl: build/ext/cmo.owl build/gecko-terms.txt src/gecko/measurement.ru | build/ext build/robot-rdfxml.jar
-	$(ROBOT) extract --input $< \
-	--method MIREOT \
-	--lower-terms $(word 2,$^) \
-	--intermediates none --output $@
-	$(SED) 's/\\//g' $@ && rm -rf $@.bak
-	$(ROBOT) query --input $@ \
-	--update $(word 3,$^) \
+build/mapping/index.owl: build/mapping/properties.tsv build/mapping/index.tsv
+	$(ROBOT) template --template $< \
+	template --merge-before \
+	--template $(word 2,$^) \
 	--output $@
 
-build/ext/hp-module.owl: build/ext/hp.owl build/gecko-terms.txt src/gecko/clinical-finding.ru | build/ext build/robot.jar
-	$(ROBOT) extract --input $< \
-	--method MIREOT \
-	--lower-terms $(word 2,$^) \
-	--intermediates none \
-	query --update $(word 3,$^) \
-	--output $@
-
-build/ext/chebi-module.owl: build/ext/chebi.owl.gz build/gecko-terms.txt src/gecko/exposure-event.ru | build/ext build/robot.jar
-	$(ROBOT_RDFXML) extract --input $< \
-	--method RDFXML \
-	--term-file $(word 2,$^) \
-	--intermediates none \
-	query --update $(word 3,$^) \
-	--output $@
-
-build/ext/gecko-ext.owl: src/gecko/gecko-upper.ttl $(EXT_MODS) | build/robot.jar
+build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
 	$(ROBOT) merge --input $< \
 	--input $(word 2,$^) \
-	--input $(word 3,$^) \
-	--input $(word 4,$^) \
+	reason reduce \
 	--output $@
+
+build/koges-to-gecko.owl: build/gecko-full.owl build/mapping/koges.tsv build/koges.owl | build/robot.jar
+	$(ROBOT) template --merge-before \
+	--input $< \
+	--template $(word 2,$^) \
+	merge --input $(word 3,$^) \
+	reason reduce --output $@
 
 
 ### Genomics England Tasks
@@ -237,7 +229,7 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 ### Browser
 
-build/gecko-ext.json: build/ext/gecko-ext.owl | build/robot.jar
+build/gecko-ext.json: build/mapping/gecko-ext.owl | build/robot.jar
 	$(ROBOT) export \
 	--input $< \
 	--header "ID|LABEL|definition|subclasses" \
@@ -283,6 +275,7 @@ clean:
 
 .PHONY: all
 all: build/gecko.html build/gecko-tree.html
+all: build/gecko-full-tree.html build/koges-to-gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
 all: build/gcs.html build/gcs-tree.html
