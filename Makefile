@@ -106,8 +106,8 @@ build/gecko.tsv: src/convert/gecko.py data/cineca.tsv src/indexes/gecko.tsv | bu
 # NCIT Module - NCIT terms that have been mapped to GECKO terms
 
 .PRECIOUS: build/ncit.owl.gz
-build/ncit.owl.gz: | build/robot.jar
-	$(ROBOT) convert --input-iri http://purl.obolibrary.org/obo/ncit.owl --output $@
+build/ncit.owl.gz: | build
+	curl -L http://purl.obolibrary.org/obo/ncit.owl | gzip > $@
 
 build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-annotation-properites.txt | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
