@@ -33,7 +33,7 @@ def main():
 
 
 def to_curie(iri):
-    return iri.replace('http://example.com/', '').replace('_', ':')
+    return iri.replace('http://example.com/', '').replace('_', ':', 1)
 
 
 if __name__ == '__main__':

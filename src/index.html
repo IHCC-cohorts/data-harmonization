@@ -357,7 +357,6 @@ function filterTable(catMap, checked) {
             }
             var idLen = ids.length;
             for (k = 0; k < idLen; k++) {
-                console.log(ids[k]);
                 document.getElementById(ids[k]).style.display = "";
             }
         }
@@ -448,10 +447,8 @@ for (var i = 0; i < maps.length; i++) {
             let list1 = m[key];
             let targetList;
             if (catMap.hasOwnProperty(key)) {
-                console.log(key);
                 targetList = catMap[key];
             } else {
-                console.log('NO');
                 targetList = [];
             }
             catMap[key] = targetList.concat(list1);

@@ -271,7 +271,7 @@ build/mapping/%-gecko.ttl: build/mapping/gecko-%.ttl build/mapping/%-mapping.owl
 
 # CSV of cohort terms -> all ancestor GECKO terms
 
-build/mapping/%-mapping.csv: build/mapping/%-to-gecko.ttl src/queries/get-cineca-%.rq | build/robot.jar
+build/mapping/%-mapping.csv: build/mapping/%-gecko.ttl src/queries/get-cineca-%.rq | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
 # JSON of ancestor GECKO term (key) -> list of cohort terms (value)
@@ -306,7 +306,7 @@ build/cineca.json: src/json/cineca.json
 build/index.html: src/index.html | build
 	cp $< $@
 
-BROWSER := build/index.html build/koges-mapping.json build/gcs-mapping.json $(DATA)
+BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json $(DATA)
 browser: $(BROWSER)
 
 serve: $(BROWSER)
