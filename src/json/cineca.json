@@ -1,0 +1,100 @@
+[
+  {
+    "ID": "GECKO:0000015",
+    "LABEL": [
+      "sample type"
+    ],
+    "subclasses": [
+      "blood",
+      "saliva",
+      "stool",
+      "urine"
+    ]
+  },
+  {
+    "ID": "GECKO:0000056",
+    "LABEL": [
+      "questionnaire/survey data"
+    ],
+    "subclasses": [
+      "diseases",
+      "life stage/time point",
+      "lifestyle and behaviours",
+      "medication",
+      "non-pharmacological interventions",
+      "physician/practitioner info",
+      "physiological measurements",
+      "signs and symptoms",
+      "socio-demographic and economic characteristics"
+    ]
+  },
+  {
+    "ID": "GECKO:0000057",
+    "LABEL": [
+      "socio-demographic and economic characteristics"
+    ],
+    "subclasses": [
+      "age/birthdate",
+      "biological sex",
+      "birthplace",
+      "education",
+      "ethnicity/race",
+      "family and household structure",
+      "gender",
+      "genealogy",
+      "residence"
+    ]
+  },
+  {
+    "ID": "GECKO:0000067",
+    "LABEL": [
+      "lifestyle and behaviours"
+    ],
+    "subclasses": [
+      "alcohol",
+      "nutrition",
+      "physical activity",
+      "sleep",
+      "tobacco"
+    ]
+  },
+  {
+    "ID": "GECKO:0000074",
+    "LABEL": [
+      "diseases"
+    ],
+    "subclasses": [
+      "blood-related disorders",
+      "circulatory system",
+      "digestive system",
+      "endocrine/nutritional/metabolic disorders",
+      "mental and behaviour disorders",
+      "nervous system",
+      "oncological",
+      "respiratory system"
+    ]
+  },
+  {
+    "ID": "GECKO:0000084",
+    "LABEL": [
+      "physiological measurements"
+    ],
+    "subclasses": [
+      "anthropometry",
+      "circulation and respiration"
+    ]
+  },
+  {
+    "ID": "GECKO:0000093",
+    "LABEL": [
+      "medication"
+    ],
+    "subclasses": [
+      "administration method",
+      "associated disease(s)",
+      "drug response(s)",
+      "posology",
+      "prescription"
+    ]
+  }
+]

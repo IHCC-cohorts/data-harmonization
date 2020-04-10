@@ -25,14 +25,17 @@
 #   [term table](build/gcs.html),
 #   [tree view](build/gcs-tree.html),
 #   [gcs.owl](build/gcs.owl)
+#     - GCS to GECKO mapping
+#        [tree view](build/gcs-gecko-tree.html),
+#        [gcs-gecko.ttl](build/gcs-gecko.ttl)
 # - Korean Genome and Epidemiology Study (KoGES)
 #   [source document](https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view),
 #   [term table](build/koges.html),
 #   [tree view](build/koges-tree.html),
 #   [koges.owl](build/koges.owl)
 #     - KoGES to GECKO mapping
-#       [tree view](build/koges-to-gecko-tree.html),
-#       [koges-to-gecko.owl](build/koges-to-gecko.owl)
+#       [tree view](build/koges-gecko-tree.html),
+#       [koges-gecko.ttl](build/koges-gecko.ttl)
 # - SAPRIN
 #   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
 #   [term table](build/saprin.html),
@@ -117,39 +120,6 @@ build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfx
 	--method rdfxml \
 	--intermediates minimal --output $@
 
-# GECKO External - OBO terms used for IHCC mappings
-
-build/mapping/gecko-mapping.xlsx: | build/mapping
-	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
-
-build/mapping/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
-	python3 $^ Index > $@
-
-build/mapping/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
-	python3 $^ Properties > $@
-
-build/mapping/koges.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
-	python3 $^ KoGES > $@
-
-build/mapping/index.owl: build/mapping/properties.tsv build/mapping/index.tsv
-	$(ROBOT) template --template $< \
-	template --merge-before \
-	--template $(word 2,$^) \
-	--output $@
-
-build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
-	$(ROBOT) merge --input $< \
-	--input $(word 2,$^) \
-	reason reduce \
-	--output $@
-
-build/koges-to-gecko.owl: build/gecko-full.owl build/mapping/koges.tsv build/koges.owl | build/robot.jar
-	$(ROBOT) template --merge-before \
-	--input $< \
-	--template $(word 2,$^) \
-	merge --input $(word 3,$^) \
-	reason reduce --output $@
-
 
 ### Genomics England Tasks
 
@@ -209,6 +179,9 @@ build/%.owl: build/properties.owl build/%.tsv metadata/%.ttl | build/robot.jar
 	annotate --ontology-iri "http://example.com/$(notdir $@)" \
 	--output $@
 
+build/gecko.ttl: build/gecko.owl | build/robot.jar
+	$(ROBOT) convert --input $< --output $@
+
 
 ### Trees and Tables
 
@@ -227,31 +200,113 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 	--output-dir build/
 
 
-### Browser
+### GECKO Mapping Tasks
 
-build/gecko-ext.json: build/mapping/gecko-ext.owl | build/robot.jar
-	$(ROBOT) export \
+build/mapping/gecko-mapping.xlsx: | build/mapping
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
+
+build/mapping/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ Index > $@
+
+build/mapping/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ Properties > $@
+
+build/mapping/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ KoGES > $@
+
+build/mapping/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ GCS > $@
+
+# GECKO plus OBO terms
+
+build/mapping/index.owl: build/mapping/properties.tsv build/mapping/index.tsv
+	$(ROBOT) template --template $< \
+	template --merge-before \
+	--template $(word 2,$^) \
+	--output $@
+
+build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
+	$(ROBOT) merge --input $< \
+	--input $(word 2,$^) \
+	reason reduce \
+	--output $@
+
+# Other cohorts -> GECKO mapping
+
+MAPPINGS := build/mapping/koges-gecko.ttl build/mapping/gcs-gecko.ttl
+
+# Cohort terms + GECKO terms from template
+# The GECKO terms are just referenced and do not have structure/annotations
+
+build/mapping/%-mapping.owl: build/gecko-full.owl build/mapping/%-mapping.tsv build/%.owl | build/robot.jar
+	$(ROBOT) template \
 	--input $< \
-	--header "ID|LABEL|definition|subclasses" \
-	--sort "LABEL" \
-	--export $@
+	--template $(word 2,$^) \
+	merge --input $(word 3,$^) \
+	reason reduce --output $@
 
-build/gecko-mapping.json: src/tsv2json.py build/gecko-mapping.tsv
-	python3 $^ > $@
+# List of GECKO terms used by the cohort
+
+build/mapping/gecko-%.txt: build/mapping/%-mapping.owl src/queries/get-extract-terms.rq | build/robot.jar
+	$(ROBOT) query \
+	--input $< \
+	--query $(word 2,$^) $@
+
+# GECKO terms used by the cohort as TTL
+
+build/mapping/gecko-%.ttl: build/gecko-full.owl build/mapping/gecko-%.txt | build/robot.jar
+	$(ROBOT) extract --input $< \
+	--method MIREOT \
+	--lower-terms $(word 2,$^) \
+	--output $@
+
+# Cohort terms + GECKO terms (full version)
+
+build/mapping/%-gecko.ttl: build/mapping/gecko-%.ttl build/mapping/%-mapping.owl | build/robot.jar
+	$(ROBOT) merge --input $< \
+	--input $(word 2,$^) \
+	relax reduce \
+	remove --axioms equivalent \
+	--output $@
+
+# CSV of cohort terms -> all ancestor GECKO terms
+
+build/mapping/%-mapping.csv: build/mapping/%-to-gecko.ttl src/queries/get-cineca-%.rq | build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
+# JSON of ancestor GECKO term (key) -> list of cohort terms (value)
+# This is used to drive the filter functionality in the browser
+
+build/%-mapping.json: src/json/generate_mapping_json.py build/mapping/%-mapping.csv
+	python3 $^ $@
+
+# Top-level cohort data
+
+build/mapping/data.json: src/json/generate_cohort_json.py data/member_cohorts.csv | $(MAPPINGS)
+	python3 $^ $@
+
+
+### Browser
 
 DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json
 
 build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
 	--input $< \
-	--header "ID|LABEL|definition|question description|value|see also" \
+	--header "ID|LABEL|definition|question description|value|see also|subclasses" \
 	--sort "LABEL" \
 	--export $@
+
+# GECKO without OBO terms = CINECA
+# This is used to drive aggregations
+# TODO - automatically create this
+build/cineca.json: src/json/cineca.json
+	cp $< $@
 
 build/index.html: src/index.html | build
 	cp $< $@
 
-BROWSER := build/index.html build/gecko-ext.json build/gecko-mapping.json $(DATA)
+BROWSER := build/index.html build/koges-mapping.json build/gcs-mapping.json $(DATA)
 browser: $(BROWSER)
 
 serve: $(BROWSER)
