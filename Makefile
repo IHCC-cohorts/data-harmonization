@@ -27,7 +27,7 @@
 #   [gcs.owl](build/gcs.owl)
 #     - GCS to GECKO mapping
 #        [tree view](build/gcs-gecko-tree.html),
-#        [gcs-gecko.ttl](build/gcs-gecko.ttl)
+#        [gcs-gecko.owl](build/gcs-gecko.owl)
 # - Korean Genome and Epidemiology Study (KoGES)
 #   [source document](https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view),
 #   [term table](build/koges.html),
@@ -35,7 +35,7 @@
 #   [koges.owl](build/koges.owl)
 #     - KoGES to GECKO mapping
 #       [tree view](build/koges-gecko-tree.html),
-#       [koges-gecko.ttl](build/koges-gecko.ttl)
+#       [koges-gecko.owl](build/koges-gecko.owl)
 # - SAPRIN
 #   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
 #   [term table](build/saprin.html),
@@ -261,6 +261,7 @@ build/mapping/gecko-%.ttl: build/gecko-full.owl build/mapping/gecko-%.txt | buil
 	--output $@
 
 # Cohort terms + GECKO terms (full version)
+# TTL version of mapping for loading into rdflib
 
 build/mapping/%-gecko.ttl: build/mapping/gecko-%.ttl build/mapping/%-mapping.owl | build/robot.jar
 	$(ROBOT) merge --input $< \
@@ -268,6 +269,11 @@ build/mapping/%-gecko.ttl: build/mapping/gecko-%.ttl build/mapping/%-mapping.owl
 	relax reduce \
 	remove --axioms equivalent \
 	--output $@
+
+# OWL version of mapping
+
+build/%-gecko.owl: build/mapping/%-gecko.ttl
+	$(ROBOT) convert --input $< --output $@
 
 # CSV of cohort terms -> all ancestor GECKO terms
 
@@ -330,7 +336,7 @@ clean:
 
 .PHONY: all
 all: build/gecko.html build/gecko-tree.html
-all: build/gecko-full-tree.html build/koges-to-gecko-tree.html
+all: build/gecko-full-tree.html build/koges-gecko-tree.html build/gcs-gecko-tree.html
 all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
 all: build/gcs.html build/gcs-tree.html
