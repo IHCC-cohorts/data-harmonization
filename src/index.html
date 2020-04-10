@@ -97,10 +97,8 @@ function createIDMap(data) {
 function createCategoryMap(data) {
     let map = new Map();
     var len = data.length;
+    var geckoIDs = Array.from(map.keys())
     for (var i = 0; i < len; i++) {
-        var node = data[i];
-        var thisID = node['Field ID'].trim();
-        var thisCategory = node['GECKO ID'].trim();
 
         // Support for multiple categories
         var allCats = []
@@ -133,8 +131,8 @@ function createCategoryMap(data) {
 }
 
 // Create the aggregations div with checkboxes
-function createAggregations(data) {
-    var idMap = createIDMap(data);
+function createAggregations(data, gecko) {
+    var idMap = createIDMap(gecko);
 
     var aggs = document.getElementsByClassName("aggregations")[0];
     for (var i = 0; i < data.length; i++) {
@@ -142,7 +140,7 @@ function createAggregations(data) {
         div.setAttribute("style", "margin-bottom: 8px;");
 
         var title = document.createElement("h4");
-        title.innerHTML = data[i].LABEL;
+        title.innerHTML = data[i].LABEL[0];
         div.appendChild(title);
 
         var bucket = document.createElement("div");
@@ -198,6 +196,8 @@ function addSearchResults(tbody, source, data) {
             base = "https://ihcc.ontodev.com/branches/master/views/build/gcs-tree.html";
         } else if (source == "Vukuzazi") {
             base = "https://ihcc.ontodev.com/branches/master/views/build/vukuzazi-tree.html";
+        } else if (source == "KoGES") {
+            base = "https://ihcc.ontodev.com/branches/master/views/build/koges-tree.html";
         } else {
             base = "https://ihcc.ontodev.com/branches/master/views/build/gecko-tree.html";
         }
@@ -351,7 +351,10 @@ function filterTable(catMap, checked) {
         // Get the IDs that match each checked category and show them
         var len = checked.length;
         for (i = 0; i < len; i++) {
-            var ids = catMap.get(checked[i]);
+            var ids = catMap[checked[i]];
+            if (ids === undefined) {
+                continue;
+            }
             var idLen = ids.length;
             for (k = 0; k < idLen; k++) {
                 document.getElementById(ids[k]).style.display = "";
@@ -420,29 +423,53 @@ function get_json(path) {
 
 // Get the JSON for the datasets
 var gcs = get_json('./gcs-data.json');
-var gecko = get_json('./gecko-data.json');
-var genomicsEngland = get_json('./genomics-england-data.json');
 var koges = get_json('./koges-data.json');
-var saprin = get_json('./saprin-data.json');
-var vukuzazi = get_json('./vukuzazi-data.json');
+// var gecko = get_json('./gecko-data.json');
+// var genomicsEngland = get_json('./genomics-england-data.json');
+// var saprin = get_json('./saprin-data.json');
+// var vukuzazi = get_json('./vukuzazi-data.json');
 
 // Get the JSON for the aggregations
-var geckoExt = get_json('./gecko-ext.json');
+var gecko = get_json('./gecko-data.json');
+
 // Get the JSON that maps aggregation cats -> search results
-var categories = get_json('./gecko-mapping.json');
-var catMap = createCategoryMap(categories);
+var kogesMap = get_json('./koges-mapping.json');
+var gcsMap = get_json('./gcs-mapping.json');
+var maps = [kogesMap, gcsMap];
+
+// Merge the mappings
+var catMap = new Map();
+let key;
+for (var i = 0; i < maps.length; i++) {
+    var m = maps[i];
+    for (key in m) {
+        if (m.hasOwnProperty(key)){
+            let list1 = m[key];
+            let targetList;
+            if (catMap.hasOwnProperty(key)) {
+                targetList = catMap[key];
+            } else {
+                targetList = [];
+            }
+            catMap[key] = targetList.concat(list1);
+        }
+    }
+}
 
 // Map of dataset name to the JSON
 var allDataSets = new Map();
-allDataSets.set("CINECA", gecko);
-allDataSets.set("Genomics England", genomicsEngland);
 allDataSets.set("GCS", gcs);
 allDataSets.set("KoGES", koges);
-allDataSets.set("SAPRIN", saprin);
-allDataSets.set("Vukuzazi", vukuzazi);
+// allDataSets.set("CINECA", gecko);
+// allDataSets.set("Genomics England", genomicsEngland);
+// allDataSets.set("SAPRIN", saprin);
+// allDataSets.set("Vukuzazi", vukuzazi);
 
 // Create the tables
-createAggregations(geckoExt);
+// Use the top-level CINECA structure to drive aggregations
+// This is GECKO without OBO terms
+var cineca = get_json('./cineca.json');
+createAggregations(cineca, gecko);
 createSearchResults(allDataSets);
 
 // Event listener for check box selections

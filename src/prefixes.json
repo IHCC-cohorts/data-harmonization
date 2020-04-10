@@ -3,6 +3,7 @@
 		"CHEBI": "http://purl.obolibrary.org/obo/CHEBI_",
 		"CL": "http://purl.obolibrary.org/obo/CL_",
 		"CMO": "http://purl.obolibrary.org/obo/CMO_",
+		"EFO": "http://purl.obolibrary.org/obo/EFO_",
 		"GCS": "http://example.com/GCS_",
 		"GE": "http://example.com/GE_",
 		"GECKO": "http://example.com/GECKO_",
