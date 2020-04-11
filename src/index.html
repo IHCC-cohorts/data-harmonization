@@ -188,25 +188,27 @@ function addSearchResults(tbody, source, data) {
         dsCell.setAttribute("class", "ds-col");
         var a = document.createElement("a");
 
-        // Determine the base IRI for displaying terms
-        var base = "";
-        if (source == "Genomics England") {
-            base = "https://ihcc.ontodev.com/branches/master/views/build/genomics-england-tree.html";
-        } else if (source == "GCS") {
-            base = "https://ihcc.ontodev.com/branches/master/views/build/gcs-tree.html";
-        } else if (source == "Vukuzazi") {
-            base = "https://ihcc.ontodev.com/branches/master/views/build/vukuzazi-tree.html";
-        } else if (source == "KoGES") {
-            base = "https://ihcc.ontodev.com/branches/master/views/build/koges-tree.html";
-        } else {
-            base = "https://ihcc.ontodev.com/branches/master/views/build/gecko-tree.html";
-        }
-        a.setAttribute("href", base);
+        var cohort_page = "cohorts/" + source.toLowerCase().replace(" ", "-") + ".html";
+        a.setAttribute("href", cohort_page);
         a.innerHTML = source;
         dsCell.appendChild(a);
 
         var nameCell = document.createElement("td");
         nameCell.setAttribute("class", "name-col");
+
+        // Determine the base IRI for displaying terms
+        var base = "";
+        if (source == "Genomics England") {
+            base = "genomics-england-tree.html";
+        } else if (source == "GCS") {
+            base = "gcs-tree.html";
+        } else if (source == "Vukuzazi") {
+            base = "vukuzazi-tree.html";
+        } else if (source == "KoGES") {
+            base = "koges-tree.html";
+        } else {
+            base = "gecko-tree.html";
+        }
 
         // Create a link to the term in the tree browser
         var link = document.createElement("a");

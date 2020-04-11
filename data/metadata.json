@@ -1,0 +1,12 @@
+{
+	"Golestan Cohort Study": {
+		"id": "GCS",
+		"data_dictionary": "https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view",
+		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1184636935",
+	},
+	"Korean Genome and Epidemiology Study (KoGES)": {
+		"id": "KoGES",
+		"data_dictionary": "https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view",
+		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=737702084",
+	}
+}

@@ -6,8 +6,8 @@ from argparse import ArgumentParser, FileType
 
 master_map = {}
 
-cohorts = {'Korean Genome and Epidemiologyl Study (KoGES)': 'build/mapping/gecko-in-koges.ttl',
-           'Golestan Cohort Study': 'build/mapping/gecko-in-gcs.ttl'}
+cohorts = {'Korean Genome and Epidemiology Study (KoGES)': 'build/mapping/gecko-koges.ttl',
+           'Golestan Cohort Study': 'build/mapping/gecko-gcs.ttl'}
 
 ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
                     'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']
@@ -32,11 +32,13 @@ def main():
 
     all_data = []
     for cohort_name, file_name in cohorts.items():
+        print(cohort_name)
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
         child_to_parent = get_children(gin, 'http://example.com/GECKO_9999998')
         master_map = {}
         data = get_data(child_to_parent)
+        print(json.dumps(data) + '\n\n')
         if cohort_name in cohort_data:
             this_cohort = cohort_data[cohort_name]
             this_cohort.update(data)
@@ -140,7 +142,6 @@ def clean(dictionary):
                 list_items.append(k)
         if list_items:
             dictionary[key] = list_items
-            print(list_items)
         else:
             clean(value)
 

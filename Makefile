@@ -75,7 +75,7 @@ endif
 
 ### Pre-build Tasks
 
-build build/mapping:
+build build/mapping build/cohorts:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -312,7 +312,16 @@ build/cineca.json: src/json/cineca.json
 build/index.html: src/index.html | build
 	cp $< $@
 
-BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json $(DATA)
+# Top-level cohort data as HTML pages 
+
+COHORT_PAGES := build/cohorts/koges.html build/cohorts/gcs.html
+
+cohorts: $(COHORT_PAGES)
+
+$(COHORT_PAGES): src/create_cohort_html.py build/mapping/data.json data/metadata.json src/cohort.html.jinja2 build/cohorts
+	python3 $^
+
+BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json cohorts $(DATA)
 browser: $(BROWSER)
 
 serve: $(BROWSER)
@@ -343,4 +352,5 @@ all: build/gcs.html build/gcs-tree.html
 all: build/koges.html build/koges-tree.html
 all: build/saprin.html build/saprin-tree.html
 all: build/vukuzazi.html build/vukuzazi-tree.html
+all: build/mapping/data.json
 all: $(BROWSER)
