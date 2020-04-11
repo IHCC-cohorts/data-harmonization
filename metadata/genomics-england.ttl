@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<>
+  rdf:type owl:Ontology ;
+  dcterms:title "Genomics England Main Programme Data" ;
+  dcterms:license "TODO: The license URL" ;
+  dcterms:rights "TODO: A human-readable description of rights" ;
+  prov:wasDerivedFrom <https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195> .
