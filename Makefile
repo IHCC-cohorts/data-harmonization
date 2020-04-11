@@ -202,7 +202,6 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 ### GECKO Mapping Tasks
 
-.PHONY: build/mapping/gecko-mapping.xlsx
 build/mapping/gecko-mapping.xlsx: | build/mapping
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
@@ -335,7 +334,7 @@ serve: $(BROWSER)
 
 .PHONY: refresh
 refresh:
-	rm -rf data/cineca.tsv data/koges.tsv data/saprin.tsv $(MAP_TSV)
+	rm -rf data/cineca.tsv data/koges.tsv data/saprin.tsv build/mapping/gecko-mapping.xlsx $(MAP_TSV)
 	touch data/genomics-england.xlsx
 	touch data/golestan-cohort-study.xlsx
 	touch data/vukuzazi.xlsx
