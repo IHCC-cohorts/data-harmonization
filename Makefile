@@ -75,7 +75,7 @@ endif
 
 ### Pre-build Tasks
 
-build build/mapping:
+build build/mapping build/cohorts:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -202,7 +202,6 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 ### GECKO Mapping Tasks
 
-.PHONY: build/mapping/gecko-mapping.xlsx
 build/mapping/gecko-mapping.xlsx: | build/mapping
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
@@ -222,7 +221,7 @@ mappings/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | bui
 
 # GECKO plus OBO terms
 
-build/mapping/index.owl: build/mapping/properties.tsv build/mapping/index.tsv
+build/mapping/index.owl: mappings/properties.tsv mappings/index.tsv
 	$(ROBOT) template --template $< \
 	template --merge-before \
 	--template $(word 2,$^) \
@@ -315,7 +314,16 @@ build/cineca.json: src/json/cineca.json
 build/index.html: src/index.html | build
 	cp $< $@
 
-BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json $(DATA)
+# Top-level cohort data as HTML pages 
+
+COHORT_PAGES := build/cohorts/koges.html build/cohorts/gcs.html
+
+cohorts: $(COHORT_PAGES)
+
+$(COHORT_PAGES): src/create_cohort_html.py build/mapping/data.json data/metadata.json src/cohort.html.jinja2 build/cohorts
+	python3 $^
+
+BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json cohorts $(DATA)
 browser: $(BROWSER)
 
 serve: $(BROWSER)
@@ -326,7 +334,7 @@ serve: $(BROWSER)
 
 .PHONY: refresh
 refresh:
-	rm -rf data/cineca.tsv data/koges.tsv data/saprin.tsv $(MAP_TSV)
+	rm -rf data/cineca.tsv data/koges.tsv data/saprin.tsv build/mapping/gecko-mapping.xlsx $(MAP_TSV)
 	touch data/genomics-england.xlsx
 	touch data/golestan-cohort-study.xlsx
 	touch data/vukuzazi.xlsx
@@ -346,4 +354,5 @@ all: build/gcs.html build/gcs-tree.html
 all: build/koges.html build/koges-tree.html
 all: build/saprin.html build/saprin-tree.html
 all: build/vukuzazi.html build/vukuzazi-tree.html
+all: build/mapping/data.json
 all: $(BROWSER)

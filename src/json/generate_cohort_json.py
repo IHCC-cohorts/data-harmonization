@@ -6,8 +6,8 @@ from argparse import ArgumentParser, FileType
 
 master_map = {}
 
-cohorts = {'Korean Genome and Epidemiologyl Study (KoGES)': 'build/mapping/gecko-in-koges.ttl',
-           'Golestan Cohort Study': 'build/mapping/gecko-in-gcs.ttl'}
+cohorts = {'Korean Genome and Epidemiology Study (KoGES)': 'build/mapping/gecko-koges.ttl',
+           'Golestan Cohort Study': 'build/mapping/gecko-gcs.ttl'}
 
 ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
                     'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']
@@ -140,7 +140,6 @@ def clean(dictionary):
                 list_items.append(k)
         if list_items:
             dictionary[key] = list_items
-            print(list_items)
         else:
             clean(value)
 
