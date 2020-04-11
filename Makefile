@@ -222,7 +222,7 @@ mappings/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | bui
 
 # GECKO plus OBO terms
 
-build/mapping/index.owl: build/mapping/properties.tsv build/mapping/index.tsv
+build/mapping/index.owl: mappings/properties.tsv mappings/index.tsv
 	$(ROBOT) template --template $< \
 	template --merge-before \
 	--template $(word 2,$^) \
