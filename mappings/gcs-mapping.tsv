@@ -1,0 +1,1002 @@
+Field ID	Field Label	Definition	Class Type	GECKO Label	Comment																			
+ID	LABEL		CLASS_TYPE	C % SPLIT=|																				
+GCS:0000000	GCS																							
+GCS:ID	Identity	Identity and contact information																						
+GCS:DEMO	Demographic Info	Demographic characteristics: sex, age, ethnicity, marital status, education	equivalent	demographic data																				
+GCS:FAM	Family members	Characteristics of relatives in the household	subclass	family and household structure																				
+GCS:RESID	Residence	The residential area (urban/rural), structure of the house, and duration of residing in the house	equivalent	residence																				
+GCS:SOURCE	Water and fuel source	Water source, heat and fuel system, and cooking method																						
+GCS:JOB	Job	The names of all jobs the participant has had and the duration of work	equivalent	occupation																				
+GCS:FOOD	Food preservation and cooking	Food preservation, frying, boiling, BBQ, steaming, ‚Ä¶																						
+GCS:PROP	Properties	Transferable and non-transferable belongings and wealth score (Multiple Correspondence Analysis)																						
+GCS:MED	Medical History	Suffering from any disease at the baseline of cohort	equivalent	clinical history																				
+GCS:CC	Chief complaints	The complaints of participants from their physical or mental sufferings																						
+GCS:CANCER	Cancer History	History of cancer, site, and age diagnosed in the participant or any of his/her relatives	equivalent	clinical history of cancer																				
+GCS:SMOK	Smoking	Ever or current smoker, age of use, type, number per day and days per week	equivalent	tobacco																				
+GCS:OPIUM	Opium use	Ever or current user, age and route of use, type, time per day and days per week	equivalent	opiate use history																				
+GCS:ALC	Alcohol use	Ever or current user, age of use, type, quantity per episode and episodes per month	equivalent	alcohol																				
+GCS:DRUGCAT	Drug history (1)	The main created categories of drugs consumed by participants	equivalent	recreational drug use history																				
+GCS:DRUGDETAIL	Drug History (2)	The exact name, duration, dose, and frequency of drugs consumed	equivalent	recreational drug use history																				
+GCS:ORAL	Oral health	Decayed, filled, and missing teeth along with the age of the participant in each of these occasions	equivalent	oral health history																				
+GCS:TEA	Tea	Tea temperature, type of tea, and type of habit for drinking the tea																						
+GCS:ACTIVITY	Physical activity	The duration and intensity of physical activities during working and leasure times of the day, and Metabolic Equivalent Task (MET)	equivalent	physical activity																				
+GCS:ANIMAL	Animal contact	The age of the participant in contact with animals, the duration and intensity of animal contact, and the type of animal																						
+GCS:ANTHRO	Anthropometric measurements	Physically measured height, weight, waist circumference, hip circumference and data of pictogram	equivalent	anthropometry																				
+GCS:BP	Blood pressure measurements	Both systolic and diastolic blood pressure measured in sitting position twice from each arm	equivalent	blood pressure																				
+GCS:FFQ	Food Frequency Questionnaire	Units of food categories consumed per day	equivalent	Food Frequency Questionnaire result																				
+GCS:LAB	Lab markers	Biochemical markers																						
+GCS:PID	PID	The Unique Id for eatch participant																						
+GCS:FirstName	FirstName	The first name of participant.																						
+GCS:LastName	LastName	The last name of participant.																						
+GCS:Province	Province	Specifies the participant Province of Residence	subclass	residence																				
+GCS:District	District	Specifies the participant District of Residence	subclass	residence																				
+GCS:City	City	Specifies the participant City of Residence	subclass	residence																				
+GCS:Subdistrict	Subdistrict	Specifies the participant Subdistrict of Residence	subclass	residence																				
+GCS:Village	Village	Specifies the participant Village of Residence	subclass	residence																				
+GCS:Street	Street	Specifies the participant Street of Residence	subclass	residence																				
+GCS:Alley	Alley	Specifies the participant Alley of Residence	subclass	residence																				
+GCS:CV name	CV name	Specifies the names of cities or villages in one variable	subclass	residence																				
+GCS:City_Village	City_Village	Specifies residence in cities or villages	subclass	residence																				
+GCS:HouseNumber	HouseNumber	Specifies the participant's House Number of Residence	subclass	residence																				
+GCS:ZipCode	ZipCode	Specifies the participant's Zip Code of Residence	subclass	residence																				
+GCS:HomePhone	HomePhone	Specifies the participants Home Phone																						
+GCS:AreaCode	AreaCode	Specifies the participant's home Phone Area Code																						
+GCS:CellPhone	CellPhone	Specifies the participant's Cell phone number																						
+GCS:HealthCenter	HealthCenter	participant related to this health center(the participant covered by this health center)																						
+GCS:FamilyMemPhone	FamilyMemPhone	Specifies the phone number of one of participant's family members																						
+GCS:FamilyMemAreaCode	FamilyMemAreaCode	Specifies the area code of the phone number of one of participant's family members																						
+GCS:FamilyMemName	FamilyMemName	Specifies the name of one family member of the participant																						
+GCS:FriendName	FriendName	Specifies the name of one of friends of the participant																						
+GCS:FriendProvince	FriendProvince	Specifies the province in which the friend of the participant resides																						
+GCS:FriendDistrict	FriendDistrict	Specifies the district in which the friend of the participant resides																						
+GCS:FriendCity	FriendCity	Specifies the city in which the friend of the participant resides																						
+GCS:FriendSubdistrict	FriendSubdistrict	Specifies the subdistrict in which the friend of the participant resides																						
+GCS:FriendVillage	FriendVillage	Specifies the village in which the friend of the participant resides																						
+GCS:FriendStreet	FriendStreet	Specifies the street in which the friend of the participant resides																						
+GCS:FriendAlley	FriendAlley	Specifies the alley in which the friend of the participant resides																						
+GCS:FriendHouseNumber	FriendHouseNumber	Specifies the house number in which the friend of the participant resides																						
+GCS:FriendZipCode	FriendZipCode	Specifies the zip code in which the friend of the participant resides																						
+GCS:FriendHomePhone	FriendHomePhone	Specifies the phone number of the participant's friend																						
+GCS:FriendAreaCode	FriendAreaCode	Specifies the area code of the phone number of participant's friend																						
+GCS:FriendCellPhone	FriendCellPhone	Specifies the cell phone number of participant's friend																						
+GCS:PlaceOfInterview	PlaceOfInterview	Specifies the participant interview place																						
+GCS:InterviewPDate_Y	InterviewPDate_Y	participant year of Interview date in Shamsi format																						
+GCS:InterviewPDate_M	InterviewPDate_M	participant month of Interview date in Shamsi format																						
+GCS:InterviewPDate_D	InterviewPDate_D	participant Day of Interview date in Shamsi format																						
+GCS:Gender	Gender	Specifies the participant Gender	equivalent	gender																				
+GCS:BdatePDate_Y	BdatePDate_Y	Year of participant Birth date in Shamsi format	subclass	age/birthdate																				
+GCS:BdatePDate_M	BdatePDate_M	Month of participant Birth date in Shamsi format	subclass	age/birthdate																				
+GCS:BdatePDate_D	BdatePDate_D	Day of participant Birth date in Shamsi format	subclass	age/birthdate																				
+GCS:Age_self	Age_self	Specifies the self-report participant age in inteview time	subclass	age/birthdate																				
+GCS:Age_new	Age_new	Age calculated from birth date and interview date	subclass	age/birthdate																				
+GCS:Ethnicity	Ethnicity	Specifies the participant Ethnicity	equivalent	ethnicity/race																				
+GCS:ethnicity_new	ethnicity_new	Specifies ethnicity by Turkmen or Non-turkmen	subclass	ethnicity/race																				
+GCS:MaritalStatus	MaritalStatus	Specifies the participant marital status	equivalent	marital status value																				
+GCS:marital_new	marital_new	Specifies marital status into married or non-married	subclass	marital status value																				
+GCS:Education	Education	Specifies the participant Education Level	equivalent	education																				
+GCS:FamilyInHousehold	FamilyInHousehold	Specifies the number of participant family living in the household	subclass	family and household structure																				
+GCS:BrothersN	BrothersN	Specifies participant No. of Brothers	subclass	family and household structure																				
+GCS:StepbrothersN	StepbrothersN	Specifies participant No. of Step brothers	subclass	family and household structure																				
+GCS:SistersN	SistersN	Specifies participant No. of Sisters	subclass	family and household structure																				
+GCS:Stepsisters	Stepsisters	Specifies participant No. of Step sisters	subclass	family and household structure																				
+GCS:Sons	Sons	Specifies participant No. of Sons	subclass	family and household structure																				
+GCS:Daughters	Daughters	Specifies participant No. of Daughters	subclass	family and household structure																				
+GCS:TwinYesNo	TwinYesNo	Specifies whether the participant has twin brother or sister	subclass	family and household structure																				
+GCS:TwinAlive	TwinAlive	Specifies whether the twin of the participant is alive	subclass	family and household structure																				
+GCS:ResDuration_1	ResDuration_1	Specifies the participant first residence history Duration	subclass	residence																				
+GCS:ResCitVill_1	ResCitVill_1	Specifies the participant first residence history in Village or City	subclass	residence																				
+GCS:ResDistrict_1	ResDistrict_1	Specifies the participant first residence history District	subclass	residence																				
+GCS:ResCitVillname_1	ResCitVillname_1	Specifies the participant first residence history City or village name	subclass	residence																				
+GCS:ResHouseType_1	ResHouseType_1	Specifies the participant first residence history House Type	subclass	residence																				
+GCS:ResDuration_2	ResDuration_2	Specifies the participant second residence history Duration	subclass	residence																				
+GCS:ResCitVill_2	ResCitVill_2	Specifies the participant second residence history in Village or City	subclass	residence																				
+GCS:ResDistrict_2	ResDistrict_2	Specifies the participant second residence history District	subclass	residence																				
+GCS:ResCitVillname_2	ResCitVillname_2	Specifies the participant second residence history City or village name	subclass	residence																				
+GCS:ResHouseType_2	ResHouseType_2	Specifies the participant second residence history House Type	subclass	residence																				
+GCS:ResDuration_3	ResDuration_3	Specifies the participant third residence history Duration	subclass	residence																				
+GCS:ResCitVill_3	ResCitVill_3	Specifies the participant third residence history in Village or City	subclass	residence																				
+GCS:ResDistrict_3	ResDistrict_3	Specifies the participant third residence history District	subclass	residence																				
+GCS:ResCitVillname_3	ResCitVillname_3	Specifies the participant third residence history City or village name	subclass	residence																				
+GCS:ResHouseType_3	ResHouseType_3	Specifies the participant third residence history House Type	subclass	residence																				
+GCS:FoodWatSource	FoodWatSource	Specifies participant used water source																						
+GCS:FoodWatYearsPipe	FoodWatYearsPipe	Specifies how many years participant used pipe water																						
+GCS:FoodWatPriorPipeSource	FoodWatPriorPipeSource	Specifies what water source participant used prior to pipe water																						
+GCS:HeatAndFuelDuration_1	HeatAndFuelDuration_1	Specifies the duration the participant Used Heating or Fuel system, first history																						
+GCS:HeatingSystemType_1	HeatingSystemType_1	Specifies the participant Used Heating Type, first history																						
+GCS:HeatMethod_1	HeatMethod_1	Specifies the participant Used Heating Type of fuel, first history																						
+GCS:CookingMethod_1	CookingMethod_1	Specifies the participant Used Cooking Type of fuel, first history																						
+GCS:HeatAndFuelDuration_2	HeatAndFuelDuration_2	Specifies the duration the participant Used Heating or Fuel system, second history																						
+GCS:HeatingSystemType_2	HeatingSystemType_2	Specifies the participant Used Heating Type, second history																						
+GCS:HeatMethod_2	HeatMethod_2	Specifies the participant Used Heating Type of fuel, second history																						
+GCS:CookingMethod_2	CookingMethod_2	Specifies the participant Used Cooking Type of fuel, second history																						
+GCS:HeatAndFuelDuration_3	HeatAndFuelDuration_3	Specifies the duration participant Used Heating or Fuel system, third history																						
+GCS:HeatingSystemType_3	HeatingSystemType_3	Specifies the participant Used Heating Type, third history																						
+GCS:HeatMethod_3	HeatMethod_3	Specifies the participant Used Heating Type of fuel, third history																						
+GCS:CookingMethod_3	CookingMethod_3	Specifies the participant Used Cooking Type of fuel, third history																						
+GCS:WorkEverWorkedFlag	WorkEverWorkedFlag	Working for at least one year of full-time job	subclass	occupation																				
+GCS:WorkAgeBegan	WorkAgeBegan	Specifies participant start work age	subclass	occupation																				
+GCS:WorkCurrently	WorkCurrently	Specifies participant work now	subclass	occupation																				
+GCS:JobsStartAge	JobsStartAge	Age of starting the job for last history	subclass	occupation																				
+GCS:JobsEndAge	JobsEndAge	Age of quiting the job for last history	subclass	occupation																				
+GCS:JobsTitleOccupation	JobsTitleOccupation	Name of the job	subclass	occupation																				
+GCS:JobsTitleOccupationCode	JobsTitleOccupationCode	Code of the job (Appendix)	subclass	occupation																				
+GCS:JobsHoursPerDay	JobsHoursPerDay	Number of working hours per day	subclass	occupation																				
+GCS:JobsIntensity	JobsIntensity	The intensity of physical activity during the job	subclass	occupation																				
+GCS:JobMonthPerYear	JobMonthPerYear	Number of working months per year	subclass	occupation																				
+GCS:HusbandOccupation	HusbandOccupation	Code of the husband job (Appendix)			maybe family?																			
+GCS:FoodWatFoodPreserve	FoodWatFoodPreserve	Specifies How to Preserve foods			is this lifestyle or diet?																			
+GCS:FoodWatBreadPreserve	FoodWatBreadPreserve	Specifies How to Preserve bread																						
+GCS:FoodWatShallowFryVeg	FoodWatShallowFryVeg	Specifies Using vegetable in Small frying																						
+GCS:FoodWatShallowFryMeat	FoodWatShallowFryMeat	Specifies Using Meat in Small frying																						
+GCS:FoodWatShallowFryFish	FoodWatShallowFryFish	Specifies Using Fish in Small frying																						
+GCS:FoodWatDeepFryVeg	FoodWatDeepFryVeg	Specifies Using vegetable in Deep frying																						
+GCS:FoodWatDeepFryMeat	FoodWatDeepFryMeat	Specifies Using Meat in Deep frying																						
+GCS:FoodWatDeepFryFish	FoodWatDeepFryFish	Specifies Using Fish in Deep frying																						
+GCS:FoodWatBBQVeg	FoodWatBBQVeg	Specifies Using vegetable in BBQ																						
+GCS:FoodWatBBQMeat	FoodWatBBQMeat	Specifies Using Meat in BBQ																						
+GCS:FoodWatBBQFish	FoodWatBBQFish	Specifies Using Fish in BBQ																						
+GCS:FoodWatBoilVeg	FoodWatBoilVeg	Specifies Using vegetable Boiling																						
+GCS:FoodWatBoilMeat	FoodWatBoilMeat	Specifies Using Meat Boiling																						
+GCS:FoodWatBoilFish	FoodWatBoilFish	Specifies Using Fish Boiling																						
+GCS:FoodWatSteamVeg	FoodWatSteamVeg	Specifies Using vegetable Steaming																						
+GCS:FoodWatSteamMeat	FoodWatSteamMeat	Specifies Using Meat Steaming																						
+GCS:FoodWatSteamFish	FoodWatSteamFish	Specifies Using Fish Steaming																						
+GCS:FoodWatOthVeg	FoodWatOthVeg	Specifies Using vegetable by any Other method																						
+GCS:FoodWatOthMeat	FoodWatOthMeat	Specifies Using Meat by any Other method																						
+GCS:FoodWatOthFish	FoodWatOthFish	Specifies Using Fish in by any Other method																						
+GCS:FoodWatFreshLocalFruitChange	FoodWatFreshLocalFruitChange	Specifies the change in using Local Fruit from 1353																						
+GCS:FoodWatFreshImportedFruitChange	FoodWatFreshImportedFruitChange	Specifies the change in using Imported Fruit from 1353																						
+GCS:FoodWatFreshVegChange	FoodWatFreshVegChange	Specifies the change in using Fresh Vegetable from 1353																						
+GCS:FoodWatFreshMeatChange	FoodWatFreshMeatChange	Specifies the change in using Fresh Meat from 1353																						
+GCS:Homeownership	Homeownership	Specifies participant Homeownership status			is this lifestyle or sociodemographic? this is all talking about wealth																			
+GCS:house_nonowned	house_nonowned	Specifies house owned or non-owned																						
+GCS:HomeSize	HomeSize	Specifies participant Home Area			residence?																			
+GCS:PropertyAutoOwned	PropertyAutoOwned	If the participant has personal car select yes if no select no																						
+GCS:PropertyAutoYears	PropertyAutoYears	Specifies the length of time that the participant has a personal car(Year)																						
+GCS:PropertyMotorcycleOwned	PropertyMotorcycleOwned	If the participant has Motorcycle select yes if no select no																						
+GCS:PropertyMotorcycleYears	PropertyMotorcycleYears	Specifies the length of time that the participant has Motorcycle(Year)																						
+GCS:PropertyColorTVOwned	PropertyColorTVOwned	If the participant has Color TV select yes if no select no																						
+GCS:PropertyColorTVYears	PropertyColorTVYears	Specifies the length of time that the participant has Color TV(Year)																						
+GCS:PropertyBandWTVOwned	PropertyBandWTVOwned	If the participant has BandW TV select yes if no select no																						
+GCS:PropertyBandWTVYears	PropertyBandWTVYears	Specifies the length of time that the participant has BandW TV(Year)																						
+GCS:PropertyIndoorBathOwned	PropertyIndoorBathOwned	If the participant has Indoor Bath room select yes if no select no																						
+GCS:PropertyIndoorBathYears	PropertyIndoorBathYears	Specifies the length of time that the participant has Indoor Bath room(Year)																						
+GCS:PropertyVacuumOwned	PropertyVacuumOwned	If the participant has Vacuum cleaner select yes if no select no																						
+GCS:PropertyVacuumYears	PropertyVacuumYears	Specifies the length of time that the participant has Vacuum cleaner(Year)																						
+GCS:PropertyWashMachOwned	PropertyWashMachOwned	If the participant has Washing machine select yes if no select no																						
+GCS:PropertyWashMachYears	PropertyWashMachYears	Specifies the length of time that the participant has Washing machine(Year)																						
+GCS:PropertyRefrigeratorOwned	PropertyRefrigeratorOwned	If the participant has Refrigerator select yes if no select no																						
+GCS:PropertyRefrigeratorYears	PropertyRefrigeratorYears	Specifies the length of time that the participant has Refrigerator(Year)																						
+GCS:PropertyFreezerOwned	PropertyFreezerOwned	If the participant has Freezer select yes if no select no																						
+GCS:PropertyFreezerYears	PropertyFreezerYears	Specifies the length of time that the participant has Freezer(Year)																						
+GCS:PropertyComputerOwned	PropertyComputerOwned	If the participant has Computer select yes if no select no																						
+GCS:PropertyComputerYears	PropertyComputerYears	Specifies the length of time that the participant has Computer(Year)																						
+GCS:HomeRooms	HomeRooms	Number of rooms in the house																						
+GCS:HaveBath	HaveBath	Specifies if the household has bathroom																						
+GCS:HaveKitchen	HaveKitchen	Specifies if the household has kitchen																						
+GCS:MCA	MCA	Composite wealth score (Multiple Correspondence Analysis)			lifestyle or sociodemographic?																			
+GCS:NumberPregnancies	NumberPregnancies	Specifies the number of Pregnancies for women only		pregnancy history																				
+GCS:NumberLiveBirths	NumberLiveBirths	Specifies the number of live births for women only		pregnancy history																				
+GCS:DisRheumaticHeartDx	DisRheumaticHeartDx	if the diagnosis of Rheumatic Heart Disease was made for participant by a physician		diagnosis of heart disease																				
+GCS:DisRheumaticHeartAge	DisRheumaticHeartAge	participant age at Rheumatic Heart Disease diagnosis		diagnosis of heart disease																				
+GCS:DisHeartDiseaseDx	DisHeartDiseaseDx	if the diagnosis of Heart Disease was made for participant by a physician		diagnosis of heart disease																				
+GCS:DisHeartDiseaseAge	DisHeartDiseaseAge	participant age in first Heart Disease diagnosis		diagnosis of heart disease																				
+GCS:DisStrokeDx	DisStrokeDx	if the diagnosis of Stroke was made for participant by a physician		diagnosis of stroke																				
+GCS:DisStrokeAge	DisStrokeAge	participant age in first Stroke diagnosis		diagnosis of stroke																				
+GCS:DisHypertensionDx	DisHypertensionDx	if the diagnosis of Hypertension was made for participant by a physician		diagnosis of hypertension																				
+GCS:DisHypertensionAge	DisHypertensionAge	participant age in first Hypertension diagnosis		diagnosis of hypertension																				
+GCS:DisDiabetesDx	DisDiabetesDx	if the diagnosis of Diabetes was made for participant by a physician		diagnosis of diabetes																				
+GCS:DisDiabetesAge	DisDiabetesAge	participant age in first Diabetes diagnosis		diagnosis of diabetes																				
+GCS:DisCOPDDx	DisCOPDDx	if the diagnosis of COPD was made for participant by a physician		diagnosis of chronic obstructive pulmonary disease																				
+GCS:DisCOPDAge	DisCOPDAge	participant age in first COPD diagnosis		diagnosis of chronic obstructive pulmonary disease																				
+GCS:DisRenalFailureDx	DisRenalFailureDx	if the diagnosis of Renal Failure was made for participant by a physician		diagnosis of renal failure																				
+GCS:DisRenalFailureAge	DisRenalFailureAge	participant age in first RenalFailure diagnosis		diagnosis of renal failure																				
+GCS:DisJaundiceDx	DisJaundiceDx	if the diagnosis of Jaundice was made for participant by a physician		diagnosis of jaundice																				
+GCS:DisJaundiceAge	DisJaundiceAge	participant age in first Jaundice diagnosis		diagnosis of jaundice																				
+GCS:DisLiverDx	DisLiverDx	if the diagnosis of Chronic Liver Failure was made for participant by a physician		diagnosis of liver failure																				
+GCS:DisLiverAge	DisLiverAge	participant age in first Chronic liver failure diagnosis		diagnosis of liver failure																				
+GCS:DisTBDx	DisTBDx	if the diagnosis of Tuberculosis was made for participant by a physician		diagnosis of tuberculosis																				
+GCS:DisTBAge	DisTBAge	participant age in first Tuberculosis diagnosis		diagnosis of tuberculosis																				
+GCS:SurgeryFlag	SurgeryFlag	If the participant had had any history of surgery		surgical interventions																				
+GCS:SurgeryType	SurgeryType	Specifies the participant surgery Type		surgical interventions																				
+GCS:SurgeryAge	SurgeryAge	Specifies the participant age in surgery Time		surgical interventions																				
+GCS:TransfusionFlag	TransfusionFlag	if the participant has had Transfusion history																						
+GCS:TransfusionRecentFlag	TransfusionRecentFlag	if the participant has Transfusion history in last month																						
+GCS:SymRefluxFlag	SymRefluxFlag	if the participant has Reflux Symptom history select yes if not select no		occurrence of acid reflux																				
+GCS:SymRefluxWhen	SymRefluxWhen	when Reflux Symptom happen in First time		occurrence of acid reflux																				
+GCS:SymHeartburnFlag	SymHeartburnFlag	if the participant has Heartburn Symptom history select yes if not select no		occurrence of heartburn																				
+GCS:SymHeartburnWhen	SymHeartburnWhen	when Heartburn Symptom happen in First time		occurrence of heartburn																				
+GCS:SymDifficultSwallowingFlag	SymDifficultSwallowingFlag	if the participant has Difficult Swallowing Symptom history select yes if not select no		occurrence of difficulty swallowing																				
+GCS:SymDifficultSwallowingWhen	SymDifficultSwallowingWhen	when Difficult Swallowing Symptom happen in First time		occurrence of difficulty swallowing																				
+GCS:SymRefluxPastYearFreq	SymRefluxPastYearFreq	if the participant has Reflux Symptom in past year select yes if not select no		occurrence of acid reflux																				
+GCS:SymRefluxPastYearSeverity	SymRefluxPastYearSeverity	Severity Reflux Symptom in past year		occurrence of acid reflux																				
+GCS:SymRefluxPriorYearsFreq	SymRefluxPriorYearsFreq	if the participant has Reflux Symptom in Prior year select yes if not select no		occurrence of acid reflux																				
+GCS:SymRefluxPriorYearsSeverity	SymRefluxPriorYearsSeverity	Severity Reflux Symptom in Prior year		occurrence of acid reflux																				
+GCS:RefluxHeartburnTXFlag	RefluxHeartburnTXFlag	if participant used drug for Heartburn symptoms select yes if not select no and if participant doesn't have symtom selectLack of signage		medication	should we create medication for heartburn?																			
+GCS:WeightLossFlag	WeightLossFlag	if the patient has Weightloss in past year select yes if not select no		clinical history	should we be more specific here?																			
+GCS:WeightLossAmount	WeightLossAmount	Specifies the amount of weight loss		clinical history																				
+GCS:WeightLossIntent	WeightLossIntent	if the patient has Intentional weight loss select Yes if not select no and doesn't have weight loss select I have no weight loss		clinical history																				
+GCS:cancerdxflag	cancerdxflag	Past history of cancer diagnosed by a physician?		clinical history of cancer																				
+GCS:cancerdxage	cancerdxage	Year of diagnosis of cancer if detected in participant		clinical history of cancer																				
+GCS:cancerdxsite	cancerdxsite	Original site of cancer		clinical history of cancer																				
+GCS:CancRelRelativeCode_1	CancRelRelativeCode_1	Specifies the relative of participants with a history of cancer		clinical history of cancer																				
+GCS:CancRelAgeDiagnosis_1	CancRelAgeDiagnosis_1	Specifies the age of relative when cancer was diagnosed		clinical history of cancer																				
+GCS:CancRelSite_1	CancRelSite_1	Specifies the site of cancer in the relative of participant		clinical history of cancer																				
+GCS:CancRelICD10_1	CancRelICD10_1	Specifies the ICD-10 code of cancer in the relative of participant		clinical history of cancer																				
+GCS:CancRelRelativeCode_2	CancRelRelativeCode_2	Specifies the additional relative of participants with a history of cancer		family clinical history																				
+GCS:CancRelAgeDiagnosis_2	CancRelAgeDiagnosis_2	Specifies the age of relative when cancer was diagnosed		family clinical history																				
+GCS:CancRelSite_2	CancRelSite_2	Specifies the site of cancer in the relative of participant		family clinical history																				
+GCS:CancRelICD10_2	CancRelICD10_2	Specifies the ICD-10 code of cancer in the relative of participant		family clinical history																				
+GCS:CancRelRelativeCode_3	CancRelRelativeCode_3	Specifies the additional relative of participants with a history of cancer		family clinical history																				
+GCS:CancRelAgeDiagnosis_3	CancRelAgeDiagnosis_3	Specifies the age of relative when cancer was diagnosed		family clinical history																				
+GCS:CancRelSite_3	CancRelSite_3	Specifies the site of cancer in the relative of participant		family clinical history																				
+GCS:CancRelICD10_3	CancRelICD10_3	Specifies the ICD-10 code of cancer in the relative of participant		family clinical history																				
+GCS:CancRelRelativeCode_4	CancRelRelativeCode_4	Specifies the additional relative of participants with a history of cancer		family clinical history																				
+GCS:CancRelAgeDiagnosis_4	CancRelAgeDiagnosis_4	Specifies the age of relative when cancer was diagnosed		family clinical history																				
+GCS:CancRelSite_4	CancRelSite_4	Specifies the site of cancer in the relative of participant		family clinical history																				
+GCS:CancRelICD10_4	CancRelICD10_4	Specifies the ICD-10 code of cancer in the relative of participant		family clinical history																				
+GCS:TobEverRegularFlag	TobEverRegularFlag	Specifies the participant used cigar for 6 Months	subclass	tobacco																				
+GCS:TobCigsNow	TobCigsNow	Specifies the participant uses cigar Now	subclass	tobacco																				
+GCS:TobNonCigFlag	TobNonCigFlag	Specifies the participant used tobacco other than cigar for 6 Months	subclass	tobacco																				
+GCS:TobStartAge_1	TobStartAge_1	Specifies the participant Used this Tobacco type From Age, first history	subclass	tobacco																				
+GCS:TobEndAge_1	TobEndAge_1	Specifies the participant Used this Tobacco type To Age, first history	subclass	tobacco																				
+GCS:TobDuration_1	TobDuration_1	Specifies the participant Used tobacco Duration, first history	subclass	tobacco																				
+GCS:TobType_1	TobType_1	Specifies the participant Used type of Tobacco, first history	subclass	tobacco																				
+GCS:TobNumberPerDay_1	TobNumberPerDay_1	Specifies the participant Used this tobacco how many times per day, first history	subclass	tobacco																				
+GCS:TobDaysPerWeek_1	TobDaysPerWeek_1	Specifies the participant Used this tobacco how many days in week, first history	subclass	tobacco																				
+GCS:CigNumPerDay_1	CigNumPerDay_1	Specifies the participant Used this cigar how many times per day, first history	subclass	tobacco																				
+GCS:Cigpackyear_1	Cigpackyear_1	Specifies the participant cumulative use, first history	subclass	tobacco																				
+GCS:TobStartAge_2	TobStartAge_2	Specifies the participant Used this Tobacco type From Age, second history	subclass	tobacco																				
+GCS:TobEndAge_2	TobEndAge_2	Specifies the participant Used this Tobacco type To Age, second history	subclass	tobacco																				
+GCS:TobDuration_2	TobDuration_2	Specifies the participant Used tobacco Duration, second history	subclass	tobacco																				
+GCS:TobType_2	TobType_2	Specifies the participant Used type of Tobacco, second history	subclass	tobacco																				
+GCS:TobNumberPerDay_2	TobNumberPerDay_2	Specifies the participant Used this tobacco how many times per day, second history	subclass	tobacco																				
+GCS:TobDaysPerWeek_2	TobDaysPerWeek_2	Specifies the participant Used this tobacco how many days in week, second history	subclass	tobacco																				
+GCS:CigNumPerDay_2	CigNumPerDay_2	Specifies the participant Used this cigar how many times per day, second history	subclass	tobacco																				
+GCS:Cigpackyear_2	Cigpackyear_2	Specifies the participant cumulative use, second history	subclass	tobacco																				
+GCS:TobStartAge_3	TobStartAge_3	Specifies the participant Used this Tobacco type From Age, third history	subclass	tobacco																				
+GCS:TobEndAge_3	TobEndAge_3	Specifies the participant Used this Tobacco type To Age, third history	subclass	tobacco																				
+GCS:TobDuration_3	TobDuration_3	Specifies the participant Used tobacco Duration, third history	subclass	tobacco																				
+GCS:TobType_3	TobType_3	Specifies the participant Used type of Tobacco, third history	subclass	tobacco																				
+GCS:TobNumberPerDay_3	TobNumberPerDay_3	Specifies the participant Used this tobacco how many times per day, third history	subclass	tobacco																				
+GCS:TobDaysPerWeek_3	TobDaysPerWeek_3	Specifies the participant Used this tobacco how many days in week, third history	subclass	tobacco																				
+GCS:CigNumPerDay_3	CigNumPerDay_3	Specifies the participant Used this cigar how many times per day, third history	subclass	tobacco																				
+GCS:Cigpackyear_3	Cigpackyear_3	Specifies the participant cumulative use, third history	subclass	tobacco																				
+GCS:TobStartAge_4	TobStartAge_4	Specifies the participant Used this Tobacco type From Age, fourth history	subclass	tobacco																				
+GCS:TobEndAge_4	TobEndAge_4	Specifies the participant Used this Tobacco type To Age, fourth history	subclass	tobacco																				
+GCS:TobDuration_4	TobDuration_4	Specifies the participant Used tobacco Duration, fourth history	subclass	tobacco																				
+GCS:TobType_4	TobType_4	Specifies the participant Used type of Tobacco, fourth history	subclass	tobacco																				
+GCS:TobNumberPerDay_4	TobNumberPerDay_4	Specifies the participant Used this tobacco how many times per day, fourth history	subclass	tobacco																				
+GCS:TobDaysPerWeek_4	TobDaysPerWeek_4	Specifies the participant Used this tobacco how many days in week, fourth history	subclass	tobacco																				
+GCS:CigNumPerDay_4	CigNumPerDay_4	Specifies the participant Used this cigar how many times per day, fourth history	subclass	tobacco																				
+GCS:Cigpackyear_4	Cigpackyear_4	Specifies the participant cumulative use, fourth history	subclass	tobacco																				
+GCS:total_packyear	total_packyear	Specifies the participant total cumulative use	subclass	tobacco																				
+GCS:OpiateEverRegularFlag	OpiateEverRegularFlag	Specifies the participant ever used opiume for 6 Months		opiate use history																				
+GCS:OpiatePersonalChildhoodExp	OpiatePersonalChildhoodExp	Specifies the using opium in Childhood		opiate use history																				
+GCS:OpiateAdministeredToChildrenFlag	OpiateAdministeredToChildrenFlag	Specifies the participant gave opium to children			???																			
+GCS:OpiateType	OpiateType	Specifies the participant Used Opium type		opiate use history																				
+GCS:OpiateRoute	OpiateRoute	Specifies the route by which participant uses opium		opiate use history																				
+GCS:OpiateStartAge_1	OpiateStartAge_1	Specifies the participant Used this Opium type From Age, first history		opiate use history																				
+GCS:OpiateEndAge_1	OpiateEndAge_1	Specifies the participant Used this Opium type To Age, first history		opiate use history																				
+GCS:OpiateDuration_1	OpiateDuration_1	Specifies the participant Used this Opium Duration, first history		opiate use history																				
+GCS:OpiateNokhod_1	OpiateNokhod_1	Specifies the participant Used this Opium amount in Pea size, first history		opiate use history																				
+GCS:OpiateDaysPerWeek_1	OpiateDaysPerWeek_1	Specifies the participant Used this Opium day in week, first history		opiate use history																				
+GCS:OpiateAmountperDay_1	OpiateAmountperDay_1	Specifies the participant Used this Opium Amount per day, first history		opiate use history																				
+GCS:Opiatecum_1	Opiatecum_1	Specifies the participant cumulative use of Opium, first history		opiate use history																				
+GCS:OpiateStartAge_2	OpiateStartAge_2	Specifies the participant Used this Opium type From Age, second history		opiate use history																				
+GCS:OpiateEndAge_2	OpiateEndAge_2	Specifies the participant Used this Opium type To Age, second history		opiate use history																				
+GCS:OpiateDuration_2	OpiateDuration_2	Specifies the participant Used this Opium Duration, second history		opiate use history																				
+GCS:OpiateNokhod_2	OpiateNokhod_2	Specifies the participant Used this Opium amount in Pea size, second history		opiate use history																				
+GCS:OpiateDaysPerWeek_2	OpiateDaysPerWeek_2	Specifies the participant Used this Opium day in week, second history		opiate use history																				
+GCS:OpiateAmountperDay_2	OpiateAmountperDay_2	Specifies the participant Used this Opium Amount per day, second history		opiate use history																				
+GCS:Opiatecum_2	Opiatecum_2	Specifies the participant cumulative use of Opium, second history		opiate use history																				
+GCS:OpiateStartAge_3	OpiateStartAge_3	Specifies the participant Used this Opium type From Age, third history		opiate use history																				
+GCS:OpiateEndAge_3	OpiateEndAge_3	Specifies the participant Used this Opium type To Age, third history		opiate use history																				
+GCS:OpiateDuration_3	OpiateDuration_3	Specifies the participant Used this Opium Duration, third history		opiate use history																				
+GCS:OpiateNokhod_3	OpiateNokhod_3	Specifies the participant Used this Opium amount in Pea size, third history		opiate use history																				
+GCS:OpiateDaysPerWeek_3	OpiateDaysPerWeek_3	Specifies the participant Used this Opium day in week, third history		opiate use history																				
+GCS:OpiateAmountperDay_3	OpiateAmountperDay_3	Specifies the participant Used this Opium Amount per day, third history		opiate use history																				
+GCS:Opiatecum_3	Opiatecum_3	Specifies the participant cumulative use of Opium, third history		opiate use history																				
+GCS:OpiateStartAge_4	OpiateStartAge_4	Specifies the participant Used this Opium type From Age, fourth history		opiate use history																				
+GCS:OpiateEndAge_4	OpiateEndAge_4	Specifies the participant Used this Opium type To Age, fourth history		opiate use history																				
+GCS:OpiateDuration_4	OpiateDuration_4	Specifies the participant Used this Opium Duration, fourth history		opiate use history																				
+GCS:OpiateNokhod_4	OpiateNokhod_4	Specifies the participant Used this Opium amount in Pea size, fourth history		opiate use history																				
+GCS:OpiateDaysPerWeek_4	OpiateDaysPerWeek_4	Specifies the participant Used this Opium day in week, fourth history		opiate use history																				
+GCS:OpiateAmountperDay_4	OpiateAmountperDay_4	Specifies the participant Used this Opium Amount per day, fourth history		opiate use history																				
+GCS:Opiatecum_4	Opiatecum_4	Specifies the participant cumulative use of Opium, fourth history		opiate use history																				
+GCS:TotalNokhodDay	TotalNokhodDay	Specifies the participant total cumulative use of Opium		opiate use history																				
+GCS:AlcEverRegularFlag	AlcEverRegularFlag	Specifies the participant ever used alcohol for 6 Months	subclass	alcohol																				
+GCS:AlcStartAge_1	AlcStartAge_1	Specifies the participant used alcohol From Age, first history	subclass	alcohol																				
+GCS:AlcEndAge_1	AlcEndAge_1	Specifies the participant used alcohol To Age, first history	subclass	alcohol																				
+GCS:AlcType_1	AlcType_1	Specifies the participant alcohol used Type, first history	subclass	alcohol																				
+GCS:AlcQuantityPerEpisode_1	AlcQuantityPerEpisode_1	Specifies the average alcohol the participant used per episode, first history	subclass	alcohol																				
+GCS:AlcEpisodesPerMonth_1	AlcEpisodesPerMonth_1	Specifies the participant Alcohol episodes in month, first history	subclass	alcohol																				
+GCS:AlcStartAge_2	AlcStartAge_2	Specifies the participant used alcohol From Age, second history	subclass	alcohol																				
+GCS:AlcEndAge_2	AlcEndAge_2	Specifies the participant used alcohol To Age, second history	subclass	alcohol																				
+GCS:AlcType_2	AlcType_2	Specifies the participant alcohol used Type, second history	subclass	alcohol																				
+GCS:AlcQuantityPerEpisode_2	AlcQuantityPerEpisode_2	Specifies the average alcohol the participant used per episode, second history	subclass	alcohol																				
+GCS:AlcEpisodesPerMonth_2	AlcEpisodesPerMonth_2	Specifies the participant Alcohol episodes in month, second history	subclass	alcohol																				
+GCS:AlcStartAge_3	AlcStartAge_3	Specifies the participant used alcohol From Age, third history	subclass	alcohol																				
+GCS:AlcEndAge_3	AlcEndAge_3	Specifies the participant used alcohol To Age, third history	subclass	alcohol																				
+GCS:AlcType_3	AlcType_3	Specifies the participant alcohol used Type, third history	subclass	alcohol																				
+GCS:AlcQuantityPerEpisode_3	AlcQuantityPerEpisode_3	Specifies the average alcohol the participant used per episode, third history	subclass	alcohol																				
+GCS:AlcEpisodesPerMonth_3	AlcEpisodesPerMonth_3	Specifies the participant Alcohol episodes in month, third history	subclass	alcohol																				
+GCS:DrugCurrentuse	DrugCurrentuse	Currently taking any medication?	subclass	medication history																				
+GCS:antiHTN	antiHTN	Anti-hypertensive drugs: 1: diuretics 2: beta-blockers 3: ACE Inhibitors 4: ARBs 5: Alpha-adrenergic blockers 6: Calcium channel blockers 7:other anti-hypertensives	subclass	history of medication for hypertension																				
+GCS:antiDM	antiDM	Anti-diabetic drugs: 1: Glibenclamide 2: metformin 3: insulin 4: other	subclass	history of medication for diabetes																				
+GCS:cardiac	cardiac	Cardiac drugs: 1: Anti-platelets 2: statins 3: Beta-blockers 4: Nitrates 5: ACE Inhibitors 6: ARBs 7: Calcium Channel blockers 8: other	subclass	history of medication for cardiac disease																				
+GCS:antilipid	antilipid	Lipid-lowering drugs: 1: Statins 2: Gemfibrozil 3: other	subclass	history of medication for high cholesterol																				
+GCS:mentaldrug	mentaldrug	Mental disorders: 1: Benzodiazepines 2: Sodium Valproate 3: Anti-epileptics 4: Antidepressants 5: Anti-anxiety medications 6: Psychoactive medications	subclass	history of medication for mental disorder																				
+GCS:Corticosteroid	Corticosteroid	Corticosteroids: 1: injection 2: oral 3: topical	subclass	use of corticosteroids																				
+GCS:Gidrugs	Gidrugs	Gastrointestinal: 1: H2 Blockers 2: PPIs 3: Clindinium C	subclass	history of medication for gastrointestinal disease																				
+GCS:antibiotics	antibiotics	Antibiotics: 1: Amoxicillin 2: Cefixime 3: Azithromycin 4: Metronidazole 5: other	subclass	use of antibiotics																				
+GCS:diuretic	diuretic	Diuretics	subclass	use of diuretics																				
+GCS:betablocker	betablocker	Beta Blockers	subclass	use of beta blockers																				
+GCS:ACEinhibitor	ACEinhibitor	Angiotensin Converting Enzyme Inhibitors	subclass	use of angiotensin convertin enzyme inhibitors																				
+GCS:ARB	ARB	Angiotensin Receptor Blockers	subclass	use of angiotensin receptor blockers																				
+GCS:alphablocker	alphablocker	Alpha Adrenergic Blockers	subclass	use of alpha adrenergic blockers																				
+GCS:CCBlocker	CCBlocker	Calcium Channel Blockers	subclass	use of calcium channel blockers																				
+GCS:Glibenclamide	Glibenclamide	Glibenclamide	subclass	use of glibenclamide																				
+GCS:Metformin	Metformin	Metformin	subclass	use of metformin																				
+GCS:Insulin	Insulin	Insulin	subclass	use of insulin																				
+GCS:Antiplatelets	Antiplatelets	Anti-platelets	subclass	use of antiplatelets																				
+GCS:Statins	Statins	Statins	subclass	use of statins																				
+GCS:Nitrates	Nitrates	Nitrates	subclass	use of nitrates																				
+GCS:Gemfibrozil	Gemfibrozil	Gemfibrozil	subclass	use of gemfibroxil																				
+GCS:Acetaminophen	Acetaminophen	Acetaminophen and Acetaminophen Codein	subclass	use of acetaminophen																				
+GCS:Ibuprofen	Ibuprofen	Ibuprofen	subclass	use of ibuprofen																				
+GCS:Diclophenac	Diclophenac	Diclophenac	subclass	use of diclophenac																				
+GCS:Indomethacin	Indomethacin	Indomethacin	subclass	use of indomethacin																				
+GCS:Levothyroxin	Levothyroxin	Levthyroxin	subclass	use of levthyroxine																				
+GCS:Methotrexate	Methotrexate	Methotrexate	subclass	use of methotrexate																				
+GCS:Other	Other	Other	subclass	medication history																				
+GCS:DrugCurrentuse	DrugCurrentuse	Currently taking any medication?	subclass	medication history																				
+GCS:drugname_1	drugname_1	Name of drug 1	subclass	medication history	Could name fall under "prescription"?																			
+GCS:drugduration_1	drugduration_1	Number of years being under treatment 1	subclass	medication history																				
+GCS:drugfrequency_1	drugfrequency_1	Frequency of drug consumption 1	subclass	posology																				
+GCS:drugdose_1	drugdose_1	Dose of drug consumed 1	subclass	posology																				
+GCS:drugname_2	drugname_2	Name of drug 2	subclass	medication history																				
+GCS:drugduration_2	drugduration_2	Number of years being under treatment 2	subclass	medication history																				
+GCS:drugfrequency_2	drugfrequency_2	Frequency of drug consumption 2	subclass	posology																				
+GCS:drugdose_2	drugdose_2	Dose of drug consumed 2	subclass	posology																				
+GCS:drugname_3	drugname_3	Name of drug 3	subclass	medication history																				
+GCS:drugduration_3	drugduration_3	Number of years being under treatment 3	subclass	medication history																				
+GCS:drugfrequency_3	drugfrequency_3	Frequency of drug consumption 3	subclass	posology																				
+GCS:drugdose_3	drugdose_3	Dose of drug consumed 3	subclass	posology																				
+GCS:drugname_4	drugname_4	Name of drug 4	subclass	medication history																				
+GCS:drugduration_4	drugduration_4	Number of years being under treatment 4	subclass	medication history																				
+GCS:drugfrequency_4	drugfrequency_4	Frequency of drug consumption 4	subclass	posology																				
+GCS:drugdose_4	drugdose_4	Dose of drug consumed 4	subclass	posology																				
+GCS:drugname_5	drugname_5	Name of drug 5	subclass	medication history																				
+GCS:drugduration_5	drugduration_5	Number of years being under treatment 5	subclass	medication history																				
+GCS:drugfrequency_5	drugfrequency_5	Frequency of drug consumption 5	subclass	posology																				
+GCS:drugdose_5	drugdose_5	Dose of drug consumed 5	subclass	posology																				
+GCS:drugname_6	drugname_6	Name of drug 6	subclass	medication history																				
+GCS:drugduration_6	drugduration_6	Number of years being under treatment 6	subclass	medication history																				
+GCS:drugfrequency_6	drugfrequency_6	Frequency of drug consumption 6	subclass	posology																				
+GCS:drugdose_6	drugdose_6	Dose of drug consumed 6	subclass	posology																				
+GCS:drugname_7	drugname_7	Name of drug 7	subclass	medication history																				
+GCS:drugduration_7	drugduration_7	Number of years being under treatment 7	subclass	medication history																				
+GCS:drugfrequency_7	drugfrequency_7	Frequency of drug consumption 7	subclass	posology																				
+GCS:drugdose_7	drugdose_7	Dose of drug consumed 7	subclass	posology																				
+GCS:drugname_8	drugname_8	Name of drug 8	subclass	medication history																				
+GCS:drugduration_8	drugduration_8	Number of years being under treatment 8	subclass	medication history																				
+GCS:drugfrequency_8	drugfrequency_8	Frequency of drug consumption 8	subclass	posology																				
+GCS:drugdose_8	drugdose_8	Dose of drug consumed 8	subclass	posology																				
+GCS:drugname_9	drugname_9	Name of drug 9	subclass	medication history																				
+GCS:drugduration_9	drugduration_9	Number of years being under treatment 9	subclass	medication history																				
+GCS:drugfrequency_9	drugfrequency_9	Frequency of drug consumption 9	subclass	posology																				
+GCS:drugdose_9	drugdose_9	Dose of drug consumed 9	subclass	posology																				
+GCS:drugname_10	drugname_10	Name of drug 10	subclass	medication history																				
+GCS:drugduration_10	drugduration_10	Number of years being under treatment 10	subclass	medication history																				
+GCS:drugfrequency_10	drugfrequency_10	Frequency of drug consumption 10	subclass	posology																				
+GCS:drugdose_10	drugdose_10	Dose of drug consumed 10	subclass	posology																				
+GCS:OralPermanentTeethLossFlag	OralPermanentTeethLossFlag	Permanent Teeth Loss	subclass	oral health history																				
+GCS:OralPermanentTeethAgeFirstLoss	OralPermanentTeethAgeFirstLoss	Specifies the age of first Permanent Teeth Loss	subclass	oral health history																				
+GCS:OralUpperDentureFlag	OralUpperDentureFlag	Specifies the participant used Upper Denture	subclass	oral health history																				
+GCS:OralLowerDentureFlag	OralLowerDentureFlag	Specifies the participant used Lower Denture	subclass	oral health history																				
+GCS:OralUpperDentureUse	OralUpperDentureUse	Specifies the participant used Upper Denture during the day	subclass	oral health history																				
+GCS:OralLowerDentureUse	OralLowerDentureUse	Specifies the participant used Lower Denture during the day	subclass	oral health history																				
+GCS:OralAgeDentureUpper	OralAgeDentureUpper	Specifies the age of participant first used Upper Denture	subclass	oral health history																				
+GCS:OralAgeDentureLower	OralAgeDentureLower	Specifies the age of participant First used Lower Denture	subclass	oral health history																				
+GCS:OralFreqBrushing	OralFreqBrushing	Specifies the participant Brushing Frequency	subclass	oral health history																				
+GCS:OralFoodDiscomfortFlag	OralFoodDiscomfortFlag	Specifies the frequency the participant experienced discomfort while eating food in Past Year	subclass	oral health history																				
+GCS:OralFoodDiscomfortType	OralFoodDiscomfortType	Specifies the food that caused discomfort for the participant	subclass	oral health history																				
+GCS:OralNumTeeth	OralNumTeeth	Specifies the participant Total number of teeth	subclass	oral health history																				
+GCS:OralNumTeethDecayed	OralNumTeethDecayed	Specifies the participant Total number of Decayed teeth	subclass	oral health history																				
+GCS:OralNumTeethMissing	OralNumTeethMissing	Specifies the participant Total number of Missing teeth	subclass	oral health history																				
+GCS:OralNumTeethFilled	OralNumTeethFilled	Specifies the participant Total number of Filled teeth	subclass	oral health history																				
+GCS:OralMucosa	OralMucosa	Specifies the participant Mucosa Status	subclass	oral health history																				
+GCS:TeaTempDegrees	TeaTempDegrees	Specifies participant consumption of tea temperature		information about diet	is this diet?																			
+GCS:TeaTempDescription	TeaTempDescription	Specifies participant used tea type		information about diet																				
+GCS:TeaSteepingTime	TeaSteepingTime	Specifies the duration between pouring and drinking the tea		information about diet																				
+GCS:TeaSipOrGulp	TeaSipOrGulp	Specifies how participant drinks tea		information about diet																				
+GCS:physactworkallyearflag	physactworkallyearflag	Working all months of the year?	subclass	occupation|physical activity																				
+GCS:physactworkmonths	physactworkmonths	Number of working months in a year	subclass	occupation|physical activity																				
+GCS:physactworkstrenuousflag	physactworkstrenuousflag	Daily intensive physical activity?	subclass	physical activity																				
+GCS:physactworkstrenuousfreq	physactworkstrenuousfreq	Number of working days in a week	subclass	physical activity																				
+GCS:physactworkstrenuoushours	physactworkstrenuoushours	Number of working hours in a day	subclass	physical activity																				
+GCS:physactworkstrenuousyears	physactworkstrenuousyears	Number of entire working years	subclass	physical activity																				
+GCS:physacthouseworkflag	physacthouseworkflag	Doing house work?	subclass	physical activity																				
+GCS:physacthouseworkfreq	physacthouseworkfreq	Number of working days in a week	subclass	physical activity																				
+GCS:physacthouseworkhours	physacthouseworkhours	Number of working hours in a day	subclass	physical activity																				
+GCS:physacthouseworkyears	physacthouseworkyears	Number of entire working years	subclass	physical activity																				
+GCS:physacthouseworkminsduringwork	physacthouseworkminsduringwork	Doing house work: minutes during working times	subclass	physical activity																				
+GCS:physacthouseworkminsnowork	physacthouseworkminsnowork	Doing house work: minutes during leasure times	subclass	physical activity																				
+GCS:physactexmildminsduringwork	physactexmildminsduringwork	Mild exercise such as jogging: minutes during working times	subclass	physical activity																				
+GCS:physactexmildminsnowork	physactexmildminsnowork	Mild exercise such as jogging: minutes during leasure times	subclass	physical activity																				
+GCS:physactexmodminsduringwork	physactexmodminsduringwork	Moderate exercise such as volleyball: minutes during working times	subclass	physical activity																				
+GCS:physactexmodminsnowork	physactexmodminsnowork	Moderate exercise such as volleyball: minutes during leasure times	subclass	physical activity																				
+GCS:physactexstrenminsduringwork	physactexstrenminsduringwork	Intensive exercise such as horse riding: minutes during working times	subclass	physical activity																				
+GCS:physactexstrenminsnowork	physactexstrenminsnowork	Intensive exercise such as horse riding: minutes during leasure times	subclass	physical activity																				
+GCS:physacttvminsduringwork	physacttvminsduringwork	Watching TV, resting, reading: minutes during working times	subclass	physical activity																				
+GCS:physacttvminsnowork	physacttvminsnowork	Watching TV, resting, reading: minutes during leasure times	subclass	physical activity																				
+GCS:Metabolic Equivalent Task	Metabolic Equivalent Task	Energy cost of physical activities defined as the ratio of metabolic rate (and therefore the rate of energy consumption) during a specific physical activity to a reference metabolic rate	subclass	physical activity																				
+GCS:AnimalStartAge_1	AnimalStartAge_1	Specifies the age of the participants he had contact with animals, first history		lifestyle and behaviours	not sure if this is correct - do we want to be more specific?																			
+GCS:AnimalEndAge_1	AnimalEndAge_1	Specifies the age of the participants he didn't have contact with animals, first history		lifestyle and behaviours																				
+GCS:AnimalLevelOfContact_1	AnimalLevelOfContact_1	The intensity of animal contact, first history		lifestyle and behaviours																				
+GCS:AnimalType_1	AnimalType_1	The type of animal, first history		lifestyle and behaviours																				
+GCS:AnimalStartAge_2	AnimalStartAge_2	Specifies the age of the participants he had contact with animals, second history		lifestyle and behaviours																				
+GCS:AnimalEndAge_2	AnimalEndAge_2	Specifies the age of the participants he didn't have contact with animals, second history		lifestyle and behaviours																				
+GCS:AnimalLevelOfContact_2	AnimalLevelOfContact_2	The intensity of animal contact, second history		lifestyle and behaviours																				
+GCS:AnimalType_2	AnimalType_2	The type of animal, second history		lifestyle and behaviours																				
+GCS:AnimalStartAge_3	AnimalStartAge_3	Specifies the age of the participants he had contact with animals, third history		lifestyle and behaviours																				
+GCS:AnimalEndAge_3	AnimalEndAge_3	Specifies the age of the participants he didn't have contact with animals, third history		lifestyle and behaviours																				
+GCS:AnimalLevelOfContact_3	AnimalLevelOfContact_3	The intensity of animal contact, third history		lifestyle and behaviours																				
+GCS:AnimalType_3	AnimalType_3	The type of animal, third history		lifestyle and behaviours																				
+GCS:AnimalStartAge_4	AnimalStartAge_4	Specifies the age of the participants he had contact with animals, fourth history		lifestyle and behaviours																				
+GCS:AnimalEndAge_4	AnimalEndAge_4	Specifies the age of the participants he didn't have contact with animals, fourth history		lifestyle and behaviours																				
+GCS:AnimalLevelOfContact_4	AnimalLevelOfContact_4	The intensity of animal contact, fourth history		lifestyle and behaviours																				
+GCS:AnimalType_4	AnimalType_4	The type of animal, fourth history		lifestyle and behaviours																				
+GCS:bodyindicessizeage15	bodyindicessizeage15	The body size participants assume they have had based on pictogram when they were 15 years old	subclass	anthropometry																				
+GCS:bodyindicessizeage30	bodyindicessizeage30	The body size participants assume they have had based on pictogram when they wer3 30 years old	subclass	anthropometry																				
+GCS:bodyindicessizenow	bodyindicessizenow	The body size participants assume they have at the present time based on pictogram	subclass	anthropometry																				
+GCS:bodyindicesheight	bodyindicesheight	Height	equivalent	height																				
+GCS:bodyindicesweight	bodyindicesweight	Weight	equivalent	weight																				
+GCS:bodyindiceswaist	bodyindiceswaist	Waist circumference	equivalent	waist circumference value																				
+GCS:bodyindiceships	bodyindiceships	Hip circumference	equivalent	hip circumference value																				
+GCS:BMI	BMI	Body mass index	equivalent	body mass index value																				
+GCS:bpright1sbp	bpright1sbp	First measurement of systolic blood pressure from the right arm	subclass	systolic blood pressure value																				
+GCS:bpright1dbp	bpright1dbp	First measurement ofdiastolic blood pressure from the right arm	subclass	diastolic blood pressure value																				
+GCS:bpright2sbp	bpright2sbp	Second measurement of systolic blood pressure from the right arm	subclass	systolic blood pressure value																				
+GCS:bpright2dbp	bpright2dbp	Second measurement of diastolic blood pressure from the right arm	subclass	diastolic blood pressure value																				
+GCS:bpleft1sbp	bpleft1sbp	First measurement of systolic blood pressure from the left arm	subclass	systolic blood pressure value																				
+GCS:bpleft1dbp	bpleft1dbp	First measurement of diastolic blood pressure from the left arm	subclass	diastolic blood pressure value																				
+GCS:bpleft2sbp	bpleft2sbp	Second measurement of systolic blood pressure from the left arm	subclass	systolic blood pressure value																				
+GCS:bpleft2dbp	bpleft2dbp	Second measurement of diastolic blood pressure from the left arm	subclass	diastolic blood pressure value																				
+GCS:m_sbp	m_sbp	Mean systolic blood pressure measured second time	subclass	systolic blood pressure value																				
+GCS:m_dbp	m_dbp	Mean diastolic blood pressure measured second time	subclass	diastolic blood pressure value																				
+GCS:high_sbp	high_sbp	Systolic blood pressure >= 140 mmHg	subclass	systolic blood pressure value	also high BP																			
+GCS:high_dbp	high_dbp	Diastolic blood pressure >= 90 mmHg	subclass	diastolic blood pressure value	also high BP																			
+GCS:htndrug	htndrug	Consumption of any anti-hypertensive medication for more than 6 months		use of antihypertensive agents																				
+GCS:HTN	HTN	Being hypertensive		diagnosis of hypertension																				
+GCS:HTNcat	HTNcat	Categorization of hypetrension		diagnosis of hypertension																				
+GCS:preHTN	preHTN	SBP/DBP >=120/80 AND <140/90		diagnosis of hypertension	how do we handle prehypertension?																			
+GCS:pulse_p	pulse_p	Difference between SBP and DBP		calculated blood pressure value																				
+GCS:mean_bp	mean_bp	mean value of SBP and DBP		calculated blood pressure value																				
+GCS:mid_bp	mid_bp	Mid value of SBP and DBP		calculated blood pressure value																				
+GCS:diffsbp_right_left	diffsbp_right_left	Difference in SBP between arms		systolic blood pressure value																				
+GCS:diffdbp_right_left	diffdbp_right_left	Difference in DBP between arms		diastolic blood pressure value																				
+GCS:Energy	Energy	Amount consumed per day		information about diet	do we want to be more specific?																			
+GCS:fat	fat	Amount consumed per day		information about diet																				
+GCS:salt	salt	Amount consumed per day		information about diet																				
+GCS:protein	protein	Amount consumed per day		information about diet																				
+GCS:total saturated fat	total saturated fat	Amount consumed per day		information about diet																				
+GCS:total trans fat	total trans fat	Amount consumed per day		information about diet																				
+GCS:hydrogenated oil	hydrogenated oil	Amount consumed per day		information about diet																				
+GCS:carbohyderate	carbohyderate	Amount consumed per day		information about diet																				
+GCS:red meat	red meat	Amount consumed per day		information about diet																				
+GCS:processed meat	processed meat	Amount consumed per day		information about diet																				
+GCS:fruits	fruits	Amount consumed per day		information about diet																				
+GCS:vegetables	vegetables	Amount consumed per day		information about diet																				
+GCS:dairy products	dairy products	Amount consumed per day		information about diet																				
+GCS:milk	milk	Amount consumed per day		information about diet																				
+GCS:dietary fiber	dietary fiber	Amount consumed per day		information about diet																				
+GCS:Fish	Fish	Amount consumed per day		information about diet																				
+GCS:Chicken	Chicken	Amount consumed per day		information about diet																				
+GCS:SodiumNa	SodiumNa	Amount consumed per day		information about diet																				
+GCS:Calcium	Calcium	Amount consumed per day		information about diet																				
+GCS:Fe	Fe	Amount consumed per day		information about diet																				
+GCS:Magnesium	Magnesium	Amount consumed per day		information about diet																				
+GCS:Phosphorus	Phosphorus	Amount consumed per day		information about diet																				
+GCS:Potassium	Potassium	Amount consumed per day		information about diet																				
+GCS:Zinc	Zinc	Amount consumed per day		information about diet																				
+GCS:Folate	Folate	Amount consumed per day		information about diet																				
+GCS:Vitamin D	Vitamin D	Amount consumed per day		information about diet																				
+GCS:Vitamin A	Vitamin A	Amount consumed per day		information about diet																				
+GCS:Vitamin B1	Vitamin B1	Amount consumed per day		information about diet																				
+GCS:Vitamin B2	Vitamin B2	Amount consumed per day		information about diet																				
+GCS:Vitamin B12	Vitamin B12	Amount consumed per day		information about diet																				
+GCS:Vitamin C	Vitamin C	Amount consumed per day		information about diet																				
+GCS:Niacin	Niacin	Amount consumed per day		information about diet																				
+GCS:Glycemic load	Glycemic load	Amount consumed per day		information about diet																				
+GCS:Glycemic Index	Glycemic Index	Amount consumed per day		information about diet																				
+GCS:Sugar intake	Sugar intake	Amount consumed per day		information about diet																				
+GCS:Nuts	Nuts	Amount consumed per day		information about diet																				
+GCS:tea	tea	Amount consumed per day		information about diet																				
+GCS:Coffee	Coffee	Amount consumed per day		information about diet																				
+GCS:fbg	fbg	Fasting Blood Glucose	equivalent	blood fasting glucose level value																				
+GCS:urea	urea	Urea																						
+GCS:creatinine	creatinine	Creatinine																						
+GCS:cholesterol	cholesterol	Total Cholesterol																						
+GCS:triglycerides	triglycerides	Triglycerides																						
+GCS:hdl	hdl	High Density Lipoprotein																						
+GCS:ast	ast	Aspartate Transaminase																						
+GCS:alt	alt	Alanine Transaminase																						
+GCS:alkalinep	alkalinep	Alkaline Phosphatase																						
+GCS:ldl	ldl	Low Density Lipoprotein																						
+GCS:ldlhdl	ldlhdl	LDL to HDL ratio																						
+GCS:gamma	gamma	Gamma Glutamyle Transpeptidase																						
+GCS:hbsag	hbsag	HBsAg																						
+GCS:hbsab	hbsab	HBsAb																						
+GCS:hbcab	hbcab	HBcAb																						
+GCS:hbv	hbv	HBV DNA																						
+GCS:hcv	hcv	HCV Antibody																						
+GCS:wbc	wbc	White Blood Cell																						
+GCS:rbc	rbc	Red Blood Cell																						
+GCS:hb	hb	Hemoglobin																						
+GCS:hct	hct	Hematocrit																						
+GCS:plt	plt	Platelet		plateletcrit value	maybe? not sure if this is the same																			
+GCS:mcv	mcv	Mean Corpuscular Volume																						
+GCS:mch	mch	Mean Corpuscular Hemoglobin																						
+GCS:mchc	mchc	Mean Corpuscular Hemoglobin Concentration																						
+GCS:rdw	rdw	Red Cell Distribution Width	equivalent	red blood cell distribution width value																				
+GCS:BloodType	BloodType	Specifies patient Blood Group	equivalent	blood type determination value																				
+GCS:Rh	Rh	Specifies patient Blood Rh	equivalent	rheumatoid factor measurement value																				
+GCS:BioSampHairAvailFlag	BioSampHairAvailFlag	if patient has hair sample select YES if not Selct No																						
+GCS:BioSampNailAvailFlag	BioSampNailAvailFlag	if patient has nail sample select YES if not Selct No																						
+GCS:BioSampBloodAvailFlag	BioSampBloodAvailFlag	if patient has Blood sample select YES if not Selct No	equivalent	blood																				
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								

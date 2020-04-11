@@ -1,0 +1,209 @@
+Field ID	Field Label	Class Type	GECKO Label	GECKO Comment																			
+ID	LABEL	CLASS_TYPE	C % SPLIT=|	A comment																			
+KoGES:0000000	KoGES																						
+KoGES:0000001	Core Variables		KoGES																				
+KoGES:0000002	Core Questionnaires	equivalent	questionnaire/survey data																				
+KoGES:0000003	Socio-demographic data	equivalent	socio-demographic and economic characteristics																				
+KoGES:0000004	Education level	equivalent	education																				
+KoGES:0000005	Marital status	equivalent	marital status value																				
+KoGES:0000006	Household income	equivalent	household income value																				
+KoGES:0000007	Occupation	equivalent	occupation																				
+KoGES:0000008	Medical history	equivalent	clinical history																				
+KoGES:0000009	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.	equivalent	diseases																				
+KoGES:0000010	Previous diagnosis (Disease history)	subclass	diseases																				
+KoGES:0000011	Age at first diagnosis (Disease history)	subclass	diseases																				
+KoGES:0000012	Treatment progress (current treatment)	subclass	medication																				
+KoGES:0000013	Treatment method (hypertension, diabetes, hyperlipidemia only)	subclass	medication																				
+KoGES:0000014	Surgery (operation) history	subclass	surgical interventions																				
+KoGES:0000015	Previous surgery (operation)	subclass	surgical interventions																				
+KoGES:0000016	Age at first surgery	subclass	surgical interventions																				
+KoGES:0000017	Family disease history	subclass	family clinical history																				
+KoGES:0000018	Previous diagnosis (Family disease history)	subclass	family clinical history																				
+KoGES:0000019	Relationship	subclass	family clinical history																				
+KoGES:0000020	Age at first diagnosis (Family disease history)	subclass	family clinical history																				
+KoGES:0000021	Number of siblings and children	subclass	family and household structure																				
+KoGES:0000022	Lifestyle	equivalent	lifestyle and behaviours																				
+KoGES:0000023	Smoking habits	equivalent	tobacco																				
+KoGES:0000024	Amount of ciagrettes	subclass	tobacco																				
+KoGES:0000025	Total period of smoking	subclass	tobacco																				
+KoGES:0000026	Age at first smoking	subclass	tobacco																				
+KoGES:0000027	Secondhand smoking	equivalent	exposure to second hand smoke																				
+KoGES:0000028	Drinking habits	equivalent	alcohol consumption history																				
+KoGES:0000029	Amount of drinking	subclass	alcohol consumption history																				
+KoGES:0000030	Total period of drinking	subclass	alcohol consumption history																				
+KoGES:0000031	Drinking frequency	subclass	alcohol consumption history																				
+KoGES:0000032	Sleeping pattern	subclass	sleep																				
+KoGES:0000033	Hours of sleep	subclass	sleep																				
+KoGES:0000034	Time go to bed and wake up in the morning	subclass	sleep																				
+KoGES:0000035	Trouble of sleeping	subclass	sleep																				
+KoGES:0000036	Snoring	equivalent	snoring value																				
+KoGES:0000037	Physical activity	equivalent	physical activity history																				
+KoGES:0000038	Regular physical activity	subclass	physical activity history																				
+KoGES:0000039	Excercises	subclass	physical activity history																				
+KoGES:0000040	Household chores	subclass	physical activity history																				
+KoGES:0000041	Climbing stairs	subclass	physical activity history																				
+KoGES:0000042	Womens health		KoGES																				
+KoGES:0000043	Menstrual factors	subclass	menstrual cycle history																				
+KoGES:0000044	Age at menarche	subclass	menstrual cycle history																				
+KoGES:0000045	Length of menstrual cycle	subclass	menstrual cycle history																				
+KoGES:0000046	Menopause status	equivalent	menopausal status																				
+KoGES:0000047	Reproductive history	equivalent	pregnancy history																				
+KoGES:0000048	Number of pregnancies	subclass	pregnancy history																				
+KoGES:0000049	Age at each pregnancy	subclass	pregnancy history																				
+KoGES:0000050	Durations and outcome of pregnancies	subclass	pregnancy history																				
+KoGES:0000051	Breastfeeding	equivalent	breastfeeding value																				
+KoGES:0000052	Infertility	equivalent	diagnosis of infertility																				
+KoGES:0000053	Dietary survey	equivalent	information about diet																				
+KoGES:0000054	Food Frequency Questionnaire	equivalent	Food Frequency Questionnaire result																				
+KoGES:0000055	Dietary habits	subclass	information about diet																				
+KoGES:0000056	Anthropometric measurements	equivalent	anthropometry																				
+KoGES:0000057	Height & weight	equivalent	height|weight																				
+KoGES:0000058	Waist & hip circumference	equivalent	waist circumference value|hip circumference value																				
+KoGES:0000059	Body composition	subclass	anthropometry																				
+KoGES:0000060	Blood pressure & pulse rate	equivalent	blood pressure measurement value|pulse value																				
+KoGES:0000061	Core Clinical examination		KoGES																				
+KoGES:0000062	Core Blood test	equivalent	blood measurement value																				
+KoGES:0000063	Complete blood cell count	equivalent	complete blood cell count value																				
+KoGES:0000064	Glucose (fasting)	equivalent	blood fasting glucose level value	not fasting specified																			
+KoGES:0000065	Albumin	equivalent	urine albumin excretion rate value	not sure if the excretion rate assay is the correct match, but this is the only thing I could find																			
+KoGES:0000066	Blood urea nitrogen (BUN)	equivalent	blood urea nitrogen level value																				
+KoGES:0000067	Creatinine (Blood)	equivalent	blood creatinine level value																				
+KoGES:0000068	AST (SGOT)	equivalent	blood aspartate aminotransferase activity level value																				
+KoGES:0000069	ALT (SGPT)	equivalent	blood alanine aminotransferase activity level value																				
+KoGES:0000070	y-GTP	equivalent	blood gamma-glutamyltransferase activity level value																				
+KoGES:0000071	Total cholesterol	equivalent	blood total cholesterol level value																				
+KoGES:0000072	HDL-Cholesterol	equivalent	blood high density lipoprotein cholesterol level value																				
+KoGES:0000073	Triglyceride	equivalent	blood lipoprotein triglyceride level value																				
+KoGES:0000074	Core Urine test	equivalent	urine measurement value																				
+KoGES:0000075	pH	equivalent	urine pH value																				
+KoGES:0000076	Protein	equivalent	urine total protein level value																				
+KoGES:0000077	Glucose	equivalent	urine glucose level value																				
+KoGES:0000078	Blood	equivalent	blood presence in urine value																				
+KoGES:0000079	Substudy Variables		KoGES																				
+KoGES:0000080	Substudy Questionnaires	equivalent	questionnaire/survey data																				
+KoGES:0000081	Psychosocial well-being status (PWI)	subclass	wellbeing measurement result																				
+KoGES:0000082	Depression (CES-D, BDI)	subclass	diagnosis of depression	not the exact tests																			
+KoGES:0000083	24 hour recall dietary survey	subclass	information about diet																				
+KoGES:0000084	Sleep disorder	equivalent	diagnosis of sleep disorder																				
+KoGES:0000085	In-depth questionnaire (By disease)	equivalent	diseases																				
+KoGES:0000086	Respiratory disease	equivalent	respiratory system																				
+KoGES:0000087	Gastroenterologic disorder	equivalent	diagnosis of gastrointestinal system disease																				
+KoGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	equivalent	(diseases and ('diagnosis of nose disease' or 'diagnosis of auditory system disease'))																				
+KoGES:0000089	Arthritis	equivalent	diagnosis of arthritis																				
+KoGES:0000090	Aging study		KoGES																				
+KoGES:0000091	Aging study Questionnaires	subclass	questionnaire/survey data																				
+KoGES:0000092	Health-related quality of life (WHOQOL, EQ-SD, SF-12)	subclass	quality of life survey result																				
+KoGES:0000093	Activities of daily living (K-ADL, S-IADL)	subclass	activity of daily living survey result																				
+KoGES:0000094	Dementia screening (K-MMSE, K-MoCA)	subclass	diagnosis of dementia																				
+KoGES:0000095	Dementia screening by caregiver (CS-KGDS, KDSQ-C)	subclass	diagnosis of dementia	not by caregiver																			
+KoGES:0000096	Depression (GDS)	subclass	diagnosis of depression	not specific to aging studies																			
+KoGES:0000097	Vascular dementia / Alzheimers disease screening (Ischemia Scales)	equivalent	(diseases and ('diagnosis of vascular dementia' or GECKO:1000046))																				
+KoGES:0000098	Aging study Clincial examination		KoGES																				
+KoGES:0000099	Cognitive Function test	equivalent	cognitive function measurement result																				
+KoGES:0000100	Neuropsychological test (SNSB-II)	subclass	neuropsychological test result																				
+KoGES:0000101	Physical performance test (SPPB, SFT)	subclass	physical performance testing result																				
+KoGES:0000102	Grip strength	equivalent	grip strength measurement value																				
+KoGES:0000103	Brain MRI	equivalent	brain MRI result																				
+KoGES:0000104	Substudy Clinical Examination		KoGES																				
+KoGES:0000105	Spirometry	equivalent	spirometry result																				
+KoGES:0000106	Bone strength (sonometer)	subclass	bone measurement value	CMO has a few different terms that measure strength, e.g. ultimate force & stifness, but no exact match																			
+KoGES:0000107	Bone mineral density (DEXA test)	equivalent	bone mineral density value																				
+KoGES:0000108	X-ray (chest, hand, knee, C-spin)	subclass	X-ray imaging result																				
+KoGES:0000109	Ultrasound carotid Intima Media Thickness (IMT)	equivalent	carotid artery intima media thickness value																				
+KoGES:0000110	Pulse Wave Velocity (PWV)	subclass	heart blood flow measurement value	Has different pulse wave measurements, but this is the parent class to all																			
+KoGES:0000111	Ecocardiography	equivalent	echocardiography result																				
+KoGES:0000112	Substudy Blood test	equivalent	blood measurement value																				
+KoGES:0000113	Glucose (1hr on OGTT)	subclass	blood glucose level value																				
+KoGES:0000114	Glucose (2hr on OGTT)	subclass	blood glucose level value																				
+KoGES:0000115	HbA1C	equivalent	blood hemoglobin A1c level value																				
+KoGES:0000116	Insulin	equivalent	blood insulin level value																				
+KoGES:0000117	Insulin(1hr)	subclass	blood insulin level value																				
+KoGES:0000118	Insulin(2hr)	subclass	blood insulin level value																				
+KoGES:0000119	Total Protein	subclass	blood protein measurement value	CMO has plasma and serum total protein measurements																			
+KoGES:0000120	Total Bilirubin	equivalent	blood bilirubin level value																				
+KoGES:0000121	LDL-Cholesterol	equivalent	blood low density lipoprotein cholesterol level value																				
+KoGES:0000122	hs-CRP	equivalent	blood C-reactive protein level value																				
+KoGES:0000123	Homocystein	equivalent	blood homocysteine level value																				
+KoGES:0000203	Uric acid	equivalent	blood uric acid level value																				
+KoGES:0000125	Fibrinogen	equivalent	blood fibrinogen level value																				
+KoGES:0000126	Alkaline phosphate	equivalent	blood alkaline phosphate activity level value																				
+KoGES:0000127	Folate	equivalent	blood folate level value																				
+KoGES:0000128	Adiponectin	equivalent	blood adiponectin level value																				
+KoGES:0000129	Glucagon	equivalent	blood glucagon level value																				
+KoGES:0000130	C-peptide	equivalent	blood C-peptide level value																				
+KoGES:0000170	Renin	equivalent	blood renin activity level value																				
+KoGES:0000132	Phosphate	equivalent	blood phosphate level value																				
+KoGES:0000133	Tropinin T	equivalent	blood troponin T level value																				
+KoGES:0000134	Apolipoprotein A	equivalent	blood apolipoprotein A level value																				
+KoGES:0000135	Apolipoprotein B	equivalent	blood apolipoprotein B level value	Typo in CMO label?																			
+KoGES:0000136	Sodium(Na) (Blood)	equivalent	blood sodium level value																				
+KoGES:0000137	Potassium(K) (Blood)	equivalent	blood potassium level value																				
+KoGES:0000138	Chloride(Cl)	equivalent	blood chloride level value																				
+KoGES:0000139	Neutrophil	equivalent	blood neutrophil count value																				
+KoGES:0000140	Lymphocyte	equivalent	blood lymphocyte count value																				
+KoGES:0000141	Monocyte	equivalent	blood monocyte count value																				
+KoGES:0000142	Eosinophil	equivalent	blood eosinophil count value																				
+KoGES:0000143	Basophil	equivalent	blood basophil count value																				
+KoGES:0000144	Red cell distribution width (RDW)	equivalent	red blood cell distribution width value																				
+KoGES:0000145	Mean platelet volume (MPV)	equivalent	mean platelet volume value																				
+KoGES:0000146	Platlet crit (PCT)	equivalent	plateletcrit value																				
+KoGES:0000147	Vitamin B12	equivalent	blood vitamin B12 level value	ChEBI stops at B vitamin, but FOODON has vitamin B12 - would that be better?																			
+KoGES:0000148	25-OH-Vitamin D	equivalent	blood calcidiol level value	I *think* this is the right ChEBI term																			
+KoGES:0000149	Thyroglobulin	equivalent	blood thyroglobulin level value																				
+KoGES:0000152	Ferritin	equivalent	blood ferritin level value																				
+KoGES:0000151	UIBC	equivalent	unsaturated iron binding capacity measurement value																				
+KoGES:0000153	Oxidized LDL	subclass	blood low density lipoprotein cholesterol level value	not oxidized																			
+KoGES:0000154	8-OHdG	equivalent	blood 8-OHdG level value																				
+KoGES:0000155	Calcium(Ca) (Blood)	equivalent	blood calcium level value																				
+KoGES:0000156	Free T3	equivalent	blood triiodothyronine level value																				
+KoGES:0000157	Free T4	equivalent	blood thyroxine level value																				
+KoGES:0000158	TSH	equivalent	blood thyroid stimulating hormone level value																				
+KoGES:0000159	Anti-microsomal Ab	equivalent	thyroid peroxidase antibody measurement value																				
+KoGES:0000160	RF	equivalent	rheumatoid factor measurement value																				
+KoGES:0000161	Osteocalcin	equivalent	blood osteocalcin level value																				
+KoGES:0000162	C-telopeptide	equivalent	blood type I collagen C-terminal telopeptide level value																				
+KoGES:0000163	Vitamin D	equivalent	blood vitamin D level value																				
+KoGES:0000164	Estradiol	equivalent	blood estradiol level value																				
+KoGES:0000165	Cadmium(Cd)	equivalent	blood cadmium level value																				
+KoGES:0000166	Lead(Pb)	equivalent	blood lead level value	OK to use lead atom?																			
+KoGES:0000167	Aluminum(Al)	equivalent	blood aluminum level value	atom or ion?																			
+KoGES:0000168	Zinc(Zn)	equivalent	blood zinc level value	OK to use atom?																			
+KoGES:0000169	Blood type	equivalent	blood type determination value																				
+KoGES:0000171	Hepatitis B antibody	equivalent	Hepatits B antibody measurement value																				
+KoGES:0000172	Hepatitis C antibody	equivalent	Hepatits C antibody measurement value																				
+KoGES:0000173	Hepatitis A antibody (HAV)	equivalent	Hepatits A antibody measurement value																				
+KoGES:0000174	HPV(Human Papillomavirus)	subclass	blood measurement value	there's no such thing as an HPV blood test?																			
+KoGES:0000175	Helicobacter pylori	equivalent	Helicobacter pylori antibody measurement value																				
+KoGES:0000176	Carcinoembryonic antigen (CEA)	equivalent	carcinoembryonic antigen measurement value																				
+KoGES:0000177	Cancer antigen 125 (CA125)	equivalent	cancer antigen 125 measurement value																				
+KoGES:0000178	DHEA-S	equivalent	blood dehydroepiandrosterone sulfate level value																				
+KoGES:0000179	IGF-1	equivalent	blood insulin-like growth factor I level value																				
+KoGES:0000180	Testosterone	equivalent	blood testosterone level value																				
+KoGES:0000181	Luteinizing hormone (LH)	equivalent	blood lutenizing hormone level value																				
+KoGES:0000182	Follicle Stimulation Hormone (FSH)	equivalent	blood follicle stimulating hormone level value																				
+KoGES:0000183	Prostate Specific Antigen (PSA)	equivalent	blood prostate-specific antigen level value																				
+KoGES:0000184	Lactate Dehydrogenase (LDH)	equivalent	lactate dehydrogenase measurement value																				
+KoGES:0000185	Telomere length	equivalent	blood telomere length value																				
+KoGES:0000186	Apo E genotype	equivalent	blood apolipoprotein E level value	Not sure if this is quite right																			
+KoGES:0000187	Substudy Urine test	equivalent	urine measurement value																				
+KoGES:0000188	Ketone	equivalent	urine ketone body level value																				
+KoGES:0000189	Bilirubin	equivalent	urine bilirubin level value																				
+KoGES:0000190	Urobilinogen	equivalent	urine urobilinogen level value	NCIT does have a term for this - but have not used NCIT so far																			
+KoGES:0000191	Nitrite	equivalent	urine nitrite level value																				
+KoGES:0000192	Urinary specific gravity	equivalent	urine specific gravity value																				
+KoGES:0000193	Hematuria	equivalent	blood presence in urine value	No check for blood, though HP does have a term for 'blood in urine'. I think looking at the measurement is better here though																			
+KoGES:0000194	Color	equivalent	urine color value																				
+KoGES:0000195	R.B.C.	equivalent	urine erythrocyte level value	CMO only has RBC for blood samples																			
+KoGES:0000196	W.B.C.	equivalent	urine leukocyte level value	CMO only has WBC for blood samples																			
+KoGES:0000197	E.P. cells	equivalent	urine epithelial cell level value																				
+KoGES:0000198	Casts	equivalent	urine cast level value																				
+KoGES:0000199	Bacteria	equivalent	urine bacteria count value	No check for bacteria, though HP does have a term for 'bacteria in urine'. I think looking at the measurement is better here though																			
+KoGES:0000200	Crystals	equivalent	presence of crystals in urine value																				
+KoGES:0000201	Protein, total	equivalent	urine total protein level value																				
+KoGES:0000202	Creatinine (Urine)	equivalent	urine creatinine level value																				
+KoGES:0000203	Uric acid	equivalent	urine uric acid level value	CMO only has blood uric acid																			
+KoGES:0000204	Calcium (Urine)	equivalent	urine calcium level value																				
+KoGES:0000205	Sodium (Urine)	equivalent	urine sodium level value																				
+KoGES:0000206	Potassium (Urine)	equivalent	urine potassium level value																				
+KoGES:0000207	Vitamin C	equivalent	urine vitamin C level value	no CMO term for vit C levels in urine																			
+KoGES:0000208	Microalbumin	equivalent	urine albumin excretion rate value	not sure if the excretion rate assay is the correct match, but this is the only thing I could find																			
