@@ -202,19 +202,22 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 
 ### GECKO Mapping Tasks
 
+.PHONY: build/mapping/gecko-mapping.xlsx
 build/mapping/gecko-mapping.xlsx: | build/mapping
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
-build/mapping/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+MAP_TSV := mappings/index.tsv mappings/properties.tsv mappings/koges-mapping.tsv mappings/gcs-mapping.tsv
+
+mappings/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Index > $@
 
-build/mapping/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Properties > $@
 
-build/mapping/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ KoGES > $@
 
-build/mapping/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ GCS > $@
 
 # GECKO plus OBO terms
@@ -238,7 +241,7 @@ MAPPINGS := build/mapping/koges-gecko.ttl build/mapping/gcs-gecko.ttl
 # Cohort terms + GECKO terms from template
 # The GECKO terms are just referenced and do not have structure/annotations
 
-build/mapping/%-mapping.owl: build/gecko-full.owl build/mapping/%-mapping.tsv build/%.owl | build/robot.jar
+build/mapping/%-mapping.owl: build/gecko-full.owl mappings/%-mapping.tsv build/%.owl | build/robot.jar
 	$(ROBOT) template \
 	--input $< \
 	--template $(word 2,$^) \
@@ -323,12 +326,12 @@ serve: $(BROWSER)
 
 .PHONY: refresh
 refresh:
-	rm -rf data/cineca.tsv
-	rm -rf data/koges.tsv
-	rm -rf data/saprin.tsv
+	rm -rf data/cineca.tsv data/koges.tsv data/saprin.tsv $(MAP_TSV)
 	touch data/genomics-england.xlsx
 	touch data/golestan-cohort-study.xlsx
 	touch data/vukuzazi.xlsx
+	make data/cineca.tsv data/koges.tsv data/saprin.tsv
+	make build/mapping/gecko-mapping.xlsx $(MAP_TSV)
 
 .PHONY: clean
 clean:
