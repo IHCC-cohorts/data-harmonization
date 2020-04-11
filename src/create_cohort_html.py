@@ -38,8 +38,8 @@ def main():
         cohort_id = cohort_md['id'].lower().replace(' ', '-')
 
         cohort_data.update(cohort_md)
-        cohort_data['tree'] = cohort_id + '-tree.html'
-        cohort_data['owl'] = cohort_id + '.owl'
+        cohort_data['tree'] = '../{0}-tree.html'.format(cohort_id)
+        cohort_data['owl'] = '../{0}.owl'.format(cohort_id)
 
         template = Template(template_str)
         res = template.render(o=cohort_data)
