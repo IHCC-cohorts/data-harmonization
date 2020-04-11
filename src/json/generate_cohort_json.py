@@ -32,13 +32,11 @@ def main():
 
     all_data = []
     for cohort_name, file_name in cohorts.items():
-        print(cohort_name)
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
         child_to_parent = get_children(gin, 'http://example.com/GECKO_9999998')
         master_map = {}
         data = get_data(child_to_parent)
-        print(json.dumps(data) + '\n\n')
         if cohort_name in cohort_data:
             this_cohort = cohort_data[cohort_name]
             this_cohort.update(data)
