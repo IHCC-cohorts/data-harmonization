@@ -1,1007 +1,146 @@
-Field ID	Field Label	Definition	Class Type	GECKO Label	Comment																			
-ID	LABEL		CLASS_TYPE	C % SPLIT=|																				
-SAPRIN:Base_Entities	Base Entities	The core entities on which longitudinal data will be collected. Each entity has a dated start and end event																						
-SAPRIN:Location	Location	A place to which geo-coordinates can be assigned																						
-SAPRIN:Type_Location	Type (Location)																							
-SAPRIN:Area	Area	Village or other higher level spatial grouping of locations																						
-SAPRIN:Coordinate	Coordinate	Latitude and longitude on the WGS84 coordinate system																						
-SAPRIN:Household	Household	A household resident at a location within the boundary of the surveillance area. A household is defined as a social group of one or more individual members. Resident household members share the same dwelling as the household, non-resident household members are individuals who do not share the same dwelling as the household, but who eat from the same pot when they are present in the household‚Äôs dwelling.		residence																				
-SAPRIN:Identifier_Household	Identifier (Household)	A unique household identifier which the household retains irrespective of its current residence		residence																				
-SAPRIN:Individual	Individual	Household members, where a resident is a member of a household who normally lives (i.e. intends to sleep the majority of the time) at the same dwelling as the household; and a non-resident is a member of a household who does not normally live at the same dwelling as the household but is nevertheless considered a member of the household.		family and household structure																				
-SAPRIN:Identifier_Individual	Identifier (Individual)	A globally unique identifier used internally to uniquely identify the individual																						
-SAPRIN:External_identifier_Individual	External identifier (Individual)	An identifier used on data collection instruments to uniquely identify the individual, but is removed together with other personally identifiable information when data is made available for analysis																						
-SAPRIN:Surname	Surname	Family or last name																						
-SAPRIN:Alternative_surname	Alternative surname	An alternative surname (formerly) used by the individual, e.g. maiden name																						
-SAPRIN:First_name_1	First name 1	The first given name of the individual																						
-SAPRIN:First_name_2	First name 2	The second/alternative given name of the individual																						
-SAPRIN:Civilian_ID_number	Civilian ID number	The 13-digit South African civilian identity number																						
-SAPRIN:Citizenship	Citizenship	The country of which the individual is a citizen		residence																				
-SAPRIN:Nationality	Nationality	The country of origin of the individual (the country of which the person is/was a citizen by birth)		ethnicity/race																				
-SAPRIN:Sex	Sex	Male (1), female(2) or unknown(0)		biological sex																				
-SAPRIN:Birth_Individual	Birth (Individual)	The Birth event of this individual or the DeliveryEvent resulting in the birth of this individual if the individual enters surveillance through birth																						
-SAPRIN:EndEvent_Individual	EndEvent (Individual)	The death event of this individual or the Observation at which this individual was last observed																						
-SAPRIN:MotherId	MotherId	The unique identifier of the mother of the individual, if the mother is enumerated in the surveillance																						
-SAPRIN:FatherId	FatherId	The unique identifier of the father of the individual, if the father is enumerated in the surveillance																						
-SAPRIN:MotherSurname	MotherSurname	The surname of the mother of the individual																						
-SAPRIN:MotherFirstName	MotherFirstName	The first name/s of the mother																						
-SAPRIN:FatherSurname	FatherSurname	The surname of the father of the individual																						
-SAPRIN:FatherFirstName	FatherFirstName	The first name/s of the father																						
-SAPRIN:Events	Events	Demographic events that delineate episodes of observation during longitudinal surveillance																						
-SAPRIN:Migration	Migration	A change in location of usual residence		residence	Maybe?																			
-SAPRIN:Date_Migration	Date (Migration)	Date of migration		residence	Maybe?																			
-SAPRIN:Type_Migration	Type (Migration)			residence	Maybe?																			
-SAPRIN:Direction	Direction			residence	Maybe?																			
-SAPRIN:Origin	Origin	Origin of the migration (location)		residence	Maybe?																			
-SAPRIN:Destination	Destination	Destination of the migration (location)		residence	Maybe?																			
-SAPRIN:Unit	Unit	Individual or household																						
-SAPRIN:Birth	Birth	The birth event of an individual																						
-SAPRIN:Date_Birth	Date (Birth)	Date of birth		age/birthdate																				
-SAPRIN:Birth_weight	Birth weight	Birth weight as obtained from the Road to Health card in grams																						
-SAPRIN:BirthCertificate	BirthCertificate	Whether the birth certificate was observed																						
-SAPRIN:DateRegistered	DateRegistered	The date on which the birth was registered, or null if the birth hasn‚Äôt been registered yet																						
-SAPRIN:PregnancyOutcome	PregnancyOutcome	The end event of a pregnancy		pregnancy history																				
-SAPRIN:Date_PregnancyOutcome	Date (PregnancyOutcome)	Date of birth		pregnancy history																				
-SAPRIN:Type_PregnancyOutcome	Type (PregnancyOutcome)	Types i-ii is only applicable if the pregnancy end prior to the 28th week of pregnancy, types iii-v is applicable only on or after the 28th week of pregnancy		pregnancy history																				
-SAPRIN:Place_PregnancyOutcome	Place (PregnancyOutcome)			pregnancy history																				
-SAPRIN:BirthAttendant	BirthAttendant			pregnancy history																				
-SAPRIN:LiveBirths	LiveBirths	The number of babies born alive resulting from this delivery		pregnancy history																				
-SAPRIN:Stillborn	Stillborn	The number of still born babies resulting from this delivery		pregnancy history																				
-SAPRIN:Death	Death	The death of an individual																						
-SAPRIN:Date_Death	Date (Death)	The date of the death																						
-SAPRIN:Place_Death	Place (Death)																							
-SAPRIN:DeathCertificate	DeathCertificate	Observed																						
-SAPRIN:Verbal_autopsy	Verbal autopsy	WHO standard verbal autopsy questionnaire items. SAPRIN will adopt the worldwide standardised World Health Organisation (WHO) Verbal Autopsy questionnaires to determine the cause of deaths reported in the surveillance population. The latest version of the WHO Verbal Autopsy Questionnaire is 2016, edited and cognitively tested to facilitate the use of publicly available analytical software for assigning the cause of death.																						
-SAPRIN:Enumeration	Enumeration	The initial event at enumeration of an entity. Can only be used during the base census of the demographic surveillance, or when a new area is added to the surveillance																						
-SAPRIN:Date_Enumeration	Date (Enumeration)	Date of enumeration																						
-SAPRIN:Membership_Events	Membership Events	A change in household membership																						
-SAPRIN:Date_Membership_Events	Date (Membership Events)	The date of the change																						
-SAPRIN:Type_Membership_Events	Type (Membership Events)																							
-SAPRIN:Household_Headship	Household Headship	A change in the head of the household		family and household structure																				
-SAPRIN:Date_Household_Headship	Date (Household Headship)	The date of the change																						
-SAPRIN:Type_Household_Headship	Type (Household Headship)																							
-SAPRIN:UnionEvent	UnionEvent	A change in the union (conjugal relationship) between two individuals																						
-SAPRIN:Date_UnionEvent	Date (UnionEvent)	The date of the event																						
-SAPRIN:Type_UnionEvent	Type (UnionEvent)																							
-SAPRIN:Observation	Observation	A surveillance visit at a location																						
-SAPRIN:Date_Observation	Date (Observation)	Visit date																						
-SAPRIN:Location_Observation	Location (Observation)	Location where the visit took place																						
-SAPRIN:DataCollector	DataCollector	The person responsible for data collection during the visit																						
-SAPRIN:Respondent	Respondent	The primary respondent at the visit																						
-SAPRIN:Episodes	Episodes	Used to record associations longitudinally between base entities. Episodes are always started and ended through events.																						
-SAPRIN:Residence	Residence	An episode during which an individual is resident (sleeping most of the time there) at a particular location that falls within the surveillance area. An individual can only be resident at one location at a time, i.e. residency episodes cannot overlap																						
-SAPRIN:Individual_Residence	Individual (Residence)	The individual identifier																						
-SAPRIN:Location_Residence	Location (Residence)	The location identifier																						
-SAPRIN:StartEvent_Residence	StartEvent (Residence)	The event that started the episode, can only be Enumeration, Birth, Migration (Direction: In)																						
-SAPRIN:EndEvent_Residence	EndEvent (Residence)	The event that terminated the episode, can only be Death, Migration (Direction: Out) and Observation (in which the implication is that the individual is last known to be resident)																						
-SAPRIN:HouseholdResidence	HouseholdResidence	An episode during which a household is resident at a particular location that falls within the surveillance area. A household can only be resident at one location at a time, i.e. residency episodes cannot overlap																						
-SAPRIN:Household_HouseholdResidence	Household (HouseholdResidence)	The household identifier																						
-SAPRIN:Location_HouseholdResidence	Location (HouseholdResidence)	The location identifier																						
-SAPRIN:External_identifier_HouseholdResidence	External identifier (HouseholdResidence)	The identifier associated with the household during this residence																						
-SAPRIN:StartEvent_HouseholdResidence	StartEvent (HouseholdResidence)	The event that started the episode, can only be Enumeration, Household formation, Migration (Direction: In)																						
-SAPRIN:EndEvent_HouseholdResidence	EndEvent (HouseholdResidence)	The event that terminated the episode, can only be Household dissolution, Migration (Direction: Out) and Observation (in which the implication is that the household is last known to be resident)																						
-SAPRIN:Membership_Episodes	Membership Episodes	An episode during which an individual is a member of a household. An individual must be a member of at least one household to be under surveillance. An individual can be a member of more than one household at a time (membership episodes may overlap). In the case of multiple memberships, the designated household of an individual will be the household the individual is co-resident with, ranked according to the closeness of the members relationship to the household head (self, spouse, child, grandchild, parent, sibling, other relationship)																						
-SAPRIN:Individual_Membership_Episodes	Individual (Membership Episodes)	The individual identifier																						
-SAPRIN:Household_Membership_Episodes	Household (Membership Episodes)	The household identifier																						
-SAPRIN:StartEvent_Membership_Episodes	StartEvent (Membership Episodes)	The event that started the episode, can only be Enumeration, Birth or Membership start																						
-SAPRIN:EndEvent_Membership_Episodes	EndEvent (Membership Episodes)	The event that ended the episode, can only be Death, Membership end or Observation (implying that the membership is current)																						
-SAPRIN:Household_Head_Relationship	Household Head Relationship	Household head relationships are linked to a household membership and record the relationship between the individual and the head of the associated household. If the head of household change, all current household members start a new household head relationship episode																						
-SAPRIN:Membership_Household_Head_Relationship	Membership (Household Head Relationship)	The household membership episode associated with this household head relationship																						
-SAPRIN:Relationship	Relationship	The relationship between the individual member (to whom the membership belongs) and the current household head of the household																						
-SAPRIN:StartEvent_Household_Head_Relationship	StartEvent (Household Head Relationship)	The event that started the episode. Can only be Enumeration, Birth, Membership start, or Household Headship start																						
-SAPRIN:EndEvent_Household_Head_Relationship	EndEvent (Household Head Relationship)	The event that ended the episode. Can only be Death, Membership end, Household Headship end or Observation																						
-SAPRIN:Union	Union	The episode during which two persons are in an informal or formal conjugal relationship. For a conjugal relationship to exist the following factors should be considered:
- i. Shelter. Do the partners live under the same roof?
- ii. Sexual and personal conduct. Do the partners have sexual relations; do they maintain an attitude of fidelity to each other; do they eat their meals together?
- iii. Services. Do they share household responsibilities?
- iv. Social. Do they participate together in social activities; does their society recognise them as a couple?
- v. Support. Do they support each other financially?
- vi. Children. Do they have children together?																						
-SAPRIN:Individual1	Individual1	The individual identifier of one of the parties to the union. By convention this will be the female in a heterosexual union.																						
-SAPRIN:Individual2	Individual2	The individual identifier of the second party to the union.																						
-SAPRIN:StartEvent_Union	StartEvent (Union)	The start of the union. Can only be Enumeration or Union start																						
-SAPRIN:MarriageDate	MarriageDate	The date on which the union has been formalised as a marriage																						
-SAPRIN:EndEvent_Union	EndEvent (Union)	The end of the union. Can only be Union ‚Äì partner died, Union ‚Äì separation (if there is no marriage date), Union ‚Äì divorce (if there is a marriage date), or Observation if it a current union																						
-SAPRIN:Pregnancy	Pregnancy	The period of being pregnant. Also used to record maternity histories retrospectively		pregnancy history																				
-SAPRIN:Woman	Woman	The individual identifier of the woman who experienced the pregnancy		pregnancy history																				
-SAPRIN:ANCVisits	ANCVisits	The number of antenatal care visits during this pregnancy		pregnancy history																				
-SAPRIN:Duration	Duration	Duration in weeks of the pregnancy		pregnancy history																				
-SAPRIN:Outcome	Outcome	A delivery event or Observation if the pregnancy is still current at the time of observation		pregnancy history																				
-SAPRIN:Social_support	Social support	The period during which an individual receives a government social support grant																						
-SAPRIN:Grantholder	Grantholder	The individual identifier of the person holding the grant																						
-SAPRIN:Beneficiary	Beneficiary	The individual identifier of the intended beneficiary of the grant. This may be the same as the identifier of the grant holder in the case where the holder is the beneficiary, e.g. old age pension, or different as in the case of care dependency grants, where the grant holder receives the grant on behalf of someone else, e.g. a child																						
-SAPRIN:Type_Social_support	Type (Social support)	The type of grant																						
-SAPRIN:StartDate	StartDate	The start date of the social support																						
-SAPRIN:EndDate	EndDate	The end date of the social support																						
-SAPRIN:StatusObservation	StatusObservation	Information collected at a particular observation, valid only at the time of the observation. State may be imputed between consecutive status observations but is not known to be valid. This is in contrast with episode where the assertion is that the state represented by the episode is valid for the duration of the episode.																						
-SAPRIN:Individual_StatusObservation	Individual StatusObservation	A set of data elements collected about an individual either during a face-to-face visit or telephonic interview with the individual or from a proxy informant																						
-SAPRIN:Individual_Individual_StatusObservation	Individual (Individual StatusObservation)	The unique individual identifier of the subject of the status observation																						
-SAPRIN:Observation_Individual_StatusObservation	Observation (Individual StatusObservation)	The observation at which the status observation was made																						
-SAPRIN:ResidentStatus	ResidentStatus	Physical presence in the dwelling, recorded as the number of months since the previous observation visit		residence																				
-SAPRIN:MotherStatus	MotherStatus																							
-SAPRIN:FatherStatus	FatherStatus																							
-SAPRIN:HighestSchoolLevelCompleted	HighestSchoolLevelCompleted	Grade 1 ‚Äì 12		education																				
-SAPRIN:HighestNonSchoolEducation	HighestNonSchoolEducation			education																				
-SAPRIN:CurrentEducation	CurrentEducation	If the individual is currently attending an educational institution, at what level:		education																				
-SAPRIN:Currently_employed	Currently employed			occupation																				
-SAPRIN:Not_employed	Not employed	Type/reason for unemployment		occupation																				
-SAPRIN:EmploymentSector	EmploymentSector			occupation																				
-SAPRIN:EmploymentType	EmploymentType			occupation																				
-SAPRIN:Employer	Employer			occupation																				
-SAPRIN:FinancialStatus	FinancialStatus	Self-reported financial status																						
-SAPRIN:MaritalStatus	MaritalStatus			marital status value																				
-SAPRIN:PartnershipStatus	PartnershipStatus																							
-SAPRIN:HealthStatus	HealthStatus	Self-reported health status																						
-SAPRIN:Tuberculosis	Tuberculosis			diagnosis of tuberculosis																				
-SAPRIN:HIV	HIV			diagnosis of HIV																				
-SAPRIN:If_HIVPos	If HIV+			diagnosis of HIV																				
-SAPRIN:If_HIVNeg	If HIV-	i. When last HIV- result (>1yr, <1yr ago)		diagnosis of HIV																				
-SAPRIN:HIVResult	HIVResult	HIV serostatus from dried blood spot		diagnosis of HIV																				
-SAPRIN:Hypertension	Hypertension			diagnosis of hypertension																				
-SAPRIN:Diabetes	Diabetes			diagnosis of diabetes																				
-SAPRIN:Health_care_utilisation	Health care utilisation																							
-SAPRIN:Vaccination_history	Vaccination history (child <=6yr)	For each vaccination record: date received and source of information (Road to Health Card or recall)																						
-SAPRIN:Household_Status_Observation	Household Status Observation	Set of data elements collected from a household informant, during a face to face or telephonic interview																						
-SAPRIN:Water_source	Water source	The most commonly used (during last year) source of drinking water																						
-SAPRIN:Toilet	Toilet	What kind of toilet does the household use																						
-SAPRIN:Electricity_supply	Electricity supply	Is the household connected to the electricity grid?																						
-SAPRIN:Cooking_fuel	Cooking fuel	What is the main fuel used for cooking?																						
-SAPRIN:Dwelling_construction	Dwelling construction	What is the construction materials of the walls?
- What is the construction material of the floor?
- How many bedrooms does your household occupy at this dwelling?																						
-SAPRIN:Assets	Assets	Does the household have any of the following items in good working order?																						
-SAPRIN:Crime	Crime	Has any resident member of the household been a victim of any of these crimes in the past 12 months?																						
-SAPRIN:Financial_situation	Financial situation	How would the household classify its financial situation these days?																						
-SAPRIN:Food_security	Food security	In the last 12 months did you or any other member of your household ever cut the size of your meals or skip meals because there was not enough money for food?																						
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
+Field ID	Field Label	Class Type	GECKO Label	Comment																			
+ID	LABEL	CLASS_TYPE	C % SPLIT=|																				
+SAPRIN:Base_Entities	Base Entities																						
+SAPRIN:Location	Location																						
+SAPRIN:Type_Location	Type (Location)																						
+SAPRIN:Area	Area																						
+SAPRIN:Coordinate	Coordinate																						
+SAPRIN:Household	Household		residence																				
+SAPRIN:Identifier_Household	Identifier (Household)		residence																				
+SAPRIN:Individual	Individual		family and household structure																				
+SAPRIN:Identifier_Individual	Identifier (Individual)																						
+SAPRIN:External_identifier_Individual	External identifier (Individual)																						
+SAPRIN:Surname	Surname																						
+SAPRIN:Alternative_surname	Alternative surname																						
+SAPRIN:First_name_1	First name 1																						
+SAPRIN:First_name_2	First name 2																						
+SAPRIN:Civilian_ID_number	Civilian ID number																						
+SAPRIN:Citizenship	Citizenship		residence																				
+SAPRIN:Nationality	Nationality		ethnicity/race																				
+SAPRIN:Sex	Sex		biological sex																				
+SAPRIN:Birth_Individual	Birth (Individual)																						
+SAPRIN:EndEvent_Individual	EndEvent (Individual)																						
+SAPRIN:MotherId	MotherId																						
+SAPRIN:FatherId	FatherId																						
+SAPRIN:MotherSurname	MotherSurname																						
+SAPRIN:MotherFirstName	MotherFirstName																						
+SAPRIN:FatherSurname	FatherSurname																						
+SAPRIN:FatherFirstName	FatherFirstName																						
+SAPRIN:Events	Events																						
+SAPRIN:Migration	Migration		residence	Maybe?																			
+SAPRIN:Date_Migration	Date (Migration)		residence	Maybe?																			
+SAPRIN:Type_Migration	Type (Migration)		residence	Maybe?																			
+SAPRIN:Direction	Direction		residence	Maybe?																			
+SAPRIN:Origin	Origin		residence	Maybe?																			
+SAPRIN:Destination	Destination		residence	Maybe?																			
+SAPRIN:Unit	Unit																						
+SAPRIN:Birth	Birth																						
+SAPRIN:Date_Birth	Date (Birth)		age/birthdate																				
+SAPRIN:Birth_weight	Birth weight																						
+SAPRIN:BirthCertificate	BirthCertificate																						
+SAPRIN:DateRegistered	DateRegistered																						
+SAPRIN:PregnancyOutcome	PregnancyOutcome		pregnancy history																				
+SAPRIN:Date_PregnancyOutcome	Date (PregnancyOutcome)		pregnancy history																				
+SAPRIN:Type_PregnancyOutcome	Type (PregnancyOutcome)		pregnancy history																				
+SAPRIN:Place_PregnancyOutcome	Place (PregnancyOutcome)		pregnancy history																				
+SAPRIN:BirthAttendant	BirthAttendant		pregnancy history																				
+SAPRIN:LiveBirths	LiveBirths		pregnancy history																				
+SAPRIN:Stillborn	Stillborn		pregnancy history																				
+SAPRIN:Death	Death																						
+SAPRIN:Date_Death	Date (Death)																						
+SAPRIN:Place_Death	Place (Death)																						
+SAPRIN:DeathCertificate	DeathCertificate																						
+SAPRIN:Verbal_autopsy	Verbal autopsy																						
+SAPRIN:Enumeration	Enumeration																						
+SAPRIN:Date_Enumeration	Date (Enumeration)																						
+SAPRIN:Membership_Events	Membership Events																						
+SAPRIN:Date_Membership_Events	Date (Membership Events)																						
+SAPRIN:Type_Membership_Events	Type (Membership Events)																						
+SAPRIN:Household_Headship	Household Headship		family and household structure																				
+SAPRIN:Date_Household_Headship	Date (Household Headship)																						
+SAPRIN:Type_Household_Headship	Type (Household Headship)																						
+SAPRIN:UnionEvent	UnionEvent																						
+SAPRIN:Date_UnionEvent	Date (UnionEvent)																						
+SAPRIN:Type_UnionEvent	Type (UnionEvent)																						
+SAPRIN:Observation	Observation																						
+SAPRIN:Date_Observation	Date (Observation)																						
+SAPRIN:Location_Observation	Location (Observation)																						
+SAPRIN:DataCollector	DataCollector																						
+SAPRIN:Respondent	Respondent																						
+SAPRIN:Episodes	Episodes																						
+SAPRIN:Residence	Residence																						
+SAPRIN:Individual_Residence	Individual (Residence)																						
+SAPRIN:Location_Residence	Location (Residence)																						
+SAPRIN:StartEvent_Residence	StartEvent (Residence)																						
+SAPRIN:EndEvent_Residence	EndEvent (Residence)																						
+SAPRIN:HouseholdResidence	HouseholdResidence																						
+SAPRIN:Household_HouseholdResidence	Household (HouseholdResidence)																						
+SAPRIN:Location_HouseholdResidence	Location (HouseholdResidence)																						
+SAPRIN:External_identifier_HouseholdResidence	External identifier (HouseholdResidence)																						
+SAPRIN:StartEvent_HouseholdResidence	StartEvent (HouseholdResidence)																						
+SAPRIN:EndEvent_HouseholdResidence	EndEvent (HouseholdResidence)																						
+SAPRIN:Membership_Episodes	Membership Episodes																						
+SAPRIN:Individual_Membership_Episodes	Individual (Membership Episodes)																						
+SAPRIN:Household_Membership_Episodes	Household (Membership Episodes)																						
+SAPRIN:StartEvent_Membership_Episodes	StartEvent (Membership Episodes)																						
+SAPRIN:EndEvent_Membership_Episodes	EndEvent (Membership Episodes)																						
+SAPRIN:Household_Head_Relationship	Household Head Relationship																						
+SAPRIN:Membership_Household_Head_Relationship	Membership (Household Head Relationship)																						
+SAPRIN:Relationship	Relationship																						
+SAPRIN:StartEvent_Household_Head_Relationship	StartEvent (Household Head Relationship)																						
+SAPRIN:EndEvent_Household_Head_Relationship	EndEvent (Household Head Relationship)																						
+SAPRIN:Union	Union																						
+SAPRIN:Individual1	Individual1																						
+SAPRIN:Individual2	Individual2																						
+SAPRIN:StartEvent_Union	StartEvent (Union)																						
+SAPRIN:MarriageDate	MarriageDate																						
+SAPRIN:EndEvent_Union	EndEvent (Union)																						
+SAPRIN:Pregnancy	Pregnancy		pregnancy history																				
+SAPRIN:Woman	Woman		pregnancy history																				
+SAPRIN:ANCVisits	ANCVisits		pregnancy history																				
+SAPRIN:Duration	Duration		pregnancy history																				
+SAPRIN:Outcome	Outcome		pregnancy history																				
+SAPRIN:Social_support	Social support																						
+SAPRIN:Grantholder	Grantholder																						
+SAPRIN:Beneficiary	Beneficiary																						
+SAPRIN:Type_Social_support	Type (Social support)																						
+SAPRIN:StartDate	StartDate																						
+SAPRIN:EndDate	EndDate																						
+SAPRIN:StatusObservation	StatusObservation																						
+SAPRIN:Individual_StatusObservation	Individual StatusObservation																						
+SAPRIN:Individual_Individual_StatusObservation	Individual (Individual StatusObservation)																						
+SAPRIN:Observation_Individual_StatusObservation	Observation (Individual StatusObservation)																						
+SAPRIN:ResidentStatus	ResidentStatus		residence																				
+SAPRIN:MotherStatus	MotherStatus																						
+SAPRIN:FatherStatus	FatherStatus																						
+SAPRIN:HighestSchoolLevelCompleted	HighestSchoolLevelCompleted		education																				
+SAPRIN:HighestNonSchoolEducation	HighestNonSchoolEducation		education																				
+SAPRIN:CurrentEducation	CurrentEducation		education																				
+SAPRIN:Currently_employed	Currently employed		occupation																				
+SAPRIN:Not_employed	Not employed		occupation																				
+SAPRIN:EmploymentSector	EmploymentSector		occupation																				
+SAPRIN:EmploymentType	EmploymentType		occupation																				
+SAPRIN:Employer	Employer		occupation																				
+SAPRIN:FinancialStatus	FinancialStatus																						
+SAPRIN:MaritalStatus	MaritalStatus		marital status value																				
+SAPRIN:PartnershipStatus	PartnershipStatus																						
+SAPRIN:HealthStatus	HealthStatus																						
+SAPRIN:Tuberculosis	Tuberculosis		diagnosis of tuberculosis																				
+SAPRIN:HIV	HIV		diagnosis of HIV																				
+SAPRIN:If_HIVPos	If HIV+		diagnosis of HIV																				
+SAPRIN:If_HIVNeg	If HIV-		diagnosis of HIV																				
+SAPRIN:HIVResult	HIVResult		diagnosis of HIV																				
+SAPRIN:Hypertension	Hypertension		diagnosis of hypertension																				
+SAPRIN:Diabetes	Diabetes		diagnosis of diabetes																				
+SAPRIN:Health_care_utilisation	Health care utilisation																						
+SAPRIN:Vaccination_history	Vaccination history (child <=6yr)																						
+SAPRIN:Household_Status_Observation	Household Status Observation																						
+SAPRIN:Water_source	Water source																						
+SAPRIN:Toilet	Toilet																						
+SAPRIN:Electricity_supply	Electricity supply																						
+SAPRIN:Cooking_fuel	Cooking fuel																						
+SAPRIN:Dwelling_construction	Dwelling construction																						
+SAPRIN:Assets	Assets																						
+SAPRIN:Crime	Crime																						
+SAPRIN:Financial_situation	Financial situation																						
+SAPRIN:Food_security	Food security																						
