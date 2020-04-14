@@ -7,7 +7,10 @@ from argparse import ArgumentParser, FileType
 master_map = {}
 
 cohorts = {'Korean Genome and Epidemiology Study (KoGES)': 'build/mapping/gecko-koges.ttl',
-           'Golestan Cohort Study': 'build/mapping/gecko-gcs.ttl'}
+           'Golestan Cohort Study': 'build/mapping/gecko-gcs.ttl',
+           'Genomics England / 100,000 Genomes Project': 'build/mapping/genomics-england-gecko.ttl',
+           'SAPRIN (South African Population Research Infrastructure Network)': 'build/mapping/saprin-gecko.ttl',
+           'Africa Health Research Institute (AHRI) Population Cohort': 'build/mapping/vukuzazi-gecko.ttl'}
 
 ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
                     'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']

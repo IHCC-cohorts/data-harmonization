@@ -219,6 +219,15 @@ mappings/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | b
 mappings/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ GCS > $@
 
+mappings/genomics-england-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ GenomicsEngland > $@
+
+mappings/saprin-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ SAPRIN > $@
+
+mappings/vukuzazi-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ Vukuzazi > $@
+
 # GECKO plus OBO terms
 
 build/mapping/index.owl: mappings/properties.tsv mappings/index.tsv
@@ -235,7 +244,7 @@ build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
 
 # Other cohorts -> GECKO mapping
 
-MAPPINGS := build/mapping/koges-gecko.ttl build/mapping/gcs-gecko.ttl
+MAPPINGS := build/mapping/koges-gecko.ttl build/mapping/gcs-gecko.ttl build/mapping/genomics-england-gecko.ttl build/mapping/saprin-gecko.ttl build/mapping/vukuzazi-gecko.ttl
 
 # Cohort terms + GECKO terms from template
 # The GECKO terms are just referenced and do not have structure/annotations

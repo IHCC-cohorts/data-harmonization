@@ -441,3 +441,11 @@ GECKO:1000134		history of medication for gastrointestinal disease			disease(s) t
 GECKO:1000135		opiate use history			recreational drug use history																						
 GECKO:1000136		oral health history			clinical history																						
 GECKO:1000137		recreational drug use history			clinical history|lifestyle and behaviours																						
+GECKO:1000138		diagnosis of HIV			diagnosis of viral infection																						
+GECKO:1000139		diagnosis of viral infection			diseases																						
+GECKO:1000140		occurrence of high cholesterol			signs and symptoms					symptom or diagnosis?																	
+GECKO:1000141		occurrence of cough			signs and symptoms																						
+GECKO:1000142		occurrence of fever			signs and symptoms																						
+GECKO:1000143		occurrence of weight loss			signs and symptoms																						
+GECKO:1000144		occurrence of night sweats			signs and symptoms																						
+GECKO:1000145		history of medication for tuberculosis			disease(s) treated with medication																						
