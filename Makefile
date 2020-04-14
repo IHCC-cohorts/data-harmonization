@@ -299,7 +299,7 @@ build/%-mapping.json: src/json/generate_mapping_json.py build/mapping/%-mapping.
 
 # Top-level cohort data
 
-build/mapping/data.json: src/json/generate_cohort_json.py data/member_cohorts.csv | $(MAPPINGS)
+data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv | $(MAPPINGS)
 	python3 $^ $@
 
 
@@ -329,7 +329,7 @@ COHORT_PAGES := build/cohorts/koges.html build/cohorts/gcs.html
 
 cohorts: $(COHORT_PAGES)
 
-$(COHORT_PAGES): src/create_cohort_html.py build/mapping/data.json data/metadata.json src/cohort.html.jinja2 build/cohorts
+$(COHORT_PAGES): src/create_cohort_html.py data/cohort-data.json data/metadata.json src/cohort.html.jinja2 build/cohorts
 	python3 $^
 
 BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json cohorts $(DATA)

@@ -1,0 +1,122 @@
+[
+  {
+    "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
+    "countries": [
+      "South Korea",
+      "Vietnam",
+      "Cambodia",
+      "Japan",
+      "China"
+    ],
+    "pi_lead": "Sung Soo Kim",
+    "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65199&menuIds=HOME004-MNU2261-MNU2262-MNU2263-MNU2264",
+    "biosample": {
+      "sample type": [
+        "blood",
+        "urine"
+      ]
+    },
+    "laboratory measures": {
+      "microbiology": [
+        "microbial data"
+      ]
+    },
+    "questionnaire/survey data": {
+      "lifestyle and behaviours": [
+        "alcohol",
+        "nutrition",
+        "sleep",
+        "tobacco"
+      ],
+      "physiological measurements": {
+        "anthropometry": [
+          "height",
+          "weight"
+        ],
+        "circulation and respiration": [
+          "blood pressure",
+          "heart rate"
+        ]
+      },
+      "socio-demographic and economic characteristics": [
+        "education",
+        "family and household structure",
+        "occupation"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Golestan Cohort Study",
+    "countries": [
+      "Iran"
+    ],
+    "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
+    "website": "https://dceg2.cancer.gov/gemshare/",
+    "basic cohort attributes": [
+      "demographic data"
+    ],
+    "biosample": {
+      "sample type": [
+        "blood"
+      ]
+    },
+    "questionnaire/survey data": [
+      "signs and symptoms"
+    ]
+  },
+  {
+    "cohort_name": "Genomics England / 100,000 Genomes Project",
+    "countries": [
+      "England"
+    ],
+    "pi_lead": "Mark Caulfield",
+    "website": "https://www.genomicsengland.co.uk/",
+    "questionnaire/survey data": {
+      "physiological measurements": {
+        "anthropometry": [
+          "height",
+          "weight"
+        ]
+      },
+      "socio-demographic and economic characteristics": [
+        "gender"
+      ]
+    }
+  },
+  {
+    "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
+    "countries": [
+      "South Africa"
+    ],
+    "pi_lead": "Kobus Herbst",
+    "website": "http://saprin.mrc.ac.za/",
+    "questionnaire/survey data": {
+      "socio-demographic and economic characteristics": [
+        "age/birthdate",
+        "biological sex",
+        "education",
+        "ethnicity/race",
+        "family and household structure",
+        "occupation",
+        "residence"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+    "countries": [
+      "South Africa"
+    ],
+    "pi_lead": "Deenan Pillay",
+    "website": "https://www.ahri.org",
+    "biosample": {
+      "sample type": [
+        "blood",
+        "urine"
+      ]
+    },
+    "questionnaire/survey data": [
+      "signs and symptoms"
+    ]
+  }
+]
