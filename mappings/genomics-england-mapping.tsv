@@ -367,8 +367,7 @@ GE:intdays_7	intdays_7
 GE:intdays_8	intdays_8																							
 GE:intdays_9	intdays_9																							
 GE:intmanig	Intended management																							
-GE:lad98	Field Name
- Local authority district in 1998																							
+GE:lad98	Local authority district in 1998																							
 GE:lsoa01	Lower Super Output Area																							
 GE:lsoa11	Lower Super Output Area																							
 GE:mainspef	Main specialty																							
@@ -479,8 +478,7 @@ GE:resgor	Government Office region of residence
 GE:resgor_ons	Government office region of residence (ONS)																							
 GE:resha	Health Authority of residence																							
 GE:resladst	Local authority district of residence																							
-GE:resladst_ons	Field Name
- Local authority district of residence (ONS)																							
+GE:resladst_ons	Local authority district of residence (ONS)																							
 GE:respct	PCT of residence - mapped according to data year																							
 GE:respct06	PCT of residence (2006)																							
 GE:resro	Regional Office of residence																							

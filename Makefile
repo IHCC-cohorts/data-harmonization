@@ -205,7 +205,13 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 build/mapping/gecko-mapping.xlsx: | build/mapping
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
-MAP_TSV := mappings/index.tsv mappings/properties.tsv mappings/koges-mapping.tsv mappings/gcs-mapping.tsv
+MAP_TSV := mappings/index.tsv \
+mappings/properties.tsv \
+mappings/koges-mapping.tsv \
+mappings/gcs-mapping.tsv \
+mappings/genomics-england-mapping.tsv \
+mappings/saprin-mapping.tsv \
+mappings/vukuzazi-mapping.tsv
 
 mappings/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Index > $@
