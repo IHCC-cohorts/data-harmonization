@@ -1,0 +1,414 @@
+Field ID	Field Label	Class Type	GECKO Label	Comment																					
+ID	LABEL	CLASS_TYPE	C % SPLIT=|																						
+VZ:BPMeasuredEver	BP Measured Ever		blood pressure																						
+VZ:HighBPInformedEver	Ever Been Informed of High BP																								
+VZ:HighBPInformed12mo	Informed of High BP in 12 Months																								
+VZ:HighBPConsult6mo	High BP Consultation 6 months																								
+VZ:HighBPTx2wks	High BP Treatment in the Last 2 Weeks																								
+VZ:BPReferralExist	Referral due to Existing High Blood Pressure																								
+VZ:BPReferralExistReason	Reasons for Referral due to Existing High Blood Pressure																								
+VZ:BPReferralNonExist	Referral due to Non Existing High Blood Pressure																								
+VZ:BPReferralNonExistReason	Reasons for Referral due to Non Existing High Blood Pressure																								
+VZ:HighBPConsultHealer	High BP Consultation With Traditional Healer																								
+VZ:HighBPHerbalCurr	Currently Taking Herbal Treatment for Raised BP																								
+VZ:BSugarMeasuredEver	Blood Sugar Measured Ever																								
+VZ:HighBSugarInformedEver	High Blood Sugar Informed Ever																								
+VZ:HighBSugarInformed12mo	High Blood Sugar Informed Past 12 Months																								
+VZ:HighBSugarConsult6mo	High Blood Sugar Consultation Past 6 months																								
+VZ:HighBSugarTx2wks	High Blood Sugar Treatment Past 2 Weeks																								
+VZ:InsulinTxCurr	Currently Taking Insulin for Diabetes		history of medication for diabetes																						
+VZ:HighBSugarConsultHealer	High Blood Sugar Consultation With Traditional Healer																								
+VZ:CholestMeasuredEver	Cholesterol Measured Ever		blood total cholesterol level value																						
+VZ:HighCholestInformedEver	High Cholesterol Informed Ever		occurrence of high cholesterol																						
+VZ:HighCholestInformed12mo	High Cholesterol Informed Past 12 Months		occurrence of high cholesterol																						
+VZ:HighCholestTx2wks	High Cholesterol Treatment Past 2 Weeks		history of medication for high cholesterol																						
+VZ:HighCholestConsultHealer	High Cholesterol Consultation With Traditional Healer		occurrence of high cholesterol																						
+VZ:HighCholestHerbalCurr	Currently Taking Herbal Treatment for Raised Cholesterol		history of medication for high cholesterol	does herbal fall under this? or should this be non-pharmocological?																					
+VZ:HeartAttackEver	Heart Attack Ever																								
+VZ:HeartAttackAspirinTxCurr	Currently Taking Aspirin Treatment																								
+VZ:HeartAttackStatinsTxCurr	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Heart Disease																								
+VZ:ParentHistHeartAttack	Parental History of Heart Attack																								
+VZ:HadStrokeEver	History of Stroke																								
+VZ:StrokeAspirinTxCurr	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Stroke																								
+VZ:ParentHistStroke	Parental History of Stroke																								
+VZ:CancerTxEver	Cancer Treatment Before																								
+VZ:CurrSmoker	Currently Smoking Tobacco																								
+VZ:CurrSmokerDaily	Smoke Tobacco Products Daily																								
+VZ:StopSmoking12mo	Quit Stopping Tobacco																								
+VZ:EverSmoked	Ever Smoked Tobacco Products																								
+VZ:EverSmokedDaily	Ever Smoked Tobacco Products Daily																								
+VZ:EverConsumedAlcohol	Ever Consumed Alcohol																								
+VZ:ConsumedAlcohol12mo	Consumed Alcohol Last 12 Months																								
+VZ:StoppedAlcoholHealth	Stopped Alcohol for Health Reasons																								
+VZ:ConsumedAlcohol30d	Consumed Alcohol Last 30 days																								
+VZ:TBTxCurrent	TB Current Treatment																								
+VZ:ReceivedTBInjections	TB Current Treatment																								
+VZ:TBTxEver	Ever had TB Treatment																								
+VZ:HomesteadMemberTBEver	Homestead Member TB Ever																								
+VZ:HomesteadMemberTBCurr	Homestead (or residential plot) currently on TB treatment																								
+VZ:CoughCurr	currently have a cough?																								
+VZ:FeverCurr	Have a fever currently																								
+VZ:NightSweatsCurr	Night Sweats																								
+VZ:WeightLoss6mo	Weight Loss in 6 months																								
+VZ:OtherSymptoms	Other TB Symptoms																								
+VZ:Fatigue	Fatigue																								
+VZ:Haemoptysis	Haemoptysis																								
+VZ:Chestpain	Chestpain																								
+VZ:Lymphadenitis	Lymphadenitis																								
+VZ:TBSymptDur	Duration of the TB symptoms(weeks)																								
+VZ:HighAsthmaInformedEver	High Asthma InformededEver																								
+VZ:HighAsthmaInformed12mo	Been told of high Asthma																								
+VZ:HighhAsthmaTx2wks	Taken any medication for asthma/COPD prescribed by a doctor or other health worker																								
+VZ:BreathShortness	Shortness of breath after exercise or physical activity																								
+VZ:WakeUpBreathShortness	Wake up at night because of difficulties in breathing/shortness of breath																								
+VZ:NightWheezing	NightWheezing																								
+VZ:ReceivedHIVTestResult	Received HIV Test Result																								
+VZ:HadPosHIVResult	Had Positive HIV Result																								
+VZ:CurrentlyOnART	Currently On ART Treatment																								
+VZ:ARTDefault	Ever Defaulted ART treatment																								
+VZ:ConcurrMed1Curr	Taking Concurrent Medication 1																								
+VZ:ConcurrMed2Curr	Taking Concurrent Medication 2																								
+VZ:ConcurrMed3Curr	Taking Concurrent Medication 3																								
+VZ:ConcurrMed4Curr	Taking Concurrent Medication 4																								
+VZ:ConcurrMed2Adher	Adherence Concurrent Medication 2																								
+VZ:ConcurrMed3Adher	Adherence Concurrent Medication 3																								
+VZ:ConcurrMed4Adher	Adherence Concurrent Medication 4																								
+VZ:ConcurrMed5Adher	Adherence Concurrent Medication 5																								
+VZ:ConcurrMed1Stopped	Stopped Concurrent Medication 1																								
+VZ:ConcurrMed2Stopped	Stopped Concurrent Medication 2																								
+VZ:ConcurrMed3Stopped	Stopped Concurrent Medication 3																								
+VZ:ConcurrMed4Stopped	Stopped Concurrent Medication 4																								
+VZ:ConcurrMed5Stopped	Stopped Concurrent Medication 5																								
+VZ:IsPregant	Is Pregant																								
+VZ:AllComplete	All Complete																								
+VZ:CxrScreeningResult	Chest X Ray Screening Result																								
+VZ:ReferalBasisCxr	Chest X Referal Basis																								
+VZ:CXRScore	Chest X Ray Score																								
+VZ:SputumReferral	Sputum Referral																								
+VZ:CxrMOConclusion	Chest X Ray Medical Officer Conclusion																								
+VZ:CxrMODiagnosticOther	Chest X Ray Medical Officer Diagnostic Other																								
+VZ:CxrMOReport	Chest X Ray Medical Officer Report																								
+VZ:CxrRadiologistDiagnosticOther	Chest X Ray Radiologist Diagnostic Other																								
+VZ:CxrRadiologistReport	Chest X Ray Radiologist Report																								
+VZ:HIVElisaReview	HIV Elisa Medical Officer Review																								
+VZ:CD4Review	CD4 Medical Officer Review																								
+VZ:VLReview	Viral Load Medical Officer Review																								
+VZ:GeneXpertReview	GeneXpert Medical Officer Review																								
+VZ:RifampicinReview	Rifampicin Medical Officer Review																								
+VZ:LiquidCultureReview	LiquidCulture Medical Officer Review																								
+VZ:SolidCultureReview	SolidCulture Medical Officer Review																								
+VZ:HBA1CPercentReview	HBA1CPercent Medical Officer Review																								
+VZ:CXRInterpretation	Medical Officer CXR Interpretation																								
+VZ:CXRInterpretationDesc	Medical Officer CXR Interpretation Description																								
+VZ:MOSuggestedOutcome	Medical Officer Suggested Outcome																								
+VZ:MOFinalOutcome	Medical Officer Final Outcome																								
+VZ:MOSuggestedSecondRoundOutcome	Medical Officer Suggested Second Outcome																								
+VZ:MOSecondRoundOutcome	Medical Officer Second Round Final Outcome																								
+VZ:DiabetesMessage	Medical Officer Diabetes Message																								
+VZ:HIVMessage	Medical Officer HIV Message																								
+VZ:CxrMessage	Medical Officer Chest X-Ray Message																								
+VZ:SecondRoundMessage	Medical Officer Second Round Message																								
+VZ:MOSecondRoundMessage	System Algorythm Flaged Conditions																								
+VZ:MOAgreeSecondRoundMessage	Medical Officer Agreement with System Generated Message																								
+VZ:MOOutcomeDesc	Medical Officer Outcome Description																								
+VZ:MOSuggestedSecondCondition	Medical Officer Suggested Second Condition																								
+VZ:MOAgreeSecondRoundOutcome	Medical Officer Agreement with Second Outcome																								
+VZ:MOSecondRoundOutcomeDesc	Medical Officer Outcome Description																								
+VZ:MOConditions	Medical Officer Conditions																								
+VZ:BPReferallFU	BP Referral from Follow up Visit																								
+VZ:DiabetesReferallFU	Diabetes Referral from Follow up Visit																								
+VZ:HIVReferallFU	HIV Referral from Follow up Visit																								
+VZ:TBReferallFU	TB Referral from Follow up Visit																								
+VZ:InducedTBSputumHome	Homestead Induced TB Sputum Collected																								
+VZ:SpontTBSputumHome	Homestead Spontatneous TB Sputum Collected																								
+VZ:HomeTBSputumOutcome	Home TB Sputum Outcomeollected																								
+VZ:FUGlucose	Follow Up Glucose																								
+VZ:FUGlucoseResult	Follow Up Glucose Result																								
+VZ:FUDiabetesDiagnosis	FUDiabetesDiagnosis																								
+VZ:FUDiabetesClinicDate	Follow Up Target Clinic/Hospital Date for Diabetes																								
+VZ:FUSystolicBp	Clinical Systolic Blood pressure reading																								
+VZ:FUDiastolicBp	Clinical Diastolic Blood pressure reading																								
+VZ:FUBpDiagnosis	FUBpDiagnosis																								
+VZ:FUTBpClinicDate	Follow Up Target Clinic/Hospital for Blood Pressure																								
+VZ:FUHIVStatusInformed	Follow Up Target Clinic/Hospital Date																								
+VZ:SST1Collected	SST1 Collected																								
+VZ:SST1NotCollectedReason	SST1 Not Collected Reason																								
+VZ:EDT1Collected	EDT1 Collected																								
+VZ:EDT1NotCollectedReason	EDT1 Not Collected Reasonn																								
+VZ:EDT2Collected	EDT2 Collected																								
+VZ:EDT2NotCollectedReason	EDT2 Not Collected Reasonn																								
+VZ:EDT3_1Collected	EDT3_1 Collected																								
+VZ:EDT3_1NotCollectedReason	EDT3_1 Not Collected Reasonn																								
+VZ:EDT3_2Collected	EDT3_2 Collected																								
+VZ:EDT3_2NotCollectedReason	EDT3_2 Not Collected Reasonn																								
+VZ:PAX1Collected	PAX1 Collected																								
+VZ:PAX1NotCollectedReason	PAX1 Not Collected Reason																								
+VZ:Ssp1Collected	Ssp1 Collected																								
+VZ:SpontaneousSputumObtained	Spontaneous Sputum Obtained																								
+VZ:SpontaneousSputumNotObtainedReason	Spontaneous Sputum Not Obtained Reason																								
+VZ:InducedSputumObtained	Induced Sputum Obtained																								
+VZ:InducedSputumNotObtainedReason	Induced Sputum Not Obtained Reason																								
+VZ:SSPBottleCollected	SSP Bottle Collected																								
+VZ:InducedSputumNotObtainedOtherReasonExplain	Induced Sputum Not Obtained Other Reason Explain																								
+VZ:SwabSample1Collected	Swab Sample1 Collected																								
+VZ:SwabSample1NotCollectedReason	Swab Sample1 Not Collected Reason																								
+VZ:SwabSample2Collected	Swab Sample2 Collected																								
+VZ:SwabSample2NotCollectedReason	Swab Sample2 Not Collected Reason																								
+VZ:UrineSampleCollected	Urine Sample Collected																								
+VZ:UrineSampleNotCollectedReason	Urine Sample Not Collected Reason																								
+VZ:UrineSampleCollected	Urine Sample Collected																								
+VZ:UrineSampleNotCollectedReason	Urine Sample Not Collected Reason																								
+VZ:PregTestResult	pregnancy Test Result																								
+VZ:PregTestResultNotified	pregnancy Test Result Notified																								
+VZ:BloodGlucoseFailFU	Failed to measure Blood Glucose at Home Follow Up visit																								
+VZ:BPFailFU	Failed to measure Blood Pressure at Home Follow Up visit																								
+VZ:NewHIVReferralFailFU	Failed to refer New HIV Positive case to Clinic at Home Follow Up visit																								
+VZ:CD4LabStatus	CD4 quantity not sufficient, specimen missing, or unable to run																								
+VZ:CD4LabComment	CD4 quantity not sufficient, specimen missing, or unable to run comment																								
+VZ:HIVELisaLabStatus	HIV ELISA quantity not sufficient, specimen missing, or unable to run																								
+VZ:HIVELisaLabComment	HIV ELISA quantity not sufficient, specimen missing, or unable to run comment																								
+VZ:VLLabStatus	VL quantity not sufficient, specimen missing, or unable to run																								
+VZ:VLLabComment	VL quantity not sufficient, specimen missing, or unable to run comment																								
+VZ:HbA1LabStatus	Hb A1c quantity not sufficient, specimen missing, or unable to run																								
+VZ:HbA1LabComment	Hb A1c quantity not sufficient, specimen missing, or unable to run comment																								
+VZ:GeneXpertLabStatus	Gene Xpert quantity not sufficient, specimen missing, or unable to run																								
+VZ:GeneXpertLabComment	Gene Xpert quantity not sufficient, specimen missing, or unable to run comment																								
+VZ:MGITCultureLabStatus	MGIT culture quantity not sufficient, specimen missing, or unable to run																								
+VZ:MGITCultureLabComment	MGIT culture quantity not sufficient, specimen missing, or unable to run comment																								
+VZ:SolidCultureLabStatus	Solid culture quantity not sufficient, specimen missing, or unable to run																								
+VZ:SolidCultureLabComment	Solid culture quantity not sufficient, specimen missing, or unable to run comment																								
+VZ:PhoneCallFail	Phone Call Attempts failed to contact Participant																								
+VZ:HomeVisitFail	Home Visit Attempts failed to contact Participant																								
+VZ:SputumPosRefFail	Failed to refer Positive Sputum case to Clinic or Hospital																								
+VZ:ConsentInformedHIV	Has the participant consented to be informed about their HIV results																								
+VZ:FUCXROtherReferral	Participant Has Diagnosis Other than TB that requires referral to the clinic or hospital																								
+VZ:CancerType	Cancer Type																								
+VZ:AgeStartedSmoking	Age Started Smoking Tobacco		tobacco																						
+VZ:YearsAgoStartedSmoking	Years Ago Individual Started Smoking		tobacco																						
+VZ:MonthsAgoStartedSmoking	Months Ago Individual Started Smoking		tobacco																						
+VZ:WeeksAgoStartedSmoking	Weeks Ago Individual Started Smoking		tobacco																						
+VZ:ManufacturedCigarettesDaily	Manufactured Cigarettes Smoked Daily		tobacco																						
+VZ:ManufacturedCigarettesWeekly	Manufactured Cigarettes Smoked Weekly		tobacco																						
+VZ:HandRolledCigarettesDaily	Hand Rolled Cigarettes Smoked Daily		tobacco																						
+VZ:HandRolledCigarettesWeekly	Hand Rolled Cigarettes Smoked Weekly		tobacco																						
+VZ:PipedTobaccoDaily	Piped Tobacco Cigarettes Smoked Daily		tobacco																						
+VZ:PipedTobaccoWeekly	Piped Tobacco Cigarettes Smoked Weekly		tobacco																						
+VZ:PipedTobaccoWeekly	Piped Tobacco Cigarettes Smoked Weekly		tobacco																						
+VZ:CigarsRcherootsDaily	Cigars or Cheroots Daily		tobacco																						
+VZ:CigarsORcherootsWeekly	Cigars or Cheroots Smoked Weekly		tobacco																						
+VZ:ShishaSessionsDaily	Cigars or Cheroots Smoked Daily		tobacco																						
+VZ:ShishaSessionsWeekly	Cigars or Cheroots Smoked Weekly		tobacco																						
+VZ:OtherTobaccoSpecifyDaily	Other Tobacco Smoked Daily		tobacco																						
+VZ:OtherTobaccoWeekly	Other Tobacco Smoked Weekly		tobacco																						
+VZ:OtherTobaccoSpecifyDailySpec	Other Tobacco Specify Daily		tobacco																						
+VZ:OtherTobaccoWeeklySpec	Other Tobacco Specify Weekly		tobacco																						
+VZ:ConsumptionFrequency	Alcohol Consumption Frequency		alcohol																						
+VZ:ConsumedAlcoholOccassions	Occassions Consumed Alcohol		alcohol																						
+VZ:DrinksConsumedOccassions	Drinks Consumed During Occassion		alcohol																						
+VZ:DrinksPerOccassion	Drinks Per Occassion		alcohol																						
+VZ:SixDrinksPerOccassion	Six Drinks Per Occassion or More Consumed		alcohol																						
+VZ:LastWeekMondayDrinks	Last Week Monday Drinks		alcohol																						
+VZ:LastWeekTuesdayDrinks	Last Week Tuesday Drinks		alcohol																						
+VZ:LastWeekWednesdayDrinks	Last Week Wednesday Drinks		alcohol																						
+VZ:LastWeekThursdayDrinks	Last Week Thursday Drinks		alcohol																						
+VZ:LastWeekFridayDrinks	Last Week Friday Drinks		alcohol																						
+VZ:LastWeekSaturdayDrinks	Last Week Saturday Drinks		alcohol																						
+VZ:LastWeekSundayDrinks	Last Week Sunday Drinks		alcohol																						
+VZ:ConsumedHomeBredAlcohol	Consumed Home Bred Alcohol		alcohol																						
+VZ:NumberHomeBredSpirits	Number Home Bred Spirits		alcohol																						
+VZ:NumberHomeBredBeer	Number Home Bred Beer		alcohol																						
+VZ:NumberAlcoholImported	Number Alcohol Imported		alcohol																						
+VZ:NumberAlcoholForbidden	Number Alcohol Forbidden		alcohol																						
+VZ:NumberAlcoholUntaxed	Number of Alcohol Untaxed		alcohol																						
+VZ:NumberTBTxEver	Number of Times On TB Treatment		history of medication for tuberculosis																						
+VZ:LastTBDateCompletion	TB Completion Date		history of medication for tuberculosis																						
+VZ:CoughDuration	Cough Duration		occurrence of cough																						
+VZ:CoughSputum	Cough Sputum		occurrence of cough																						
+VZ:FeverDuration	Fever Duration		occurrence of fever																						
+VZ:NightSweatsDuration	Night Sweats Duration		occurrence of night sweats																						
+VZ:WeightLossNumber	Weight Loss Number		occurrence of weight loss																						
+VZ:HIVPosResult1stDate	Date of First HIV Positive Result		diagnosis of HIV																						
+VZ:ARTInitiationDate	Date Of ART Initiation																								
+VZ:ARTDefaultTimes	Number of Times ART Defaulted																								
+VZ:LastHIVNegResultDate	Date of Last HIV Negative Result		diagnosis of HIV																						
+VZ:Medication1	Medication 1																								
+VZ:Medication2	Medication 2																								
+VZ:Medication3	Medication 3																								
+VZ:Medication4	Medication 4																								
+VZ:Medication5	Medication 5																								
+VZ:Medication6	Medication 6																								
+VZ:Medication7	Medication 7																								
+VZ:Medication8	Medication 8																								
+VZ:Medication1StartDate	Medication 1 Start Date																								
+VZ:Medication2StartDate	Medication 2 Start Date																								
+VZ:Medication3StartDate	Medication 3 Start Date																								
+VZ:Medication4StartDate	Medication 4 Start Date																								
+VZ:Medication5StartDate	Medication 5 Start Date																								
+VZ:Medication6StartDate	Medication 6 Start Date																								
+VZ:Medication7StartDate	Medication 7 Start Date																								
+VZ:Medication8StartDate	Medication 8 Start Date																								
+VZ:Medication9StartDate	Medication 9 Start Date																								
+VZ:ConcurrMed1	Concurrent Medication 1																								
+VZ:ConcurrMed2	Concurrent Medication 2																								
+VZ:ConcurrMed3	Concurrent Medication 3																								
+VZ:ConcurrMed4	Concurrent Medication 4																								
+VZ:ConcurrMed5	Concurrent Medication 5																								
+VZ:ConcurrMedIndica1	Concurrent Medication Indication 1																								
+VZ:ConcurrMedIndica2	Concurrent Medication Indication 2																								
+VZ:ConcurrMedIndica3	Concurrent Medication Indication 3																								
+VZ:ConcurrMedIndica4	Concurrent Medication Indication 4																								
+VZ:ConcurrMedIndica5	Concurrent Medication Indication 5																								
+VZ:ConcurrMed1StartDate	Concurrent Medication 1 Start Date																								
+VZ:ConcurrMed2StartDate	Concurrent Medication 2 Start Date																								
+VZ:ConcurrMed3StartDate	Concurrent Medication 3 Start Date																								
+VZ:ConcurrMed4StartDate	Concurrent Medication 4 Start Date																								
+VZ:ConcurrMed5StartDate	Concurrent Medication 5 Start Date																								
+VZ:ConcurrMed5Curr	Taking Concurrent Medication 5																								
+VZ:ConcurrMed1Adher	Adherence Concurrent Medication 1																								
+VZ:TimeLastMeal	Time Last Meal																								
+VZ:LastMenstrualDate	Date of Last Menstrual																								
+VZ:FoodVoucherId	Food Voucher Id																								
+VZ:FoodPackId	Food Pack Id																								
+VZ:NotAllCompleteReaons	Not All Complete Reasons																								
+VZ:SST1	SST1																								
+VZ:EDT1	EDT1																								
+VZ:EDT2	EDT2																								
+VZ:EDT3_1	EDT3_1																								
+VZ:EDT3_2	EDT3_2																								
+VZ:PAX1	PAX1																								
+VZ:Ssp1	Ssp1																								
+VZ:SSPBottle	SSPBottle																								
+VZ:SwabSample1CollectedId	Swab Sample1 Collected Id																								
+VZ:SwabSample2CollectedId	Swab Sample2 Collected Id																								
+VZ:UrineSampleCollectedId	Urine Sample Collected Id		urine																						
+VZ:UrineSampleCollectedId	Urine Sample Collected Id		urine																						
+VZ:PregTestDeviceId	pregnancy Test Device Id																								
+VZ:CxrRadiologistConclusion	Chest X Ray Radiologist Conclusion																								
+VZ:MOLungField	Medical Officer LungFields																								
+VZ:RadiologistLungField	Radiologist LungFields																								
+VZ:UrineRefusal	Refused Urine Sample COllection																								
+VZ:HeightCm	Height in Cm		height																						
+VZ:WeightKg	Weight in Kg		weight																						
+VZ:WaistCircumferenceCm	Waist Circumference in Cm		waist circumference value																						
+VZ:BPCuffSize	BP Cuff Size																								
+VZ:BPFirstSystolic	BP First Systolic																								
+VZ:BPFirstDiastolic	BP First Diastolic																								
+VZ:BPSecondSystolic	BP Second Systolic																								
+VZ:BPSecondDiastolic	BP Second Diastolic																								
+VZ:BPThirdSystolic	BP Third Systolic																								
+VZ:BPThirdDiastolic	BP Third Diastolic																								
+VZ:BPForthSystolic	BP Forth Systolic																								
+VZ:BPForthDiastolic	BP Forth Diastolic																								
+VZ:LowestBpSystolic	BP Lowest Systolic																								
+VZ:LowestBpDiastolic	BP Lowest Diastolic																								
+VZ:HipCircumference	Hip Circumference		hip circumference value																						
+VZ:ArmCircumference	Arm Circumference																								
+VZ:HeartRateFirstReading	Heart Rate First Reading		heart rate																						
+VZ:HeartRateSecondReading	Heart Rate Second Reading		heart rate																						
+VZ:HeartRateThirdReading	Heart RateThird Reading		heart rate																						
+VZ:HeartRateForthReading	Heart Rate Forth Reading		heart rate																						
+VZ:Pregnant	Pregnant		pregnancy history																						
+VZ:ActiveTB	CXR proposed diagnostic-ActiveTB		diagnosis of tuberculosis																						
+VZ:OldTB	CXR proposed diagnostic-OldTB		diagnosis of tuberculosis																						
+VZ:ProbableTB	CXR proposed diagnostic-ProbableTB		diagnosis of tuberculosis																						
+VZ:OtherInfection	CXR proposed diagnostic-OtherInfection																								
+VZ:InflammatoryDisorder	CXR proposed diagnostic-InflammatoryDisorder																								
+VZ:Neoplasm	CXR proposed diagnostic-Neoplasm																								
+VZ:Trauma	CXR proposed diagnostic-Trauma																								
+VZ:CongenitalAbnormality	CXR proposed diagnostic-CongenitalAbnormality																								
+VZ:CardiacDisorder	CXR proposed diagnostic-CardiacDisorder																								
+VZ:VascularDisorder	CXR proposed diagnostic-VascularDisorder																								
+VZ:DegenerativeDisorder	CXR proposed diagnostic-DegenerativeDisorder																								
+VZ:LeftLung	CXR pattern Left lung field & pleura																								
+VZ:RightLung	CXR pattern Right lung field & pleura																								
+VZ:TBDiagnosticOther	TB Diagnostic Other		diagnosis of tuberculosis																						
+VZ:MOTBDiagnosticOther	Medical Officer Diagnostic TB Diagnostic Other		diagnosis of tuberculosis																						
+VZ:RadLeftLungNormal	Radiologist Left Lung Normal																								
+VZ:RadLeftLungConsolid	Radiologist Left Lung Consolidation																								
+VZ:RadLeftLungCavitation	Radiologist Left Lung Cavitation																								
+VZ:RadLeftLungNodules	Radiologist Left Lung Nodules																								
+VZ:RadLeftLungMass	Radiologist Left Lung Mass																								
+VZ:RadLeftLungReticular	Radiologist Left Lung ReticularOpacities																								
+VZ:RadLeftLungFibrosis	Radiologist Left Lung Fibrosis																								
+VZ:RadLeftLungCalcification	Radiologist Left Lung Calcification																								
+VZ:RadLeftLungPleuralThick	Radiologist Left Lung Pleural Thickening																								
+VZ:RadLeftLungPleuralEffusion	Radiologist Left Lung PleuralEffusion																								
+VZ:RadLeftLungNodeEnlarge	Radiologist Left Lung Node Enlargement																								
+VZ:RadLeftLungOther	Radiologist Left Lung Other																								
+VZ:RadRightLungNormal	Radiologist Right Lung Normal																								
+VZ:RadRightLungConsolid	Radiologist Right Lung Consolidation																								
+VZ:RadRightLungCavitation	Radiologist Right Lung Cavitation																								
+VZ:RadRightLungNodules	Radiologist Right Lung Nodules																								
+VZ:RadRightLungMass	Radiologist Right Lung Mass																								
+VZ:RadRightLungReticular	Radiologist Right Lung ReticularOpacities																								
+VZ:RadRightLungFibrosis	Radiologist Right Lung Fibrosis																								
+VZ:RadRightLungCalcification	Radiologist Right Lung Calcification																								
+VZ:RadRightLungPleuralThick	Radiologist Right Lung Pleural Thickening																								
+VZ:RadRightLungPleuralEffusion	Radiologist Right Lung Pleural Effusion																								
+VZ:RadRightLungNodeEnlarge	Radiologist Right Lung Node Enlargement																								
+VZ:RadRightLungOther	Radiologist Right Lung Other																								
+VZ:WillingSurveyedAttempt1	Willing Surveyed Attempt 1																								
+VZ:RadActiveTB	Radiologist Diagnostic ActiveTB		diagnosis of tuberculosis																						
+VZ:RadOldTB	Radiologist Diagnostic OldTB		diagnosis of tuberculosis																						
+VZ:RadProbableTB	Radiologist Diagnostic ProbableTB		diagnosis of tuberculosis																						
+VZ:RadOtherInfection	Radiologist Diagnostic Other Infection																								
+VZ:RadInflammatoryDisorder	Radiologist Diagnostic Inflammatory Disorder																								
+VZ:RadNeoplasm	Radiologistr Diagnostic Neoplasm																								
+VZ:RadTrauma	Radiologist Diagnostic Trauma																								
+VZ:RadCongenitalAbnormality	Radiologist Diagnostic CongenitalAbnormality																								
+VZ:RadCardiacDisorder	Radiologist Diagnostic CardiacDisorder																								
+VZ:RadVascularDisorder	Radiologist Diagnostic VascularDisorder																								
+VZ:RadDegenerativeDisorder	Radiologist Diagnostic Degenerative Disorder																								
+VZ:RadTBDiagnosticOther	Radiologist TB Diagnostic Other		diagnosis of tuberculosis																						
+VZ:LabResultDate	Lab Result Date																								
+VZ:AbnormalResult	Is Result Abnormal?																								
+VZ:ClinicalReview	Needs Clinical Review?																								
+VZ:CD4LymphPercent	CD4 Lymphocytes %																								
+VZ:CD4LymphAb	CD4 Lymphocytes Abs																								
+VZ:CD4CD8Ratio	CD4/CD8 Ratio																								
+VZ:CD8LymphPercent	CD8 Lymphocytes %																								
+VZ:CD8LymphAb	CD8 Lymphocytes Abs																								
+VZ:HBA1c	HBA1c																								
+VZ:HBA1C%	HBA1C%																								
+VZ:Glucose	Glucose Average (calculated)																								
+VZ:Rifampicin	Rifampicin Resistance																								
+VZ:GeneXpert	TB GeneXpert Test Result																								
+VZ:LiquidCulture	Liquid Culture Result(MGIT)																								
+VZ:SolidCulture	Solid Culture Result(7H11)																								
+VZ:SolidIncub	Solid Culture Incubation																								
+VZ:HIVElisa	HIV Elisa Result																								
+VZ:VL	HIV Viral Load Result																								
+VZ:MOLeftLungNormal	Medical Officer Left Lung Normal																								
+VZ:MOLeftLungConsolid	Medical Officer Left Lung Consolidation																								
+VZ:MOLeftLungCavitation	Medical Officer Left Lung Cavitation																								
+VZ:MOLeftLungNodules	Medical Officer Left Lung Nodules																								
+VZ:MOLeftLungMass	Medical Officer Left Lung Mass																								
+VZ:MOLeftLungReticular	Medical Officer Left Lung Reticular Opacities																								
+VZ:MOLeftLungFibrosis	Medical Officer Left Lung Fibrosis																								
+VZ:MOLeftLungCalcification	Medical Officer Left Lung calcification																								
+VZ:MOLeftLungPleuralThick	Medical Officer Left Lung Pleural Thickening																								
+VZ:MOLeftLungPleuralEffusion	Medical Officer Left Lung Pleural Effusion																								
+VZ:MOLeftLungNodeEnlarge	Medical Officer Left Lung Node Enlargement																								
+VZ:MOLeftLungOther	Medical Officer Left Lung Other																								
+VZ:MORightLungNormal	Medical Officer Right Lung Normal																								
+VZ:MORightLungConsolid	Medical Officer Right Lung Consolidation																								
+VZ:MORightLungCavitation	Medical Officer Right Lung Cavitation																								
+VZ:MORightLungNodules	Medical Officer Right Lung Nodules																								
+VZ:MORightLungMass	Medical Officer Right Lung Mass																								
+VZ:MORightLungReticular	Medical Officer Right Lung ReticularOpacities																								
+VZ:MORightLungFibrosis	Medical Officer Right Lung Fibrosis																								
+VZ:MORightLungCalcification	Medical Officer Right Lung Calcification																								
+VZ:MORightLungPleuralThick	Medical Officer Right Lung Pleural Thickening																								
+VZ:MORightLungPleuralEffusion	Medical Officer Right Lung Pleural Effusion																								
+VZ:MORightLungNodeEnlarge	Medical Officer Right Lung Node Enlargement																								
+VZ:MORightLungOther	Medical Officer Right Lung Other																								
+VZ:MOActiveTB	Medical Officer Diagnostic ActiveTB		diagnosis of tuberculosis																						
+VZ:MOOldTB	Medical Officer Diagnostic OldTB		diagnosis of tuberculosis																						
+VZ:MOProbableTB	Medical Officer Diagnostic ProbableTB		diagnosis of tuberculosis																						
+VZ:MOOtherInfection	Medical Officer Diagnostic Other Infection																								
+VZ:MOInflammatoryDisorder	Medical Officer Diagnostic Inflammatory Disorder																								
+VZ:MONeoplasm	Medical Officer Diagnostic Neoplasm																								
+VZ:MOTrauma	Medical Officer Diagnostic Trauma																								
+VZ:MOCongenitalAbnormality	Medical Officer Diagnostic CongenitalAbnormality																								
+VZ:MOCardiacDisorder	Medical Officer Diagnostic CardiacDisorder																								
+VZ:MOVascularDisorder	Medical Officer Diagnostic VascularDisorder																								

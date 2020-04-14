@@ -278,10 +278,10 @@ GECKO:1000039		blood homocysteine level value		equivalent	blood measurement valu
 GECKO:1000040		X-ray imaging result			physiological measurements		X-Ray Imaging																				
 GECKO:1000041		brain MRI result			physiological measurements	brain																					
 GECKO:1000042		physical performance testing result			physiological measurements		Physical Performance Testing																				
-GECKO:1000043		diagnosis of dementia			mental and behaviour disorders	dementia																					
-GECKO:1000044		diagnosis of depression			mental and behaviour disorders	Depressivity				mental health																	
-GECKO:1000045		diagnosis of vascular dementia			diagnosis of dementia	vascular dementia																					
-GECKO:1000046		diagnosis of Alzheimer's disease			diagnosis of dementia	DOID:10652																					
+GECKO:1000043		diagnosis of dementia			mental and behaviour disorders				dementia																		
+GECKO:1000044		diagnosis of depression			mental and behaviour disorders				Depressivity	mental health																	
+GECKO:1000045		diagnosis of vascular dementia			diagnosis of dementia				vascular dementia																		
+GECKO:1000046		diagnosis of Alzheimer's disease			diagnosis of dementia				DOID:10652																		
 GECKO:1000047		diagnosis of arthritis	yes/no		diseases				arthritis																		
 GECKO:1000048		diagnosis of nose disease	yes/no		diseases				nose disease																		
 GECKO:1000049		diagnosis of auditory system disease	yes/no		diseases				auditory system disease																		
@@ -441,3 +441,12 @@ GECKO:1000134		history of medication for gastrointestinal disease			disease(s) t
 GECKO:1000135		opiate use history			recreational drug use history																						
 GECKO:1000136		oral health history			clinical history																						
 GECKO:1000137		recreational drug use history			clinical history|lifestyle and behaviours																						
+GECKO:1000138		diagnosis of HIV			diagnosis of viral infection				human immunodeficiency virus infectious disease																		
+GECKO:1000139		diagnosis of viral infection			diseases																						
+GECKO:1000140		occurrence of high cholesterol			signs and symptoms					symptom or diagnosis?																	
+GECKO:1000141		occurrence of cough			signs and symptoms																						
+GECKO:1000142		occurrence of fever			signs and symptoms																						
+GECKO:1000143		occurrence of weight loss			signs and symptoms																						
+GECKO:1000144		occurrence of night sweats			signs and symptoms																						
+GECKO:1000145		history of medication for tuberculosis			disease(s) treated with medication																						
+DOID:526	human immunodeficiency virus infectious disease	human immunodeficiency virus infectious disease			disease																						
