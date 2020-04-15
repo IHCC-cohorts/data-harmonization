@@ -23,7 +23,7 @@ td, th {
     max-width: 80px !important;
 }
 
-.name-col {
+.name-col, .country-col, .pi-col, .dt-col {
     max-width: 120px !important;
 }
 
@@ -45,21 +45,31 @@ td, th {
 <body>
     <div class="container-fluid" style="margin-top: 10px;">
         <div class="row">
-            <div class="col-3"><h1>IHCC Browser Mockup</h1></div>
-            <div class="col">
+            <div class="col-3"><h2>IHCC Browser Mockup</h2></div>
+            <div class="col-3">
                 <div class="search" style="margin-bottom: 10px; margin-top: 10px;">
-                        <form class="form-inline">
-                            <div class="form-group mb-2">
-                                <input type="text" id="searchBox" class="form-control" placeholder="Search results...">
-                            </div>
-                            <div class="form-group mb-2" style="margin-left:10px;">
-                                <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
-                            </div>
-                            <div class="form-group mb-2" style="margin-left:10px;">
-                                <button type="button" id="clearBtn" class="btn btn-primary">Clear</button>
-                            </div>
-                        </form>
-                    </div>
+                    <form class="form-inline">
+                        <div class="form-group mb-2">
+                            <input type="text" id="searchBox" class="form-control" placeholder="Search results...">
+                        </div>
+                        <div class="form-group mb-2" style="margin-left:10px;">
+                            <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+                        </div>
+                        <div class="form-group mb-2" style="margin-left:10px;">
+                            <button type="button" id="clearBtn" class="btn btn-primary">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radios" id="radios1" value="allFields" checked>
+                    <label class="form-check-label" for="allFields">All fields</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radios" id="radios2" value="cohortsOnly">
+                    <label class="form-check-label" for="cohortsOnly">Cohorts only</label>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -70,7 +80,8 @@ td, th {
             </div>
             <div class="col-10" style="flex: 1 1 0%; position: relative; outline: none;">
                 <div class="search-results-wrapper">
-                    <div class="search-results"></div>
+                    <div class="search-results" id="allFields"></div>
+                    <div class="search-results" id="cohortsOnly"></div>
                 </div>
             </div>
         </div>
@@ -78,6 +89,12 @@ td, th {
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
+var cohort_pages = {'KoGES': 'cohorts/koges.html',
+                    'VZ': 'cohorts/vukuzazi.html',
+                    'GE': 'cohorts/genomics-england.html',
+                    'GCS': 'cohorts/gcs.html',
+                    'SAPRIN': 'cohorts/saprin.html'}
+
 // Create map of term ID -> label
 function createIDMap(data) {
     let map = new Map();
@@ -172,6 +189,46 @@ function createAggregations(data, gecko) {
     div.setAttribute("style", "margin-bottom: 8px;");
     div.appendChild(bucket);
     aggs.appendChild(div);
+}
+
+function addCohortSearchResults(tbody, data) {
+    for (var i = 0; i < data.length; i++) {
+        var node = data[i];
+        var row = document.createElement("tr");
+        row.setAttribute("class", "cohort-row");
+        row.setAttribute("id", node.prefix);
+
+        var nameCell = document.createElement("td");
+        nameCell.setAttribute("class", "name-col");
+        var a = document.createElement("a");
+        var cohort_page = cohort_pages[node.prefix];
+        a.setAttribute("href", cohort_page);
+        a.innerHTML = node.cohort_name;
+        nameCell.appendChild(a);
+
+        var piCell = document.createElement("td");
+        piCell.setAttribute("class", "pi-col");
+        piCell.innerHTML = node.pi_lead;
+
+        var countries = node.countries.join(', ');
+        var countryCell = document.createElement("td");
+        countryCell.setAttribute("class", "country-col");
+        countryCell.innerHTML = countries;
+
+        var datatypes = node.datatypes.join(', ');
+        var dtCell = document.createElement("td");
+        dtCell.setAttribute("class", "dt-col");
+        dtCell.innerHTML = datatypes;
+
+        // Add to row element
+        row.appendChild(nameCell);
+        row.appendChild(piCell);
+        row.appendChild(countryCell);
+        row.appendChild(dtCell);
+
+        // Add row to table element
+        tbody.appendChild(row);
+    }
 }
 
 // Add dataset to search results table
@@ -271,9 +328,60 @@ function addSearchResults(tbody, source, data) {
     }
 }
 
+function createCohortSearchResults(cohorts) {
+    var res = document.getElementById("cohortsOnly");
+
+    var wrapper = document.createElement("div");
+
+    var table = document.createElement("table");
+    table.setAttribute("class", "table");
+
+    var thead = document.createElement("thead");
+
+    // Name column
+    var nameHeader = document.createElement("th");
+    nameHeader.setAttribute("scope", "col");
+    nameHeader.setAttribute("class", "name-col");
+    nameHeader.innerHTML = "Cohort Name";
+    thead.appendChild(nameHeader);
+
+    // PI Lead
+    var piHeader = document.createElement("th");
+    piHeader.setAttribute("scope", "col");
+    piHeader.setAttribute("class", "pi-col");
+    piHeader.innerHTML = "PI Leads";
+    thead.appendChild(piHeader);
+
+    // Countries
+    var countryHeader = document.createElement("th");
+    countryHeader.setAttribute("scope", "col");
+    countryHeader.setAttribute("class", "country-col");
+    countryHeader.innerHTML = "Countries";
+    thead.appendChild(countryHeader);
+
+    // Datatypes
+    var dtHeader = document.createElement("th");
+    dtHeader.setAttribute("scope", "col");
+    dtHeader.setAttribute("class", "dt-col");
+    dtHeader.innerHTML = "Datatypes";
+    thead.appendChild(dtHeader);
+
+    // Add header to table
+    table.appendChild(thead);
+
+    // Create the table body
+    var tbody = document.createElement("tbody");
+
+    addCohortSearchResults(tbody, cohorts);
+
+    table.appendChild(tbody);
+    wrapper.appendChild(table);
+    res.appendChild(wrapper);
+}
+
 // Create search results table
 function createSearchResults(dataSets) {
-    var res = document.getElementsByClassName("search-results")[0];
+    var res = document.getElementById("allFields");
 
     var wrapper = document.createElement("div");
 
@@ -341,25 +449,64 @@ function createSearchResults(dataSets) {
     res.appendChild(wrapper);
 }
 
+var allCohortsShown = true;
+
 // Filter table based on check box selection
+// For cohort view, the filtered result is an intersection
+// For all fields view, the filtered result is a union
 function filterTable(catMap, checked) {
     if (checked.length == 0) {
         // Nothing checked, show all
-        $('.search-row').show();
+        if (allCohortsShown) {
+            $('.search-row').show();
+        } else {
+            $('.cohort-row').show();
+        }
     } else {
-        // Hide all rows
-        $('.search-row').hide();
+        if (allCohortsShown) {
+            // Hide all rows
+            $('.search-row').hide();
 
-        // Get the IDs that match each checked category and show them
-        var len = checked.length;
-        for (i = 0; i < len; i++) {
-            var ids = catMap[checked[i]];
-            if (ids === undefined) {
-                continue;
+            // Get the IDs that match each checked category and show them
+            var len = checked.length;
+            for (i = 0; i < len; i++) {
+                var ids = catMap[checked[i]];
+                if (ids === undefined) {
+                    continue;
+                }
+                var idLen = ids.length;
+                for (k = 0; k < idLen; k++) {
+                    document.getElementById(ids[k]).style.display = "";
+                }
             }
-            var idLen = ids.length;
-            for (k = 0; k < idLen; k++) {
-                document.getElementById(ids[k]).style.display = "";
+        } else {
+            // Hide all rows
+            $('.cohort-row').hide();
+
+            // Get the cohort IDs that match ALL checked categories
+            var len = checked.length;
+            var keep = [];
+            for (i = 0; i < len; i++) {
+                var ids = catMap[checked[i]];
+                if (ids === undefined) {
+                    continue;
+                }
+                var idLen = ids.length;
+                var prefixes = [];
+                for (k = 0; k < idLen; k++) {
+                    prefix = ids[k].split(':')[0];
+                    prefixes.push(prefix);
+                }
+                var unique = [...new Set(prefixes)];
+                if (i == 0) {
+                    keep = unique;
+                } else {
+                    keep = keep.filter(value => unique.includes(value));
+                }
+            }
+            var uniqueKeep = [...new Set(keep)];
+            for (i = 0; i < uniqueKeep.length; i++) {
+                document.getElementById(uniqueKeep[i]).style.display = "";
             }
         }
     }
@@ -427,9 +574,9 @@ function get_json(path) {
 var gcs = get_json('./gcs-data.json');
 var koges = get_json('./koges-data.json');
 // var gecko = get_json('./gecko-data.json');
-// var genomicsEngland = get_json('./genomics-england-data.json');
-// var saprin = get_json('./saprin-data.json');
-// var vukuzazi = get_json('./vukuzazi-data.json');
+var genomicsEngland = get_json('./genomics-england-data.json');
+var saprin = get_json('./saprin-data.json');
+var vukuzazi = get_json('./vukuzazi-data.json');
 
 // Get the JSON for the aggregations
 var gecko = get_json('./gecko-data.json');
@@ -437,7 +584,10 @@ var gecko = get_json('./gecko-data.json');
 // Get the JSON that maps aggregation cats -> search results
 var kogesMap = get_json('./koges-mapping.json');
 var gcsMap = get_json('./gcs-mapping.json');
-var maps = [kogesMap, gcsMap];
+var geMap = get_json('./genomics-england-mapping.json');
+var saprinMap = get_json('./saprin-mapping.json');
+var vzMap = get_json('./vukuzazi-mapping.json');
+var maps = [kogesMap, gcsMap, geMap, saprinMap, vzMap];
 
 // Merge the mappings
 var catMap = new Map();
@@ -463,9 +613,9 @@ var allDataSets = new Map();
 allDataSets.set("GCS", gcs);
 allDataSets.set("KoGES", koges);
 // allDataSets.set("CINECA", gecko);
-// allDataSets.set("Genomics England", genomicsEngland);
-// allDataSets.set("SAPRIN", saprin);
-// allDataSets.set("Vukuzazi", vukuzazi);
+allDataSets.set("Genomics England", genomicsEngland);
+allDataSets.set("SAPRIN", saprin);
+allDataSets.set("Vukuzazi", vukuzazi);
 
 // Create the tables
 // Use the top-level CINECA structure to drive aggregations
@@ -473,6 +623,9 @@ allDataSets.set("KoGES", koges);
 var cineca = get_json('./cineca.json');
 createAggregations(cineca, gecko);
 createSearchResults(allDataSets);
+
+var cohorts = get_json('./cohorts.json');
+createCohortSearchResults(cohorts);
 
 // Event listener for check box selections
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -489,6 +642,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
             filterTable(catMap, checked);
     });
+});
+
+// Start with all fields
+var resTables = $('.search-results');
+resTables.hide();
+$('#allFields').show();
+
+$('input[name="radios"]').on('change', function() {
+    allCohortsShown = !allCohortsShown;
+    resTables.hide();
+    $('#' + $(this).val()).show();
 });
 
 $('#searchBtn').click(function() {
