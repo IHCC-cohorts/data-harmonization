@@ -334,7 +334,7 @@ build/index.html: src/index.html | build
 
 # Top-level cohort data as HTML pages 
 
-COHORT_PAGES := build/cohorts/koges.html build/cohorts/gcs.html
+COHORT_PAGES := build/cohorts/koges.html build/cohorts/gcs.html build/cohorts/genomics-england.html build/cohorts/vukuzazi.html build/cohorts/saprin.html
 
 cohorts: $(COHORT_PAGES)
 
@@ -379,5 +379,5 @@ all: build/gcs.html build/gcs-tree.html
 all: build/koges.html build/koges-tree.html
 all: build/saprin.html build/saprin-tree.html
 all: build/vukuzazi.html build/vukuzazi-tree.html
-all: build/mapping/data.json
+all: data/cohort-data.json
 all: $(BROWSER)

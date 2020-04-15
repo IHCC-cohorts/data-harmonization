@@ -89,6 +89,12 @@ td, th {
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
+var cohort_pages = {'KoGES': 'cohorts/koges.html',
+                    'VZ': 'cohorts/vukuzazi.html',
+                    'GE': 'cohorts/genomics-england.html',
+                    'GCS': 'cohorts/gcs.html',
+                    'SAPRIN': 'cohorts/saprin.html'}
+
 // Create map of term ID -> label
 function createIDMap(data) {
     let map = new Map();
@@ -194,15 +200,11 @@ function addCohortSearchResults(tbody, data) {
 
         var nameCell = document.createElement("td");
         nameCell.setAttribute("class", "name-col");
-    
-        if (node.hasOwnProperty("website") && node.website != "") {
-            var a = document.createElement("a");
-            a.setAttribute("href", node.website);
-            a.innerHTML = node.cohort_name;
-            nameCell.appendChild(a);
-        } else {
-            nameCell.innerHTML = node.cohort_name;
-        }
+        var a = document.createElement("a");
+        var cohort_page = cohort_pages[node.prefix];
+        a.setAttribute("href", cohort_page);
+        a.innerHTML = node.cohort_name;
+        nameCell.appendChild(a);
 
         var piCell = document.createElement("td");
         piCell.setAttribute("class", "pi-col");
