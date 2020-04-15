@@ -10,6 +10,12 @@
     ],
     "pi_lead": "Sung Soo Kim",
     "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65199&menuIds=HOME004-MNU2261-MNU2262-MNU2263-MNU2264",
+    "datatypes": [
+      "Genomic Data",
+      "Environmental Data",
+      "Biospecimens",
+      "Phenotypic/Clinical Data"
+    ],
     "biosample": {
       "sample type": [
         "blood",
@@ -52,6 +58,11 @@
     ],
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "website": "https://dceg2.cancer.gov/gemshare/",
+    "datatypes": [
+      "Environmental Data",
+      "Biospecimens",
+      "Phenotypic/Clinical Data"
+    ],
     "basic cohort attributes": [
       "demographic data"
     ],
@@ -71,6 +82,11 @@
     ],
     "pi_lead": "Mark Caulfield",
     "website": "https://www.genomicsengland.co.uk/",
+    "datatypes": [
+      "Genomic Data",
+      "Biospecimens",
+      "Phenotypic/Clinical Data"
+    ],
     "questionnaire/survey data": {
       "physiological measurements": {
         "anthropometry": [
@@ -90,6 +106,10 @@
     ],
     "pi_lead": "Kobus Herbst",
     "website": "http://saprin.mrc.ac.za/",
+    "datatypes": [
+      "Biospecimens",
+      "Phenotypic/Clinical Data"
+    ],
     "questionnaire/survey data": {
       "socio-demographic and economic characteristics": [
         "age/birthdate",
@@ -109,6 +129,11 @@
     ],
     "pi_lead": "Deenan Pillay",
     "website": "https://www.ahri.org",
+    "datatypes": [
+      "Genomic Data",
+      "Biospecimens",
+      "Phenotypic/Clinical Data"
+    ],
     "biosample": {
       "sample type": [
         "blood",

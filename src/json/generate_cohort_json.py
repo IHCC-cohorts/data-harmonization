@@ -30,8 +30,29 @@ def main():
     reader = csv.reader(cohorts_file)
     next(reader)
     for row in reader:
+        # Parse countries
         countries = [x.strip() for x in row[2].split(',')]
-        cohort_data[row[0]] = {'cohort_name': row[0], 'countries': countries, 'pi_lead': row[1], 'website': row[11]}
+
+        # Get available datatypes
+        genomic = row[6]
+        environment = row[7]
+        biospecimen = row[8]
+        clinical = row[9]
+        datatypes = []
+        if genomic == 'Yes':
+            datatypes.append('Genomic Data')
+        if environment == 'Yes':
+            datatypes.append('Environmental Data')
+        if biospecimen == 'Yes':
+            datatypes.append('Biospecimens')
+        if clinical == 'Yes':
+            datatypes.append('Phenotypic/Clinical Data')
+
+        cohort_data[row[0]] = {'cohort_name': row[0],
+                               'countries': countries,
+                               'pi_lead': row[1],
+                               'website': row[11],
+                               'datatypes': datatypes}
 
     all_data = []
     for cohort_name, file_name in cohorts.items():
