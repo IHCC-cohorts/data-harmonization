@@ -6,11 +6,17 @@ from argparse import ArgumentParser, FileType
 
 master_map = {}
 
-cohorts = {'Korean Genome and Epidemiology Study (KoGES)': 'build/mapping/gecko-koges.ttl',
-           'Golestan Cohort Study': 'build/mapping/gecko-gcs.ttl',
-           'Genomics England / 100,000 Genomes Project': 'build/mapping/genomics-england-gecko.ttl',
-           'SAPRIN (South African Population Research Infrastructure Network)': 'build/mapping/saprin-gecko.ttl',
-           'Africa Health Research Institute (AHRI) Population Cohort': 'build/mapping/vukuzazi-gecko.ttl'}
+ttl_files = {'KoGES': 'build/mapping/gecko-koges.ttl',
+             'GCS': 'build/mapping/gecko-gcs.ttl',
+             'GE': 'build/mapping/genomics-england-gecko.ttl',
+             'SAPRIN': 'build/mapping/saprin-gecko.ttl',
+             'VZ': 'build/mapping/vukuzazi-gecko.ttl'}
+
+names = {'KoGES': 'Korean Genome and Epidemiology Study (KoGES)',
+            'GCS': 'Golestan Cohort Study',
+            'GE': 'Genomics England / 100,000 Genomes Project',
+            'SAPRIN': 'SAPRIN (South African Population Research Infrastructure Network)',
+            'VZ': 'Africa Health Research Institute (AHRI) Population Cohort'}
 
 ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
                     'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']
@@ -55,14 +61,16 @@ def main():
                                'datatypes': datatypes}
 
     all_data = []
-    for cohort_name, file_name in cohorts.items():
+    for prefix, cohort_name in names.items():
+        file_name = ttl_files[prefix]
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
         child_to_parent = get_children(gin, 'http://example.com/GECKO_9999998')
         master_map = {}
         data = get_data(child_to_parent)
         if cohort_name in cohort_data:
-            this_cohort = cohort_data[cohort_name]
+            this_cohort = {'prefix': prefix}
+            this_cohort.update(cohort_data[cohort_name])
             this_cohort.update(data)
             all_data.append(this_cohort)
 

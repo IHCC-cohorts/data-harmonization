@@ -1,5 +1,6 @@
 [
   {
+    "prefix": "KoGES",
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
     "countries": [
       "South Korea",
@@ -52,6 +53,7 @@
     }
   },
   {
+    "prefix": "GCS",
     "cohort_name": "Golestan Cohort Study",
     "countries": [
       "Iran"
@@ -76,6 +78,7 @@
     ]
   },
   {
+    "prefix": "GE",
     "cohort_name": "Genomics England / 100,000 Genomes Project",
     "countries": [
       "England"
@@ -100,6 +103,7 @@
     }
   },
   {
+    "prefix": "SAPRIN",
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
     "countries": [
       "South Africa"
@@ -123,6 +127,7 @@
     }
   },
   {
+    "prefix": "VZ",
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
     "countries": [
       "South Africa"

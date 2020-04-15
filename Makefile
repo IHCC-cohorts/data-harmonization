@@ -311,7 +311,7 @@ data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv 
 
 ### Browser
 
-DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json
+DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json build/cohorts.json
 
 build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
@@ -319,6 +319,9 @@ build/%-data.json: build/%.owl | build/robot.jar
 	--header "ID|LABEL|definition|question description|value|see also|subclasses" \
 	--sort "LABEL" \
 	--export $@
+
+build/cohorts.json: data/cohort-data.json
+	cp $< $@
 
 # GECKO without OBO terms = CINECA
 # This is used to drive aggregations
@@ -338,7 +341,14 @@ cohorts: $(COHORT_PAGES)
 $(COHORT_PAGES): src/create_cohort_html.py data/cohort-data.json data/metadata.json src/cohort.html.jinja2 build/cohorts
 	python3 $^
 
-BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json cohorts $(DATA)
+BROWSER := build/index.html \
+build/cineca.json \
+build/koges-mapping.json \
+build/gcs-mapping.json \
+build/genomics-england-mapping.json \
+build/vukuzazi-mapping.json \
+build/saprin-mapping.json \
+cohorts $(DATA)
 browser: $(BROWSER)
 
 serve: $(BROWSER)
