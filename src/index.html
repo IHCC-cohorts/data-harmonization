@@ -530,19 +530,25 @@ function searchTable(dataSets) {
     let keys = Array.from(dataSets.keys());
     var keyLen = keys.length;
     for (var i = 0; i < keyLen; i++) {
+        // All fields for a dataset
         var data = dataSets.get(keys[i]);
         var len = data.length;
-        for (i = 0; i < len; i++) {
-            var jData = data[i];
+        for (n = 0; n < len; n++) {
+            // JSON data for a specific field
+            var jData = data[n];
             var thisID = jData.ID;
+            // Keys used in the data for a field
             let thisKeys = Object.keys(jData);
             var thisKeyLen = thisKeys.length;
-            for (var k = 0; k < thisKeyLen; k++) {
-                if (re.test(jData[thisKeys[k]])) {
-                    matches.push(thisID);
-                    break;
+
+            // Iterate through field data entries and find any match
+            fieldLoop:
+                for (var x = 0; x < thisKeyLen; x++) {
+                    if (re.test(jData[thisKeys[x]])) {
+                        matches.push(thisID);
+                        break fieldLoop;
+                    }
                 }
-            }
         }
     }
 
