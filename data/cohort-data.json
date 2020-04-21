@@ -1,6 +1,44 @@
 [
   {
-    "prefix": "KoGES",
+    "cohort_name": "Golestan Cohort Study",
+    "countries": [
+      "Iran"
+    ],
+    "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
+    "website": "https://dceg2.cancer.gov/gemshare/",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic cohort attributes": {
+      "demographic data": null
+    },
+    "biosample": {
+      "sample type": [
+        "blood"
+      ]
+    },
+    "questionnaire/survey data": {
+      "lifestyle and behaviours": [
+        "tobacco"
+      ],
+      "physiological measurements": {
+        "anthropometry": null,
+        "cirulation and respiration": [
+          "blood pressure"
+        ]
+      },
+      "general_variables": [
+        "signs and symptoms"
+      ],
+      "socio-demographic and economic characteristics": [
+        "residence"
+      ]
+    }
+  },
+  {
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
     "countries": [
       "South Korea",
@@ -11,15 +49,14 @@
     ],
     "pi_lead": "Sung Soo Kim",
     "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65199&menuIds=HOME004-MNU2261-MNU2262-MNU2263-MNU2264",
-    "datatypes": [
-      "Genomic Data",
-      "Environmental Data",
-      "Biospecimens",
-      "Phenotypic/Clinical Data"
-    ],
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
     "biosample": {
       "sample type": [
-        "blood",
         "urine"
       ]
     },
@@ -29,71 +66,32 @@
       ]
     },
     "questionnaire/survey data": {
-      "lifestyle and behaviours": [
-        "alcohol",
-        "nutrition",
-        "sleep",
-        "tobacco"
-      ],
       "physiological measurements": {
         "anthropometry": [
-          "height",
           "weight"
         ],
-        "circulation and respiration": [
-          "blood pressure",
+        "cirulation and respiration": [
           "heart rate"
         ]
-      },
-      "socio-demographic and economic characteristics": [
-        "education",
-        "family and household structure",
-        "occupation"
-      ]
+      }
     }
   },
   {
-    "prefix": "GCS",
-    "cohort_name": "Golestan Cohort Study",
-    "countries": [
-      "Iran"
-    ],
-    "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
-    "website": "https://dceg2.cancer.gov/gemshare/",
-    "datatypes": [
-      "Environmental Data",
-      "Biospecimens",
-      "Phenotypic/Clinical Data"
-    ],
-    "basic cohort attributes": [
-      "demographic data"
-    ],
-    "biosample": {
-      "sample type": [
-        "blood"
-      ]
-    },
-    "questionnaire/survey data": [
-      "signs and symptoms"
-    ]
-  },
-  {
-    "prefix": "GE",
     "cohort_name": "Genomics England / 100,000 Genomes Project",
     "countries": [
       "England"
     ],
     "pi_lead": "Mark Caulfield",
     "website": "https://www.genomicsengland.co.uk/",
-    "datatypes": [
-      "Genomic Data",
-      "Biospecimens",
-      "Phenotypic/Clinical Data"
-    ],
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
     "questionnaire/survey data": {
       "physiological measurements": {
         "anthropometry": [
-          "height",
           "weight"
         ]
       },
@@ -103,50 +101,57 @@
     }
   },
   {
-    "prefix": "SAPRIN",
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
     "countries": [
       "South Africa"
     ],
     "pi_lead": "Kobus Herbst",
     "website": "http://saprin.mrc.ac.za/",
-    "datatypes": [
-      "Biospecimens",
-      "Phenotypic/Clinical Data"
-    ],
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
     "questionnaire/survey data": {
       "socio-demographic and economic characteristics": [
-        "age/birthdate",
-        "biological sex",
-        "education",
-        "ethnicity/race",
-        "family and household structure",
-        "occupation",
         "residence"
       ]
     }
   },
   {
-    "prefix": "VZ",
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
     "countries": [
       "South Africa"
     ],
     "pi_lead": "Deenan Pillay",
     "website": "https://www.ahri.org",
-    "datatypes": [
-      "Genomic Data",
-      "Biospecimens",
-      "Phenotypic/Clinical Data"
-    ],
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
     "biosample": {
       "sample type": [
-        "blood",
         "urine"
       ]
     },
-    "questionnaire/survey data": [
-      "signs and symptoms"
-    ]
+    "questionnaire/survey data": {
+      "lifestyle and behaviours": [
+        "tobacco"
+      ],
+      "physiological measurements": {
+        "anthropometry": [
+          "weight"
+        ],
+        "cirulation and respiration": [
+          "heart rate"
+        ]
+      },
+      "general_variables": [
+        "signs and symptoms"
+      ]
+    }
   }
 ]
