@@ -12,28 +12,28 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic cohort attributes": {
-      "demographic data": null
+    "basic_cohort_attributes": {
+      "demographic_data": null
     },
     "biosample": {
-      "sample type": [
+      "sample_type": [
         "blood"
       ]
     },
-    "questionnaire/survey data": {
-      "lifestyle and behaviours": [
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
         "tobacco"
       ],
-      "physiological measurements": {
+      "physiological_measurements": {
         "anthropometry": null,
-        "cirulation and respiration": [
-          "blood pressure"
+        "cirulation_and_respiration": [
+          "blood_pressure"
         ]
       },
       "general_variables": [
-        "signs and symptoms"
+        "signs_and_symptoms"
       ],
-      "socio-demographic and economic characteristics": [
+      "socio_demographic_and_economic_characteristics": [
         "residence"
       ]
     }
@@ -56,22 +56,22 @@
       "phenotypic_clinical_data": true
     },
     "biosample": {
-      "sample type": [
+      "sample_type": [
         "urine"
       ]
     },
-    "laboratory measures": {
+    "laboratory_measures": {
       "microbiology": [
-        "microbial data"
+        "microbial_data"
       ]
     },
-    "questionnaire/survey data": {
-      "physiological measurements": {
+    "questionnaire_survey_data": {
+      "physiological_measurements": {
         "anthropometry": [
           "weight"
         ],
-        "cirulation and respiration": [
-          "heart rate"
+        "cirulation_and_respiration": [
+          "heart_rate"
         ]
       }
     }
@@ -89,13 +89,13 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "questionnaire/survey data": {
-      "physiological measurements": {
+    "questionnaire_survey_data": {
+      "physiological_measurements": {
         "anthropometry": [
           "weight"
         ]
       },
-      "socio-demographic and economic characteristics": [
+      "socio_demographic_and_economic_characteristics": [
         "gender"
       ]
     }
@@ -113,8 +113,8 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "questionnaire/survey data": {
-      "socio-demographic and economic characteristics": [
+    "questionnaire_survey_data": {
+      "socio_demographic_and_economic_characteristics": [
         "residence"
       ]
     }
@@ -133,24 +133,24 @@
       "phenotypic_clinical_data": true
     },
     "biosample": {
-      "sample type": [
+      "sample_type": [
         "urine"
       ]
     },
-    "questionnaire/survey data": {
-      "lifestyle and behaviours": [
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
         "tobacco"
       ],
-      "physiological measurements": {
+      "physiological_measurements": {
         "anthropometry": [
           "weight"
         ],
-        "cirulation and respiration": [
-          "heart rate"
+        "cirulation_and_respiration": [
+          "heart_rate"
         ]
       },
       "general_variables": [
-        "signs and symptoms"
+        "signs_and_symptoms"
       ]
     }
   }

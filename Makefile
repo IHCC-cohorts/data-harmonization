@@ -305,7 +305,7 @@ build/%-mapping.json: src/json/generate_mapping_json.py build/mapping/%-mapping.
 
 # Top-level cohort data
 
-data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv | $(MAPPINGS)
+data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json src/json/cineca_structure.json | $(MAPPINGS)
 	python3 $^ $@
 
 
