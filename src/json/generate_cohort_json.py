@@ -108,7 +108,8 @@ def clean_dict(d):
 
 
 def clean_string(string):
-    return string.replace(' ', '_').replace('-', '_').replace('/', '_')
+    return string.replace(
+        ' ', '_').replace('-', '_').replace('/', '_').replace('(', '').replace(')', '').replace('.', '')
 
 
 def get_children(gin, node):
