@@ -319,7 +319,7 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 
 ### Browser
 
-DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json build/cohorts.json
+DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json build/cohorts.json build/metadata.json
 
 build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
@@ -328,7 +328,10 @@ build/%-data.json: build/%.owl | build/robot.jar
 	--sort "LABEL" \
 	--export $@
 
-build/cohorts.json: data/cohort-data.json
+build/cohorts.json: data/full-cohort-data.json
+	cp $< $@
+
+build/metadata.json: data/metadata.json
 	cp $< $@
 
 # GECKO without OBO terms = CINECA

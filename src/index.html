@@ -191,20 +191,47 @@ function createAggregations(data, gecko) {
     aggs.appendChild(div);
 }
 
-function addCohortSearchResults(tbody, data) {
+function addCohortSearchResults(tbody, data, cohorts_metadata) {
     for (var i = 0; i < data.length; i++) {
         var node = data[i];
+        var name = node.cohort_name;
+
+        var metadata = null;
+        if (cohorts_metadata[name]) {
+            metadata = cohorts_metadata[name];
+        }
+
+        var prefix = '';
+        if (metadata != null && metadata != undefined) {
+            prefix = metadata.prefix;
+        }
+
         var row = document.createElement("tr");
         row.setAttribute("class", "cohort-row");
-        row.setAttribute("id", node.prefix);
+        if (prefix != '') {
+            row.setAttribute("id", prefix);
+        }
 
         var nameCell = document.createElement("td");
         nameCell.setAttribute("class", "name-col");
         var a = document.createElement("a");
-        var cohort_page = cohort_pages[node.prefix];
-        a.setAttribute("href", cohort_page);
-        a.innerHTML = node.cohort_name;
-        nameCell.appendChild(a);
+        var cohort_page;
+        if (prefix != '' && cohort_pages.hasOwnProperty(prefix)) {
+            cohort_page = cohort_pages[prefix];
+            a.setAttribute("href", cohort_page);
+            a.innerHTML = name;
+            nameCell.appendChild(a);
+        } else {
+            cohort_page = node.website;
+            if (cohort_page != '') {
+                a.setAttribute("href", cohort_page);
+                a.innerHTML = name;
+                nameCell.appendChild(a);
+            } else {
+                nameCell.innerHTML = name;
+            }
+        }
+        
 
         var piCell = document.createElement("td");
         piCell.setAttribute("class", "pi-col");
@@ -215,7 +242,16 @@ function addCohortSearchResults(tbody, data) {
         countryCell.setAttribute("class", "country-col");
         countryCell.innerHTML = countries;
 
-        var datatypes = node.datatypes.join(', ');
+        var datatypes_list = [];
+        var available_data_types = node.available_data_types;
+        for (var key in available_data_types) {
+            // true or false value if this data is available
+            var val = available_data_types[key];
+            if (val) {
+                datatypes_list.push(key);
+            }
+        }
+        var datatypes = datatypes_list.join(', ');
         var dtCell = document.createElement("td");
         dtCell.setAttribute("class", "dt-col");
         dtCell.innerHTML = datatypes;
@@ -328,7 +364,7 @@ function addSearchResults(tbody, source, data) {
     }
 }
 
-function createCohortSearchResults(cohorts) {
+function createCohortSearchResults(cohorts, cohorts_metadata) {
     var res = document.getElementById("cohortsOnly");
 
     var wrapper = document.createElement("div");
@@ -372,7 +408,7 @@ function createCohortSearchResults(cohorts) {
     // Create the table body
     var tbody = document.createElement("tbody");
 
-    addCohortSearchResults(tbody, cohorts);
+    addCohortSearchResults(tbody, cohorts, cohorts_metadata);
 
     table.appendChild(tbody);
     wrapper.appendChild(table);
@@ -506,7 +542,10 @@ function filterTable(catMap, checked) {
             }
             var uniqueKeep = [...new Set(keep)];
             for (i = 0; i < uniqueKeep.length; i++) {
-                document.getElementById(uniqueKeep[i]).style.display = "";
+                var ele = document.getElementById(uniqueKeep[i]);
+                if (ele != null) {
+                    ele.style.display = "";
+                }
             }
         }
     }
@@ -631,7 +670,8 @@ createAggregations(cineca, gecko);
 createSearchResults(allDataSets);
 
 var cohorts = get_json('./cohorts.json');
-createCohortSearchResults(cohorts);
+var cohorts_metadata = get_json('./metadata.json');
+createCohortSearchResults(cohorts, cohorts_metadata);
 
 // Event listener for check box selections
 document.addEventListener("DOMContentLoaded", function (event) {
