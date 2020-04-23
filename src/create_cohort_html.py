@@ -41,6 +41,16 @@ def main():
         cohort_data['tree'] = '../{0}-tree.html'.format(cohort_id)
         cohort_data['owl'] = '../{0}.owl'.format(cohort_id)
 
+        cur_enroll = cohort_data['current_enrollment']
+        target_enroll = cohort_data['target_enrollment']
+        if cur_enroll:
+            cur_enroll = "{:,}".format(cohort_data['current_enrollment'])
+        if target_enroll:
+            target_enroll = "{:,}".format(cohort_data['target_enrollment'])
+
+        cohort_data['current_enrollment'] = cur_enroll
+        cohort_data['target_enrollment'] = target_enroll
+
         template = Template(template_str)
         res = template.render(o=cohort_data)
 

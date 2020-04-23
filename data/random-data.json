@@ -6,45 +6,33 @@
     ],
     "pi_lead": "Joyce Tung",
     "website": "https://research.23andme.com/",
+    "current_enrollment": 6800000,
+    "target_enrollment": null,
+    "enrollment_period": "2007:Ongoing",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "timeline"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
     "laboratory_measures": {
       "genomics": {
+        "general_variables": [
+          "available_data_formats"
+        ],
         "data_type": [
-          "Sequence_variants"
+          "WGS"
         ]
       }
     },
     "questionnaire_survey_data": {
-      "diseases": [
-        "digestive_system"
-      ],
-      "lifestyle_and_behaviours": [
-        "sleep"
-      ],
-      "physiological_measurements": {
-        "cirulation_and_respiration": [
-          "blood_pressure"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
+      "medication": [
+        "drug_responses"
       ]
-    }
+    },
+    "statistics": [
+      "summary_statistics_for_additional_data_from_federated_sources"
+    ]
   },
   {
     "cohort_name": "45 and Up Study",
@@ -53,18 +41,18 @@
     ],
     "pi_lead": "Martin McNamara",
     "website": "https://www.saxinstitute.org.au/our-work/45-up-study/",
+    "current_enrollment": 267153,
+    "target_enrollment": null,
+    "enrollment_period": "2006:2009",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "biosample": {
-      "sample_type": [
-        "saliva"
-      ],
+    "basic_cohort_attributes": {
       "general_variables": [
-        "storage_method"
+        "aims_and_objectives"
       ]
     },
     "laboratory_measures": {
@@ -76,15 +64,24 @@
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "nervous_system"
+        "digestive_system"
+      ],
+      "general_variables": [
+        "life_stage_time_point"
       ],
       "lifestyle_and_behaviours": [
         "sleep"
       ],
+      "medication": [
+        "prescription"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "genealogy"
+        "education"
       ]
-    }
+    },
+    "survey_administration": [
+      "unique_identifiers"
+    ]
   },
   {
     "cohort_name": "Apolipoprotein MORtality RISk study (AMORIS)",
@@ -93,89 +90,12 @@
     ],
     "pi_lead": "Goran Walldius",
     "website": "http://amoriscohort.imm.ki.se",
+    "current_enrollment": 812073,
+    "target_enrollment": null,
+    "enrollment_period": "1985:1996",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "num_participants"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "stool"
-      ]
-    },
-    "laboratory_measures": {
-      "microbiology": [
-        "biosample_source_anatomical_location"
-      ]
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "respiratory_system"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Biobank Japan",
-    "countries": [
-      "Japan"
-    ],
-    "pi_lead": "Yoshinori Murakami",
-    "website": "https://biobankjp.org/english/index.html",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_medication"
-        ],
-        "data_type": [
-          "Metagenomics"
-        ]
-      },
-      "microbiology": [
-        "microbial_data"
-      ]
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "blood_related_disorders"
-      ],
-      "lifestyle_and_behaviours": [
-        "sleep"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    }
-  },
-  {
-    "cohort_name": "BioVU Vanderbilt",
-    "countries": [
-      "USA"
-    ],
-    "pi_lead": "Dan Roden",
-    "website": "https://victr.vanderbilt.edu/pub/biovu/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
@@ -187,58 +107,10 @@
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "associated_medication"
+          "associated_phenotype"
         ],
         "data_type": [
           "Metagenomics"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "blood_related_disorders"
-      ],
-      "medication": [
-        "prescription"
-      ],
-      "general_variables": [
-        "physician_practitioner_info"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "Canadian Partnership for Tomorrow Project (CPTP)",
-    "countries": [
-      "Canada"
-    ],
-    "pi_lead": "Philip Awadalla",
-    "website": "http://www.partnershipfortomorrow.ca",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "genders_studied_in_cohort"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "stool"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "availability"
         ]
       },
       "microbiology": [
@@ -246,70 +118,27 @@
       ]
     },
     "questionnaire_survey_data": {
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
+      ],
       "lifestyle_and_behaviours": [
-        "nutrition"
-      ],
-      "medication": [
-        "administration_method"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
+        "sleep"
       ]
     },
-    "statistics": [
-      "summary_statistics_for_additional_data_from_federated_sources"
+    "survey_administration": [
+      "unique_identifiers"
     ]
   },
   {
-    "cohort_name": "Cancer Prevention Study II (CPS-II)",
+    "cohort_name": "Biobank Japan",
     "countries": [
-      "USA"
+      "Japan"
     ],
-    "pi_lead": "Susan Gapstur",
-    "website": "http://www.cancer.org/research/researchtopreventcancer/currentcancerpreventionstudies/index",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": false,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "data_collection_events"
-      ],
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_phenotype"
-        ],
-        "data_type": [
-          "RNAseq_gene_expression"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "nervous_system"
-      ],
-      "medication": [
-        "prescription"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "gender"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Cancer Prevention Study II Nutrition Cohort",
-    "countries": [
-      "USA"
-    ],
-    "pi_lead": "Susan Gapstur",
-    "website": "http://www.cancer.org/research/researchtopreventcancer/currentcancerpreventionstudies/cancer-prevention-study",
+    "pi_lead": "Yoshinori Murakami",
+    "website": "https://biobankjp.org/english/index.html",
+    "current_enrollment": 270000,
+    "target_enrollment": 270000,
+    "enrollment_period": "2003:2018",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
@@ -320,21 +149,69 @@
       "genomics": {
         "general_variables": [
           "sample_size"
-        ],
-        "data_type": [
-          "RNAseq_gene_expression"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "mental_and_behaviour_disorders"
+      ],
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "medication": [
+        "prescription"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "gender"
+      ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
+  },
+  {
+    "cohort_name": "BioVU Vanderbilt",
+    "countries": [
+      "USA"
+    ],
+    "pi_lead": "Dan Roden",
+    "website": "https://victr.vanderbilt.edu/pub/biovu/",
+    "current_enrollment": 244000,
+    "target_enrollment": null,
+    "enrollment_period": "2007:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "location"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ],
+      "general_variables": [
+        "storage_method"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "associated_phenotype"
         ]
       }
     },
     "questionnaire_survey_data": {
       "lifestyle_and_behaviours": [
-        "sleep"
+        "nutrition"
       ],
       "medication": [
-        "drug_responses"
-      ],
-      "general_variables": [
-        "physician_practitioner_info"
+        "prescription"
       ],
       "physiological_measurements": {
         "anthropometry": [
@@ -342,11 +219,150 @@
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "biological_sex"
+        "gender"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Canadian Partnership for Tomorrow Project (CPTP)",
+    "countries": [
+      "Canada"
+    ],
+    "pi_lead": "Philip Awadalla",
+    "website": "http://www.partnershipfortomorrow.ca",
+    "current_enrollment": 315000,
+    "target_enrollment": null,
+    "enrollment_period": "2008:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ],
+      "demographic_data": [
+        "age_range"
       ]
     },
-    "survey_administration": [
-      "unique_identifiers"
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "eQTL"
+        ],
+        "general_variables": [
+          "sample_size"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "circulatory_system"
+      ],
+      "general_variables": [
+        "life_stage_time_point"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "age_birthdate"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Cancer Prevention Study II (CPS-II)",
+    "countries": [
+      "USA"
+    ],
+    "pi_lead": "Susan Gapstur",
+    "website": "http://www.cancer.org/research/researchtopreventcancer/currentcancerpreventionstudies/index",
+    "current_enrollment": 1185106,
+    "target_enrollment": null,
+    "enrollment_period": "1982:1983",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": false,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ]
+    },
+    "biosample": {
+      "general_variables": [
+        "storage_method"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ],
+        "data_type": [
+          "Epigenetics"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "sleep"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
+    },
+    "statistics": [
+      "summary_statistics_for_additional_data_from_federated_sources"
+    ]
+  },
+  {
+    "cohort_name": "Cancer Prevention Study II Nutrition Cohort",
+    "countries": [
+      "USA"
+    ],
+    "pi_lead": "Susan Gapstur",
+    "website": "http://www.cancer.org/research/researchtopreventcancer/currentcancerpreventionstudies/cancer-prevention-study",
+    "current_enrollment": 184194,
+    "target_enrollment": null,
+    "enrollment_period": "1992:1993",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "stool"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "associated_cell_type_tissue_type_biosample"
+        ],
+        "data_type": [
+          "Microbiome_markers"
+        ]
+      },
+      "microbiology": [
+        "microbial_data"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "medication": [
+        "prescription"
+      ],
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "blood_pressure"
+        ]
+      }
+    },
+    "statistics": [
+      "summary_statistics_for_additional_data_from_federated_sources"
     ]
   },
   {
@@ -361,8 +377,108 @@
     ],
     "pi_lead": "Hakon Hakonarson",
     "website": "https://caglab.org/index.php/for-researchers/biorepository.html",
+    "current_enrollment": 500000,
+    "target_enrollment": 1000000,
+    "enrollment_period": "2006:ongoing",
     "available_data_types": {
       "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "study_design"
+      ],
+      "demographic_data": [
+        "genders_studied_in_cohort"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "associated_cell_type_tissue_type_biosample"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
+      ],
+      "lifestyle_and_behaviours": [
+        "physical_activity"
+      ],
+      "medication": [
+        "posology"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
+      ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
+  },
+  {
+    "cohort_name": "China Kadoorie Biobank",
+    "countries": [
+      "China"
+    ],
+    "pi_lead": "Zhengming Chen and Liming Li",
+    "website": "http://www.ckbiobank.org/site/",
+    "current_enrollment": 512891,
+    "target_enrollment": null,
+    "enrollment_period": "2004:2008",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "location"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "stool"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "availability"
+        ],
+        "data_type": [
+          "eQTL"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "blood_related_disorders"
+      ],
+      "medication": [
+        "associated_diseases"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
+      ]
+    }
+  },
+  {
+    "cohort_name": "China PEACE (Patient-centered Evaluative Assessment of Cardiac Events) Million Persons Project",
+    "countries": [
+      "China"
+    ],
+    "pi_lead": "Linxin Jiang",
+    "website": "",
+    "current_enrollment": 2000000,
+    "target_enrollment": 4000000,
+    "enrollment_period": "2014:ongoing",
+    "available_data_types": {
+      "genomic_data": false,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
@@ -378,98 +494,16 @@
     "laboratory_measures": {
       "genomics": {
         "data_type": [
-          "eQTL"
+          "WGS"
         ]
       }
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "oncological"
+        "digestive_system"
       ],
       "lifestyle_and_behaviours": [
-        "physical_activity"
-      ],
-      "medication": [
-        "administration_method"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height"
-        ]
-      }
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "China Kadoorie Biobank",
-    "countries": [
-      "China"
-    ],
-    "pi_lead": "Zhengming Chen and Liming Li",
-    "website": "http://www.ckbiobank.org/site/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "availability"
-        ],
-        "data_type": [
-          "WES"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "respiratory_system"
-      ],
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
-      ],
-      "physiological_measurements": {
-        "cirulation_and_respiration": [
-          "blood_pressure"
-        ]
-      }
-    }
-  },
-  {
-    "cohort_name": "China PEACE (Patient-centered Evaluative Assessment of Cardiac Events) Million Persons Project",
-    "countries": [
-      "China"
-    ],
-    "pi_lead": "Linxin Jiang",
-    "website": "",
-    "available_data_types": {
-      "genomic_data": false,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "biosample": {
-      "sample_type": [
-        "stool"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_phenotype"
-        ],
-        "data_type": [
-          "Sequence_variants"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
+        "sleep"
       ],
       "physiological_measurements": {
         "anthropometry": [
@@ -488,40 +522,49 @@
     ],
     "pi_lead": "Marie Zins",
     "website": "http://www.constances.fr/index_EN.php",
+    "current_enrollment": 210000,
+    "target_enrollment": null,
+    "enrollment_period": "2012:2019",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "biosample": {
-      "sample_type": [
-        "urine"
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "timeline"
       ]
     },
     "laboratory_measures": {
       "genomics": {
-        "data_type": [
-          "WGS"
+        "general_variables": [
+          "sample_size"
         ]
       }
     },
     "questionnaire_survey_data": {
+      "diseases": [
+        "nervous_system"
+      ],
       "lifestyle_and_behaviours": [
-        "alcohol"
+        "tobacco"
+      ],
+      "medication": [
+        "prescription"
       ],
       "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ],
         "cirulation_and_respiration": [
           "blood_pressure"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "residence"
+        "birthplace"
       ]
-    },
-    "survey_administration": [
-      "date_and_time_related_information"
-    ]
+    }
   },
   {
     "cohort_name": "Danish National Birth Cohort",
@@ -530,6 +573,9 @@
     ],
     "pi_lead": "Mads Melbye",
     "website": "dnbc.dk",
+    "current_enrollment": 198028,
+    "target_enrollment": null,
+    "enrollment_period": "1998:2002",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
@@ -538,30 +584,36 @@
     },
     "basic_cohort_attributes": {
       "demographic_data": [
-        "age_range"
+        "genders_studied_in_cohort"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "saliva"
       ]
     },
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "processing_method"
+          "available_data_formats"
         ],
         "data_type": [
-          "Sequence_variants"
+          "DNA_Genotyping"
         ]
       }
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "nervous_system"
+        "oncological"
       ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      },
+      "medication": [
+        "administration_method"
+      ],
+      "general_variables": [
+        "physician_practitioner_info"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "education"
+        "gender"
       ]
     }
   },
@@ -572,42 +624,35 @@
     ],
     "pi_lead": "David van Heel",
     "website": "http://www.genesandhealth.org/",
+    "current_enrollment": 41500,
+    "target_enrollment": 100000,
+    "enrollment_period": "2015 - ongoing (planned end date 2023)",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "num_participants"
-      ]
-    },
     "laboratory_measures": {
       "genomics": {
-        "general_variables": [
-          "availability"
-        ],
         "data_type": [
-          "eQTL"
+          "WGS"
         ]
       }
     },
     "questionnaire_survey_data": {
-      "diseases": [
-        "blood_related_disorders"
+      "lifestyle_and_behaviours": [
+        "physical_activity"
       ],
       "general_variables": [
-        "physician_practitioner_info"
+        "signs_and_symptoms"
       ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      }
+      "socio_demographic_and_economic_characteristics": [
+        "family_and_household_structure"
+      ]
     },
     "survey_administration": [
-      "unique_identifiers"
+      "consent_accessibility"
     ]
   },
   {
@@ -617,11 +662,19 @@
     ],
     "pi_lead": "Paulo A. Lotufo",
     "website": "www.elsa.org.br",
+    "current_enrollment": 15105,
+    "target_enrollment": null,
+    "enrollment_period": "2008:2010",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "study_design"
+      ]
     },
     "biosample": {
       "sample_type": [
@@ -631,37 +684,25 @@
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "associated_cell_type_tissue_type_biosample"
+          "associated_phenotype"
         ],
         "data_type": [
-          "WES"
+          "eQTL"
         ]
       }
     },
     "questionnaire_survey_data": {
-      "diseases": [
-        "blood_related_disorders"
-      ],
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
       "medication": [
-        "administration_method"
+        "drug_responses"
       ],
       "non_pharmacological_interventions": [
         "surgical_interventions"
       ],
       "physiological_measurements": {
-        "anthropometry": [
-          "height"
+        "cirulation_and_respiration": [
+          "blood_pressure"
         ]
-      },
-      "general_variables": [
-        "signs_and_symptoms"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "genealogy"
-      ]
+      }
     }
   },
   {
@@ -671,22 +712,25 @@
     ],
     "pi_lead": "Matt Gillman",
     "website": "https://www.nih.gov/echo",
+    "current_enrollment": null,
+    "target_enrollment": 100000,
+    "enrollment_period": "1980:ongoing",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "biosample": {
-      "sample_type": [
-        "saliva"
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "data_collection_events"
+      ],
+      "population_data": [
+        "location"
       ]
     },
     "laboratory_measures": {
       "genomics": {
-        "general_variables": [
-          "processing_method"
-        ],
         "data_type": [
           "WES"
         ]
@@ -694,15 +738,17 @@
     },
     "questionnaire_survey_data": {
       "general_variables": [
-        "life_stage_time_point"
+        "physician_practitioner_info"
       ],
-      "medication": [
-        "administration_method"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    }
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "blood_pressure"
+        ]
+      }
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
   },
   {
     "cohort_name": "EPIC (European Prospective Investigation into Cancer, Chronic Diseases, Nutrition and Lifestyle)",
@@ -720,41 +766,40 @@
     ],
     "pi_lead": "Elio Riboli, Paul Brennan, and Marc Gunter",
     "website": "http://epic.iarc.fr/",
+    "current_enrollment": 521000,
+    "target_enrollment": null,
+    "enrollment_period": "1992:1999",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "timeline"
-      ],
-      "population_data": [
-        "location"
+    "biosample": {
+      "sample_type": [
+        "blood"
       ]
     },
     "laboratory_measures": {
       "genomics": {
-        "general_variables": [
-          "available_data_formats"
-        ],
         "data_type": [
-          "Sequence_variants"
+          "other"
+        ],
+        "general_variables": [
+          "sample_size"
         ]
       }
     },
     "questionnaire_survey_data": {
-      "medication": [
-        "administration_method"
-      ],
-      "general_variables": [
-        "signs_and_symptoms"
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "genealogy"
       ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
+    }
   },
   {
     "cohort_name": "EpiHealth",
@@ -763,6 +808,9 @@
     ],
     "pi_lead": "Lars Lind and S\u221a\u2202lve Elmst\u221a\u2022lh",
     "website": "https://www.epihealth.se/vad-ar-epihealth/",
+    "current_enrollment": 25000,
+    "target_enrollment": 25000,
+    "enrollment_period": "2011:2018",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": false,
@@ -770,30 +818,40 @@
       "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
-      "general_variables": [
-        "timeline"
+      "population_data": [
+        "criteria_for_enrollment_and_recruitment_procedures"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
       ]
     },
     "laboratory_measures": {
       "genomics": {
         "data_type": [
-          "WGS"
+          "other"
         ],
         "general_variables": [
           "processing_method"
         ]
-      },
-      "microbiology": [
-        "microbial_data"
-      ]
+      }
     },
     "questionnaire_survey_data": {
+      "diseases": [
+        "respiratory_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
       "medication": [
-        "prescription"
+        "associated_diseases"
       ],
-      "general_variables": [
-        "signs_and_symptoms"
-      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height"
+        ]
+      },
       "socio_demographic_and_economic_characteristics": [
         "gender"
       ]
@@ -806,6 +864,9 @@
     ],
     "pi_lead": "Andres Metspalu",
     "website": "www.biobank.ee",
+    "current_enrollment": 200000,
+    "target_enrollment": 200000,
+    "enrollment_period": "2002:2018",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
@@ -817,30 +878,33 @@
         "data_collection_events"
       ],
       "demographic_data": [
-        "genders_studied_in_cohort"
+        "sexes_studied_in_cohort"
       ]
     },
     "biosample": {
       "sample_type": [
-        "saliva"
+        "stool"
       ]
     },
     "laboratory_measures": {
       "genomics": {
-        "general_variables": [
-          "sample_size"
-        ],
         "data_type": [
-          "WGS"
+          "WES"
         ]
       }
     },
     "questionnaire_survey_data": {
-      "medication": [
-        "drug_responses"
+      "diseases": [
+        "nervous_system"
       ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
+      "medication": [
+        "administration_method"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "general_variables": [
+        "signs_and_symptoms"
       ]
     }
   },
@@ -851,30 +915,43 @@
     ],
     "pi_lead": "Helj\u221a\u00a7-Marja Surcel",
     "website": "www.esis.fi",
+    "current_enrollment": 950000,
+    "target_enrollment": null,
+    "enrollment_period": "1983:2016",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": false
     },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "criteria_for_enrollment_and_recruitment_procedures"
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "Sequence_variants"
+        ]
+      },
+      "microbiology": [
+        "microbial_data"
       ]
     },
     "questionnaire_survey_data": {
-      "diseases": [
-        "nervous_system"
+      "lifestyle_and_behaviours": [
+        "tobacco"
       ],
       "medication": [
-        "associated_diseases"
+        "drug_responses"
       ],
-      "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure"
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "blood_pressure"
+        ]
+      },
+      "general_variables": [
+        "signs_and_symptoms"
       ]
     },
-    "survey_administration": [
-      "unique_identifiers"
+    "statistics": [
+      "summary_statistics_for_additional_data_from_federated_sources"
     ]
   },
   {
@@ -889,38 +966,42 @@
     ],
     "pi_lead": "Anthony Swerdlow",
     "website": "http://www.breakthroughgenerations.org.uk/home",
+    "current_enrollment": 113000,
+    "target_enrollment": 100000,
+    "enrollment_period": "2003:2015",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "genders_studied_in_cohort"
+      ]
+    },
     "biosample": {
       "sample_type": [
-        "blood"
+        "saliva"
       ]
     },
     "laboratory_measures": {
       "genomics": {
-        "general_variables": [
-          "associated_phenotype"
+        "data_type": [
+          "WES"
         ]
-      },
-      "microbiology": [
-        "microbial_data"
-      ]
+      }
     },
     "questionnaire_survey_data": {
       "diseases": [
         "endocrine_nutritional_metabolic_disorders"
       ],
-      "lifestyle_and_behaviours": [
-        "physical_activity"
-      ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "heart_rate"
+        ]
+      }
+    }
   },
   {
     "cohort_name": "Healthy Nevada",
@@ -929,6 +1010,9 @@
     ],
     "pi_lead": "Joe Grzymski",
     "website": "Healthynv.org",
+    "current_enrollment": 35000,
+    "target_enrollment": 250000,
+    "enrollment_period": "2016:ongoing",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
@@ -943,24 +1027,27 @@
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "associated_medication"
+          "associated_disease"
         ],
         "data_type": [
-          "RNAseq_gene_expression"
+          "other"
         ]
-      },
-      "microbiology": [
-        "biosample_source_anatomical_location"
-      ]
+      }
     },
     "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "sleep"
+      "diseases": [
+        "digestive_system"
       ],
-      "socio_demographic_and_economic_characteristics": [
-        "genealogy"
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
       ]
-    }
+    },
+    "statistics": [
+      "summary_statistics_for_additional_data_from_federated_sources"
+    ]
   },
   {
     "cohort_name": "Israel Genome Project",
@@ -969,9 +1056,142 @@
     ],
     "pi_lead": "Gad Rennert",
     "website": "",
+    "current_enrollment": 140000,
+    "target_enrollment": null,
+    "enrollment_period": ":ongoing",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "timeline"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "RNAseq_gene_expression"
+        ],
+        "general_variables": [
+          "sample_size"
+        ]
+      },
+      "microbiology": [
+        "biosample_source_anatomical_location"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "oncological"
+      ],
+      "medication": [
+        "drug_responses"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "genealogy"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Japan Public Health Center-based Prospective Study (JPHC)",
+    "countries": [
+      "Japan"
+    ],
+    "pi_lead": "Shoichiro Tsugane",
+    "website": "http://epi.ncc.go.jp/en/jphc/",
+    "current_enrollment": 130000,
+    "target_enrollment": null,
+    "enrollment_period": "1990:1994",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "timeline"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "availability"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "nervous_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "medication": [
+        "associated_diseases"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "gender"
+      ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
+  },
+  {
+    "cohort_name": "Japan Public Health Center-based Prospective Study for the Next Generation (JPHC-NEXT)",
+    "countries": [
+      "Japan"
+    ],
+    "pi_lead": "Shoichiro Tsugane",
+    "website": "https://epi.ncc.go.jp/jphcnext/en/index.html",
+    "current_enrollment": 115000,
+    "target_enrollment": null,
+    "enrollment_period": "2011:2016",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "associated_disease"
+        ],
+        "data_type": [
+          "WES"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "nervous_system"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "genealogy"
+      ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
+  },
+  {
+    "cohort_name": "Kaiser Permanente Research Program on Genes, Environment, and Health",
+    "countries": [
+      "USA; Northern California"
+    ],
+    "pi_lead": "Catherine Schaefer",
+    "website": "http://www.dor.kaiser.org/external/DORExternal/rpgeh/index.aspx",
+    "current_enrollment": 210000,
+    "target_enrollment": 500000,
+    "enrollment_period": "2008: ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
@@ -982,9 +1202,6 @@
     },
     "laboratory_measures": {
       "genomics": {
-        "general_variables": [
-          "associated_phenotype"
-        ],
         "data_type": [
           "eQTL"
         ]
@@ -992,7 +1209,111 @@
     },
     "questionnaire_survey_data": {
       "diseases": [
+        "blood_related_disorders"
+      ],
+      "lifestyle_and_behaviours": [
+        "sleep"
+      ],
+      "medication": [
+        "drug_responses"
+      ],
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "heart_rate"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Korea Biobank Project",
+    "countries": [
+      "Republic of Korea"
+    ],
+    "pi_lead": "Jae-Pil Jeon and Changhoon Kim",
+    "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65660&menuIds=HOME004-MNU2210-MNU2327-MNU2346",
+    "current_enrollment": 830000,
+    "target_enrollment": null,
+    "enrollment_period": ":ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "sexes_studied_in_cohort"
+      ],
+      "population_data": [
+        "num_participants"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "blood"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "associated_cell_type_tissue_type_biosample"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
         "respiratory_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "education"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Korean Cancer Prevention Study (KCPS-II Biobank)",
+    "countries": [
+      "Korea"
+    ],
+    "pi_lead": "Sun Ha Jee",
+    "website": "",
+    "current_enrollment": 156701,
+    "target_enrollment": null,
+    "enrollment_period": "2004:2013",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "timeline"
+      ],
+      "population_data": [
+        "num_participants"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "blood"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "mental_and_behaviour_disorders"
       ],
       "general_variables": [
         "life_stage_time_point"
@@ -1004,22 +1325,288 @@
         "anthropometry": [
           "height"
         ]
-      },
+      }
+    }
+  },
+  {
+    "cohort_name": "LifeGene (and sister cohort, EpiHealth)",
+    "countries": [
+      "Sweden"
+    ],
+    "pi_lead": "Nancy Pedersen",
+    "website": "https://www.lifegene.se/For-scientists/About-LifeGene/",
+    "current_enrollment": 51300,
+    "target_enrollment": 300000,
+    "enrollment_period": "2009:2016",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "study_design"
+      ],
+      "demographic_data": [
+        "sexes_studied_in_cohort"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "available_data_formats"
+        ],
+        "data_type": [
+          "other"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "physical_activity"
+      ],
+      "medication": [
+        "posology"
+      ]
+    },
+    "survey_administration": [
+      "consent_accessibility"
+    ]
+  },
+  {
+    "cohort_name": "LIFEPATH (Lifecourse biological pathways underlying social differences in healthy aging)",
+    "countries": [
+      "Europe (7)",
+      "Australia",
+      "USA"
+    ],
+    "pi_lead": "Terrence Simmons",
+    "website": "http://www.lifepathproject.eu/",
+    "current_enrollment": 235000,
+    "target_enrollment": null,
+    "enrollment_period": "Varies by cohort",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "data_collection_events"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "saliva"
+      ]
+    },
+    "laboratory_measures": {
+      "microbiology": [
+        "microbial_data"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "blood_related_disorders"
+      ],
+      "lifestyle_and_behaviours": [
+        "sleep"
+      ],
+      "medication": [
+        "prescription"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "age_birthdate"
+        "gender"
       ]
     }
   },
   {
-    "cohort_name": "Japan Public Health Center-based Prospective Study (JPHC)",
+    "cohort_name": "Malaysian Cohort",
     "countries": [
-      "Japan"
+      "Malaysia"
     ],
-    "pi_lead": "Shoichiro Tsugane",
-    "website": "http://epi.ncc.go.jp/en/jphc/",
+    "pi_lead": "Rahman Jamal",
+    "website": "http://mycohort.gov.my/site/",
+    "current_enrollment": 106527,
+    "target_enrollment": null,
+    "enrollment_period": "2007:2013",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "availability"
+        ],
+        "data_type": [
+          "other"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "blood_related_disorders"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "genealogy"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Maule Cohort (MAUCO Study)",
+    "countries": [
+      "Chile"
+    ],
+    "pi_lead": "Catterina Ferreccio",
+    "website": "http://www.accdis.cl/eng/en/",
+    "current_enrollment": 9200,
+    "target_enrollment": 10000,
+    "enrollment_period": "2015:2018",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "mental_and_behaviour_disorders"
+      ],
+      "medication": [
+        "prescription"
+      ],
+      "general_variables": [
+        "physician_practitioner_info"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "genealogy"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Mexico City Prospective Study",
+    "countries": [
+      "Mexico"
+    ],
+    "pi_lead": "Jesus Alegre, Jonathan Emberson, Pablo Kuri-Morales, and Roberto Tapia-Conyer",
+    "website": "https://www.ctsu.ox.ac.uk/research/prospective-blood-based-study-of-150-000-individuals-in-mexico",
+    "current_enrollment": 159755,
+    "target_enrollment": null,
+    "enrollment_period": "1998:2004",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "genders_studied_in_cohort"
+      ],
+      "population_data": [
+        "criteria_for_enrollment_and_recruitment_procedures"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "RNAseq_gene_expression"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "digestive_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "alcohol"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "education"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Million Veteran Program",
+    "countries": [
+      "USA"
+    ],
+    "pi_lead": "Mike Gaziano",
+    "website": "http://www.research.va.gov/mvp/",
+    "current_enrollment": 785000,
+    "target_enrollment": 1000000,
+    "enrollment_period": "2011:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ],
+      "population_data": [
+        "num_participants"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "associated_medication"
+        ],
+        "data_type": [
+          "DNA_Genotyping"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "respiratory_system"
+      ],
+      "general_variables": [
+        "life_stage_time_point"
+      ],
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "birthplace"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Million Women Study",
+    "countries": [
+      "England",
+      "Scotland"
+    ],
+    "pi_lead": "Valerie Beral",
+    "website": "http://www.millionwomenstudy.org/introduction/",
+    "current_enrollment": 1320000,
+    "target_enrollment": null,
+    "enrollment_period": "1996:2001",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
@@ -1036,507 +1623,25 @@
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "associated_medication"
-        ],
-        "data_type": [
-          "Microbiome_markers"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "general_variables": [
-        "physician_practitioner_info"
-      ],
-      "medication": [
-        "associated_diseases"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Japan Public Health Center-based Prospective Study for the Next Generation (JPHC-NEXT)",
-    "countries": [
-      "Japan"
-    ],
-    "pi_lead": "Shoichiro Tsugane",
-    "website": "https://epi.ncc.go.jp/jphcnext/en/index.html",
-    "available_data_types": {
-      "genomic_data": false,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "location"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_disease"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "sleep"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "education"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Kaiser Permanente Research Program on Genes, Environment, and Health",
-    "countries": [
-      "USA; Northern California"
-    ],
-    "pi_lead": "Catherine Schaefer",
-    "website": "http://www.dor.kaiser.org/external/DORExternal/rpgeh/index.aspx",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "genders_studied_in_cohort"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_cell_type_tissue_type_biosample"
-        ],
-        "data_type": [
-          "other"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "endocrine_nutritional_metabolic_disorders"
-      ],
-      "lifestyle_and_behaviours": [
-        "sleep"
-      ],
-      "medication": [
-        "administration_method"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "education"
-      ]
-    },
-    "statistics": [
-      "summary_statistics_for_additional_data_from_federated_sources"
-    ]
-  },
-  {
-    "cohort_name": "Korea Biobank Project",
-    "countries": [
-      "Republic of Korea"
-    ],
-    "pi_lead": "Jae-Pil Jeon and Changhoon Kim",
-    "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65660&menuIds=HOME004-MNU2210-MNU2327-MNU2346",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "data_collection_events"
-      ],
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ]
-    },
-    "biosample": {
-      "general_variables": [
-        "storage_method"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "availability"
-        ],
-        "data_type": [
-          "other"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "medication": [
-        "drug_responses"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      }
-    }
-  },
-  {
-    "cohort_name": "Korean Cancer Prevention Study (KCPS-II Biobank)",
-    "countries": [
-      "Korea"
-    ],
-    "pi_lead": "Sun Ha Jee",
-    "website": "",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "criteria_for_enrollment_and_recruitment_procedures"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "Epigenetics"
-        ],
-        "general_variables": [
           "sample_size"
         ]
       }
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "oncological"
+        "nervous_system"
       ],
       "general_variables": [
         "life_stage_time_point"
       ],
-      "lifestyle_and_behaviours": [
-        "physical_activity"
-      ]
-    }
-  },
-  {
-    "cohort_name": "LifeGene (and sister cohort, EpiHealth)",
-    "countries": [
-      "Sweden"
-    ],
-    "pi_lead": "Nancy Pedersen",
-    "website": "https://www.lifegene.se/For-scientists/About-LifeGene/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ],
-      "population_data": [
-        "num_participants"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "available_data_formats"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "oncological"
-      ],
-      "medication": [
-        "posology"
-      ],
-      "general_variables": [
-        "physician_practitioner_info"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "biological_sex"
-      ]
-    }
-  },
-  {
-    "cohort_name": "LIFEPATH (Lifecourse biological pathways underlying social differences in healthy aging)",
-    "countries": [
-      "Europe (7)",
-      "Australia",
-      "USA"
-    ],
-    "pi_lead": "Terrence Simmons",
-    "website": "http://www.lifepathproject.eu/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "blood"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "available_data_formats"
-        ],
-        "data_type": [
-          "Microbiome_markers"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "medication": [
-        "posology"
-      ]
-    },
-    "survey_administration": [
-      "date_and_time_related_information"
-    ]
-  },
-  {
-    "cohort_name": "Malaysian Cohort",
-    "countries": [
-      "Malaysia"
-    ],
-    "pi_lead": "Rahman Jamal",
-    "website": "http://mycohort.gov.my/site/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "criteria_for_enrollment_and_recruitment_procedures"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "WGS"
-        ],
-        "general_variables": [
-          "sample_size"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "physical_activity"
-      ],
-      "medication": [
-        "administration_method"
-      ],
       "physiological_measurements": {
         "cirulation_and_respiration": [
-          "blood_pressure"
+          "heart_rate"
         ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "gender"
-      ]
+      }
     },
     "survey_administration": [
       "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "Maule Cohort (MAUCO Study)",
-    "countries": [
-      "Chile"
-    ],
-    "pi_lead": "Catterina Ferreccio",
-    "website": "http://www.accdis.cl/eng/en/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "other"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "endocrine_nutritional_metabolic_disorders"
-      ],
-      "medication": [
-        "administration_method"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Mexico City Prospective Study",
-    "countries": [
-      "Mexico"
-    ],
-    "pi_lead": "Jesus Alegre, Jonathan Emberson, Pablo Kuri-Morales, and Roberto Tapia-Conyer",
-    "website": "https://www.ctsu.ox.ac.uk/research/prospective-blood-based-study-of-150-000-individuals-in-mexico",
-    "available_data_types": {
-      "genomic_data": false,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "age_range"
-      ],
-      "population_data": [
-        "criteria_for_enrollment_and_recruitment_procedures"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "processing_method"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "gender"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Million Veteran Program",
-    "countries": [
-      "USA"
-    ],
-    "pi_lead": "Mike Gaziano",
-    "website": "http://www.research.va.gov/mvp/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "study_design"
-      ],
-      "demographic_data": [
-        "genders_studied_in_cohort"
-      ]
-    },
-    "biosample": {
-      "general_variables": [
-        "storage_method"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "eQTL"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "digestive_system"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      },
-      "general_variables": [
-        "signs_and_symptoms"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Million Women Study",
-    "countries": [
-      "England",
-      "Scotland"
-    ],
-    "pi_lead": "Valerie Beral",
-    "website": "http://www.millionwomenstudy.org/introduction/",
-    "available_data_types": {
-      "genomic_data": false,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "num_participants"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "saliva"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "available_data_formats"
-        ],
-        "data_type": [
-          "WGS"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "endocrine_nutritional_metabolic_disorders"
-      ],
-      "medication": [
-        "drug_responses"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height"
-        ]
-      }
-    },
-    "survey_administration": [
-      "consent_accessibility"
     ]
   },
   {
@@ -1546,6 +1651,9 @@
     ],
     "pi_lead": "Loic Le Marchand",
     "website": "https://www.uhcancercenter.org/mec",
+    "current_enrollment": 215251,
+    "target_enrollment": null,
+    "enrollment_period": "1993:1997",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
@@ -1558,31 +1666,22 @@
       ]
     },
     "biosample": {
-      "general_variables": [
-        "storage_method"
+      "sample_type": [
+        "urine"
       ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "Sequence_variants"
-        ]
-      }
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "blood_related_disorders"
+        "oncological"
       ],
-      "general_variables": [
-        "physician_practitioner_info"
+      "lifestyle_and_behaviours": [
+        "sleep"
       ],
-      "physiological_measurements": {
-        "cirulation_and_respiration": [
-          "heart_rate"
-        ]
-      },
+      "medication": [
+        "posology"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
+        "genealogy"
       ]
     },
     "survey_administration": [
@@ -1596,155 +1695,9 @@
     ],
     "pi_lead": "David H Ledbetter",
     "website": "https://www.geisinger.org/mycode",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "age_range"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "other"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "oncological"
-      ],
-      "lifestyle_and_behaviours": [
-        "nutrition"
-      ],
-      "medication": [
-        "associated_diseases"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "genealogy"
-      ]
-    },
-    "survey_administration": [
-      "consent_accessibility"
-    ]
-  },
-  {
-    "cohort_name": "Netherlands Twin Registry",
-    "countries": [
-      "Netherlands"
-    ],
-    "pi_lead": "Dorret Boomsma",
-    "website": "http://www.tweelingenregister.org/en/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "availability"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "endocrine_nutritional_metabolic_disorders"
-      ],
-      "lifestyle_and_behaviours": [
-        "physical_activity"
-      ],
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height"
-        ],
-        "cirulation_and_respiration": [
-          "heart_rate"
-        ]
-      }
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "Newfoundland 100K Genome Project / Sequence Bio",
-    "countries": [
-      "Canada (Province of Newfoundland and Labrador)"
-    ],
-    "pi_lead": "Michael Phillips",
-    "website": "https://www.sequencebio.com/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "criteria_for_enrollment_and_recruitment_procedures"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_cell_type_tissue_type_biosample"
-        ],
-        "data_type": [
-          "WES"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "blood_related_disorders"
-      ],
-      "medication": [
-        "prescription"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    },
-    "statistics": [
-      "summary_statistics_for_additional_data_from_federated_sources"
-    ]
-  },
-  {
-    "cohort_name": "NHS (Nurses' Health Study, NCI)",
-    "countries": [
-      "USA"
-    ],
-    "pi_lead": "Meir Stampfer, Rulla Tamimi",
-    "website": "www.nurseshealthstudy.org",
+    "current_enrollment": 252160,
+    "target_enrollment": 250000,
+    "enrollment_period": "2007:ongoing",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
@@ -1753,8 +1706,184 @@
     },
     "basic_cohort_attributes": {
       "general_variables": [
-        "data_collection_events"
+        "timeline"
       ]
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "microbiology": [
+        "biosample_source_anatomical_location"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "sleep"
+      ],
+      "medication": [
+        "drug_responses"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Netherlands Twin Registry",
+    "countries": [
+      "Netherlands"
+    ],
+    "pi_lead": "Dorret Boomsma",
+    "website": "http://www.tweelingenregister.org/en/",
+    "current_enrollment": 275000,
+    "target_enrollment": null,
+    "enrollment_period": "1987:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "genders_studied_in_cohort"
+      ],
+      "population_data": [
+        "num_participants"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ],
+        "data_type": [
+          "eQTL"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "alcohol"
+      ],
+      "medication": [
+        "drug_responses"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "biological_sex"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Newfoundland 100K Genome Project / Sequence Bio",
+    "countries": [
+      "Canada (Province of Newfoundland and Labrador)"
+    ],
+    "pi_lead": "Michael Phillips",
+    "website": "https://www.sequencebio.com/",
+    "current_enrollment": 520000,
+    "target_enrollment": null,
+    "enrollment_period": "2018:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "other"
+        ]
+      },
+      "microbiology": [
+        "microbial_data"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "nervous_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "age_birthdate"
+      ]
+    }
+  },
+  {
+    "cohort_name": "NHS (Nurses' Health Study, NCI)",
+    "countries": [
+      "USA"
+    ],
+    "pi_lead": "Meir Stampfer, Rulla Tamimi",
+    "website": "www.nurseshealthstudy.org",
+    "current_enrollment": 121700,
+    "target_enrollment": null,
+    "enrollment_period": "1976:1976",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ],
+        "data_type": [
+          "WGS"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "blood_related_disorders"
+      ],
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "medication": [
+        "associated_diseases"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
+      ]
+    }
+  },
+  {
+    "cohort_name": "NHSII (Nurses' Health Study II, NCI)",
+    "countries": [
+      "USA"
+    ],
+    "pi_lead": "Walter Willett, Heather Eliassen",
+    "website": "www.nurseshealthstudy.org",
+    "current_enrollment": 116430,
+    "target_enrollment": null,
+    "enrollment_period": "1989:1989",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
     },
     "laboratory_measures": {
       "genomics": {
@@ -1764,15 +1893,9 @@
         "data_type": [
           "WGS"
         ]
-      },
-      "microbiology": [
-        "biosample_source_anatomical_location"
-      ]
+      }
     },
     "questionnaire_survey_data": {
-      "diseases": [
-        "respiratory_system"
-      ],
       "medication": [
         "prescription"
       ],
@@ -1780,57 +1903,9 @@
         "cirulation_and_respiration": [
           "blood_pressure"
         ]
-      }
-    },
-    "survey_administration": [
-      "consent_accessibility"
-    ]
-  },
-  {
-    "cohort_name": "NHSII (Nurses' Health Study II, NCI)",
-    "countries": [
-      "USA"
-    ],
-    "pi_lead": "Walter Willett, Heather Eliassen",
-    "website": "www.nurseshealthstudy.org",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "aims_and_objectives"
-      ]
-    },
-    "biosample": {
-      "general_variables": [
-        "storage_method"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "available_data_formats"
-        ],
-        "data_type": [
-          "WES"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "oncological"
-      ],
-      "lifestyle_and_behaviours": [
-        "nutrition"
-      ],
-      "medication": [
-        "administration_method"
-      ],
-      "general_variables": [
-        "signs_and_symptoms"
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
       ]
     }
   },
@@ -1841,152 +1916,31 @@
     ],
     "pi_lead": "Rennert Gad",
     "website": "",
+    "current_enrollment": 40000,
+    "target_enrollment": null,
+    "enrollment_period": ":ongoing",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "data_collection_events"
+    "biosample": {
+      "sample_type": [
+        "urine"
       ]
     },
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "sample_size"
+          "available_data_formats"
         ],
         "data_type": [
-          "RNAseq_gene_expression"
+          "eQTL"
         ]
       }
     },
     "questionnaire_survey_data": {
-      "diseases": [
-        "circulatory_system"
-      ],
-      "medication": [
-        "posology"
-      ]
-    },
-    "statistics": [
-      "summary_statistics_for_additional_data_from_federated_sources"
-    ]
-  },
-  {
-    "cohort_name": "Northern Sweden Health and Disease Study",
-    "countries": [
-      "Sweden"
-    ],
-    "pi_lead": "Beatrice Melin",
-    "website": "http://www.biobank.umu.se/biobank/biobank---for-researchers/biobank-research---sample-collections/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "num_participants"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "WGS"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "respiratory_system"
-      ],
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
-      "medication": [
-        "posology"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "birthplace"
-      ]
-    },
-    "survey_administration": [
-      "date_and_time_related_information"
-    ]
-  },
-  {
-    "cohort_name": "Norwegian Family Based Life Course Study",
-    "countries": [
-      "Norway"
-    ],
-    "pi_lead": "\u221a\u00f2yvind N\u221a\u00b6ss",
-    "website": "",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "age_range"
-      ],
-      "population_data": [
-        "criteria_for_enrollment_and_recruitment_procedures"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "Microbiome_markers"
-        ]
-      },
-      "microbiology": [
-        "microbial_data"
-      ]
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "oncological"
-      ],
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
-      "medication": [
-        "posology"
-      ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "Norwegian Mother and Child Cohort Study (MoBa)",
-    "countries": [
-      "Norway"
-    ],
-    "pi_lead": "Per Magnus",
-    "website": "https://www.fhi.no/en/studies/moba/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "Sequence_variants"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "nervous_system"
-      ],
       "general_variables": [
         "life_stage_time_point"
       ],
@@ -1999,7 +1953,155 @@
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "age_birthdate"
+        "residence"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Northern Sweden Health and Disease Study",
+    "countries": [
+      "Sweden"
+    ],
+    "pi_lead": "Beatrice Melin",
+    "website": "http://www.biobank.umu.se/biobank/biobank---for-researchers/biobank-research---sample-collections/",
+    "current_enrollment": 135000,
+    "target_enrollment": null,
+    "enrollment_period": "1985 : ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "sexes_studied_in_cohort"
+      ],
+      "general_variables": [
+        "timeline"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "nervous_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "physical_activity"
+      ],
+      "medication": [
+        "administration_method"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "biological_sex"
+      ]
+    },
+    "statistics": [
+      "summary_statistics_for_additional_data_from_federated_sources"
+    ]
+  },
+  {
+    "cohort_name": "Norwegian Family Based Life Course Study",
+    "countries": [
+      "Norway"
+    ],
+    "pi_lead": "\u221a\u00f2yvind N\u221a\u00b6ss",
+    "website": "",
+    "current_enrollment": 5266270,
+    "target_enrollment": null,
+    "enrollment_period": "1960:2011",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "num_participants"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "blood"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "WGS"
+        ]
+      },
+      "microbiology": [
+        "biosample_source_anatomical_location"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "heart_rate"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Norwegian Mother and Child Cohort Study (MoBa)",
+    "countries": [
+      "Norway"
+    ],
+    "pi_lead": "Per Magnus",
+    "website": "https://www.fhi.no/en/studies/moba/",
+    "current_enrollment": 284000,
+    "target_enrollment": null,
+    "enrollment_period": "1999:2008",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ],
+      "demographic_data": [
+        "age_range"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "saliva"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "WES"
+        ]
+      },
+      "microbiology": [
+        "biosample_source_anatomical_location"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "circulatory_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "sleep"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
       ]
     }
   },
@@ -2010,39 +2112,46 @@
     ],
     "pi_lead": "Danish Salaheen",
     "website": "https://www.cncdpk.com/page/Pakistan-Genomic-Resource-(PGR)",
+    "current_enrollment": 150000,
+    "target_enrollment": 1000000,
+    "enrollment_period": "",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": false,
       "biospecimens": false,
       "phenotypic_clinical_data": false
     },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "num_participants"
-      ],
-      "general_variables": [
-        "timeline"
-      ]
-    },
     "biosample": {
-      "sample_type": [
-        "saliva"
+      "general_variables": [
+        "storage_method"
       ]
     },
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "associated_medication"
+          "associated_phenotype"
+        ],
+        "data_type": [
+          "eQTL"
         ]
       }
     },
     "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "medication": [
+        "prescription"
+      ],
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "education"
+        "residence"
       ]
     },
-    "survey_administration": [
-      "date_and_time_related_information"
+    "statistics": [
+      "summary_statistics_for_additional_data_from_federated_sources"
     ]
   },
   {
@@ -2052,11 +2161,22 @@
     ],
     "pi_lead": "Reza Malekzadeh,  Hossein Poustchi,  Farin Kamangar,  Arash Etemadi",
     "website": "http://persiancohort.com",
+    "current_enrollment": 180000,
+    "target_enrollment": null,
+    "enrollment_period": "2014:ongoing",
     "available_data_types": {
       "genomic_data": false,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "study_design"
+      ],
+      "population_data": [
+        "location"
+      ]
     },
     "biosample": {
       "sample_type": [
@@ -2065,20 +2185,23 @@
     },
     "laboratory_measures": {
       "genomics": {
+        "data_type": [
+          "RNAseq_gene_expression"
+        ],
         "general_variables": [
           "processing_method"
-        ],
-        "data_type": [
-          "WES"
         ]
       }
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "respiratory_system"
+        "blood_related_disorders"
       ],
-      "lifestyle_and_behaviours": [
-        "tobacco"
+      "medication": [
+        "prescription"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
       ]
     }
   },
@@ -2089,6 +2212,9 @@
     ],
     "pi_lead": "Paul Pinsky and Neal Freedman",
     "website": "http://prevention.cancer.gov/major-programs/prostate-lung-colorectal",
+    "current_enrollment": 154907,
+    "target_enrollment": null,
+    "enrollment_period": "1993:2001",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
@@ -2098,7 +2224,7 @@
     "laboratory_measures": {
       "genomics": {
         "general_variables": [
-          "associated_disease"
+          "availability"
         ],
         "data_type": [
           "eQTL"
@@ -2106,11 +2232,19 @@
       }
     },
     "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "tobacco"
+      "diseases": [
+        "mental_and_behaviour_disorders"
       ],
-      "medication": [
-        "prescription"
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "genealogy"
       ]
     }
   },
@@ -2121,6 +2255,9 @@
     ],
     "pi_lead": "Hamdi Mbarek",
     "website": "https://qatargenome.org.qa/",
+    "current_enrollment": 15000,
+    "target_enrollment": 300000,
+    "enrollment_period": "2015: ongoing",
     "available_data_types": {
       "genomic_data": false,
       "environmental_data": false,
@@ -2128,29 +2265,27 @@
       "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
-      "population_data": [
-        "num_participants"
+      "general_variables": [
+        "data_collection_events"
+      ],
+      "demographic_data": [
+        "genders_studied_in_cohort"
       ]
     },
     "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "sample_size"
-        ],
-        "data_type": [
-          "eQTL"
-        ]
-      },
       "microbiology": [
-        "microbial_data"
+        "biosample_source_anatomical_location"
       ]
     },
     "questionnaire_survey_data": {
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
+      "diseases": [
+        "oncological"
       ],
-      "socio_demographic_and_economic_characteristics": [
-        "biological_sex"
+      "lifestyle_and_behaviours": [
+        "physical_activity"
+      ],
+      "medication": [
+        "administration_method"
       ]
     }
   },
@@ -2161,6 +2296,9 @@
     ],
     "pi_lead": "Sultan AlSudiri and Malak Abedalthagafi",
     "website": "http://shgp.kacst.edu.sa/site/",
+    "current_enrollment": 100000,
+    "target_enrollment": null,
+    "enrollment_period": "",
     "available_data_types": {
       "genomic_data": false,
       "environmental_data": false,
@@ -2168,34 +2306,34 @@
       "phenotypic_clinical_data": false
     },
     "basic_cohort_attributes": {
-      "demographic_data": [
-        "genders_studied_in_cohort"
+      "population_data": [
+        "num_participants"
       ]
     },
     "laboratory_measures": {
       "genomics": {
-        "general_variables": [
-          "available_data_formats"
-        ],
         "data_type": [
-          "WES"
+          "eQTL"
         ]
       }
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "respiratory_system"
+        "circulatory_system"
       ],
       "lifestyle_and_behaviours": [
-        "sleep"
+        "alcohol"
       ],
-      "medication": [
-        "prescription"
+      "general_variables": [
+        "signs_and_symptoms"
       ],
       "socio_demographic_and_economic_characteristics": [
-        "birthplace"
+        "ethnicity_race"
       ]
-    }
+    },
+    "survey_administration": [
+      "unique_identifiers"
+    ]
   },
   {
     "cohort_name": "Saudi National Biobank",
@@ -2204,45 +2342,9 @@
     ],
     "pi_lead": "Ada Al-Qunaibet",
     "website": "http://www.ksau-hs.edu.sa/English/Research/Pages/KAIMRC.aspx",
-    "available_data_types": {
-      "genomic_data": false,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "location"
-      ]
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "respiratory_system"
-      ],
-      "lifestyle_and_behaviours": [
-        "physical_activity"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height"
-        ],
-        "cirulation_and_respiration": [
-          "blood_pressure"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Shanghai Men and Women's Health Study (2 cohorts)",
-    "countries": [
-      "Shanghai",
-      "China"
-    ],
-    "pi_lead": "Wei Zheng",
-    "website": "http://www.mc.vanderbilt.edu/swhs-smhs/",
+    "current_enrollment": 2000,
+    "target_enrollment": null,
+    "enrollment_period": ":ongoing",
     "available_data_types": {
       "genomic_data": false,
       "environmental_data": false,
@@ -2251,351 +2353,8 @@
     },
     "basic_cohort_attributes": {
       "general_variables": [
-        "data_collection_events"
+        "aims_and_objectives"
       ]
-    },
-    "biosample": {
-      "sample_type": [
-        "blood"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "sample_size"
-        ],
-        "data_type": [
-          "eQTL"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "medication": [
-        "posology"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "genealogy"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Singapore National Precision Medicine Program",
-    "countries": [
-      "Singapore"
-    ],
-    "pi_lead": "Patrick Tan and E Shyong Tai",
-    "website": "",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "age_range"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "WGS"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "oncological"
-      ],
-      "lifestyle_and_behaviours": [
-        "sleep"
-      ],
-      "medication": [
-        "administration_method"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "South(east) Asian Cohorts - NETWORK",
-    "countries": [
-      "Bangladesh",
-      "Malaysia",
-      "Sri Lanka"
-    ],
-    "pi_lead": "Rajiv Chowdhury",
-    "website": "http://www.phpc.cam.ac.uk/ceu/international-vascular-health/believe/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "WGS"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "respiratory_system"
-      ],
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
-      ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "Taiwan Biobank",
-    "countries": [
-      "Taiwan"
-    ],
-    "pi_lead": "Te-Chang Lee and Chung-ke Chang",
-    "website": "https://www.twbiobank.org.tw/new_web/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "location"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "saliva"
-      ]
-    },
-    "laboratory_measures": {
-      "microbiology": [
-        "microbial_data"
-      ]
-    },
-    "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
-      "physiological_measurements": {
-        "cirulation_and_respiration": [
-          "heart_rate"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "genealogy"
-      ]
-    },
-    "survey_administration": [
-      "consent_accessibility"
-    ]
-  },
-  {
-    "cohort_name": "U.S. Precision Medicine Initiative / All of Us",
-    "countries": [
-      "USA"
-    ],
-    "pi_lead": "Stephanie Devaney",
-    "website": "https://allofus.nih.gov/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ],
-      "general_variables": [
-        "timeline"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "stool"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_cell_type_tissue_type_biosample"
-        ],
-        "data_type": [
-          "DNA_Genotyping"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "alcohol"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure"
-      ]
-    },
-    "statistics": [
-      "summary_statistics_for_additional_data_from_federated_sources"
-    ]
-  },
-  {
-    "cohort_name": "UK Biobank",
-    "countries": [
-      "England",
-      "Scotland",
-      "Wales"
-    ],
-    "pi_lead": "Rory Collins",
-    "website": "http://www.ukbiobank.ac.uk/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [
-        "sexes_studied_in_cohort"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ],
-      "general_variables": [
-        "storage_method"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": [
-          "Microbiome_markers"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "oncological"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "education"
-      ]
-    }
-  },
-  {
-    "cohort_name": "UK Blood Donor Cohorts",
-    "countries": [
-      "UK"
-    ],
-    "pi_lead": "Emanuele Di Angelantonio and John Danesh",
-    "website": "http://www.intervalstudy.org.uk/",
-    "available_data_types": {
-      "genomic_data": true,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "study_design"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_medication"
-        ],
-        "data_type": [
-          "other"
-        ]
-      }
-    },
-    "questionnaire_survey_data": {
-      "diseases": [
-        "blood_related_disorders"
-      ],
-      "medication": [
-        "associated_diseases"
-      ],
-      "general_variables": [
-        "physician_practitioner_info"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
-      ]
-    }
-  },
-  {
-    "cohort_name": "UKLWC (UK Collaborative Trial of Ovarian Cancer Screening) Longitudinal Women's Cohort UKLWC",
-    "countries": [
-      "England",
-      "Wales",
-      "Northern Ireland"
-    ],
-    "pi_lead": "Usha Menon",
-    "website": "http://www.isrctn.com/ISRCTN22488978",
-    "available_data_types": {
-      "genomic_data": false,
-      "environmental_data": false,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "general_variables": [
-          "associated_phenotype"
-        ]
-      },
-      "microbiology": [
-        "microbial_data"
-      ]
-    },
-    "questionnaire_survey_data": {
-      "physiological_measurements": {
-        "cirulation_and_respiration": [
-          "heart_rate"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "biological_sex"
-      ]
-    }
-  },
-  {
-    "cohort_name": "Vorarlberg Health Monitoring and Promotion Programme (VHM&PP)",
-    "countries": [
-      "Austria"
-    ],
-    "pi_lead": "Hans Concin, Gabriele Nagel, Hanno Ulmer",
-    "website": "http://www.ucl.ac.uk/womens-health/research/womens-cancer/gynaecological-cancer-research-centre/ukctocs",
-    "available_data_types": {
-      "genomic_data": false,
-      "environmental_data": true,
-      "biospecimens": true,
-      "phenotypic_clinical_data": true
     },
     "biosample": {
       "sample_type": [
@@ -2610,25 +2369,429 @@
       }
     },
     "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "physical_activity"
+      ],
+      "medication": [
+        "prescription"
+      ],
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "blood_pressure"
+        ]
+      }
+    },
+    "survey_administration": [
+      "unique_identifiers"
+    ]
+  },
+  {
+    "cohort_name": "Shanghai Men and Women's Health Study (2 cohorts)",
+    "countries": [
+      "Shanghai",
+      "China"
+    ],
+    "pi_lead": "Wei Zheng",
+    "website": "http://www.mc.vanderbilt.edu/swhs-smhs/",
+    "current_enrollment": 136000,
+    "target_enrollment": null,
+    "enrollment_period": "1996:2000",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "timeline"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
+  },
+  {
+    "cohort_name": "Singapore National Precision Medicine Program",
+    "countries": [
+      "Singapore"
+    ],
+    "pi_lead": "Patrick Tan and E Shyong Tai",
+    "website": "",
+    "current_enrollment": 10000,
+    "target_enrollment": 1000000,
+    "enrollment_period": "10 year program",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ],
+        "data_type": [
+          "other"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
       "diseases": [
-        "nervous_system"
+        "blood_related_disorders"
+      ],
+      "medication": [
+        "posology"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "ethnicity_race"
+      ]
+    }
+  },
+  {
+    "cohort_name": "South(east) Asian Cohorts - NETWORK",
+    "countries": [
+      "Bangladesh",
+      "Malaysia",
+      "Sri Lanka"
+    ],
+    "pi_lead": "Rajiv Chowdhury",
+    "website": "http://www.phpc.cam.ac.uk/ceu/international-vascular-health/believe/",
+    "current_enrollment": 75000,
+    "target_enrollment": 150000,
+    "enrollment_period": "2010:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "age_range"
+      ],
+      "population_data": [
+        "location"
+      ]
+    },
+    "biosample": {
+      "general_variables": [
+        "storage_method"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "blood_related_disorders"
+      ],
+      "lifestyle_and_behaviours": [
+        "alcohol"
+      ],
+      "medication": [
+        "administration_method"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "education"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Taiwan Biobank",
+    "countries": [
+      "Taiwan"
+    ],
+    "pi_lead": "Te-Chang Lee and Chung-ke Chang",
+    "website": "https://www.twbiobank.org.tw/new_web/",
+    "current_enrollment": 118548,
+    "target_enrollment": 200000,
+    "enrollment_period": "2012:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "genders_studied_in_cohort"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "associated_medication"
+        ],
+        "data_type": [
+          "WGS"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
+      ],
+      "general_variables": [
+        "life_stage_time_point"
+      ],
+      "medication": [
+        "posology"
+      ]
+    }
+  },
+  {
+    "cohort_name": "U.S. Precision Medicine Initiative / All of Us",
+    "countries": [
+      "USA"
+    ],
+    "pi_lead": "Stephanie Devaney",
+    "website": "https://allofus.nih.gov/",
+    "current_enrollment": 191105,
+    "target_enrollment": 1000000,
+    "enrollment_period": "2018:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "location"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "sample_size"
+        ]
+      },
+      "microbiology": [
+        "microbial_data"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
       ],
       "lifestyle_and_behaviours": [
         "sleep"
       ],
       "medication": [
-        "prescription"
+        "drug_responses"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "birthplace"
+      ]
+    }
+  },
+  {
+    "cohort_name": "UK Biobank",
+    "countries": [
+      "England",
+      "Scotland",
+      "Wales"
+    ],
+    "pi_lead": "Rory Collins",
+    "website": "http://www.ukbiobank.ac.uk/",
+    "current_enrollment": 502713,
+    "target_enrollment": 500000,
+    "enrollment_period": "2006:2010",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "processing_method"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "digestive_system"
+      ],
+      "medication": [
+        "associated_diseases"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "family_and_household_structure"
+      ]
+    }
+  },
+  {
+    "cohort_name": "UK Blood Donor Cohorts",
+    "countries": [
+      "UK"
+    ],
+    "pi_lead": "Emanuele Di Angelantonio and John Danesh",
+    "website": "http://www.intervalstudy.org.uk/",
+    "current_enrollment": 100000,
+    "target_enrollment": 350000,
+    "enrollment_period": "2012:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "study_design"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "mental_and_behaviour_disorders"
+      ],
+      "physiological_measurements": {
+        "cirulation_and_respiration": [
+          "blood_pressure"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
+    },
+    "survey_administration": [
+      "unique_identifiers"
+    ]
+  },
+  {
+    "cohort_name": "UKLWC (UK Collaborative Trial of Ovarian Cancer Screening) Longitudinal Women\u201a\u00c4\u00f4s Cohort UKLWC",
+    "countries": [
+      "England",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "pi_lead": "Usha Menon",
+    "website": "http://www.isrctn.com/ISRCTN22488978",
+    "current_enrollment": 202638,
+    "target_enrollment": null,
+    "enrollment_period": "2001:2005",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "sexes_studied_in_cohort"
+      ],
+      "general_variables": [
+        "timeline"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": [
+          "eQTL"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "family_and_household_structure"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Vorarlberg Health Monitoring and Promotion Programme (VHM&PP)",
+    "countries": [
+      "Austria"
+    ],
+    "pi_lead": "Hans Concin, Gabriele Nagel, Hanno Ulmer",
+    "website": "http://www.ucl.ac.uk/womens-health/research/womens-cancer/gynaecological-cancer-research-centre/ukctocs",
+    "current_enrollment": 180000,
+    "target_enrollment": null,
+    "enrollment_period": "1985:2014",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "num_participants"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "general_variables": [
+          "availability"
+        ],
+        "data_type": [
+          "WES"
+        ]
+      }
+    },
+    "questionnaire_survey_data": {
+      "diseases": [
+        "oncological"
+      ],
+      "lifestyle_and_behaviours": [
+        "tobacco"
       ],
       "general_variables": [
         "physician_practitioner_info"
       ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      },
       "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
+        "education"
       ]
     }
   },
@@ -2639,43 +2802,49 @@
     ],
     "pi_lead": "Garnet Anderson",
     "website": "https://deino.whiops.org/go/www.whi.org~ssl/SitePages/WHI%20Home.aspx",
+    "current_enrollment": 161808,
+    "target_enrollment": null,
+    "enrollment_period": "1993:1998",
     "available_data_types": {
       "genomic_data": true,
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
+    "basic_cohort_attributes": {
+      "demographic_data": [
+        "age_range"
+      ],
+      "general_variables": [
+        "timeline"
+      ]
+    },
     "laboratory_measures": {
       "genomics": {
         "data_type": [
-          "other"
-        ],
-        "general_variables": [
-          "sample_size"
+          "RNAseq_gene_expression"
         ]
       }
     },
     "questionnaire_survey_data": {
       "diseases": [
-        "oncological"
+        "nervous_system"
       ],
-      "lifestyle_and_behaviours": [
-        "nutrition"
+      "medication": [
+        "prescription"
       ],
       "non_pharmacological_interventions": [
         "surgical_interventions"
       ],
-      "physiological_measurements": {
-        "cirulation_and_respiration": [
-          "heart_rate"
-        ]
-      },
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure"
+        "birthplace"
       ]
     },
     "survey_administration": [
-      "date_and_time_related_information"
+      "consent_accessibility"
     ]
   }
 ]

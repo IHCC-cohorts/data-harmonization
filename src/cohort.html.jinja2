@@ -21,6 +21,24 @@
                     {% set country_field = 'Country' %}
                 {% endif %}
                 <p><b>{{ country_field }}:</b> {{ o.countries }}</p>
+                {% if o.current_enrollment %}
+                    {% set cur_enroll = '<p><b>Current Enrollment:</b> ' + o.current_enrollment + '</p>' %}
+                {% else %}
+                    {% set cur_enroll = '' %}
+                {% endif %}
+                {% if o.target_enrollment %}
+                    {% set target_enroll = '<p><b>Target Enrollment:</b> ' + o.target_enrollment + '</p>' %}
+                {% else %}
+                    {% set target_enroll = '' %}
+                {% endif %}
+                {% if o.enrollment_period %}
+                    {% set enroll_period = '<p><b>Enrollment Period:</b> ' + o.enrollment_period + '</p>' %}
+                {% else %}
+                    {% set enroll_period = '' %}
+                {% endif %}
+                {{ cur_enroll }}
+                {{ target_enroll }}
+                {{ enroll_period }}
                 <p><b>Data:</b> <a href="{{ o.data_dictionary }}">View data dictionary</a> | <a href="{{ o.mapping }}">View CINECA mapping</a></p>
                 <p><b>OWL:</b> <a href="{{ o.tree }}">View OWL tree</a> | <a href="{{ o.owl }}">Download OWL file</a></p>
             </div>

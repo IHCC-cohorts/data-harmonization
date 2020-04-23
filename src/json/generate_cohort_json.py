@@ -52,10 +52,26 @@ def main():
         if clinical == 'Yes':
             datatypes['phenotypic_clinical_data'] = True
 
+        cur_enroll = row[3].replace(',', '').strip()
+        target_enroll = row[4].replace(',', '').strip()
+
+        if cur_enroll == '':
+            cur_enroll = None
+        else:
+            cur_enroll = int(cur_enroll)
+
+        if target_enroll == '':
+            target_enroll = None
+        else:
+            target_enroll = int(target_enroll)
+
         cohort_data[row[0]] = {'cohort_name': row[0],
                                'countries': countries,
                                'pi_lead': row[1],
                                'website': row[11],
+                               'current_enrollment': cur_enroll,
+                               'target_enrollment': target_enroll,
+                               'enrollment_period': row[5],
                                'available_data_types': datatypes}
 
     all_data = []
