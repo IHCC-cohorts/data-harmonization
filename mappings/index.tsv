@@ -1,7 +1,7 @@
 ID	Ontology Label	Preferred Label	Value	Class Type	Parent	Target	Output Of	Measurement Of	Information About	Comment																	
 ID	A alternative term	LABEL		CLASS_TYPE	C % SPLIT=|	C 'has target' some %	C 'output of' some %	C 'measurement of' some %	C 'is about' some %	A comment																	
 GECKO:9999998		CINECA																									
-GECKO:0000108		occupation			socio-demographic and economic characteristics				Occupation																		
+																											
 GECKO:0000093	medication	medication history			CINECA|clinical history																						
 GECKO:0000092		surgical interventions			CINECA																						
 GECKO:0000091		non-pharmacological interventions			CINECA|clinical history																						
@@ -28,7 +28,7 @@ GECKO:0000071		sleep		equivalent	clinical history				GO sleep
 GECKO:0000070		physical activity			CINECA																						
 GECKO:0000069		alcohol			CINECA																						
 GECKO:0000068		tobacco			CINECA																						
-					lifestyle and behaviours				Smoking																		
+GECKO:0000068					lifestyle and behaviours				Smoking																		
 GECKO:0000067		lifestyle and behaviours			CINECA																						
 GECKO:0000066		family and household structure			CINECA																						
 GECKO:0000065		education			CINECA																						
@@ -449,4 +449,5 @@ GECKO:1000142		occurrence of fever			signs and symptoms
 GECKO:1000143		occurrence of weight loss			signs and symptoms																						
 GECKO:1000144		occurrence of night sweats			signs and symptoms																						
 GECKO:1000145		history of medication for tuberculosis			disease(s) treated with medication																						
+GECKO:1000146		occupation			socio-demographic and economic characteristics				Occupation																		
 DOID:526	human immunodeficiency virus infectious disease	human immunodeficiency virus infectious disease			disease																						
