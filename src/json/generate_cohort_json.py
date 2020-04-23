@@ -5,32 +5,27 @@ import rdflib
 from argparse import ArgumentParser, FileType
 
 master_map = {}
-
-ttl_files = {'KoGES': 'build/mapping/gecko-koges.ttl',
-             'GCS': 'build/mapping/gecko-gcs.ttl',
-             'GE': 'build/mapping/genomics-england-gecko.ttl',
-             'SAPRIN': 'build/mapping/saprin-gecko.ttl',
-             'VZ': 'build/mapping/vukuzazi-gecko.ttl'}
-
-names = {'KoGES': 'Korean Genome and Epidemiology Study (KoGES)',
-            'GCS': 'Golestan Cohort Study',
-            'GE': 'Genomics England / 100,000 Genomes Project',
-            'SAPRIN': 'SAPRIN (South African Population Research Infrastructure Network)',
-            'VZ': 'Africa Health Research Institute (AHRI) Population Cohort'}
-
 ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
                     'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']
+general_variables = ['signs and symptoms']
 
 
 def main():
     global master_map
     parser = ArgumentParser(description='TODO')
-    parser.add_argument('cohorts', type=FileType('r'))
+    parser.add_argument('cohorts_csv', type=FileType('r'))
+    parser.add_argument('cohorts_metadata', type=FileType('r'))
+    parser.add_argument('cineca', type=FileType('r'))
     parser.add_argument('output', type=FileType('w'), help='output JSON')
 
     args = parser.parse_args()
-    cohorts_file = args.cohorts
+    cohorts_file = args.cohorts_csv
+    metadata_file = args.cohorts_metadata
+    cineca_file = args.cineca
     output_file = args.output
+
+    metadata = json.loads(metadata_file.read())
+    cineca = json.loads(cineca_file.read())
 
     cohort_data = {}
     reader = csv.reader(cohorts_file)
@@ -44,33 +39,51 @@ def main():
         environment = row[7]
         biospecimen = row[8]
         clinical = row[9]
-        datatypes = []
+        datatypes = {'genomic_data': False,
+                     'environmental_data': False,
+                     'biospecimens': False,
+                     'phenotypic_clinical_data': False}
         if genomic == 'Yes':
-            datatypes.append('Genomic Data')
+            datatypes['genomic_data'] = True
         if environment == 'Yes':
-            datatypes.append('Environmental Data')
+            datatypes['environmental_data'] = True
         if biospecimen == 'Yes':
-            datatypes.append('Biospecimens')
+            datatypes['biospecimens'] = True
         if clinical == 'Yes':
-            datatypes.append('Phenotypic/Clinical Data')
+            datatypes['phenotypic_clinical_data'] = True
+
+        cur_enroll = row[3].replace(',', '').strip()
+        target_enroll = row[4].replace(',', '').strip()
+
+        if cur_enroll == '':
+            cur_enroll = None
+        else:
+            cur_enroll = int(cur_enroll)
+
+        if target_enroll == '':
+            target_enroll = None
+        else:
+            target_enroll = int(target_enroll)
 
         cohort_data[row[0]] = {'cohort_name': row[0],
                                'countries': countries,
                                'pi_lead': row[1],
                                'website': row[11],
-                               'datatypes': datatypes}
+                               'current_enrollment': cur_enroll,
+                               'target_enrollment': target_enroll,
+                               'enrollment_period': row[5],
+                               'available_data_types': datatypes}
 
     all_data = []
-    for prefix, cohort_name in names.items():
-        file_name = ttl_files[prefix]
+    for cohort_name, cohort_metadata in metadata.items():
+        file_name = 'build/mapping/{0}-gecko.ttl'.format(cohort_metadata['id'].lower())
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
         child_to_parent = get_children(gin, 'http://example.com/GECKO_9999998')
         master_map = {}
-        data = get_data(child_to_parent)
+        data = get_categories(child_to_parent, cineca)
         if cohort_name in cohort_data:
-            this_cohort = {'prefix': prefix}
-            this_cohort.update(cohort_data[cohort_name])
+            this_cohort = cohort_data[cohort_name]
             this_cohort.update(data)
             all_data.append(this_cohort)
 
@@ -79,12 +92,48 @@ def main():
     output_file.close()
 
 
-def get_children(gin, node):
-    """
+def build_nested(nested_dict, reverse_path):
+    """Build a nested dictionary from a reveresed path (lowest level -> highest level)
 
-    :param gin:
-    :param node:
-    :return:
+    :param nested_dict: starting dictionary
+    :param reverse_path: path from current level up
+    :return: nested dictionary from path
+    """
+    cur_level = reverse_path.pop(0)
+    new_dict = {cur_level: nested_dict}
+    if reverse_path:
+        return build_nested(new_dict, reverse_path)
+    else:
+        return new_dict
+
+
+def clean_dict(d):
+    """Clean dictionary by replacing any spaces and special characters in keys and values with underscores.
+
+    :param d: dictionary to clean
+    :return: cleaned dictionary
+    """
+    new = {}
+    for k, v in d.items():
+        if isinstance(v, dict):
+            v = clean_dict(v)
+        if isinstance(v, list):
+            v = [clean_string(x) for x in v]
+        new[clean_string(k)] = v
+    return new
+
+
+def clean_string(string):
+    return string.replace(
+        ' ', '_').replace('-', '_').replace('/', '_').replace('(', '').replace(')', '').replace('.', '')
+
+
+def get_children(gin, node):
+    """Get map of child -> parent terms.
+
+    :param gin: rdflib Graph
+    :param node: node to get children of
+    :return: map of child -> parent terms
     """
     nodes = {}
     query = '''SELECT ?s ?label ?parent
@@ -112,69 +161,88 @@ def get_children(gin, node):
     return nodes
 
 
-def get_data(child_to_parent):
+def get_categories(child_to_parent, cineca):
+    """Get the CINECA categories used in a cohort as structured dictionary.
+
+    :param child_to_parent: map of all children to their parent terms
+    :param cineca: CINECA structure
+    :return: subset of CINECA structure consisting of only categories used in this cohort
+    """
     global master_map
-    bottom_level = {}
+    bottom_level = []
     for child, parent in child_to_parent.items():
         if child not in child_to_parent.values():
-            if parent in bottom_level:
-                children = bottom_level[parent]
-            else:
-                children = {}
-            children[child] = {}
-            bottom_level[parent] = children
+            bottom_level.append(child)
 
-    build_map(bottom_level, child_to_parent)
-    clean(master_map)
-    return master_map['CINECA']
-
-
-def build_map(current_level, child_to_parent):
-    global master_map
-
-    next_level = {}
-    for parent, children in current_level.items():
-        if parent == 'CINECA':
-            if 'CINECA' in current_level:
-                master_map = merge(current_level, master_map)
-            else:
-                master_map = merge({'CINECA': current_level}, master_map)
-
-        if parent in child_to_parent:
-            next_parent = child_to_parent[parent]
-            if next_parent in next_level:
-                next_children = next_level[next_parent]
-            else:
-                next_children = {}
-            next_children.update({parent: children})
-
-            next_level[next_parent] = next_children
-            build_map(next_level, child_to_parent)
+    subset = {}
+    for leaf in bottom_level:
+        result = get_path(cineca, leaf)
+        if result is None:
+            print('ERROR - unable to find "{0}"'.format(leaf))
+            continue
+        path = result[0]
+        if path is None:
+            print('ERROR - unable to find "{0}"'.format(leaf))
+            continue
+        has_children = result[1]
+        path.reverse()
+        if has_children:
+            cur_level = path.pop(0)
+            new_dict = build_nested({cur_level: None}, path)
+        else:
+            cur_level = path.pop(0)
+            new_dict = build_nested([cur_level], path)
+        subset = merge(new_dict, subset)
+    return clean_dict(subset)
 
 
-def merge(source, destination):
+def merge(source, target):
+    """Merge a source dictionary into a target dictionary
+
+    :param source: source dictionary
+    :param target: target dictionary
+    :return: source merged into target
+    """
     for key, value in source.items():
         if isinstance(value, dict):
             # get node or create one
-            node = destination.setdefault(key, {})
+            node = target.setdefault(key, {})
             merge(value, node)
         else:
-            destination[key] = value
+            target[key] = value
 
-    return destination
+    return target
 
 
-def clean(dictionary):
-    for key, value in dictionary.items():
-        list_items = []
-        for k, v in value.items():
-            if not v:
-                list_items.append(k)
-        if list_items:
-            dictionary[key] = list_items
-        else:
-            clean(value)
+def get_path(haystack, needle, path=None):
+    """Search a nested dictionary for the path to a specific value.
+    The value may be a key in a dict or a value in a list.
 
+    :param haystack: nested dictionary to search
+    :param needle: string value to search for
+    :param path: pre-path
+    :return: path to value as list
+    """
+    if path is None:
+        path = []
+    if isinstance(haystack, dict):
+        if needle in haystack:
+            # Value is a key and has children
+            path.append(needle)
+            return path, True
+        for k, v in haystack.items():
+            # Value not yet found
+            result = get_path(v, needle, path + [k])
+            if result is not None:
+                return result
+    elif isinstance(haystack, list):
+        # Value is in a list and does not have children
+        if needle in haystack:
+            path.append(needle)
+            return path, False
+    else:
+        # Value is not in this path
+        return None, None
 
 
 if __name__ == '__main__':

@@ -305,13 +305,21 @@ build/%-mapping.json: src/json/generate_mapping_json.py build/mapping/%-mapping.
 
 # Top-level cohort data
 
-data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv | $(MAPPINGS)
+data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json src/json/cineca_structure.json | $(MAPPINGS)
 	python3 $^ $@
+
+# Real cohort data + randomly-generated cohort data
+
+data/full-cohort-data.json: data/cohort-data.json data/random-data.json
+	$(eval REAL_DATA := $(shell sed '$$d' $< | sed '$$d' | sed -e 's|"|\\"|g' | awk '{printf "%s\\n", $$0}'))
+	$(eval FAKE_DATA := $(shell sed '1,2d' $(word 2,$^) | sed -e 's|"|\\"|g' | awk '{printf "%s\\n", $$0}'))
+	@echo -e "$(REAL_DATA)  }," >> $@
+	@echo -e "  {\n    $(FAKE_DATA)" >> $@
 
 
 ### Browser
 
-DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json build/cohorts.json
+DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json build/cohorts.json build/metadata.json
 
 build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
@@ -320,7 +328,10 @@ build/%-data.json: build/%.owl | build/robot.jar
 	--sort "LABEL" \
 	--export $@
 
-build/cohorts.json: data/cohort-data.json
+build/cohorts.json: data/full-cohort-data.json
+	cp $< $@
+
+build/metadata.json: data/metadata.json
 	cp $< $@
 
 # GECKO without OBO terms = CINECA
