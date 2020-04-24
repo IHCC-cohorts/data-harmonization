@@ -311,10 +311,9 @@ data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv 
 # Real cohort data + randomly-generated cohort data
 
 data/full-cohort-data.json: data/cohort-data.json data/random-data.json
-	$(eval REAL_DATA := $(shell sed '$$d' $< | sed '$$d' | sed -e 's|"|\\"|g' | awk '{printf "%s\\n", $$0}'))
-	$(eval FAKE_DATA := $(shell sed '1,2d' $(word 2,$^) | sed -e 's|"|\\"|g' | awk '{printf "%s\\n", $$0}'))
-	@echo -e "$(REAL_DATA)  }," >> $@
-	@echo -e "  {\n    $(FAKE_DATA)" >> $@
+	sed '$$d' $< | sed '$$d' >> $@
+	echo '  },' >> $@
+	sed '1d' $(word 2,$^) >> $@
 
 
 ### Browser
