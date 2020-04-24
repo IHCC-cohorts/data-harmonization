@@ -612,6 +612,10 @@ function get_json(path) {
              content = res;
         }
     });
+    if (content == "" || content == null || content === undefined) {
+        throw "Unable to read content from file: " + path;
+    }
+
     return content;
 }
 
