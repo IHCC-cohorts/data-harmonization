@@ -28,8 +28,8 @@
         "tobacco"
       ],
       "physiological_measurements": {
-        "anthropometry": null,
-        "cirulation_and_respiration": [
+        "anthropometry": [],
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       },
@@ -76,7 +76,7 @@
         "anthropometry": [
           "weight"
         ],
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "heart_rate"
         ]
       }
@@ -160,7 +160,7 @@
         "anthropometry": [
           "weight"
         ],
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "heart_rate"
         ]
       },
