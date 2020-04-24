@@ -356,7 +356,7 @@
         "prescription"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       }
@@ -557,7 +557,7 @@
         "anthropometry": [
           "weight"
         ],
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       },
@@ -699,7 +699,7 @@
         "surgical_interventions"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       }
@@ -712,7 +712,7 @@
     ],
     "pi_lead": "Matt Gillman",
     "website": "https://www.nih.gov/echo",
-    "current_enrollment": null,
+    "current_enrollment": [],
     "target_enrollment": 100000,
     "enrollment_period": "1980:ongoing",
     "available_data_types": {
@@ -741,7 +741,7 @@
         "physician_practitioner_info"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       }
@@ -942,7 +942,7 @@
         "drug_responses"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       },
@@ -997,7 +997,7 @@
         "endocrine_nutritional_metabolic_disorders"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "heart_rate"
         ]
       }
@@ -1218,7 +1218,7 @@
         "drug_responses"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "heart_rate"
         ]
       },
@@ -1635,7 +1635,7 @@
         "life_stage_time_point"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "heart_rate"
         ]
       }
@@ -1900,7 +1900,7 @@
         "prescription"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       },
@@ -1948,7 +1948,7 @@
         "alcohol"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "heart_rate"
         ]
       },
@@ -2040,7 +2040,7 @@
     },
     "questionnaire_survey_data": {
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "heart_rate"
         ]
       },
@@ -2376,7 +2376,7 @@
         "prescription"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       }
@@ -2685,7 +2685,7 @@
         "mental_and_behaviour_disorders"
       ],
       "physiological_measurements": {
-        "cirulation_and_respiration": [
+        "circulation_and_respiration": [
           "blood_pressure"
         ]
       },

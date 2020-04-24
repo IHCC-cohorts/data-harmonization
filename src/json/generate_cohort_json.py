@@ -188,7 +188,7 @@ def get_categories(child_to_parent, cineca):
         path.reverse()
         if has_children:
             cur_level = path.pop(0)
-            new_dict = build_nested({cur_level: None}, path)
+            new_dict = build_nested({cur_level: []}, path)
         else:
             cur_level = path.pop(0)
             new_dict = build_nested([cur_level], path)
