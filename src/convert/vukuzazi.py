@@ -35,6 +35,8 @@ def main():
     variables = pd.read_excel(xlsx, 'Variables')
     for idx, row in variables.iterrows():
         local_id = str(row['VariableName']).strip()
+        if '%' in local_id:
+            local_id = local_id.replace('%', 'Percent')
         name = str(row['Description']).strip()
         cat_id = int(row['CategoryId'])
         cat_string = catid_strings[cat_id]
