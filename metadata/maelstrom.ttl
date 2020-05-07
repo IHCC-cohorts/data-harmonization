@@ -26,12 +26,3 @@ NoDerivatives — If you remix, transform, or build upon the material, you may n
 
 No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits." ;
   prov:wasDerivedFrom <https://github.com/maelstrom-research/maelstrom-taxonomies/blob/master/AreaOfInformation.yml> .
-
-
-<http://purl.obolibrary.org/obo/IAO_0000115>
-  rdf:type owl:AnnotationProperty ;
-  rdfs:label "definition" .
-
-<http://purl.obolibrary.org/obo/IAO_0000118>
-  rdf:type owl:AnnotationProperty ;
-  rdfs:label "alternative term" .
