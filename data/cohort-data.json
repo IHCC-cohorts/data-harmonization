@@ -1,0 +1,172 @@
+[
+  {
+    "cohort_name": "Golestan Cohort Study",
+    "countries": [
+      "Iran"
+    ],
+    "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
+    "website": "https://dceg2.cancer.gov/gemshare/",
+    "current_enrollment": 50000,
+    "target_enrollment": null,
+    "enrollment_period": "2004:2008",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": null
+    },
+    "biosample": {
+      "sample_type": [
+        "blood"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [],
+        "circulation_and_respiration": [
+          "blood_pressure"
+        ]
+      },
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
+    "countries": [
+      "South Korea",
+      "Vietnam",
+      "Cambodia",
+      "Japan",
+      "China"
+    ],
+    "pi_lead": "Sung Soo Kim",
+    "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65199&menuIds=HOME004-MNU2261-MNU2262-MNU2263-MNU2264",
+    "current_enrollment": 235000,
+    "target_enrollment": null,
+    "enrollment_period": "2001:2013",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": true,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "microbiology": [
+        "microbial_data"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ],
+        "circulation_and_respiration": [
+          "heart_rate"
+        ]
+      }
+    }
+  },
+  {
+    "cohort_name": "Genomics England / 100,000 Genomes Project",
+    "countries": [
+      "England"
+    ],
+    "pi_lead": "Mark Caulfield",
+    "website": "https://www.genomicsengland.co.uk/",
+    "current_enrollment": 100000,
+    "target_enrollment": 500000,
+    "enrollment_period": "2013:2018",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "questionnaire_survey_data": {
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "gender"
+      ]
+    }
+  },
+  {
+    "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
+    "countries": [
+      "South Africa"
+    ],
+    "pi_lead": "Kobus Herbst",
+    "website": "http://saprin.mrc.ac.za/",
+    "current_enrollment": 350000,
+    "target_enrollment": 700000,
+    "enrollment_period": "1993:ongoing",
+    "available_data_types": {
+      "genomic_data": false,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "questionnaire_survey_data": {
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
+    }
+  },
+  {
+    "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+    "countries": [
+      "South Africa"
+    ],
+    "pi_lead": "Deenan Pillay",
+    "website": "https://www.ahri.org",
+    "current_enrollment": 130000,
+    "target_enrollment": 130000,
+    "enrollment_period": "2000:ongoing",
+    "available_data_types": {
+      "genomic_data": true,
+      "environmental_data": false,
+      "biospecimens": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ],
+        "circulation_and_respiration": [
+          "heart_rate"
+        ]
+      },
+      "general_variables": [
+        "signs_and_symptoms"
+      ]
+    }
+  }
+]

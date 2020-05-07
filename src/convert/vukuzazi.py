@@ -34,8 +34,10 @@ def main():
     entities = []
     variables = pd.read_excel(xlsx, 'Variables')
     for idx, row in variables.iterrows():
-        local_id = str(row['VariableName'])
-        name = str(row['Description'])
+        local_id = str(row['VariableName']).strip()
+        if '%' in local_id:
+            local_id = local_id.replace('%', 'Percent')
+        name = str(row['Description']).strip()
         cat_id = int(row['CategoryId'])
         cat_string = catid_strings[cat_id]
         entities.append({'Short ID': 'VZ:' + local_id, 'Label': name, 'Value': cat_string})

@@ -75,7 +75,7 @@ endif
 
 ### Pre-build Tasks
 
-build build/mapping:
+build build/mapping build/cohorts:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -205,21 +205,38 @@ build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
 build/mapping/gecko-mapping.xlsx: | build/mapping
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
-build/mapping/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+MAP_TSV := mappings/index.tsv \
+mappings/properties.tsv \
+mappings/koges-mapping.tsv \
+mappings/gcs-mapping.tsv \
+mappings/genomics-england-mapping.tsv \
+mappings/saprin-mapping.tsv \
+mappings/vukuzazi-mapping.tsv
+
+mappings/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Index > $@
 
-build/mapping/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Properties > $@
 
-build/mapping/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ KoGES > $@
 
-build/mapping/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ GCS > $@
+
+mappings/genomics-england-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ GenomicsEngland > $@
+
+mappings/saprin-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ SAPRIN > $@
+
+mappings/vukuzazi-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+	python3 $^ Vukuzazi > $@
 
 # GECKO plus OBO terms
 
-build/mapping/index.owl: build/mapping/properties.tsv build/mapping/index.tsv
+build/mapping/index.owl: mappings/properties.tsv mappings/index.tsv
 	$(ROBOT) template --template $< \
 	template --merge-before \
 	--template $(word 2,$^) \
@@ -233,12 +250,12 @@ build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
 
 # Other cohorts -> GECKO mapping
 
-MAPPINGS := build/mapping/koges-gecko.ttl build/mapping/gcs-gecko.ttl
+MAPPINGS := build/mapping/koges-gecko.ttl build/mapping/gcs-gecko.ttl build/mapping/genomics-england-gecko.ttl build/mapping/saprin-gecko.ttl build/mapping/vukuzazi-gecko.ttl
 
 # Cohort terms + GECKO terms from template
 # The GECKO terms are just referenced and do not have structure/annotations
 
-build/mapping/%-mapping.owl: build/gecko-full.owl build/mapping/%-mapping.tsv build/%.owl | build/robot.jar
+build/mapping/%-mapping.owl: build/gecko-full.owl mappings/%-mapping.tsv build/%.owl | build/robot.jar
 	$(ROBOT) template \
 	--input $< \
 	--template $(word 2,$^) \
@@ -288,13 +305,20 @@ build/%-mapping.json: src/json/generate_mapping_json.py build/mapping/%-mapping.
 
 # Top-level cohort data
 
-build/mapping/data.json: src/json/generate_cohort_json.py data/member_cohorts.csv | $(MAPPINGS)
+data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json src/json/cineca_structure.json | $(MAPPINGS)
 	python3 $^ $@
+
+# Real cohort data + randomly-generated cohort data
+
+data/full-cohort-data.json: data/cohort-data.json data/random-data.json
+	sed '$$d' $< | sed '$$d' >> $@
+	echo '  },' >> $@
+	sed '1d' $(word 2,$^) >> $@
 
 
 ### Browser
 
-DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json
+DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json build/cohorts.json build/metadata.json
 
 build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
@@ -302,6 +326,12 @@ build/%-data.json: build/%.owl | build/robot.jar
 	--header "ID|LABEL|definition|question description|value|see also|subclasses" \
 	--sort "LABEL" \
 	--export $@
+
+build/cohorts.json: data/full-cohort-data.json
+	cp $< $@
+
+build/metadata.json: data/metadata.json
+	cp $< $@
 
 # GECKO without OBO terms = CINECA
 # This is used to drive aggregations
@@ -312,7 +342,23 @@ build/cineca.json: src/json/cineca.json
 build/index.html: src/index.html | build
 	cp $< $@
 
-BROWSER := build/index.html build/cineca.json build/koges-mapping.json build/gcs-mapping.json $(DATA)
+# Top-level cohort data as HTML pages 
+
+COHORT_PAGES := build/cohorts/koges.html build/cohorts/gcs.html build/cohorts/genomics-england.html build/cohorts/vukuzazi.html build/cohorts/saprin.html
+
+cohorts: $(COHORT_PAGES)
+
+$(COHORT_PAGES): src/create_cohort_html.py data/cohort-data.json data/metadata.json src/cohort.html.jinja2 build/cohorts
+	python3 $^
+
+BROWSER := build/index.html \
+build/cineca.json \
+build/koges-mapping.json \
+build/gcs-mapping.json \
+build/genomics-england-mapping.json \
+build/vukuzazi-mapping.json \
+build/saprin-mapping.json \
+cohorts $(DATA)
 browser: $(BROWSER)
 
 serve: $(BROWSER)
@@ -336,12 +382,12 @@ build/maelstrom.owl: metadata/maelstrom.ttl build/maelstrom.tsv | build/robot.ja
 
 .PHONY: refresh
 refresh:
-	rm -rf data/cineca.tsv
-	rm -rf data/koges.tsv
-	rm -rf data/saprin.tsv
+	rm -rf data/cineca.tsv data/koges.tsv data/saprin.tsv build/mapping/gecko-mapping.xlsx $(MAP_TSV)
 	touch data/genomics-england.xlsx
 	touch data/golestan-cohort-study.xlsx
 	touch data/vukuzazi.xlsx
+	make data/cineca.tsv data/koges.tsv data/saprin.tsv
+	make build/mapping/gecko-mapping.xlsx $(MAP_TSV)
 
 .PHONY: clean
 clean:
@@ -356,4 +402,5 @@ all: build/gcs.html build/gcs-tree.html
 all: build/koges.html build/koges-tree.html
 all: build/saprin.html build/saprin-tree.html
 all: build/vukuzazi.html build/vukuzazi-tree.html
+all: data/cohort-data.json
 all: $(BROWSER)

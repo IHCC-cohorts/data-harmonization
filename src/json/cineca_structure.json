@@ -1,0 +1,118 @@
+{
+	"basic cohort attributes": {
+		"demographic data": [
+			"age range",
+			"gender(s) studied in cohort",
+			"sex(es) studied in cohort"
+		],
+		"population data": [
+			"criteria for enrollment and recruitment procedures",
+			"location",
+			"num. participants"
+		],
+		"general_variables": [
+			"aims and objectives",
+			"data collection events",
+			"study design",
+			"timeline"
+		]
+	},
+	"biosample": {
+		"sample type": [
+			"blood",
+			"saliva",
+			"stool",
+			"urine"
+		],
+		"general_variables": ["storage method"]
+	},
+	"laboratory measures": {
+		"genomics": {
+			"data type": [
+				"DNA/Genotyping",
+				"Epigenetics",
+				"eQTL",
+				"Metagenomics",
+				"Microbiome markers",
+				"other",
+				"RNAseq/gene expression",
+				"Sequence variants",
+				"WES",
+				"WGS"
+			],
+			"general_variables": [
+				"associated cell type/tissue type/biosample",
+				"associated disease",
+				"associated medication",
+				"associated phenotype",
+				"availability",
+				"available data format(s)",
+				"processing method",
+				"sample size"
+			]
+		},
+		"microbiology": [
+			"biosample source/anatomical location",
+			"microbial data"
+		]
+	},
+	"questionnaire/survey data": {
+		"diseases": [
+			"blood-related disorders",
+			"circulatory system",
+			"digestive system",
+			"endocrine/nutritional/metabolic disorders",
+			"mental and behaviour disorders",
+			"nervous system",
+			"oncological",
+			"respiratory system"
+		],
+		"lifestyle and behaviours": [
+			"alcohol",
+			"nutrition",
+			"physical activity",
+			"sleep",
+			"tobacco"
+		],
+		"medication": [
+			"administration method",
+			"associated disease(s)",
+			"drug response(s)",
+			"posology",
+			"prescription"
+		],
+		"non-pharmacological interventions": ["surgical interventions"],
+		"physiological measurements": {
+			"anthropometry": [
+				"height",
+				"weight"
+			],
+			"circulation and respiration": [
+				"blood pressure",
+				"heart rate"
+			]
+		},
+		"socio-demographic and economic characteristics": [
+			"age/birthdate",
+			"biological sex",
+			"birthplace",
+			"education",
+			"ethnicity/race",
+			"family and household structure",
+			"gender",
+			"genealogy",
+			"residence"
+		],
+		"general_variables": [
+			"life stage/time point",
+			"physician/practitioner info",
+			"signs and symptoms"
+		]
+	},
+	"statistics": ["summary statistics for additional data from federated sources"],
+	"survey administration": [
+		"consent/accessibility",
+		"date and time-related information",
+		"unique identifiers"
+	]
+}
