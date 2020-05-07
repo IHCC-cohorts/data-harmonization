@@ -199,8 +199,9 @@ build/%-tree.html: build/%.owl | build/robot-tree.jar
 	--input $< \
 	--tree $@
 
-build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
+build/%.html: build/%.owl build/%.tsv src/prefixes.json | build/robot-validate.jar
 	java -jar build/robot-validate.jar validate \
+	--prefixes $(word 3,$^) \
 	--input $< \
 	--table $(word 2,$^) \
 	--skip-row 2 \
