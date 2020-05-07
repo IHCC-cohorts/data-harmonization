@@ -11,7 +11,7 @@ fr_definitions = {}
 
 
 def parse_item(item, parent):
-    iri = 'http://example.com/' + item['name']
+    iri = 'http://example.com/MAELSTROM_' + item['name']
     title_en = item['title']['en']
     title_fr = item['title']['fr']
     description_en = item['description']['en']
@@ -52,6 +52,7 @@ def main():
     writer = csv.writer(output_file, delimiter='\t')
     writer.writerow(['ID', 'Label', 'Definition', 'Parent', 'French Synonym', 'French Definition'])
     writer.writerow(['ID', 'LABEL', 'AL definition@en', 'SC %', 'AL alternative term@fr', 'AL definition@fr'])
+    writer.writerow([])
     for iri, parent in child_parents.items():
         label = labels[iri]
         definition = definitions[iri]
