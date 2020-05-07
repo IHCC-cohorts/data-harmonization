@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<>
+  rdf:type owl:Ontology ;
+  dcterms:title "Maelstrom Area Of Information"@en ;
+  dcterms:title "Maelstrom Aires d'information"@fr ;
+  dcterms:description "Information classification developed by Maelstrom Research"@en ;
+  dcterms:description "Classification des informations développée par Maelstrom Research"@fr ;
+  dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+  dcterms:rights "You are free to:
+
+Share — copy and redistribute the material in any medium or format
+
+Under the following terms:
+
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+NonCommercial — You may not use the material for commercial purposes.
+
+NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits." ;
+  prov:wasDerivedFrom <https://github.com/maelstrom-research/maelstrom-taxonomies/blob/master/AreaOfInformation.yml> .

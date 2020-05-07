@@ -148,6 +148,15 @@ build/koges.tsv: src/convert/koges.py data/koges.tsv src/indexes/koges.tsv | bui
 	python3 $^ $@
 
 
+### Maelstrom Tasks
+
+data/maelstrom.yml:
+	curl -L -o $@ https://raw.githubusercontent.com/maelstrom-research/maelstrom-taxonomies/master/AreaOfInformation.yml
+
+build/maelstrom.tsv: src/convert/maelstrom.py data/maelstrom.yml | build
+	python3 $^ $@
+
+
 ### SAPRIN Tasks
 
 data/saprin.tsv:
@@ -168,7 +177,7 @@ build/vukuzazi.tsv: src/convert/vukuzazi.py data/vukuzazi.xlsx | build
 
 ### Templates -> OWL 
 
-ONTS := build/gecko.owl build/gcs.owl build/genomics-england.owl build/koges.owl build/saprin.owl build/vukuzazi.owl
+ONTS := build/gecko.owl build/gcs.owl build/genomics-england.owl build/koges.owl build/maelstrom.owl build/saprin.owl build/vukuzazi.owl
 
 build/%.owl: build/properties.owl build/%.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
@@ -190,8 +199,9 @@ build/%-tree.html: build/%.owl | build/robot-tree.jar
 	--input $< \
 	--tree $@
 
-build/%.html: build/%.owl build/%.tsv | build/robot-validate.jar
+build/%.html: build/%.owl build/%.tsv src/prefixes.json | build/robot-validate.jar
 	java -jar build/robot-validate.jar validate \
+	--prefixes $(word 3,$^) \
 	--input $< \
 	--table $(word 2,$^) \
 	--skip-row 2 \
@@ -369,11 +379,11 @@ serve: $(BROWSER)
 
 .PHONY: refresh
 refresh:
-	rm -rf data/cineca.tsv data/koges.tsv data/saprin.tsv build/mapping/gecko-mapping.xlsx $(MAP_TSV)
+	rm -rf data/cineca.tsv data/koges.tsv data/maelstrom.yml data/saprin.tsv build/mapping/gecko-mapping.xlsx $(MAP_TSV)
 	touch data/genomics-england.xlsx
 	touch data/golestan-cohort-study.xlsx
 	touch data/vukuzazi.xlsx
-	make data/cineca.tsv data/koges.tsv data/saprin.tsv
+	make data/cineca.tsv data/koges.tsv data/maelstrom.yml data/saprin.tsv
 	make build/mapping/gecko-mapping.xlsx $(MAP_TSV)
 
 .PHONY: clean
@@ -387,6 +397,7 @@ all: build/ncit-module-tree.html
 all: build/genomics-england.html build/genomics-england-tree.html
 all: build/gcs.html build/gcs-tree.html
 all: build/koges.html build/koges-tree.html
+all: build/maelstrom.html build/maelstrom-tree.html
 all: build/saprin.html build/saprin-tree.html
 all: build/vukuzazi.html build/vukuzazi-tree.html
 all: data/cohort-data.json

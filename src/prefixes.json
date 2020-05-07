@@ -12,6 +12,7 @@
 		"IAO": "http://purl.obolibrary.org/obo/IAO_",
 		"IHCC": "http://example.com/",
 		"KoGES": "http://example.com/KoGES_",
+		"MAELSTROM": "http://example.com/MAELSTROM_",
 		"NCBITaxon": "http://purl.obolibrary.org/obo/NCBITaxon_",
 		"NCIT": "http://purl.obolibrary.org/obo/NCIT_",
 		"OBI": "http://purl.obolibrary.org/obo/OBI_",
