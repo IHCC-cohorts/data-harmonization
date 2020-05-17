@@ -177,13 +177,24 @@ build/vukuzazi.tsv: src/convert/vukuzazi.py data/vukuzazi.xlsx | build
 
 ### Templates -> OWL 
 
-ONTS := build/gecko.owl build/gcs.owl build/genomics-england.owl build/koges.owl build/maelstrom.owl build/saprin.owl build/vukuzazi.owl
+ONTS := build/gecko.owl \
+        build/gcs.owl \
+        build/genomics-england.owl \
+        build/koges.owl \
+        build/maelstrom.owl \
+        build/saprin.owl \
+        build/vukuzazi.owl
 
-build/%.owl: build/properties.owl build/%.tsv metadata/%.ttl | build/robot.jar
+owl: $(ONTS)
+
+build/%.owl: build/properties.owl build/%.tsv build/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
-	merge --input $(word 3,$^) \
+	template \
+	--template $(word 3,$^) \
+	--merge-before \
+	merge --input $(word 4,$^) \
 	--include-annotations true \
 	annotate --ontology-iri "http://example.com/$(notdir $@)" \
 	--output $@
@@ -216,12 +227,12 @@ build/mapping/gecko-mapping.xlsx: | build/mapping
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
 MAP_TSV := mappings/index.tsv \
-mappings/properties.tsv \
-mappings/koges-mapping.tsv \
-mappings/gcs-mapping.tsv \
-mappings/genomics-england-mapping.tsv \
-mappings/saprin-mapping.tsv \
-mappings/vukuzazi-mapping.tsv
+           mappings/properties.tsv \
+           mappings/koges-mapping.tsv \
+           mappings/gcs-mapping.tsv \
+           mappings/genomics-england-mapping.tsv \
+           mappings/saprin-mapping.tsv \
+           mappings/vukuzazi-mapping.tsv
 
 mappings/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
 	python3 $^ Index > $@
@@ -258,19 +269,42 @@ build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
 	reason reduce \
 	--output $@
 
+# GECKO terms as xrefs for main files
+
+XREFS := build/koges-xrefs.tsv \
+         build/gcs-xrefs.tsv \
+         build/genomics-england-xrefs.tsv \
+         build/saprin-xrefs.tsv \
+         build/vukuzazi-xrefs.tsv
+
+xrefs: $(XREFS)
+
+build/%-xrefs.tsv: src/create_xref_template.py mappings/%-mapping.tsv mappings/index.tsv
+	python3 $^ $@
+
 # Other cohorts -> GECKO mapping
 
-MAPPINGS := build/mapping/koges-gecko.ttl build/mapping/gcs-gecko.ttl build/mapping/genomics-england-gecko.ttl build/mapping/saprin-gecko.ttl build/mapping/vukuzazi-gecko.ttl
+MAPPINGS := build/mapping/koges-gecko.ttl \
+            build/mapping/gcs-gecko.ttl \
+            build/mapping/genomics-england-gecko.ttl \
+            build/mapping/saprin-gecko.ttl \
+            build/mapping/vukuzazi-gecko.ttl
 
 # Cohort terms + GECKO terms from template
 # The GECKO terms are just referenced and do not have structure/annotations
 
-build/mapping/%-mapping.owl: build/gecko-full.owl mappings/%-mapping.tsv build/%.owl | build/robot.jar
-	$(ROBOT) template \
+build/mapping/%-mapping.owl: build/gecko-full.owl build/%.owl mappings/%-mapping.tsv | build/robot.jar
+	$(ROBOT) merge \
 	--input $< \
-	--template $(word 2,$^) \
-	merge --input $(word 3,$^) \
-	reason reduce --output $@
+	--input $(word 2,$^) \
+	template \
+	--template $(word 3,$^) \
+	merge \
+	--input $(word 2,$^) \
+	reason reduce \
+	--output $@
+
+
 
 # List of GECKO terms used by the cohort
 
@@ -328,7 +362,14 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 
 ### Browser
 
-DATA := build/gcs-data.json build/gecko-data.json build/genomics-england-data.json build/koges-data.json build/saprin-data.json build/vukuzazi-data.json build/cohorts.json build/metadata.json
+DATA := build/gcs-data.json \
+        build/gecko-data.json \
+        build/genomics-england-data.json \
+        build/koges-data.json \
+        build/saprin-data.json \
+        build/vukuzazi-data.json \
+        build/cohorts.json \
+        build/metadata.json
 
 build/%-data.json: build/%.owl | build/robot.jar
 	$(ROBOT) export \
@@ -354,7 +395,11 @@ build/index.html: src/index.html | build
 
 # Top-level cohort data as HTML pages 
 
-COHORT_PAGES := build/cohorts/koges.html build/cohorts/gcs.html build/cohorts/genomics-england.html build/cohorts/vukuzazi.html build/cohorts/saprin.html
+COHORT_PAGES := build/cohorts/koges.html \
+                build/cohorts/gcs.html \
+                build/cohorts/genomics-england.html \
+                build/cohorts/vukuzazi.html \
+                build/cohorts/saprin.html
 
 cohorts: $(COHORT_PAGES)
 
@@ -362,13 +407,15 @@ $(COHORT_PAGES): src/create_cohort_html.py data/cohort-data.json data/metadata.j
 	python3 $^
 
 BROWSER := build/index.html \
-build/cineca.json \
-build/koges-mapping.json \
-build/gcs-mapping.json \
-build/genomics-england-mapping.json \
-build/vukuzazi-mapping.json \
-build/saprin-mapping.json \
-cohorts $(DATA)
+           build/cineca.json \
+           build/koges-mapping.json \
+           build/gcs-mapping.json \
+           build/genomics-england-mapping.json \
+           build/vukuzazi-mapping.json \
+           build/saprin-mapping.json \
+           cohorts \
+           $(DATA)
+
 browser: $(BROWSER)
 
 serve: $(BROWSER)

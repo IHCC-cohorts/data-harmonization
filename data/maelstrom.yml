@@ -401,7 +401,7 @@
 - "name": "Reproduction"
   "title":
     "en": "Birth, pregnancy and reproductive health history"
-    "fr": " Naissance, grossesse et antécédents de santé reproductive"
+    "fr": "Naissance, grossesse et antécédents de santé reproductive"
   "description":
     "en": "Information about birth and current or past reproductive health history\
       \ of mothers and fathers."
@@ -519,7 +519,7 @@
     "terms": []
   - "name": "Life_dev"
     "title":
-      "en": "Life course development (under development)"
+      "en": "Life course development"
       "fr": "Développement au cours de la vie"
     "description":
       "en": "Information about child development (e.g. motor, social, emotional and\
@@ -1689,8 +1689,8 @@
     "terms": []
   - "name": "Beliefs_values"
     "title":
-      "en": "Beliefs and values (under development)"
-      "fr": "Croyances et valeurs (en développement)"
+      "en": "Beliefs and values"
+      "fr": "Croyances et valeurs"
     "description":
       "en": "Information about concepts that an individual hold to be true or important,\
         \ which determine attitudes and opinions (e.g. social views, faith, sense\
@@ -1703,9 +1703,8 @@
     "terms": []
   - "name": "Other_life_events"
     "title":
-      "en": "Other life events, plans and beliefs (under development)"
-      "fr": "Autres informations en lien avec les événements de vie, plans et croyances\
-        \ (en développement)"
+      "en": "Other life events, plans and beliefs"
+      "fr": "Autres informations en lien avec les événements de vie, plans et croyances"
     "description":
       "en": "Information about other events, plans and personal beliefs."
       "fr": "Informations au sujet d’autres événements, plans et croyances personnelles."
