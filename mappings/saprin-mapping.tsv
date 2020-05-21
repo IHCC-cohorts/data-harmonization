@@ -1,6 +1,6 @@
-Field ID	Field Label	Class Type	GECKO Label	Comment																			
-ID	LABEL	CLASS_TYPE	C % SPLIT=|																				
-SAPRIN:Base_Entities	Base Entities																						
+ID	Field Label	Class Type	GECKO Label	Comment																			
+ID		CLASS_TYPE	C % SPLIT=|																				
+SAPRIN:Base_Entities	Base Entities		SAPRIN																				
 SAPRIN:Location	Location																						
 SAPRIN:Type_Location	Type (Location)																						
 SAPRIN:Area	Area																						
@@ -26,7 +26,7 @@ SAPRIN:MotherSurname	MotherSurname
 SAPRIN:MotherFirstName	MotherFirstName																						
 SAPRIN:FatherSurname	FatherSurname																						
 SAPRIN:FatherFirstName	FatherFirstName																						
-SAPRIN:Events	Events																						
+SAPRIN:Events	Events		SAPRIN																				
 SAPRIN:Migration	Migration		residence	Maybe?																			
 SAPRIN:Date_Migration	Date (Migration)		residence	Maybe?																			
 SAPRIN:Type_Migration	Type (Migration)		residence	Maybe?																			
@@ -67,7 +67,7 @@ SAPRIN:Date_Observation	Date (Observation)
 SAPRIN:Location_Observation	Location (Observation)																						
 SAPRIN:DataCollector	DataCollector																						
 SAPRIN:Respondent	Respondent																						
-SAPRIN:Episodes	Episodes																						
+SAPRIN:Episodes	Episodes		SAPRIN																				
 SAPRIN:Residence	Residence																						
 SAPRIN:Individual_Residence	Individual (Residence)																						
 SAPRIN:Location_Residence	Location (Residence)																						
@@ -106,7 +106,7 @@ SAPRIN:Beneficiary	Beneficiary
 SAPRIN:Type_Social_support	Type (Social support)																						
 SAPRIN:StartDate	StartDate																						
 SAPRIN:EndDate	EndDate																						
-SAPRIN:StatusObservation	StatusObservation																						
+SAPRIN:StatusObservation	StatusObservation		SAPRIN																				
 SAPRIN:Individual_StatusObservation	Individual StatusObservation																						
 SAPRIN:Individual_Individual_StatusObservation	Individual (Individual StatusObservation)																						
 SAPRIN:Observation_Individual_StatusObservation	Observation (Individual StatusObservation)																						
@@ -133,7 +133,7 @@ SAPRIN:HIVResult	HIVResult		diagnosis of HIV
 SAPRIN:Hypertension	Hypertension		diagnosis of hypertension																				
 SAPRIN:Diabetes	Diabetes		diagnosis of diabetes																				
 SAPRIN:Health_care_utilisation	Health care utilisation																						
-SAPRIN:Vaccination_history	Vaccination history (child <=6yr)																						
+SAPRIN:Vaccination_history	Vaccination history (child <=6yr)		clinical history	do we want to be more specific?																			
 SAPRIN:Household_Status_Observation	Household Status Observation																						
 SAPRIN:Water_source	Water source																						
 SAPRIN:Toilet	Toilet																						

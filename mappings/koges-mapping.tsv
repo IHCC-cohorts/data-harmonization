@@ -1,6 +1,5 @@
-Field ID	Field Label	Class Type	GECKO Label	GECKO Comment																			
-ID	LABEL	CLASS_TYPE	C % SPLIT=|	A comment																			
-KoGES:0000000	KoGES																						
+	Field Label	Class Type	GECKO Label	GECKO Comment																			
+	LABEL	CLASS_TYPE	C % SPLIT=|	A comment																			
 KoGES:0000001	Core Variables		KoGES																				
 KoGES:0000002	Core Questionnaires	equivalent	questionnaire/survey data																				
 KoGES:0000003	Socio-demographic data	equivalent	socio-demographic and economic characteristics																				
@@ -12,8 +11,8 @@ KoGES:0000008	Medical history	equivalent	clinical history
 KoGES:0000009	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.	equivalent	diseases																				
 KoGES:0000010	Previous diagnosis (Disease history)	subclass	diseases																				
 KoGES:0000011	Age at first diagnosis (Disease history)	subclass	diseases																				
-KoGES:0000012	Treatment progress (current treatment)	subclass	medication																				
-KoGES:0000013	Treatment method (hypertension, diabetes, hyperlipidemia only)	subclass	medication																				
+KoGES:0000012	Treatment progress (current treatment)	subclass	medication history																				
+KoGES:0000013	Treatment method (hypertension, diabetes, hyperlipidemia only)	subclass	medication history																				
 KoGES:0000014	Surgery (operation) history	subclass	surgical interventions																				
 KoGES:0000015	Previous surgery (operation)	subclass	surgical interventions																				
 KoGES:0000016	Age at first surgery	subclass	surgical interventions																				
@@ -88,7 +87,7 @@ KoGES:0000084	Sleep disorder	equivalent	diagnosis of sleep disorder
 KoGES:0000085	In-depth questionnaire (By disease)	equivalent	diseases																				
 KoGES:0000086	Respiratory disease	equivalent	respiratory system																				
 KoGES:0000087	Gastroenterologic disorder	equivalent	diagnosis of gastrointestinal system disease																				
-KoGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	equivalent	(diseases and ('diagnosis of nose disease' or 'diagnosis of auditory system disease'))																				
+KoGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	equivalent	diagnosis of nose disease|diagnosis of auditory system disease																				
 KoGES:0000089	Arthritis	equivalent	diagnosis of arthritis																				
 KoGES:0000090	Aging study		KoGES																				
 KoGES:0000091	Aging study Questionnaires	subclass	questionnaire/survey data																				
@@ -97,7 +96,7 @@ KoGES:0000093	Activities of daily living (K-ADL, S-IADL)	subclass	activity of da
 KoGES:0000094	Dementia screening (K-MMSE, K-MoCA)	subclass	diagnosis of dementia																				
 KoGES:0000095	Dementia screening by caregiver (CS-KGDS, KDSQ-C)	subclass	diagnosis of dementia	not by caregiver																			
 KoGES:0000096	Depression (GDS)	subclass	diagnosis of depression	not specific to aging studies																			
-KoGES:0000097	Vascular dementia / Alzheimers disease screening (Ischemia Scales)	equivalent	(diseases and ('diagnosis of vascular dementia' or GECKO:1000046))																				
+KoGES:0000097	Vascular dementia / Alzheimers disease screening (Ischemia Scales)	equivalent	diagnosis of vascular dementia|diagnosis of Alzheimers disease																				
 KoGES:0000098	Aging study Clincial examination		KoGES																				
 KoGES:0000099	Cognitive Function test	equivalent	cognitive function measurement result																				
 KoGES:0000100	Neuropsychological test (SNSB-II)	subclass	neuropsychological test result																				
@@ -124,7 +123,6 @@ KoGES:0000120	Total Bilirubin	equivalent	blood bilirubin level value
 KoGES:0000121	LDL-Cholesterol	equivalent	blood low density lipoprotein cholesterol level value																				
 KoGES:0000122	hs-CRP	equivalent	blood C-reactive protein level value																				
 KoGES:0000123	Homocystein	equivalent	blood homocysteine level value																				
-KoGES:0000203	Uric acid	equivalent	blood uric acid level value																				
 KoGES:0000125	Fibrinogen	equivalent	blood fibrinogen level value																				
 KoGES:0000126	Alkaline phosphate	equivalent	blood alkaline phosphate activity level value																				
 KoGES:0000127	Folate	equivalent	blood folate level value																				
