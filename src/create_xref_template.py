@@ -2,7 +2,7 @@ import csv
 
 from argparse import ArgumentParser, FileType
 
-ignore = ['koges', 'gcs', 'vukuzazi', 'saprin', 'genomics england']
+ignore = ['koges', 'gcs', 'vukuzazi', 'saprin', 'genomics england', 'maelstrom']
 
 
 def main():
@@ -54,11 +54,18 @@ def main():
     next(reader)
     next(reader)
     for row in reader:
+        if len(row) < 3:
+            # No GECKO mapping
+            continue
+
+        # Get the CURIE for the subject
         curie = row[0].strip()
+        # And the GECKO label (maybe more than one)
         gecko_labels = row[3].strip()
         if gecko_labels == '':
             continue
         iris_labels = {}
+        # Split on pipe and get CURIEs based on label
         for gl in gecko_labels.split('|'):
             if gl == '':
                 continue

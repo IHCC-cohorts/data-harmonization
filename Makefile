@@ -231,28 +231,32 @@ MAP_TSV := mappings/index.tsv \
            mappings/koges-mapping.tsv \
            mappings/gcs-mapping.tsv \
            mappings/genomics-england-mapping.tsv \
+           mappings/maelstrom-mapping.tsv \
            mappings/saprin-mapping.tsv \
            mappings/vukuzazi-mapping.tsv
 
-mappings/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ Index > $@
 
-mappings/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ Properties > $@
 
-mappings/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/koges-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ KoGES > $@
 
-mappings/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/gcs-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ GCS > $@
 
-mappings/genomics-england-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/genomics-england-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ GenomicsEngland > $@
 
-mappings/saprin-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/maelstrom-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
+	python3 $^ Maelstrom > $@
+
+mappings/saprin-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ SAPRIN > $@
 
-mappings/vukuzazi-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx | build/mapping
+mappings/vukuzazi-mapping.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ Vukuzazi > $@
 
 # GECKO plus OBO terms
@@ -274,6 +278,7 @@ build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
 XREFS := build/koges-xrefs.tsv \
          build/gcs-xrefs.tsv \
          build/genomics-england-xrefs.tsv \
+         build/maelstrom-xrefs.tsv \
          build/saprin-xrefs.tsv \
          build/vukuzazi-xrefs.tsv
 
@@ -287,6 +292,7 @@ build/%-xrefs.tsv: src/create_xref_template.py mappings/%-mapping.tsv mappings/i
 MAPPINGS := build/mapping/koges-gecko.ttl \
             build/mapping/gcs-gecko.ttl \
             build/mapping/genomics-england-gecko.ttl \
+            build/mapping/maelstrom-gecko.ttl \
             build/mapping/saprin-gecko.ttl \
             build/mapping/vukuzazi-gecko.ttl
 
