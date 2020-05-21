@@ -1,5 +1,5 @@
 ID	Label	Mapping Type	GECKO Mapping	Parent	Comment
-ID	LABEL	CLASS_TYPE	C %		A comment
+ID	LABEL	CLASS_TYPE	C % SPLIT=|		A comment
 MAELSTROM:Administrative_information	Administrative information	equivalent	survey administration		
 MAELSTROM:Identifiers	Identifiers	equivalent	unique identifiers	MAELSTROM:Administrative_information	
 MAELSTROM:Date_time_related_info	Date and time-related information	equivalent	date and time-related information	MAELSTROM:Administrative_information	
@@ -79,10 +79,10 @@ MAELSTROM:Leisure_act	Leisure activities	subclass	lifestyle and behaviours	MAELS
 MAELSTROM:Tech_devices	Technological devices	subclass	lifestyle and behaviours	MAELSTROM:Lifestyle_behaviours	
 MAELSTROM:Misbehav_crim	Misbehaviour and criminality	subclass	lifestyle and behaviours	MAELSTROM:Lifestyle_behaviours	
 MAELSTROM:Other_lifestyle	Other and unspecified lifestyle information	subclass	lifestyle and behaviours	MAELSTROM:Lifestyle_behaviours	
-MAELSTROM:Medication_supplements	Medication and supplements	equivalent	medication history		
-MAELSTROM:Medication_suppl	Medication and supplement intake	equivalent	disease(s) treated with medication	MAELSTROM:Medication_supplements	I'm assuming CINECA associated diseases is talking about taking meds for a disease
-MAELSTROM:Posology_protocol	Posology and protocol of administration	equivalent	posology|administration method of medication	MAELSTROM:Medication_supplements	CINECA posology and CINECA 'admin method' should be children of this
-MAELSTROM:Other_pharmacological_inter	Other and unspecified pharmacological interventions	subclass	medication history	MAELSTROM:Medication_supplements	
+MAELSTROM:Medication_supplements	Medication and supplements	equivalent	medication		
+MAELSTROM:Medication_suppl	Medication and supplement intake	equivalent	associated disease(s)	MAELSTROM:Medication_supplements	I'm assuming CINECA associated diseases is talking about taking meds for a disease
+MAELSTROM:Posology_protocol	Posology and protocol of administration	equivalent	posology|administration method	MAELSTROM:Medication_supplements	CINECA posology and CINECA 'admin method' should be children of this
+MAELSTROM:Other_pharmacological_inter	Other and unspecified pharmacological interventions	subclass	medication	MAELSTROM:Medication_supplements	
 MAELSTROM:Non_pharmacological_interventions	Non-pharmacological interventions	equivalent	non-pharmacological interventions		
 MAELSTROM:Surgical_inter	Surgical interventions	equivalent	surgical interventions	MAELSTROM:Non_pharmacological_interventions	
 MAELSTROM:Radiological_inter	Radiological interventions	subclass	non-pharmacological interventions	MAELSTROM:Non_pharmacological_interventions	

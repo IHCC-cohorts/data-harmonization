@@ -66,19 +66,19 @@ VZ:ReceivedHIVTestResult	Received HIV Test Result		Vukuzazi
 VZ:HadPosHIVResult	Had Positive HIV Result		diagnosis of HIV																						
 VZ:CurrentlyOnART	Currently On ART Treatment		history of medication for HIV																						
 VZ:ARTDefault	Ever Defaulted ART treatment		history of medication for HIV																						
-VZ:ConcurrMed1Curr	Taking Concurrent Medication 1		medication history	not sure if we can be more specific on these																					
-VZ:ConcurrMed2Curr	Taking Concurrent Medication 2		medication history																						
-VZ:ConcurrMed3Curr	Taking Concurrent Medication 3		medication history																						
-VZ:ConcurrMed4Curr	Taking Concurrent Medication 4		medication history																						
-VZ:ConcurrMed2Adher	Adherence Concurrent Medication 2		medication history																						
-VZ:ConcurrMed3Adher	Adherence Concurrent Medication 3		medication history																						
-VZ:ConcurrMed4Adher	Adherence Concurrent Medication 4		medication history																						
-VZ:ConcurrMed5Adher	Adherence Concurrent Medication 5		medication history																						
-VZ:ConcurrMed1Stopped	Stopped Concurrent Medication 1		medication history																						
-VZ:ConcurrMed2Stopped	Stopped Concurrent Medication 2		medication history																						
-VZ:ConcurrMed3Stopped	Stopped Concurrent Medication 3		medication history																						
-VZ:ConcurrMed4Stopped	Stopped Concurrent Medication 4		medication history																						
-VZ:ConcurrMed5Stopped	Stopped Concurrent Medication 5		medication history																						
+VZ:ConcurrMed1Curr	Taking Concurrent Medication 1		medication	not sure if we can be more specific on these																					
+VZ:ConcurrMed2Curr	Taking Concurrent Medication 2		medication																						
+VZ:ConcurrMed3Curr	Taking Concurrent Medication 3		medication																						
+VZ:ConcurrMed4Curr	Taking Concurrent Medication 4		medication																						
+VZ:ConcurrMed2Adher	Adherence Concurrent Medication 2		medication																						
+VZ:ConcurrMed3Adher	Adherence Concurrent Medication 3		medication																						
+VZ:ConcurrMed4Adher	Adherence Concurrent Medication 4		medication																						
+VZ:ConcurrMed5Adher	Adherence Concurrent Medication 5		medication																						
+VZ:ConcurrMed1Stopped	Stopped Concurrent Medication 1		medication																						
+VZ:ConcurrMed2Stopped	Stopped Concurrent Medication 2		medication																						
+VZ:ConcurrMed3Stopped	Stopped Concurrent Medication 3		medication																						
+VZ:ConcurrMed4Stopped	Stopped Concurrent Medication 4		medication																						
+VZ:ConcurrMed5Stopped	Stopped Concurrent Medication 5		medication																						
 VZ:IsPregant	Is Pregant		pregnancy history																						
 VZ:AllComplete	All Complete		Vukuzazi																						
 VZ:CxrScreeningResult	Chest X Ray Screening Result		X-ray imaging result																						
@@ -231,40 +231,40 @@ VZ:HIVPosResult1stDate	Date of First HIV Positive Result		diagnosis of HIV
 VZ:ARTInitiationDate	Date Of ART Initiation		history of medication for HIV																						
 VZ:ARTDefaultTimes	Number of Times ART Defaulted		history of medication for HIV																						
 VZ:LastHIVNegResultDate	Date of Last HIV Negative Result		diagnosis of HIV																						
-VZ:Medication1	Medication 1		medication history																						
-VZ:Medication2	Medication 2		medication history																						
-VZ:Medication3	Medication 3		medication history																						
-VZ:Medication4	Medication 4		medication history																						
-VZ:Medication5	Medication 5		medication history																						
-VZ:Medication6	Medication 6		medication history																						
-VZ:Medication7	Medication 7		medication history																						
-VZ:Medication8	Medication 8		medication history																						
-VZ:Medication1StartDate	Medication 1 Start Date		medication history																						
-VZ:Medication2StartDate	Medication 2 Start Date		medication history																						
-VZ:Medication3StartDate	Medication 3 Start Date		medication history																						
-VZ:Medication4StartDate	Medication 4 Start Date		medication history																						
-VZ:Medication5StartDate	Medication 5 Start Date		medication history																						
-VZ:Medication6StartDate	Medication 6 Start Date		medication history																						
-VZ:Medication7StartDate	Medication 7 Start Date		medication history																						
-VZ:Medication8StartDate	Medication 8 Start Date		medication history																						
-VZ:Medication9StartDate	Medication 9 Start Date		medication history																						
-VZ:ConcurrMed1	Concurrent Medication 1		medication history																						
-VZ:ConcurrMed2	Concurrent Medication 2		medication history																						
-VZ:ConcurrMed3	Concurrent Medication 3		medication history																						
-VZ:ConcurrMed4	Concurrent Medication 4		medication history																						
-VZ:ConcurrMed5	Concurrent Medication 5		medication history																						
-VZ:ConcurrMedIndica1	Concurrent Medication Indication 1		medication history																						
-VZ:ConcurrMedIndica2	Concurrent Medication Indication 2		medication history																						
-VZ:ConcurrMedIndica3	Concurrent Medication Indication 3		medication history																						
-VZ:ConcurrMedIndica4	Concurrent Medication Indication 4		medication history																						
-VZ:ConcurrMedIndica5	Concurrent Medication Indication 5		medication history																						
-VZ:ConcurrMed1StartDate	Concurrent Medication 1 Start Date		medication history																						
-VZ:ConcurrMed2StartDate	Concurrent Medication 2 Start Date		medication history																						
-VZ:ConcurrMed3StartDate	Concurrent Medication 3 Start Date		medication history																						
-VZ:ConcurrMed4StartDate	Concurrent Medication 4 Start Date		medication history																						
-VZ:ConcurrMed5StartDate	Concurrent Medication 5 Start Date		medication history																						
-VZ:ConcurrMed5Curr	Taking Concurrent Medication 5		medication history																						
-VZ:ConcurrMed1Adher	Adherence Concurrent Medication 1		medication history																						
+VZ:Medication1	Medication 1		medication																						
+VZ:Medication2	Medication 2		medication																						
+VZ:Medication3	Medication 3		medication																						
+VZ:Medication4	Medication 4		medication																						
+VZ:Medication5	Medication 5		medication																						
+VZ:Medication6	Medication 6		medication																						
+VZ:Medication7	Medication 7		medication																						
+VZ:Medication8	Medication 8		medication																						
+VZ:Medication1StartDate	Medication 1 Start Date		medication																						
+VZ:Medication2StartDate	Medication 2 Start Date		medication																						
+VZ:Medication3StartDate	Medication 3 Start Date		medication																						
+VZ:Medication4StartDate	Medication 4 Start Date		medication																						
+VZ:Medication5StartDate	Medication 5 Start Date		medication																						
+VZ:Medication6StartDate	Medication 6 Start Date		medication																						
+VZ:Medication7StartDate	Medication 7 Start Date		medication																						
+VZ:Medication8StartDate	Medication 8 Start Date		medication																						
+VZ:Medication9StartDate	Medication 9 Start Date		medication																						
+VZ:ConcurrMed1	Concurrent Medication 1		medication																						
+VZ:ConcurrMed2	Concurrent Medication 2		medication																						
+VZ:ConcurrMed3	Concurrent Medication 3		medication																						
+VZ:ConcurrMed4	Concurrent Medication 4		medication																						
+VZ:ConcurrMed5	Concurrent Medication 5		medication																						
+VZ:ConcurrMedIndica1	Concurrent Medication Indication 1		medication																						
+VZ:ConcurrMedIndica2	Concurrent Medication Indication 2		medication																						
+VZ:ConcurrMedIndica3	Concurrent Medication Indication 3		medication																						
+VZ:ConcurrMedIndica4	Concurrent Medication Indication 4		medication																						
+VZ:ConcurrMedIndica5	Concurrent Medication Indication 5		medication																						
+VZ:ConcurrMed1StartDate	Concurrent Medication 1 Start Date		medication																						
+VZ:ConcurrMed2StartDate	Concurrent Medication 2 Start Date		medication																						
+VZ:ConcurrMed3StartDate	Concurrent Medication 3 Start Date		medication																						
+VZ:ConcurrMed4StartDate	Concurrent Medication 4 Start Date		medication																						
+VZ:ConcurrMed5StartDate	Concurrent Medication 5 Start Date		medication																						
+VZ:ConcurrMed5Curr	Taking Concurrent Medication 5		medication																						
+VZ:ConcurrMed1Adher	Adherence Concurrent Medication 1		medication																						
 VZ:TimeLastMeal	Time Last Meal		information about diet																						
 VZ:LastMenstrualDate	Date of Last Menstrual		menstrual cycle history																						
 VZ:FoodVoucherId	Food Voucher Id		information about diet																						

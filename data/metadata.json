@@ -17,6 +17,12 @@
 		"data_dictionary": "https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195",
 		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=888808694"
 	},
+	"Maelstrom": {
+		"id": "Maelstrom",
+		"prefix": "MAELSTROM",
+		"data_dictionary": "https://raw.githubusercontent.com/maelstrom-research/maelstrom-taxonomies/master/AreaOfInformation.yml",
+		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1047121662"
+	},
 	"SAPRIN (South African Population Research Infrastructure Network)": {
 		"id": "SAPRIN",
 		"prefix": "SAPRIN",

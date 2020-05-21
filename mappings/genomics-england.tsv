@@ -5,8 +5,8 @@ GE:diags_01	A&E diagnosis - anatomical side			Clinical Diagnoses	disease or trau
 GE:diag2_01	A&E diagnosis: 2 character			Clinical diagnoses	disease or trauma																				
 GE:invest_01	A&E investigation		laboratory measures|physiological measurements	Clinical Investigations	should I use OR or just two parents?																				
 GE:invest2_01	A&E Investigation: 2 character		laboratory measures|physiological measurements	Clinical Investigations																					
-GE:treat_01	A&E treatment		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_01	A&E Treatment: 2 character		medication history|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_01	A&E treatment		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_01	A&E Treatment: 2 character		medication|non-pharmacological interventions	Clinical Treatments																					
 GE:acardsupdays	acardsupdays		history of cardiovascular support	Critical care adult activity data																					
 GE:acpdisp_1	ACPDISP_N		history of augmented care	Augmented/critical care period	destination of discharged patient (e.g. ICU, home, death, etc.)																				
 GE:acpdisp_2	ACPDISP_N		history of augmented care	Augmented/critical care period																					
@@ -83,8 +83,8 @@ GE:acpsour_9	ACPSOUR_N		history of augmented care	Augmented/critical care period
 GE:actual_dose_per_administration	actual_dose_per_administration		posology																						
 GE:admincatst	Admin category at start of episode			Patient Data																					
 GE:admincat	ADMINCAT			Patient Data	what kind of patient (NHS, private, amenity, category II)																				
-GE:administration_date	administration_date		administration method of medication																						
-GE:administration_route	administration_route		administration method of medication																						
+GE:administration_date	administration_date		administration method																						
+GE:administration_route	administration_route		administration method																						
 GE:administrative	Administrative				not sure this maps to anything																				
 GE:category	Administrative & legal status of patient			Patient Data	patient formally detained? e.g. psychiatric																				
 GE:admisorc	Admission source			Admissions; Period of Care	where patient was prior to admission (hotel, home, court, psychiatrict, etc.)																				
@@ -820,7 +820,7 @@ GE:noinvests	Number of Investigations		laboratory measures|physiological measure
 GE:orgsup_1	Number of organ systems supported		history of organ support	Augmented/critical care period																					
 GE:numpreg	Number of previous pregnancies		pregnancy history	Maternity																					
 GE:noprocs	Number of Procedures		surgical interventions	Clinical Diagnosis																					
-GE:notreats	Number of Treatments		medication history|non-pharmacological interventions	Clinical Treatments																					
+GE:notreats	Number of Treatments		medication|non-pharmacological interventions	Clinical Treatments																					
 GE:number_of_cycles_planned	number_of_cycles_planned		use of anti-cancer drugs																						
 GE:opcs_delivery_code	opcs_delivery_code		Genomics England		OPCS code to identify delivery (of baby?)																				
 GE:opcs_procurement_code	opcs_procurement_code		Genomics England		OPCS code to identify procurement																				
@@ -1199,28 +1199,28 @@ GE:ic_date1_to_date3	Test Request to Test		Genomics England
 GE:ic_date1_to_date2	Test Request to Test Request Received		Genomics England																						
 GE:ic_date3_to_date4	Test to Service (Test) Report Issue		Genomics England																						
 GE:trettime	Time seen for treatment			Attendances																					
-GE:treat_02	treat_02		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_03	treat_03		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_04	treat_04		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_05	treat_05		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_06	treat_06		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_07	treat_07		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_08	treat_08		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_09	treat_09		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_10	treat_10		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_11	treat_11		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat_12	treat_12		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_02	treat2_02		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_03	treat2_03		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_04	treat2_04		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_05	treat2_05		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_06	treat2_06		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_07	treat2_07		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_08	treat2_08		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_09	treat2_09		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_10	treat2_10		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_11	treat2_11		medication history|non-pharmacological interventions	Clinical Treatments																					
-GE:treat2_12	treat2_12		medication history|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_02	treat_02		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_03	treat_03		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_04	treat_04		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_05	treat_05		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_06	treat_06		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_07	treat_07		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_08	treat_08		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_09	treat_09		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_10	treat_10		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_11	treat_11		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat_12	treat_12		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_02	treat2_02		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_03	treat2_03		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_04	treat2_04		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_05	treat2_05		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_06	treat2_06		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_07	treat2_07		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_08	treat2_08		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_09	treat2_09		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_10	treat2_10		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_11	treat2_11		medication|non-pharmacological interventions	Clinical Treatments																					
+GE:treat2_12	treat2_12		medication|non-pharmacological interventions	Clinical Treatments																					
 GE:tretspef	Treatment specialty		physician/practitioner info	Clinical; Period of Care																					
 GE:domproc	Trust derived dominant procedure			Healthcare resource groups (HRG) data	procedure code submitted to SUS - is this a surgical procedure?																				
 GE:hrgnhs	Trust derived HRG value			Healthcare resource groups (HRG) data|Patient Data																					

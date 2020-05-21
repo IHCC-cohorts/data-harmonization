@@ -11,8 +11,8 @@ KoGES:0000008	Medical history	equivalent	clinical history
 KoGES:0000009	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.	equivalent	diseases																				
 KoGES:0000010	Previous diagnosis (Disease history)	subclass	diseases																				
 KoGES:0000011	Age at first diagnosis (Disease history)	subclass	diseases																				
-KoGES:0000012	Treatment progress (current treatment)	subclass	medication history																				
-KoGES:0000013	Treatment method (hypertension, diabetes, hyperlipidemia only)	subclass	medication history																				
+KoGES:0000012	Treatment progress (current treatment)	subclass	medication																				
+KoGES:0000013	Treatment method (hypertension, diabetes, hyperlipidemia only)	subclass	medication																				
 KoGES:0000014	Surgery (operation) history	subclass	surgical interventions																				
 KoGES:0000015	Previous surgery (operation)	subclass	surgical interventions																				
 KoGES:0000016	Age at first surgery	subclass	surgical interventions																				

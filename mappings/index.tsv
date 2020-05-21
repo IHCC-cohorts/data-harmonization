@@ -233,12 +233,12 @@ GECKO:0000089		blood pressure			CINECA
 GECKO:0000090		heart rate			CINECA																							
 GECKO:0000091		non-pharmacological interventions			CINECA|clinical history																							
 GECKO:0000092		surgical interventions			CINECA																							
-GECKO:0000093	medication	medication history			CINECA|clinical history																							
-GECKO:0000094	associated disease(s)	disease(s) treated with medication			CINECA																							
+GECKO:0000093		medication			CINECA|clinical history																							
+GECKO:0000094		associated disease(s)			CINECA																							
 GECKO:0000095		prescription			CINECA																							
 GECKO:0000096		drug response(s)			CINECA																							
 GECKO:0000097		posology			CINECA																							
-GECKO:0000098	administration method	administration method of medication			CINECA																							
+GECKO:0000098		administration method			CINECA																							
 GECKO:0000099		life stage/time point			CINECA																							
 GECKO:0000100		general research data documents			CINECA																							
 GECKO:0000101		statistics			CINECA																							
@@ -314,7 +314,7 @@ GECKO:1000074		quality of life survey result			lifestyle and behaviours	Quality 
 GECKO:1000075		activity of daily living survey result			lifestyle and behaviours	Activity of Daily Living					mental health																	
 GECKO:1000076		spirometry result			circulation and respiration		spirometry																					
 GECKO:1000077		unsaturated iron binding capacity measurement value			blood measurement value																							
-GECKO:1000078		type of medication taken			medication history																							
+GECKO:1000078		type of medication taken			medication																							
 GECKO:1000079		use of antibiotics			type of medication taken																							
 GECKO:1000080		use of therapeutic hormones			type of medication taken						maybe not the best name																	
 GECKO:1000081		use of steroid hormones			use of therapeutic hormones																							
@@ -362,12 +362,12 @@ GECKO:1000125		diagnosis of tuberculosis			diagnosis of bacterial infection
 GECKO:1000126		occurrence of acid reflux			signs and symptoms																							
 GECKO:1000127		occurrence of heartburn			signs and symptoms																							
 GECKO:1000128		occurrence of difficulty swallowing			signs and symptoms																							
-GECKO:1000129		history of medication for hypertension			disease(s) treated with medication																							
-GECKO:1000130		history of medication for diabetes			disease(s) treated with medication																							
-GECKO:1000131		history of medication for cardiac disease			disease(s) treated with medication																							
-GECKO:1000132		history of medication for high cholesterol			disease(s) treated with medication																							
-GECKO:1000133		history of medication for mental disorder			disease(s) treated with medication																							
-GECKO:1000134		history of medication for gastrointestinal disease			disease(s) treated with medication																							
+GECKO:1000129		history of medication for hypertension			associated disease(s)																							
+GECKO:1000130		history of medication for diabetes			associated disease(s)																							
+GECKO:1000131		history of medication for cardiac disease			associated disease(s)																							
+GECKO:1000132		history of medication for high cholesterol			associated disease(s)																							
+GECKO:1000133		history of medication for mental disorder			associated disease(s)																							
+GECKO:1000134		history of medication for gastrointestinal disease			associated disease(s)																							
 GECKO:1000135		opiate use history			recreational drug use history																							
 GECKO:1000136		oral health history			clinical history																							
 GECKO:1000137		recreational drug use history			clinical history|lifestyle and behaviours																							
@@ -378,7 +378,7 @@ GECKO:1000141		occurrence of cough			signs and symptoms					Cough
 GECKO:1000142		occurrence of fever			signs and symptoms																							
 GECKO:1000143		occurrence of weight loss			signs and symptoms																							
 GECKO:1000144		occurrence of night sweats			signs and symptoms																							
-GECKO:1000145		history of medication for tuberculosis			disease(s) treated with medication																							
+GECKO:1000145		history of medication for tuberculosis			associated disease(s)																							
 GECKO:1000146		occupation			socio-demographic and economic characteristics				Occupation																			
 GECKO:9999998		CINECA																										
 GECKO:9999999		trait			entity																							
@@ -472,7 +472,7 @@ PR:P08519	apolipoprotein(a) (human)	apolipoprotein A			protein
 UBERON:0000178	blood	UBERON blood			anatomical entity																							
 UBERON:0000955		brain			anatomical entity																							
 UBERON:0001062		anatomical entity			material entity																							
-GECKO:1000147		use of anti-cancer drugs			disease(s) treated with medication	oncological																						
+GECKO:1000147		use of anti-cancer drugs			associated disease(s)	oncological																						
 GECKO:1000148		use of anaesthetics			type of medication taken																							
 GECKO:1000149		diagnosis of renal disease			endocrine/nutritional/metabolic disorders																							
 GECKO:1000150		diagnosis of liver disease			endocrine/nutritional/metabolic disorders																							
@@ -482,7 +482,7 @@ GECKO:1000153		history of non-pharmacological treatment for high blood pressure	
 GECKO:1000154		history of non-pharmacological treatment for high cholesterol			history of non-pharmacological treatment																							
 GECKO:1000155		history of radiation treatment			history of non-pharmacological treatment																							
 GECKO:1000156		occurrence of hyperglycemia			signs and symptoms					Hyperglycemia																		
-GECKO:1000157		history of medication for hyperglycemia			disease(s) treated with medication	Hyperglycemia																						
+GECKO:1000157		history of medication for hyperglycemia			associated disease(s)	Hyperglycemia																						
 GECKO:1000158		occurrence of heart attack			signs and symptoms					Myocardial infarction																		
 GECKO:1000159		use of asprin			use of non-steroidal anti-inflammatory drugs				acetylsalicylic acid																			
 GECKO:1000160		use of non-steroidal anti-inflammatory drugs			type of medication taken																							
@@ -491,13 +491,13 @@ GECKO:1000162		occurrence of chest pain			signs and symptoms					Chest pain
 GECKO:1000163		occurrence of hemoptysis			signs and symptoms					Hemoptysis																		
 GECKO:1000164		occurrence of lymphadenitis			signs and symptoms					Lymphadenitis																		
 GECKO:1000165		diagnosis of asthma			respiratory system				asthma																			
-GECKO:1000166		history of medication for respiratory disease			disease(s) treated with medication	respiratory system																						
+GECKO:1000166		history of medication for respiratory disease			associated disease(s)	respiratory system																						
 GECKO:1000167		history of medication for asthma			history of medication for respiratory disease	asthma																						
 GECKO:1000168		history of medication for chronic obstructive pulmonary disease			history of medication for respiratory disease	chronic obstructive pulmonary disease																						
 GECKO:1000169		occurrence of exertional dyspnea			occurrence of dyspnea					Exertional dyspnea																		
 GECKO:1000170		occurrence of dyspnea			signs and symptoms					Dyspnea																		
 GECKO:1000171		occurrence of wheezing			signs and symptoms					Wheezing																		
-GECKO:1000172		history of medication for HIV			disease(s) treated with medication	human immunodeficiency virus infectious disease																						
+GECKO:1000172		history of medication for HIV			associated disease(s)	human immunodeficiency virus infectious disease																						
 GECKO:1000173		sputum sample collected			other																							
 GECKO:1000174		diagnosis of inflammatory disorder			diseases				Inflammatory Disorder																			
 GECKO:1000175		history of intensive care			history of augmented care																							

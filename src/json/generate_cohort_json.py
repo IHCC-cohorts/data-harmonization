@@ -86,6 +86,17 @@ def main():
             this_cohort = cohort_data[cohort_name]
             this_cohort.update(data)
             all_data.append(this_cohort)
+        else:
+            this_cohort = {'cohort_name': cohort_name,
+                           'countries': [],
+                           'pi_lead': '',
+                           'website': '',
+                           'current_enrollment': '',
+                           'target_enrollment': '',
+                           'enrollment_period': '',
+                           'available_data_types': []}
+            this_cohort.update(data)
+            all_data.append(this_cohort)
 
     json_obj = json.dumps(all_data, indent=2)
     output_file.write(json_obj)
@@ -99,9 +110,11 @@ def build_nested(nested_dict, reverse_path):
     :param reverse_path: path from current level up
     :return: nested dictionary from path
     """
+    if len(reverse_path) == 0:
+        return nested_dict
     cur_level = reverse_path.pop(0)
     new_dict = {cur_level: nested_dict}
-    if reverse_path:
+    if len(reverse_path) > 0:
         return build_nested(new_dict, reverse_path)
     else:
         return new_dict
