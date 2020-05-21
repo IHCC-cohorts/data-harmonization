@@ -47,7 +47,7 @@ def main():
     # Create the Xref template headers
     writer = csv.writer(xref_template, delimiter='\t')
     writer.writerow(['ID', 'Xref', 'Xref Label'])
-    writer.writerow(['ID', 'AI database_cross_reference', '>A label'])
+    writer.writerow(['ID', 'A database_cross_reference', '>A label'])
 
     # Read in the mapping template to get Xrefs
     reader = csv.reader(mapping_template, delimiter='\t')
@@ -74,7 +74,7 @@ def main():
             if gl.strip() not in label_to_id:
                 print('ERROR: "{0}" not in index!'.format(gl))
                 continue
-            iri = label_to_id[gl.strip()].replace('GECKO:', 'http://example.com/GECKO_')
+            iri = label_to_id[gl.strip()]
             iris_labels[iri] = gl.strip()
         for i, l in iris_labels.items():
             writer.writerow([curie, i, l])
