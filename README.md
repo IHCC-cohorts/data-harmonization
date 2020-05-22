@@ -13,6 +13,12 @@ This is work-in-progress on a demonstration system that uses ontologies to harmo
 
 ---
 
+## Description of Files
+
+TODO
+
+---
+
 ## Adding a New Cohort
 
 First, clone this repository to your local machine and create a new branch. Then, follow the following steps and make a pull request with all required changes.
