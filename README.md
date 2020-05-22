@@ -30,7 +30,7 @@ We recommend that all labels be unique, as well, but this is not required.
 
 The following information is **highly recommended**:
 - **Parent**: category under which this data item falls (this must also be defined in your data dictionary)
-- **Definition**: one-sentance description of what kind of data is collected for this item
+- **Definition**: one-sentence description of what kind of data is collected for this item
 
 The following information is optional:
 - **Comment**: an editor's comment about this data dictionary item
