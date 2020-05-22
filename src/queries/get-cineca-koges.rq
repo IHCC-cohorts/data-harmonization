@@ -1,7 +1,0 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT ?s ?cineca WHERE {
-    ?s rdfs:subClassOf* ?cineca .
-    FILTER(STRSTARTS(STR(?cineca), "http://example.com/GECKO_0"))
-    FILTER(STRSTARTS(STR(?s), "http://example.com/KoGES_"))
-}

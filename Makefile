@@ -155,12 +155,11 @@ owl: $(ONTS)
 #    - GECKO mapping template (build/<cohort-short-name>-xrefs.tsv)
 #    - A metadata header (metadata/<cohort-short-name>.ttl)
 
-# In order to build an OWL file, you MUST have all three of four (see docs for full details)
+# In order to build an OWL file, you MUST have all three items (see docs for full details):
 #    - The ROBOT template must be added to the Makefile below
 #    - The mapping sheet must be added to the master Google mapping sheet
 #    - The metadata header must be created and added to the `metadata` folder
-#    - A new query file (src/queries/get-cineca-<cohort-short-name>.rq) using the prefix for the cohort
-# You must also add the cohort details to data/metadata.json
+# You must also add the cohort details to data/metadata.json and src/prefixes.json
 
 build/%.owl: build/properties.owl build/%.tsv build/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
@@ -186,8 +185,6 @@ build/%.owl: build/properties.owl build/%.tsv build/%-xrefs.tsv metadata/%.ttl |
 #	cp $< $@
 
 # Run `make refresh` to get all new data dictionary TSVs
-
-# Original cohorts were not provided in ROBOT template format, so we have python scripts to convert them below
 
 # GECKO from CINECA
 
@@ -290,7 +287,7 @@ build build/mapping build/cohorts:
 	mkdir -p $@
 
 build/robot.jar: | build
-	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/curie-provider/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
@@ -371,8 +368,13 @@ build/mapping/gecko-%.ttl: build/gecko-full.owl build/mapping/gecko-%.txt | buil
 	--lower-terms $(word 2,$^) \
 	--output $@
 
+# Query to get cohort terms -> ancestor GECKO terms
+build/mapping/get-cineca-%.rq: src/build_query.py data/metadata.json
+	$(eval NAME := $(subst get-cineca-,,$(basename $(notdir $@))))
+	python3 $^ $(NAME) $@
+
 # CSV of cohort terms -> all ancestor GECKO terms
-build/mapping/%-mapping.csv: build/mapping/%-gecko.ttl src/queries/get-cineca-%.rq | build/robot.jar
+build/mapping/%-mapping.csv: build/mapping/%-gecko.ttl build/mapping/get-cineca-%.rq | build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
 # NCIT Module - NCIT terms that have been mapped to GECKO terms

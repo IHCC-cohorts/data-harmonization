@@ -30,7 +30,7 @@ We recommend that all labels be unique, as well, but this is not required.
 
 The following information is **highly recommended**:
 - **Parent**: category under which this data item falls (this must also be defined in your data dictionary)
-- **Definition**: one-sentence description of what kind of data is collected for this item
+- **Definition**: one-sentance description of what kind of data is collected for this item
 
 The following information is optional:
 - **Comment**: an editor's comment about this data dictionary item
@@ -67,7 +67,7 @@ To start, add a tab to the [master GECKO mapping sheet](). This tab **must** be 
 
 Each mapping sheet is also a ROBOT template. The first four columns and their ROBOT template strings are as follows:
 - ID: `ID`
-- Label: `LABEL`
+- Label: no ROBOT template string (labels are already defined by your first Google sheet, so ROBOT only needs the IDs)
 - Mapping Type: `CLASS_TYPE`
 - GECKO Term: `C % SPLIT=|`
 
@@ -75,7 +75,7 @@ You can add additional details starting in column 5 (e.g., comments, parents). T
 
 | ID | Label | Mapping Type | GECKO Term |
 | --- | --- | --- | --- |
-| ID | LABEL | CLASS_TYPE | C % SPLIT=\| |
+| ID | | CLASS_TYPE | C % SPLIT=\| |
 | ID of term from your data dictionary | Label of term from your data dictionary | type of mapping (this determines what kind of OWL axiom is created): `subclass` (close-match, more specific) or `equivalent` (exact) | GECKO term to map to (referred to by label) |
 | EX:0000000 | Date of Birth | subclass | Age/birthdate |
  
@@ -98,6 +98,7 @@ Using the following template, add an entry to [`data/metadata.json`]():
 ```
 
 Please note that the `[full cohort name]` **must** match the name recorded in [`data/member_cohorts.csv`]().
+<!-- TODO: what if the cohort is not listed? -->
 
 #### `src/prefixes.json`
 
@@ -121,12 +122,77 @@ To do this, create a new file in the `metadata` directory using this name: `[coh
 
 <>
   rdf:type owl:Ontology ;
-  dcterms:title "[full cohort name]"@en ;
+  dcterms:title "[full cohort name]" ;
   dcterms:description "[one-sentence description of your data dictionary]" ;
   dcterms:license <[link to license]> ;
-  dcterms:rights "[text description of license]"
+  dcterms:rights "[text description of license]" .
 ```
 
 ### 5. Updating the Makefile
 
-TODO
+Before updating the [`Makefile`](), make sure you have done the following:
+1. Selected a short name & prefix
+2. Created a ROBOT template on Google sheets (ensure that this sheet is public) containing all data dictionary items
+3. Created a tab for the cohort in the master GECKO mappings sheet and added data dictionary items to this sheet
+4. Added entries in `data/metadata.json` and `src/prefix.json`
+5. Created a TTL header in the `metadata` folder
+
+To add your cohort to the build, simply add the cohort short name to the [list on line 89](). Then, add a new task [after line 188]() in the `ROBOT Templates for Cohort Data Dictionaries` section using the following template, replacing only the items in square brackets:
+```
+# [cohort name] Tasks
+
+data/[cohort short name].tsv:
+	curl -L -o $@ "[link to ROBOT template Google sheet]/export?format=tsv"
+
+build/[cohort short name].tsv: data/[cohort short name].tsv
+	cp $< $@
+```
+
+The link to the Google spreadsheet will be the same link in the URL bar when you are editing the sheet, except you should replace `/edit#gid=0` with `/export?format=tsv` to make sure it downloads properly (the export format is included in the above template, but make sure to remove the `/edit` portion of the URL).
+
+Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort:
+- `data/[cohort short name].tsv`
+- `mappings/[cohort short name].tsv`
+- `build/[cohort short name].owl`
+- `build/cohorts/[cohort short name].owl`
+- `build/[cohort short name].html`
+- `build/[cohort short name]-tree.html`
+- `build/[cohort short name]-gecko-tree.html`
+- `build/[cohort short name]-data.json`
+- `build/[cohort short name]-mapping.owl`
+- `build/[cohort short name]-mapping.json`
+- `build/[cohort short name]-xrefs.tsv`
+
+You need to commit `data/[cohort short name].tsv` and `mappings/[cohort short name].tsv` to the repository. The other files in `build` do not get committed. Also commit all changes to the following files:
+
+- `Makefile`
+- `src/prefixes.json`
+- `data/metadata.json`
+- `data/cohort-data.json`
+
+### Fixing Common Errors
+
+Below are suggestions for common errors seen while running the build. If you run into any of these errors, try the recommended fixes and then run `make update` again. `make update` will always pull the latest data from Google sheets. You can also run `make refresh` to just update the data from Google sheets, and run the Make command for the individual task that failed (e.g., `make build/[cohort sort name].owl`).
+
+#### ROBOT Errors
+
+- `MALFORMED RULE ERROR malformed rule`: Make sure that row 3 of your cohort's ROBOT template is empty (not the mapping template)
+- `UNKNOWN ENTITY ERROR could not interpret...`: Make sure you have [defined your prefix](#4-adding-the-cohort-metadata) in `src/prefixes.json`, and that all rows use this prefix in the `ID` column
+
+TODO: add more
+
+#### Makefile Errors
+
+- `make: *** No rule to make target 'metadata/[cohort short name].ttl'`: Make sure you have created the TTL header and saved it with the correct short name
+- `make: *** No rule to make target 'data/[cohort short name].tsv'`: Make sure you have [added the task](#5-updating-the-makefile) to download the cohort's Google spreadsheet to the `Makefile`
+- `Makefile:[line]: *** missing separator`: Make sure that your newly added `Makefile` tasks use tabs and not spaces (the tab character identifies something as a "rule" to make the target in a Makefile)
+
+TODO: add more
+
+#### Python Errors
+
+TODO: errors from python scripts
+
+#### Other Errors
+
+If you run into other errors while trying to add a new cohort, please [open an issue](https://github.com/IHCC-cohorts/data-harmonization/issues/new/choose) and include the full stack trace from the error.
