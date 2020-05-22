@@ -34,6 +34,7 @@ endif
 
 # List of cohorts to generate files for (lowercase, using short ID where possible)
 # This short name is used throughout all build tasks and should be consistent for all files
+# --- THIS IS THE ONLY LINE THAT SHOULD BE EDITED WHEN ADDING A NEW COHORT ---
 COHORTS := gcs genomics-england koges maelstrom saprin vukuzazi
 
 # OWL file in the build directory for all cohorts (contains xrefs)

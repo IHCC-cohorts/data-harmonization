@@ -2,10 +2,16 @@
 
 This is work-in-progress on a demonstration system that uses ontologies to harmonize data on various cohorts for the [International HundredK+ Cohorts Consortium (IHCC)](https://ihcc.g2mc.org).
 
+---
+
 ## Running the Build
 
-TODO
+1. Clone this repository to your local machine and `cd` to the new directory
+2. Make sure you have [python 3.0 or greater](https://www.python.org/downloads/) installed
+3. Install python requirements: `python3 -m pip install -r requirements.txt` (`python3` may be replaced with just `python` if this does not work)
+4. Run `make update` and open `index.html` in your browser to see results
 
+---
 
 ## Adding a New Cohort
 
@@ -99,9 +105,7 @@ Using the following template, add an entry to [`data/metadata.json`](https://git
 ```
 "[full cohort name]": {
 	"id": "[cohort short name]",
-	"prefix": "[cohort prefix]",
-	"data_dictionary": "[link to cohort's data dictionary in ROBOT template format]",
-	"mapping": "[link to cohort's tab in the master mapping document]"
+	"prefix": "[cohort prefix]"
 }
 ```
 
@@ -145,7 +149,7 @@ Before updating the [`Makefile`](https://github.com/IHCC-cohorts/data-harmonizat
 4. Added entries in `data/metadata.json` and `src/prefix.json`
 5. Created a TTL header in the `metadata` folder
 
-To add your cohort to the build, simply add the cohort short name to the [list on line 89](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L89). Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort, and add your cohort to [`index.html`](). Open the index in your browser and check that all the links direct to the proper pages.
+To add your cohort to the build, simply add the cohort short name to the [list on line 38](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L38). Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort, and add your cohort to [`index.html`](). Open the index in your browser and check that all the links direct to the proper pages.
 
 Please commit the following *new* files (do not commit anything in the `build` directory):
 - `templates/[cohort short name].tsv`
