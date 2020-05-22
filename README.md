@@ -2,6 +2,10 @@
 
 This is work-in-progress on a demonstration system that uses ontologies to harmonize data on various cohorts for the [International HundredK+ Cohorts Consortium (IHCC)](https://ihcc.g2mc.org).
 
+## Running the Build
+
+TODO
+
 
 ## Adding a New Cohort
 
@@ -18,7 +22,7 @@ Your prefix should be your short name in uppercase (e.g, `gcs` = `GCS`), unless 
 
 ### 2. Creating the ROBOT Template
 
-Cohort data dictionaries are transformed into OWL ontologies using [ROBOT templates](http://robot.obolibrary.org/template). All new cohorts must provide a public Google spreadsheet with their data dictionary in this format. We recommend that you take a moment to briefly look over the template documentation, but you do not need to read it in-depth; we will provide all required template strings below.
+Cohort data dictionaries are transformed into OWL ontologies using [ROBOT templates](http://robot.obolibrary.org/template). All new cohorts must provide a tab on our [ROBOT template Google spreadsheet](https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A) with their data dictionary in this format. Name this tab with your chosen cohort short name. We recommend that you take a moment to briefly look over the template documentation, but you do not need to read it in-depth; we will provide all required template strings below.
 
 The following information is **required**:
 - ID
@@ -136,44 +140,21 @@ To do this, create a new file in the `metadata` directory using this name: `[coh
 
 Before updating the [`Makefile`](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile), make sure you have done the following:
 1. Selected a short name & prefix
-2. Created a ROBOT template on Google sheets (ensure that this sheet is public) containing all data dictionary items
-3. Created a tab for the cohort in the master GECKO mappings sheet and added data dictionary items to this sheet
+2. Created a ROBOT template tab in the [ROBOT templates Google sheet](https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A) containing all data dictionary items
+3. Created a tab for the cohort in the [master GECKO mappings sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4) and added data dictionary items to this sheet
 4. Added entries in `data/metadata.json` and `src/prefix.json`
 5. Created a TTL header in the `metadata` folder
 
-To add your cohort to the build, simply add the cohort short name to the [list on line 89](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L89). Then, add a new task [after line 188](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L188) in the `ROBOT Templates for Cohort Data Dictionaries` section using the following template, replacing only the items in square brackets:
-```
-# [cohort name] Tasks
-
-data/[cohort short name].tsv:
-	curl -L -o $@ "[link to ROBOT template Google sheet]/export?format=tsv"
-
-build/[cohort short name].tsv: data/[cohort short name].tsv
-	cp $< $@
-```
-
-The link to the Google spreadsheet will be the same link in the URL bar when you are editing the sheet, except you should replace `/edit#gid=0` with `/export?format=tsv` to make sure it downloads properly (the export format is included in the above template, but make sure to remove the `/edit` portion of the URL).
-
-Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort:
-- `data/[cohort short name].tsv`
-- `mappings/[cohort short name].tsv`
-- `build/[cohort short name].owl`
-- `build/cohorts/[cohort short name].owl`
-- `build/[cohort short name].html`
-- `build/[cohort short name]-tree.html`
-- `build/[cohort short name]-gecko-tree.html`
-- `build/[cohort short name]-data.json`
-- `build/[cohort short name]-mapping.owl`
-- `build/[cohort short name]-mapping.json`
-- `build/[cohort short name]-xrefs.tsv`
+To add your cohort to the build, simply add the cohort short name to the [list on line 89](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L89). Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort, and add your cohort to [`index.html`](). Open the index in your browser and check that all the links direct to the proper pages.
 
 Please commit the following *new* files (do not commit anything in the `build` directory):
-- `data/[cohort short name].tsv`
+- `templates/[cohort short name].tsv`
 - `metadata/[cohort short name].ttl`
 - `mappings/[cohort short name].tsv`
 
 Also commit all changes to the following files:
 - `Makefile`
+- `index.html`
 - `src/prefixes.json`
 - `data/metadata.json`
 - `data/cohort-data.json`

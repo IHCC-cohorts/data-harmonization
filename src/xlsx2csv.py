@@ -22,6 +22,6 @@ for row in ws:
     if cell.value is None:
       values.append('')
     else:
-      values.append(str(cell.value))
-  print('\t'.join(values))
+      values.append('"{0}"'.format(str(cell.value).replace('"', '\\"')))
+  print(','.join(values))
 

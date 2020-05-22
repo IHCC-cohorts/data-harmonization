@@ -1,0 +1,20 @@
+<body>
+    <table>
+        <tr>
+            <th>Cohort Name</th>
+            <th>ROBOT Template</th>
+            <th>Terms Table</th>
+            <th>Tree View</th>
+            <th>Mapping Tree View</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td><a href="{{ items.template }}">ROBOT Template</a></td>
+            <td><a href="{{ item.terms }}">Terms Table</a></td>
+            <td><a href="{{ item.tree }}">Tree View</a></td>
+            <td><a href="{{ item.mapping }}">Mapping Tree View</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>

@@ -4,58 +4,6 @@
 # WARN: This file contains significant whitespace, i.e. tabs!
 # Ensure that your text editor shows you those characters.
 
-### Workflow
-#
-# - GECKO
-#   [source table](https://docs.google.com/spreadsheets/d/1ZXqTMIhFtGOaodw7Fns5YghvY_pWos-RuSa2BFnO5l4),
-#   [term table](build/gecko.html),
-#   [tree view](build/gecko-tree.html),
-#   [gecko.owl](build/gecko.owl)
-#     - GECKO NCIT
-#       [tree view](build/ncit-module-tree.html),
-#       [ncit-module.owl](build/ncit-module.owl)
-#     - GECKO full 
-#       [tree view](build/gecko-full-tree.html),
-#       [gecko-full.owl](build/gecko-full.owl)
-# - Genomics England
-#   [term table](build/genomics-england.html),
-#   [tree view](build/genomics-england-tree.html),
-#   [genomics-england.owl](build/genomics-england.owl)
-# - Golestan Cohort Study (GCS),
-#   [term table](build/gcs.html),
-#   [tree view](build/gcs-tree.html),
-#   [gcs.owl](build/gcs.owl)
-#     - GCS to GECKO mapping
-#        [tree view](build/gcs-gecko-tree.html),
-#        [gcs-gecko.owl](build/gcs-gecko.owl)
-# - Korean Genome and Epidemiology Study (KoGES)
-#   [source document](https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view),
-#   [term table](build/koges.html),
-#   [tree view](build/koges-tree.html),
-#   [koges.owl](build/koges.owl)
-#     - KoGES to GECKO mapping
-#       [tree view](build/koges-gecko-tree.html),
-#       [koges-gecko.owl](build/koges-gecko.owl)
-# - Maelstrom
-#   [source document](https://raw.githubusercontent.com/maelstrom-research/maelstrom-taxonomies/master/AreaOfInformation.yml),
-#   [term table](build/maelstrom.html),
-#   [tree view](build/maelstrom-tree.html),
-#   [maelstrom.owl](build/maelstrom.owl)
-#     - Maelstrom to GECKO mapping
-#       [tree view](build/maelstrom-gecko-tree.html),
-#       [maelstrom-gecko.owl](build/maelstrom-gecko.owl)
-# - SAPRIN
-#   [source table](https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing),
-#   [term table](build/saprin.html),
-#   [tree view](build/saprin-tree.html),
-#   [saprin.owl](build/saprin.owl)
-# - Vukuzazi
-#   [term table](build/vukuzazi.html),
-#   [tree view](build/vukuzazi-tree.html),
-#   [vukuzazi.owl](build/vukuzazi.owl)
-# - [View mockup](build/index.html)
-# - [Rebuild](all)
-
 ### Configuration
 #
 # These are standard options to make Make sane:
@@ -111,18 +59,9 @@ OWL_MAPPINGS := $(foreach C,$(COHORTS),build/$(C)-gecko.owl)
 JSON_MAPPINGS := $(foreach C,$(COHORTS),build/$(C)-mapping.json)
 
 # HTML tree browser and table for each cohort (no mappings)
-TREES := build/gecko-tree.html build/ncit-module-tree.html $(foreach C,$(COHORTS),build/$(C)-tree.html)
-MAPPING_TREES := $(foreach C,$(COHORTS),build/$(C)-gecko-tree.html)
+TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
+MAPPING_TREES := $(foreach C,$(COHORTS),build/$(C)-gecko.html)
 TABLES := build/gecko.html $(foreach C,$(COHORTS),build/$(C).html)
-
-# Mockup browser pages for each cohort
-COHORT_PAGES := $(foreach C,$(COHORTS),build/cohorts/$(C).html)
-
-# Data files for mockup browser
-DATA := build/gecko-data.json $(foreach C,$(COHORTS),build/$(C)-data.json)
-
-# All mockup browser files
-BROWSER := build/index.html $(JSON_MAPPINGS) $(COHORT_PAGES) $(DATA)
 
 
 ### General Tasks
@@ -138,11 +77,14 @@ clean:
 	rm -rf build
 
 .PHONY: all
-all: $(TREES) $(TABLES)
+all: $(TREES) $(TABLES) $(MAPPING_TREES)
+all: index.html
 all: data/cohort-data.json
-all: $(BROWSER)
 
 update: refresh all
+
+index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(ONTS) $(MASTER_DATA) $(TREES) $(TABLES) $(MAPPING_TREES)
+	python3 $^ $@
 
 
 ### Cohort OWL Files 
@@ -161,7 +103,7 @@ owl: $(ONTS)
 #    - The metadata header must be created and added to the `metadata` folder
 # You must also add the cohort details to data/metadata.json and src/prefixes.json
 
-build/%.owl: build/properties.owl build/%.tsv build/%-xrefs.tsv metadata/%.ttl | build/robot.jar
+build/%.owl: build/properties.owl templates/%.csv build/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
@@ -185,6 +127,12 @@ build/%.owl: build/properties.owl build/%.tsv build/%-xrefs.tsv metadata/%.ttl |
 #	cp $< $@
 
 # Run `make refresh` to get all new data dictionary TSVs
+
+build/templates.xlsx: | build
+	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A/export?format=xlsx"
+
+templates/%.csv: src/xlsx2csv.py build/templates.xlsx
+	python3 $^ $(basename $(notdir $@)) > $@
 
 # GECKO from CINECA
 
@@ -265,19 +213,19 @@ build/mapping/gecko-mapping.xlsx: | build/mapping
 
 # Run `make refresh` to get updated mapping TSVs
 
-mappings/index.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
-	python3 $^ $(basename $(notdir $@)) > $@
+mappings/index.csv: src/xlsx2csv.py build/mapping/gecko-mapping.xlsx
+	python3 $^ index > $@
 
-mappings/properties.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
-	python3 $^ $(basename $(notdir $@)) > $@
+mappings/properties.csv: src/xlsx2csv.py build/mapping/gecko-mapping.xlsx
+	python3 $^ properties > $@
 
-mappings/%.tsv: src/xlsx2tsv.py build/mapping/gecko-mapping.xlsx
+mappings/%.csv: src/xlsx2csv.py build/mapping/gecko-mapping.xlsx
 	python3 $^ $(basename $(notdir $@)) > $@
 
 # GECKO terms as xrefs for main files
 # These are required to build the cohort OWL file
 
-build/%-xrefs.tsv: src/create_xref_template.py mappings/%.tsv mappings/index.tsv
+build/%-xrefs.tsv: src/create_xref_template.py mappings/%.csv mappings/index.csv
 	python3 $^ $@
 
 
@@ -306,7 +254,7 @@ build/properties.owl: src/properties.tsv | build/robot.jar
 
 # GECKO plus OBO terms
 
-build/mapping/index.owl: mappings/properties.tsv mappings/index.tsv
+build/mapping/index.owl: mappings/properties.csv mappings/index.csv
 	$(ROBOT) template --template $< \
 	template --merge-before \
 	--template $(word 2,$^) \
@@ -325,17 +273,11 @@ build/gecko-full.owl: build/gecko.owl build/mapping/index.owl | build/robot.jar
 build/%-gecko.owl: build/mapping/%-gecko.ttl
 	$(ROBOT) convert --input $< --output $@
 
-# JSON of ancestor GECKO term (key) -> list of cohort terms (value)
-# This is used to drive the filter functionality in the browser
-
-build/%-mapping.json: src/json/generate_mapping_json.py build/mapping/%-mapping.csv
-	python3 $^ $@
-
 # Intermediate files for GECKO mappings (stored in build/mapping)
 
 # Cohort terms + GECKO terms from template
 # The GECKO terms are just referenced and do not have structure/annotations
-build/mapping/%-mapping.owl: build/gecko-full.owl build/%.owl mappings/%.tsv | build/robot.jar
+build/mapping/%-mapping.owl: build/gecko-full.owl build/%.owl mappings/%.csv | build/robot.jar
 	$(ROBOT) merge \
 	--input $< \
 	--input $(word 2,$^) \
@@ -368,31 +310,27 @@ build/mapping/gecko-%.ttl: build/gecko-full.owl build/mapping/gecko-%.txt | buil
 	--lower-terms $(word 2,$^) \
 	--output $@
 
-# Query to get cohort terms -> ancestor GECKO terms
-build/mapping/get-cineca-%.rq: src/build_query.py data/metadata.json
-	$(eval NAME := $(subst get-cineca-,,$(basename $(notdir $@))))
-	python3 $^ $(NAME) $@
-
-# CSV of cohort terms -> all ancestor GECKO terms
-build/mapping/%-mapping.csv: build/mapping/%-gecko.ttl build/mapping/get-cineca-%.rq | build/robot.jar
-	$(ROBOT) query --input $< --query $(word 2,$^) $@
+build/%-gecko.html: build/%-gecko.owl | build/robot-tree.jar
+	java -jar build/robot-tree.jar tree \
+	--input $< \
+	--tree $@
 
 # NCIT Module - NCIT terms that have been mapped to GECKO terms
 
-.PRECIOUS: build/ncit.owl.gz
-build/ncit.owl.gz: | build
-	curl -L http://purl.obolibrary.org/obo/ncit.owl | gzip > $@
+#.PRECIOUS: build/ncit.owl.gz
+#build/ncit.owl.gz: | build
+#	curl -L http://purl.obolibrary.org/obo/ncit.owl | gzip > $@
 
-build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-annotation-properites.txt | build/robot.jar
-	$(ROBOT) query --input $< --query $(word 2,$^) $@
-	tail -n +2 $@ > $@.tmp
-	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
+#build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-annotation-properites.txt | build/robot.jar
+#	$(ROBOT) query --input $< --query $(word 2,$^) $@
+#	tail -n +2 $@ > $@.tmp
+#	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
 
-build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfxml.jar
-	$(ROBOT_RDFXML) extract --input $< \
-	--term-file $(word 2,$^) \
-	--method rdfxml \
-	--intermediates minimal --output $@
+#build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfxml.jar
+#	$(ROBOT_RDFXML) extract --input $< \
+#	--term-file $(word 2,$^) \
+#	--method rdfxml \
+#	--intermediates minimal --output $@
 
 
 
@@ -403,9 +341,9 @@ build/%-tree.html: build/%.owl | build/robot-tree.jar
 	--input $< \
 	--tree $@
 
-build/%.html: build/%.owl build/%.tsv src/prefixes.json | build/robot-validate.jar
+build/%.html: build/%.owl templates/%.csv | src/prefixes.json build/robot-validate.jar
 	java -jar build/robot-validate.jar validate \
-	--prefixes $(word 3,$^) \
+	--prefixes src/prefixes.json \
 	--input $< \
 	--table $(word 2,$^) \
 	--skip-row 2 \
@@ -428,39 +366,3 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 	echo '  },' >> $@
 	sed '1d' $(word 2,$^) >> $@
 
-
-### Mockup Browser Files
-
-build/%-data.json: build/%.owl | build/robot.jar
-	$(ROBOT) export \
-	--input $< \
-	--header "ID|LABEL|definition|question description|value|see also|subclasses" \
-	--sort "LABEL" \
-	--export $@
-
-build/cohorts.json: data/full-cohort-data.json
-	cp $< $@
-
-build/metadata.json: data/metadata.json
-	cp $< $@
-
-# GECKO without OBO terms = CINECA
-# This is used to drive aggregations
-# TODO - automatically create this
-build/cineca.json: src/json/cineca.json
-	cp $< $@
-
-build/index.html: src/index.html | build
-	cp $< $@
-
-# Top-level cohort data as HTML pages 
-
-$(COHORT_PAGES): src/create_cohort_html.py data/cohort-data.json data/metadata.json src/cohort.html.jinja2 build/cohorts
-	python3 $^
-
-# Make all browser files
-browser: $(BROWSER)
-
-# Make browser files and run on port 8000
-serve: $(BROWSER)
-	cd build && python3 -m http.server 8000
