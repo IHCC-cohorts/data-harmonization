@@ -152,9 +152,9 @@ Before updating the [`Makefile`](https://github.com/IHCC-cohorts/data-harmonizat
 To add your cohort to the build, simply add the cohort short name to the [list on line 38](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L38). Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort, and add your cohort to [`index.html`](). Open the index in your browser and check that all the links direct to the proper pages.
 
 Please commit the following *new* files (do not commit anything in the `build` directory):
-- `templates/[cohort short name].tsv`
+- `templates/[cohort short name].csv`
 - `metadata/[cohort short name].ttl`
-- `mappings/[cohort short name].tsv`
+- `mappings/[cohort short name].csv`
 
 Also commit all changes to the following files:
 - `Makefile`
@@ -176,7 +176,6 @@ Below are suggestions for common errors seen while running the build. If you run
 #### Makefile Errors
 
 - `make: *** No rule to make target 'metadata/[cohort short name].ttl'`: Make sure you have created the TTL header and saved it with the correct short name
-- `make: *** No rule to make target 'data/[cohort short name].tsv'`: Make sure you have [added the task](#5-updating-the-makefile) to download the cohort's Google spreadsheet to the `Makefile`
 - `Makefile:[line]: *** missing separator`: Make sure that your newly added `Makefile` tasks use tabs and not spaces (the tab character identifies something as a "rule" to make the target in a Makefile)
 <!-- TODO: more common Makefile errors? -->
 
