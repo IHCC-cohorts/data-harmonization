@@ -9,16 +9,16 @@ First, clone this repository to your local machine and create a new branch. Then
 
 ### 1. Selecting a Short Name and Prefix
 
-The "short name" will be the name used for all files generated for your cohort. Some guidelines to follow when selecting a short name are:
-- select a name that is unique, all-lowercase, and something easy to read and remember (e.g., [Golestan Cohort Study](https://dceg2.cancer.gov/gemshare/) = `gcs`)
-- use an acronym if you already have one (e.g., [South African Population Research Infrastructure Network (SAPRIN)](http://saprin.mrc.ac.za/) = `saprin`)
+The "short name" will be the lowercase name used for all files generated for your cohort. Some guidelines to follow when selecting a short name are:
+- select a name that is unique and easy to remember (e.g., [Golestan Cohort Study](https://dceg2.cancer.gov/gemshare/) = `gcs`)
+- use an acronyms (e.g., [South African Population Research Infrastructure Network (SAPRIN)](http://saprin.mrc.ac.za/) = `saprin`)
 - replace spaces with dashes (e.g., [Genomics England](https://www.genomicsengland.co.uk/) = `genomics-england`)
 
 Your prefix should be your short name in uppercase (e.g, `gcs` = `GCS`), unless there is some reason to change it. You should shorten your prefix if your short name uses more than one word (e.g., `genomics-england` = `GE`). We request that you do not use underscores in your prefix. Like the short names, prefixes **must** be unique across all cohorts.
 
 ### 2. Creating the ROBOT Template
 
-Cohort data dictionaries are transformed into OWL ontologies using [ROBOT templates](http://robot.obolibrary.org/template). All new cohorts must provide a public Google spreadsheet with their data dictionary in this format.
+Cohort data dictionaries are transformed into OWL ontologies using [ROBOT templates](http://robot.obolibrary.org/template). All new cohorts must provide a public Google spreadsheet with their data dictionary in this format. We recommend that you take a moment to briefly look over the template documentation, but you do not need to read it in-depth; we will provide all required template strings below.
 
 The following information is **required**:
 - ID
@@ -39,9 +39,11 @@ The following information is optional:
 - **Measurement Time**: time period for which is data is collection (e.g., over time?)
 - **Question Description**: the question asked to collect this data
 
+If you need another property to describe your data dictionary items, please let us know by [opening a new issue](https://github.com/IHCC-cohorts/data-harmonization/issues/new). The properties must be added to our repository before they can be used in a template.
+
 The first row of the spreadsheet should be human-readable column headers. The second row will be the [ROBOT template strings](http://robot.obolibrary.org/template) for each column. The third row should be left empty for future validation. The data dictionary entries should start on row 4.
 
-The basic ROBOT template strings are as follows:
+The basic ROBOT template strings are as follows (note that the `A` and `C` characters in the template strings are necessary for ROBOT to properly parse the contents of a column):
 - ID: `ID`
 - Label: `LABEL`
 - Parent: `C % SPLIT=|`
@@ -165,8 +167,12 @@ Next, run `make update` to ensure all tasks complete properly. This should gener
 - `build/[cohort short name]-mapping.json`
 - `build/[cohort short name]-xrefs.tsv`
 
-You need to commit the new files `data/[cohort short name].tsv`, `metadata/[cohort short name].ttl`, and `mappings/[cohort short name].tsv` to the repository. The other files in `build` do not get committed. Also commit all changes to the following files:
+Please commit the following *new* files (do not commit anything in the `build` directory):
+- `data/[cohort short name].tsv`
+- `metadata/[cohort short name].ttl`
+- `mappings/[cohort short name].tsv`
 
+Also commit all changes to the following files:
 - `Makefile`
 - `src/prefixes.json`
 - `data/metadata.json`
@@ -195,4 +201,4 @@ TODO
 
 #### Other Errors
 
-If you run into other errors while trying to add a new cohort, please [open an issue](https://github.com/IHCC-cohorts/data-harmonization/issues/new/choose) and include the full stack trace from the error.
+If you run into other errors while trying to add a new cohort, please [open an issue](https://github.com/IHCC-cohorts/data-harmonization/issues/new) and include the full stack trace from the error.
