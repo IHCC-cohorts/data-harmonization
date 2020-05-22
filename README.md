@@ -62,8 +62,9 @@ Any parent used in column 3 must also be defined in the table, otherwise ROBOT w
 ### 3. Creating the GECKO Mappings
 
 The cohort browser is driven by [GECKO](). In order to display results for your cohort in the browser, you must map your data dictionary items to the GECKO terms.
+<!-- TODO: link to GECKO? -->
 
-To start, add a tab to the [master GECKO mapping sheet](). This tab **must** be named with the cohort short name.
+To start, add a tab to the [master GECKO mapping sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4). This tab **must** be named with the cohort short name. You may need to request edit access to this sheet to proceed.
 
 Each mapping sheet is also a ROBOT template. The first four columns and their ROBOT template strings are as follows:
 - ID: `ID`
@@ -81,13 +82,14 @@ You can add additional details starting in column 5 (e.g., comments, parents). T
  
 If a term from your data dictionary maps to more than one GECKO term, you can include multiple mappings in column 4 by separating the values with a pipe symbol (e.g., `Term 1|Term 2`).
 
-Include *all* your data dictionary IDs and Labels to begin. You can leave columns 3 and 4 empty for these rows until you have started your mappings. All GECKO terms can be found in the [index of the master mapping sheet](). You can also browse a hierarchical version of GECKO [here]().
+Include *all* your data dictionary IDs and Labels to begin. You can leave columns 3 and 4 empty for these rows until you have started your mappings. All GECKO terms can be found in the [index of the master mapping sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1049779000). You can also browse a hierarchical version of GECKO [here]().
+<!-- TODO: link to GECKO tree view -->
 
 ### 4. Adding the Cohort Metadata
 
 #### `data/metadata.json`
 
-Using the following template, add an entry to [`data/metadata.json`]():
+Using the following template, add an entry to [`data/metadata.json`](https://github.com/IHCC-cohorts/data-harmonization/blob/master/data/metadata.json):
 ```
 "[full cohort name]": {
 	"id": "[cohort short name]",
@@ -97,12 +99,12 @@ Using the following template, add an entry to [`data/metadata.json`]():
 }
 ```
 
-Please note that the `[full cohort name]` **must** match the name recorded in [`data/member_cohorts.csv`]().
+Please note that the `[full cohort name]` **must** match the name recorded in [`data/member_cohorts.csv`](https://github.com/IHCC-cohorts/data-harmonization/blob/master/data/member_cohorts.csv).
 <!-- TODO: what if the cohort is not listed? -->
 
 #### `src/prefixes.json`
 
-Using the following template, add an entry to [`src/prefixes.json`]():
+Using the following template, add an entry to [`src/prefixes.json`](https://github.com/IHCC-cohorts/data-harmonization/blob/master/src/prefixes.json):
 ```
 "[cohort prefix]": "http://example.com/[cohort prefix]_"
 ```
@@ -130,14 +132,14 @@ To do this, create a new file in the `metadata` directory using this name: `[coh
 
 ### 5. Updating the Makefile
 
-Before updating the [`Makefile`](), make sure you have done the following:
+Before updating the [`Makefile`](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile), make sure you have done the following:
 1. Selected a short name & prefix
 2. Created a ROBOT template on Google sheets (ensure that this sheet is public) containing all data dictionary items
 3. Created a tab for the cohort in the master GECKO mappings sheet and added data dictionary items to this sheet
 4. Added entries in `data/metadata.json` and `src/prefix.json`
 5. Created a TTL header in the `metadata` folder
 
-To add your cohort to the build, simply add the cohort short name to the [list on line 89](). Then, add a new task [after line 188]() in the `ROBOT Templates for Cohort Data Dictionaries` section using the following template, replacing only the items in square brackets:
+To add your cohort to the build, simply add the cohort short name to the [list on line 89](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L89). Then, add a new task [after line 188](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L188) in the `ROBOT Templates for Cohort Data Dictionaries` section using the following template, replacing only the items in square brackets:
 ```
 # [cohort name] Tasks
 
@@ -163,7 +165,7 @@ Next, run `make update` to ensure all tasks complete properly. This should gener
 - `build/[cohort short name]-mapping.json`
 - `build/[cohort short name]-xrefs.tsv`
 
-You need to commit `data/[cohort short name].tsv` and `mappings/[cohort short name].tsv` to the repository. The other files in `build` do not get committed. Also commit all changes to the following files:
+You need to commit the new files `data/[cohort short name].tsv`, `metadata/[cohort short name].ttl`, and `mappings/[cohort short name].tsv` to the repository. The other files in `build` do not get committed. Also commit all changes to the following files:
 
 - `Makefile`
 - `src/prefixes.json`
@@ -178,20 +180,18 @@ Below are suggestions for common errors seen while running the build. If you run
 
 - `MALFORMED RULE ERROR malformed rule`: Make sure that row 3 of your cohort's ROBOT template is empty (not the mapping template)
 - `UNKNOWN ENTITY ERROR could not interpret...`: Make sure you have [defined your prefix](#4-adding-the-cohort-metadata) in `src/prefixes.json`, and that all rows use this prefix in the `ID` column
-
-TODO: add more
+<!-- TODO: add more errors ... e.g., label not correct for mappings -->
 
 #### Makefile Errors
 
 - `make: *** No rule to make target 'metadata/[cohort short name].ttl'`: Make sure you have created the TTL header and saved it with the correct short name
 - `make: *** No rule to make target 'data/[cohort short name].tsv'`: Make sure you have [added the task](#5-updating-the-makefile) to download the cohort's Google spreadsheet to the `Makefile`
 - `Makefile:[line]: *** missing separator`: Make sure that your newly added `Makefile` tasks use tabs and not spaces (the tab character identifies something as a "rule" to make the target in a Makefile)
-
-TODO: add more
+<!-- TODO: more common Makefile errors? -->
 
 #### Python Errors
 
-TODO: errors from python scripts
+TODO
 
 #### Other Errors
 
