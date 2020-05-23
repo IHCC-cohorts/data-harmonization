@@ -41,7 +41,7 @@ COHORTS := gcs genomics-england koges maelstrom saprin vukuzazi
 # --- These files are maintained in version control ---
 
 # TSVs that generate the OWL files for each cohort (no mappings)
-TEMPLATES := templates/gecko.csv $(foreach C,$(COHORTS),templates/$(C).tcv)
+TEMPLATES := templates/gecko.csv $(foreach C,$(COHORTS),templates/$(C).csv)
 
 # ROBOT templates containing cohort -> GECKO mappings
 MAPPINGS := mappings/index.csv mappings/properties.csv $(foreach C,$(COHORTS),mappings/$(C).csv)
@@ -69,7 +69,7 @@ TTL_MAPPINGS := $(foreach C,$(COHORTS),build/intermediate/$(C)-gecko.ttl)
 
 .PHONY: refresh
 refresh:
-	rm -rf $(TEMPLATES) $(MAPPINGS) build/mapping/gecko-mapping.xlsx
+	rm -rf $(TEMPLATES) $(MAPPINGS) build/gecko-mapping.xlsx build/templates.xlsx
 	make $(TEMPLATES)
 	make $(MAPPINGS)
 
@@ -140,7 +140,7 @@ templates/%.csv: src/xlsx2csv.py build/templates.xlsx
 
 ### GECKO Mapping TSVs
 
-build/gecko-mapping.xlsx: | build/mapping
+build/gecko-mapping.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
 # Run `make refresh` to get updated mapping TSVs
@@ -224,7 +224,7 @@ build/%.html: build/%.owl templates/%.csv | src/prefixes.json build/robot-valida
 # Top-level cohort data
 
 data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json src/json/cineca_structure.json $(TTL_MAPPINGS)
-	python3 $(filter-out $(JSON_MAPPINGS),$^) $@
+	python3 $(filter-out $(TTL_MAPPINGS),$^) $@
 
 # Real cohort data + randomly-generated cohort data
 
@@ -258,7 +258,7 @@ build/intermediate/properties.owl: src/properties.tsv | build/intermediate build
 ### GECKO Tasks - to be moved into separate repo
 
 # GECKO does not have an xref template
-build/gecko.owl: build/intermediate/properties.owl build/gecko.tsv metadata/gecko.ttl | build/robot.jar
+build/gecko.owl: build/intermediate/properties.owl templates/gecko.csv metadata/gecko.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
@@ -269,7 +269,7 @@ build/gecko.owl: build/intermediate/properties.owl build/gecko.tsv metadata/geck
 	--output $@
 
 # GECKO plus OBO terms
-build/indermediate/index.owl: mappings/properties.csv mappings/index.csv | build/intermediate build/robot.jar
+build/intermediate/index.owl: mappings/properties.csv mappings/index.csv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< \
 	template --merge-before \
 	--template $(word 2,$^) \

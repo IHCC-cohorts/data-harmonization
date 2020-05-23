@@ -11,10 +11,10 @@ ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyp
 
 def main():
     global master_map
-    parser = ArgumentParser(description='TODO')
-    parser.add_argument('cohorts_csv', type=FileType('r'), description='IHCC member cohort details')
-    parser.add_argument('cohorts_metadata', type=FileType('r'), description='Cohort metadata (name -> ID, prefix)')
-    parser.add_argument('cineca', type=FileType('r'), description='JSON structure of CINECA model')
+    parser = ArgumentParser(description='Create JSON for IHCC cohort browser')
+    parser.add_argument('cohorts_csv', type=FileType('r'), help='IHCC member cohort details')
+    parser.add_argument('cohorts_metadata', type=FileType('r'), help='Cohort metadata (name -> ID, prefix)')
+    parser.add_argument('cineca', type=FileType('r'), help='JSON structure of CINECA model')
     parser.add_argument('output', type=FileType('w'), help='output JSON')
 
     args = parser.parse_args()
@@ -75,7 +75,7 @@ def main():
 
     all_data = []
     for cohort_name, cohort_metadata in metadata.items():
-        file_name = 'build/mapping/{0}-gecko.ttl'.format(cohort_metadata['id'].lower())
+        file_name = 'build/intermediate/{0}-gecko.ttl'.format(cohort_metadata['id'].lower())
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
         child_to_parent = get_children(gin, 'http://example.com/GECKO_9999998')
