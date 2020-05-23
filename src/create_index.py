@@ -16,12 +16,13 @@ def main():
 
     items = []
     for cohort, item in data.items():
-        short_name = item['id']
+        short_name = item['id'].lower()
+        item['id'] = short_name
         item['name'] = cohort
-        item['template'] = 'templates/{0}.tsv'.format(short_name)
-        item['terms'] = 'build/{0}.html'.format(short_name)
-        item['tree'] = 'build/{0}-tree.html'.format(short_name)
-        item['mapping'] = 'build/{0}-gecko.html'.format(short_name)
+        item['owl'] = '{0}.owl'.format(short_name)
+        item['terms'] = '{0}.html'.format(short_name)
+        item['tree'] = '{0}-tree.html'.format(short_name)
+        item['mapping'] = '{0}-gecko.html'.format(short_name)
         items.append(item)
 
     html = t.render(items=items)

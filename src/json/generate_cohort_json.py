@@ -7,15 +7,14 @@ from argparse import ArgumentParser, FileType
 master_map = {}
 ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
                     'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']
-general_variables = ['signs and symptoms']
 
 
 def main():
     global master_map
     parser = ArgumentParser(description='TODO')
-    parser.add_argument('cohorts_csv', type=FileType('r'))
-    parser.add_argument('cohorts_metadata', type=FileType('r'))
-    parser.add_argument('cineca', type=FileType('r'))
+    parser.add_argument('cohorts_csv', type=FileType('r'), description='IHCC member cohort details')
+    parser.add_argument('cohorts_metadata', type=FileType('r'), description='Cohort metadata (name -> ID, prefix)')
+    parser.add_argument('cineca', type=FileType('r'), description='JSON structure of CINECA model')
     parser.add_argument('output', type=FileType('w'), help='output JSON')
 
     args = parser.parse_args()

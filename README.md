@@ -9,13 +9,51 @@ This is work-in-progress on a demonstration system that uses ontologies to harmo
 1. Clone this repository to your local machine and `cd` to the new directory
 2. Make sure you have [python 3.0 or greater](https://www.python.org/downloads/) installed
 3. Install python requirements: `python3 -m pip install -r requirements.txt` (`python3` may be replaced with just `python` if this does not work)
-4. Run `make update` and open `index.html` in your browser to see results
+4. Run `make update` and open `build/index.html` in your browser to see results
 
 ---
 
 ## Description of Files
 
-TODO
+**Manual Files**: files that are manually updated and maintained in version control
+**Generated Files in Version Control**: files that are automatically rebuilt and maintained in version control
+**Generated Files in Build**: files that are automatically built and not maintained in version control=
+
+### Multi-Cohort Files
+
+**Manual Files**
+
+* `data/member_cohorts.csv`: [IHCC Member Cohorts](https://ihccglobal.org/membercohorts/)
+* `data/metadata.json`: short names (`id`) and prefixes for all cohorts
+
+**Generated Files in Version Control**
+
+* `data/cohort-data.json`: cohort data from `data/member_cohorts.csv` and GECKO mappings (upper-level categories)
+* `mappings/index.csv`: full GECKO index and OBO terms used in GECKO (*to be moved to GECKO repo*) from [GECKO Mappings](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4)
+* `mappings/properties.csv`: properties used in mapping GECKO->OBO terms (*to be moved to GECKO repo*) from [GECKO Mappings](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4)
+
+**Generated Files in Build**
+
+* `build/index.html`: HTML table containing links to cohort build files (this should be checked after each build to make sure expected files were all properly built)
+
+
+### Single Cohort Files
+
+**Manual Files**
+
+* `metadata/*.ttl`: ontology header for the cohort containing details about the data dictionary (description, license, etc.)
+
+**Generated Files in Version Control**
+
+* `templates/*.csv`: ROBOT template for cohort data dictionary to build ontology file from [ROBOT Templates](https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A)
+* `mappings/*.csv`: ROBOT template for cohort data dictionary mappings to GECKO from [GECKO Mappings](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4)
+
+**Generated Files in Build**
+
+* `build/*.owl`: OWL ontology representation of data dictionary built from the ROBOT template
+* `build/*.html`: table of data dictionary terms and details
+* `build/*-tree.html`: Browsable tree-view of the OWL ontology representation
+* `build/*-gecko.html`: Browsable tree-view of the data dictionary to GECKO mappings
 
 ---
 
@@ -155,7 +193,7 @@ Before updating the [`Makefile`](https://github.com/IHCC-cohorts/data-harmonizat
 4. Added entries in `data/metadata.json` and `src/prefix.json`
 5. Created a TTL header in the `metadata` folder
 
-To add your cohort to the build, simply add the cohort short name to the [list on line 38](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L38). Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort, and add your cohort to [`index.html`](). Open the index in your browser and check that all the links direct to the proper pages.
+To add your cohort to the build, simply add the cohort short name to the [list on line 38](https://github.com/IHCC-cohorts/data-harmonization/blob/master/Makefile#L38). Next, run `make update` to ensure all tasks complete properly. This should generate all build files for your cohort, and add your cohort to `build/index.html`. Open the index in your browser and check that all the links direct to the proper pages.
 
 Please commit the following *new* files (do not commit anything in the `build` directory):
 - `templates/[cohort short name].csv`
@@ -164,7 +202,6 @@ Please commit the following *new* files (do not commit anything in the `build` d
 
 Also commit all changes to the following files:
 - `Makefile`
-- `index.html`
 - `src/prefixes.json`
 - `data/metadata.json`
 - `data/cohort-data.json`
