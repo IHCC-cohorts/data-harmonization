@@ -1,6 +1,5 @@
 jinja2
 pandas
 rdflib
-openpyxl
 xlsx2csv
 requests
