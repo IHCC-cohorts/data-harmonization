@@ -82,17 +82,20 @@ all: $(TREES) $(TABLES) $(MAPPING_TREES)
 all: build/index.html
 all: data/cohort-data.json
 
+.PHONY: update
 update: refresh all
 
+.PHONY: rebuild
 rebuild: clean update
 
 build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(ONTS) $(TREES) $(TABLES) $(MAPPING_TREES)
 	python3 $^ $@
 
 
-### Cohort OWL Files 
+### Cohort OWL Files
 
 # Run `make owl` to generate all cohort OWL files
+.PHONY: owl
 owl: $(ONTS)
 
 # The OWL files are based on:
