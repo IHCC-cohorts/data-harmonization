@@ -16,7 +16,7 @@
       "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
-      "demographic_data": []
+      "demographic_data": null
     },
     "biosample": {
       "sample_type": [
@@ -98,58 +98,16 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "location"
-      ],
-      "general_variables": [
-        "timeline"
-      ]
-    },
-    "laboratory_measures": [],
     "questionnaire_survey_data": {
-      "general_variables": [
-        "signs_and_symptoms"
-      ],
-      "lifestyle_and_behaviours": [
-        "alcohol"
-      ],
       "physiological_measurements": {
         "anthropometry": [
           "weight"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
-  },
-  {
-    "cohort_name": "Maelstrom",
-    "countries": [],
-    "pi_lead": "",
-    "website": "",
-    "current_enrollment": "",
-    "target_enrollment": "",
-    "enrollment_period": "",
-    "available_data_types": [],
-    "laboratory_measures": [],
-    "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [],
-      "physiological_measurements": {
-        "circulation_and_respiration": []
-      },
-      "general_variables": [
-        "signs_and_symptoms"
-      ],
-      "socio_demographic_and_economic_characteristics": [
         "gender"
       ]
-    },
-    "survey_administration": []
+    }
   },
   {
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
@@ -193,11 +151,6 @@
       "sample_type": [
         "urine"
       ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": []
-      }
     },
     "questionnaire_survey_data": {
       "lifestyle_and_behaviours": [

@@ -18,7 +18,7 @@ def main():
 
     # make a map of index label to ID
     label_to_id = {}
-    reader = csv.reader(mapping_index, delimiter=',')
+    reader = csv.reader(mapping_index, delimiter='\t')
     # Skip header and template rows
     next(reader)
     next(reader)
