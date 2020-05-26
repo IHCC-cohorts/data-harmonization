@@ -28,5 +28,9 @@
 		"prefix": "VZ",
 		"data_dictionary": "https://drive.google.com/file/d/1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC/view",
 		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=817993717"
+	},
+	"Maelstrom": {
+		"id": "maelstrom",
+		"prefix": "MAELSTROM"
 	}
 }

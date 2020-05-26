@@ -232,6 +232,7 @@ data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv 
 # Real cohort data + randomly-generated cohort data
 
 data/full-cohort-data.json: data/cohort-data.json data/random-data.json
+	rm -f $@
 	sed '$$d' $< | sed '$$d' >> $@
 	echo '  },' >> $@
 	sed '1d' $(word 2,$^) >> $@
@@ -239,7 +240,7 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 
 ### Pre-build Tasks
 
-build build/intermediate:
+build build/intermediate build/browser build/browser/cohorts:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -301,3 +302,68 @@ build/intermediate/gecko-full.owl: build/gecko.owl build/intermediate/index.owl 
 #	--term-file $(word 2,$^) \
 #	--method rdfxml \
 #	--intermediates minimal --output $@
+
+
+# ------------------------------------------------------------------------------------------------
+
+# Cohort data dictionary in JSON format
+build/browser/%-data.json: build/%.owl | build/browser build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "ID|LABEL|definition|question description|value|see also|subclasses" \
+	--sort "LABEL" \
+	--export $@
+
+# Full cohort data (copied)
+build/browser/cohorts.json: data/full-cohort-data.json | build/browser
+	cp $< $@
+
+# Cohort metadata (copied)
+build/browser/metadata.json: data/metadata.json | build/browser
+	cp $< $@
+
+# GECKO without OBO terms = CINECA
+# This is used to drive aggregations
+# TODO - automatically create this
+build/browser/cineca.json: src/browser/cineca.json | build/browser
+	cp $< $@
+
+build/browser/index.html: src/browser/browser.html | build/browser
+	cp $< $@
+
+# JSON of ancestor GECKO term (key) -> list of cohort terms (value)
+# This is used to drive the filter functionality in the browser
+
+# Query to get cohort terms -> ancestor GECKO terms
+build/intermediate/get-cineca-%.rq: src/queries/build_query.py data/metadata.json | build/intermediate
+	$(eval NAME := $(subst get-cineca-,,$(basename $(notdir $@))))
+	python3 $^ $(NAME) $@
+
+build/intermediate/%-mapping.csv: build/intermediate/%-gecko.ttl build/intermediate/get-cineca-%.rq | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
+build/browser/%-mapping.json: src/browser/generate_mapping_json.py build/intermediate/%-mapping.csv | build/browser
+	python3 $^ $@
+
+# Top-level cohort data as HTML pages 
+
+COHORT_PAGES := $(foreach C,$(COHORTS),build/browser/cohorts/$(C).html)
+
+$(COHORT_PAGES): src/browser/create_cohort_html.py data/cohort-data.json data/metadata.json src/browser/cohort.html.jinja2 build/browser/cohorts
+	python3 $^
+
+BROWSER := build/browser/index.html \
+           build/browser/cineca.json \
+           build/browser/cohorts.json \
+           build/browser/metadata.json \
+           build/browser/gecko-data.json \
+           $(foreach C,$(COHORTS),build/browser/$(C)-mapping.json) \
+           $(foreach C,$(COHORTS),build/browser/$(C)-data.json) \
+           $(COHORT_PAGES)
+
+browser: $(BROWSER)
+
+.PHONY: serve
+serve: $(BROWSER)
+	cd build/browser && python3 -m http.server 8000
+
