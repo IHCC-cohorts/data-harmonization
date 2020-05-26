@@ -1,5 +1,4 @@
 jinja2
-openpyxl
 pandas
 rdflib
 openpyxl
