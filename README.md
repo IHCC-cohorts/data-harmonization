@@ -1,23 +1,40 @@
 # IHCC Data Harmonization
 
-This is work-in-progress on a demonstration system that uses ontologies to harmonize data on various cohorts for the [International HundredK+ Cohorts Consortium (IHCC)](https://ihcc.g2mc.org).
+This is a demonstration system that uses ontologies to harmonize data on various cohorts for the [International HundredK+ Cohorts Consortium (IHCC)](https://ihcc.g2mc.org).
 
----
+## Building
 
-## Running the Build
+### Requirements
+
+* a Unix system, e.g. Linux, macOS, or possibly Windows PowerShell or Cygwin (not tested)
+* [git](https://git-scm.com)
+* [GNU Make](https://www.gnu.org/software/make/)
+* [Java 8 or greater](https://www.java.com)
+* [Python 3.6 or greater](https://www.python.org/downloads/)
+
+### Steps
 
 1. Clone this repository to your local machine and `cd` to the new directory
-2. Make sure you have [python 3.0 or greater](https://www.python.org/downloads/) installed
-3. Install python requirements: `python3 -m pip install -r requirements.txt` (`python3` may be replaced with just `python` if this does not work)
+2. Optional but recommended: run Python with `venv`
+3. Install Python requirements: `python3 -m pip install -r requirements.txt` (`python3` may be replaced with just `python` if this does not work)
 4. Run `make update` and open `build/index.html` in your browser to see results
 
----
+### Example
 
-## Description of Files
+```
+$ git clone https://github.com/IHCC-cohorts/data-harmonization.git
+$ cd data-harmononization
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements.txt
+$ make update
+```
 
-**Manual Files**: files that are manually updated and maintained in version control
-**Generated Files in Version Control**: files that are automatically rebuilt and maintained in version control
-**Generated Files in Build**: files that are automatically built and not maintained in version control=
+## Files
+
+* **Manual Files**: files that are manually updated and maintained in version control
+* **Generated Files in Version Control**: files that are automatically rebuilt and maintained in version control
+* **Generated Files in Build**: files that are automatically built and not maintained in version control
 
 ### Multi-Cohort Files
 
@@ -55,8 +72,6 @@ This is work-in-progress on a demonstration system that uses ontologies to harmo
 * `build/*-tree.html`: Browsable tree-view of the OWL ontology representation
 * `build/*-gecko.html`: Browsable tree-view of the data dictionary to GECKO mappings
 
----
-
 ## Adding a New Cohort
 
 First, clone this repository to your local machine and create a new branch. Then, follow the following steps and make a pull request with all required changes.
@@ -65,7 +80,7 @@ First, clone this repository to your local machine and create a new branch. Then
 
 The "short name" will be the lowercase name used for all files generated for your cohort. Some guidelines to follow when selecting a short name are:
 - select a name that is unique and easy to remember (e.g., [Golestan Cohort Study](https://dceg2.cancer.gov/gemshare/) = `gcs`)
-- use an acronyms (e.g., [South African Population Research Infrastructure Network (SAPRIN)](http://saprin.mrc.ac.za/) = `saprin`)
+- use an acronym (e.g., [South African Population Research Infrastructure Network (SAPRIN)](http://saprin.mrc.ac.za/) = `saprin`)
 - replace spaces with dashes (e.g., [Genomics England](https://www.genomicsengland.co.uk/) = `genomics-england`)
 
 Your prefix should be your short name in uppercase (e.g, `gcs` = `GCS`), unless there is some reason to change it. You should shorten your prefix if your short name uses more than one word (e.g., `genomics-england` = `GE`). We request that you do not use underscores in your prefix. Like the short names, prefixes **must** be unique across all cohorts.
@@ -117,8 +132,8 @@ Any parent used in column 3 must also be defined in the table, otherwise ROBOT w
 
 ### 3. Creating the GECKO Mappings
 
-The cohort browser is driven by [GECKO](). In order to display results for your cohort in the browser, you must map your data dictionary items to the GECKO terms.
-<!-- TODO: link to GECKO? -->
+The cohort browser is driven by GECKO. In order to display results for your cohort in the browser, you must map your data dictionary items to the GECKO terms.
+<!-- TODO: link to GECKO -->
 
 To start, add a tab to the [master GECKO mapping sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4). This tab **must** be named with the cohort short name. You may need to request edit access to this sheet to proceed.
 
@@ -138,7 +153,7 @@ You can add additional details starting in column 5 (e.g., comments, parents). T
  
 If a term from your data dictionary maps to more than one GECKO term, you can include multiple mappings in column 4 by separating the values with a pipe symbol (e.g., `Term 1|Term 2`).
 
-Include *all* your data dictionary IDs and Labels to begin. You can leave columns 3 and 4 empty for these rows until you have started your mappings. All GECKO terms can be found in the [index of the master mapping sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1049779000). You can also browse a hierarchical version of GECKO [here]().
+Include *all* your data dictionary IDs and Labels to begin. You can leave columns 3 and 4 empty for these rows until you have started your mappings. All GECKO terms can be found in the [index of the master mapping sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1049779000). You can also browse a hierarchical version of GECKO.
 <!-- TODO: link to GECKO tree view -->
 
 ### 4. Adding the Cohort Metadata
@@ -165,7 +180,7 @@ Using the following template, add an entry to [`src/prefixes.json`](https://gith
 
 ### Metadata Header
 
-You must also create a turtle-format header containing your cohort's metadata, which will be included in the ontology version of your cohort data dictionary.
+You must also create a Turtle-format header containing your cohort's metadata, which will be included in the ontology version of your cohort data dictionary.
 
 To do this, create a new file in the `metadata` directory using this name: `[cohort short name].ttl`. Then, paste this template in that file and replace any square brackets. Do not change anything else.
 ```
