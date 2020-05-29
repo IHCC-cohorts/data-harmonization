@@ -244,3 +244,9 @@ TODO
 #### Other Errors
 
 If you run into other errors while trying to add a new cohort, please [open an issue](https://github.com/IHCC-cohorts/data-harmonization/issues/new) and include the full stack trace from the error.
+
+## &copy; 2020 EMBL-EBI
+
+The code in this repository can be used under the [Apache 2.0 License](LICENSE).
+
+The data in this repository can be used under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
