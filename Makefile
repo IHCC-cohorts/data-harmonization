@@ -4,6 +4,17 @@
 # WARN: This file contains significant whitespace, i.e. tabs!
 # Ensure that your text editor shows you those characters.
 
+### Workflow
+#
+# 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
+# 2. [Update files](update)
+# 3. [View results](build/index.html)
+#
+# Demo browser:
+#
+# 1. [Update browser](browser)
+# 2. [View browser](build/browser/index.html)
+
 ### Configuration
 #
 # These are standard options to make Make sane:
@@ -361,6 +372,7 @@ BROWSER := build/browser/index.html \
            $(foreach C,$(COHORTS),build/browser/$(C)-data.json) \
            $(COHORT_PAGES)
 
+.PHONY: browser
 browser: $(BROWSER)
 
 .PHONY: serve
