@@ -6,20 +6,20 @@
         <thead class="thead-light">
             <tr>
                 <th>Cohort Name</th>
-                <th>OWL Ontology</th>
-                <th>Terms Table</th>
                 <th>Tree View</th>
                 <th>Mapping Tree View</th>
+                <th>Terms Table</th>
+                <th>OWL Ontology</th>
             </tr>
         </thead>
         <tbody>
         {% for item in items %}
         <tr>
             <td>{{ item.name }}</td>
-            <td><a href="{{ items.owl }}">Download {{ item.id }}.owl</a></td>
-            <td><a href="{{ item.terms }}">View terms from {{ item.id }}</a></td>
             <td><a href="{{ item.tree }}">Browse {{ item.id }}.owl</a></td>
             <td><a href="{{ item.mapping }}">Browse {{ item.id }}-GECKO mappings</a></td>
+            <td><a href="{{ item.terms }}">View terms from {{ item.id }}</a></td>
+            <td><a href="{{ items.owl }}">Download {{ item.id }}.owl</a></td>
         </tr>
         {% endfor %}
         </tbody>
