@@ -1,0 +1,146 @@
+ID	Field Label	Class Type	GECKO Label	Comment																			
+ID		CLASS_TYPE	C % SPLIT=|																				
+SAPRIN:Base_Entities	Base Entities		SAPRIN	
+SAPRIN:Location	Location			
+SAPRIN:Type_Location	Type (Location)			
+SAPRIN:Area	Area			
+SAPRIN:Coordinate	Coordinate			
+SAPRIN:Household	Household		residence	
+SAPRIN:Identifier_Household	Identifier (Household)		residence	
+SAPRIN:Individual	Individual		family and household structure	
+SAPRIN:Identifier_Individual	Identifier (Individual)			
+SAPRIN:External_identifier_Individual	External identifier (Individual)			
+SAPRIN:Surname	Surname			
+SAPRIN:Alternative_surname	Alternative surname			
+SAPRIN:First_name_1	First name 1			
+SAPRIN:First_name_2	First name 2			
+SAPRIN:Civilian_ID_number	Civilian ID number			
+SAPRIN:Citizenship	Citizenship		residence	
+SAPRIN:Nationality	Nationality		ethnicity/race	
+SAPRIN:Sex	Sex		biological sex	
+SAPRIN:Birth_Individual	Birth (Individual)			
+SAPRIN:EndEvent_Individual	EndEvent (Individual)			
+SAPRIN:MotherId	MotherId			
+SAPRIN:FatherId	FatherId			
+SAPRIN:MotherSurname	MotherSurname			
+SAPRIN:MotherFirstName	MotherFirstName			
+SAPRIN:FatherSurname	FatherSurname			
+SAPRIN:FatherFirstName	FatherFirstName			
+SAPRIN:Events	Events		SAPRIN	
+SAPRIN:Migration	Migration		residence	Maybe?
+SAPRIN:Date_Migration	Date (Migration)		residence	Maybe?
+SAPRIN:Type_Migration	Type (Migration)		residence	Maybe?
+SAPRIN:Direction	Direction		residence	Maybe?
+SAPRIN:Origin	Origin		residence	Maybe?
+SAPRIN:Destination	Destination		residence	Maybe?
+SAPRIN:Unit	Unit			
+SAPRIN:Birth	Birth			
+SAPRIN:Date_Birth	Date (Birth)		age/birthdate	
+SAPRIN:Birth_weight	Birth weight			
+SAPRIN:BirthCertificate	BirthCertificate			
+SAPRIN:DateRegistered	DateRegistered			
+SAPRIN:PregnancyOutcome	PregnancyOutcome		pregnancy history	
+SAPRIN:Date_PregnancyOutcome	Date (PregnancyOutcome)		pregnancy history	
+SAPRIN:Type_PregnancyOutcome	Type (PregnancyOutcome)		pregnancy history	
+SAPRIN:Place_PregnancyOutcome	Place (PregnancyOutcome)		pregnancy history	
+SAPRIN:BirthAttendant	BirthAttendant		pregnancy history	
+SAPRIN:LiveBirths	LiveBirths		pregnancy history	
+SAPRIN:Stillborn	Stillborn		pregnancy history	
+SAPRIN:Death	Death			
+SAPRIN:Date_Death	Date (Death)			
+SAPRIN:Place_Death	Place (Death)			
+SAPRIN:DeathCertificate	DeathCertificate			
+SAPRIN:Verbal_autopsy	Verbal autopsy			
+SAPRIN:Enumeration	Enumeration			
+SAPRIN:Date_Enumeration	Date (Enumeration)			
+SAPRIN:Membership_Events	Membership Events			
+SAPRIN:Date_Membership_Events	Date (Membership Events)			
+SAPRIN:Type_Membership_Events	Type (Membership Events)			
+SAPRIN:Household_Headship	Household Headship		family and household structure	
+SAPRIN:Date_Household_Headship	Date (Household Headship)			
+SAPRIN:Type_Household_Headship	Type (Household Headship)			
+SAPRIN:UnionEvent	UnionEvent			
+SAPRIN:Date_UnionEvent	Date (UnionEvent)			
+SAPRIN:Type_UnionEvent	Type (UnionEvent)			
+SAPRIN:Observation	Observation			
+SAPRIN:Date_Observation	Date (Observation)			
+SAPRIN:Location_Observation	Location (Observation)			
+SAPRIN:DataCollector	DataCollector			
+SAPRIN:Respondent	Respondent			
+SAPRIN:Episodes	Episodes		SAPRIN	
+SAPRIN:Residence	Residence			
+SAPRIN:Individual_Residence	Individual (Residence)			
+SAPRIN:Location_Residence	Location (Residence)			
+SAPRIN:StartEvent_Residence	StartEvent (Residence)			
+SAPRIN:EndEvent_Residence	EndEvent (Residence)			
+SAPRIN:HouseholdResidence	HouseholdResidence			
+SAPRIN:Household_HouseholdResidence	Household (HouseholdResidence)			
+SAPRIN:Location_HouseholdResidence	Location (HouseholdResidence)			
+SAPRIN:External_identifier_HouseholdResidence	External identifier (HouseholdResidence)			
+SAPRIN:StartEvent_HouseholdResidence	StartEvent (HouseholdResidence)			
+SAPRIN:EndEvent_HouseholdResidence	EndEvent (HouseholdResidence)			
+SAPRIN:Membership_Episodes	Membership Episodes			
+SAPRIN:Individual_Membership_Episodes	Individual (Membership Episodes)			
+SAPRIN:Household_Membership_Episodes	Household (Membership Episodes)			
+SAPRIN:StartEvent_Membership_Episodes	StartEvent (Membership Episodes)			
+SAPRIN:EndEvent_Membership_Episodes	EndEvent (Membership Episodes)			
+SAPRIN:Household_Head_Relationship	Household Head Relationship			
+SAPRIN:Membership_Household_Head_Relationship	Membership (Household Head Relationship)			
+SAPRIN:Relationship	Relationship			
+SAPRIN:StartEvent_Household_Head_Relationship	StartEvent (Household Head Relationship)			
+SAPRIN:EndEvent_Household_Head_Relationship	EndEvent (Household Head Relationship)			
+SAPRIN:Union	Union			
+SAPRIN:Individual1	Individual1			
+SAPRIN:Individual2	Individual2			
+SAPRIN:StartEvent_Union	StartEvent (Union)			
+SAPRIN:MarriageDate	MarriageDate			
+SAPRIN:EndEvent_Union	EndEvent (Union)			
+SAPRIN:Pregnancy	Pregnancy		pregnancy history	
+SAPRIN:Woman	Woman		pregnancy history	
+SAPRIN:ANCVisits	ANCVisits		pregnancy history	
+SAPRIN:Duration	Duration		pregnancy history	
+SAPRIN:Outcome	Outcome		pregnancy history	
+SAPRIN:Social_support	Social support			
+SAPRIN:Grantholder	Grantholder			
+SAPRIN:Beneficiary	Beneficiary			
+SAPRIN:Type_Social_support	Type (Social support)			
+SAPRIN:StartDate	StartDate			
+SAPRIN:EndDate	EndDate			
+SAPRIN:StatusObservation	StatusObservation		SAPRIN	
+SAPRIN:Individual_StatusObservation	Individual StatusObservation			
+SAPRIN:Individual_Individual_StatusObservation	Individual (Individual StatusObservation)			
+SAPRIN:Observation_Individual_StatusObservation	Observation (Individual StatusObservation)			
+SAPRIN:ResidentStatus	ResidentStatus		residence	
+SAPRIN:MotherStatus	MotherStatus			
+SAPRIN:FatherStatus	FatherStatus			
+SAPRIN:HighestSchoolLevelCompleted	HighestSchoolLevelCompleted		education	
+SAPRIN:HighestNonSchoolEducation	HighestNonSchoolEducation		education	
+SAPRIN:CurrentEducation	CurrentEducation		education	
+SAPRIN:Currently_employed	Currently employed		occupation	
+SAPRIN:Not_employed	Not employed		occupation	
+SAPRIN:EmploymentSector	EmploymentSector		occupation	
+SAPRIN:EmploymentType	EmploymentType		occupation	
+SAPRIN:Employer	Employer		occupation	
+SAPRIN:FinancialStatus	FinancialStatus			
+SAPRIN:MaritalStatus	MaritalStatus		marital status value	
+SAPRIN:PartnershipStatus	PartnershipStatus			
+SAPRIN:HealthStatus	HealthStatus			
+SAPRIN:Tuberculosis	Tuberculosis		diagnosis of tuberculosis	
+SAPRIN:HIV	HIV		diagnosis of HIV	
+SAPRIN:If_HIVPos	If HIV+		diagnosis of HIV	
+SAPRIN:If_HIVNeg	If HIV-		diagnosis of HIV	
+SAPRIN:HIVResult	HIVResult		diagnosis of HIV	
+SAPRIN:Hypertension	Hypertension		diagnosis of hypertension	
+SAPRIN:Diabetes	Diabetes		diagnosis of diabetes	
+SAPRIN:Health_care_utilisation	Health care utilisation			
+SAPRIN:Vaccination_history	Vaccination history (child <=6yr)		clinical history	do we want to be more specific?
+SAPRIN:Household_Status_Observation	Household Status Observation			
+SAPRIN:Water_source	Water source			
+SAPRIN:Toilet	Toilet			
+SAPRIN:Electricity_supply	Electricity supply			
+SAPRIN:Cooking_fuel	Cooking fuel			
+SAPRIN:Dwelling_construction	Dwelling construction			
+SAPRIN:Assets	Assets			
+SAPRIN:Crime	Crime			
+SAPRIN:Financial_situation	Financial situation			
+SAPRIN:Food_security	Food security			

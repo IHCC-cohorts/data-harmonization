@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>Cohort Name</th>
+                <th>Tree View</th>
+                <th>Mapping Tree View</th>
+                <th>Terms Table</th>
+                <th>OWL Ontology</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td><a href="{{ item.tree }}">Browse {{ item.id }}.owl</a></td>
+            <td><a href="{{ item.mapping }}">Browse {{ item.id }}-GECKO mappings</a></td>
+            <td><a href="{{ item.terms }}">View terms from {{ item.id }}</a></td>
+            <td><a href="{{ items.owl }}">Download {{ item.id }}.owl</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>

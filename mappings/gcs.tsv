@@ -34,7 +34,7 @@ GCS:Subdistrict	Subdistrict	subclass	residence	Specifies the participant Subdist
 GCS:Village	Village	subclass	residence	Specifies the participant Village of Residence																				
 GCS:Street	Street	subclass	residence	Specifies the participant Street of Residence																				
 GCS:Alley	Alley	subclass	residence	Specifies the participant Alley of Residence																				
-GCS:CV name	CV name	subclass	residence	Specifies the names of cities or villages in one variable																				
+GCS:CV_name	CV name	subclass	residence	Specifies the names of cities or villages in one variable																				
 GCS:City_Village	City_Village	subclass	residence	Specifies residence in cities or villages																				
 GCS:HouseNumber	HouseNumber	subclass	residence	Specifies the participant's House Number of Residence																				
 GCS:ZipCode	ZipCode	subclass	residence	Specifies the participant's Zip Code of Residence																				
@@ -211,7 +211,7 @@ GCS:SymRefluxPastYearFreq	SymRefluxPastYearFreq		occurrence of acid reflux	if th
 GCS:SymRefluxPastYearSeverity	SymRefluxPastYearSeverity		occurrence of acid reflux	Severity Reflux Symptom in past year																				
 GCS:SymRefluxPriorYearsFreq	SymRefluxPriorYearsFreq		occurrence of acid reflux	if the participant has Reflux Symptom in Prior year select yes if not select no																				
 GCS:SymRefluxPriorYearsSeverity	SymRefluxPriorYearsSeverity		occurrence of acid reflux	Severity Reflux Symptom in Prior year																				
-GCS:RefluxHeartburnTXFlag	RefluxHeartburnTXFlag		medication history	if participant used drug for Heartburn symptoms select yes if not select no and if participant doesn't have symtom selectLack of signage	should we create medication for heartburn?																			
+GCS:RefluxHeartburnTXFlag	RefluxHeartburnTXFlag		medication	if participant used drug for Heartburn symptoms select yes if not select no and if participant doesn't have symtom selectLack of signage	should we create medication for heartburn?																			
 GCS:WeightLossFlag	WeightLossFlag		clinical history	if the patient has Weightloss in past year select yes if not select no	should we be more specific here?																			
 GCS:WeightLossAmount	WeightLossAmount		clinical history	Specifies the amount of weight loss																				
 GCS:WeightLossIntent	WeightLossIntent		clinical history	if the patient has Intentional weight loss select Yes if not select no and doesn't have weight loss select I have no weight loss																				
@@ -320,7 +320,7 @@ GCS:AlcEndAge_3	AlcEndAge_3	subclass	alcohol	Specifies the participant used alco
 GCS:AlcType_3	AlcType_3	subclass	alcohol	Specifies the participant alcohol used Type, third history																				
 GCS:AlcQuantityPerEpisode_3	AlcQuantityPerEpisode_3	subclass	alcohol	Specifies the average alcohol the participant used per episode, third history																				
 GCS:AlcEpisodesPerMonth_3	AlcEpisodesPerMonth_3	subclass	alcohol	Specifies the participant Alcohol episodes in month, third history																				
-GCS:DrugCurrentuse	DrugCurrentuse	subclass	medication history	Currently taking any medication?																				
+GCS:DrugCurrentuse	DrugCurrentuse	subclass	medication	Currently taking any medication?																				
 GCS:antiHTN	antiHTN	subclass	history of medication for hypertension	Anti-hypertensive drugs: 1: diuretics 2: beta-blockers 3: ACE Inhibitors 4: ARBs 5: Alpha-adrenergic blockers 6: Calcium channel blockers 7:other anti-hypertensives																				
 GCS:antiDM	antiDM	subclass	history of medication for diabetes	Anti-diabetic drugs: 1: Glibenclamide 2: metformin 3: insulin 4: other																				
 GCS:cardiac	cardiac	subclass	history of medication for cardiac disease	Cardiac drugs: 1: Anti-platelets 2: statins 3: Beta-blockers 4: Nitrates 5: ACE Inhibitors 6: ARBs 7: Calcium Channel blockers 8: other																				
@@ -348,46 +348,46 @@ GCS:Diclophenac	Diclophenac	subclass	use of diclophenac	Diclophenac
 GCS:Indomethacin	Indomethacin	subclass	use of indomethacin	Indomethacin																				
 GCS:Levothyroxin	Levothyroxin	subclass	use of levthyroxine	Levthyroxin																				
 GCS:Methotrexate	Methotrexate	subclass	use of methotrexate	Methotrexate																				
-GCS:Other	Other	subclass	medication history	Other																				
-GCS:DrugCurrentuse	DrugCurrentuse	subclass	medication history	Currently taking any medication?																				
-GCS:drugname_1	drugname_1	subclass	medication history	Name of drug 1	Could name fall under "prescription"?																			
-GCS:drugduration_1	drugduration_1	subclass	medication history	Number of years being under treatment 1																				
+GCS:Other	Other	subclass	medication	Other																				
+GCS:DrugCurrentuse	DrugCurrentuse	subclass	medication	Currently taking any medication?																				
+GCS:drugname_1	drugname_1	subclass	medication	Name of drug 1	"Could name fall under ""prescription""?"																			
+GCS:drugduration_1	drugduration_1	subclass	medication	Number of years being under treatment 1																				
 GCS:drugfrequency_1	drugfrequency_1	subclass	posology	Frequency of drug consumption 1																				
 GCS:drugdose_1	drugdose_1	subclass	posology	Dose of drug consumed 1																				
-GCS:drugname_2	drugname_2	subclass	medication history	Name of drug 2																				
-GCS:drugduration_2	drugduration_2	subclass	medication history	Number of years being under treatment 2																				
+GCS:drugname_2	drugname_2	subclass	medication	Name of drug 2																				
+GCS:drugduration_2	drugduration_2	subclass	medication	Number of years being under treatment 2																				
 GCS:drugfrequency_2	drugfrequency_2	subclass	posology	Frequency of drug consumption 2																				
 GCS:drugdose_2	drugdose_2	subclass	posology	Dose of drug consumed 2																				
-GCS:drugname_3	drugname_3	subclass	medication history	Name of drug 3																				
-GCS:drugduration_3	drugduration_3	subclass	medication history	Number of years being under treatment 3																				
+GCS:drugname_3	drugname_3	subclass	medication	Name of drug 3																				
+GCS:drugduration_3	drugduration_3	subclass	medication	Number of years being under treatment 3																				
 GCS:drugfrequency_3	drugfrequency_3	subclass	posology	Frequency of drug consumption 3																				
 GCS:drugdose_3	drugdose_3	subclass	posology	Dose of drug consumed 3																				
-GCS:drugname_4	drugname_4	subclass	medication history	Name of drug 4																				
-GCS:drugduration_4	drugduration_4	subclass	medication history	Number of years being under treatment 4																				
+GCS:drugname_4	drugname_4	subclass	medication	Name of drug 4																				
+GCS:drugduration_4	drugduration_4	subclass	medication	Number of years being under treatment 4																				
 GCS:drugfrequency_4	drugfrequency_4	subclass	posology	Frequency of drug consumption 4																				
 GCS:drugdose_4	drugdose_4	subclass	posology	Dose of drug consumed 4																				
-GCS:drugname_5	drugname_5	subclass	medication history	Name of drug 5																				
-GCS:drugduration_5	drugduration_5	subclass	medication history	Number of years being under treatment 5																				
+GCS:drugname_5	drugname_5	subclass	medication	Name of drug 5																				
+GCS:drugduration_5	drugduration_5	subclass	medication	Number of years being under treatment 5																				
 GCS:drugfrequency_5	drugfrequency_5	subclass	posology	Frequency of drug consumption 5																				
 GCS:drugdose_5	drugdose_5	subclass	posology	Dose of drug consumed 5																				
-GCS:drugname_6	drugname_6	subclass	medication history	Name of drug 6																				
-GCS:drugduration_6	drugduration_6	subclass	medication history	Number of years being under treatment 6																				
+GCS:drugname_6	drugname_6	subclass	medication	Name of drug 6																				
+GCS:drugduration_6	drugduration_6	subclass	medication	Number of years being under treatment 6																				
 GCS:drugfrequency_6	drugfrequency_6	subclass	posology	Frequency of drug consumption 6																				
 GCS:drugdose_6	drugdose_6	subclass	posology	Dose of drug consumed 6																				
-GCS:drugname_7	drugname_7	subclass	medication history	Name of drug 7																				
-GCS:drugduration_7	drugduration_7	subclass	medication history	Number of years being under treatment 7																				
+GCS:drugname_7	drugname_7	subclass	medication	Name of drug 7																				
+GCS:drugduration_7	drugduration_7	subclass	medication	Number of years being under treatment 7																				
 GCS:drugfrequency_7	drugfrequency_7	subclass	posology	Frequency of drug consumption 7																				
 GCS:drugdose_7	drugdose_7	subclass	posology	Dose of drug consumed 7																				
-GCS:drugname_8	drugname_8	subclass	medication history	Name of drug 8																				
-GCS:drugduration_8	drugduration_8	subclass	medication history	Number of years being under treatment 8																				
+GCS:drugname_8	drugname_8	subclass	medication	Name of drug 8																				
+GCS:drugduration_8	drugduration_8	subclass	medication	Number of years being under treatment 8																				
 GCS:drugfrequency_8	drugfrequency_8	subclass	posology	Frequency of drug consumption 8																				
 GCS:drugdose_8	drugdose_8	subclass	posology	Dose of drug consumed 8																				
-GCS:drugname_9	drugname_9	subclass	medication history	Name of drug 9																				
-GCS:drugduration_9	drugduration_9	subclass	medication history	Number of years being under treatment 9																				
+GCS:drugname_9	drugname_9	subclass	medication	Name of drug 9																				
+GCS:drugduration_9	drugduration_9	subclass	medication	Number of years being under treatment 9																				
 GCS:drugfrequency_9	drugfrequency_9	subclass	posology	Frequency of drug consumption 9																				
 GCS:drugdose_9	drugdose_9	subclass	posology	Dose of drug consumed 9																				
-GCS:drugname_10	drugname_10	subclass	medication history	Name of drug 10																				
-GCS:drugduration_10	drugduration_10	subclass	medication history	Number of years being under treatment 10																				
+GCS:drugname_10	drugname_10	subclass	medication	Name of drug 10																				
+GCS:drugduration_10	drugduration_10	subclass	medication	Number of years being under treatment 10																				
 GCS:drugfrequency_10	drugfrequency_10	subclass	posology	Frequency of drug consumption 10																				
 GCS:drugdose_10	drugdose_10	subclass	posology	Dose of drug consumed 10																				
 GCS:OralPermanentTeethLossFlag	OralPermanentTeethLossFlag	subclass	oral health history	Permanent Teeth Loss																				
@@ -430,7 +430,7 @@ GCS:physactexstrenminsduringwork	physactexstrenminsduringwork	subclass	physical 
 GCS:physactexstrenminsnowork	physactexstrenminsnowork	subclass	physical activity	Intensive exercise such as horse riding: minutes during leasure times																				
 GCS:physacttvminsduringwork	physacttvminsduringwork	subclass	physical activity	Watching TV, resting, reading: minutes during working times																				
 GCS:physacttvminsnowork	physacttvminsnowork	subclass	physical activity	Watching TV, resting, reading: minutes during leasure times																				
-GCS:Metabolic Equivalent Task	Metabolic Equivalent Task	subclass	physical activity	Energy cost of physical activities defined as the ratio of metabolic rate (and therefore the rate of energy consumption) during a specific physical activity to a reference metabolic rate																				
+GCS:Metabolic_Equivalent_Task	Metabolic Equivalent Task	subclass	physical activity	Energy cost of physical activities defined as the ratio of metabolic rate (and therefore the rate of energy consumption) during a specific physical activity to a reference metabolic rate																				
 GCS:AnimalStartAge_1	AnimalStartAge_1		lifestyle and behaviours	Specifies the age of the participants he had contact with animals, first history	not sure if this is correct - do we want to be more specific?																			
 GCS:AnimalEndAge_1	AnimalEndAge_1		lifestyle and behaviours	Specifies the age of the participants he didn't have contact with animals, first history																				
 GCS:AnimalLevelOfContact_1	AnimalLevelOfContact_1		lifestyle and behaviours	The intensity of animal contact, first history																				
@@ -480,17 +480,17 @@ GCS:Energy	Energy		information about diet	Amount consumed per day	do we want to 
 GCS:fat	fat		information about diet	Amount consumed per day																				
 GCS:salt	salt		information about diet	Amount consumed per day																				
 GCS:protein	protein		information about diet	Amount consumed per day																				
-GCS:total saturated fat	total saturated fat		information about diet	Amount consumed per day																				
-GCS:total trans fat	total trans fat		information about diet	Amount consumed per day																				
-GCS:hydrogenated oil	hydrogenated oil		information about diet	Amount consumed per day																				
+GCS:total_saturated_fat	total saturated fat		information about diet	Amount consumed per day																				
+GCS:total_trans_fat	total trans fat		information about diet	Amount consumed per day																				
+GCS:hydrogenated_oil	hydrogenated oil		information about diet	Amount consumed per day																				
 GCS:carbohyderate	carbohyderate		information about diet	Amount consumed per day																				
-GCS:red meat	red meat		information about diet	Amount consumed per day																				
-GCS:processed meat	processed meat		information about diet	Amount consumed per day																				
+GCS:red_meat	red meat		information about diet	Amount consumed per day																				
+GCS:processed_meat	processed meat		information about diet	Amount consumed per day																				
 GCS:fruits	fruits		information about diet	Amount consumed per day																				
 GCS:vegetables	vegetables		information about diet	Amount consumed per day																				
-GCS:dairy products	dairy products		information about diet	Amount consumed per day																				
+GCS:dairy_products	dairy products		information about diet	Amount consumed per day																				
 GCS:milk	milk		information about diet	Amount consumed per day																				
-GCS:dietary fiber	dietary fiber		information about diet	Amount consumed per day																				
+GCS:dietary_fiber	dietary fiber		information about diet	Amount consumed per day																				
 GCS:Fish	Fish		information about diet	Amount consumed per day																				
 GCS:Chicken	Chicken		information about diet	Amount consumed per day																				
 GCS:SodiumNa	SodiumNa		information about diet	Amount consumed per day																				
@@ -501,16 +501,16 @@ GCS:Phosphorus	Phosphorus		information about diet	Amount consumed per day
 GCS:Potassium	Potassium		information about diet	Amount consumed per day																				
 GCS:Zinc	Zinc		information about diet	Amount consumed per day																				
 GCS:Folate	Folate		information about diet	Amount consumed per day																				
-GCS:Vitamin D	Vitamin D		information about diet	Amount consumed per day																				
-GCS:Vitamin A	Vitamin A		information about diet	Amount consumed per day																				
-GCS:Vitamin B1	Vitamin B1		information about diet	Amount consumed per day																				
-GCS:Vitamin B2	Vitamin B2		information about diet	Amount consumed per day																				
-GCS:Vitamin B12	Vitamin B12		information about diet	Amount consumed per day																				
-GCS:Vitamin C	Vitamin C		information about diet	Amount consumed per day																				
+GCS:Vitamin_D	Vitamin D		information about diet	Amount consumed per day																				
+GCS:Vitamin_A	Vitamin A		information about diet	Amount consumed per day																				
+GCS:Vitamin_B1	Vitamin B1		information about diet	Amount consumed per day																				
+GCS:Vitamin_B2	Vitamin B2		information about diet	Amount consumed per day																				
+GCS:Vitamin_B12	Vitamin B12		information about diet	Amount consumed per day																				
+GCS:Vitamin_C	Vitamin C		information about diet	Amount consumed per day																				
 GCS:Niacin	Niacin		information about diet	Amount consumed per day																				
-GCS:Glycemic load	Glycemic load		information about diet	Amount consumed per day																				
-GCS:Glycemic Index	Glycemic Index		information about diet	Amount consumed per day																				
-GCS:Sugar intake	Sugar intake		information about diet	Amount consumed per day																				
+GCS:Glycemic_load	Glycemic load		information about diet	Amount consumed per day																				
+GCS:Glycemic_Index	Glycemic Index		information about diet	Amount consumed per day																				
+GCS:Sugar_intake	Sugar intake		information about diet	Amount consumed per day																				
 GCS:Nuts	Nuts		information about diet	Amount consumed per day																				
 GCS:tea	tea		information about diet	Amount consumed per day																				
 GCS:Coffee	Coffee		information about diet	Amount consumed per day																				

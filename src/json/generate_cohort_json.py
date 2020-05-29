@@ -7,15 +7,14 @@ from argparse import ArgumentParser, FileType
 master_map = {}
 ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
                     'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']
-general_variables = ['signs and symptoms']
 
 
 def main():
     global master_map
-    parser = ArgumentParser(description='TODO')
-    parser.add_argument('cohorts_csv', type=FileType('r'))
-    parser.add_argument('cohorts_metadata', type=FileType('r'))
-    parser.add_argument('cineca', type=FileType('r'))
+    parser = ArgumentParser(description='Create JSON for IHCC cohort browser')
+    parser.add_argument('cohorts_csv', type=FileType('r'), help='IHCC member cohort details')
+    parser.add_argument('cohorts_metadata', type=FileType('r'), help='Cohort metadata (name -> ID, prefix)')
+    parser.add_argument('cineca', type=FileType('r'), help='JSON structure of CINECA model')
     parser.add_argument('output', type=FileType('w'), help='output JSON')
 
     args = parser.parse_args()
@@ -76,7 +75,7 @@ def main():
 
     all_data = []
     for cohort_name, cohort_metadata in metadata.items():
-        file_name = 'build/mapping/{0}-gecko.ttl'.format(cohort_metadata['id'].lower())
+        file_name = 'build/intermediate/{0}-gecko.ttl'.format(cohort_metadata['id'].lower())
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
         child_to_parent = get_children(gin, 'http://example.com/GECKO_9999998')
@@ -84,6 +83,17 @@ def main():
         data = get_categories(child_to_parent, cineca)
         if cohort_name in cohort_data:
             this_cohort = cohort_data[cohort_name]
+            this_cohort.update(data)
+            all_data.append(this_cohort)
+        else:
+            this_cohort = {'cohort_name': cohort_name,
+                           'countries': [],
+                           'pi_lead': '',
+                           'website': '',
+                           'current_enrollment': '',
+                           'target_enrollment': '',
+                           'enrollment_period': '',
+                           'available_data_types': []}
             this_cohort.update(data)
             all_data.append(this_cohort)
 
@@ -99,9 +109,11 @@ def build_nested(nested_dict, reverse_path):
     :param reverse_path: path from current level up
     :return: nested dictionary from path
     """
+    if len(reverse_path) == 0:
+        return nested_dict
     cur_level = reverse_path.pop(0)
     new_dict = {cur_level: nested_dict}
-    if reverse_path:
+    if len(reverse_path) > 0:
         return build_nested(new_dict, reverse_path)
     else:
         return new_dict

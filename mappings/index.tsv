@@ -3,7 +3,7 @@ ID	A alternative term	LABEL		CLASS_TYPE	C % SPLIT=|	C 'has target' some %	C 'out
 BFO:0000001		entity																										
 BFO:0000015		process			entity																							
 BFO:0000040		material entity			entity																							
-CHEBI:15365		acetylsalicylic acid			chemical entity																							
+CHEBI:15365		acetylsalicylic acid			chemical entity
 CHEBI:16113		cholesterol			chemical entity																							
 CHEBI:16199		urea			chemical entity																							
 CHEBI:16301		nitrite			chemical entity																							
@@ -53,9 +53,9 @@ CL:0000767		basophil			cell
 CL:0000771		eosinophil			cell																							
 CL:0000775		neutrophil			cell																							
 CMO:0000003	blood pressure measurement	blood pressure measurement value		equivalent	blood pressure																							
-CMO:0000004	systolic blood pressure	systolic blood pressure value			blood pressure measurement value																							
-CMO:0000005	diastolic blood pressure	diastolic blood pressure value			blood pressure measurement value																							
-CMO:0000008	calculated blood pressure	calculated blood pressure value			blood pressure measurement value																							
+CMO:0000004	systolic blood pressure	systolic blood pressure value			blood pressure measurement value
+CMO:0000005	diastolic blood pressure	diastolic blood pressure value			blood pressure measurement value
+CMO:0000008	calculated blood pressure	calculated blood pressure value			blood pressure measurement value
 CMO:0000014	hip circumference	hip circumference value			anthropometry																							
 CMO:0000028	blood protein measurement	blood protein measurement value		equivalent	blood measurement value	protein																						
 CMO:0000030	blood neutrophil count	blood neutrophil count value		equivalent	blood measurement value	neutrophil																						
@@ -70,12 +70,12 @@ CMO:0000049	blood urea nitrogen level	blood urea nitrogen level value		equivalen
 CMO:0000051	blood total cholesterol level	blood total cholesterol level value		equivalent	blood measurement value	cholesterol																						
 CMO:0000052	blood high density lipoprotein cholesterol level	blood high density lipoprotein cholesterol level value		equivalent	blood measurement value	high-density lipoprotein cholesterol																						
 CMO:0000053	blood low density lipoprotein cholesterol level	blood low density lipoprotein cholesterol level value		equivalent	blood measurement value	low-density lipoprotein cholesterol																						
-CMO:0000105	body mass index (BMI)	body mass index value			anthropometry																							
+CMO:0000105	body mass index (BMI)	body mass index value			anthropometry
 CMO:0000115	blood renin activity level	blood renin activity level value		equivalent	blood measurement value	renin																						
 CMO:0000123	blood bilirubin level	blood bilirubin level value			blood measurement value	bilirubin																						
 CMO:0000125	urine creatinine level	urine creatinine level value		equivalent	urine measurement value	creatinine																						
 CMO:0000129	urine sodium level	urine sodium level value			urine measurement value	sodium																						
-CMO:0000187	distal forelimb circumference	arm circumference value			anthropometry																							
+CMO:0000187	distal forelimb circumference	arm circumference value			anthropometry
 CMO:0000209	blood fibrinogen level	blood fibrinogen level value		equivalent	blood measurement value	fibrinogen complex																						
 CMO:0000242	waist circumference	waist circumference value		subclass	anthropometry																							
 CMO:0000256	urine measurement	urine measurement value		equivalent	urine																							
@@ -126,14 +126,14 @@ CMO:0002821	blood osteocalcin level	blood osteocalcin level value		equivalent	bl
 DOID:0050155		auditory system disease			disease																							
 DOID:10652		Alzheimer's disease			disease																							
 DOID:1307		dementia			disease																							
-DOID:14566	disease of cellular proliferation	neoplasm																										
+DOID:14566	disease of cellular proliferation	neoplasm
 DOID:1579		respiratory system disease		equivalent	respiratory system																							
 DOID:2825		nose disease			disease																							
-DOID:2841		asthma			disease																							
-DOID:3083		chronic obstructive pulmonary disease			disease																							
+DOID:2841		asthma			disease
+DOID:3083		chronic obstructive pulmonary disease			disease
 DOID:4		disease			entity																							
 DOID:5223		infertility			disease																							
-DOID:526	human immunodeficiency virus infectious disease	human immunodeficiency virus infectious disease			disease																							
+DOID:526	human immunodeficiency virus infectious disease	human immunodeficiency virus infectious disease			disease
 DOID:535		sleep disorder			disease																							
 DOID:77		gastrointestinal system disease			disease																							
 DOID:848		arthritis			disease																							
@@ -233,12 +233,12 @@ GECKO:0000089		blood pressure			CINECA
 GECKO:0000090		heart rate			CINECA																							
 GECKO:0000091		non-pharmacological interventions			CINECA|clinical history																							
 GECKO:0000092		surgical interventions			CINECA																							
-GECKO:0000093	medication	medication history			CINECA|clinical history																							
-GECKO:0000094	associated disease(s)	disease(s) treated with medication			CINECA																							
+GECKO:0000093		medication			CINECA|clinical history																							
+GECKO:0000094		associated disease(s)			CINECA																							
 GECKO:0000095		prescription			CINECA																							
 GECKO:0000096		drug response(s)			CINECA																							
 GECKO:0000097		posology			CINECA																							
-GECKO:0000098	administration method	administration method of medication			CINECA																							
+GECKO:0000098		administration method			CINECA																							
 GECKO:0000099		life stage/time point			CINECA																							
 GECKO:0000100		general research data documents			CINECA																							
 GECKO:0000101		statistics			CINECA																							
@@ -314,71 +314,71 @@ GECKO:1000074		quality of life survey result			lifestyle and behaviours	Quality 
 GECKO:1000075		activity of daily living survey result			lifestyle and behaviours	Activity of Daily Living					mental health																	
 GECKO:1000076		spirometry result			circulation and respiration		spirometry																					
 GECKO:1000077		unsaturated iron binding capacity measurement value			blood measurement value																							
-GECKO:1000078		type of medication taken			medication history																							
-GECKO:1000079		use of antibiotics			type of medication taken																							
-GECKO:1000080		use of therapeutic hormones			type of medication taken						maybe not the best name																	
-GECKO:1000081		use of steroid hormones			use of therapeutic hormones																							
-GECKO:1000082		use of corticosteroids			use of steroid hormones																							
-GECKO:1000083		use of diuretics			type of medication taken																							
-GECKO:1000084		use of beta blockers			use of adrenergic agents																							
-GECKO:1000085		use of antihypertensive agents			type of medication taken																							
-GECKO:1000086		use of angiotensin convertin enzyme inhibitors			use of antihypertensive agents																							
-GECKO:1000087		use of angiotensin receptor blockers			use of antihypertensive agents																							
-GECKO:1000088		use of adrenergic agents			type of medication taken																							
-GECKO:1000089		use of alpha adrenergic blockers			use of adrenergic agents																							
-GECKO:1000090		use of calcium channel blockers			type of medication taken																							
-GECKO:1000091		use of antidiabetes agents			type of medication taken																							
-GECKO:1000092		use of cardiovascular drugs			type of medication taken																							
-GECKO:1000093		use of glibenclamide			use of antidiabetes agents																							
-GECKO:1000094		use of metformin			use of antidiabetes agents																							
-GECKO:1000095		use of insulin			use of antidiabetes agents																							
-GECKO:1000096		use of antiplatelets			type of medication taken																							
-GECKO:1000097		use of anticholesteremic agents			type of medication taken																							
-GECKO:1000098		use of statins			use of anticholesteremic agents																							
-GECKO:1000099		use of nitrates			use of cardiovascular drugs																							
-GECKO:1000100		use of gemfibroxil			use of anticholesteremic agents																							
-GECKO:1000101		use of analgesics			type of medication taken																							
-GECKO:1000102		use of acetaminophen			use of analgesics																							
-GECKO:1000103		use of ibuprofen			use of analgesics																							
-GECKO:1000104		use of diclophenac			use of analgesics																							
-GECKO:1000105		use of indomethacin			use of analgesics																							
-GECKO:1000106		use of thyroid hormones			use of therapeutic hormones																							
-GECKO:1000107		use of levthyroxine			use of thyroid hormones																							
-GECKO:1000108		use of antineoplastic agents			type of medication taken																							
-GECKO:1000109		use of immunosuppressants			type of medication taken																							
-GECKO:1000110		use of methotrexate			use of antineoplastic agents|use of immunosuppressants																							
-GECKO:1000111		use of gastrointestinal drugs			type of medication taken																							
-GECKO:1000112		use of central nervous system drugs			type of medication taken						e.g., psychotropics and anticonvulsants																	
-GECKO:1000113		diagnosis of hypertension			circulatory system																							
-GECKO:1000115		diagnosis of heart disease			circulatory system																							
-GECKO:1000116		diagnosis of diabetes			endocrine/nutritional/metabolic disorders																							
-GECKO:1000117		occurrence of stroke			signs and symptoms					Stroke																		
-GECKO:1000118		diagnosis of chronic obstructive pulmonary disease			respiratory system																							
-GECKO:1000120		diagnosis of renal failure			diagnosis of renal disease																							
-GECKO:1000121		diagnosis of jaundice			endocrine/nutritional/metabolic disorders																							
-GECKO:1000122		diagnosis of liver failure			diagnosis of liver disease																							
-GECKO:1000124		diagnosis of bacterial infection			diseases																							
-GECKO:1000125		diagnosis of tuberculosis			diagnosis of bacterial infection																							
-GECKO:1000126		occurrence of acid reflux			signs and symptoms																							
-GECKO:1000127		occurrence of heartburn			signs and symptoms																							
-GECKO:1000128		occurrence of difficulty swallowing			signs and symptoms																							
-GECKO:1000129		history of medication for hypertension			disease(s) treated with medication																							
-GECKO:1000130		history of medication for diabetes			disease(s) treated with medication																							
-GECKO:1000131		history of medication for cardiac disease			disease(s) treated with medication																							
-GECKO:1000132		history of medication for high cholesterol			disease(s) treated with medication																							
-GECKO:1000133		history of medication for mental disorder			disease(s) treated with medication																							
-GECKO:1000134		history of medication for gastrointestinal disease			disease(s) treated with medication																							
-GECKO:1000135		opiate use history			recreational drug use history																							
-GECKO:1000136		oral health history			clinical history																							
-GECKO:1000137		recreational drug use history			clinical history|lifestyle and behaviours																							
-GECKO:1000138		diagnosis of HIV			diagnosis of viral infection				human immunodeficiency virus infectious disease																			
-GECKO:1000139		diagnosis of viral infection			diseases																							
-GECKO:1000140		occurrence of high cholesterol			signs and symptoms						symptom or diagnosis?																	
-GECKO:1000141		occurrence of cough			signs and symptoms					Cough																		
-GECKO:1000142		occurrence of fever			signs and symptoms																							
-GECKO:1000143		occurrence of weight loss			signs and symptoms																							
-GECKO:1000144		occurrence of night sweats			signs and symptoms																							
-GECKO:1000145		history of medication for tuberculosis			disease(s) treated with medication																							
+GECKO:1000078		type of medication taken			medication
+GECKO:1000079		use of antibiotics			type of medication taken
+GECKO:1000080		use of therapeutic hormones			type of medication taken						maybe not the best name
+GECKO:1000081		use of steroid hormones			use of therapeutic hormones
+GECKO:1000082		use of corticosteroids			use of steroid hormones
+GECKO:1000083		use of diuretics			type of medication taken
+GECKO:1000084		use of beta blockers			use of adrenergic agents			
+GECKO:1000085		use of antihypertensive agents			type of medication taken				
+GECKO:1000086		use of angiotensin convertin enzyme inhibitors			use of antihypertensive agents				
+GECKO:1000087		use of angiotensin receptor blockers			use of antihypertensive agents				
+GECKO:1000088		use of adrenergic agents			type of medication taken				
+GECKO:1000089		use of alpha adrenergic blockers			use of adrenergic agents
+GECKO:1000090		use of calcium channel blockers			type of medication taken			
+GECKO:1000091		use of antidiabetes agents			type of medication taken
+GECKO:1000092		use of cardiovascular drugs			type of medication taken
+GECKO:1000093		use of glibenclamide			use of antidiabetes agents
+GECKO:1000094		use of metformin			use of antidiabetes agents
+GECKO:1000095		use of insulin			use of antidiabetes agents
+GECKO:1000096		use of antiplatelets			type of medication taken				
+GECKO:1000097		use of anticholesteremic agents			type of medication taken
+GECKO:1000098		use of statins			use of anticholesteremic agents
+GECKO:1000099		use of nitrates			use of cardiovascular drugs
+GECKO:1000100		use of gemfibroxil			use of anticholesteremic agents
+GECKO:1000101		use of analgesics			type of medication taken
+GECKO:1000102		use of acetaminophen			use of analgesics
+GECKO:1000103		use of ibuprofen			use of analgesics
+GECKO:1000104		use of diclophenac			use of analgesics
+GECKO:1000105		use of indomethacin			use of analgesics
+GECKO:1000106		use of thyroid hormones			use of therapeutic hormones	
+GECKO:1000107		use of levthyroxine			use of thyroid hormones
+GECKO:1000108		use of antineoplastic agents			type of medication taken			
+GECKO:1000109		use of immunosuppressants			type of medication taken	
+GECKO:1000110		use of methotrexate			use of antineoplastic agents|use of immunosuppressants
+GECKO:1000111		use of gastrointestinal drugs			type of medication taken
+GECKO:1000112		use of central nervous system drugs			type of medication taken						e.g., psychotropics and anticonvulsants
+GECKO:1000113		diagnosis of hypertension			circulatory system
+GECKO:1000115		diagnosis of heart disease			circulatory system
+GECKO:1000116		diagnosis of diabetes			endocrine/nutritional/metabolic disorders				
+GECKO:1000117		occurrence of stroke			signs and symptoms					Stroke
+GECKO:1000118		diagnosis of chronic obstructive pulmonary disease			respiratory system				
+GECKO:1000120		diagnosis of renal failure			diagnosis of renal disease
+GECKO:1000121		diagnosis of jaundice			endocrine/nutritional/metabolic disorders
+GECKO:1000122		diagnosis of liver failure			diagnosis of liver disease
+GECKO:1000124		diagnosis of bacterial infection			diseases
+GECKO:1000125		diagnosis of tuberculosis			diagnosis of bacterial infection				
+GECKO:1000126		occurrence of acid reflux			signs and symptoms
+GECKO:1000127		occurrence of heartburn			signs and symptoms
+GECKO:1000128		occurrence of difficulty swallowing			signs and symptoms
+GECKO:1000129		history of medication for hypertension			associated disease(s)																							
+GECKO:1000130		history of medication for diabetes			associated disease(s)																							
+GECKO:1000131		history of medication for cardiac disease			associated disease(s)																							
+GECKO:1000132		history of medication for high cholesterol			associated disease(s)																							
+GECKO:1000133		history of medication for mental disorder			associated disease(s)																							
+GECKO:1000134		history of medication for gastrointestinal disease			associated disease(s)																							
+GECKO:1000135		opiate use history			recreational drug use history	
+GECKO:1000136		oral health history			clinical history
+GECKO:1000137		recreational drug use history			clinical history|lifestyle and behaviours
+GECKO:1000138		diagnosis of HIV			diagnosis of viral infection				human immunodeficiency virus infectious disease
+GECKO:1000139		diagnosis of viral infection			diseases			
+GECKO:1000140		occurrence of high cholesterol			signs and symptoms						symptom or diagnosis?
+GECKO:1000141		occurrence of cough			signs and symptoms					Cough
+GECKO:1000142		occurrence of fever			signs and symptoms				
+GECKO:1000143		occurrence of weight loss			signs and symptoms
+GECKO:1000144		occurrence of night sweats			signs and symptoms
+GECKO:1000145		history of medication for tuberculosis			associated disease(s)
 GECKO:1000146		occupation			socio-demographic and economic characteristics				Occupation																			
 GECKO:9999998		CINECA																										
 GECKO:9999999		trait			entity																							
@@ -395,23 +395,23 @@ GO:0030431	sleep	GO sleep		subclass	biological process
 GO:0034385		triglyceride-rich lipoprotein particle			cellular component																							
 GO:0042697		menopause		subclass	biological process																							
 GO:0044850		menstrual cycle		subclass	biological process																							
-HP:0000118		Phenotypic abnormality																										
+HP:0000118		Phenotypic abnormality
 HP:0000716		Depressivity			trait																							
-HP:0001297		Stroke			Phenotypic abnormality																							
-HP:0001658		Myocardial infarction			Phenotypic abnormality																							
-HP:0002086		Abnormality of the respiratory system			Phenotypic abnormality																							
-HP:0002094		Dyspnea			Abnormality of the respiratory system																							
-HP:0002105		Hemoptysis			Phenotypic abnormality																							
-HP:0002619		Varicose veins																										
-HP:0002840		Lymphadenitis			Phenotypic abnormality																							
-HP:0002875		Exertional dyspnea			Dyspnea																							
-HP:0003074		Hyperglycemia			Phenotypic abnormality																							
-HP:0012378		Fatigue			Phenotypic abnormality																							
-HP:0012735		Cough			Abnormality of the respiratory system																							
+HP:0001297		Stroke			Phenotypic abnormality
+HP:0001658		Myocardial infarction			Phenotypic abnormality
+HP:0002086		Abnormality of the respiratory system			Phenotypic abnormality
+HP:0002094		Dyspnea			Abnormality of the respiratory system
+HP:0002105		Hemoptysis			Phenotypic abnormality
+HP:0002619		Varicose veins
+HP:0002840		Lymphadenitis			Phenotypic abnormality
+HP:0002875		Exertional dyspnea			Dyspnea
+HP:0003074		Hyperglycemia			Phenotypic abnormality
+HP:0012378		Fatigue			Phenotypic abnormality
+HP:0012735		Cough			Abnormality of the respiratory system
 HP:0025267		Snoring			trait																							
-HP:0030828		Wheezing			Abnormality of the respiratory system																							
-HP:0032263		Increased blood pressure			Phenotypic abnormality																							
-HP:0100749		Chest pain			Phenotypic abnormality																							
+HP:0030828		Wheezing			Abnormality of the respiratory system
+HP:0032263		Increased blood pressure			Phenotypic abnormality
+HP:0100749		Chest pain			Phenotypic abnormality
 MMO:0000094		spirometry		subclass	assay																							
 NCBITaxon:10566		Human papillomavirus		subclass	organism																							
 NCBITaxon:210		Helicobacter pylori		subclass	organism																							
@@ -433,7 +433,7 @@ NCIT:C25173		Family			trait
 NCIT:C25188		Marital Status			trait																							
 NCIT:C25193		Occupation			trait																							
 NCIT:C25596		Breast Feeding			process																							
-NCIT:C2849		Congenital Abnormality			disease																							
+NCIT:C2849		Congenital Abnormality			disease
 NCIT:C38095		Urine Casts			material entity																							
 NCIT:C38101		X-Ray Imaging			assay																							
 NCIT:C53291		Activity of Daily Living			process																							
@@ -444,11 +444,11 @@ NCIT:C79089		CA-125 Measurement			assay
 NCIT:C81983		Carcinoembryonic Antigen Measurement			assay																							
 NCIT:C92534		Hepatitis A Antibody Measurement			assay																							
 NCIT:C92535		Hepatitis C Antibody Measurement			assay																							
-NCIT:C93210		Inflammatory Disorder			disease																							
+NCIT:C93210		Inflammatory Disorder			disease
 NCIT:C94817		Food Frequency Questionnaire			assay																							
 NCIT:C98843		Blood Type Determination			assay																							
 OBI:0000070		assay			process																							
-OBI:0002368		clinical history of cancer			oncological 																							
+OBI:0002368		clinical history of cancer			oncological 				
 OBI:0002390		exposure to second hand smoke			clinical history																							
 OBI:0002393		pregnancy history			clinical history				female pregnancy																			
 OBI:0002410		menopausal status			questionnaire/survey data				menopause		women's health																	
@@ -472,48 +472,48 @@ PR:P08519	apolipoprotein(a) (human)	apolipoprotein A			protein
 UBERON:0000178	blood	UBERON blood			anatomical entity																							
 UBERON:0000955		brain			anatomical entity																							
 UBERON:0001062		anatomical entity			material entity																							
-GECKO:1000147		use of anti-cancer drugs			disease(s) treated with medication	oncological																						
-GECKO:1000148		use of anaesthetics			type of medication taken																							
-GECKO:1000149		diagnosis of renal disease			endocrine/nutritional/metabolic disorders																							
-GECKO:1000150		diagnosis of liver disease			endocrine/nutritional/metabolic disorders																							
-GECKO:1000151		occurrence of high blood pressure			signs and symptoms					Increased blood pressure																		
-GECKO:1000152		history of non-pharmacological treatment			non-pharmacological interventions						This is in reference to anything taken that is not considered a pharmaceutical																	
-GECKO:1000153		history of non-pharmacological treatment for high blood pressure			history of non-pharmacological treatment	Increased blood pressure																						
-GECKO:1000154		history of non-pharmacological treatment for high cholesterol			history of non-pharmacological treatment																							
-GECKO:1000155		history of radiation treatment			history of non-pharmacological treatment																							
-GECKO:1000156		occurrence of hyperglycemia			signs and symptoms					Hyperglycemia																		
-GECKO:1000157		history of medication for hyperglycemia			disease(s) treated with medication	Hyperglycemia																						
-GECKO:1000158		occurrence of heart attack			signs and symptoms					Myocardial infarction																		
-GECKO:1000159		use of asprin			use of non-steroidal anti-inflammatory drugs				acetylsalicylic acid																			
-GECKO:1000160		use of non-steroidal anti-inflammatory drugs			type of medication taken																							
-GECKO:1000161		occurrence of fatigue			signs and symptoms					Fatigue																		
-GECKO:1000162		occurrence of chest pain			signs and symptoms					Chest pain																		
-GECKO:1000163		occurrence of hemoptysis			signs and symptoms					Hemoptysis																		
-GECKO:1000164		occurrence of lymphadenitis			signs and symptoms					Lymphadenitis																		
-GECKO:1000165		diagnosis of asthma			respiratory system				asthma																			
-GECKO:1000166		history of medication for respiratory disease			disease(s) treated with medication	respiratory system																						
-GECKO:1000167		history of medication for asthma			history of medication for respiratory disease	asthma																						
-GECKO:1000168		history of medication for chronic obstructive pulmonary disease			history of medication for respiratory disease	chronic obstructive pulmonary disease																						
-GECKO:1000169		occurrence of exertional dyspnea			occurrence of dyspnea					Exertional dyspnea																		
-GECKO:1000170		occurrence of dyspnea			signs and symptoms					Dyspnea																		
-GECKO:1000171		occurrence of wheezing			signs and symptoms					Wheezing																		
-GECKO:1000172		history of medication for HIV			disease(s) treated with medication	human immunodeficiency virus infectious disease																						
-GECKO:1000173		sputum sample collected			other																							
-GECKO:1000174		diagnosis of inflammatory disorder			diseases				Inflammatory Disorder																			
+GECKO:1000147		use of anti-cancer drugs			associated disease(s)	oncological
+GECKO:1000148		use of anaesthetics			type of medication taken
+GECKO:1000149		diagnosis of renal disease			endocrine/nutritional/metabolic disorders
+GECKO:1000150		diagnosis of liver disease			endocrine/nutritional/metabolic disorders
+GECKO:1000151		occurrence of high blood pressure			signs and symptoms					Increased blood pressure
+GECKO:1000152		history of non-pharmacological treatment			non-pharmacological interventions						This is in reference to anything taken that is not considered a pharmaceutical
+GECKO:1000153		history of non-pharmacological treatment for high blood pressure			history of non-pharmacological treatment	Increased blood pressure
+GECKO:1000154		history of non-pharmacological treatment for high cholesterol			history of non-pharmacological treatment
+GECKO:1000155		history of radiation treatment			history of non-pharmacological treatment					
+GECKO:1000156		occurrence of hyperglycemia			signs and symptoms					Hyperglycemia
+GECKO:1000157		history of medication for hyperglycemia			associated disease(s)	Hyperglycemia
+GECKO:1000158		occurrence of heart attack			signs and symptoms					Myocardial infarction
+GECKO:1000159		use of asprin			use of non-steroidal anti-inflammatory drugs				acetylsalicylic acid
+GECKO:1000160		use of non-steroidal anti-inflammatory drugs			type of medication taken
+GECKO:1000161		occurrence of fatigue			signs and symptoms					Fatigue
+GECKO:1000162		occurrence of chest pain			signs and symptoms					Chest pain
+GECKO:1000163		occurrence of hemoptysis			signs and symptoms					Hemoptysis
+GECKO:1000164		occurrence of lymphadenitis			signs and symptoms					Lymphadenitis
+GECKO:1000165		diagnosis of asthma			respiratory system				asthma
+GECKO:1000166		history of medication for respiratory disease			associated disease(s)	respiratory system
+GECKO:1000167		history of medication for asthma			history of medication for respiratory disease	asthma
+GECKO:1000168		history of medication for chronic obstructive pulmonary disease			history of medication for respiratory disease	chronic obstructive pulmonary disease
+GECKO:1000169		occurrence of exertional dyspnea			occurrence of dyspnea					Exertional dyspnea
+GECKO:1000170		occurrence of dyspnea			signs and symptoms					Dyspnea
+GECKO:1000171		occurrence of wheezing			signs and symptoms					Wheezing
+GECKO:1000172		history of medication for HIV			associated disease(s)	human immunodeficiency virus infectious disease
+GECKO:1000173		sputum sample collected			other
+GECKO:1000174		diagnosis of inflammatory disorder			diseases				Inflammatory Disorder
 GECKO:1000175		history of intensive care			history of augmented care																							
 GECKO:1000176		history of organ support			history of augmented care																							
-GECKO:1000177		history of respiratory support			history of organ support																							
-GECKO:1000178		history of cardiovascular support			history of organ support																							
-GECKO:1000179		history of dermatological support			history of organ support																							
-GECKO:1000180		history of gastrointestinal support			history of organ support																							
-GECKO:1000181		history of liver support			history of organ support																							
-GECKO:1000182		history of neurological support			history of organ support																							
-GECKO:1000183		history of renal support			history of organ support																							
-GECKO:1000184		occurrence of varicose veins			signs and symptoms					Varicose veins																		
+GECKO:1000177		history of respiratory support			history of organ support
+GECKO:1000178		history of cardiovascular support			history of organ support
+GECKO:1000179		history of dermatological support			history of organ support
+GECKO:1000180		history of gastrointestinal support			history of organ support
+GECKO:1000181		history of liver support			history of organ support
+GECKO:1000182		history of neurological support			history of organ support
+GECKO:1000183		history of renal support			history of organ support
+GECKO:1000184		occurrence of varicose veins			signs and symptoms					Varicose veins
 GECKO:1000185		history of augmented care			non-pharmacological interventions						I bet we can find a better name for this, this is just taken from GE																	
-KOGES:0000000		KoGES																										
-GCS:0000000		GCS																										
-GE:0000000		Genomics England																										
-SAPRIN:0000000		SAPRIN																										
-VZ:0000000		Vukuzazi																										
-MAELSTROM:0000000		Maelstrom																										
+KoGES:0000000		KoGES
+GCS:0000000		GCS
+GE:0000000		Genomics England
+SAPRIN:0000000		SAPRIN
+VZ:0000000		Vukuzazi
+MAELSTROM:0000000		Maelstrom
