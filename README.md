@@ -175,7 +175,7 @@ Please note that the `[full cohort name]` **must** match the name recorded in [`
 
 Using the following template, add an entry to [`src/prefixes.json`](https://github.com/IHCC-cohorts/data-harmonization/blob/master/src/prefixes.json):
 ```
-"[cohort prefix]": "http://example.com/[cohort prefix]_"
+"[cohort prefix]": "https://purl.ihccglobal.org/[cohort prefix]_"
 ```
 
 ### Metadata Header
