@@ -25,8 +25,8 @@ def main():
 
 SELECT ?s ?cineca WHERE {
     ?s rdfs:subClassOf* ?cineca .
-    FILTER(STRSTARTS(STR(?cineca), "http://example.com/GECKO_0"))
-    FILTER(STRSTARTS(STR(?s), "http://example.com/%s_"))
+    FILTER(STRSTARTS(STR(?cineca), "https://purl.ihccglobal.org/GECKO_0"))
+    FILTER(STRSTARTS(STR(?s), "https://purl.ihccglobal.org/%s_"))
 }''' % prefix
 
     output_file = args.output

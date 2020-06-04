@@ -130,7 +130,7 @@ build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediat
 	merge \
 	--input $(word 4,$^) \
 	--include-annotations true \
-	annotate --ontology-iri "http://example.com/$(notdir $@)" \
+	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
 	--output $@
 
 
@@ -280,7 +280,7 @@ build/gecko.owl: build/intermediate/properties.owl templates/gecko.tsv metadata/
 	merge \
 	--input $(word 3,$^) \
 	--include-annotations true \
-	annotate --ontology-iri "http://example.com/$(notdir $@)" \
+	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
 	--output $@
 
 # GECKO plus OBO terms
