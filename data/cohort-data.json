@@ -14,6 +14,31 @@
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": []
+    },
+    "biosample": {
+      "sample_type": [
+        "blood"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [],
+        "circulation_and_respiration": [
+          "blood_pressure"
+        ]
+      },
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
     }
   },
   {
@@ -35,6 +60,26 @@
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "microbiology": [
+        "microbial_data"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ],
+        "circulation_and_respiration": [
+          "heart_rate"
+        ]
+      }
     }
   },
   {
@@ -52,7 +97,35 @@
       "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
-    }
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "location"
+      ],
+      "general_variables": [
+        "timeline"
+      ]
+    },
+    "laboratory_measures": [],
+    "questionnaire_survey_data": {
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "lifestyle_and_behaviours": [
+        "alcohol"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
+    },
+    "survey_administration": [
+      "unique_identifiers"
+    ]
   },
   {
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
@@ -69,6 +142,11 @@
       "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
+    },
+    "questionnaire_survey_data": {
+      "socio_demographic_and_economic_characteristics": [
+        "residence"
+      ]
     }
   },
   {
@@ -86,6 +164,32 @@
       "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "urine"
+      ]
+    },
+    "laboratory_measures": {
+      "genomics": {
+        "data_type": []
+      }
+    },
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ],
+        "circulation_and_respiration": [
+          "heart_rate"
+        ]
+      },
+      "general_variables": [
+        "signs_and_symptoms"
+      ]
     }
   },
   {
@@ -96,6 +200,20 @@
     "current_enrollment": "",
     "target_enrollment": "",
     "enrollment_period": "",
-    "available_data_types": []
+    "available_data_types": [],
+    "laboratory_measures": [],
+    "questionnaire_survey_data": {
+      "lifestyle_and_behaviours": [],
+      "physiological_measurements": {
+        "circulation_and_respiration": []
+      },
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "gender"
+      ]
+    },
+    "survey_administration": []
   }
 ]

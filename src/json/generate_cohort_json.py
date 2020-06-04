@@ -78,7 +78,7 @@ def main():
         file_name = 'build/intermediate/{0}-gecko.ttl'.format(cohort_metadata['id'].lower())
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
-        child_to_parent = get_children(gin, 'http://example.com/GECKO_9999998')
+        child_to_parent = get_children(gin, 'https://purl.ihccglobal.org/GECKO_9999998')
         master_map = {}
         data = get_categories(child_to_parent, cineca)
         if cohort_name in cohort_data:
@@ -153,7 +153,7 @@ def get_children(gin, node):
                        <%s> rdfs:label ?parent .
                        ?s rdfs:subClassOf <%s> ;
                           rdfs:label ?label .
-                       FILTER(STRSTARTS(STR(?s), "http://example.com/GECKO_0")) }
+                       FILTER(STRSTARTS(STR(?s), "https://purl.ihccglobal.org/GECKO_0")) }
                ORDER BY ?label''' % (node, node)
 
     qres = gin.query(query)
