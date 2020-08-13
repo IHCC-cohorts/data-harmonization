@@ -8,7 +8,8 @@
 #
 # 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
 # 2. [Update files](update)
-# 3. [View results](build/index.html)
+# 3. [Build Mappings](owl)
+# 4. [View results](build/index.html)
 #
 # Demo browser:
 #
@@ -30,6 +31,7 @@ SHELL := bash
 
 ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
+GECKO_PURL = http://purl.obolibrary.org/obo/gecko.owl
 
 # Detect the OS and provide proper command
 # WARNING - will not work with Windows OS
@@ -52,7 +54,7 @@ COHORTS := gcs genomics-england koges maelstrom saprin vukuzazi
 # --- These files are maintained in version control ---
 
 # TSVs that generate the OWL files for each cohort (no mappings)
-TEMPLATES := templates/gecko.tsv $(foreach C,$(COHORTS),templates/$(C).tsv)
+TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 
 # ROBOT templates containing cohort -> GECKO mappings
 MAPPINGS := mappings/index.tsv mappings/properties.tsv $(foreach C,$(COHORTS),mappings/$(C).tsv)
@@ -60,7 +62,7 @@ MAPPINGS := mappings/index.tsv mappings/properties.tsv $(foreach C,$(COHORTS),ma
 # --- These files are not in version control (all in build directory) ---
 
 # OWL file in the build directory for all cohorts (contains xrefs)
-ONTS := build/gecko.owl $(foreach C,$(COHORTS),build/$(C).owl)
+ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
 
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
@@ -107,7 +109,8 @@ build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json |
 
 # Run `make owl` to generate all cohort OWL files
 .PHONY: owl
-owl: $(ONTS)
+owl: $(ONTS) | data_dictionaries
+	cp $^ data_dictionaries/
 
 # The OWL files are based on:
 #    - ROBOT template (build/<cohort-short-name>.tsv)
@@ -251,7 +254,7 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 
 ### Pre-build Tasks
 
-build build/intermediate build/browser build/browser/cohorts:
+build build/intermediate build/browser build/browser/cohorts data_dictionaries:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -269,19 +272,12 @@ build/robot-rdfxml.jar: | build
 build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
-
+	
 ### GECKO Tasks - to be moved into separate repo
 
 # GECKO does not have an xref template
-build/gecko.owl: build/intermediate/properties.owl templates/gecko.tsv metadata/gecko.ttl | build/robot.jar
-	$(ROBOT) template --input $< \
-	--merge-before \
-	--template $(word 2,$^) \
-	merge \
-	--input $(word 3,$^) \
-	--include-annotations true \
-	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
-	--output $@
+build/gecko.owl: | build
+	wget $(GECKO_PURL) -O $@
 
 # GECKO plus OBO terms
 build/intermediate/index.owl: mappings/properties.tsv mappings/index.tsv | build/intermediate build/robot.jar

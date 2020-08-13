@@ -156,6 +156,15 @@ If a term from your data dictionary maps to more than one GECKO term, you can in
 Include *all* your data dictionary IDs and Labels to begin. You can leave columns 3 and 4 empty for these rows until you have started your mappings. All GECKO terms can be found in the [index of the master mapping sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1049779000). You can also browse a hierarchical version of GECKO.
 <!-- TODO: link to GECKO tree view -->
 
+#### Using the ODK to build the mappings
+If you have docker installed, you can, as an alternative to running make in using Python environments, use the ODK to build the mappings and owl files:
+
+```
+sh odk.sh make owl
+```
+
+Note that the ODK is currently configured to consume up to 4GB of RAM; should you ever need more than that, please edit the memory configuration parameters in the [odk.sh](odk.sh) file.
+
 ### 4. Adding the Cohort Metadata
 
 #### `data/metadata.json`

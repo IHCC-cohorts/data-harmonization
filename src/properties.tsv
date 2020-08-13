@@ -12,3 +12,4 @@ IHCC:value	owl:AnnotationProperty	value
 rdfs:comment	owl:AnnotationProperty	comment
 rdfs:seeAlso	owl:AnnotationProperty	see also
 oboInOwl:hasDbXref	owl:AnnotationProperty	database_cross_reference
+dc:source	owl:AnnotationProperty	source
