@@ -1,6 +1,7 @@
-ID	Field Label	Class Type	GECKO Label	Comment																					
-ID		CLASS_TYPE	C % SPLIT=|	
-VZ:BPMeasuredEver	BP Measured Ever		blood pressure	not quite right- this is asking if you've ever had itmeasured																					
+ID	Field Label	Class Type	GECKO Label	Comment	New Label																							
+ID		CLASS_TYPE	C % SPLIT=|		LABEL
+VZ:0000000					Vukuzazi
+VZ:BPMeasuredEver	BP Measured Ever		blood pressure	not quite right- this is asking if you've ever had itmeasured																								
 VZ:HighBPInformedEver	Ever Been Informed of High BP		occurrence of high blood pressure	
 VZ:HighBPInformed12mo	Informed of High BP in 12 Months		occurrence of high blood pressure	
 VZ:HighBPConsult6mo	High BP Consultation 6 months		occurrence of high blood pressure	
@@ -11,14 +12,14 @@ VZ:BPReferralNonExist	Referral due to Non Existing High Blood Pressure		occurren
 VZ:BPReferralNonExistReason	Reasons for Referral due to Non Existing High Blood Pressure		occurrence of high blood pressure	or not?
 VZ:HighBPConsultHealer	High BP Consultation With Traditional Healer		occurrence of high blood pressure	
 VZ:HighBPHerbalCurr	Currently Taking Herbal Treatment for Raised BP		history of non-pharmacological treatment for high blood pressure	
-VZ:BSugarMeasuredEver	Blood Sugar Measured Ever		blood glucose level value	this is not quite right - this is asking if you've ever had it measured																					
+VZ:BSugarMeasuredEver	Blood Sugar Measured Ever		blood glucose level value	this is not quite right - this is asking if you've ever had it measured																								
 VZ:HighBSugarInformedEver	High Blood Sugar Informed Ever		occurrence of hyperglycemia	
 VZ:HighBSugarInformed12mo	High Blood Sugar Informed Past 12 Months		occurrence of hyperglycemia	
 VZ:HighBSugarConsult6mo	High Blood Sugar Consultation Past 6 months		occurrence of hyperglycemia	
 VZ:HighBSugarTx2wks	High Blood Sugar Treatment Past 2 Weeks		history of medication for hyperglycemia	
 VZ:InsulinTxCurr	Currently Taking Insulin for Diabetes		history of medication for diabetes	
 VZ:HighBSugarConsultHealer	High Blood Sugar Consultation With Traditional Healer		occurrence of hyperglycemia	
-VZ:CholestMeasuredEver	Cholesterol Measured Ever		blood total cholesterol level value	not quite right- this is asking if you've ever had itmeasured																					
+VZ:CholestMeasuredEver	Cholesterol Measured Ever		blood total cholesterol level value	not quite right- this is asking if you've ever had itmeasured																								
 VZ:HighCholestInformedEver	High Cholesterol Informed Ever		occurrence of high cholesterol	
 VZ:HighCholestInformed12mo	High Cholesterol Informed Past 12 Months		occurrence of high cholesterol	
 VZ:HighCholestTx2wks	High Cholesterol Treatment Past 2 Weeks		history of medication for high cholesterol	
@@ -31,7 +32,7 @@ VZ:ParentHistHeartAttack	Parental History of Heart Attack		family clinical histo
 VZ:HadStrokeEver	History of Stroke		occurrence of stroke	
 VZ:StrokeAspirinTxCurr	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Stroke		use of statins	
 VZ:ParentHistStroke	Parental History of Stroke		family clinical history	
-VZ:CancerTxEver	Cancer Treatment Before		Vukuzazi	is this non-pharmacological (potential surgery) or medication for cancer?																					
+VZ:CancerTxEver	Cancer Treatment Before		Vukuzazi	is this non-pharmacological (potential surgery) or medication for cancer?																								
 VZ:CurrSmoker	Currently Smoking Tobacco		tobacco	
 VZ:CurrSmokerDaily	Smoke Tobacco Products Daily		tobacco	
 VZ:StopSmoking12mo	Quit Stopping Tobacco		tobacco	
@@ -44,25 +45,25 @@ VZ:ConsumedAlcohol30d	Consumed Alcohol Last 30 days		alcohol
 VZ:TBTxCurrent	TB Current Treatment		history of medication for tuberculosis	
 VZ:ReceivedTBInjections	TB Current Treatment		history of medication for tuberculosis	
 VZ:TBTxEver	Ever had TB Treatment		history of medication for tuberculosis	
-VZ:HomesteadMemberTBEver	Homestead Member TB Ever		diagnosis of tuberculosis	homestead? is this potentially family clinical history instead?																					
-VZ:HomesteadMemberTBCurr	Homestead (or residential plot) currently on TB treatment		diagnosis of tuberculosis	homestead? is this potentially family clinical history instead?																					
+VZ:HomesteadMemberTBEver	Homestead Member TB Ever		diagnosis of tuberculosis	homestead? is this potentially family clinical history instead?																								
+VZ:HomesteadMemberTBCurr	Homestead (or residential plot) currently on TB treatment		diagnosis of tuberculosis	homestead? is this potentially family clinical history instead?																								
 VZ:CoughCurr	currently have a cough?		occurrence of cough	
 VZ:FeverCurr	Have a fever currently		occurrence of fever	
 VZ:NightSweatsCurr	Night Sweats		occurrence of night sweats	
 VZ:WeightLoss6mo	Weight Loss in 6 months		occurrence of weight loss	
-VZ:OtherSymptoms	Other TB Symptoms		signs and symptoms	may be too broad but I don't know if it makes sense to make a 'TB symptoms' term																					
+VZ:OtherSymptoms	Other TB Symptoms		signs and symptoms	may be too broad but I don't know if it makes sense to make a 'TB symptoms' term																								
 VZ:Fatigue	Fatigue		occurrence of fatigue	
 VZ:Haemoptysis	Haemoptysis		occurrence of hemoptysis	
 VZ:Chestpain	Chestpain		occurrence of chest pain	
 VZ:Lymphadenitis	Lymphadenitis		occurrence of lymphadenitis	
-VZ:TBSymptDur	Duration of the TB symptoms(weeks)		signs and symptoms	may be too broad but I don't know if it makes sense to make a 'TB symptoms' term																					
+VZ:TBSymptDur	Duration of the TB symptoms(weeks)		signs and symptoms	may be too broad but I don't know if it makes sense to make a 'TB symptoms' term																								
 VZ:HighAsthmaInformedEver	High Asthma InformededEver		diagnosis of asthma	
 VZ:HighAsthmaInformed12mo	Been told of high Asthma		diagnosis of asthma	
 VZ:HighhAsthmaTx2wks	Taken any medication for asthma/COPD prescribed by a doctor or other health worker		history of medication for chronic obstructive pulmonary disease|history of medication for asthma	
 VZ:BreathShortness	Shortness of breath after exercise or physical activity		occurrence of exertional dyspnea	
 VZ:WakeUpBreathShortness	Wake up at night because of difficulties in breathing/shortness of breath		occurrence of dyspnea	
 VZ:NightWheezing	NightWheezing		occurrence of wheezing	
-VZ:ReceivedHIVTestResult	Received HIV Test Result		Vukuzazi																						
+VZ:ReceivedHIVTestResult	Received HIV Test Result		Vukuzazi																									
 VZ:HadPosHIVResult	Had Positive HIV Result		diagnosis of HIV	
 VZ:CurrentlyOnART	Currently On ART Treatment		history of medication for HIV	
 VZ:ARTDefault	Ever Defaulted ART treatment		history of medication for HIV	
@@ -80,11 +81,11 @@ VZ:ConcurrMed3Stopped	Stopped Concurrent Medication 3		medication
 VZ:ConcurrMed4Stopped	Stopped Concurrent Medication 4		medication	
 VZ:ConcurrMed5Stopped	Stopped Concurrent Medication 5		medication	
 VZ:IsPregant	Is Pregant		pregnancy history	
-VZ:AllComplete	All Complete		Vukuzazi																						
+VZ:AllComplete	All Complete		Vukuzazi																									
 VZ:CxrScreeningResult	Chest X Ray Screening Result		X-ray imaging result	
 VZ:ReferalBasisCxr	Chest X Referal Basis		X-ray imaging result	
 VZ:CXRScore	Chest X Ray Score		X-ray imaging result	
-VZ:SputumReferral	Sputum Referral		Vukuzazi																						
+VZ:SputumReferral	Sputum Referral		Vukuzazi																									
 VZ:CxrMOConclusion	Chest X Ray Medical Officer Conclusion		X-ray imaging result	
 VZ:CxrMODiagnosticOther	Chest X Ray Medical Officer Diagnostic Other		X-ray imaging result	
 VZ:CxrMOReport	Chest X Ray Medical Officer Report		X-ray imaging result	
@@ -94,7 +95,7 @@ VZ:HIVElisaReview	HIV Elisa Medical Officer Review		diagnosis of HIV
 VZ:CD4Review	CD4 Medical Officer Review		blood lymphocyte count value	
 VZ:VLReview	Viral Load Medical Officer Review		diagnosis of HIV	
 VZ:GeneXpertReview	GeneXpert Medical Officer Review		diagnosis of tuberculosis	TB test review
-VZ:RifampicinReview	Rifampicin Medical Officer Review		Vukuzazi	not a diagnosis necessarily?																					
+VZ:RifampicinReview	Rifampicin Medical Officer Review		Vukuzazi	not a diagnosis necessarily?																								
 VZ:LiquidCultureReview	LiquidCulture Medical Officer Review		diagnosis of tuberculosis	TB test review
 VZ:SolidCultureReview	SolidCulture Medical Officer Review		diagnosis of tuberculosis	TB test review
 VZ:HBA1CPercentReview	HBA1CPercent Medical Officer Review		blood hemoglobin A1c level value	
@@ -160,8 +161,8 @@ VZ:UrineSampleCollected	Urine Sample Collected		urine
 VZ:UrineSampleNotCollectedReason	Urine Sample Not Collected Reason		urine	
 VZ:PregTestResult	pregnancy Test Result		pregnancy history	
 VZ:PregTestResultNotified	pregnancy Test Result Notified		pregnancy history	
-VZ:BloodGlucoseFailFU	Failed to measure Blood Glucose at Home Follow Up visit		blood glucose level value	more about adherence?																					
-VZ:BPFailFU	Failed to measure Blood Pressure at Home Follow Up visit		blood pressure measurement value	more about adherence?																					
+VZ:BloodGlucoseFailFU	Failed to measure Blood Glucose at Home Follow Up visit		blood glucose level value	more about adherence?																								
+VZ:BPFailFU	Failed to measure Blood Pressure at Home Follow Up visit		blood pressure measurement value	more about adherence?																								
 VZ:NewHIVReferralFailFU	Failed to refer New HIV Positive case to Clinic at Home Follow Up visit		Vukuzazi	
 VZ:CD4LabStatus	CD4 quantity not sufficient, specimen missing, or unable to run		Vukuzazi	
 VZ:CD4LabComment	CD4 quantity not sufficient, specimen missing, or unable to run comment		Vukuzazi	
@@ -284,13 +285,13 @@ VZ:UrineSampleCollectedId	Urine Sample Collected Id		urine
 VZ:UrineSampleCollectedId	Urine Sample Collected Id		urine	
 VZ:PregTestDeviceId	pregnancy Test Device Id		pregnancy history	
 VZ:CxrRadiologistConclusion	Chest X Ray Radiologist Conclusion		X-ray imaging result	
-VZ:MOLungField	Medical Officer LungFields		Vukuzazi	is this part of X-ray?																					
-VZ:RadiologistLungField	Radiologist LungFields		Vukuzazi	is this part of X-ray?																					
+VZ:MOLungField	Medical Officer LungFields		Vukuzazi	is this part of X-ray?																								
+VZ:RadiologistLungField	Radiologist LungFields		Vukuzazi	is this part of X-ray?																								
 VZ:UrineRefusal	Refused Urine Sample COllection		urine	
 VZ:HeightCm	Height in Cm		height	
 VZ:WeightKg	Weight in Kg		weight	
 VZ:WaistCircumferenceCm	Waist Circumference in Cm		waist circumference value	
-VZ:BPCuffSize	BP Cuff Size		Vukuzazi	administrative?																					
+VZ:BPCuffSize	BP Cuff Size		Vukuzazi	administrative?																								
 VZ:BPFirstSystolic	BP First Systolic		systolic blood pressure value	
 VZ:BPFirstDiastolic	BP First Diastolic		diastolic blood pressure value	
 VZ:BPSecondSystolic	BP Second Systolic		systolic blood pressure value	
@@ -313,7 +314,7 @@ VZ:OldTB	CXR proposed diagnostic-OldTB		X-ray imaging result|diagnosis of tuberc
 VZ:ProbableTB	CXR proposed diagnostic-ProbableTB		X-ray imaging result|diagnosis of tuberculosis	
 VZ:OtherInfection	CXR proposed diagnostic-OtherInfection		X-ray imaging result|diagnosis of bacterial infection	
 VZ:InflammatoryDisorder	CXR proposed diagnostic-InflammatoryDisorder		X-ray imaging result|diagnosis of inflammatory disorder	
-VZ:Neoplasm	CXR proposed diagnostic-Neoplasm		X-ray imaging result	oncological?																					
+VZ:Neoplasm	CXR proposed diagnostic-Neoplasm		X-ray imaging result	oncological?																								
 VZ:Trauma	CXR proposed diagnostic-Trauma		X-ray imaging result	
 VZ:CongenitalAbnormality	CXR proposed diagnostic-CongenitalAbnormality		X-ray imaging result	
 VZ:CardiacDisorder	CXR proposed diagnostic-CardiacDisorder		X-ray imaging result|circulatory system	
@@ -347,22 +348,22 @@ VZ:RadRightLungPleuralThick	Radiologist Right Lung Pleural Thickening		X-ray ima
 VZ:RadRightLungPleuralEffusion	Radiologist Right Lung Pleural Effusion		X-ray imaging result	
 VZ:RadRightLungNodeEnlarge	Radiologist Right Lung Node Enlargement		X-ray imaging result	
 VZ:RadRightLungOther	Radiologist Right Lung Other		X-ray imaging result	
-VZ:WillingSurveyedAttempt1	Willing Surveyed Attempt 1		Vukuzazi																						
+VZ:WillingSurveyedAttempt1	Willing Surveyed Attempt 1		Vukuzazi																									
 VZ:RadActiveTB	Radiologist Diagnostic ActiveTB		X-ray imaging result|diagnosis of tuberculosis	
 VZ:RadOldTB	Radiologist Diagnostic OldTB		X-ray imaging result|diagnosis of tuberculosis	
 VZ:RadProbableTB	Radiologist Diagnostic ProbableTB		X-ray imaging result|diagnosis of tuberculosis	
 VZ:RadOtherInfection	Radiologist Diagnostic Other Infection		X-ray imaging result|diagnosis of bacterial infection	
 VZ:RadInflammatoryDisorder	Radiologist Diagnostic Inflammatory Disorder		X-ray imaging result|diagnosis of inflammatory disorder	
-VZ:RadNeoplasm	Radiologistr Diagnostic Neoplasm		X-ray imaging result	should this be oncological?																					
+VZ:RadNeoplasm	Radiologistr Diagnostic Neoplasm		X-ray imaging result	should this be oncological?																								
 VZ:RadTrauma	Radiologist Diagnostic Trauma		X-ray imaging result	
 VZ:RadCongenitalAbnormality	Radiologist Diagnostic CongenitalAbnormality		X-ray imaging result	
 VZ:RadCardiacDisorder	Radiologist Diagnostic CardiacDisorder		X-ray imaging result|circulatory system	
 VZ:RadVascularDisorder	Radiologist Diagnostic VascularDisorder		X-ray imaging result|circulatory system	
 VZ:RadDegenerativeDisorder	Radiologist Diagnostic Degenerative Disorder		X-ray imaging result	
 VZ:RadTBDiagnosticOther	Radiologist TB Diagnostic Other		X-ray imaging result|diagnosis of tuberculosis	
-VZ:LabResultDate	Lab Result Date		Vukuzazi																						
-VZ:AbnormalResult	Is Result Abnormal?		Vukuzazi																						
-VZ:ClinicalReview	Needs Clinical Review?		Vukuzazi																						
+VZ:LabResultDate	Lab Result Date		Vukuzazi																									
+VZ:AbnormalResult	Is Result Abnormal?		Vukuzazi																									
+VZ:ClinicalReview	Needs Clinical Review?		Vukuzazi																									
 VZ:CD4LymphPercent	CD4 Lymphocytes %		blood lymphocyte count value	
 VZ:CD4LymphAb	CD4 Lymphocytes Abs		blood lymphocyte count value	
 VZ:CD4CD8Ratio	CD4/CD8 Ratio		blood lymphocyte count value	
@@ -371,8 +372,8 @@ VZ:CD8LymphAb	CD8 Lymphocytes Abs		blood lymphocyte count value
 VZ:HBA1c	HBA1c		blood hemoglobin A1c level value	
 VZ:HBA1CPercent	HBA1C%		blood hemoglobin A1c level value	
 VZ:Glucose	Glucose Average (calculated)		blood glucose level value	
-VZ:Rifampicin	Rifampicin Resistance		Vukuzazi																						
-VZ:GeneXpert	TB GeneXpert Test Result		Vukuzazi																						
+VZ:Rifampicin	Rifampicin Resistance		Vukuzazi																									
+VZ:GeneXpert	TB GeneXpert Test Result		Vukuzazi																									
 VZ:LiquidCulture	Liquid Culture Result(MGIT)		diagnosis of tuberculosis	
 VZ:SolidCulture	Solid Culture Result(7H11)		diagnosis of tuberculosis	
 VZ:SolidIncub	Solid Culture Incubation		diagnosis of tuberculosis	
@@ -407,7 +408,7 @@ VZ:MOOldTB	Medical Officer Diagnostic OldTB		diagnosis of tuberculosis
 VZ:MOProbableTB	Medical Officer Diagnostic ProbableTB		diagnosis of tuberculosis	
 VZ:MOOtherInfection	Medical Officer Diagnostic Other Infection		diagnosis of bacterial infection	
 VZ:MOInflammatoryDisorder	Medical Officer Diagnostic Inflammatory Disorder		diagnosis of inflammatory disorder	
-VZ:MONeoplasm	Medical Officer Diagnostic Neoplasm		oncological 	may not be cancer though																					
+VZ:MONeoplasm	Medical Officer Diagnostic Neoplasm		oncological 	may not be cancer though																								
 VZ:MOTrauma	Medical Officer Diagnostic Trauma		Vukuzazi	where does trauma fall under?
 VZ:MOCongenitalAbnormality	Medical Officer Diagnostic CongenitalAbnormality		Vukuzazi	where does cong abnormality fall under? diseases?
 VZ:MOCardiacDisorder	Medical Officer Diagnostic CardiacDisorder		circulatory system	

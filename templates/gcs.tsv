@@ -1,6 +1,6 @@
 Short_ID	Label	Parent	Definition	Value	Formula	Measurement Time
 ID	LABEL	SC %	A definition	A value	A formula	A measurement time
-						
+	is-required;					
 GCS:ID	Identity		Identity and contact information			
 GCS:DEMO	Demographic Info		Demographic characteristics: sex, age, ethnicity, marital status, education
 GCS:FAM	Family members		Characteristics of relatives in the household

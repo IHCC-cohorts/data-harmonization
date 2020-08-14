@@ -511,9 +511,3 @@ GECKO:1000182		history of neurological support			history of organ support
 GECKO:1000183		history of renal support			history of organ support
 GECKO:1000184		occurrence of varicose veins			signs and symptoms					Varicose veins
 GECKO:1000185		history of augmented care			non-pharmacological interventions						I bet we can find a better name for this, this is just taken from GE																	
-KoGES:0000000		KoGES
-GCS:0000000		GCS
-GE:0000000		Genomics England
-SAPRIN:0000000		SAPRIN
-VZ:0000000		Vukuzazi
-MAELSTROM:0000000		Maelstrom

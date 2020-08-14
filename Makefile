@@ -8,7 +8,8 @@
 #
 # 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
 # 2. [Update files](update)
-# 3. [View results](build/index.html)
+# 3. [Build Mappings](owl)
+# 4. [View results](build/index.html)
 #
 # Demo browser:
 #
@@ -30,6 +31,7 @@ SHELL := bash
 
 ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
+GECKO_PURL = http://purl.obolibrary.org/obo/gecko.owl
 
 # Detect the OS and provide proper command
 # WARNING - will not work with Windows OS
@@ -52,7 +54,7 @@ COHORTS := gcs genomics-england koges maelstrom saprin vukuzazi
 # --- These files are maintained in version control ---
 
 # TSVs that generate the OWL files for each cohort (no mappings)
-TEMPLATES := templates/gecko.tsv $(foreach C,$(COHORTS),templates/$(C).tsv)
+TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 
 # ROBOT templates containing cohort -> GECKO mappings
 MAPPINGS := mappings/index.tsv mappings/properties.tsv $(foreach C,$(COHORTS),mappings/$(C).tsv)
@@ -60,12 +62,12 @@ MAPPINGS := mappings/index.tsv mappings/properties.tsv $(foreach C,$(COHORTS),ma
 # --- These files are not in version control (all in build directory) ---
 
 # OWL file in the build directory for all cohorts (contains xrefs)
-ONTS := build/gecko.owl $(foreach C,$(COHORTS),build/$(C).owl)
+ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
 
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
 MAPPING_TREES := $(foreach C,$(COHORTS),build/$(C)-gecko.html)
-TABLES := build/gecko.html $(foreach C,$(COHORTS),build/$(C).html)
+TABLES := $(foreach C,$(COHORTS),build/$(C).html)
 
 # --- These files are intermediate build files ---
 
@@ -92,6 +94,7 @@ clean:
 all: $(TREES) $(TABLES) $(MAPPING_TREES)
 all: build/index.html
 all: data/cohort-data.json
+all: owl
 
 .PHONY: update
 update: refresh all
@@ -107,7 +110,8 @@ build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json |
 
 # Run `make owl` to generate all cohort OWL files
 .PHONY: owl
-owl: $(ONTS)
+owl: $(ONTS) | data_dictionaries
+	cp $^ data_dictionaries/
 
 # The OWL files are based on:
 #    - ROBOT template (build/<cohort-short-name>.tsv)
@@ -149,27 +153,34 @@ build/templates.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A/export?format=xlsx"
 
 templates/%.tsv: build/templates.xlsx
-	xlsx2csv -d tab -n $(basename $(notdir $@)) $< $@
+	xlsx2csv -d tab --ignoreempty -n $(basename $(notdir $@)) $< $@
 
 
 ### GECKO Mapping TSVs
+
+# This Google Sheet contains mappings for each cohort -> GECKO
 
 build/gecko-mapping.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
 # Run `make refresh` to get updated mapping TSVs
 
+# The index contains granular OBO terms that are descendants of GECKO terms
+
 mappings/index.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n index $< $@
+	xlsx2csv -d tab --ignoreempty -n index $< $@
 
 mappings/properties.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n properties $< $@
+	xlsx2csv -d tab --ignoreempty -n properties $< $@
+
+# Each cohort has it's own tab in the mappings XLSX
 
 mappings/%.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n $(basename $(notdir $@)) $< $@
+	xlsx2csv -d tab --ignoreempty -n $(basename $(notdir $@)) $< $@
 
 # GECKO terms as xrefs for main files
 # These are required to build the cohort OWL file
+# The xrefs are generated from the mapping template
 
 build/intermediate/%-xrefs.tsv: src/create_xref_template.py mappings/%.tsv mappings/index.tsv | build/intermediate
 	python3 $^ $@
@@ -251,7 +262,7 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 
 ### Pre-build Tasks
 
-build build/intermediate build/browser build/browser/cohorts:
+build build/intermediate build/browser build/browser/cohorts data_dictionaries:
 	mkdir -p $@
 
 build/robot.jar: | build
@@ -269,50 +280,27 @@ build/robot-rdfxml.jar: | build
 build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
+	
+### GECKO Tasks
 
-### GECKO Tasks - to be moved into separate repo
+# GECKO is retrieved from the OBO PURL
+build/gecko.owl: | build
+	curl -L -o $@ $(GECKO_PURL)
 
-# GECKO does not have an xref template
-build/gecko.owl: build/intermediate/properties.owl templates/gecko.tsv metadata/gecko.ttl | build/robot.jar
-	$(ROBOT) template --input $< \
-	--merge-before \
-	--template $(word 2,$^) \
-	merge \
-	--input $(word 3,$^) \
-	--include-annotations true \
-	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
-	--output $@
-
-# GECKO plus OBO terms
+# GECKO plus OBO terms (from the index of mappings XLSX)
 build/intermediate/index.owl: mappings/properties.tsv mappings/index.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< \
 	template --merge-before \
 	--template $(word 2,$^) \
 	--output $@
 
-# TODO - move GECKO to its own repo
+# GECKO + extra OBO terms (as descendants)
+# This file is used to eventually build the JSON that maps each cohort term up to the GECKO terms
 build/intermediate/gecko-full.owl: build/gecko.owl build/intermediate/index.owl | build/robot.jar
 	$(ROBOT) merge --input $< \
 	--input $(word 2,$^) \
 	reason reduce \
 	--output $@
-
-# NCIT Module - NCIT terms that have been mapped to GECKO terms
-
-#.PRECIOUS: build/ncit.owl.gz
-#build/ncit.owl.gz: | build
-#	curl -L http://purl.obolibrary.org/obo/ncit.owl | gzip > $@
-
-#build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-annotation-properites.txt | build/robot.jar
-#	$(ROBOT) query --input $< --query $(word 2,$^) $@
-#	tail -n +2 $@ > $@.tmp
-#	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
-
-#build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfxml.jar
-#	$(ROBOT_RDFXML) extract --input $< \
-#	--term-file $(word 2,$^) \
-#	--method rdfxml \
-#	--intermediates minimal --output $@
 
 
 # ------------------------------------------------------------------------------------------------
@@ -321,7 +309,7 @@ build/intermediate/gecko-full.owl: build/gecko.owl build/intermediate/index.owl 
 build/browser/%-data.json: build/%.owl | build/browser build/robot.jar
 	$(ROBOT) export \
 	--input $< \
-	--header "ID|LABEL|definition|question description|value|see also|subclasses" \
+	--header "ID|LABEL|definition|subclasses" \
 	--sort "LABEL" \
 	--export $@
 

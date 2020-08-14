@@ -1,0 +1,3416 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.ihccglobal.org/koges.owl#"
+     xml:base="https://purl.ihccglobal.org/koges.owl"
+     xmlns:dc1="dc:"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:purl="https://purl.ihccglobal.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/koges.owl">
+        <terms:description>TODO</terms:description>
+        <terms:title>Korean Genome and Epidemiology Study (KoGES)</terms:title>
+        <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- dc:source -->
+
+    <owl:AnnotationProperty rdf:about="dc:source">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/answer-type -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/answer-type">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">answer type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/formula -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/formula">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">formula</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/measurement-time -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/measurement-time">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement time</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/number-of-cohorts -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/number-of-cohorts">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number of cohorts</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/question-description -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/question-description">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">question description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/use-cases-requirements -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/use-cases-requirements">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use cases requirements</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/value -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/value">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000001 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core Variables</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000002 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000002">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000001"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core Questionnaires</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000003 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000003">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000002"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000057</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Socio-demographic data</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000057</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000004 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000004">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000003"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education level</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">education</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000005 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000005">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000003"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000070</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marital status</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000070</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marital status value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000006 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000006">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000003"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000069</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household income</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000069</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">household income value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000007 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000007">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000003"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occupation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000007"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000008 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000008">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000002"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000015</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical history</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000015</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000009 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000009">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000008"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000010 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000010">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000009"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Previous diagnosis (Disease history)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000011 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000011">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000009"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at first diagnosis (Disease history)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000012 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000012">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000009"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000093</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treatment progress (current treatment)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000012"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000013 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000013">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000009"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000093</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treatment method (hypertension, diabetes, hyperlipidemia only)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000013"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medication</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000014 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000014">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000008"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000092</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surgery (operation) history</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000014"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000092</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical interventions</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000015 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000015">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000014"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000092</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Previous surgery (operation)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000092</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical interventions</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000016 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000016">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000014"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000092</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at first surgery</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000016"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000092</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical interventions</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000017 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000017">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000008"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family disease history</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000017"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family clinical history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000018 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000018">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000017"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Previous diagnosis (Family disease history)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000018"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family clinical history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000019 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000019">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000017"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family clinical history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000020 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000020">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000017"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at first diagnosis (Family disease history)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000020"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000063</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family clinical history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000021 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000021">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000017"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000066</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of siblings and children</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000021"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000066</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family and household structure</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000022 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000022">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000002"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifestyle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000022"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifestyle and behaviours</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000023 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000023">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000022"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smoking habits</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000023"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000024 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000024">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000023"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount of ciagrettes</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000024"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000025 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000025">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000023"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total period of smoking</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000025"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000026 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000026">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000023"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at first smoking</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000026"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000027 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000027">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000023"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002390</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondhand smoking</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000027"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002390</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exposure to second hand smoke</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000028 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000028">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000022"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drinking habits</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000028"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol consumption history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000029 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000029">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000028"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount of drinking</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000029"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol consumption history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000030 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000030">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000028"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total period of drinking</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000030"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol consumption history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000031 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000031">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000028"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drinking frequency</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000062</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol consumption history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000032 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000032">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000022"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sleeping pattern</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000032"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleep</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000033 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000033">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000032"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hours of sleep</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000033"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleep</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000034 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000034">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000032"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time go to bed and wake up in the morning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleep</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000035 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000035">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000032"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trouble of sleeping</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000035"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleep</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000036 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000036">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000035"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000060</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snoring</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000036"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000060</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snoring value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000037 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000037">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000022"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical activity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000037"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000038 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000038">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000037"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regular physical activity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000038"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000039 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000039">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000037"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excercises</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000039"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000040 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000040">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000037"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household chores</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000041 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000041">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000037"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Climbing stairs</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000041"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000059</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical activity history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000042 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000042">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000002"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Womens health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000043 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000043">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000042"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000058</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Menstrual factors</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000043"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000058</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">menstrual cycle history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000044 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000044">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000043"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000058</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at menarche</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000044"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000058</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">menstrual cycle history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000045 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000045">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000043"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000058</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length of menstrual cycle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000045"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000058</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">menstrual cycle history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000046 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000046">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000042"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002410</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Menopause status</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000046"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002410</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">menopausal status</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000047 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000047">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000042"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reproductive history</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000047"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000048 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000048">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000047"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of pregnancies</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000048"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000049 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000049">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000047"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at each pregnancy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000049"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000050 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000050">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000047"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Durations and outcome of pregnancies</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000050"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000051 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000051">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000047"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000057</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breastfeeding</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000051"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000057</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breastfeeding value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000052 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000052">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000047"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000056</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infertility</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000052"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000056</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of infertility</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000053 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000053">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000002"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000053</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dietary survey</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000053"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000053</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information about diet</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000054 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000054">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000053"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000055</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Frequency Questionnaire</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000054"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000055</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Frequency Questionnaire result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000055 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000055">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000053"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000053</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dietary habits</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000055"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000053</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information about diet</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000056 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000056">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000001"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000085</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometric measurements</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000056"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000085</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometry</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000057 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000057">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000056"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000087</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Height &amp; weight</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000057"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000086</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000057"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000087</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">height</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000058 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000058">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000056"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000242</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waist &amp; hip circumference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000058"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000014</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip circumference value</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000058"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000242</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist circumference value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000059 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000059">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000056"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000085</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body composition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000059"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000085</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometry</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000060 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000060">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000056"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000294</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood pressure &amp; pulse rate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000003</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood pressure measurement value</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000294</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulse value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000061 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000061">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core Clinical examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000062 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000062">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000061"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000035</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core Blood test</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000035</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000063 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000063">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000364</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complete blood cell count</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000063"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000364</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complete blood cell count value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000064 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000064">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000054</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose (fasting)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000064"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000054</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood fasting glucose level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000065 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000065">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000757</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000065"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000757</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine albumin excretion rate value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000066 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000066">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000049</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood urea nitrogen (BUN)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000066"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000049</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood urea nitrogen level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000067 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000067">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000538</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine (Blood)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000067"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000538</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood creatinine level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000068 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000068">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000580</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AST (SGOT)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000068"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000580</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood aspartate aminotransferase activity level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000069 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000069">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000574</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALT (SGPT)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000069"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000574</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood alanine aminotransferase activity level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000070 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000070">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002239</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y-GTP</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000070"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002239</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood gamma-glutamyltransferase activity level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000071 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000071">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000051</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total cholesterol</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000071"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000051</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood total cholesterol level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000072 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000072">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000052</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL-Cholesterol</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000072"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood high density lipoprotein cholesterol level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000073 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000073">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000062"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002685</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triglyceride</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000073"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002685</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood lipoprotein triglyceride level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000074 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000074">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000061"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000256</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core Urine test</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000074"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000256</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000075 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000075">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000074"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000258</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pH</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000075"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000258</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine pH value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000076 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000076">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000074"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000625</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000625</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine total protein level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000077 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000077">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000074"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000383</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000383</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine glucose level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000078 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000078">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000074"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000008</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000078"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000008</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood presence in urine value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000079 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000079">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substudy Variables</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000080 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000080">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000079"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substudy Questionnaires</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000080"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000081 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000081">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000080"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0007869</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychosocial well-being status (PWI)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0007869</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wellbeing measurement result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000082 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000082">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000080"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000044</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depression (CES-D, BDI)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000082"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000044</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of depression</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000083 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000083">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000080"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000053</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24 hour recall dietary survey</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000083"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000053</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information about diet</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000084 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000084">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000080"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000052</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sleep disorder</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000084"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of sleep disorder</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000085 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000085">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000079"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In-depth questionnaire (By disease)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000085"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000074</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000086 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000086">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000085"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000080</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Respiratory disease</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000086"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000080</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000087 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000087">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000085"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000051</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastroenterologic disorder</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000087"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000051</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of gastrointestinal system disease</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000088 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000088">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000085"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000048</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000049</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Otorhinolaryngologic disorder (Ear, Nose)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000088"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000048</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of nose disease</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000088"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000049</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of auditory system disease</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000089 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000089">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000085"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000047</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthritis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000089"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000047</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of arthritis</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000090 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000090">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000079"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aging study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000091 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000091">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000090"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aging study Questionnaires</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000091"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000092 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000092">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000091"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000074</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health-related quality of life (WHOQOL, EQ-SD, SF-12)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000092"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000074</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality of life survey result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000093 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000093">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000091"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000075</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activities of daily living (K-ADL, S-IADL)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000093"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000075</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">activity of daily living survey result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000094 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000094">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000091"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000043</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dementia screening (K-MMSE, K-MoCA)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000094"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000043</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of dementia</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000095 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000095">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000091"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000043</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dementia screening by caregiver (CS-KGDS, KDSQ-C)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000095"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000043</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of dementia</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000096 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000096">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000091"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000044</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depression (GDS)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000044</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of depression</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000097 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000097">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000091"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000045</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000046</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vascular dementia / Alzheimers disease screening (Ischemia Scales)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000097"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000045</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of vascular dementia</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000097"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000046</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of Alzheimers disease</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000098 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000098">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000090"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aging study Clincial examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000099 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000099">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000098"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0008354</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive Function test</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000099"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0008354</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive function measurement result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000100 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000100">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000098"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0003926</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuropsychological test (SNSB-II)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000100"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0003926</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuropsychological test result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000101 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000101">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000098"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000042</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical performance test (SPPB, SFT)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000101"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000042</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical performance testing result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000102 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000102">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000098"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0006941</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grip strength</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000102"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0006941</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grip strength measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000103 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000103">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000098"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000041</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brain MRI</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000041</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brain MRI result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000104 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000104">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000079"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substudy Clinical Examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000105 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000105">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000076</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spirometry</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000105"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000076</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spirometry result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000106 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000106">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001561</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bone strength (sonometer)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000106"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001561</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000107 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000107">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001226</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bone mineral density (DEXA test)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000107"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001226</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bone mineral density value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000108 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000108">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000040</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray (chest, hand, knee, C-spin)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000108"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000040</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-ray imaging result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000109 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000109">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0007117</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultrasound carotid Intima Media Thickness (IMT)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000109"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0007117</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carotid artery intima media thickness value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000110 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000110">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002502</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulse Wave Velocity (PWV)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002502</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart blood flow measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000111 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000111">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000000</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecocardiography</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000111"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000000</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echocardiography result</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000112 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000112">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000035</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substudy Blood test</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000035</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000113 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000113">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000046</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose (1hr on OGTT)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000113"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000046</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glucose level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000114 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000114">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000046</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose (2hr on OGTT)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000114"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000046</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glucose level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000115 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000115">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002786</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HbA1C</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002786</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood hemoglobin A1c level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000116 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000116">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000349</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000349</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood insulin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000117 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000117">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000349</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin(1hr)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000117"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000349</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood insulin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000118 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000118">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000349</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin(2hr)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000118"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000349</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood insulin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000119 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000119">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000028</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Protein</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000119"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000028</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood protein measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000120 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000120">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000123</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Bilirubin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000123</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood bilirubin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000121 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000121">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000053</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL-Cholesterol</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000053</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood low density lipoprotein cholesterol level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000122 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000122">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000038</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hs-CRP</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000122"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000038</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood C-reactive protein level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000123 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000123">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000039</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homocystein</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000123"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000039</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood homocysteine level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000125 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000125">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000209</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fibrinogen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000125"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000209</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood fibrinogen level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000126 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000126">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000576</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkaline phosphate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000126"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000576</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood alkaline phosphate activity level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000127 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000127">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000037</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Folate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000127"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000037</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood folate level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000128 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000128">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000485</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adiponectin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000128"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000485</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood adiponectin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000129 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000129">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001294</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucagon</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000129"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001294</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood glucagon level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000130 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000130">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000036</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-peptide</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000130"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000036</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood C-peptide level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000132 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000132">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000504</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000132"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000504</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood phosphate level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000133 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000133">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001284</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tropinin T</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000133"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001284</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood troponin T level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000134 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000134">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000519</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apolipoprotein A</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000134"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000519</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood apolipoprotein A level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000135 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000135">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000522</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apolipoprotein B</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000135"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000522</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood apolipoprotein B level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000136 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000136">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000499</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium(Na) (Blood)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000136"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000499</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood sodium level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000137 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000137">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000496</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium(K) (Blood)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000137"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000496</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood potassium level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000138 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000138">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000497</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloride(Cl)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000138"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000497</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood chloride level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000139 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000139">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000030</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrophil</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000139"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000030</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood neutrophil count value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000140 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000140">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000031</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000140"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000031</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood lymphocyte count value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000141 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000141">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000032</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monocyte</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000141"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000032</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood monocyte count value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000142 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000142">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000033</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eosinophil</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000142"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000033</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood eosinophil count value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000143 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000143">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000034</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basophil</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000143"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000034</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood basophil count value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000144 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000144">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000041</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red cell distribution width (RDW)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000144"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000041</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red blood cell distribution width value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000145 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000145">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001348</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mean platelet volume (MPV)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000145"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001348</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mean platelet volume value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000146 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000146">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001349</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platlet crit (PCT)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000146"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001349</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plateletcrit value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000147 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000147">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000032</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin B12</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000147"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000032</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood vitamin B12 level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000148 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000148">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000033</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25-OH-Vitamin D</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000148"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000033</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood calcidiol level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000149 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000149">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000034</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thyroglobulin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000149"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000034</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood thyroglobulin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000151 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000151">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000077</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UIBC</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000151"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000077</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unsaturated iron binding capacity measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000152 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000152">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000035</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferritin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000152"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000035</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood ferritin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000153 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000153">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000053</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidized LDL</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000153"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000053</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood low density lipoprotein cholesterol level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000154 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000154">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000031</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-OHdG</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000154"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000031</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood 8-OHdG level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000155 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000155">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000502</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcium(Ca) (Blood)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000155"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000502</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood calcium level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000156 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000156">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001291</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free T3</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000156"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001291</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood triiodothyronine level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000157 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000157">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001288</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free T4</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000157"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001288</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood thyroxine level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000158 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000158">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001247</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSH</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000158"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0001247</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood thyroid stimulating hormone level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000159 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000159">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0005666</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anti-microsomal Ab</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000159"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0005666</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thyroid peroxidase antibody measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000160 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000160">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000030</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RF</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000160"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000030</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rheumatoid factor measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000161 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000161">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002821</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osteocalcin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000161"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002821</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood osteocalcin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000162 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000162">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002818</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-telopeptide</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000162"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002818</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood type I collagen C-terminal telopeptide level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000163 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000163">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000029</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin D</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000163"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000029</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood vitamin D level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000164 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000164">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000513</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estradiol</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000164"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000513</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood estradiol level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000165 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000165">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000025</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cadmium(Cd)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000165"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000025</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood cadmium level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000166 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000166">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000026</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lead(Pb)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000166"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000026</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood lead level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000167 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000167">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000027</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aluminum(Al)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000167"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000027</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood aluminum level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000168 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000168">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000028</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zinc(Zn)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000028</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood zinc level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000169 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000169">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000024</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood type</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000169"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000024</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood type determination value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000170 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000170">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000115</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000170"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000115</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood renin activity level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000171 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000171">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000022</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatitis B antibody</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000171"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000022</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatits B antibody measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000172 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000172">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000023</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatitis C antibody</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000172"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000023</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatits C antibody measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000173 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000173">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000021</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatitis A antibody (HAV)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000173"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000021</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatits A antibody measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000174 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000174">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000035</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPV(Human Papillomavirus)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000174"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000035</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000175 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000175">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000020</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helicobacter pylori</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000020</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helicobacter pylori antibody measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000176 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000176">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000019</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carcinoembryonic antigen (CEA)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000176"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000019</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carcinoembryonic antigen measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000177 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000177">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000018</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer antigen 125 (CA125)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000177"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000018</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer antigen 125 measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000178 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000178">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000017</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHEA-S</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000178"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000017</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood dehydroepiandrosterone sulfate level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000179 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000179">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000016</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGF-1</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000179"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000016</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood insulin-like growth factor I level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000180 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000180">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000512</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testosterone</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000180"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000512</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood testosterone level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000181 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000181">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000015</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luteinizing hormone (LH)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000181"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000015</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood lutenizing hormone level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000182 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000182">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000014</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Follicle Stimulation Hormone (FSH)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000182"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000014</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood follicle stimulating hormone level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000183 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000183">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000013</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prostate Specific Antigen (PSA)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000183"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000013</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood prostate-specific antigen level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000184 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000184">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000072</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lactate Dehydrogenase (LDH)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000184"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000072</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lactate dehydrogenase measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000185 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000185">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000012</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telomere length</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000185"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000012</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood telomere length value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000186 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000186">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000011</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apo E genotype</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000186"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000011</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood apolipoprotein E level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000187 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000187">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000104"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000256</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substudy Urine test</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000256</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine measurement value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000188 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000188">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002698</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ketone</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000188"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0002698</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine ketone body level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000189 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000189">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000279</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilirubin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000189"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000279</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine bilirubin level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000190 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000190">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000010</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urobilinogen</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000190"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000010</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine urobilinogen level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000191 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000191">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000009</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitrite</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000191"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000009</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine nitrite level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000192 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000192">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000257</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urinary specific gravity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000192"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000257</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine specific gravity value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000193 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000193">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000008</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematuria</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000193"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000008</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood presence in urine value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000194 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000194">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000386</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Color</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000194"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000386</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine color value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000195 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000195">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000007</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R.B.C.</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000195"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000007</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine erythrocyte level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000196 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000196">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000006</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W.B.C.</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000196"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000006</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine leukocyte level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000197 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000197">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000005</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.P. cells</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000005</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine epithelial cell level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000198 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000198">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000004</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casts</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000198"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000004</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine cast level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000199 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000199">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000003</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacteria</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000199"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000003</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine bacteria count value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000200 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000200">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000073</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crystals</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000200"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000073</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">presence of crystals in urine value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000201 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000201">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000625</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein, total</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000201"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000625</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine total protein level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000202 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000202">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000125</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine (Urine)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000202"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000125</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine creatinine level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000203 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000203">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000112"/>
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000002</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uric acid</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000203"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000002</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine uric acid level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000204 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000204">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000281</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcium (Urine)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000204"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000281</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine calcium level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000205 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000205">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000129</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium (Urine)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000205"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000129</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine sodium level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000206 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000206">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000761</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium (Urine)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000206"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000761</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine potassium level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000207 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000207">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000001</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitamin C</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000207"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000001</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine vitamin C level value</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- https://purl.ihccglobal.org/KoGES_0000208 -->
+
+    <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000208">
+        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000187"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000757</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microalbumin</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000208"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000757</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urine albumin excretion rate value</rdfs:label>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

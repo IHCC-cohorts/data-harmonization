@@ -12,6 +12,8 @@ This is a demonstration system that uses ontologies to harmonize data on various
 * [Java 8 or greater](https://www.java.com)
 * [Python 3.6 or greater](https://www.python.org/downloads/)
 
+Alternatively you can use [Docker](https://www.docker.com) (see below).
+
 ### Steps
 
 1. Clone this repository to your local machine and `cd` to the new directory
@@ -29,6 +31,18 @@ $ source .venv/bin/activate
 $ pip install -r requirements.txt
 $ make update
 ```
+
+### Docker
+
+If you have docker installed, you can instead run the build steps inside an [ODK](https://hub.docker.com/r/obolibrary/odkfull) Docker container:
+
+```
+$ git clone https://github.com/IHCC-cohorts/data-harmonization.git
+$ cd data-harmononization
+$ sh odk.sh make update
+```
+
+Note that the ODK is currently configured to consume up to 4GB of RAM; should you ever need more than that, please edit the memory configuration parameters in the [odk.sh](odk.sh) file.
 
 ## Files
 

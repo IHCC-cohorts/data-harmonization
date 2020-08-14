@@ -1,6 +1,6 @@
 Short ID	Label	Parent	Definition	Value
 ID	LABEL	SC %	A definition	A value
-				
+	is-required;			
 SAPRIN:Base_Entities	Base Entities		The core entities on which longitudinal data will be collected. Each entity has a dated start and end event
 SAPRIN:Location	Location	Base Entities	A place to which geo-coordinates can be assigned
 SAPRIN:Type_Location	Type (Location)	Location		"i. Dwelling. A place of residence within the boundaries of the demographic surveillance area

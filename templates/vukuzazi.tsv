@@ -1,6 +1,6 @@
 Short ID	Label	Value
 ID	LABEL	A value
-		
+	is-required;	
 VZ:BPMeasuredEver	BP Measured Ever	"1 = Yes
  2 = No
  3 = Unknown"

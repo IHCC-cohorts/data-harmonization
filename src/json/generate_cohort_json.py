@@ -218,6 +218,8 @@ def merge(source, target):
     for key, value in source.items():
         if isinstance(value, dict):
             # get node or create one
+            if key in target and not target[key]:
+                target[key] = {}
             node = target.setdefault(key, {})
             merge(value, node)
         else:
