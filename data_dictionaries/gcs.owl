@@ -145,14 +145,6 @@
     
 
 
-    <!--  -->
-
-    <owl:Class rdf:about="">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is-required;</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://purl.ihccglobal.org/GCS_ACEinhibitor -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/GCS_ACEinhibitor">
