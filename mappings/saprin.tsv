@@ -1,5 +1,6 @@
-ID	Field Label	Class Type	GECKO Label	Comment																			
-ID		CLASS_TYPE	C % SPLIT=|																				
+ID	Field Label	Class Type	GECKO Label	Comment	New Label																							
+ID		CLASS_TYPE	C % SPLIT=|		LABEL																							
+SAPRIN:0000000					SAPRIN
 SAPRIN:Base_Entities	Base Entities		SAPRIN	
 SAPRIN:Location	Location			
 SAPRIN:Type_Location	Type (Location)			

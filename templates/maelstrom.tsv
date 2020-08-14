@@ -1,6 +1,6 @@
 ID	Label	Definition	Parent	French Synonym	French Definition
 ID	LABEL	AL definition@en	SC %	AL alternative term@fr	AL definition@fr
-					
+	is-required;				
 MAELSTROM:Sociodemographic_economic_characteristics	Socio-demographic and economic characteristics	Information about socio-demographic and economic characteristics.		Caractéristiques socio-démographiques et économiques	Informations au sujet des caractéristiques socio-démographiques et économiques.
 MAELSTROM:Age	Age/birthdate	Information about current age (e.g. age of participant) or birthdate.	MAELSTROM:Sociodemographic_economic_characteristics	Âge/date de naissance	Informations au sujet de l’âge actuel (ex. âge du participant) ou de la date de naissance.
 MAELSTROM:Sex	Sex/gender	Information about sex (e.g. biological characteristics) or gender identity.	MAELSTROM:Sociodemographic_economic_characteristics	Sexe/genre	Informations au sujet du sexe (ex. caractéristiques biologiques) ou de l’identité de genre.

@@ -1,8 +1,9 @@
-ID	Field Label	Class Type	GECKO Label	GECKO Comment																			
-ID		CLASS_TYPE	C % SPLIT=|	A comment																			
-KoGES:0000001	Core Variables		KoGES																				
-KoGES:0000002	Core Questionnaires	equivalent	questionnaire/survey data																				
-KoGES:0000003	Socio-demographic data	equivalent	socio-demographic and economic characteristics																				
+ID	Field Label	Class Type	GECKO Label	GECKO Comment	New Label																							
+ID		CLASS_TYPE	C % SPLIT=|	A comment	LABEL																							
+KoGES:0000000	KoGES				KoGES
+KoGES:0000001	Core Variables		KoGES																									
+KoGES:0000002	Core Questionnaires	equivalent	questionnaire/survey data																									
+KoGES:0000003	Socio-demographic data	equivalent	socio-demographic and economic characteristics																									
 KoGES:0000004	Education level	equivalent	education
 KoGES:0000005	Marital status	equivalent	marital status value
 KoGES:0000006	Household income	equivalent	household income value
@@ -21,7 +22,7 @@ KoGES:0000018	Previous diagnosis (Family disease history)	subclass	family clinic
 KoGES:0000019	Relationship	subclass	family clinical history
 KoGES:0000020	Age at first diagnosis (Family disease history)	subclass	family clinical history
 KoGES:0000021	Number of siblings and children	subclass	family and household structure
-KoGES:0000022	Lifestyle	equivalent	lifestyle and behaviours																				
+KoGES:0000022	Lifestyle	equivalent	lifestyle and behaviours																									
 KoGES:0000023	Smoking habits	equivalent	tobacco	
 KoGES:0000024	Amount of ciagrettes	subclass	tobacco	
 KoGES:0000025	Total period of smoking	subclass	tobacco	
@@ -41,7 +42,7 @@ KoGES:0000038	Regular physical activity	subclass	physical activity history
 KoGES:0000039	Excercises	subclass	physical activity history	
 KoGES:0000040	Household chores	subclass	physical activity history	
 KoGES:0000041	Climbing stairs	subclass	physical activity history	
-KoGES:0000042	Womens health		KoGES																				
+KoGES:0000042	Womens health		KoGES																									
 KoGES:0000043	Menstrual factors	subclass	menstrual cycle history
 KoGES:0000044	Age at menarche	subclass	menstrual cycle history
 KoGES:0000045	Length of menstrual cycle	subclass	menstrual cycle history
@@ -60,7 +61,7 @@ KoGES:0000057	Height & weight	equivalent	height|weight
 KoGES:0000058	Waist & hip circumference	equivalent	waist circumference value|hip circumference value
 KoGES:0000059	Body composition	subclass	anthropometry
 KoGES:0000060	Blood pressure & pulse rate	equivalent	blood pressure measurement value|pulse value
-KoGES:0000061	Core Clinical examination		KoGES																				
+KoGES:0000061	Core Clinical examination		KoGES																									
 KoGES:0000062	Core Blood test	equivalent	blood measurement value
 KoGES:0000063	Complete blood cell count	equivalent	complete blood cell count value
 KoGES:0000064	Glucose (fasting)	equivalent	blood fasting glucose level value	not fasting specified
@@ -78,32 +79,32 @@ KoGES:0000075	pH	equivalent	urine pH value
 KoGES:0000076	Protein	equivalent	urine total protein level value
 KoGES:0000077	Glucose	equivalent	urine glucose level value
 KoGES:0000078	Blood	equivalent	blood presence in urine value
-KoGES:0000079	Substudy Variables		KoGES																				
-KoGES:0000080	Substudy Questionnaires	equivalent	questionnaire/survey data																				
+KoGES:0000079	Substudy Variables		KoGES																									
+KoGES:0000080	Substudy Questionnaires	equivalent	questionnaire/survey data																									
 KoGES:0000081	Psychosocial well-being status (PWI)	subclass	wellbeing measurement result
 KoGES:0000082	Depression (CES-D, BDI)	subclass	diagnosis of depression	not the exact tests
 KoGES:0000083	24 hour recall dietary survey	subclass	information about diet	
 KoGES:0000084	Sleep disorder	equivalent	diagnosis of sleep disorder
-KoGES:0000085	In-depth questionnaire (By disease)	equivalent	diseases																				
+KoGES:0000085	In-depth questionnaire (By disease)	equivalent	diseases																									
 KoGES:0000086	Respiratory disease	equivalent	respiratory system
 KoGES:0000087	Gastroenterologic disorder	equivalent	diagnosis of gastrointestinal system disease
 KoGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	equivalent	diagnosis of nose disease|diagnosis of auditory system disease
 KoGES:0000089	Arthritis	equivalent	diagnosis of arthritis
-KoGES:0000090	Aging study		KoGES																				
-KoGES:0000091	Aging study Questionnaires	subclass	questionnaire/survey data																				
+KoGES:0000090	Aging study		KoGES																									
+KoGES:0000091	Aging study Questionnaires	subclass	questionnaire/survey data																									
 KoGES:0000092	Health-related quality of life (WHOQOL, EQ-SD, SF-12)	subclass	quality of life survey result
 KoGES:0000093	Activities of daily living (K-ADL, S-IADL)	subclass	activity of daily living survey result
 KoGES:0000094	Dementia screening (K-MMSE, K-MoCA)	subclass	diagnosis of dementia
 KoGES:0000095	Dementia screening by caregiver (CS-KGDS, KDSQ-C)	subclass	diagnosis of dementia	not by caregiver
 KoGES:0000096	Depression (GDS)	subclass	diagnosis of depression	not specific to aging studies
 KoGES:0000097	Vascular dementia / Alzheimers disease screening (Ischemia Scales)	equivalent	diagnosis of vascular dementia|diagnosis of Alzheimers disease
-KoGES:0000098	Aging study Clincial examination		KoGES																				
+KoGES:0000098	Aging study Clincial examination		KoGES																									
 KoGES:0000099	Cognitive Function test	equivalent	cognitive function measurement result	
 KoGES:0000100	Neuropsychological test (SNSB-II)	subclass	neuropsychological test result	
 KoGES:0000101	Physical performance test (SPPB, SFT)	subclass	physical performance testing result	
 KoGES:0000102	Grip strength	equivalent	grip strength measurement value	
 KoGES:0000103	Brain MRI	equivalent	brain MRI result
-KoGES:0000104	Substudy Clinical Examination		KoGES																				
+KoGES:0000104	Substudy Clinical Examination		KoGES																									
 KoGES:0000105	Spirometry	equivalent	spirometry result
 KoGES:0000106	Bone strength (sonometer)	subclass	bone measurement value	CMO has a few different terms that measure strength, e.g. ultimate force & stifness, but no exact match
 KoGES:0000107	Bone mineral density (DEXA test)	equivalent	bone mineral density value
@@ -170,7 +171,7 @@ KoGES:0000169	Blood type	equivalent	blood type determination value
 KoGES:0000171	Hepatitis B antibody	equivalent	Hepatits B antibody measurement value	
 KoGES:0000172	Hepatitis C antibody	equivalent	Hepatits C antibody measurement value	
 KoGES:0000173	Hepatitis A antibody (HAV)	equivalent	Hepatits A antibody measurement value	
-KoGES:0000174	HPV(Human Papillomavirus)	subclass	blood measurement value	there's no such thing as an HPV blood test?																			
+KoGES:0000174	HPV(Human Papillomavirus)	subclass	blood measurement value	there's no such thing as an HPV blood test?																								
 KoGES:0000175	Helicobacter pylori	equivalent	Helicobacter pylori antibody measurement value
 KoGES:0000176	Carcinoembryonic antigen (CEA)	equivalent	carcinoembryonic antigen measurement value	
 KoGES:0000177	Cancer antigen 125 (CA125)	equivalent	cancer antigen 125 measurement value	

@@ -67,7 +67,7 @@ ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
 MAPPING_TREES := $(foreach C,$(COHORTS),build/$(C)-gecko.html)
-TABLES := build/gecko.html $(foreach C,$(COHORTS),build/$(C).html)
+TABLES := $(foreach C,$(COHORTS),build/$(C).html)
 
 # --- These files are intermediate build files ---
 
@@ -94,6 +94,7 @@ clean:
 all: $(TREES) $(TABLES) $(MAPPING_TREES)
 all: build/index.html
 all: data/cohort-data.json
+all: owl
 
 .PHONY: update
 update: refresh all
@@ -152,27 +153,34 @@ build/templates.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A/export?format=xlsx"
 
 templates/%.tsv: build/templates.xlsx
-	xlsx2csv -d tab -n $(basename $(notdir $@)) $< $@
+	xlsx2csv -d tab --ignoreempty -n $(basename $(notdir $@)) $< $@
 
 
 ### GECKO Mapping TSVs
+
+# This Google Sheet contains mappings for each cohort -> GECKO
 
 build/gecko-mapping.xlsx: | build
 	curl -L -o $@ "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/export?format=xlsx"
 
 # Run `make refresh` to get updated mapping TSVs
 
+# The index contains granular OBO terms that are descendants of GECKO terms
+
 mappings/index.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n index $< $@
+	xlsx2csv -d tab --ignoreempty -n index $< $@
 
 mappings/properties.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n properties $< $@
+	xlsx2csv -d tab --ignoreempty -n properties $< $@
+
+# Each cohort has it's own tab in the mappings XLSX
 
 mappings/%.tsv: build/gecko-mapping.xlsx
-	xlsx2csv -d tab -n $(basename $(notdir $@)) $< $@
+	xlsx2csv -d tab --ignoreempty -n $(basename $(notdir $@)) $< $@
 
 # GECKO terms as xrefs for main files
 # These are required to build the cohort OWL file
+# The xrefs are generated from the mapping template
 
 build/intermediate/%-xrefs.tsv: src/create_xref_template.py mappings/%.tsv mappings/index.tsv | build/intermediate
 	python3 $^ $@
@@ -273,42 +281,26 @@ build/intermediate/properties.owl: src/properties.tsv | build/intermediate build
 	$(ROBOT) template --template $< --output $@
 
 	
-### GECKO Tasks - to be moved into separate repo
+### GECKO Tasks
 
-# GECKO does not have an xref template
+# GECKO is retrieved from the OBO PURL
 build/gecko.owl: | build
 	wget $(GECKO_PURL) -O $@
 
-# GECKO plus OBO terms
+# GECKO plus OBO terms (from the index of mappings XLSX)
 build/intermediate/index.owl: mappings/properties.tsv mappings/index.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< \
 	template --merge-before \
 	--template $(word 2,$^) \
 	--output $@
 
-# TODO - move GECKO to its own repo
+# GECKO + extra OBO terms (as descendants)
+# This file is used to eventually build the JSON that maps each cohort term up to the GECKO terms
 build/intermediate/gecko-full.owl: build/gecko.owl build/intermediate/index.owl | build/robot.jar
 	$(ROBOT) merge --input $< \
 	--input $(word 2,$^) \
 	reason reduce \
 	--output $@
-
-# NCIT Module - NCIT terms that have been mapped to GECKO terms
-
-#.PRECIOUS: build/ncit.owl.gz
-#build/ncit.owl.gz: | build
-#	curl -L http://purl.obolibrary.org/obo/ncit.owl | gzip > $@
-
-#build/ncit-terms.txt: build/gecko.owl src/gecko/get-ncit-ids.rq src/gecko/ncit-annotation-properites.txt | build/robot.jar
-#	$(ROBOT) query --input $< --query $(word 2,$^) $@
-#	tail -n +2 $@ > $@.tmp
-#	cat $@.tmp $(word 3,$^) > $@ && rm $@.tmp
-
-#build/ncit-module.owl: build/ncit.owl.gz build/ncit-terms.txt | build/robot-rdfxml.jar
-#	$(ROBOT_RDFXML) extract --input $< \
-#	--term-file $(word 2,$^) \
-#	--method rdfxml \
-#	--intermediates minimal --output $@
 
 
 # ------------------------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 ID	Label	Alternative Terms	Definitions	Parents	Values	Comments
 ID	LABEL	A alternative term SPLIT=|	A definition SPLIT=|	SC %SPLIT=|	A value SPLIT=|	A rdfs:comment SPLIT=|
-						
+	is-required;					
 GE:system_data	System Data			owl:Thing		
 GE:augmented_critical_care_period	Augmented/critical care period			owl:Thing		
 GE:diagnosis	Diagnosis			owl:Thing		

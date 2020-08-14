@@ -1,6 +1,6 @@
 Short ID	Label	Parent
 ID	LABEL	SC %
-		
+	is-required;	
 KoGES:0000001	Core Variables
 KoGES:0000002	Core Questionnaires	Core Variables
 KoGES:0000003	Socio-demographic data	Core Questionnaires

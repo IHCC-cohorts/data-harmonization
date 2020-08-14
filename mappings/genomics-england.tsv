@@ -1,7 +1,8 @@
-ID	Label	Class Type	GECKO Label	GE Parents	Comment
-ID		CLASS_TYPE	C % SPLIT=|		A comment
+ID	Label	Class Type	GECKO Label	GE Parents	Comment	New Label
+ID		CLASS_TYPE	C % SPLIT=|		A comment	LABEL
+GE:0000000	Genomics England					Genomics England
 GE:diaga_01	A&E diagnosis - anatomical area			Clinical Diagnoses	disease or trauma
-GE:diags_01	A&E diagnosis - anatomical side			Clinical Diagnoses	disease or trauma																				
+GE:diags_01	A&E diagnosis - anatomical side			Clinical Diagnoses	disease or trauma																							
 GE:diag2_01	A&E diagnosis: 2 character			Clinical diagnoses	disease or trauma
 GE:invest_01	A&E investigation		laboratory measures|physiological measurements	Clinical Investigations	should I use OR or just two parents?
 GE:invest2_01	A&E Investigation: 2 character		laboratory measures|physiological measurements	Clinical Investigations
@@ -27,29 +28,29 @@ GE:acpdqind_8	acpdqind_8		Genomics England
 GE:acpdqind_9	acpdqind_9		Genomics England	
 GE:acpdqind_1	ACPDQIND_N			Augmented/critical care period	quality of data
 GE:acpend_1	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period	end date of augmented care
-GE:acpend_2	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																					
+GE:acpend_2	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																								
 GE:acpend_3	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period
-GE:acpend_4	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																					
-GE:acpend_5	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																					
-GE:acpend_6	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																					
+GE:acpend_4	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																								
+GE:acpend_5	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																								
+GE:acpend_6	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																								
 GE:acpend_7	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period
-GE:acpend_8	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																					
-GE:acpend_9	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																					
-GE:acploc_1	ACPLOC_N		history of augmented care	Augmented/critical care period	location of augmented care																				
+GE:acpend_8	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																								
+GE:acpend_9	ACPEND_N		history of augmented care|life stage/time point	Augmented/critical care period																								
+GE:acploc_1	ACPLOC_N		history of augmented care	Augmented/critical care period	location of augmented care																							
 GE:acploc_2	ACPLOC_N		history of augmented care	Augmented/critical care period
-GE:acploc_3	ACPLOC_N		history of augmented care	Augmented/critical care period																					
+GE:acploc_3	ACPLOC_N		history of augmented care	Augmented/critical care period																								
 GE:acploc_4	ACPLOC_N		history of augmented care	Augmented/critical care period
-GE:acploc_5	ACPLOC_N		history of augmented care	Augmented/critical care period																					
+GE:acploc_5	ACPLOC_N		history of augmented care	Augmented/critical care period																								
 GE:acploc_6	ACPLOC_N		history of augmented care	Augmented/critical care period
-GE:acploc_7	ACPLOC_N		history of augmented care	Augmented/critical care period																					
+GE:acploc_7	ACPLOC_N		history of augmented care	Augmented/critical care period																								
 GE:acploc_8	ACPLOC_N		history of augmented care	Augmented/critical care period
-GE:acploc_9	ACPLOC_N		history of augmented care	Augmented/critical care period																					
+GE:acploc_9	ACPLOC_N		history of augmented care	Augmented/critical care period																								
 GE:acpn_1	ACPN_N		history of augmented care	Augmented/critical care period	order of an episode during augmented care
 GE:acpn_2	ACPN_N		history of augmented care	Augmented/critical care period
 GE:acpn_3	ACPN_N		history of augmented care	Augmented/critical care period
 GE:acpn_4	ACPN_N		history of augmented care	Augmented/critical care period
-GE:acpn_5	ACPN_N		history of augmented care	Augmented/critical care period																					
-GE:acpn_6	ACPN_N		history of augmented care	Augmented/critical care period																					
+GE:acpn_5	ACPN_N		history of augmented care	Augmented/critical care period																								
+GE:acpn_6	ACPN_N		history of augmented care	Augmented/critical care period																								
 GE:acpn_7	ACPN_N		history of augmented care	Augmented/critical care period
 GE:acpn_8	ACPN_N		history of augmented care	Augmented/critical care period
 GE:acpn_9	ACPN_N		history of augmented care	Augmented/critical care period
@@ -62,7 +63,7 @@ GE:acpout_6	ACPOUT_N		history of augmented care	Augmented/critical care period
 GE:acpout_7	ACPOUT_N		history of augmented care	Augmented/critical care period
 GE:acpout_8	ACPOUT_N		history of augmented care	Augmented/critical care period
 GE:acpout_9	ACPOUT_N		history of augmented care	Augmented/critical care period
-GE:acpplan_1	ACPPLAN_N		history of augmented care	Augmented/critical care period	was augmented care planned before admission?																				
+GE:acpplan_1	ACPPLAN_N		history of augmented care	Augmented/critical care period	was augmented care planned before admission?																							
 GE:acpplan_2	ACPPLAN_N		history of augmented care	Augmented/critical care period
 GE:acpplan_3	ACPPLAN_N		history of augmented care	Augmented/critical care period
 GE:acpplan_4	ACPPLAN_N		history of augmented care	Augmented/critical care period
@@ -73,7 +74,7 @@ GE:acpplan_8	ACPPLAN_N		history of augmented care	Augmented/critical care period
 GE:acpplan_9	ACPPLAN_N		history of augmented care	Augmented/critical care period
 GE:acpsour_1	ACPSOUR_N		history of augmented care	Augmented/critical care period	location of patient before augmented care (e.g. ICU, recovery, ER, etc.)
 GE:acpsour_2	ACPSOUR_N		history of augmented care	Augmented/critical care period
-GE:acpsour_3	ACPSOUR_N		history of augmented care	Augmented/critical care period																					
+GE:acpsour_3	ACPSOUR_N		history of augmented care	Augmented/critical care period																								
 GE:acpsour_4	ACPSOUR_N		history of augmented care	Augmented/critical care period
 GE:acpsour_5	ACPSOUR_N		history of augmented care	Augmented/critical care period
 GE:acpsour_6	ACPSOUR_N		history of augmented care	Augmented/critical care period
@@ -109,9 +110,9 @@ GE:delmeth_1	Alternative Delivery method (Derived)		pregnancy history	Maternity	
 GE:acscflag	Ambulatory Care Sensitive Condition Flag			Diagnosis	
 GE:delprean	Anaesthetic given during labour or delivery		pregnancy history|use of anaesthetics	Maternity
 GE:delposan	Anaesthetic given post-labour or delivery		pregnancy history|use of anaesthetics	Maternity
-GE:analysis_group	analysis_group		Genomics England																						
+GE:analysis_group	analysis_group		Genomics England																									
 GE:antedur	Antenatal days of stay		pregnancy history	Maternity
-GE:apptdate	Appointment date			Appointments																					
+GE:apptdate	Appointment date			Appointments																								
 GE:appointments	Appointments		Genomics England		outpatient appointments (broad)
 GE:at_gp_practice	Area Team of GP Practice			Geographical
 GE:at_residence	Area Team of Residence			Geographical
@@ -154,11 +155,11 @@ GE:benchmark_group	benchmark_group		Genomics England
 GE:bestmatch	bestmatch			Critical care period of care	selects the best match for mulitple rows of critical care dates - this is just a Y/N flag
 GE:biresus_2	BIRESUS_N			Maternity
 GE:biresus_3	BIRESUS_N			Maternity
-GE:biresus_4	BIRESUS_N			Maternity																					
+GE:biresus_4	BIRESUS_N			Maternity																								
 GE:biresus_5	BIRESUS_N			Maternity
-GE:biresus_6	BIRESUS_N			Maternity																					
-GE:biresus_7	BIRESUS_N			Maternity																					
-GE:biresus_8	BIRESUS_N			Maternity																					
+GE:biresus_6	BIRESUS_N			Maternity																								
+GE:biresus_7	BIRESUS_N			Maternity																								
+GE:biresus_8	BIRESUS_N			Maternity																								
 GE:biresus_9	BIRESUS_N			Maternity
 GE:birordr_2	BIRORDR_N			Maternity
 GE:birordr_3	BIRORDR_N			Maternity
@@ -174,7 +175,7 @@ GE:birstat_4	BIRSTAT_N			Maternity
 GE:birstat_5	BIRSTAT_N			Maternity
 GE:birstat_6	BIRSTAT_N			Maternity
 GE:birstat_7	BIRSTAT_N			Maternity
-GE:birstat_8	BIRSTAT_N			Maternity																					
+GE:birstat_8	BIRSTAT_N			Maternity																								
 GE:birstat_9	BIRSTAT_N			Maternity
 GE:birordr_1	Birth Order		pregnancy history	Maternity	?
 GE:birstat_1	Birth Status		pregnancy history	Maternity	baby stillborn or alive - maybe pregnancy history? not sure
@@ -218,12 +219,12 @@ GE:ccsorcloc	ccsorcloc		history of intensive care	Critical care admission and di
 GE:ccstartdate	ccstartdate		history of intensive care|life stage/time point	Critical care start date	critical care start date
 GE:ccstarttime	ccstarttime		history of intensive care|life stage/time point	Critical care period of care	time critical care started
 GE:ccunitfun	ccunitfun			Critical care period of care	principal service provided in ward patient was admitted to for critical care (e.g. cardiac, thoracic, burns, etc.)
-GE:cdsextdate	CDS extract date			System Data	system data for updates																				
+GE:cdsextdate	CDS extract date			System Data	system data for updates																							
 GE:cdsverprotid	CDS protocol identifier		unique identifiers	System Data	system data SUS
 GE:sender	CDS sender identity			System Data
-GE:cdsversion	CDS version number			System Data	system data SUS																				
-GE:oacode6	Census output area, 2001 (6 character ward identifier)			Geographical																					
-GE:oacode01	Census Output Area, 2011			Geographical																					
+GE:cdsversion	CDS version number			System Data	system data SUS																							
+GE:oacode6	Census output area, 2001 (6 character ward identifier)			Geographical																								
+GE:oacode01	Census Output Area, 2011			Geographical																								
 GE:oacode11	Census Output Area, 2011			Geographical
 GE:chemo_radiation	chemo_radiation		use of anti-cancer drugs|history of radiation treatment	
 GE:circulation	Circulation			Indicators	leg pain due to poor circulation
@@ -232,12 +233,12 @@ GE:clinical_diagnoses	Clinical Diagnosis		Genomics England		might this also incl
 GE:clinical_investigations	Clinical Investigations		Genomics England		investigations made at the ER (broad)
 GE:clinical_treatments	Clinical Treatments		Genomics England		treatments made at the ER (broad) - either pharmaceutical or non-pharmaceutical
 GE:clinical_trial	clinical_trial		Genomics England		is patient part of clinical trial
-GE:clinical_period_of_care	Clinical; Period of Care		Genomics England																						
+GE:clinical_period_of_care	Clinical; Period of Care		Genomics England																									
 GE:gpprac	Code of GP practice			Practitioner|Geographical|Practitioner data
 GE:reggmp	Code of patient‚Äö√Ñ√¥s registered or referring general medical practitioner			Appointments|Practitioner data
 GE:purcode	Commissioner code			Organisation	code of organization comissioning patient's care
 GE:purval	Commissioner code status			Organisation	if commissioner's code is recognized by NHS
-GE:purro	Commissioner‚Äö√Ñ√¥s Regional Office			Organisation	location of commissioner																				
+GE:purro	Commissioner‚Äö√Ñ√¥s Regional Office			Organisation	location of commissioner																							
 GE:purstha	Commissioner‚Äö√Ñ√¥s Strategic Health Authority			Organisation	location of commissioner (SHA)
 GE:commissioning_organisation	Commissioning Organisation		Genomics England		
 GE:ic_pctcode	Commissioning Organisation Code			Commissioning Organisation	
@@ -247,7 +248,7 @@ GE:cr_residence	Commissioning Region of Residence		residence	Geographical
 GE:cr_treatment	Commissioning Region of Treatment		location	Geographical
 GE:csnum	Commissioning serial number			Organisation	identifies an NHS service agreement
 GE:comorbidity_adjustment	comorbidity_adjustment		prescription		if patient's physical state was significant in deciding type of anti-cacer drugs
-GE:complete	Complete			Indicators	indicator if Q1 and Q2 are complete																				
+GE:complete	Complete			Indicators	indicator if Q1 and Q2 are complete																							
 GE:concltime	Conclusion time			Attendances
 GE:consult	Consultant code		physician/practitioner info	Practitioner
 GE:consultant_speciality_code	consultant_speciality_code		physician/practitioner info		provider specialty code for cancer treatment
@@ -279,7 +280,7 @@ GE:date_of_registration	date_of_registration		Genomics England		maybe time point
 GE:waiting	Days waiting			Patient Pathway
 GE:delplac_1	Delivery place (actual)		pregnancy history|location	Maternity
 GE:delinten	Delivery place (intended)		pregnancy history|location	Maternity
-GE:delchang	Delivery place change reason			Maternity	why delivery place was changed																				
+GE:delchang	Delivery place change reason			Maternity	why delivery place was changed																							
 GE:delmeth_2	delmeth_2		pregnancy history	Maternity
 GE:delmeth_3	delmeth_3		pregnancy history	Maternity
 GE:delmeth_4	delmeth_4		pregnancy history	Maternity
@@ -299,7 +300,7 @@ GE:delplac_8	delplac_8			Maternity
 GE:delplac_9	delplac_9			Maternity
 GE:delstat_2	delstat_2		physician/practitioner info	Maternity
 GE:delstat_3	delstat_3		physician/practitioner info	Maternity
-GE:delstat_4	delstat_4		physician/practitioner info	Maternity																					
+GE:delstat_4	delstat_4		physician/practitioner info	Maternity																								
 GE:delstat_5	delstat_5		physician/practitioner info	Maternity
 GE:delstat_6	delstat_6		physician/practitioner info	Maternity
 GE:delstat_7	delstat_7		physician/practitioner info	Maternity
@@ -354,9 +355,9 @@ GE:diaga_03	diaga_03			Clinical Diagnoses
 GE:diaga_04	diaga_04			Clinical Diagnoses
 GE:diaga_05	diaga_05			Clinical Diagnoses
 GE:diaga_06	diaga_06			Clinical Diagnoses
-GE:diaga_07	diaga_07			Clinical Diagnoses																					
-GE:diaga_08	diaga_08			Clinical Diagnoses																					
-GE:diaga_09	diaga_09			Clinical Diagnoses																					
+GE:diaga_07	diaga_07			Clinical Diagnoses																								
+GE:diaga_08	diaga_08			Clinical Diagnoses																								
+GE:diaga_09	diaga_09			Clinical Diagnoses																								
 GE:diaga_10	diaga_10			Clinical Diagnoses
 GE:diaga_11	diaga_11			Clinical Diagnoses
 GE:diaga_12	diaga_12			Clinical Diagnoses
@@ -379,13 +380,13 @@ GE:diags_11	diags_11			Clinical Diagnoses
 GE:diags_12	diags_12			Clinical Diagnoses
 GE:did_snomedct_code	did_snomedct_code		Genomics England	
 GE:disreadydate	Discharge ready date		life stage/time point	Discharges; Period of Care
-GE:discharges_period_of_care	Discharges; Period of Care		Genomics England																						
+GE:discharges_period_of_care	Discharges; Period of Care		Genomics England																									
 GE:drug_group	drug_group		use of anti-cancer drugs	
 GE:cendur	Duration of care to psychiatric census date		mental and behaviour disorders|life stage/time point	Psychiatric	period of time from admission date to psychiatric census
 GE:detdur	Duration of detention		mental and behaviour disorders|life stage/time point	Psychiatric	days between detention and psychiatric cesus
 GE:elecdur	Duration of elective wait (submitted)		life stage/time point	Admissions; Period of Care	date decided to admit -> actual admission date for elective admission - date and time-related or timeline?
 GE:speldur	Duration of spell			Episodes and spells; Period of care
-GE:waitdays	Duration of wait (referral to treatment period)			Patient Pathway|Appointments																					
+GE:waitdays	Duration of wait (referral to treatment period)			Patient Pathway|Appointments																								
 GE:initdur	Duration to assessment			Attendances
 GE:concldur	Duration to conclusion			Attendances
 GE:depdur	Duration to departure			Attendances
@@ -1250,4 +1251,3 @@ GE:pcon	Westminster parliamentary constituency			Geographical
 GE:pcon_ons	Westminster parliamentary constituency (ONS)			Geographical
 GE:partyear	Year and month of HES dataset			Episodes and spells; Period of care|Appointments
 GE:did_date3_year	Year of Test			Diagnostic Test Dates
-	
