@@ -12,6 +12,8 @@ This is a demonstration system that uses ontologies to harmonize data on various
 * [Java 8 or greater](https://www.java.com)
 * [Python 3.6 or greater](https://www.python.org/downloads/)
 
+Alternatively you can use [Docker](https://www.docker.com) (see below).
+
 ### Steps
 
 1. Clone this repository to your local machine and `cd` to the new directory
@@ -29,6 +31,18 @@ $ source .venv/bin/activate
 $ pip install -r requirements.txt
 $ make update
 ```
+
+### Docker
+
+If you have docker installed, you can instead run the build steps inside an [ODK](https://hub.docker.com/r/obolibrary/odkfull) Docker container:
+
+```
+$ git clone https://github.com/IHCC-cohorts/data-harmonization.git
+$ cd data-harmononization
+$ sh odk.sh make update
+```
+
+Note that the ODK is currently configured to consume up to 4GB of RAM; should you ever need more than that, please edit the memory configuration parameters in the [odk.sh](odk.sh) file.
 
 ## Files
 
@@ -155,15 +169,6 @@ If a term from your data dictionary maps to more than one GECKO term, you can in
 
 Include *all* your data dictionary IDs and Labels to begin. You can leave columns 3 and 4 empty for these rows until you have started your mappings. All GECKO terms can be found in the [index of the master mapping sheet](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1049779000). You can also browse a hierarchical version of GECKO.
 <!-- TODO: link to GECKO tree view -->
-
-#### Using the ODK to build the mappings
-If you have docker installed, you can, as an alternative to running make in using Python environments, use the ODK to build the mappings and owl files:
-
-```
-sh odk.sh make owl
-```
-
-Note that the ODK is currently configured to consume up to 4GB of RAM; should you ever need more than that, please edit the memory configuration parameters in the [odk.sh](odk.sh) file.
 
 ### 4. Adding the Cohort Metadata
 
