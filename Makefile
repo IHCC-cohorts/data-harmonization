@@ -285,7 +285,7 @@ build/intermediate/properties.owl: src/properties.tsv | build/intermediate build
 
 # GECKO is retrieved from the OBO PURL
 build/gecko.owl: | build
-	wget $(GECKO_PURL) -O $@
+	curl -L -o $@ $(GECKO_PURL)
 
 # GECKO plus OBO terms (from the index of mappings XLSX)
 build/intermediate/index.owl: mappings/properties.tsv mappings/index.tsv | build/intermediate build/robot.jar
