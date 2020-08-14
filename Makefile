@@ -317,7 +317,7 @@ build/intermediate/gecko-full.owl: build/gecko.owl build/intermediate/index.owl 
 build/browser/%-data.json: build/%.owl | build/browser build/robot.jar
 	$(ROBOT) export \
 	--input $< \
-	--header "ID|LABEL|definition|question description|value|see also|subclasses" \
+	--header "ID|LABEL|definition|subclasses" \
 	--sort "LABEL" \
 	--export $@
 

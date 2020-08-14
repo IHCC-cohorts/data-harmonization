@@ -324,40 +324,10 @@ function addSearchResults(tbody, source, data) {
         }
         defCell.innerHTML = definition;
 
-        // Question or none
-        var questionCell = document.createElement("td");
-        questionCell.setAttribute("class", "question-col");
-        var question = "";
-        if (node.hasOwnProperty("question description")) {
-            question = node["question description"][0];
-        }
-        questionCell.innerHTML = question;
-
-        // Value or none
-        valCell = document.createElement("td");
-        valCell.setAttribute("class", "val-col");
-        var val = "";
-        if (node.hasOwnProperty("value")) {
-            val = node["value"][0];
-        }
-        valCell.innerHTML = val;
-
-        // Ontology term mapping or none
-        termCell = document.createElement("td");
-        termCell.setAttribute("class", "term-col");
-        var term = "";
-        if (node.hasOwnProperty("see also")) {
-            term = node["see also"][0];
-        }
-        termCell.innerHTML = term;
-
         // Add to row element
         row.appendChild(dsCell);
         row.appendChild(nameCell);
         row.appendChild(defCell);
-        row.appendChild(questionCell);
-        row.appendChild(valCell);
-        row.appendChild(termCell);
 
         // Add row to table element
         tbody.appendChild(row);
@@ -446,27 +416,6 @@ function createSearchResults(dataSets) {
     defHeader.setAttribute("class", "def-col");
     defHeader.innerHTML = "definition";
     thead.appendChild(defHeader);
-
-    // Question column
-    var questionHeader = document.createElement("th");
-    questionHeader.setAttribute("scope", "col");
-    questionHeader.setAttribute("class", "question-col");
-    questionHeader.innerHTML = "question";
-    thead.appendChild(questionHeader);
-
-    // Value column
-    var valHeader = document.createElement("th");
-    valHeader.setAttribute("scope", "col");
-    valHeader.setAttribute("class", "value-col");
-    valHeader.innerHTML = "value";
-    thead.appendChild(valHeader);
-
-    // Ontology term column
-    var termHeader = document.createElement("th");
-    termHeader.setAttribute("scope", "col");
-    termHeader.setAttribute("class", "term-col");
-    termHeader.innerHTML = "ontology term";
-    thead.appendChild(termHeader);
 
     // Add header to table
     table.appendChild(thead);
