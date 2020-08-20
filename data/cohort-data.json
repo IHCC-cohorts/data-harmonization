@@ -14,31 +14,6 @@
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": []
-    },
-    "biosample": {
-      "sample_type": [
-        "blood"
-      ]
-    },
-    "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [],
-        "circulation_and_respiration": [
-          "blood_pressure"
-        ]
-      },
-      "general_variables": [
-        "signs_and_symptoms"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
     }
   },
   {
@@ -97,35 +72,7 @@
       "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "location"
-      ],
-      "general_variables": [
-        "timeline"
-      ]
-    },
-    "laboratory_measures": [],
-    "questionnaire_survey_data": {
-      "general_variables": [
-        "signs_and_symptoms"
-      ],
-      "lifestyle_and_behaviours": [
-        "alcohol"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
-      ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
+    }
   },
   {
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",

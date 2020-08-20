@@ -1,0 +1,90 @@
+ID	Label
+ID	LABEL
+CMO:0000000	physiological measurements
+CMO:0000001	circulation and respiration
+CMO:0000003	blood pressure
+CMO:0000012	weight
+CMO:0000021	anthropometry
+CMO:0000106	height
+CMO:0000294	heart rate (HR)
+IAO:0000619	consent/accessibility
+MONDO:0000001	diseases
+MONDO:0004335	digestive system
+MONDO:0004992	oncological
+MONDO:0004995	circulatory system
+MONDO:0005071	nervous system
+MONDO:0005084	mental and behaviour disorders
+MONDO:0005087	respiratory system
+MONDO:0005151	endocrine/nutritional/metabolic disorders
+MONDO:0005570	blood-related disorders
+OBI:0000435	DNA/Genotyping
+OBI:0000537	Sequence variants (CNV, SNP arrays)
+OBI:0001271	RNAseq/gene expression
+OBI:0001624	microbiology
+OBI:0002020	Epigenetics
+OBI:0002117	WGS
+OBI:0002118	WES
+OBI:0002623	Metagenomics
+OBI:0500000	study design
+OBI:0500027	criteria for enrollment and recruitment procedures
+OGMS:0000020	signs and symptoms
+PATO:0000011	age/birthdate
+PATO:0000047	biological sex
+PATO:0001995	socio-demographic and economic characteristics
+PDRO:0000024	prescription
+PDRO:0010022	administration
+STATO:0000093	date and time-related information
+UBERON:0000105	life stage/time point
+UBERON:0000178	blood
+UBERON:0000463	sample type
+UBERON:0001088	urine
+UBERON:0001836	saliva
+UBERON:0001988	stool
+COB:0000076	aims and objectives
+GECKO:0000001	basic cohort attributes
+GECKO:0000003	timeline
+GECKO:0000005	population data
+GECKO:0000006	location
+GECKO:0000008	num. participants
+GECKO:0000009	demographic data
+GECKO:0000010	sex(es) studied in cohort
+GECKO:0000011	gender(s) studied in cohort
+GECKO:0000012	age range
+GECKO:0000013	data collection events
+GECKO:0000014	biosample
+GECKO:0000019	fasting or non-fasting
+GECKO:0000026	storage method
+GECKO:0000027	laboratory measures
+GECKO:0000032	genomics
+GECKO:0000040	Microbiome markers (rRNA, etc)
+GECKO:0000042	eQTL (Cis eQTLs and/or Trans eQTLs)
+GECKO:0000044	sample size
+GECKO:0000047	processing method
+GECKO:0000052	survey administration
+GECKO:0000055	unique identifiers
+GECKO:0000056	questionnaire/survey data
+GECKO:0000060	gender
+GECKO:0000061	ethnicity/race
+GECKO:0000063	birthplace
+GECKO:0000064	residence
+GECKO:0000065	education
+GECKO:0000066	family and household structure
+GECKO:0000067	lifestyle and behaviours
+GECKO:0000068	tobacco
+GECKO:0000069	alcohol
+GECKO:0000071	sleep
+GECKO:0000072	nutrition
+GECKO:0000073	physician/practitioner info
+GECKO:0000091	non-pharmacological interventions
+GECKO:0000092	surgical interventions
+GECKO:0000093	medication
+GECKO:0000094	associated disease(s)
+GECKO:0000096	drug response(s)
+GECKO:0000101	statistics
+GECKO:0000102	summary statistics for additional data from federated sources
+GECKO:0000103	drugs
+GECKO:0000104	physical activity
+GECKO:0000105	other
+GECKO:0000112	other biosample type
+GECKO:0000113	availability
+GECKO:0000114	reproduction
