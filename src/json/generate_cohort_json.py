@@ -75,7 +75,7 @@ def main():
 
     all_data = []
     for cohort_name, cohort_metadata in metadata.items():
-        file_name = 'build/intermediate/{0}-gecko.ttl'.format(cohort_metadata['id'].lower())
+        file_name = 'build/intermediate/{0}-mapping.ttl'.format(cohort_metadata['id'].lower())
         gin = rdflib.Graph()
         gin.parse(file_name, format='turtle')
         child_to_parent = get_children(gin, 'https://purl.ihccglobal.org/GECKO_9999998')
