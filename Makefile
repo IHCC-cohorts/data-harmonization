@@ -64,7 +64,7 @@ TABLES := $(foreach C,$(COHORTS),build/$(C).html)
 # --- These files are intermediate build files ---
 
 # ontology (in turtle format) versions of cohort -> GECKO mappings
-TTL_MAPPINGS := $(foreach C,$(COHORTS),build/intermediate/$(C)-gecko.ttl)
+TTL_MAPPINGS := $(foreach C,$(COHORTS),build/intermediate/$(C)-mapping.ttl)
 
 
 ### General Tasks
@@ -80,7 +80,7 @@ all: data/cohort-data.json
 all: owl
 
 .PHONY: update
-update: refresh all
+update: all
 
 .PHONY: rebuild
 rebuild: clean update
@@ -242,7 +242,7 @@ build/intermediate/get-cineca-%.rq: src/queries/build_query.py data/metadata.jso
 	$(eval NAME := $(subst get-cineca-,,$(basename $(notdir $@))))
 	python3 $^ $(NAME) $@
 
-build/intermediate/%-mapping.csv: build/intermediate/%-gecko.ttl build/intermediate/get-cineca-%.rq | build/intermediate build/robot.jar
+build/intermediate/%-mapping.csv: build/intermediate/%-mapping.ttl build/intermediate/get-cineca-%.rq | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
 build/browser/%-mapping.json: src/browser/generate_mapping_json.py templates/%.tsv templates/index.tsv | build/browser
