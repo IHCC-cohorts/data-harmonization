@@ -80,10 +80,7 @@ all: data/cohort-data.json
 all: owl
 
 .PHONY: update
-update: all
-
-.PHONY: rebuild
-rebuild: clean update
+update: clean all
 
 build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(ONTS) $(TREES) $(TABLES)
 	python3 $^ $@
