@@ -21,7 +21,7 @@ def main():
         item['name'] = cohort
         item['owl'] = '{0}.owl'.format(short_name)
         item['terms'] = '{0}.html'.format(short_name)
-        item['mapping'] = '{0}-gecko.html'.format(short_name)
+        item['tree'] = '{0}-tree.html'.format(short_name)
         items.append(item)
 
     html = t.render(items=items)
