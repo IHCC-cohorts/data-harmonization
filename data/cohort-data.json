@@ -15,33 +15,31 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "demographic_data": []
-    },
     "questionnaire_survey_data": {
-      "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
-      ],
-      "diseases": [
-        "respiratory_system"
-      ],
-      "medication": [],
       "physiological_measurements": {
-        "anthropometry": [],
+        "anthropometry": [
+          "height"
+        ],
         "circulation_and_respiration": [
           "blood_pressure"
         ]
       },
       "lifestyle_and_behaviours": [
-        "physical_activity"
+        "nutrition"
       ],
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
+      "diseases": [
+        "respiratory_system"
       ],
+      "medication": [
+        "prescription"
+      ],
+      "socio_demographic_and_economic_characteristics": [],
+      "non_pharmacological_interventions": [],
       "general_variables": [
         "signs_and_symptoms"
       ]
     },
+    "survey_administration": [],
     "biosample": {
       "sample_type": {
         "blood": [],
@@ -50,10 +48,13 @@
         ]
       }
     },
-    "survey_administration": [
-      "unique_identifiers"
-    ],
-    "laboratory_measures": []
+    "laboratory_measures": [],
+    "basic_cohort_attributes": {
+      "demographic_data": [],
+      "population_data": [
+        "location"
+      ]
+    }
   },
   {
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
@@ -76,25 +77,26 @@
       "phenotypic_clinical_data": true
     },
     "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "physical_activity"
-      ],
-      "diseases": [
-        "mental_and_behaviour_disorders"
-      ],
-      "physiological_measurements": {
-        "circulation_and_respiration": [
-          "heart_rate_HR"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "education"
-      ],
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
-      ],
       "general_variables": [
         "signs_and_symptoms"
+      ],
+      "socio_demographic_and_economic_characteristics": [],
+      "diseases": [
+        "respiratory_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height"
+        ],
+        "circulation_and_respiration": [
+          "blood_pressure"
+        ]
+      },
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
       ],
       "medication": []
     },
@@ -124,26 +126,30 @@
       "phenotypic_clinical_data": true
     },
     "questionnaire_survey_data": {
-      "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
+      "lifestyle_and_behaviours": [
+        "alcohol"
       ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height"
+        ]
+      },
       "diseases": [
-        "mental_and_behaviour_disorders"
+        "respiratory_system"
       ],
-      "physiological_measurements": [],
-      "medication": [
-        "drug_responses"
+      "socio_demographic_and_economic_characteristics": [],
+      "general_variables": [
+        "signs_and_symptoms"
       ],
       "non_pharmacological_interventions": [
         "surgical_interventions"
       ],
-      "lifestyle_and_behaviours": [
-        "alcohol"
-      ],
-      "general_variables": [
-        "signs_and_symptoms"
+      "medication": [
+        "prescription"
       ]
     },
+    "survey_administration": [],
+    "laboratory_measures": [],
     "basic_cohort_attributes": {
       "general_variables": [
         "aims_and_objectives"
@@ -151,11 +157,7 @@
       "population_data": [
         "location"
       ]
-    },
-    "survey_administration": [
-      "unique_identifiers"
-    ],
-    "laboratory_measures": []
+    }
   },
   {
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
@@ -173,17 +175,21 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "survey_administration": [],
     "questionnaire_survey_data": {
-      "diseases": [],
-      "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure"
-      ],
+      "non_pharmacological_interventions": [],
       "general_variables": [
-        "life_stage_time_point"
+        "reproduction"
       ],
-      "non_pharmacological_interventions": []
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "biological_sex"
+      ]
     },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ],
     "laboratory_measures": []
   },
   {
@@ -203,23 +209,27 @@
       "phenotypic_clinical_data": true
     },
     "questionnaire_survey_data": {
-      "diseases": [
-        "respiratory_system"
-      ],
-      "medication": [],
       "physiological_measurements": {
+        "anthropometry": [
+          "height"
+        ],
         "circulation_and_respiration": [
-          "heart_rate_HR"
+          "blood_pressure"
         ]
       },
       "lifestyle_and_behaviours": [
         "nutrition"
       ],
+      "diseases": [
+        "respiratory_system"
+      ],
+      "medication": [],
       "general_variables": [
         "signs_and_symptoms"
       ],
       "non_pharmacological_interventions": []
     },
+    "survey_administration": [],
     "biosample": {
       "sample_type": {
         "blood": [],
@@ -228,9 +238,6 @@
         ]
       }
     },
-    "survey_administration": [
-      "unique_identifiers"
-    ],
     "laboratory_measures": []
   },
   {
@@ -243,29 +250,29 @@
     "enrollment_period": "",
     "available_data_types": [],
     "questionnaire_survey_data": {
-      "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
+      "physiological_measurements": {
+        "circulation_and_respiration": []
+      },
+      "lifestyle_and_behaviours": [
+        "nutrition"
       ],
+      "socio_demographic_and_economic_characteristics": [],
       "diseases": [
         "blood_related_disorders"
       ],
-      "lifestyle_and_behaviours": [
-        "physical_activity"
+      "medication": [
+        "prescription"
       ],
-      "medication": [],
-      "non_pharmacological_interventions": [],
       "general_variables": [
         "signs_and_symptoms"
       ],
-      "physiological_measurements": {
-        "circulation_and_respiration": []
-      }
+      "non_pharmacological_interventions": []
     },
-    "survey_administration": [
-      "unique_identifiers"
-    ],
     "laboratory_measures": {
-      "genomics": []
-    }
+      "general_variables": [
+        "microbiology"
+      ]
+    },
+    "survey_administration": []
   }
 ]

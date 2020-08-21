@@ -1,4 +1,4 @@
-ID	Field Label	Parent Term	Definintion	GECKO Category	Suggested Categories	Comment
+Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
 ID	LABEL	C % SPLIT=|	A definition			
 	is-required;					
 VZ:BPMeasuredEver	BP Measured Ever			blood pressure		

@@ -144,6 +144,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_ANCVisits">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of antenatal care visits during this pregnancy</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANCVisits</rdfs:label>
     </owl:Class>
@@ -160,6 +161,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Alternative_surname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative surname (formerly) used by the individual, e.g. maiden name</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative surname</rdfs:label>
     </owl:Class>
@@ -176,6 +178,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Area">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Village or other higher level spatial grouping of locations</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Area</rdfs:label>
     </owl:Class>
@@ -192,6 +195,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Assets">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Does the household have any of the following items in good working order?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assets</rdfs:label>
     </owl:Class>
@@ -207,6 +211,7 @@
     <!-- https://purl.ihccglobal.org/SAPRIN_Base_Entities -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Base_Entities">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The core entities on which longitudinal data will be collected. Each entity has a dated start and end event</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Base Entities</rdfs:label>
     </owl:Class>
     
@@ -216,6 +221,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Beneficiary">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the intended beneficiary of the grant. This may be the same as the identifier of the grant holder in the case where the holder is the beneficiary, e.g. old age pension, or different as in the case of care dependency grants, where the grant holder receives the grant on behalf of someone else, e.g. a child</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beneficiary</rdfs:label>
     </owl:Class>
@@ -232,6 +238,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Birth">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The birth event of an individual</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth</rdfs:label>
     </owl:Class>
@@ -264,6 +271,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_BirthCertificate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whether the birth certificate was observed</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BirthCertificate</rdfs:label>
     </owl:Class>
@@ -280,6 +288,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Birth_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Birth event of this individual or the DeliveryEvent resulting in the birth of this individual if the individual enters surveillance through birth</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth (Individual)</rdfs:label>
     </owl:Class>
@@ -296,6 +305,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Birth_weight">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth weight as obtained from the Road to Health card in grams</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth weight</rdfs:label>
     </owl:Class>
@@ -312,6 +322,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Citizenship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The country of which the individual is a citizen</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000061</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citizenship</rdfs:label>
     </owl:Class>
@@ -328,6 +339,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Civilian_ID_number">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The 13-digit South African civilian identity number</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civilian ID number</rdfs:label>
     </owl:Class>
@@ -344,6 +356,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Cooking_fuel">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What is the main fuel used for cooking?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cooking fuel</rdfs:label>
     </owl:Class>
@@ -360,6 +373,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Coordinate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latitude and longitude on the WGS84 coordinate system</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate</rdfs:label>
     </owl:Class>
@@ -376,6 +390,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Crime">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has any resident member of the household been a victim of any of these crimes in the past 12 months?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crime</rdfs:label>
     </owl:Class>
@@ -392,6 +407,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_CurrentEducation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If the individual is currently attending an educational institution, at what level:</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CurrentEducation</rdfs:label>
     </owl:Class>
@@ -424,6 +440,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_DataCollector">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The person responsible for data collection during the visit</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataCollector</rdfs:label>
     </owl:Class>
@@ -440,6 +457,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_DateRegistered">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which the birth was registered, or null if the birth hasn‚Äôt been registered yet</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DateRegistered</rdfs:label>
     </owl:Class>
@@ -456,6 +474,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Birth">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of birth</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Birth)</rdfs:label>
     </owl:Class>
@@ -472,6 +491,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Death">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date of the death</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Death)</rdfs:label>
@@ -495,6 +515,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Enumeration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Enumeration"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of enumeration</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Enumeration)</rdfs:label>
     </owl:Class>
@@ -511,6 +532,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Household_Headship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Headship"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date of the change</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Household Headship)</rdfs:label>
     </owl:Class>
@@ -527,6 +549,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Membership_Events">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Membership_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date of the change</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Membership Events)</rdfs:label>
     </owl:Class>
     
@@ -536,6 +559,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Migration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of migration</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Migration)</rdfs:label>
     </owl:Class>
@@ -552,6 +576,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit date</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Observation)</rdfs:label>
     </owl:Class>
@@ -568,6 +593,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_PregnancyOutcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of birth</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (PregnancyOutcome)</rdfs:label>
     </owl:Class>
@@ -584,6 +610,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_UnionEvent">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_UnionEvent"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date of the event</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (UnionEvent)</rdfs:label>
     </owl:Class>
@@ -600,6 +627,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Death">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The death of an individual</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Death</rdfs:label>
     </owl:Class>
@@ -616,6 +644,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_DeathCertificate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observed</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeathCertificate</rdfs:label>
     </owl:Class>
@@ -632,6 +661,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Destination">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Destination of the migration (location)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Destination</rdfs:label>
     </owl:Class>
     
@@ -666,6 +696,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Duration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duration in weeks of the pregnancy</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duration</rdfs:label>
     </owl:Class>
@@ -682,6 +713,9 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Dwelling_construction">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What is the construction materials of the walls?
+ What is the construction material of the floor?
+ How many bedrooms does your household occupy at this dwelling?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dwelling construction</rdfs:label>
     </owl:Class>
@@ -698,6 +732,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Electricity_supply">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the household connected to the electricity grid?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electricity supply</rdfs:label>
     </owl:Class>
@@ -762,6 +797,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndDate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The end date of the social support</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndDate</rdfs:label>
     </owl:Class>
@@ -778,6 +814,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that terminated the episode, can only be Household dissolution, Migration (Direction: Out) and Observation (in which the implication is that the household is last known to be resident)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (HouseholdResidence)</rdfs:label>
     </owl:Class>
@@ -794,6 +831,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Household_Head_Relationship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Head_Relationship"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that ended the episode. Can only be Death, Membership end, Household Headship end or Observation</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Household Head Relationship)</rdfs:label>
     </owl:Class>
     
@@ -803,6 +841,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The death event of this individual or the Observation at which this individual was last observed</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Individual)</rdfs:label>
     </owl:Class>
@@ -819,6 +858,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Membership_Episodes">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Membership_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that ended the episode, can only be Death, Membership end or Observation (implying that the membership is current)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Membership Episodes)</rdfs:label>
     </owl:Class>
     
@@ -828,6 +868,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that terminated the episode, can only be Death, Migration (Direction: Out) and Observation (in which the implication is that the individual is last known to be resident)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Residence)</rdfs:label>
     </owl:Class>
@@ -844,6 +885,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Union">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The end of the union. Can only be Union ‚Äì partner died, Union ‚Äì separation (if there is no marriage date), Union ‚Äì divorce (if there is a marriage date), or Observation if it a current union</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Union)</rdfs:label>
     </owl:Class>
@@ -860,6 +902,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Enumeration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The initial event at enumeration of an entity. Can only be used during the base census of the demographic surveillance, or when a new area is added to the surveillance</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enumeration</rdfs:label>
     </owl:Class>
     
@@ -868,6 +911,7 @@
     <!-- https://purl.ihccglobal.org/SAPRIN_Episodes -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Episodes">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used to record associations longitudinally between base entities. Episodes are always started and ended through events.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Episodes</rdfs:label>
     </owl:Class>
     
@@ -876,6 +920,7 @@
     <!-- https://purl.ihccglobal.org/SAPRIN_Events -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Events">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Demographic events that delineate episodes of observation during longitudinal surveillance</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Events</rdfs:label>
     </owl:Class>
     
@@ -885,6 +930,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_External_identifier_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The identifier associated with the household during this residence</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External identifier (HouseholdResidence)</rdfs:label>
     </owl:Class>
@@ -901,6 +947,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_External_identifier_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier used on data collection instruments to uniquely identify the individual, but is removed together with other personally identifiable information when data is made available for analysis</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External identifier (Individual)</rdfs:label>
     </owl:Class>
@@ -917,6 +964,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FatherFirstName">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first name/s of the father</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FatherFirstName</rdfs:label>
     </owl:Class>
@@ -933,6 +981,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FatherId">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique identifier of the father of the individual, if the father is enumerated in the surveillance</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FatherId</rdfs:label>
     </owl:Class>
@@ -958,6 +1007,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FatherSurname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The surname of the father of the individual</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FatherSurname</rdfs:label>
     </owl:Class>
@@ -974,6 +1024,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FinancialStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-reported financial status</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialStatus</rdfs:label>
     </owl:Class>
@@ -990,6 +1041,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Financial_situation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How would the household classify its financial situation these days?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Financial situation</rdfs:label>
     </owl:Class>
@@ -1006,6 +1058,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_First_name_1">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first given name of the individual</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First name 1</rdfs:label>
     </owl:Class>
@@ -1022,6 +1075,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_First_name_2">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The second/alternative given name of the individual</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First name 2</rdfs:label>
     </owl:Class>
@@ -1038,6 +1092,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Food_security">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the last 12 months did you or any other member of your household ever cut the size of your meals or skip meals because there was not enough money for food?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food security</rdfs:label>
     </owl:Class>
@@ -1054,6 +1109,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Grantholder">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the person holding the grant</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grantholder</rdfs:label>
     </owl:Class>
@@ -1086,6 +1142,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HIVResult">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIV serostatus from dried blood spot</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIVResult</rdfs:label>
     </owl:Class>
@@ -1102,6 +1159,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HealthStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-reported health status</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HealthStatus</rdfs:label>
     </owl:Class>
@@ -1150,6 +1208,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HighestSchoolLevelCompleted">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grade 1 ‚Äì 12</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HighestSchoolLevelCompleted</rdfs:label>
     </owl:Class>
@@ -1166,6 +1225,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Base_Entities"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A household resident at a location within the boundary of the surveillance area. A household is defined as a social group of one or more individual members. Resident household members share the same dwelling as the household, non-resident household members are individuals who do not share the same dwelling as the household, but who eat from the same pot when they are present in the household‚Äôs dwelling.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household</rdfs:label>
     </owl:Class>
@@ -1182,6 +1242,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An episode during which a household is resident at a particular location that falls within the surveillance area. A household can only be resident at one location at a time, i.e. residency episodes cannot overlap</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HouseholdResidence</rdfs:label>
     </owl:Class>
     
@@ -1191,6 +1252,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household_Head_Relationship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household head relationships are linked to a household membership and record the relationship between the individual and the head of the associated household. If the head of household change, all current household members start a new household head relationship episode</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household Head Relationship</rdfs:label>
     </owl:Class>
     
@@ -1200,6 +1262,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household_Headship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A change in the head of the household</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000066</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household Headship</rdfs:label>
     </owl:Class>
@@ -1216,6 +1279,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The household identifier</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household (HouseholdResidence)</rdfs:label>
     </owl:Class>
@@ -1232,6 +1296,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household_Membership_Episodes">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Membership_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The household identifier</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household (Membership Episodes)</rdfs:label>
     </owl:Class>
     
@@ -1241,6 +1306,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set of data elements collected from a household informant, during a face to face or telephonic interview</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household Status Observation</rdfs:label>
     </owl:Class>
@@ -1273,6 +1339,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Identifier_Household">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unique household identifier which the household retains irrespective of its current residence</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier (Household)</rdfs:label>
     </owl:Class>
@@ -1289,6 +1356,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Identifier_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A globally unique identifier used internally to uniquely identify the individual</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier (Individual)</rdfs:label>
     </owl:Class>
@@ -1305,6 +1373,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_If_HIVNeg">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. When last HIV- result (&gt;1yr, &lt;1yr ago)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If HIV-</rdfs:label>
     </owl:Class>
@@ -1337,6 +1406,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Base_Entities"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household members, where a resident is a member of a household who normally lives (i.e. intends to sleep the majority of the time) at the same dwelling as the household; and a non-resident is a member of a household who does not normally live at the same dwelling as the household but is nevertheless considered a member of the household.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual</rdfs:label>
     </owl:Class>
     
@@ -1346,6 +1416,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual1">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of one of the parties to the union. By convention this will be the female in a heterosexual union.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual1</rdfs:label>
     </owl:Class>
@@ -1362,6 +1433,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual2">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the second party to the union.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual2</rdfs:label>
     </owl:Class>
@@ -1378,6 +1450,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual_Individual_StatusObservation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique individual identifier of the subject of the status observation</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual (Individual StatusObservation)</rdfs:label>
     </owl:Class>
     
@@ -1387,6 +1460,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual_Membership_Episodes">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Membership_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual (Membership Episodes)</rdfs:label>
     </owl:Class>
     
@@ -1396,6 +1470,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual (Residence)</rdfs:label>
     </owl:Class>
@@ -1412,6 +1487,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of data elements collected about an individual either during a face-to-face visit or telephonic interview with the individual or from a proxy informant</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual StatusObservation</rdfs:label>
     </owl:Class>
     
@@ -1421,6 +1497,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_LiveBirths">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of babies born alive resulting from this delivery</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LiveBirths</rdfs:label>
     </owl:Class>
@@ -1437,6 +1514,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Base_Entities"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place to which geo-coordinates can be assigned</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location</rdfs:label>
     </owl:Class>
@@ -1453,6 +1531,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The location identifier</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location (HouseholdResidence)</rdfs:label>
     </owl:Class>
@@ -1469,6 +1548,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location where the visit took place</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location (Observation)</rdfs:label>
     </owl:Class>
@@ -1485,6 +1565,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The location identifier</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location (Residence)</rdfs:label>
     </owl:Class>
@@ -1517,6 +1598,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MarriageDate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which the union has been formalised as a marriage</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MarriageDate</rdfs:label>
     </owl:Class>
@@ -1533,6 +1615,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Membership_Episodes">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An episode during which an individual is a member of a household. An individual must be a member of at least one household to be under surveillance. An individual can be a member of more than one household at a time (membership episodes may overlap). In the case of multiple memberships, the designated household of an individual will be the household the individual is co-resident with, ranked according to the closeness of the members relationship to the household head (self, spouse, child, grandchild, parent, sibling, other relationship)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Membership Episodes</rdfs:label>
     </owl:Class>
     
@@ -1542,6 +1625,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Membership_Events">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A change in household membership</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Membership Events</rdfs:label>
     </owl:Class>
     
@@ -1551,6 +1635,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Membership_Household_Head_Relationship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Head_Relationship"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The household membership episode associated with this household head relationship</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Membership (Household Head Relationship)</rdfs:label>
     </owl:Class>
     
@@ -1560,6 +1645,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Migration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A change in location of usual residence</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migration</rdfs:label>
     </owl:Class>
     
@@ -1569,6 +1655,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MotherFirstName">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first name/s of the mother</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MotherFirstName</rdfs:label>
     </owl:Class>
@@ -1585,6 +1672,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MotherId">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique identifier of the mother of the individual, if the mother is enumerated in the surveillance</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MotherId</rdfs:label>
     </owl:Class>
@@ -1610,6 +1698,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MotherSurname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The surname of the mother of the individual</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MotherSurname</rdfs:label>
     </owl:Class>
@@ -1626,6 +1715,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Nationality">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The country of origin of the individual (the country of which the person is/was a citizen by birth)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nationality</rdfs:label>
     </owl:Class>
@@ -1642,6 +1732,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Not_employed">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type/reason for unemployment</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not employed</rdfs:label>
     </owl:Class>
@@ -1658,6 +1749,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A surveillance visit at a location</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation</rdfs:label>
     </owl:Class>
@@ -1674,6 +1766,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Observation_Individual_StatusObservation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The observation at which the status observation was made</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation (Individual StatusObservation)</rdfs:label>
     </owl:Class>
     
@@ -1683,6 +1776,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Origin">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Origin of the migration (location)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Origin</rdfs:label>
     </owl:Class>
     
@@ -1692,6 +1786,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Outcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A delivery event or Observation if the pregnancy is still current at the time of observation</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outcome</rdfs:label>
     </owl:Class>
@@ -1756,6 +1851,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Pregnancy">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The period of being pregnant. Also used to record maternity histories retrospectively</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pregnancy</rdfs:label>
     </owl:Class>
@@ -1772,6 +1868,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The end event of a pregnancy</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PregnancyOutcome</rdfs:label>
     </owl:Class>
@@ -1788,6 +1885,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Relationship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Head_Relationship"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relationship between the individual member (to whom the membership belongs) and the current household head of the household</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relationship</rdfs:label>
     </owl:Class>
     
@@ -1797,6 +1895,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An episode during which an individual is resident (sleeping most of the time there) at a particular location that falls within the surveillance area. An individual can only be resident at one location at a time, i.e. residency episodes cannot overlap</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residence</rdfs:label>
     </owl:Class>
@@ -1813,6 +1912,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_ResidentStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical presence in the dwelling, recorded as the number of months since the previous observation visit</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ResidentStatus</rdfs:label>
     </owl:Class>
@@ -1829,6 +1929,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Respondent">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The primary respondent at the visit</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Respondent</rdfs:label>
     </owl:Class>
@@ -1845,6 +1946,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Sex">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male (1), female(2) or unknown(0)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</rdfs:label>
     </owl:Class>
@@ -1861,6 +1963,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Social_support">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The period during which an individual receives a government social support grant</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social support</rdfs:label>
     </owl:Class>
@@ -1877,6 +1980,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartDate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The start date of the social support</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartDate</rdfs:label>
     </owl:Class>
@@ -1893,6 +1997,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that started the episode, can only be Enumeration, Household formation, Migration (Direction: In)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (HouseholdResidence)</rdfs:label>
     </owl:Class>
@@ -1909,6 +2014,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_Household_Head_Relationship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Head_Relationship"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that started the episode. Can only be Enumeration, Birth, Membership start, or Household Headship start</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (Household Head Relationship)</rdfs:label>
     </owl:Class>
     
@@ -1918,6 +2024,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_Membership_Episodes">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Membership_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that started the episode, can only be Enumeration, Birth or Membership start</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (Membership Episodes)</rdfs:label>
     </owl:Class>
     
@@ -1927,6 +2034,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that started the episode, can only be Enumeration, Birth, Migration (Direction: In)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (Residence)</rdfs:label>
     </owl:Class>
@@ -1943,6 +2051,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_Union">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The start of the union. Can only be Enumeration or Union start</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (Union)</rdfs:label>
     </owl:Class>
@@ -1958,6 +2067,7 @@
     <!-- https://purl.ihccglobal.org/SAPRIN_StatusObservation -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StatusObservation">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information collected at a particular observation, valid only at the time of the observation. State may be imputed between consecutive status observations but is not known to be valid. This is in contrast with episode where the assertion is that the state represented by the episode is valid for the duration of the episode.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StatusObservation</rdfs:label>
     </owl:Class>
     
@@ -1967,6 +2077,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Stillborn">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of still born babies resulting from this delivery</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stillborn</rdfs:label>
     </owl:Class>
@@ -1983,6 +2094,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Surname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family or last name</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surname</rdfs:label>
     </owl:Class>
@@ -1999,6 +2111,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Toilet">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What kind of toilet does the household use</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toilet</rdfs:label>
     </owl:Class>
@@ -2074,6 +2187,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_PregnancyOutcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Types i-ii is only applicable if the pregnancy end prior to the 28th week of pregnancy, types iii-v is applicable only on or after the 28th week of pregnancy</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (PregnancyOutcome)</rdfs:label>
     </owl:Class>
@@ -2090,6 +2204,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_Social_support">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of grant</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (Social support)</rdfs:label>
     </owl:Class>
@@ -2115,6 +2230,13 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Union">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The episode during which two persons are in an informal or formal conjugal relationship. For a conjugal relationship to exist the following factors should be considered:
+ i. Shelter. Do the partners live under the same roof?
+ ii. Sexual and personal conduct. Do the partners have sexual relations; do they maintain an attitude of fidelity to each other; do they eat their meals together?
+ iii. Services. Do they share household responsibilities?
+ iv. Social. Do they participate together in social activities; does their society recognise them as a couple?
+ v. Support. Do they support each other financially?
+ vi. Children. Do they have children together?</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Union</rdfs:label>
     </owl:Class>
@@ -2131,6 +2253,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_UnionEvent">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A change in the union (conjugal relationship) between two individuals</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnionEvent</rdfs:label>
     </owl:Class>
@@ -2147,6 +2270,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Unit">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual or household</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unit</rdfs:label>
     </owl:Class>
     
@@ -2156,6 +2280,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Vaccination_history">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For each vaccination record: date received and source of information (Road to Health Card or recall)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000091</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaccination history (child &lt;=6yr)</rdfs:label>
     </owl:Class>
@@ -2172,6 +2297,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Verbal_autopsy">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WHO standard verbal autopsy questionnaire items. SAPRIN will adopt the worldwide standardised World Health Organisation (WHO) Verbal Autopsy questionnaires to determine the cause of deaths reported in the surveillance population. The latest version of the WHO Verbal Autopsy Questionnaire is 2016, edited and cognitively tested to facilitate the use of publicly available analytical software for assigning the cause of death.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verbal autopsy</rdfs:label>
     </owl:Class>
@@ -2188,6 +2314,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Water_source">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The most commonly used (during last year) source of drinking water</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water source</rdfs:label>
     </owl:Class>
@@ -2204,6 +2331,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Woman">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the woman who experienced the pregnancy</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Woman</rdfs:label>
     </owl:Class>

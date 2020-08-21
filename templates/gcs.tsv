@@ -1,548 +1,548 @@
 Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
 ID	LABEL	C % SPLIT=|	A definition			
 	is-required;					
-GCS:ID	Identity			survey administration		
-GCS:DEMO	Demographic Info			demographic data		
-GCS:FAM	Family members			family and household structure		
-GCS:RESID	Residence			residence		
-GCS:SOURCE	Water and fuel source			socio-demographic and economic characteristics		
-GCS:JOB	Job			socio-demographic and economic characteristics		
-GCS:FOOD	Food preservation and cooking			socio-demographic and economic characteristics		
-GCS:PROP	Properties			socio-demographic and economic characteristics		
-GCS:MED	Medical History			diseases		
-GCS:CC	Chief complaints			signs and symptoms		
-GCS:CANCER	Cancer History			oncological		
-GCS:SMOK	Smoking			tobacco		
-GCS:OPIUM	Opium use			drugs		
-GCS:ALC	Alcohol use			alcohol		
-GCS:DRUGCAT	Drug history (1)			medication		
-GCS:DRUGDETAIL	Drug History (2)			medication		
-GCS:ORAL	Oral health					Signs and symptoms? Diseases? Lifestyle?
-GCS:TEA	Tea			socio-demographic and economic characteristics		
-GCS:ACTIVITY	Physical activity			physical activity		
-GCS:ANIMAL	Animal contact			socio-demographic and economic characteristics		
-GCS:ANTHRO	Anthropometric measurements			anthropometry		
-GCS:BP	Blood pressure measurements			blood pressure		
-GCS:FFQ	Food Frequency Questionnaire			nutrition		
-GCS:LAB	Lab markers			laboratory measures		
-GCS:PID	PID	Identity		unique identifiers		
-GCS:FirstName	FirstName	Identity				
-GCS:LastName	LastName	Identity				
-GCS:Province	Province	Identity		residence		
-GCS:District	District	Identity		residence		
-GCS:City	City	Identity		residence		
-GCS:Subdistrict	Subdistrict	Identity		residence		
-GCS:Village	Village	Identity		residence		
-GCS:Street	Street	Identity		residence		
-GCS:Alley	Alley	Identity		residence		
-GCS:CV_name	CV name	Identity		residence		
-GCS:City_Village	City_Village	Identity		residence		
-GCS:HouseNumber	HouseNumber	Identity		residence		
-GCS:ZipCode	ZipCode	Identity		residence		
-GCS:HomePhone	HomePhone	Identity				
-GCS:AreaCode	AreaCode	Identity				
-GCS:CellPhone	CellPhone	Identity				
-GCS:HealthCenter	HealthCenter	Identity				
-GCS:FamilyMemPhone	FamilyMemPhone	Identity				
-GCS:FamilyMemAreaCode	FamilyMemAreaCode	Identity				
-GCS:FamilyMemName	FamilyMemName	Identity				
-GCS:FriendName	FriendName	Identity				
-GCS:FriendProvince	FriendProvince	Identity				
-GCS:FriendDistrict	FriendDistrict	Identity				
-GCS:FriendCity	FriendCity	Identity				
-GCS:FriendSubdistrict	FriendSubdistrict	Identity				
-GCS:FriendVillage	FriendVillage	Identity				
-GCS:FriendStreet	FriendStreet	Identity				
-GCS:FriendAlley	FriendAlley	Identity				
-GCS:FriendHouseNumber	FriendHouseNumber	Identity				
-GCS:FriendZipCode	FriendZipCode	Identity				
-GCS:FriendHomePhone	FriendHomePhone	Identity				
-GCS:FriendAreaCode	FriendAreaCode	Identity				
-GCS:FriendCellPhone	FriendCellPhone	Identity				
-GCS:PlaceOfInterview	PlaceOfInterview	Demographic Info				
-GCS:InterviewPDate_Y	InterviewPDate_Y	Demographic Info				
-GCS:InterviewPDate_M	InterviewPDate_M	Demographic Info				
-GCS:InterviewPDate_D	InterviewPDate_D	Demographic Info				
-GCS:Gender	Gender	Demographic Info		gender		
-GCS:BdatePDate_Y	BdatePDate_Y	Demographic Info		age/birthdate		
-GCS:BdatePDate_M	BdatePDate_M	Demographic Info		age/birthdate		
-GCS:BdatePDate_D	BdatePDate_D	Demographic Info		age/birthdate		
-GCS:Age_self	Age_self	Demographic Info		age/birthdate		
-GCS:Age_new	Age_new	Demographic Info		age/birthdate		
-GCS:Ethnicity	Ethnicity	Demographic Info		ethnicity/race		
-GCS:ethnicity_new	ethnicity_new	Demographic Info		ethnicity/race		
-GCS:MaritalStatus	MaritalStatus	Demographic Info				
-GCS:marital_new	marital_new	Demographic Info				
-GCS:Education	Education	Demographic Info		education		
-GCS:FamilyInHousehold	FamilyInHousehold	Family members		family and household structure		
-GCS:BrothersN	BrothersN	Family members		family and household structure		
-GCS:StepbrothersN	StepbrothersN	Family members		family and household structure		
-GCS:SistersN	SistersN	Family members		family and household structure		
-GCS:Stepsisters	Stepsisters	Family members		family and household structure		
-GCS:Sons	Sons	Family members		family and household structure		
-GCS:Daughters	Daughters	Family members		family and household structure		
-GCS:TwinYesNo	TwinYesNo	Family members		family and household structure		
-GCS:TwinAlive	TwinAlive	Family members		family and household structure		
-GCS:ResDuration_1	ResDuration_1	Residence		residence		
-GCS:ResCitVill_1	ResCitVill_1	Residence		residence		
-GCS:ResDistrict_1	ResDistrict_1	Residence		residence		
-GCS:ResCitVillname_1	ResCitVillname_1	Residence		residence		
-GCS:ResHouseType_1	ResHouseType_1	Residence		residence		
-GCS:ResDuration_2	ResDuration_2	Residence		residence		
-GCS:ResCitVill_2	ResCitVill_2	Residence		residence		
-GCS:ResDistrict_2	ResDistrict_2	Residence		residence		
-GCS:ResCitVillname_2	ResCitVillname_2	Residence		residence		
-GCS:ResHouseType_2	ResHouseType_2	Residence		residence		
-GCS:ResDuration_3	ResDuration_3	Residence		residence		
-GCS:ResCitVill_3	ResCitVill_3	Residence		residence		
-GCS:ResDistrict_3	ResDistrict_3	Residence		residence		
-GCS:ResCitVillname_3	ResCitVillname_3	Residence		residence		
-GCS:ResHouseType_3	ResHouseType_3	Residence		residence		
-GCS:FoodWatSource	FoodWatSource	Water and fuel source				
-GCS:FoodWatYearsPipe	FoodWatYearsPipe	Water and fuel source				
-GCS:FoodWatPriorPipeSource	FoodWatPriorPipeSource	Water and fuel source				
-GCS:HeatAndFuelDuration_1	HeatAndFuelDuration_1	Water and fuel source				
-GCS:HeatingSystemType_1	HeatingSystemType_1	Water and fuel source				
-GCS:HeatMethod_1	HeatMethod_1	Water and fuel source				
-GCS:CookingMethod_1	CookingMethod_1	Water and fuel source				
-GCS:HeatAndFuelDuration_2	HeatAndFuelDuration_2	Water and fuel source				
-GCS:HeatingSystemType_2	HeatingSystemType_2	Water and fuel source				
-GCS:HeatMethod_2	HeatMethod_2	Water and fuel source				
-GCS:CookingMethod_2	CookingMethod_2	Water and fuel source				
-GCS:HeatAndFuelDuration_3	HeatAndFuelDuration_3	Water and fuel source				
-GCS:HeatingSystemType_3	HeatingSystemType_3	Water and fuel source				
-GCS:HeatMethod_3	HeatMethod_3	Water and fuel source				
-GCS:CookingMethod_3	CookingMethod_3	Water and fuel source				
-GCS:WorkEverWorkedFlag	WorkEverWorkedFlag	Job				
-GCS:WorkAgeBegan	WorkAgeBegan	Job				
-GCS:WorkCurrently	WorkCurrently	Job				
-GCS:JobsStartAge	JobsStartAge	Job				
-GCS:JobsEndAge	JobsEndAge	Job				
-GCS:JobsTitleOccupation	JobsTitleOccupation	Job				
-GCS:JobsTitleOccupationCode	JobsTitleOccupationCode	Job				
-GCS:JobsHoursPerDay	JobsHoursPerDay	Job				
-GCS:JobsIntensity	JobsIntensity	Job				
-GCS:JobMonthPerYear	JobMonthPerYear	Job				
-GCS:HusbandOccupation	HusbandOccupation	Job				
-GCS:FoodWatFoodPreserve	FoodWatFoodPreserve	Food preservation and cooking				
-GCS:FoodWatBreadPreserve	FoodWatBreadPreserve	Food preservation and cooking				
-GCS:FoodWatShallowFryVeg	FoodWatShallowFryVeg	Food preservation and cooking				
-GCS:FoodWatShallowFryMeat	FoodWatShallowFryMeat	Food preservation and cooking				
-GCS:FoodWatShallowFryFish	FoodWatShallowFryFish	Food preservation and cooking				
-GCS:FoodWatDeepFryVeg	FoodWatDeepFryVeg	Food preservation and cooking				
-GCS:FoodWatDeepFryMeat	FoodWatDeepFryMeat	Food preservation and cooking				
-GCS:FoodWatDeepFryFish	FoodWatDeepFryFish	Food preservation and cooking				
-GCS:FoodWatBBQVeg	FoodWatBBQVeg	Food preservation and cooking				
-GCS:FoodWatBBQMeat	FoodWatBBQMeat	Food preservation and cooking				
-GCS:FoodWatBBQFish	FoodWatBBQFish	Food preservation and cooking				
-GCS:FoodWatBoilVeg	FoodWatBoilVeg	Food preservation and cooking				
-GCS:FoodWatBoilMeat	FoodWatBoilMeat	Food preservation and cooking				
-GCS:FoodWatBoilFish	FoodWatBoilFish	Food preservation and cooking				
-GCS:FoodWatSteamVeg	FoodWatSteamVeg	Food preservation and cooking				
-GCS:FoodWatSteamMeat	FoodWatSteamMeat	Food preservation and cooking				
-GCS:FoodWatSteamFish	FoodWatSteamFish	Food preservation and cooking				
-GCS:FoodWatOthVeg	FoodWatOthVeg	Food preservation and cooking				
-GCS:FoodWatOthMeat	FoodWatOthMeat	Food preservation and cooking				
-GCS:FoodWatOthFish	FoodWatOthFish	Food preservation and cooking				
-GCS:FoodWatFreshLocalFruitChange	FoodWatFreshLocalFruitChange	Food preservation and cooking				
-GCS:FoodWatFreshImportedFruitChange	FoodWatFreshImportedFruitChange	Food preservation and cooking				
-GCS:FoodWatFreshVegChange	FoodWatFreshVegChange	Food preservation and cooking				
-GCS:FoodWatFreshMeatChange	FoodWatFreshMeatChange	Food preservation and cooking				
-GCS:Homeownership	Homeownership	Properties				
-GCS:house_nonowned	house_nonowned	Properties				
-GCS:HomeSize	HomeSize	Properties				
-GCS:PropertyAutoOwned	PropertyAutoOwned	Properties				
-GCS:PropertyAutoYears	PropertyAutoYears	Properties				
-GCS:PropertyMotorcycleOwned	PropertyMotorcycleOwned	Properties				
-GCS:PropertyMotorcycleYears	PropertyMotorcycleYears	Properties				
-GCS:PropertyColorTVOwned	PropertyColorTVOwned	Properties				
-GCS:PropertyColorTVYears	PropertyColorTVYears	Properties				
-GCS:PropertyBandWTVOwned	PropertyBandWTVOwned	Properties				
-GCS:PropertyBandWTVYears	PropertyBandWTVYears	Properties				
-GCS:PropertyIndoorBathOwned	PropertyIndoorBathOwned	Properties				
-GCS:PropertyIndoorBathYears	PropertyIndoorBathYears	Properties				
-GCS:PropertyVacuumOwned	PropertyVacuumOwned	Properties				
-GCS:PropertyVacuumYears	PropertyVacuumYears	Properties				
-GCS:PropertyWashMachOwned	PropertyWashMachOwned	Properties				
-GCS:PropertyWashMachYears	PropertyWashMachYears	Properties				
-GCS:PropertyRefrigeratorOwned	PropertyRefrigeratorOwned	Properties				
-GCS:PropertyRefrigeratorYears	PropertyRefrigeratorYears	Properties				
-GCS:PropertyFreezerOwned	PropertyFreezerOwned	Properties				
-GCS:PropertyFreezerYears	PropertyFreezerYears	Properties				
-GCS:PropertyComputerOwned	PropertyComputerOwned	Properties				
-GCS:PropertyComputerYears	PropertyComputerYears	Properties				
-GCS:HomeRooms	HomeRooms	Properties				
-GCS:HaveBath	HaveBath	Properties				
-GCS:HaveKitchen	HaveKitchen	Properties				
-GCS:MCA	MCA	Properties				
-GCS:NumberPregnancies	NumberPregnancies	Medical History				
-GCS:NumberLiveBirths	NumberLiveBirths	Medical History				
-GCS:DisRheumaticHeartDx	DisRheumaticHeartDx	Medical History		circulatory system		
-GCS:DisRheumaticHeartAge	DisRheumaticHeartAge	Medical History		circulatory system		
-GCS:DisHeartDiseaseDx	DisHeartDiseaseDx	Medical History		circulatory system		
-GCS:DisHeartDiseaseAge	DisHeartDiseaseAge	Medical History		circulatory system		
-GCS:DisStrokeDx	DisStrokeDx	Medical History		signs and symptoms		
-GCS:DisStrokeAge	DisStrokeAge	Medical History		signs and symptoms		
-GCS:DisHypertensionDx	DisHypertensionDx	Medical History		circulatory system		
-GCS:DisHypertensionAge	DisHypertensionAge	Medical History		circulatory system		
-GCS:DisDiabetesDx	DisDiabetesDx	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisDiabetesAge	DisDiabetesAge	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisCOPDDx	DisCOPDDx	Medical History		respiratory system		
-GCS:DisCOPDAge	DisCOPDAge	Medical History		respiratory system		
-GCS:DisRenalFailureDx	DisRenalFailureDx	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisRenalFailureAge	DisRenalFailureAge	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisJaundiceDx	DisJaundiceDx	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisJaundiceAge	DisJaundiceAge	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisLiverDx	DisLiverDx	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisLiverAge	DisLiverAge	Medical History		endocrine/nutritional/metabolic disorders		
-GCS:DisTBDx	DisTBDx	Medical History		diseases		should TB fall under respiratory?
-GCS:DisTBAge	DisTBAge	Medical History		diseases		should TB fall under respiratory?
-GCS:SurgeryFlag	SurgeryFlag	Medical History		surgical interventions		
-GCS:SurgeryType	SurgeryType	Medical History		surgical interventions		
-GCS:SurgeryAge	SurgeryAge	Medical History		surgical interventions		
-GCS:TransfusionFlag	TransfusionFlag	Medical History				
-GCS:TransfusionRecentFlag	TransfusionRecentFlag	Medical History				
-GCS:SymRefluxFlag	SymRefluxFlag	Chief complaints				
-GCS:SymRefluxWhen	SymRefluxWhen	Chief complaints				
-GCS:SymHeartburnFlag	SymHeartburnFlag	Chief complaints				
-GCS:SymHeartburnWhen	SymHeartburnWhen	Chief complaints				
-GCS:SymDifficultSwallowingFlag	SymDifficultSwallowingFlag	Chief complaints				
-GCS:SymDifficultSwallowingWhen	SymDifficultSwallowingWhen	Chief complaints				
-GCS:SymRefluxPastYearFreq	SymRefluxPastYearFreq	Chief complaints				
-GCS:SymRefluxPastYearSeverity	SymRefluxPastYearSeverity	Chief complaints				
-GCS:SymRefluxPriorYearsFreq	SymRefluxPriorYearsFreq	Chief complaints				
-GCS:SymRefluxPriorYearsSeverity	SymRefluxPriorYearsSeverity	Chief complaints				
-GCS:RefluxHeartburnTXFlag	RefluxHeartburnTXFlag	Chief complaints				
-GCS:WeightLossFlag	WeightLossFlag	Chief complaints				
-GCS:WeightLossAmount	WeightLossAmount	Chief complaints				
-GCS:WeightLossIntent	WeightLossIntent	Chief complaints				
-GCS:cancerdxflag	cancerdxflag	Cancer History				
-GCS:cancerdxage	cancerdxage	Cancer History				
-GCS:cancerdxsite	cancerdxsite	Cancer History				
-GCS:CancRelRelativeCode_1	CancRelRelativeCode_1	Cancer History				
-GCS:CancRelAgeDiagnosis_1	CancRelAgeDiagnosis_1	Cancer History				
-GCS:CancRelSite_1	CancRelSite_1	Cancer History				
-GCS:CancRelICD10_1	CancRelICD10_1	Cancer History				
-GCS:CancRelRelativeCode_2	CancRelRelativeCode_2	Cancer History				
-GCS:CancRelAgeDiagnosis_2	CancRelAgeDiagnosis_2	Cancer History				
-GCS:CancRelSite_2	CancRelSite_2	Cancer History				
-GCS:CancRelICD10_2	CancRelICD10_2	Cancer History				
-GCS:CancRelRelativeCode_3	CancRelRelativeCode_3	Cancer History				
-GCS:CancRelAgeDiagnosis_3	CancRelAgeDiagnosis_3	Cancer History				
-GCS:CancRelSite_3	CancRelSite_3	Cancer History				
-GCS:CancRelICD10_3	CancRelICD10_3	Cancer History				
-GCS:CancRelRelativeCode_4	CancRelRelativeCode_4	Cancer History				
-GCS:CancRelAgeDiagnosis_4	CancRelAgeDiagnosis_4	Cancer History				
-GCS:CancRelSite_4	CancRelSite_4	Cancer History				
-GCS:CancRelICD10_4	CancRelICD10_4	Cancer History				
-GCS:TobEverRegularFlag	TobEverRegularFlag	Smoking				
-GCS:TobCigsNow	TobCigsNow	Smoking				
-GCS:TobNonCigFlag	TobNonCigFlag	Smoking				
-GCS:TobStartAge_1	TobStartAge_1	Smoking				
-GCS:TobEndAge_1	TobEndAge_1	Smoking				
-GCS:TobDuration_1	TobDuration_1	Smoking				
-GCS:TobType_1	TobType_1	Smoking				
-GCS:TobNumberPerDay_1	TobNumberPerDay_1	Smoking				
-GCS:TobDaysPerWeek_1	TobDaysPerWeek_1	Smoking				
-GCS:CigNumPerDay_1	CigNumPerDay_1	Smoking				
-GCS:Cigpackyear_1	Cigpackyear_1	Smoking				
-GCS:TobStartAge_2	TobStartAge_2	Smoking				
-GCS:TobEndAge_2	TobEndAge_2	Smoking				
-GCS:TobDuration_2	TobDuration_2	Smoking				
-GCS:TobType_2	TobType_2	Smoking				
-GCS:TobNumberPerDay_2	TobNumberPerDay_2	Smoking				
-GCS:TobDaysPerWeek_2	TobDaysPerWeek_2	Smoking				
-GCS:CigNumPerDay_2	CigNumPerDay_2	Smoking				
-GCS:Cigpackyear_2	Cigpackyear_2	Smoking				
-GCS:TobStartAge_3	TobStartAge_3	Smoking				
-GCS:TobEndAge_3	TobEndAge_3	Smoking				
-GCS:TobDuration_3	TobDuration_3	Smoking				
-GCS:TobType_3	TobType_3	Smoking				
-GCS:TobNumberPerDay_3	TobNumberPerDay_3	Smoking				
-GCS:TobDaysPerWeek_3	TobDaysPerWeek_3	Smoking				
-GCS:CigNumPerDay_3	CigNumPerDay_3	Smoking				
-GCS:Cigpackyear_3	Cigpackyear_3	Smoking				
-GCS:TobStartAge_4	TobStartAge_4	Smoking				
-GCS:TobEndAge_4	TobEndAge_4	Smoking				
-GCS:TobDuration_4	TobDuration_4	Smoking				
-GCS:TobType_4	TobType_4	Smoking				
-GCS:TobNumberPerDay_4	TobNumberPerDay_4	Smoking				
-GCS:TobDaysPerWeek_4	TobDaysPerWeek_4	Smoking				
-GCS:CigNumPerDay_4	CigNumPerDay_4	Smoking				
-GCS:Cigpackyear_4	Cigpackyear_4	Smoking				
-GCS:total_packyear	total_packyear	Smoking				
-GCS:OpiateEverRegularFlag	OpiateEverRegularFlag	Opium use				
-GCS:OpiatePersonalChildhoodExp	OpiatePersonalChildhoodExp	Opium use				
-GCS:OpiateAdministeredToChildrenFlag	OpiateAdministeredToChildrenFlag	Opium use				
-GCS:OpiateType	OpiateType	Opium use				
-GCS:OpiateRoute	OpiateRoute	Opium use				
-GCS:OpiateStartAge_1	OpiateStartAge_1	Opium use				
-GCS:OpiateEndAge_1	OpiateEndAge_1	Opium use				
-GCS:OpiateDuration_1	OpiateDuration_1	Opium use				
-GCS:OpiateNokhod_1	OpiateNokhod_1	Opium use				
-GCS:OpiateDaysPerWeek_1	OpiateDaysPerWeek_1	Opium use				
-GCS:OpiateAmountperDay_1	OpiateAmountperDay_1	Opium use				
-GCS:Opiatecum_1	Opiatecum_1	Opium use				
-GCS:OpiateStartAge_2	OpiateStartAge_2	Opium use				
-GCS:OpiateEndAge_2	OpiateEndAge_2	Opium use				
-GCS:OpiateDuration_2	OpiateDuration_2	Opium use				
-GCS:OpiateNokhod_2	OpiateNokhod_2	Opium use				
-GCS:OpiateDaysPerWeek_2	OpiateDaysPerWeek_2	Opium use				
-GCS:OpiateAmountperDay_2	OpiateAmountperDay_2	Opium use				
-GCS:Opiatecum_2	Opiatecum_2	Opium use				
-GCS:OpiateStartAge_3	OpiateStartAge_3	Opium use				
-GCS:OpiateEndAge_3	OpiateEndAge_3	Opium use				
-GCS:OpiateDuration_3	OpiateDuration_3	Opium use				
-GCS:OpiateNokhod_3	OpiateNokhod_3	Opium use				
-GCS:OpiateDaysPerWeek_3	OpiateDaysPerWeek_3	Opium use				
-GCS:OpiateAmountperDay_3	OpiateAmountperDay_3	Opium use				
-GCS:Opiatecum_3	Opiatecum_3	Opium use				
-GCS:OpiateStartAge_4	OpiateStartAge_4	Opium use				
-GCS:OpiateEndAge_4	OpiateEndAge_4	Opium use				
-GCS:OpiateDuration_4	OpiateDuration_4	Opium use				
-GCS:OpiateNokhod_4	OpiateNokhod_4	Opium use				
-GCS:OpiateDaysPerWeek_4	OpiateDaysPerWeek_4	Opium use				
-GCS:OpiateAmountperDay_4	OpiateAmountperDay_4	Opium use				
-GCS:Opiatecum_4	Opiatecum_4	Opium use				
-GCS:TotalNokhodDay	TotalNokhodDay	Opium use				
-GCS:AlcEverRegularFlag	AlcEverRegularFlag	Alcohol use				
-GCS:AlcStartAge_1	AlcStartAge_1	Alcohol use				
-GCS:AlcEndAge_1	AlcEndAge_1	Alcohol use				
-GCS:AlcType_1	AlcType_1	Alcohol use				
-GCS:AlcQuantityPerEpisode_1	AlcQuantityPerEpisode_1	Alcohol use				
-GCS:AlcEpisodesPerMonth_1	AlcEpisodesPerMonth_1	Alcohol use				
-GCS:AlcStartAge_2	AlcStartAge_2	Alcohol use				
-GCS:AlcEndAge_2	AlcEndAge_2	Alcohol use				
-GCS:AlcType_2	AlcType_2	Alcohol use				
-GCS:AlcQuantityPerEpisode_2	AlcQuantityPerEpisode_2	Alcohol use				
-GCS:AlcEpisodesPerMonth_2	AlcEpisodesPerMonth_2	Alcohol use				
-GCS:AlcStartAge_3	AlcStartAge_3	Alcohol use				
-GCS:AlcEndAge_3	AlcEndAge_3	Alcohol use				
-GCS:AlcType_3	AlcType_3	Alcohol use				
-GCS:AlcQuantityPerEpisode_3	AlcQuantityPerEpisode_3	Alcohol use				
-GCS:AlcEpisodesPerMonth_3	AlcEpisodesPerMonth_3	Alcohol use				
-GCS:DrugCurrentuse	DrugCurrentuse	Drug history (1)				
-GCS:antiHTN	antiHTN	Drug history (1)		associated disease(s)		
-GCS:antiDM	antiDM	Drug history (1)		associated disease(s)		
-GCS:cardiac	cardiac	Drug history (1)		associated disease(s)		
-GCS:antilipid	antilipid	Drug history (1)		associated disease(s)		
-GCS:mentaldrug	mentaldrug	Drug history (1)		associated disease(s)		
-GCS:Corticosteroid	Corticosteroid	Drug history (1)		prescription		
-GCS:Gidrugs	Gidrugs	Drug history (1)		associated disease(s)		
-GCS:antibiotics	antibiotics	Drug history (1)		prescription		
-GCS:diuretic	diuretic	Drug history (1)		prescription		
-GCS:betablocker	betablocker	Drug history (1)		prescription		
-GCS:ACEinhibitor	ACEinhibitor	Drug history (1)		prescription		
-GCS:ARB	ARB	Drug history (1)		prescription		
-GCS:alphablocker	alphablocker	Drug history (1)		prescription		
-GCS:CCBlocker	CCBlocker	Drug history (1)		prescription		
-GCS:Glibenclamide	Glibenclamide	Drug history (1)		prescription		
-GCS:Metformin	Metformin	Drug history (1)		prescription		
-GCS:Insulin	Insulin	Drug history (1)		prescription		
-GCS:Antiplatelets	Antiplatelets	Drug history (1)		prescription		
-GCS:Statins	Statins	Drug history (1)		prescription		
-GCS:Nitrates	Nitrates	Drug history (1)		prescription		
-GCS:Gemfibrozil	Gemfibrozil	Drug history (1)		prescription		
-GCS:Acetaminophen	Acetaminophen	Drug history (1)		prescription		
-GCS:Ibuprofen	Ibuprofen	Drug history (1)		prescription		
-GCS:Diclophenac	Diclophenac	Drug history (1)		prescription		
-GCS:Indomethacin	Indomethacin	Drug history (1)		prescription		
-GCS:Levothyroxin	Levothyroxin	Drug history (1)		prescription		
-GCS:Methotrexate	Methotrexate	Drug history (1)		prescription		
-GCS:Other	Other	Drug history (1)				
-GCS:DrugCurrentuse	DrugCurrentuse	Drug History (2)				
-GCS:drugname_1	drugname_1	Drug History (2)		prescription		
-GCS:drugduration_1	drugduration_1	Drug History (2)		prescription		
-GCS:drugfrequency_1	drugfrequency_1	Drug History (2)		prescription		
-GCS:drugdose_1	drugdose_1	Drug History (2)		prescription		
-GCS:drugname_2	drugname_2	Drug History (2)		prescription		
-GCS:drugduration_2	drugduration_2	Drug History (2)		prescription		
-GCS:drugfrequency_2	drugfrequency_2	Drug History (2)		prescription		
-GCS:drugdose_2	drugdose_2	Drug History (2)		prescription		
-GCS:drugname_3	drugname_3	Drug History (2)		prescription		
-GCS:drugduration_3	drugduration_3	Drug History (2)		prescription		
-GCS:drugfrequency_3	drugfrequency_3	Drug History (2)		prescription		
-GCS:drugdose_3	drugdose_3	Drug History (2)		prescription		
-GCS:drugname_4	drugname_4	Drug History (2)		prescription		
-GCS:drugduration_4	drugduration_4	Drug History (2)		prescription		
-GCS:drugfrequency_4	drugfrequency_4	Drug History (2)		prescription		
-GCS:drugdose_4	drugdose_4	Drug History (2)		prescription		
-GCS:drugname_5	drugname_5	Drug History (2)		prescription		
-GCS:drugduration_5	drugduration_5	Drug History (2)		prescription		
-GCS:drugfrequency_5	drugfrequency_5	Drug History (2)		prescription		
-GCS:drugdose_5	drugdose_5	Drug History (2)		prescription		
-GCS:drugname_6	drugname_6	Drug History (2)		prescription		
-GCS:drugduration_6	drugduration_6	Drug History (2)		prescription		
-GCS:drugfrequency_6	drugfrequency_6	Drug History (2)		prescription		
-GCS:drugdose_6	drugdose_6	Drug History (2)		prescription		
-GCS:drugname_7	drugname_7	Drug History (2)		prescription		
-GCS:drugduration_7	drugduration_7	Drug History (2)		prescription		
-GCS:drugfrequency_7	drugfrequency_7	Drug History (2)		prescription		
-GCS:drugdose_7	drugdose_7	Drug History (2)		prescription		
-GCS:drugname_8	drugname_8	Drug History (2)		prescription		
-GCS:drugduration_8	drugduration_8	Drug History (2)		prescription		
-GCS:drugfrequency_8	drugfrequency_8	Drug History (2)		prescription		
-GCS:drugdose_8	drugdose_8	Drug History (2)		prescription		
-GCS:drugname_9	drugname_9	Drug History (2)		prescription		
-GCS:drugduration_9	drugduration_9	Drug History (2)		prescription		
-GCS:drugfrequency_9	drugfrequency_9	Drug History (2)		prescription		
-GCS:drugdose_9	drugdose_9	Drug History (2)		prescription		
-GCS:drugname_10	drugname_10	Drug History (2)		prescription		
-GCS:drugduration_10	drugduration_10	Drug History (2)		prescription		
-GCS:drugfrequency_10	drugfrequency_10	Drug History (2)		prescription		
-GCS:drugdose_10	drugdose_10	Drug History (2)		prescription		
-GCS:OralPermanentTeethLossFlag	OralPermanentTeethLossFlag	Oral health				
-GCS:OralPermanentTeethAgeFirstLoss	OralPermanentTeethAgeFirstLoss	Oral health				
-GCS:OralUpperDentureFlag	OralUpperDentureFlag	Oral health				
-GCS:OralLowerDentureFlag	OralLowerDentureFlag	Oral health				
-GCS:OralUpperDentureUse	OralUpperDentureUse	Oral health				
-GCS:OralLowerDentureUse	OralLowerDentureUse	Oral health				
-GCS:OralAgeDentureUpper	OralAgeDentureUpper	Oral health				
-GCS:OralAgeDentureLower	OralAgeDentureLower	Oral health				
-GCS:OralFreqBrushing	OralFreqBrushing	Oral health				
-GCS:OralFoodDiscomfortFlag	OralFoodDiscomfortFlag	Oral health				
-GCS:OralFoodDiscomfortType	OralFoodDiscomfortType	Oral health				
-GCS:OralNumTeeth	OralNumTeeth	Oral health				
-GCS:OralNumTeethDecayed	OralNumTeethDecayed	Oral health				
-GCS:OralNumTeethMissing	OralNumTeethMissing	Oral health				
-GCS:OralNumTeethFilled	OralNumTeethFilled	Oral health				
-GCS:OralMucosa	OralMucosa	Oral health				
-GCS:TeaTempDegrees	TeaTempDegrees	Tea				
-GCS:TeaTempDescription	TeaTempDescription	Tea				
-GCS:TeaSteepingTime	TeaSteepingTime	Tea				
-GCS:TeaSipOrGulp	TeaSipOrGulp	Tea				
-GCS:physactworkallyearflag	physactworkallyearflag	Physical activity		socio-demographic and economic characteristics		
-GCS:physactworkmonths	physactworkmonths	Physical activity		socio-demographic and economic characteristics		
-GCS:physactworkstrenuousflag	physactworkstrenuousflag	Physical activity		socio-demographic and economic characteristics		
-GCS:physactworkstrenuousfreq	physactworkstrenuousfreq	Physical activity		socio-demographic and economic characteristics		
-GCS:physactworkstrenuoushours	physactworkstrenuoushours	Physical activity		socio-demographic and economic characteristics		
-GCS:physactworkstrenuousyears	physactworkstrenuousyears	Physical activity		socio-demographic and economic characteristics		
-GCS:physacthouseworkflag	physacthouseworkflag	Physical activity				
-GCS:physacthouseworkfreq	physacthouseworkfreq	Physical activity				
-GCS:physacthouseworkhours	physacthouseworkhours	Physical activity				
-GCS:physacthouseworkyears	physacthouseworkyears	Physical activity				
-GCS:physacthouseworkminsduringwork	physacthouseworkminsduringwork	Physical activity				
-GCS:physacthouseworkminsnowork	physacthouseworkminsnowork	Physical activity				
-GCS:physactexmildminsduringwork	physactexmildminsduringwork	Physical activity				
-GCS:physactexmildminsnowork	physactexmildminsnowork	Physical activity				
-GCS:physactexmodminsduringwork	physactexmodminsduringwork	Physical activity				
-GCS:physactexmodminsnowork	physactexmodminsnowork	Physical activity				
-GCS:physactexstrenminsduringwork	physactexstrenminsduringwork	Physical activity				
-GCS:physactexstrenminsnowork	physactexstrenminsnowork	Physical activity				
-GCS:physacttvminsduringwork	physacttvminsduringwork	Physical activity				
-GCS:physacttvminsnowork	physacttvminsnowork	Physical activity				
-GCS:Metabolic_Equivalent_Task	Metabolic Equivalent Task	Physical activity				
-GCS:AnimalStartAge_1	AnimalStartAge_1	Animal contact				
-GCS:AnimalEndAge_1	AnimalEndAge_1	Animal contact				
-GCS:AnimalLevelOfContact_1	AnimalLevelOfContact_1	Animal contact				
-GCS:AnimalType_1	AnimalType_1	Animal contact				
-GCS:AnimalStartAge_2	AnimalStartAge_2	Animal contact				
-GCS:AnimalEndAge_2	AnimalEndAge_2	Animal contact				
-GCS:AnimalLevelOfContact_2	AnimalLevelOfContact_2	Animal contact				
-GCS:AnimalType_2	AnimalType_2	Animal contact				
-GCS:AnimalStartAge_3	AnimalStartAge_3	Animal contact				
-GCS:AnimalEndAge_3	AnimalEndAge_3	Animal contact				
-GCS:AnimalLevelOfContact_3	AnimalLevelOfContact_3	Animal contact				
-GCS:AnimalType_3	AnimalType_3	Animal contact				
-GCS:AnimalStartAge_4	AnimalStartAge_4	Animal contact				
-GCS:AnimalEndAge_4	AnimalEndAge_4	Animal contact				
-GCS:AnimalLevelOfContact_4	AnimalLevelOfContact_4	Animal contact				
-GCS:AnimalType_4	AnimalType_4	Animal contact				
-GCS:bodyindicessizeage15	bodyindicessizeage15	Anthropometric measurements				
-GCS:bodyindicessizeage30	bodyindicessizeage30	Anthropometric measurements				
-GCS:bodyindicessizenow	bodyindicessizenow	Anthropometric measurements				
-GCS:bodyindicesheight	bodyindicesheight	Anthropometric measurements		height		
-GCS:bodyindicesweight	bodyindicesweight	Anthropometric measurements		weight		
-GCS:bodyindiceswaist	bodyindiceswaist	Anthropometric measurements				
-GCS:bodyindiceships	bodyindiceships	Anthropometric measurements				
-GCS:BMI	BMI	Anthropometric measurements				
-GCS:bpright1sbp	bpright1sbp	Blood pressure measurements				
-GCS:bpright1dbp	bpright1dbp	Blood pressure measurements				
-GCS:bpright2sbp	bpright2sbp	Blood pressure measurements				
-GCS:bpright2dbp	bpright2dbp	Blood pressure measurements				
-GCS:bpleft1sbp	bpleft1sbp	Blood pressure measurements				
-GCS:bpleft1dbp	bpleft1dbp	Blood pressure measurements				
-GCS:bpleft2sbp	bpleft2sbp	Blood pressure measurements				
-GCS:bpleft2dbp	bpleft2dbp	Blood pressure measurements				
-GCS:m_sbp	m_sbp	Blood pressure measurements				
-GCS:m_dbp	m_dbp	Blood pressure measurements				
-GCS:high_sbp	high_sbp	Blood pressure measurements		signs and symptoms		
-GCS:high_dbp	high_dbp	Blood pressure measurements		signs and symptoms		
-GCS:htndrug	htndrug	Blood pressure measurements		prescription		
-GCS:HTN	HTN	Blood pressure measurements		circulatory system		
-GCS:HTNcat	HTNcat	Blood pressure measurements		circulatory system		
-GCS:preHTN	preHTN	Blood pressure measurements		circulatory system		
-GCS:pulse_p	pulse_p	Blood pressure measurements				
-GCS:mean_bp	mean_bp	Blood pressure measurements				
-GCS:mid_bp	mid_bp	Blood pressure measurements				
-GCS:diffsbp_right_left	diffsbp_right_left	Blood pressure measurements				
-GCS:diffdbp_right_left	diffdbp_right_left	Blood pressure measurements				
-GCS:Energy	Energy	Food Frequency Questionnaire				
-GCS:fat	fat	Food Frequency Questionnaire				
-GCS:salt	salt	Food Frequency Questionnaire				
-GCS:protein	protein	Food Frequency Questionnaire				
-GCS:total_saturated_fat	total saturated fat	Food Frequency Questionnaire				
-GCS:total_trans_fat	total trans fat	Food Frequency Questionnaire				
-GCS:hydrogenated_oil	hydrogenated oil	Food Frequency Questionnaire				
-GCS:carbohyderate	carbohyderate	Food Frequency Questionnaire				
-GCS:red_meat	red meat	Food Frequency Questionnaire				
-GCS:processed_meat	processed meat	Food Frequency Questionnaire				
-GCS:fruits	fruits	Food Frequency Questionnaire				
-GCS:vegetables	vegetables	Food Frequency Questionnaire				
-GCS:dairy_products	dairy products	Food Frequency Questionnaire				
-GCS:milk	milk	Food Frequency Questionnaire				
-GCS:dietary_fiber	dietary fiber	Food Frequency Questionnaire				
-GCS:Fish	Fish	Food Frequency Questionnaire				
-GCS:Chicken	Chicken	Food Frequency Questionnaire				
-GCS:SodiumNa	SodiumNa	Food Frequency Questionnaire				
-GCS:Calcium	Calcium	Food Frequency Questionnaire				
-GCS:Fe	Fe	Food Frequency Questionnaire				
-GCS:Magnesium	Magnesium	Food Frequency Questionnaire				
-GCS:Phosphorus	Phosphorus	Food Frequency Questionnaire				
-GCS:Potassium	Potassium	Food Frequency Questionnaire				
-GCS:Zinc	Zinc	Food Frequency Questionnaire				
-GCS:Folate	Folate	Food Frequency Questionnaire				
-GCS:Vitamin_D	Vitamin D	Food Frequency Questionnaire				
-GCS:Vitamin_A	Vitamin A	Food Frequency Questionnaire				
-GCS:Vitamin_B1	Vitamin B1	Food Frequency Questionnaire				
-GCS:Vitamin_B2	Vitamin B2	Food Frequency Questionnaire				
-GCS:Vitamin_B12	Vitamin B12	Food Frequency Questionnaire				
-GCS:Vitamin_C	Vitamin C	Food Frequency Questionnaire				
-GCS:Niacin	Niacin	Food Frequency Questionnaire				
-GCS:Glycemic_load	Glycemic load	Food Frequency Questionnaire				
-GCS:Glycemic_Index	Glycemic Index	Food Frequency Questionnaire				
-GCS:Sugar_intake	Sugar intake	Food Frequency Questionnaire				
-GCS:Nuts	Nuts	Food Frequency Questionnaire				
-GCS:tea	tea	Food Frequency Questionnaire				
-GCS:Coffee	Coffee	Food Frequency Questionnaire				
-GCS:fbg	fbg	Lab markers		blood		
-GCS:urea	urea	Lab markers		blood		
-GCS:creatinine	creatinine	Lab markers		blood		Some of these could be blood or urine, but it looks like they don't collect urine
-GCS:cholesterol	cholesterol	Lab markers		blood		
-GCS:triglycerides	triglycerides	Lab markers		blood		
-GCS:hdl	hdl	Lab markers		blood		
-GCS:ast	ast	Lab markers		blood		
-GCS:alt	alt	Lab markers		blood		
-GCS:alkalinep	alkalinep	Lab markers		blood		
-GCS:ldl	ldl	Lab markers		blood		
-GCS:ldlhdl	ldlhdl	Lab markers		blood		
-GCS:gamma	gamma	Lab markers		blood		
-GCS:hbsag	hbsag	Lab markers		blood		
-GCS:hbsab	hbsab	Lab markers		blood		
-GCS:hbcab	hbcab	Lab markers		blood		
-GCS:hbv	hbv	Lab markers		blood		
-GCS:hcv	hcv	Lab markers		blood		
-GCS:wbc	wbc	Lab markers		blood		
-GCS:rbc	rbc	Lab markers		blood		
-GCS:hb	hb	Lab markers		blood		
-GCS:hct	hct	Lab markers		blood		
-GCS:plt	plt	Lab markers		blood		
-GCS:mcv	mcv	Lab markers		blood		
-GCS:mch	mch	Lab markers		blood		
-GCS:mchc	mchc	Lab markers		blood		
-GCS:rdw	rdw	Lab markers		blood		
-GCS:BloodType	BloodType	Lab markers		blood		
-GCS:Rh	Rh	Lab markers		blood		
-GCS:BioSampHairAvailFlag	BioSampHairAvailFlag	Lab markers		other biosample type		
-GCS:BioSampNailAvailFlag	BioSampNailAvailFlag	Lab markers		other biosample type		
-GCS:BioSampBloodAvailFlag	BioSampBloodAvailFlag	Lab markers		blood		
+GCS:ID	Identity		Identity and contact information	survey administration		
+GCS:DEMO	Demographic Info		Demographic characteristics: sex, age, ethnicity, marital status, education	demographic data		
+GCS:FAM	Family members		Characteristics of relatives in the household	family and household structure		
+GCS:RESID	Residence		The residential area (urban/rural), structure of the house, and duration of residing in the house	residence		
+GCS:SOURCE	Water and fuel source		Water source, heat and fuel system, and cooking method	socio-demographic and economic characteristics		
+GCS:JOB	Job		The names of all jobs the participant has had and the duration of work	socio-demographic and economic characteristics		
+GCS:FOOD	Food preservation and cooking		Food preservation, frying, boiling, BBQ, steaming, ‚Ä¶	socio-demographic and economic characteristics		
+GCS:PROP	Properties		Transferable and non-transferable belongings and wealth score (Multiple Correspondence Analysis)	socio-demographic and economic characteristics		
+GCS:MED	Medical History		Suffering from any disease at the baseline of cohort	diseases		
+GCS:CC	Chief complaints		The complaints of participants from their physical or mental sufferings	signs and symptoms		
+GCS:CANCER	Cancer History		History of cancer, site, and age diagnosed in the participant or any of his/her relatives	oncological		
+GCS:SMOK	Smoking		Ever or current smoker, age of use, type, number per day and days per week	tobacco		
+GCS:OPIUM	Opium use		Ever or current user, age and route of use, type, time per day and days per week	drugs		
+GCS:ALC	Alcohol use		Ever or current user, age of use, type, quantity per episode and episodes per month	alcohol		
+GCS:DRUGCAT	Drug history (1)		The main created categories of drugs consumed by participants	medication		
+GCS:DRUGDETAIL	Drug History (2)		The exact name, duration, dose, and frequency of drugs consumed	medication		
+GCS:ORAL	Oral health		Decayed, filled, and missing teeth along with the age of the participant in each of these occasions			Signs and symptoms? Diseases? Lifestyle?
+GCS:TEA	Tea		Tea temperature, type of tea, and type of habit for drinking the tea	socio-demographic and economic characteristics		
+GCS:ACTIVITY	Physical activity		The duration and intensity of physical activities during working and leasure times of the day, and Metabolic Equivalent Task (MET)	physical activity		
+GCS:ANIMAL	Animal contact		The age of the participant in contact with animals, the duration and intensity of animal contact, and the type of animal	socio-demographic and economic characteristics		
+GCS:ANTHRO	Anthropometric measurements		Physically measured height, weight, waist circumference, hip circumference and data of pictogram	anthropometry		
+GCS:BP	Blood pressure measurements		Both systolic and diastolic blood pressure measured in sitting position twice from each arm	blood pressure		
+GCS:FFQ	Food Frequency Questionnaire		Units of food categories consumed per day	nutrition		
+GCS:LAB	Lab markers		Biochemical markers	laboratory measures		
+GCS:PID	PID	Identity	The Unique Id for eatch participant	unique identifiers		
+GCS:FirstName	FirstName	Identity	The first name of participant.	survey administration		
+GCS:LastName	LastName	Identity	The last name of participant.	survey administration		
+GCS:Province	Province	Identity	Specifies the participant Province of Residence	residence		
+GCS:District	District	Identity	Specifies the participant District of Residence	residence		
+GCS:City	City	Identity	Specifies the participant City of Residence	residence		
+GCS:Subdistrict	Subdistrict	Identity	Specifies the participant Subdistrict of Residence	residence		
+GCS:Village	Village	Identity	Specifies the participant Village of Residence	residence		
+GCS:Street	Street	Identity	Specifies the participant Street of Residence	residence		
+GCS:Alley	Alley	Identity	Specifies the participant Alley of Residence	residence		
+GCS:CV_name	CV name	Identity	Specifies the names of cities or villages in one variable	residence		
+GCS:City_Village	City_Village	Identity	Specifies residence in cities or villages	residence		
+GCS:HouseNumber	HouseNumber	Identity	Specifies the participant's House Number of Residence	residence		
+GCS:ZipCode	ZipCode	Identity	Specifies the participant's Zip Code of Residence	residence		
+GCS:HomePhone	HomePhone	Identity	Specifies the participants Home Phone	survey administration		
+GCS:AreaCode	AreaCode	Identity	Specifies the participant's home Phone Area Code	survey administration		
+GCS:CellPhone	CellPhone	Identity	Specifies the participant's Cell phone number	survey administration		
+GCS:HealthCenter	HealthCenter	Identity	participant related to this health center(the participant covered by this health center)	physician/practitioner info		
+GCS:FamilyMemPhone	FamilyMemPhone	Identity	Specifies the phone number of one of participant's family members	survey administration		
+GCS:FamilyMemAreaCode	FamilyMemAreaCode	Identity	Specifies the area code of the phone number of one of participant's family members	survey administration		
+GCS:FamilyMemName	FamilyMemName	Identity	Specifies the name of one family member of the participant	survey administration		
+GCS:FriendName	FriendName	Identity	Specifies the name of one of friends of the participant	survey administration		
+GCS:FriendProvince	FriendProvince	Identity	Specifies the province in which the friend of the participant resides	survey administration		
+GCS:FriendDistrict	FriendDistrict	Identity	Specifies the district in which the friend of the participant resides	survey administration		
+GCS:FriendCity	FriendCity	Identity	Specifies the city in which the friend of the participant resides	survey administration		
+GCS:FriendSubdistrict	FriendSubdistrict	Identity	Specifies the subdistrict in which the friend of the participant resides	survey administration		
+GCS:FriendVillage	FriendVillage	Identity	Specifies the village in which the friend of the participant resides	survey administration		
+GCS:FriendStreet	FriendStreet	Identity	Specifies the street in which the friend of the participant resides	survey administration		
+GCS:FriendAlley	FriendAlley	Identity	Specifies the alley in which the friend of the participant resides	survey administration		
+GCS:FriendHouseNumber	FriendHouseNumber	Identity	Specifies the house number in which the friend of the participant resides	survey administration		
+GCS:FriendZipCode	FriendZipCode	Identity	Specifies the zip code in which the friend of the participant resides	survey administration		
+GCS:FriendHomePhone	FriendHomePhone	Identity	Specifies the phone number of the participant's friend	survey administration		
+GCS:FriendAreaCode	FriendAreaCode	Identity	Specifies the area code of the phone number of participant's friend	survey administration		
+GCS:FriendCellPhone	FriendCellPhone	Identity	Specifies the cell phone number of participant's friend	survey administration		
+GCS:PlaceOfInterview	PlaceOfInterview	Demographic Info	Specifies the participant interview place	location		
+GCS:InterviewPDate_Y	InterviewPDate_Y	Demographic Info	participant year of Interview date in Shamsi format	date and time-related information		
+GCS:InterviewPDate_M	InterviewPDate_M	Demographic Info	participant month of Interview date in Shamsi format	date and time-related information		
+GCS:InterviewPDate_D	InterviewPDate_D	Demographic Info	participant Day of Interview date in Shamsi format	date and time-related information		
+GCS:Gender	Gender	Demographic Info	Specifies the participant Gender	gender		
+GCS:BdatePDate_Y	BdatePDate_Y	Demographic Info	Year of participant Birth date in Shamsi format	age/birthdate		
+GCS:BdatePDate_M	BdatePDate_M	Demographic Info	Month of participant Birth date in Shamsi format	age/birthdate		
+GCS:BdatePDate_D	BdatePDate_D	Demographic Info	Day of participant Birth date in Shamsi format	age/birthdate		
+GCS:Age_self	Age_self	Demographic Info	Specifies the self-report participant age in inteview time	age/birthdate		
+GCS:Age_new	Age_new	Demographic Info	Age calculated from birth date and interview date	age/birthdate		
+GCS:Ethnicity	Ethnicity	Demographic Info	Specifies the participant Ethnicity	ethnicity/race		
+GCS:ethnicity_new	ethnicity_new	Demographic Info	Specifies ethnicity by Turkmen or Non-turkmen	ethnicity/race		
+GCS:MaritalStatus	MaritalStatus	Demographic Info	Specifies the participant marital status	socio-demographic and economic characteristics		
+GCS:marital_new	marital_new	Demographic Info	Specifies marital status into married or non-married	socio-demographic and economic characteristics		
+GCS:Education	Education	Demographic Info	Specifies the participant Education Level	education		
+GCS:FamilyInHousehold	FamilyInHousehold	Family members	Specifies the number of participant family living in the household	family and household structure		
+GCS:BrothersN	BrothersN	Family members	Specifies participant No. of Brothers	family and household structure		
+GCS:StepbrothersN	StepbrothersN	Family members	Specifies participant No. of Step brothers	family and household structure		
+GCS:SistersN	SistersN	Family members	Specifies participant No. of Sisters	family and household structure		
+GCS:Stepsisters	Stepsisters	Family members	Specifies participant No. of Step sisters	family and household structure		
+GCS:Sons	Sons	Family members	Specifies participant No. of Sons	family and household structure		
+GCS:Daughters	Daughters	Family members	Specifies participant No. of Daughters	family and household structure		
+GCS:TwinYesNo	TwinYesNo	Family members	Specifies whether the participant has twin brother or sister	family and household structure		
+GCS:TwinAlive	TwinAlive	Family members	Specifies whether the twin of the participant is alive	family and household structure		
+GCS:ResDuration_1	ResDuration_1	Residence	Specifies the participant first residence history Duration	residence		
+GCS:ResCitVill_1	ResCitVill_1	Residence	Specifies the participant first residence history in Village or City	residence		
+GCS:ResDistrict_1	ResDistrict_1	Residence	Specifies the participant first residence history District	residence		
+GCS:ResCitVillname_1	ResCitVillname_1	Residence	Specifies the participant first residence history City or village name	residence		
+GCS:ResHouseType_1	ResHouseType_1	Residence	Specifies the participant first residence history House Type	residence		
+GCS:ResDuration_2	ResDuration_2	Residence	Specifies the participant second residence history Duration	residence		
+GCS:ResCitVill_2	ResCitVill_2	Residence	Specifies the participant second residence history in Village or City	residence		
+GCS:ResDistrict_2	ResDistrict_2	Residence	Specifies the participant second residence history District	residence		
+GCS:ResCitVillname_2	ResCitVillname_2	Residence	Specifies the participant second residence history City or village name	residence		
+GCS:ResHouseType_2	ResHouseType_2	Residence	Specifies the participant second residence history House Type	residence		
+GCS:ResDuration_3	ResDuration_3	Residence	Specifies the participant third residence history Duration	residence		
+GCS:ResCitVill_3	ResCitVill_3	Residence	Specifies the participant third residence history in Village or City	residence		
+GCS:ResDistrict_3	ResDistrict_3	Residence	Specifies the participant third residence history District	residence		
+GCS:ResCitVillname_3	ResCitVillname_3	Residence	Specifies the participant third residence history City or village name	residence		
+GCS:ResHouseType_3	ResHouseType_3	Residence	Specifies the participant third residence history House Type	residence		
+GCS:FoodWatSource	FoodWatSource	Water and fuel source	Specifies participant used water source	socio-demographic and economic characteristics		
+GCS:FoodWatYearsPipe	FoodWatYearsPipe	Water and fuel source	Specifies how many years participant used pipe water	socio-demographic and economic characteristics		
+GCS:FoodWatPriorPipeSource	FoodWatPriorPipeSource	Water and fuel source	Specifies what water source participant used prior to pipe water	socio-demographic and economic characteristics		
+GCS:HeatAndFuelDuration_1	HeatAndFuelDuration_1	Water and fuel source	Specifies the duration the participant Used Heating or Fuel system, first history	socio-demographic and economic characteristics		
+GCS:HeatingSystemType_1	HeatingSystemType_1	Water and fuel source	Specifies the participant Used Heating Type, first history	socio-demographic and economic characteristics		
+GCS:HeatMethod_1	HeatMethod_1	Water and fuel source	Specifies the participant Used Heating Type of fuel, first history	socio-demographic and economic characteristics		
+GCS:CookingMethod_1	CookingMethod_1	Water and fuel source	Specifies the participant Used Cooking Type of fuel, first history	socio-demographic and economic characteristics		
+GCS:HeatAndFuelDuration_2	HeatAndFuelDuration_2	Water and fuel source	Specifies the duration the participant Used Heating or Fuel system, second history	socio-demographic and economic characteristics		
+GCS:HeatingSystemType_2	HeatingSystemType_2	Water and fuel source	Specifies the participant Used Heating Type, second history	socio-demographic and economic characteristics		
+GCS:HeatMethod_2	HeatMethod_2	Water and fuel source	Specifies the participant Used Heating Type of fuel, second history	socio-demographic and economic characteristics		
+GCS:CookingMethod_2	CookingMethod_2	Water and fuel source	Specifies the participant Used Cooking Type of fuel, second history	socio-demographic and economic characteristics		
+GCS:HeatAndFuelDuration_3	HeatAndFuelDuration_3	Water and fuel source	Specifies the duration participant Used Heating or Fuel system, third history	socio-demographic and economic characteristics		
+GCS:HeatingSystemType_3	HeatingSystemType_3	Water and fuel source	Specifies the participant Used Heating Type, third history	socio-demographic and economic characteristics		
+GCS:HeatMethod_3	HeatMethod_3	Water and fuel source	Specifies the participant Used Heating Type of fuel, third history	socio-demographic and economic characteristics		
+GCS:CookingMethod_3	CookingMethod_3	Water and fuel source	Specifies the participant Used Cooking Type of fuel, third history	socio-demographic and economic characteristics		
+GCS:WorkEverWorkedFlag	WorkEverWorkedFlag	Job	Working for at least one year of full-time job	socio-demographic and economic characteristics		
+GCS:WorkAgeBegan	WorkAgeBegan	Job	Specifies participant start work age	socio-demographic and economic characteristics		
+GCS:WorkCurrently	WorkCurrently	Job	Specifies participant work now	socio-demographic and economic characteristics		
+GCS:JobsStartAge	JobsStartAge	Job	Age of starting the job for last history	socio-demographic and economic characteristics		
+GCS:JobsEndAge	JobsEndAge	Job	Age of quiting the job for last history	socio-demographic and economic characteristics		
+GCS:JobsTitleOccupation	JobsTitleOccupation	Job	Name of the job	socio-demographic and economic characteristics		
+GCS:JobsTitleOccupationCode	JobsTitleOccupationCode	Job	Code of the job (Appendix)	socio-demographic and economic characteristics		
+GCS:JobsHoursPerDay	JobsHoursPerDay	Job	Number of working hours per day	socio-demographic and economic characteristics		
+GCS:JobsIntensity	JobsIntensity	Job	The intensity of physical activity during the job	socio-demographic and economic characteristics		
+GCS:JobMonthPerYear	JobMonthPerYear	Job	Number of working months per year	socio-demographic and economic characteristics		
+GCS:HusbandOccupation	HusbandOccupation	Job	Code of the husband job (Appendix)	socio-demographic and economic characteristics		
+GCS:FoodWatFoodPreserve	FoodWatFoodPreserve	Food preservation and cooking	Specifies How to Preserve foods	socio-demographic and economic characteristics		
+GCS:FoodWatBreadPreserve	FoodWatBreadPreserve	Food preservation and cooking	Specifies How to Preserve bread	socio-demographic and economic characteristics		
+GCS:FoodWatShallowFryVeg	FoodWatShallowFryVeg	Food preservation and cooking	Specifies Using vegetable in Small frying	socio-demographic and economic characteristics		
+GCS:FoodWatShallowFryMeat	FoodWatShallowFryMeat	Food preservation and cooking	Specifies Using Meat in Small frying	socio-demographic and economic characteristics		
+GCS:FoodWatShallowFryFish	FoodWatShallowFryFish	Food preservation and cooking	Specifies Using Fish in Small frying	socio-demographic and economic characteristics		
+GCS:FoodWatDeepFryVeg	FoodWatDeepFryVeg	Food preservation and cooking	Specifies Using vegetable in Deep frying	socio-demographic and economic characteristics		
+GCS:FoodWatDeepFryMeat	FoodWatDeepFryMeat	Food preservation and cooking	Specifies Using Meat in Deep frying	socio-demographic and economic characteristics		
+GCS:FoodWatDeepFryFish	FoodWatDeepFryFish	Food preservation and cooking	Specifies Using Fish in Deep frying	socio-demographic and economic characteristics		
+GCS:FoodWatBBQVeg	FoodWatBBQVeg	Food preservation and cooking	Specifies Using vegetable in BBQ	socio-demographic and economic characteristics		
+GCS:FoodWatBBQMeat	FoodWatBBQMeat	Food preservation and cooking	Specifies Using Meat in BBQ	socio-demographic and economic characteristics		
+GCS:FoodWatBBQFish	FoodWatBBQFish	Food preservation and cooking	Specifies Using Fish in BBQ	socio-demographic and economic characteristics		
+GCS:FoodWatBoilVeg	FoodWatBoilVeg	Food preservation and cooking	Specifies Using vegetable Boiling	socio-demographic and economic characteristics		
+GCS:FoodWatBoilMeat	FoodWatBoilMeat	Food preservation and cooking	Specifies Using Meat Boiling	socio-demographic and economic characteristics		
+GCS:FoodWatBoilFish	FoodWatBoilFish	Food preservation and cooking	Specifies Using Fish Boiling	socio-demographic and economic characteristics		
+GCS:FoodWatSteamVeg	FoodWatSteamVeg	Food preservation and cooking	Specifies Using vegetable Steaming	socio-demographic and economic characteristics		
+GCS:FoodWatSteamMeat	FoodWatSteamMeat	Food preservation and cooking	Specifies Using Meat Steaming	socio-demographic and economic characteristics		
+GCS:FoodWatSteamFish	FoodWatSteamFish	Food preservation and cooking	Specifies Using Fish Steaming	socio-demographic and economic characteristics		
+GCS:FoodWatOthVeg	FoodWatOthVeg	Food preservation and cooking	Specifies Using vegetable by any Other method	socio-demographic and economic characteristics		
+GCS:FoodWatOthMeat	FoodWatOthMeat	Food preservation and cooking	Specifies Using Meat by any Other method	socio-demographic and economic characteristics		
+GCS:FoodWatOthFish	FoodWatOthFish	Food preservation and cooking	Specifies Using Fish in by any Other method	socio-demographic and economic characteristics		
+GCS:FoodWatFreshLocalFruitChange	FoodWatFreshLocalFruitChange	Food preservation and cooking	Specifies the change in using Local Fruit from 1353	socio-demographic and economic characteristics		
+GCS:FoodWatFreshImportedFruitChange	FoodWatFreshImportedFruitChange	Food preservation and cooking	Specifies the change in using Imported Fruit from 1353	socio-demographic and economic characteristics		
+GCS:FoodWatFreshVegChange	FoodWatFreshVegChange	Food preservation and cooking	Specifies the change in using Fresh Vegetable from 1353	socio-demographic and economic characteristics		
+GCS:FoodWatFreshMeatChange	FoodWatFreshMeatChange	Food preservation and cooking	Specifies the change in using Fresh Meat from 1353	socio-demographic and economic characteristics		
+GCS:Homeownership	Homeownership	Properties	Specifies participant Homeownership status	socio-demographic and economic characteristics		
+GCS:house_nonowned	house_nonowned	Properties	Specifies house owned or non-owned	socio-demographic and economic characteristics		
+GCS:HomeSize	HomeSize	Properties	Specifies participant Home Area	socio-demographic and economic characteristics		
+GCS:PropertyAutoOwned	PropertyAutoOwned	Properties	If the participant has personal car select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyAutoYears	PropertyAutoYears	Properties	Specifies the length of time that the participant has a personal car(Year)	socio-demographic and economic characteristics		
+GCS:PropertyMotorcycleOwned	PropertyMotorcycleOwned	Properties	If the participant has Motorcycle select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyMotorcycleYears	PropertyMotorcycleYears	Properties	Specifies the length of time that the participant has Motorcycle(Year)	socio-demographic and economic characteristics		
+GCS:PropertyColorTVOwned	PropertyColorTVOwned	Properties	If the participant has Color TV select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyColorTVYears	PropertyColorTVYears	Properties	Specifies the length of time that the participant has Color TV(Year)	socio-demographic and economic characteristics		
+GCS:PropertyBandWTVOwned	PropertyBandWTVOwned	Properties	If the participant has BandW TV select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyBandWTVYears	PropertyBandWTVYears	Properties	Specifies the length of time that the participant has BandW TV(Year)	socio-demographic and economic characteristics		
+GCS:PropertyIndoorBathOwned	PropertyIndoorBathOwned	Properties	If the participant has Indoor Bath room select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyIndoorBathYears	PropertyIndoorBathYears	Properties	Specifies the length of time that the participant has Indoor Bath room(Year)	socio-demographic and economic characteristics		
+GCS:PropertyVacuumOwned	PropertyVacuumOwned	Properties	If the participant has Vacuum cleaner select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyVacuumYears	PropertyVacuumYears	Properties	Specifies the length of time that the participant has Vacuum cleaner(Year)	socio-demographic and economic characteristics		
+GCS:PropertyWashMachOwned	PropertyWashMachOwned	Properties	If the participant has Washing machine select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyWashMachYears	PropertyWashMachYears	Properties	Specifies the length of time that the participant has Washing machine(Year)	socio-demographic and economic characteristics		
+GCS:PropertyRefrigeratorOwned	PropertyRefrigeratorOwned	Properties	If the participant has Refrigerator select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyRefrigeratorYears	PropertyRefrigeratorYears	Properties	Specifies the length of time that the participant has Refrigerator(Year)	socio-demographic and economic characteristics		
+GCS:PropertyFreezerOwned	PropertyFreezerOwned	Properties	If the participant has Freezer select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyFreezerYears	PropertyFreezerYears	Properties	Specifies the length of time that the participant has Freezer(Year)	socio-demographic and economic characteristics		
+GCS:PropertyComputerOwned	PropertyComputerOwned	Properties	If the participant has Computer select yes if no select no	socio-demographic and economic characteristics		
+GCS:PropertyComputerYears	PropertyComputerYears	Properties	Specifies the length of time that the participant has Computer(Year)	socio-demographic and economic characteristics		
+GCS:HomeRooms	HomeRooms	Properties	Number of rooms in the house	socio-demographic and economic characteristics		
+GCS:HaveBath	HaveBath	Properties	Specifies if the household has bathroom	socio-demographic and economic characteristics		
+GCS:HaveKitchen	HaveKitchen	Properties	Specifies if the household has kitchen	socio-demographic and economic characteristics		
+GCS:MCA	MCA	Properties	Composite wealth score (Multiple Correspondence Analysis)	socio-demographic and economic characteristics		
+GCS:NumberPregnancies	NumberPregnancies	Medical History	Specifies the number of Pregnancies for women only	socio-demographic and economic characteristics		
+GCS:NumberLiveBirths	NumberLiveBirths	Medical History	Specifies the number of live births for women only	socio-demographic and economic characteristics		
+GCS:DisRheumaticHeartDx	DisRheumaticHeartDx	Medical History	if the diagnosis of Rheumatic Heart Disease was made for participant by a physician	circulatory system		
+GCS:DisRheumaticHeartAge	DisRheumaticHeartAge	Medical History	participant age at Rheumatic Heart Disease diagnosis	circulatory system		
+GCS:DisHeartDiseaseDx	DisHeartDiseaseDx	Medical History	if the diagnosis of Heart Disease was made for participant by a physician	circulatory system		
+GCS:DisHeartDiseaseAge	DisHeartDiseaseAge	Medical History	participant age in first Heart Disease diagnosis	circulatory system		
+GCS:DisStrokeDx	DisStrokeDx	Medical History	if the diagnosis of Stroke was made for participant by a physician	signs and symptoms		
+GCS:DisStrokeAge	DisStrokeAge	Medical History	participant age in first Stroke diagnosis	signs and symptoms		
+GCS:DisHypertensionDx	DisHypertensionDx	Medical History	if the diagnosis of Hypertension was made for participant by a physician	circulatory system		
+GCS:DisHypertensionAge	DisHypertensionAge	Medical History	participant age in first Hypertension diagnosis	circulatory system		
+GCS:DisDiabetesDx	DisDiabetesDx	Medical History	if the diagnosis of Diabetes was made for participant by a physician	endocrine/nutritional/metabolic disorders		
+GCS:DisDiabetesAge	DisDiabetesAge	Medical History	participant age in first Diabetes diagnosis	endocrine/nutritional/metabolic disorders		
+GCS:DisCOPDDx	DisCOPDDx	Medical History	if the diagnosis of COPD was made for participant by a physician	respiratory system		
+GCS:DisCOPDAge	DisCOPDAge	Medical History	participant age in first COPD diagnosis	respiratory system		
+GCS:DisRenalFailureDx	DisRenalFailureDx	Medical History	if the diagnosis of Renal Failure was made for participant by a physician	endocrine/nutritional/metabolic disorders		
+GCS:DisRenalFailureAge	DisRenalFailureAge	Medical History	participant age in first RenalFailure diagnosis	endocrine/nutritional/metabolic disorders		
+GCS:DisJaundiceDx	DisJaundiceDx	Medical History	if the diagnosis of Jaundice was made for participant by a physician	endocrine/nutritional/metabolic disorders		
+GCS:DisJaundiceAge	DisJaundiceAge	Medical History	participant age in first Jaundice diagnosis	endocrine/nutritional/metabolic disorders		
+GCS:DisLiverDx	DisLiverDx	Medical History	if the diagnosis of Chronic Liver Failure was made for participant by a physician	endocrine/nutritional/metabolic disorders		
+GCS:DisLiverAge	DisLiverAge	Medical History	participant age in first Chronic liver failure diagnosis	endocrine/nutritional/metabolic disorders		
+GCS:DisTBDx	DisTBDx	Medical History	if the diagnosis of Tuberculosis was made for participant by a physician	diseases		should TB fall under respiratory?
+GCS:DisTBAge	DisTBAge	Medical History	participant age in first Tuberculosis diagnosis	diseases		should TB fall under respiratory?
+GCS:SurgeryFlag	SurgeryFlag	Medical History	If the participant had had any history of surgery	surgical interventions		
+GCS:SurgeryType	SurgeryType	Medical History	Specifies the participant surgery Type	surgical interventions		
+GCS:SurgeryAge	SurgeryAge	Medical History	Specifies the participant age in surgery Time	surgical interventions		
+GCS:TransfusionFlag	TransfusionFlag	Medical History	if the participant has had Transfusion history	non-pharmacological interventions		
+GCS:TransfusionRecentFlag	TransfusionRecentFlag	Medical History	if the participant has Transfusion history in last month	non-pharmacological interventions		
+GCS:SymRefluxFlag	SymRefluxFlag	Chief complaints	if the participant has Reflux Symptom history select yes if not select no	signs and symptoms		
+GCS:SymRefluxWhen	SymRefluxWhen	Chief complaints	when Reflux Symptom happen in First time	signs and symptoms		
+GCS:SymHeartburnFlag	SymHeartburnFlag	Chief complaints	if the participant has Heartburn Symptom history select yes if not select no	signs and symptoms		
+GCS:SymHeartburnWhen	SymHeartburnWhen	Chief complaints	when Heartburn Symptom happen in First time	signs and symptoms		
+GCS:SymDifficultSwallowingFlag	SymDifficultSwallowingFlag	Chief complaints	if the participant has Difficult Swallowing Symptom history select yes if not select no	signs and symptoms		
+GCS:SymDifficultSwallowingWhen	SymDifficultSwallowingWhen	Chief complaints	when Difficult Swallowing Symptom happen in First time	signs and symptoms		
+GCS:SymRefluxPastYearFreq	SymRefluxPastYearFreq	Chief complaints	if the participant has Reflux Symptom in past year select yes if not select no	signs and symptoms		
+GCS:SymRefluxPastYearSeverity	SymRefluxPastYearSeverity	Chief complaints	Severity Reflux Symptom in past year	signs and symptoms		
+GCS:SymRefluxPriorYearsFreq	SymRefluxPriorYearsFreq	Chief complaints	if the participant has Reflux Symptom in Prior year select yes if not select no	signs and symptoms		
+GCS:SymRefluxPriorYearsSeverity	SymRefluxPriorYearsSeverity	Chief complaints	Severity Reflux Symptom in Prior year	signs and symptoms		
+GCS:RefluxHeartburnTXFlag	RefluxHeartburnTXFlag	Chief complaints	if participant used drug for Heartburn symptoms select yes if not select no and if participant doesn't have symtom selectLack of signage	signs and symptoms		
+GCS:WeightLossFlag	WeightLossFlag	Chief complaints	if the patient has Weightloss in past year select yes if not select no	signs and symptoms		
+GCS:WeightLossAmount	WeightLossAmount	Chief complaints	Specifies the amount of weight loss	signs and symptoms		
+GCS:WeightLossIntent	WeightLossIntent	Chief complaints	if the patient has Intentional weight loss select Yes if not select no and doesn't have weight loss select I have no weight loss	signs and symptoms		
+GCS:cancerdxflag	cancerdxflag	Cancer History	Past history of cancer diagnosed by a physician?	oncological		
+GCS:cancerdxage	cancerdxage	Cancer History	Year of diagnosis of cancer if detected in participant	oncological		
+GCS:cancerdxsite	cancerdxsite	Cancer History	Original site of cancer	oncological		
+GCS:CancRelRelativeCode_1	CancRelRelativeCode_1	Cancer History	Specifies the relative of participants with a history of cancer	oncological		
+GCS:CancRelAgeDiagnosis_1	CancRelAgeDiagnosis_1	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological		
+GCS:CancRelSite_1	CancRelSite_1	Cancer History	Specifies the site of cancer in the relative of participant	oncological		
+GCS:CancRelICD10_1	CancRelICD10_1	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological		
+GCS:CancRelRelativeCode_2	CancRelRelativeCode_2	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological		
+GCS:CancRelAgeDiagnosis_2	CancRelAgeDiagnosis_2	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological		
+GCS:CancRelSite_2	CancRelSite_2	Cancer History	Specifies the site of cancer in the relative of participant	oncological		
+GCS:CancRelICD10_2	CancRelICD10_2	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological		
+GCS:CancRelRelativeCode_3	CancRelRelativeCode_3	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological		
+GCS:CancRelAgeDiagnosis_3	CancRelAgeDiagnosis_3	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological		
+GCS:CancRelSite_3	CancRelSite_3	Cancer History	Specifies the site of cancer in the relative of participant	oncological		
+GCS:CancRelICD10_3	CancRelICD10_3	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological		
+GCS:CancRelRelativeCode_4	CancRelRelativeCode_4	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological		
+GCS:CancRelAgeDiagnosis_4	CancRelAgeDiagnosis_4	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological		
+GCS:CancRelSite_4	CancRelSite_4	Cancer History	Specifies the site of cancer in the relative of participant	oncological		
+GCS:CancRelICD10_4	CancRelICD10_4	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological		
+GCS:TobEverRegularFlag	TobEverRegularFlag	Smoking	Specifies the participant used cigar for 6 Months	tobacco		
+GCS:TobCigsNow	TobCigsNow	Smoking	Specifies the participant uses cigar Now	tobacco		
+GCS:TobNonCigFlag	TobNonCigFlag	Smoking	Specifies the participant used tobacco other than cigar for 6 Months	tobacco		
+GCS:TobStartAge_1	TobStartAge_1	Smoking	Specifies the participant Used this Tobacco type From Age, first history	tobacco		
+GCS:TobEndAge_1	TobEndAge_1	Smoking	Specifies the participant Used this Tobacco type To Age, first history	tobacco		
+GCS:TobDuration_1	TobDuration_1	Smoking	Specifies the participant Used tobacco Duration, first history	tobacco		
+GCS:TobType_1	TobType_1	Smoking	Specifies the participant Used type of Tobacco, first history	tobacco		
+GCS:TobNumberPerDay_1	TobNumberPerDay_1	Smoking	Specifies the participant Used this tobacco how many times per day, first history	tobacco		
+GCS:TobDaysPerWeek_1	TobDaysPerWeek_1	Smoking	Specifies the participant Used this tobacco how many days in week, first history	tobacco		
+GCS:CigNumPerDay_1	CigNumPerDay_1	Smoking	Specifies the participant Used this cigar how many times per day, first history	tobacco		
+GCS:Cigpackyear_1	Cigpackyear_1	Smoking	Specifies the participant cumulative use, first history	tobacco		
+GCS:TobStartAge_2	TobStartAge_2	Smoking	Specifies the participant Used this Tobacco type From Age, second history	tobacco		
+GCS:TobEndAge_2	TobEndAge_2	Smoking	Specifies the participant Used this Tobacco type To Age, second history	tobacco		
+GCS:TobDuration_2	TobDuration_2	Smoking	Specifies the participant Used tobacco Duration, second history	tobacco		
+GCS:TobType_2	TobType_2	Smoking	Specifies the participant Used type of Tobacco, second history	tobacco		
+GCS:TobNumberPerDay_2	TobNumberPerDay_2	Smoking	Specifies the participant Used this tobacco how many times per day, second history	tobacco		
+GCS:TobDaysPerWeek_2	TobDaysPerWeek_2	Smoking	Specifies the participant Used this tobacco how many days in week, second history	tobacco		
+GCS:CigNumPerDay_2	CigNumPerDay_2	Smoking	Specifies the participant Used this cigar how many times per day, second history	tobacco		
+GCS:Cigpackyear_2	Cigpackyear_2	Smoking	Specifies the participant cumulative use, second history	tobacco		
+GCS:TobStartAge_3	TobStartAge_3	Smoking	Specifies the participant Used this Tobacco type From Age, third history	tobacco		
+GCS:TobEndAge_3	TobEndAge_3	Smoking	Specifies the participant Used this Tobacco type To Age, third history	tobacco		
+GCS:TobDuration_3	TobDuration_3	Smoking	Specifies the participant Used tobacco Duration, third history	tobacco		
+GCS:TobType_3	TobType_3	Smoking	Specifies the participant Used type of Tobacco, third history	tobacco		
+GCS:TobNumberPerDay_3	TobNumberPerDay_3	Smoking	Specifies the participant Used this tobacco how many times per day, third history	tobacco		
+GCS:TobDaysPerWeek_3	TobDaysPerWeek_3	Smoking	Specifies the participant Used this tobacco how many days in week, third history	tobacco		
+GCS:CigNumPerDay_3	CigNumPerDay_3	Smoking	Specifies the participant Used this cigar how many times per day, third history	tobacco		
+GCS:Cigpackyear_3	Cigpackyear_3	Smoking	Specifies the participant cumulative use, third history	tobacco		
+GCS:TobStartAge_4	TobStartAge_4	Smoking	Specifies the participant Used this Tobacco type From Age, fourth history	tobacco		
+GCS:TobEndAge_4	TobEndAge_4	Smoking	Specifies the participant Used this Tobacco type To Age, fourth history	tobacco		
+GCS:TobDuration_4	TobDuration_4	Smoking	Specifies the participant Used tobacco Duration, fourth history	tobacco		
+GCS:TobType_4	TobType_4	Smoking	Specifies the participant Used type of Tobacco, fourth history	tobacco		
+GCS:TobNumberPerDay_4	TobNumberPerDay_4	Smoking	Specifies the participant Used this tobacco how many times per day, fourth history	tobacco		
+GCS:TobDaysPerWeek_4	TobDaysPerWeek_4	Smoking	Specifies the participant Used this tobacco how many days in week, fourth history	tobacco		
+GCS:CigNumPerDay_4	CigNumPerDay_4	Smoking	Specifies the participant Used this cigar how many times per day, fourth history	tobacco		
+GCS:Cigpackyear_4	Cigpackyear_4	Smoking	Specifies the participant cumulative use, fourth history	tobacco		
+GCS:total_packyear	total_packyear	Smoking	Specifies the participant total cumulative use	tobacco		
+GCS:OpiateEverRegularFlag	OpiateEverRegularFlag	Opium use	Specifies the participant ever used opiume for 6 Months	drugs		
+GCS:OpiatePersonalChildhoodExp	OpiatePersonalChildhoodExp	Opium use	Specifies the using opium in Childhood	drugs		
+GCS:OpiateAdministeredToChildrenFlag	OpiateAdministeredToChildrenFlag	Opium use	Specifies the participant gave opium to children	drugs		
+GCS:OpiateType	OpiateType	Opium use	Specifies the participant Used Opium type	drugs		
+GCS:OpiateRoute	OpiateRoute	Opium use	Specifies the route by which participant uses opium	drugs		
+GCS:OpiateStartAge_1	OpiateStartAge_1	Opium use	Specifies the participant Used this Opium type From Age, first history	drugs		
+GCS:OpiateEndAge_1	OpiateEndAge_1	Opium use	Specifies the participant Used this Opium type To Age, first history	drugs		
+GCS:OpiateDuration_1	OpiateDuration_1	Opium use	Specifies the participant Used this Opium Duration, first history	drugs		
+GCS:OpiateNokhod_1	OpiateNokhod_1	Opium use	Specifies the participant Used this Opium amount in Pea size, first history	drugs		
+GCS:OpiateDaysPerWeek_1	OpiateDaysPerWeek_1	Opium use	Specifies the participant Used this Opium day in week, first history	drugs		
+GCS:OpiateAmountperDay_1	OpiateAmountperDay_1	Opium use	Specifies the participant Used this Opium Amount per day, first history	drugs		
+GCS:Opiatecum_1	Opiatecum_1	Opium use	Specifies the participant cumulative use of Opium, first history	drugs		
+GCS:OpiateStartAge_2	OpiateStartAge_2	Opium use	Specifies the participant Used this Opium type From Age, second history	drugs		
+GCS:OpiateEndAge_2	OpiateEndAge_2	Opium use	Specifies the participant Used this Opium type To Age, second history	drugs		
+GCS:OpiateDuration_2	OpiateDuration_2	Opium use	Specifies the participant Used this Opium Duration, second history	drugs		
+GCS:OpiateNokhod_2	OpiateNokhod_2	Opium use	Specifies the participant Used this Opium amount in Pea size, second history	drugs		
+GCS:OpiateDaysPerWeek_2	OpiateDaysPerWeek_2	Opium use	Specifies the participant Used this Opium day in week, second history	drugs		
+GCS:OpiateAmountperDay_2	OpiateAmountperDay_2	Opium use	Specifies the participant Used this Opium Amount per day, second history	drugs		
+GCS:Opiatecum_2	Opiatecum_2	Opium use	Specifies the participant cumulative use of Opium, second history	drugs		
+GCS:OpiateStartAge_3	OpiateStartAge_3	Opium use	Specifies the participant Used this Opium type From Age, third history	drugs		
+GCS:OpiateEndAge_3	OpiateEndAge_3	Opium use	Specifies the participant Used this Opium type To Age, third history	drugs		
+GCS:OpiateDuration_3	OpiateDuration_3	Opium use	Specifies the participant Used this Opium Duration, third history	drugs		
+GCS:OpiateNokhod_3	OpiateNokhod_3	Opium use	Specifies the participant Used this Opium amount in Pea size, third history	drugs		
+GCS:OpiateDaysPerWeek_3	OpiateDaysPerWeek_3	Opium use	Specifies the participant Used this Opium day in week, third history	drugs		
+GCS:OpiateAmountperDay_3	OpiateAmountperDay_3	Opium use	Specifies the participant Used this Opium Amount per day, third history	drugs		
+GCS:Opiatecum_3	Opiatecum_3	Opium use	Specifies the participant cumulative use of Opium, third history	drugs		
+GCS:OpiateStartAge_4	OpiateStartAge_4	Opium use	Specifies the participant Used this Opium type From Age, fourth history	drugs		
+GCS:OpiateEndAge_4	OpiateEndAge_4	Opium use	Specifies the participant Used this Opium type To Age, fourth history	drugs		
+GCS:OpiateDuration_4	OpiateDuration_4	Opium use	Specifies the participant Used this Opium Duration, fourth history	drugs		
+GCS:OpiateNokhod_4	OpiateNokhod_4	Opium use	Specifies the participant Used this Opium amount in Pea size, fourth history	drugs		
+GCS:OpiateDaysPerWeek_4	OpiateDaysPerWeek_4	Opium use	Specifies the participant Used this Opium day in week, fourth history	drugs		
+GCS:OpiateAmountperDay_4	OpiateAmountperDay_4	Opium use	Specifies the participant Used this Opium Amount per day, fourth history	drugs		
+GCS:Opiatecum_4	Opiatecum_4	Opium use	Specifies the participant cumulative use of Opium, fourth history	drugs		
+GCS:TotalNokhodDay	TotalNokhodDay	Opium use	Specifies the participant total cumulative use of Opium	drugs		
+GCS:AlcEverRegularFlag	AlcEverRegularFlag	Alcohol use	Specifies the participant ever used alcohol for 6 Months	alcohol		
+GCS:AlcStartAge_1	AlcStartAge_1	Alcohol use	Specifies the participant used alcohol From Age, first history	alcohol		
+GCS:AlcEndAge_1	AlcEndAge_1	Alcohol use	Specifies the participant used alcohol To Age, first history	alcohol		
+GCS:AlcType_1	AlcType_1	Alcohol use	Specifies the participant alcohol used Type, first history	alcohol		
+GCS:AlcQuantityPerEpisode_1	AlcQuantityPerEpisode_1	Alcohol use	Specifies the average alcohol the participant used per episode, first history	alcohol		
+GCS:AlcEpisodesPerMonth_1	AlcEpisodesPerMonth_1	Alcohol use	Specifies the participant Alcohol episodes in month, first history	alcohol		
+GCS:AlcStartAge_2	AlcStartAge_2	Alcohol use	Specifies the participant used alcohol From Age, second history	alcohol		
+GCS:AlcEndAge_2	AlcEndAge_2	Alcohol use	Specifies the participant used alcohol To Age, second history	alcohol		
+GCS:AlcType_2	AlcType_2	Alcohol use	Specifies the participant alcohol used Type, second history	alcohol		
+GCS:AlcQuantityPerEpisode_2	AlcQuantityPerEpisode_2	Alcohol use	Specifies the average alcohol the participant used per episode, second history	alcohol		
+GCS:AlcEpisodesPerMonth_2	AlcEpisodesPerMonth_2	Alcohol use	Specifies the participant Alcohol episodes in month, second history	alcohol		
+GCS:AlcStartAge_3	AlcStartAge_3	Alcohol use	Specifies the participant used alcohol From Age, third history	alcohol		
+GCS:AlcEndAge_3	AlcEndAge_3	Alcohol use	Specifies the participant used alcohol To Age, third history	alcohol		
+GCS:AlcType_3	AlcType_3	Alcohol use	Specifies the participant alcohol used Type, third history	alcohol		
+GCS:AlcQuantityPerEpisode_3	AlcQuantityPerEpisode_3	Alcohol use	Specifies the average alcohol the participant used per episode, third history	alcohol		
+GCS:AlcEpisodesPerMonth_3	AlcEpisodesPerMonth_3	Alcohol use	Specifies the participant Alcohol episodes in month, third history	alcohol		
+GCS:DrugCurrentuse	DrugCurrentuse	Drug history (1)	Currently taking any medication?	medication		
+GCS:antiHTN	antiHTN	Drug history (1)	Anti-hypertensive drugs: 1: diuretics 2: beta-blockers 3: ACE Inhibitors 4: ARBs 5: Alpha-adrenergic blockers 6: Calcium channel blockers 7:other anti-hypertensives	associated disease(s)		
+GCS:antiDM	antiDM	Drug history (1)	Anti-diabetic drugs: 1: Glibenclamide 2: metformin 3: insulin 4: other	associated disease(s)		
+GCS:cardiac	cardiac	Drug history (1)	Cardiac drugs: 1: Anti-platelets 2: statins 3: Beta-blockers 4: Nitrates 5: ACE Inhibitors 6: ARBs 7: Calcium Channel blockers 8: other	associated disease(s)		
+GCS:antilipid	antilipid	Drug history (1)	Lipid-lowering drugs: 1: Statins 2: Gemfibrozil 3: other	associated disease(s)		
+GCS:mentaldrug	mentaldrug	Drug history (1)	Mental disorders: 1: Benzodiazepines 2: Sodium Valproate 3: Anti-epileptics 4: Antidepressants 5: Anti-anxiety medications 6: Psychoactive medications	associated disease(s)		
+GCS:Corticosteroid	Corticosteroid	Drug history (1)	Corticosteroids: 1: injection 2: oral 3: topical	prescription		
+GCS:Gidrugs	Gidrugs	Drug history (1)	Gastrointestinal: 1: H2 Blockers 2: PPIs 3: Clindinium C	associated disease(s)		
+GCS:antibiotics	antibiotics	Drug history (1)	Antibiotics: 1: Amoxicillin 2: Cefixime 3: Azithromycin 4: Metronidazole 5: other	prescription		
+GCS:diuretic	diuretic	Drug history (1)	Diuretics	prescription		
+GCS:betablocker	betablocker	Drug history (1)	Beta Blockers	prescription		
+GCS:ACEinhibitor	ACEinhibitor	Drug history (1)	Angiotensin Converting Enzyme Inhibitors	prescription		
+GCS:ARB	ARB	Drug history (1)	Angiotensin Receptor Blockers	prescription		
+GCS:alphablocker	alphablocker	Drug history (1)	Alpha Adrenergic Blockers	prescription		
+GCS:CCBlocker	CCBlocker	Drug history (1)	Calcium Channel Blockers	prescription		
+GCS:Glibenclamide	Glibenclamide	Drug history (1)	Glibenclamide	prescription		
+GCS:Metformin	Metformin	Drug history (1)	Metformin	prescription		
+GCS:Insulin	Insulin	Drug history (1)	Insulin	prescription		
+GCS:Antiplatelets	Antiplatelets	Drug history (1)	Anti-platelets	prescription		
+GCS:Statins	Statins	Drug history (1)	Statins	prescription		
+GCS:Nitrates	Nitrates	Drug history (1)	Nitrates	prescription		
+GCS:Gemfibrozil	Gemfibrozil	Drug history (1)	Gemfibrozil	prescription		
+GCS:Acetaminophen	Acetaminophen	Drug history (1)	Acetaminophen and Acetaminophen Codein	prescription		
+GCS:Ibuprofen	Ibuprofen	Drug history (1)	Ibuprofen	prescription		
+GCS:Diclophenac	Diclophenac	Drug history (1)	Diclophenac	prescription		
+GCS:Indomethacin	Indomethacin	Drug history (1)	Indomethacin	prescription		
+GCS:Levothyroxin	Levothyroxin	Drug history (1)	Levthyroxin	prescription		
+GCS:Methotrexate	Methotrexate	Drug history (1)	Methotrexate	prescription		
+GCS:Other	Other	Drug history (1)	Other	medication		
+GCS:DrugCurrentuse	DrugCurrentuse	Drug History (2)	Currently taking any medication?	medication		
+GCS:drugname_1	drugname_1	Drug History (2)	Name of drug 1	prescription		
+GCS:drugduration_1	drugduration_1	Drug History (2)	Number of years being under treatment 1	prescription		
+GCS:drugfrequency_1	drugfrequency_1	Drug History (2)	Frequency of drug consumption 1	prescription		
+GCS:drugdose_1	drugdose_1	Drug History (2)	Dose of drug consumed 1	prescription		
+GCS:drugname_2	drugname_2	Drug History (2)	Name of drug 2	prescription		
+GCS:drugduration_2	drugduration_2	Drug History (2)	Number of years being under treatment 2	prescription		
+GCS:drugfrequency_2	drugfrequency_2	Drug History (2)	Frequency of drug consumption 2	prescription		
+GCS:drugdose_2	drugdose_2	Drug History (2)	Dose of drug consumed 2	prescription		
+GCS:drugname_3	drugname_3	Drug History (2)	Name of drug 3	prescription		
+GCS:drugduration_3	drugduration_3	Drug History (2)	Number of years being under treatment 3	prescription		
+GCS:drugfrequency_3	drugfrequency_3	Drug History (2)	Frequency of drug consumption 3	prescription		
+GCS:drugdose_3	drugdose_3	Drug History (2)	Dose of drug consumed 3	prescription		
+GCS:drugname_4	drugname_4	Drug History (2)	Name of drug 4	prescription		
+GCS:drugduration_4	drugduration_4	Drug History (2)	Number of years being under treatment 4	prescription		
+GCS:drugfrequency_4	drugfrequency_4	Drug History (2)	Frequency of drug consumption 4	prescription		
+GCS:drugdose_4	drugdose_4	Drug History (2)	Dose of drug consumed 4	prescription		
+GCS:drugname_5	drugname_5	Drug History (2)	Name of drug 5	prescription		
+GCS:drugduration_5	drugduration_5	Drug History (2)	Number of years being under treatment 5	prescription		
+GCS:drugfrequency_5	drugfrequency_5	Drug History (2)	Frequency of drug consumption 5	prescription		
+GCS:drugdose_5	drugdose_5	Drug History (2)	Dose of drug consumed 5	prescription		
+GCS:drugname_6	drugname_6	Drug History (2)	Name of drug 6	prescription		
+GCS:drugduration_6	drugduration_6	Drug History (2)	Number of years being under treatment 6	prescription		
+GCS:drugfrequency_6	drugfrequency_6	Drug History (2)	Frequency of drug consumption 6	prescription		
+GCS:drugdose_6	drugdose_6	Drug History (2)	Dose of drug consumed 6	prescription		
+GCS:drugname_7	drugname_7	Drug History (2)	Name of drug 7	prescription		
+GCS:drugduration_7	drugduration_7	Drug History (2)	Number of years being under treatment 7	prescription		
+GCS:drugfrequency_7	drugfrequency_7	Drug History (2)	Frequency of drug consumption 7	prescription		
+GCS:drugdose_7	drugdose_7	Drug History (2)	Dose of drug consumed 7	prescription		
+GCS:drugname_8	drugname_8	Drug History (2)	Name of drug 8	prescription		
+GCS:drugduration_8	drugduration_8	Drug History (2)	Number of years being under treatment 8	prescription		
+GCS:drugfrequency_8	drugfrequency_8	Drug History (2)	Frequency of drug consumption 8	prescription		
+GCS:drugdose_8	drugdose_8	Drug History (2)	Dose of drug consumed 8	prescription		
+GCS:drugname_9	drugname_9	Drug History (2)	Name of drug 9	prescription		
+GCS:drugduration_9	drugduration_9	Drug History (2)	Number of years being under treatment 9	prescription		
+GCS:drugfrequency_9	drugfrequency_9	Drug History (2)	Frequency of drug consumption 9	prescription		
+GCS:drugdose_9	drugdose_9	Drug History (2)	Dose of drug consumed 9	prescription		
+GCS:drugname_10	drugname_10	Drug History (2)	Name of drug 10	prescription		
+GCS:drugduration_10	drugduration_10	Drug History (2)	Number of years being under treatment 10	prescription		
+GCS:drugfrequency_10	drugfrequency_10	Drug History (2)	Frequency of drug consumption 10	prescription		
+GCS:drugdose_10	drugdose_10	Drug History (2)	Dose of drug consumed 10	prescription		
+GCS:OralPermanentTeethLossFlag	OralPermanentTeethLossFlag	Oral health	Permanent Teeth Loss			
+GCS:OralPermanentTeethAgeFirstLoss	OralPermanentTeethAgeFirstLoss	Oral health	Specifies the age of first Permanent Teeth Loss			
+GCS:OralUpperDentureFlag	OralUpperDentureFlag	Oral health	Specifies the participant used Upper Denture			
+GCS:OralLowerDentureFlag	OralLowerDentureFlag	Oral health	Specifies the participant used Lower Denture			
+GCS:OralUpperDentureUse	OralUpperDentureUse	Oral health	Specifies the participant used Upper Denture during the day			
+GCS:OralLowerDentureUse	OralLowerDentureUse	Oral health	Specifies the participant used Lower Denture during the day			
+GCS:OralAgeDentureUpper	OralAgeDentureUpper	Oral health	Specifies the age of participant first used Upper Denture			
+GCS:OralAgeDentureLower	OralAgeDentureLower	Oral health	Specifies the age of participant First used Lower Denture			
+GCS:OralFreqBrushing	OralFreqBrushing	Oral health	Specifies the participant Brushing Frequency			
+GCS:OralFoodDiscomfortFlag	OralFoodDiscomfortFlag	Oral health	Specifies the frequency the participant experienced discomfort while eating food in Past Year			
+GCS:OralFoodDiscomfortType	OralFoodDiscomfortType	Oral health	Specifies the food that caused discomfort for the participant			
+GCS:OralNumTeeth	OralNumTeeth	Oral health	Specifies the participant Total number of teeth			
+GCS:OralNumTeethDecayed	OralNumTeethDecayed	Oral health	Specifies the participant Total number of Decayed teeth			
+GCS:OralNumTeethMissing	OralNumTeethMissing	Oral health	Specifies the participant Total number of Missing teeth			
+GCS:OralNumTeethFilled	OralNumTeethFilled	Oral health	Specifies the participant Total number of Filled teeth			
+GCS:OralMucosa	OralMucosa	Oral health	Specifies the participant Mucosa Status			
+GCS:TeaTempDegrees	TeaTempDegrees	Tea	Specifies participant consumption of tea temperature	socio-demographic and economic characteristics		
+GCS:TeaTempDescription	TeaTempDescription	Tea	Specifies participant used tea type	socio-demographic and economic characteristics		
+GCS:TeaSteepingTime	TeaSteepingTime	Tea	Specifies the duration between pouring and drinking the tea	socio-demographic and economic characteristics		
+GCS:TeaSipOrGulp	TeaSipOrGulp	Tea	Specifies how participant drinks tea	socio-demographic and economic characteristics		
+GCS:physactworkallyearflag	physactworkallyearflag	Physical activity	Working all months of the year?	physical activity		
+GCS:physactworkmonths	physactworkmonths	Physical activity	Number of working months in a year	physical activity		
+GCS:physactworkstrenuousflag	physactworkstrenuousflag	Physical activity	Daily intensive physical activity?	physical activity		
+GCS:physactworkstrenuousfreq	physactworkstrenuousfreq	Physical activity	Number of working days in a week	physical activity		
+GCS:physactworkstrenuoushours	physactworkstrenuoushours	Physical activity	Number of working hours in a day	physical activity		
+GCS:physactworkstrenuousyears	physactworkstrenuousyears	Physical activity	Number of entire working years	physical activity		
+GCS:physacthouseworkflag	physacthouseworkflag	Physical activity	Doing house work?	physical activity		
+GCS:physacthouseworkfreq	physacthouseworkfreq	Physical activity	Number of working days in a week	physical activity		
+GCS:physacthouseworkhours	physacthouseworkhours	Physical activity	Number of working hours in a day	physical activity		
+GCS:physacthouseworkyears	physacthouseworkyears	Physical activity	Number of entire working years	physical activity		
+GCS:physacthouseworkminsduringwork	physacthouseworkminsduringwork	Physical activity	Doing house work: minutes during working times	physical activity		
+GCS:physacthouseworkminsnowork	physacthouseworkminsnowork	Physical activity	Doing house work: minutes during leasure times	physical activity		
+GCS:physactexmildminsduringwork	physactexmildminsduringwork	Physical activity	Mild exercise such as jogging: minutes during working times	physical activity		
+GCS:physactexmildminsnowork	physactexmildminsnowork	Physical activity	Mild exercise such as jogging: minutes during leasure times	physical activity		
+GCS:physactexmodminsduringwork	physactexmodminsduringwork	Physical activity	Moderate exercise such as volleyball: minutes during working times	physical activity		
+GCS:physactexmodminsnowork	physactexmodminsnowork	Physical activity	Moderate exercise such as volleyball: minutes during leasure times	physical activity		
+GCS:physactexstrenminsduringwork	physactexstrenminsduringwork	Physical activity	Intensive exercise such as horse riding: minutes during working times	physical activity		
+GCS:physactexstrenminsnowork	physactexstrenminsnowork	Physical activity	Intensive exercise such as horse riding: minutes during leasure times	physical activity		
+GCS:physacttvminsduringwork	physacttvminsduringwork	Physical activity	Watching TV, resting, reading: minutes during working times	physical activity		
+GCS:physacttvminsnowork	physacttvminsnowork	Physical activity	Watching TV, resting, reading: minutes during leasure times	physical activity		
+GCS:Metabolic_Equivalent_Task	Metabolic Equivalent Task	Physical activity	Energy cost of physical activities defined as the ratio of metabolic rate (and therefore the rate of energy consumption) during a specific physical activity to a reference metabolic rate	physical activity		
+GCS:AnimalStartAge_1	AnimalStartAge_1	Animal contact	Specifies the age of the participants he had contact with animals, first history	socio-demographic and economic characteristics		
+GCS:AnimalEndAge_1	AnimalEndAge_1	Animal contact	Specifies the age of the participants he didn't have contact with animals, first history	socio-demographic and economic characteristics		
+GCS:AnimalLevelOfContact_1	AnimalLevelOfContact_1	Animal contact	The intensity of animal contact, first history	socio-demographic and economic characteristics		
+GCS:AnimalType_1	AnimalType_1	Animal contact	The type of animal, first history	socio-demographic and economic characteristics		
+GCS:AnimalStartAge_2	AnimalStartAge_2	Animal contact	Specifies the age of the participants he had contact with animals, second history	socio-demographic and economic characteristics		
+GCS:AnimalEndAge_2	AnimalEndAge_2	Animal contact	Specifies the age of the participants he didn't have contact with animals, second history	socio-demographic and economic characteristics		
+GCS:AnimalLevelOfContact_2	AnimalLevelOfContact_2	Animal contact	The intensity of animal contact, second history	socio-demographic and economic characteristics		
+GCS:AnimalType_2	AnimalType_2	Animal contact	The type of animal, second history	socio-demographic and economic characteristics		
+GCS:AnimalStartAge_3	AnimalStartAge_3	Animal contact	Specifies the age of the participants he had contact with animals, third history	socio-demographic and economic characteristics		
+GCS:AnimalEndAge_3	AnimalEndAge_3	Animal contact	Specifies the age of the participants he didn't have contact with animals, third history	socio-demographic and economic characteristics		
+GCS:AnimalLevelOfContact_3	AnimalLevelOfContact_3	Animal contact	The intensity of animal contact, third history	socio-demographic and economic characteristics		
+GCS:AnimalType_3	AnimalType_3	Animal contact	The type of animal, third history	socio-demographic and economic characteristics		
+GCS:AnimalStartAge_4	AnimalStartAge_4	Animal contact	Specifies the age of the participants he had contact with animals, fourth history	socio-demographic and economic characteristics		
+GCS:AnimalEndAge_4	AnimalEndAge_4	Animal contact	Specifies the age of the participants he didn't have contact with animals, fourth history	socio-demographic and economic characteristics		
+GCS:AnimalLevelOfContact_4	AnimalLevelOfContact_4	Animal contact	The intensity of animal contact, fourth history	socio-demographic and economic characteristics		
+GCS:AnimalType_4	AnimalType_4	Animal contact	The type of animal, fourth history	socio-demographic and economic characteristics		
+GCS:bodyindicessizeage15	bodyindicessizeage15	Anthropometric measurements	The body size participants assume they have had based on pictogram when they were 15 years old	anthropometry		
+GCS:bodyindicessizeage30	bodyindicessizeage30	Anthropometric measurements	The body size participants assume they have had based on pictogram when they wer3 30 years old	anthropometry		
+GCS:bodyindicessizenow	bodyindicessizenow	Anthropometric measurements	The body size participants assume they have at the present time based on pictogram	anthropometry		
+GCS:bodyindicesheight	bodyindicesheight	Anthropometric measurements	Height	height		
+GCS:bodyindicesweight	bodyindicesweight	Anthropometric measurements	Weight	weight		
+GCS:bodyindiceswaist	bodyindiceswaist	Anthropometric measurements	Waist circumference	anthropometry		
+GCS:bodyindiceships	bodyindiceships	Anthropometric measurements	Hip circumference	anthropometry		
+GCS:BMI	BMI	Anthropometric measurements	Body mass index	anthropometry		
+GCS:bpright1sbp	bpright1sbp	Blood pressure measurements	First measurement of systolic blood pressure from the right arm	blood pressure		
+GCS:bpright1dbp	bpright1dbp	Blood pressure measurements	First measurement ofdiastolic blood pressure from the right arm	blood pressure		
+GCS:bpright2sbp	bpright2sbp	Blood pressure measurements	Second measurement of systolic blood pressure from the right arm	blood pressure		
+GCS:bpright2dbp	bpright2dbp	Blood pressure measurements	Second measurement of diastolic blood pressure from the right arm	blood pressure		
+GCS:bpleft1sbp	bpleft1sbp	Blood pressure measurements	First measurement of systolic blood pressure from the left arm	blood pressure		
+GCS:bpleft1dbp	bpleft1dbp	Blood pressure measurements	First measurement of diastolic blood pressure from the left arm	blood pressure		
+GCS:bpleft2sbp	bpleft2sbp	Blood pressure measurements	Second measurement of systolic blood pressure from the left arm	blood pressure		
+GCS:bpleft2dbp	bpleft2dbp	Blood pressure measurements	Second measurement of diastolic blood pressure from the left arm	blood pressure		
+GCS:m_sbp	m_sbp	Blood pressure measurements	Mean systolic blood pressure measured second time	blood pressure		
+GCS:m_dbp	m_dbp	Blood pressure measurements	Mean diastolic blood pressure measured second time	blood pressure		
+GCS:high_sbp	high_sbp	Blood pressure measurements	Systolic blood pressure >= 140 mmHg	signs and symptoms		
+GCS:high_dbp	high_dbp	Blood pressure measurements	Diastolic blood pressure >= 90 mmHg	signs and symptoms		
+GCS:htndrug	htndrug	Blood pressure measurements	Consumption of any anti-hypertensive medication for more than 6 months	prescription		
+GCS:HTN	HTN	Blood pressure measurements	Being hypertensive	circulatory system		
+GCS:HTNcat	HTNcat	Blood pressure measurements	Categorization of hypetrension	circulatory system		
+GCS:preHTN	preHTN	Blood pressure measurements	SBP/DBP >=120/80 AND <140/90	circulatory system		
+GCS:pulse_p	pulse_p	Blood pressure measurements	Difference between SBP and DBP	heart rate (HR)		
+GCS:mean_bp	mean_bp	Blood pressure measurements	mean value of SBP and DBP	blood pressure		
+GCS:mid_bp	mid_bp	Blood pressure measurements	Mid value of SBP and DBP	blood pressure		
+GCS:diffsbp_right_left	diffsbp_right_left	Blood pressure measurements	Difference in SBP between arms	blood pressure		
+GCS:diffdbp_right_left	diffdbp_right_left	Blood pressure measurements	Difference in DBP between arms	blood pressure		
+GCS:Energy	Energy	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:fat	fat	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:salt	salt	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:protein	protein	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:total_saturated_fat	total saturated fat	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:total_trans_fat	total trans fat	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:hydrogenated_oil	hydrogenated oil	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:carbohyderate	carbohyderate	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:red_meat	red meat	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:processed_meat	processed meat	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:fruits	fruits	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:vegetables	vegetables	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:dairy_products	dairy products	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:milk	milk	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:dietary_fiber	dietary fiber	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Fish	Fish	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Chicken	Chicken	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:SodiumNa	SodiumNa	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Calcium	Calcium	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Fe	Fe	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Magnesium	Magnesium	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Phosphorus	Phosphorus	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Potassium	Potassium	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Zinc	Zinc	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Folate	Folate	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Vitamin_D	Vitamin D	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Vitamin_A	Vitamin A	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Vitamin_B1	Vitamin B1	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Vitamin_B2	Vitamin B2	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Vitamin_B12	Vitamin B12	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Vitamin_C	Vitamin C	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Niacin	Niacin	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Glycemic_load	Glycemic load	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Glycemic_Index	Glycemic Index	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Sugar_intake	Sugar intake	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Nuts	Nuts	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:tea	tea	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:Coffee	Coffee	Food Frequency Questionnaire	Amount consumed per day	nutrition		
+GCS:fbg	fbg	Lab markers	Fasting Blood Glucose	blood		
+GCS:urea	urea	Lab markers	Urea	blood		
+GCS:creatinine	creatinine	Lab markers	Creatinine	blood		Some of these could be blood or urine, but it looks like they don't collect urine
+GCS:cholesterol	cholesterol	Lab markers	Total Cholesterol	blood		
+GCS:triglycerides	triglycerides	Lab markers	Triglycerides	blood		
+GCS:hdl	hdl	Lab markers	High Density Lipoprotein	blood		
+GCS:ast	ast	Lab markers	Aspartate Transaminase	blood		
+GCS:alt	alt	Lab markers	Alanine Transaminase	blood		
+GCS:alkalinep	alkalinep	Lab markers	Alkaline Phosphatase	blood		
+GCS:ldl	ldl	Lab markers	Low Density Lipoprotein	blood		
+GCS:ldlhdl	ldlhdl	Lab markers	LDL to HDL ratio	blood		
+GCS:gamma	gamma	Lab markers	Gamma Glutamyle Transpeptidase	blood		
+GCS:hbsag	hbsag	Lab markers	HBsAg	blood		
+GCS:hbsab	hbsab	Lab markers	HBsAb	blood		
+GCS:hbcab	hbcab	Lab markers	HBcAb	blood		
+GCS:hbv	hbv	Lab markers	HBV DNA	blood		
+GCS:hcv	hcv	Lab markers	HCV Antibody	blood		
+GCS:wbc	wbc	Lab markers	White Blood Cell	blood		
+GCS:rbc	rbc	Lab markers	Red Blood Cell	blood		
+GCS:hb	hb	Lab markers	Hemoglobin	blood		
+GCS:hct	hct	Lab markers	Hematocrit	blood		
+GCS:plt	plt	Lab markers	Platelet	blood		
+GCS:mcv	mcv	Lab markers	Mean Corpuscular Volume	blood		
+GCS:mch	mch	Lab markers	Mean Corpuscular Hemoglobin	blood		
+GCS:mchc	mchc	Lab markers	Mean Corpuscular Hemoglobin Concentration	blood		
+GCS:rdw	rdw	Lab markers	Red Cell Distribution Width	blood		
+GCS:BloodType	BloodType	Lab markers	Specifies patient Blood Group	blood		
+GCS:Rh	Rh	Lab markers	Specifies patient Blood Rh	blood		
+GCS:BioSampHairAvailFlag	BioSampHairAvailFlag	Lab markers	if patient has hair sample select YES if not Selct No	other biosample type		
+GCS:BioSampNailAvailFlag	BioSampNailAvailFlag	Lab markers	if patient has nail sample select YES if not Selct No	other biosample type		
+GCS:BioSampBloodAvailFlag	BioSampBloodAvailFlag	Lab markers	if patient has Blood sample select YES if not Selct No	blood		

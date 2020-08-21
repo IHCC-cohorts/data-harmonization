@@ -1,155 +1,182 @@
-ID	Label	Parent Term	Definition	GECKO Mapping	Suggested Categories	Comment
-ID	LABEL	C % SPLIT=|	A definition			A comment
+Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
+ID	LABEL	C % SPLIT=|	AL definition@en			A comment
 	is-required;					
-MAELSTROM:Administrative_information	Administrative information			survey administration		
-MAELSTROM:Identifiers	Identifiers	MAELSTROM:Administrative_information		unique identifiers		
-MAELSTROM:Date_time_related_info	Date and time-related information	MAELSTROM:Administrative_information		date and time-related information		
-MAELSTROM:Questionnaire_interview_related_info	Questionnaire and interview-related information	MAELSTROM:Administrative_information		survey administration		
-MAELSTROM:Physical_measure_biosamp_related_info	Physical and cognitive measure and biosample-related information	MAELSTROM:Administrative_information		survey administration		
-MAELSTROM:Data_sample_center	Data and sample collection center-related information	MAELSTROM:Administrative_information		survey administration		
-MAELSTROM:Other_admin_info	Other administrative information	MAELSTROM:Administrative_information		survey administration		
-MAELSTROM:Cognitive_psychological_measures	Cognition, personality and psychological measures and assessments					No mapping in CINECA
-MAELSTROM:Cognitive_functioning	Cognitive functioning	MAELSTROM:Cognitive_psychological_measures		mental and behaviour disorders		
-MAELSTROM:Personality	Personality	MAELSTROM:Cognitive_psychological_measures				
-MAELSTROM:Psychological_emotional_distress	Psychological distress and emotions	MAELSTROM:Cognitive_psychological_measures		mental and behaviour disorders		
-MAELSTROM:Other_psycholog_measures	Other psychological measures and assessments	MAELSTROM:Cognitive_psychological_measures				
-MAELSTROM:Diseases	Diseases			diseases		
-MAELSTROM:Infectious_dis	Certain infectious and parasitic diseases (A00-B99)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Neoplasms	Neoplasms (C00-D48)	MAELSTROM:Diseases		oncological		maybe not equiv because this could include non-cancerous
-MAELSTROM:Blood_immune_dis	Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)	MAELSTROM:Diseases		blood-related disorders		maybe not equiv because this includes immune disorders
-MAELSTROM:Endocrine_metabolic_dis	Endocrine, nutritional and metabolic diseases (E00-E90)	MAELSTROM:Diseases		endocrine/nutritional/metabolic disorders		
-MAELSTROM:Mental_behav_dis	Mental and behavioural disorders (F00-F99)	MAELSTROM:Diseases		mental and behaviour disorders		
-MAELSTROM:Nervous_sys_dis	Diseases of the nervous system (G00-G99)	MAELSTROM:Diseases		nervous system		
-MAELSTROM:Eye_adnexa_dis	Diseases of the eye and adnexa (H00-H59)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Ear_mastoid_dis	Diseases of the ear and mastoid process (H60-H95)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Circulatory_sys_dis	Diseases of the circulatory system (I00-I99)	MAELSTROM:Diseases		circulatory system		
-MAELSTROM:Respiratory_sys_dis	Diseases of the respiratory system (J00-J99)	MAELSTROM:Diseases		respiratory system		
-MAELSTROM:Digestive_sys_dis	Diseases of the digestive system (K00-K93)	MAELSTROM:Diseases		digestive system		
-MAELSTROM:Skin_subcutaneous_dis	Diseases of the skin and subcutaneous tissue (L00-L99)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Musculoskeletal_sys_dis	Diseases of the musculoskeletal system and connective tissue (M00-M99)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Genitourinary_sys_dis	Diseases of the genitourinary system (N00-N99)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Pregnancy_childbirth	Pregnancy, childbirth and the puerperium (O00-O9A)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Perinatal_cond	Certain conditions originating in the perinatal period (P00-P96)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Cong_malform_chrom_abnor	Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Injury_poisoning	Injury, poisoning and certain other consequences of external causes (S00-T98)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Morbidity_mortality_ext	External causes of morbidity and mortality (V01-Y98)	MAELSTROM:Diseases		diseases		
-MAELSTROM:Other_dis	Diseases without precise specification or falling into multiple categories	MAELSTROM:Diseases		diseases		
-MAELSTROM:End_of_life	Death			life stage/time point		No mapping in CINECA
-MAELSTROM:Life_status	Vital status	MAELSTROM:End_of_life		life stage/time point		
-MAELSTROM:Cause_death	Cause of death	MAELSTROM:End_of_life		life stage/time point		
-MAELSTROM:Other_death	Other end of life or death-related information	MAELSTROM:End_of_life		life stage/time point		
-MAELSTROM:Health_community_care_utilization	Health and community care services utilization					No mapping in CINECA. This is distinct from 'physician/practitioner info', though that may be a subclass of this
-MAELSTROM:Visit_health_prof	Visits to health professionals	MAELSTROM:Health_community_care_utilization				
-MAELSTROM:Hospitalizations	Hospitalizations	MAELSTROM:Health_community_care_utilization				
-MAELSTROM:Community_care	Community and social care	MAELSTROM:Health_community_care_utilization				
-MAELSTROM:Other_health_and_community_care	Other health and community care	MAELSTROM:Health_community_care_utilization				
-MAELSTROM:Health_status_functional_limitations	Perception of health, quality of life, development and functional limitations					No mapping in CINECA
-MAELSTROM:Perc_health	Perception of health	MAELSTROM:Health_status_functional_limitations		signs and symptoms		
-MAELSTROM:Qual_life	Quality of life	MAELSTROM:Health_status_functional_limitations		signs and symptoms		
-MAELSTROM:Life_dev	Life course development (under development)	MAELSTROM:Health_status_functional_limitations		life stage/time point		
-MAELSTROM:Act_daily_living	Functional limitations	MAELSTROM:Health_status_functional_limitations		signs and symptoms		
-MAELSTROM:Use_devices	Use of assistive devices	MAELSTROM:Health_status_functional_limitations		signs and symptoms		
-MAELSTROM:Other	Other perception of health, quality of life and functional limitation-related information	MAELSTROM:Health_status_functional_limitations		signs and symptoms		
-MAELSTROM:Laboratory_measures	Laboratory measures			laboratory measures		this may not be equiv because this seems to also cover biosamples, maybe this is lab + biosamples?
-MAELSTROM:Hematology	Hematology	MAELSTROM:Laboratory_measures		laboratory measures		maybe blood but that's not under lab measure (its under biosample and we still want to collect data about types of biosamples)
-MAELSTROM:Biochemistry	Biochemistry	MAELSTROM:Laboratory_measures		laboratory measures		see above
-MAELSTROM:Microbiology	Microbiology	MAELSTROM:Laboratory_measures		microbiology		
-MAELSTROM:Virology	Virology	MAELSTROM:Laboratory_measures		laboratory measures		
-MAELSTROM:Immunology	Immunology	MAELSTROM:Laboratory_measures		laboratory measures		
-MAELSTROM:Toxicology	Toxicology	MAELSTROM:Laboratory_measures		laboratory measures		
-MAELSTROM:Histology	Histology	MAELSTROM:Laboratory_measures		laboratory measures		
-MAELSTROM:Genomics	Genomics	MAELSTROM:Laboratory_measures		genomics		
-MAELSTROM:Other_lab_measures	Other laboratory measures	MAELSTROM:Laboratory_measures		laboratory measures		
-MAELSTROM:Life_events_plans_beliefs	Life events, life plans, beliefs and values					No mapping in CINECA
-MAELSTROM:Life_events	Life events	MAELSTROM:Life_events_plans_beliefs				
-MAELSTROM:Life_plans	Life plans	MAELSTROM:Life_events_plans_beliefs				
-MAELSTROM:Beliefs_values	Beliefs and values (under development)	MAELSTROM:Life_events_plans_beliefs				
-MAELSTROM:Other_life_events	Other life events, plans and beliefs (under development)	MAELSTROM:Life_events_plans_beliefs				
-MAELSTROM:Lifestyle_behaviours	Lifestyle and behaviours			lifestyle and behaviours		
-MAELSTROM:Tobacco	Tobacco	MAELSTROM:Lifestyle_behaviours		tobacco		
-MAELSTROM:Alcohol	Alcohol	MAELSTROM:Lifestyle_behaviours		alcohol		
-MAELSTROM:Drugs	Drugs	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Nutrition	Nutrition	MAELSTROM:Lifestyle_behaviours		nutrition		
-MAELSTROM:Breastfeeding	Breastfeeding	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Phys_act	Physical activity	MAELSTROM:Lifestyle_behaviours		physical activity		
-MAELSTROM:Transportation	Transportation	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Pers_hygiene	Personal hygiene	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Sleep	Sleep	MAELSTROM:Lifestyle_behaviours		sleep		
-MAELSTROM:Sex_behav	Sexual behaviours and orientation	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Leisure_act	Leisure activities	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Tech_devices	Technological devices	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Misbehav_crim	Misbehaviour and criminality	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Other_lifestyle	Other and unspecified lifestyle information	MAELSTROM:Lifestyle_behaviours		lifestyle and behaviours		
-MAELSTROM:Medication_supplements	Medication and supplements			medication		
-MAELSTROM:Medication_suppl	Medication and supplement intake	MAELSTROM:Medication_supplements		associated disease(s)		I'm assuming CINECA associated diseases is talking about taking meds for a disease
-MAELSTROM:Posology_protocol	Posology and protocol of administration	MAELSTROM:Medication_supplements		prescription|administration		CINECA posology and CINECA 'admin method' should be children of this
-MAELSTROM:Other_pharmacological_inter	Other and unspecified pharmacological interventions	MAELSTROM:Medication_supplements		medication		
-MAELSTROM:Non_pharmacological_interventions	Non-pharmacological interventions			non-pharmacological interventions		
-MAELSTROM:Surgical_inter	Surgical interventions	MAELSTROM:Non_pharmacological_interventions		surgical interventions		
-MAELSTROM:Radiological_inter	Radiological interventions	MAELSTROM:Non_pharmacological_interventions		non-pharmacological interventions		
-MAELSTROM:Physical_inter	Physical therapy interventions	MAELSTROM:Non_pharmacological_interventions		non-pharmacological interventions		
-MAELSTROM:Cognitive_psycho_sensory_inter	Cognitive, psychological and sensory interventions	MAELSTROM:Non_pharmacological_interventions		non-pharmacological interventions		
-MAELSTROM:Educational_inter	Educational and health promotion interventions	MAELSTROM:Non_pharmacological_interventions		non-pharmacological interventions		
-MAELSTROM:Biosample_analyses	Laboratory diagnosis interventions	MAELSTROM:Non_pharmacological_interventions		non-pharmacological interventions		
-MAELSTROM:Other_non_pharmacological_inter	Other and unspecified non-pharmacological interventions	MAELSTROM:Non_pharmacological_interventions		non-pharmacological interventions		
-MAELSTROM:Physical_environment	Physical environment			socio-demographic and economic characteristics		No mapping in CINECA
-MAELSTROM:Housing	Housing characteristics	MAELSTROM:Physical_environment		socio-demographic and economic characteristics		
-MAELSTROM:Neighborhood	Built environment/neighbourhood characteristics	MAELSTROM:Physical_environment		socio-demographic and economic characteristics		
-MAELSTROM:Workplace	Workplace characteristics	MAELSTROM:Physical_environment		socio-demographic and economic characteristics		
-MAELSTROM:Radiation_exp	Radiation exposure	MAELSTROM:Physical_environment		socio-demographic and economic characteristics		
-MAELSTROM:Chemical_exp	Chemical exposure	MAELSTROM:Physical_environment		socio-demographic and economic characteristics		
-MAELSTROM:Biological_exp	Biological exposure	MAELSTROM:Physical_environment		socio-demographic and economic characteristics		
-MAELSTROM:Other_environment	Other physical environment characteristics	MAELSTROM:Physical_environment		socio-demographic and economic characteristics		
-MAELSTROM:Physical_measures	Physical measures and assessments			physiological measurements		
-MAELSTROM:Reproduction	Reproduction	MAELSTROM:Physical_measures		reproduction		
-MAELSTROM:Menstr_menop_andropause	Puberty, menstruation, menopause and andropause	MAELSTROM:Reproduction		reproduction		will adopt subclass from Reproduction
-MAELSTROM:Contraception	Contraception	MAELSTROM:Reproduction		reproduction		will adopt subclass from Reproduction
-MAELSTROM:Pregnancy_delivery	Pregnancy, delivery and birth	MAELSTROM:Reproduction		reproduction		will adopt subclass from Reproduction
-MAELSTROM:Reprod_sexual_problems	Fertility and sexual health	MAELSTROM:Reproduction		reproduction		will adopt subclass from Reproduction
-MAELSTROM:Other_reproductive	Other reproductive health-related information	MAELSTROM:Reproduction		reproduction		will adopt subclass from Reproduction
-MAELSTROM:Physical_characteristics	Physical characteristics	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Anthropo_measures	Anthropometry	MAELSTROM:Physical_measures		anthropometry		
-MAELSTROM:Circulation_respiration	Circulation and respiration	MAELSTROM:Physical_measures		circulation and respiration		
-MAELSTROM:Muscles_skeleton_mobility	Muscles, skeleton and mobility	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Sensory_pain	Sensory and pain	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Brain_nerves	Brain and nerves	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Skin_subcutaneous	Skin and subcutaneous tissue	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Speech_voice	Speech and voice	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Digestion	Digestion	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Other_phys_measures	Other physical measures and assessments	MAELSTROM:Physical_measures		physiological measurements		
-MAELSTROM:Preschool_school_work	Preschool, school and work life			socio-demographic and economic characteristics		No mapping in CINECA
-MAELSTROM:Preschool	Preschool life	MAELSTROM:Preschool_school_work		socio-demographic and economic characteristics		
-MAELSTROM:School	School life	MAELSTROM:Preschool_school_work		socio-demographic and economic characteristics		
-MAELSTROM:Work	Work life	MAELSTROM:Preschool_school_work		socio-demographic and economic characteristics		
-MAELSTROM:Other_school_work	Other preschool, school or work life-related information	MAELSTROM:Preschool_school_work		socio-demographic and economic characteristics		
-MAELSTROM:Social_environment	Social environment and relationships			socio-demographic and economic characteristics		No mapping in CINECA
-MAELSTROM:Soc_network	Social network	MAELSTROM:Social_environment		socio-demographic and economic characteristics		
-MAELSTROM:Soc_participation	Social participation	MAELSTROM:Social_environment		socio-demographic and economic characteristics		
-MAELSTROM:Soc_support	Social support	MAELSTROM:Social_environment		socio-demographic and economic characteristics		
-MAELSTROM:Parenting	Parenting and familial environment	MAELSTROM:Social_environment		socio-demographic and economic characteristics		
-MAELSTROM:Other_soc_characteristics	Other social environment characteristics	MAELSTROM:Social_environment		socio-demographic and economic characteristics		
-MAELSTROM:Sociodemographic_economic_characteristics	Socio-demographic and economic characteristics			socio-demographic and economic characteristics		
-MAELSTROM:Age	Age/birthdate	MAELSTROM:Sociodemographic_economic_characteristics		age/birthdate		
-MAELSTROM:Sex	Sex/gender	MAELSTROM:Sociodemographic_economic_characteristics		gender|biological sex		gender and biological sex should be children
-MAELSTROM:Twin	Twin	MAELSTROM:Sociodemographic_economic_characteristics		socio-demographic and economic characteristics		
-MAELSTROM:Marital_status	Marital/partner status	MAELSTROM:Sociodemographic_economic_characteristics		socio-demographic and economic characteristics		
-MAELSTROM:Family_hh_struct	Family and household structure	MAELSTROM:Sociodemographic_economic_characteristics		family and household structure		
-MAELSTROM:Education	Education	MAELSTROM:Sociodemographic_economic_characteristics		education		
-MAELSTROM:Residence	Residence	MAELSTROM:Sociodemographic_economic_characteristics		residence		
-MAELSTROM:Birth_place	Birthplace	MAELSTROM:Sociodemographic_economic_characteristics		birthplace		
-MAELSTROM:Citizenship	Citizenship and immigrant status	MAELSTROM:Sociodemographic_economic_characteristics		socio-demographic and economic characteristics		
-MAELSTROM:Ethnic_race_religion	Ethnicity, race and religion	MAELSTROM:Sociodemographic_economic_characteristics		ethnicity/race		
-MAELSTROM:Language	Language	MAELSTROM:Sociodemographic_economic_characteristics		socio-demographic and economic characteristics		
-MAELSTROM:Labour_retirement	Labour force and retirement	MAELSTROM:Sociodemographic_economic_characteristics		socio-demographic and economic characteristics		
-MAELSTROM:Income	Income, possessions, and benefits	MAELSTROM:Sociodemographic_economic_characteristics		socio-demographic and economic characteristics		
-MAELSTROM:Other_sociodemogr_chars	Other socio-demographic and economic characteristics	MAELSTROM:Sociodemographic_economic_characteristics		socio-demographic and economic characteristics		
-MAELSTROM:Symptoms_signs	Symptoms and signs			signs and symptoms		
-MAELSTROM:Circulatory_respiratory_sympt	Symptoms and signs involving the circulatory and respiratory systems (R00-R09)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:Digestive_sympt	Symptoms and signs involving the digestive system and abdomen (R10-R19)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:Skin_subcut_sympt	Symptoms and signs involving the skin and subcutaneous tissue (R20-R23)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:Nervous_musculoskeletal_sympt	Symptoms and signs involving nervous and musculoskeletal systems (R25-R29)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:Urinary_sympt	Symptoms and signs involving the urinary system (R30-R39)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:Cognitive_perc_emotional_sympt	Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:Speech_voice_sympt	Symptoms and signs involving speech and voice (R47-R49)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:General_sympt	General symptoms and signs (R50-R69)	MAELSTROM:Symptoms_signs		signs and symptoms		
-MAELSTROM:Other_sympt	Symptoms related to multiple categories	MAELSTROM:Symptoms_signs		signs and symptoms		
+MAELSTROM:Act_daily_living	Functional limitations	MAELSTROM:Health_status_functional_limitations	"Information about functional activities that involve caring for and moving the body (e.g. walking, bathing, dressing, toileting, eating; i.e. activities of daily living (ADL)) and instrumental activities of daily living (IADL) that people can get help with (e.g. cooking, driving, using the telephone or computer, shopping, handling finances, managing medication). 
+ Also see the 'Use of assistive devices' subdomain."	signs and symptoms		
+MAELSTROM:Administrative_information	Administrative information		Information about administrative data.	survey administration		
+MAELSTROM:Age	Age/birthdate	MAELSTROM:Sociodemographic_economic_characteristics	Information about current age (e.g. age of participant) or birthdate.	age/birthdate		
+MAELSTROM:Alcohol	Alcohol	MAELSTROM:Lifestyle_behaviours	Information about the consumption of alcoholic beverages (e.g. frequency, quantity and type of alcohol consumed) and associated behaviours.	alcohol		
+MAELSTROM:Anthropo_measures	Anthropometry	MAELSTROM:Physical_measures	Information about anthropometry (e.g. height, birth weight). It can include measured and self-reported values.	anthropometry		
+MAELSTROM:Beliefs_values	Beliefs and values (under development)	MAELSTROM:Life_events_plans_beliefs	Information about concepts that an individual hold to be true or important, which determine attitudes and opinions (e.g. social views, faith, sense of right and wrong).			
+MAELSTROM:Biochemistry	Biochemistry	MAELSTROM:Laboratory_measures	Information about chemical components (e.g. cholesterol, glucose, lipids, hormones).	laboratory measures		see above
+MAELSTROM:Biological_exp	Biological exposure	MAELSTROM:Physical_environment	Information about exposure to biohazards (e.g. farm animals, chickenpox virus, ticks transmitting Lyme disease).	socio-demographic and economic characteristics		
+MAELSTROM:Biosample_analyses	Laboratory diagnosis interventions	MAELSTROM:Non_pharmacological_interventions	"Information about laboratory biosample analyses for diagnostic purposes (e.g. prostate-specific antigen (PSA) test, cholesterol test).
+ Also see Dom. 12 ""Laboratory measures"" for results of laboratory analyses."	non-pharmacological interventions		
+MAELSTROM:Birth_place	Birthplace	MAELSTROM:Sociodemographic_economic_characteristics	Information about birthplace (e.g. country of birth).	birthplace		
+MAELSTROM:Blood_immune_dis	Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)	MAELSTROM:Diseases	Information about past and current diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (e.g. nutritional anaemias, coagulation defects).	blood-related disorders		maybe not equiv because this includes immune disorders
+MAELSTROM:Brain_nerves	Brain and nerves	MAELSTROM:Physical_measures	Information about the central (brain and spinal cord) and peripheral (nerves) nervous system (e.g. electrical impulse detection (EEG, EMG)).	physiological measurements		
+MAELSTROM:Breastfeeding	Breastfeeding	MAELSTROM:Lifestyle_behaviours	Information about the mother nursing an infant at the breast or the child being breastfed (e.g. duration and frequency of breastfeeding).	lifestyle and behaviours		
+MAELSTROM:Cause_death	Cause of death	MAELSTROM:End_of_life	Information about the cause of death (e.g. pneumonia, suicide).	life stage/time point		
+MAELSTROM:Chemical_exp	Chemical exposure	MAELSTROM:Physical_environment	Information about exposure to chemicals by air, food or water (e.g. cigarette and wood smoke, solvents, pesticides, level of chemical pollutant in the air).	socio-demographic and economic characteristics		
+MAELSTROM:Circulation_respiration	Circulation and respiration	MAELSTROM:Physical_measures	Information about circulation and respiration (e.g. blood pressure, spirometry).	circulation and respiration		
+MAELSTROM:Circulatory_respiratory_sympt	Symptoms and signs involving the circulatory and respiratory systems (R00-R09)	MAELSTROM:Symptoms_signs	Information about past and current symptoms and signs involving the circulatory and respiratory systems (e.g. tachycardia, epistaxis, cough, wheezing).	signs and symptoms		
+MAELSTROM:Circulatory_sys_dis	Diseases of the circulatory system (I00-I99)	MAELSTROM:Diseases	Information about past and current diseases of the circulatory system (e.g. hypertension, ischaemic heart diseases, cerebrovascular diseases).	circulatory system		
+MAELSTROM:Citizenship	Citizenship and immigrant status	MAELSTROM:Sociodemographic_economic_characteristics	Information about citizenship and immigrant status (e.g. landed immigrant, Canadian citizen, number of years living in a given country).	socio-demographic and economic characteristics		
+MAELSTROM:Cognitive_functioning	Cognitive functioning	MAELSTROM:Cognitive_psychological_measures	"Information about test-based measurement of a person's ability to remember, solve problems, work/respond quickly or their level of knowledge and verbal abilities. 
+ Also see Dom. 6 ""Symptoms and signs (ICD-10)"", under 'cognition, perception, emotional state and behaviour (R40-R46)', for information about memory problems not involving measurement (symptoms)."	mental and behaviour disorders		
+MAELSTROM:Cognitive_perc_emotional_sympt	Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)	MAELSTROM:Symptoms_signs	"Information about past and current symptoms and signs involving cognition, perception, emotional state and behaviour (e.g. somnolence, dizziness, hallucinations, nervousness, hostility). 
+ Also see Dom. 13 ""Cognition, personality and psychological measures and assessments"" for symptoms that might be part of cognitive, personality or psychological scales."	signs and symptoms		
+MAELSTROM:Cognitive_psycho_sensory_inter	Cognitive, psychological and sensory interventions	MAELSTROM:Non_pharmacological_interventions	Information about preventive or therapeutic cognitive, psychological and sensory interventions (e.g. psychotherapy, aromatherapy, memory exercises).	non-pharmacological interventions		
+MAELSTROM:Cognitive_psychological_measures	Cognition, personality and psychological measures and assessments		"Information about cognition, personality and psychological functioning.
+ See Dom. 5 ""Diseases (ICD-10)"" for information about diagnoses.
+ See Dom. 6 ""Symptoms and signs (ICD-10)"", under 'cognition, perception, emotional state and behaviour (R40-R46)', for information about symptoms of psychological distress and emotions.
+ See Dom. 18 ""Administrative information"" for measure-related information (e.g. date of assessment)."			No mapping in CINECA
+MAELSTROM:Community_care	Community and social care	MAELSTROM:Health_community_care_utilization	"Information about past and current use of community and social care (e.g. meal delivery, nurse visiting at home, social services, support group). Only formal care is included here.
+ Also see Dom. 8 ""Non-pharmacological intervention"", under 'Educational and health promotion interventions' for information about preventive or therapeutic programs.
+ Also see Dom. 16 ""Social environment and relationships"", under 'Social support' for information about care given by family members."			
+MAELSTROM:Cong_malform_chrom_abnor	Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)	MAELSTROM:Diseases	Information about congenital malformations, deformations and chromosomal abnormalities (e.g. cleft lip and palate, spina bifida, aortic septal defect).	diseases		
+MAELSTROM:Contraception	Contraception	MAELSTROM:Reproduction	Information about contraception and family planning (e.g. methods of contraception used, child spacing).	reproduction		will adopt subclass from Reproduction
+MAELSTROM:Data_sample_center	Data and sample collection center-related information	MAELSTROM:Administrative_information	Information about characteristics of the data and sample collection center (e.g. center identification number, number of steps to entrance, area where building is located).	survey administration		
+MAELSTROM:Date_time_related_info	Date and time-related information	MAELSTROM:Administrative_information	Information about date and time of questionnaire completion and physical and cognitive measure or biosample collection.	date and time-related information		
+MAELSTROM:Digestion	Digestion	MAELSTROM:Physical_measures	Information about digestion (e.g. motility test).	physiological measurements		
+MAELSTROM:Digestive_sympt	Symptoms and signs involving the digestive system and abdomen (R10-R19)	MAELSTROM:Symptoms_signs	Information about past and current symptoms and signs involving the digestive system and abdomen (e.g. nausea, vomiting, heartburn, bloating).	signs and symptoms		
+MAELSTROM:Digestive_sys_dis	Diseases of the digestive system (K00-K93)	MAELSTROM:Diseases	Information about past and current diseases of the digestive system (e.g. Crohn's disease, hepatitis, irritable bowel disease, cirrhosis, colitis).	digestive system		
+MAELSTROM:Diseases	Diseases		Information about past and current disease as categorized in ICD-10.	diseases		
+MAELSTROM:Drugs	Drugs	MAELSTROM:Lifestyle_behaviours	Information about the consumption and abuse of drugs in any form (e.g. cannabis, morphine, quantity and frequency of smoking, swallowing, sniffing, injecting) and associated behaviours.	lifestyle and behaviours		
+MAELSTROM:Ear_mastoid_dis	Diseases of the ear and mastoid process (H60-H95)	MAELSTROM:Diseases	Information about past and current diseases of the ear and mastoid process (e.g. otitis, mastoiditis, labyrinthitis, unspecified hearing loss).	diseases		
+MAELSTROM:Education	Education	MAELSTROM:Sociodemographic_economic_characteristics	"Information about education (e.g. highest level of education achieved, years of schooling completed).
+ Also see Dom. 15 ""Preschool, school and professional life"", under 'School life' for information about school environment."	education		
+MAELSTROM:Educational_inter	Educational and health promotion interventions	MAELSTROM:Non_pharmacological_interventions	"Information about preventive or therapeutic educational and health promotion interventions (e.g. smoking cessation programs, prevention of infectious disease programs).
+ Also see Dom. 9 ""Health and community care services utilization"", under 'Community and social care' for information about utilization of organized community services."	non-pharmacological interventions		
+MAELSTROM:End_of_life	Death		Information about death.	life stage/time point		No mapping in CINECA
+MAELSTROM:Endocrine_metabolic_dis	Endocrine, nutritional and metabolic diseases (E00-E90)	MAELSTROM:Diseases	Information about past and current endocrine, nutritional and metabolic diseases (e.g. diabetes, thyroid and metabolic disorders, malnutrition).	endocrine/nutritional/metabolic disorders		
+MAELSTROM:Ethnic_race_religion	Ethnicity, race and religion	MAELSTROM:Sociodemographic_economic_characteristics	Information about ethnicity (e.g. Italian, Chinese, Japanese), race (e.g. Caucasian, Black, Asian) and religion (e.g. Christian, Muslim, Buddhist).	ethnicity/race		
+MAELSTROM:Eye_adnexa_dis	Diseases of the eye and adnexa (H00-H59)	MAELSTROM:Diseases	Information about past and current diseases of the eye and adnexa (e.g. glaucoma, conjunctivitis, cataracts, strabismus, low vision).	diseases		
+MAELSTROM:Family_hh_struct	Family and household structure	MAELSTROM:Sociodemographic_economic_characteristics	"Information about past and current family and household structure (e.g. number of individuals living with the participant, number of siblings).
+ Also see Dom. 16 ""Social environment and relationships"", under 'Social network'."	family and household structure		
+MAELSTROM:General_sympt	General symptoms and signs (R50-R69)	MAELSTROM:Symptoms_signs	Information about past and current general symptoms and signs (e.g. fever, headache, malaise and fatigue, lethargy, senility, pain).	signs and symptoms		
+MAELSTROM:Genitourinary_sys_dis	Diseases of the genitourinary system (N00-N99)	MAELSTROM:Diseases	Information about past and current diseases of the genitourinary system (e.g. renal failure, cystitis, UTI, prostate inflammation, mastitis, endometriosis).	diseases		
+MAELSTROM:Genomics	Genomics	MAELSTROM:Laboratory_measures	Information about genes (e.g. anti-dsDNA, anti-nuclear antibody test) including genetics, epigenetics and proteomics.	genomics		
+MAELSTROM:Health_community_care_utilization	Health and community care services utilization		"Information about health services utilization such as medical visits to a healthcare professional, hospitalizations or community care.
+ See Dom. 8 ""Non-pharmacological interventions"" for information about specific types of interventions."			No mapping in CINECA. This is distinct from 'physician/practitioner info', though that may be a subclass of this
+MAELSTROM:Health_status_functional_limitations	Perception of health, quality of life, development and functional limitations		Information about perception of general health, quality of life, child development and decline of functional capacities.			No mapping in CINECA
+MAELSTROM:Hematology	Hematology	MAELSTROM:Laboratory_measures	Information about blood characteristics (e.g. complete blood count, platelets, hematocrit).	laboratory measures		maybe blood but that's not under lab measure (its under biosample and we still want to collect data about types of biosamples)
+MAELSTROM:Histology	Histology	MAELSTROM:Laboratory_measures	Information about microscopic anatomy of cells and tissues (e.g. Papanicolaou test, biopsy analysis).	laboratory measures		
+MAELSTROM:Hospitalizations	Hospitalizations	MAELSTROM:Health_community_care_utilization	Information about past and current hospitalizations (e.g. number of days hospitalized, year of hospitalization).			
+MAELSTROM:Housing	Housing characteristics	MAELSTROM:Physical_environment	Information about characteristics of the house an individual lives in (e.g. year the house was built, heat source).	socio-demographic and economic characteristics		
+MAELSTROM:Identifiers	Identifiers	MAELSTROM:Administrative_information	Information about the administrative identification of an individual (e.g. sampling identifier, name of interviewer).	unique identifiers		
+MAELSTROM:Immunology	Immunology	MAELSTROM:Laboratory_measures	Information about antibodies (e.g. IgE, IgA).	laboratory measures		
+MAELSTROM:Income	Income, possessions, and benefits	MAELSTROM:Sociodemographic_economic_characteristics	Information about past and current income, possessions, and benefits from work (e.g. income before tax, health insurance coverage, home ownership).	socio-demographic and economic characteristics		
+MAELSTROM:Infectious_dis	Certain infectious and parasitic diseases (A00-B99)	MAELSTROM:Diseases	Information about past and current infectious and parasitic diseases generally recognized as communicable or transmissible (e.g. HIV/Aids, Malaria, Tuberculosis).	diseases		
+MAELSTROM:Injury_poisoning	Injury, poisoning and certain other consequences of external causes (S00-T98)	MAELSTROM:Diseases	Information about past and current injury, poisoning and certain other consequences of external causes (e.g. burns, fractures, cuts, corrosions, poisoning, allergies).	diseases		
+MAELSTROM:Laboratory_measures	Laboratory measures		"Information about laboratory analyses for which a biological specimen was taken.
+ See Dom. 18 ""Administrative information"" for measure-related information (e.g. date of sample collection)."	laboratory measures		this may not be equiv because this seems to also cover biosamples, maybe this is lab + biosamples?
+MAELSTROM:Labour_retirement	Labour force and retirement	MAELSTROM:Sociodemographic_economic_characteristics	"Information about past and current labour force participation and retirement (e.g. employment status, sector of employment, participation in the military, years worked, start of retirement).
+ Also see Dom. 15 ""Preschool, school and professional life"", under 'Professional life' for information about job environment."	socio-demographic and economic characteristics		
+MAELSTROM:Language	Language	MAELSTROM:Sociodemographic_economic_characteristics	Information about linguistic background and knowledge (e.g. French, English mother tongue, knowledge of Spanish).	socio-demographic and economic characteristics		
+MAELSTROM:Leisure_act	Leisure activities	MAELSTROM:Lifestyle_behaviours	Information about the type, frequency and intensity of leisure activities other than physical activity (e.g. reading, travelling, socializing).	lifestyle and behaviours		
+MAELSTROM:Life_dev	Life course development (under development)	MAELSTROM:Health_status_functional_limitations	"Information about child development (e.g. motor, social, emotional and language development). 
+ Also see Dom. 13 ""Cognition, personality and psychological measures and assessments"", under 'Cognitive functioning'."	life stage/time point		
+MAELSTROM:Life_events	Life events	MAELSTROM:Life_events_plans_beliefs	Information about major (e.g. child abuse, war, death of a friend) and minor (e.g. home renovation) life events.			
+MAELSTROM:Life_events_plans_beliefs	Life events, life plans, beliefs and values		Information about life events, life plans, beliefs and values.			No mapping in CINECA
+MAELSTROM:Life_plans	Life plans	MAELSTROM:Life_events_plans_beliefs	Information about life plans (e.g. future wedding plans, plan to attend university).			
+MAELSTROM:Life_status	Vital status	MAELSTROM:End_of_life	Information about the vital status (e.g. alive, deceased, age at death).	life stage/time point		
+MAELSTROM:Lifestyle_behaviours	Lifestyle and behaviours		Information about past and current lifestyle, behaviours and activities.	lifestyle and behaviours		
+MAELSTROM:Marital_status	Marital/partner status	MAELSTROM:Sociodemographic_economic_characteristics	Information about past and current relationship status (e.g. married, divorced, single, living with a partner).	socio-demographic and economic characteristics		
+MAELSTROM:Medication_suppl	Medication and supplement intake	MAELSTROM:Medication_supplements	Information about any drugs or medications that treat, prevent or alleviate symptoms of a disease (e.g. Advil, chemotherapy, vitamin C, Ginseng, nicotine patches, vaccination).	associated disease(s)		I'm assuming CINECA associated diseases is talking about taking meds for a disease
+MAELSTROM:Medication_supplements	Medication and supplements		Information about medication (whether prescribed or over the counter), including drugs and supplements (e.g. vitamins, plant extracts) used to treat or prevent diseases or to alleviate symptoms of diseases.	medication		
+MAELSTROM:Menstr_menop_andropause	Puberty, menstruation, menopause and andropause	MAELSTROM:Reproduction	Information about puberty, menstruation, menopause, andropause and related events (e.g. age at first menstruation, age menses stopped).	reproduction		will adopt subclass from Reproduction
+MAELSTROM:Mental_behav_dis	Mental and behavioural disorders (F00-F99)	MAELSTROM:Diseases	Information about past and current mental and behavioural disorders (e.g. dementia, schizophrenia, chronic PTSD, mood affective disorders, mental disorders from substance abuse).	mental and behaviour disorders		
+MAELSTROM:Microbiology	Microbiology	MAELSTROM:Laboratory_measures	Information about microscopic organisms (e.g. bacteria, fungi or parasites).	microbiology		
+MAELSTROM:Misbehav_crim	Misbehaviour and criminality	MAELSTROM:Lifestyle_behaviours	Information about the type, frequency and consequences of misbehaviour and related legal problems (e.g. number of speeding tickets, shoplifting).	lifestyle and behaviours		
+MAELSTROM:Morbidity_mortality_ext	External causes of morbidity and mortality (V01-Y98)	MAELSTROM:Diseases	Information about past and current external causes of morbidity and mortality (e.g. traffic injuries, falls, explosion, intentional self-harm).	diseases		
+MAELSTROM:Muscles_skeleton_mobility	Muscles, skeleton and mobility	MAELSTROM:Physical_measures	Information about muscles, bones, movement and mobility (e.g. hand grip strength, timed 10-meter walk test, osteodensitometry).	physiological measurements		
+MAELSTROM:Musculoskeletal_sys_dis	Diseases of the musculoskeletal system and connective tissue (M00-M99)	MAELSTROM:Diseases	Information about past and current diseases of the musculoskeletal system and connective tissue (e.g. arthritis, arthrosis, lupus, low back pain).	diseases		
+MAELSTROM:Neighborhood	Built environment/neighbourhood characteristics	MAELSTROM:Physical_environment	Information about characteristics of the physical environment outside the home and workplace (e.g. residential density, proximity to parks, available transportation).	socio-demographic and economic characteristics		
+MAELSTROM:Neoplasms	Neoplasms (C00-D48)	MAELSTROM:Diseases	Information about past and current tumours (e.g. benign and malignant neoplasms, in situ neoplasms).	oncological		maybe not equiv because this could include non-cancerous
+MAELSTROM:Nervous_musculoskeletal_sympt	Symptoms and signs involving nervous and musculoskeletal systems (R25-R29)	MAELSTROM:Symptoms_signs	Information about past and current symptoms and signs involving the nervous and musculoskeletal systems (e.g. tremor, abnormal reflexes, cramps, spasms).	signs and symptoms		
+MAELSTROM:Nervous_sys_dis	Diseases of the nervous system (G00-G99)	MAELSTROM:Diseases	Information about past and current diseases of the nervous system (e.g. Parkinson, Alzheimer, Huntington, inflammatory diseases of the central nervous system).	nervous system		
+MAELSTROM:Non_pharmacological_interventions	Non-pharmacological interventions		"Information about non-pharmacological interventions to treat, manage or prevent diseases or to alleviate symptoms of diseases.
+ See Dom. 9 ""Health and community care services utilization"" for information about the use of services."	non-pharmacological interventions		
+MAELSTROM:Nutrition	Nutrition	MAELSTROM:Lifestyle_behaviours	"Information about the consumption of food (e.g. type, quantity and frequency of food intake) and associated behaviours. 
+ Also see Dom. 7 ""Medication and supplements"", under 'Medication and supplement intake' for information about the consumption of vitamins and supplements."	nutrition		
+MAELSTROM:Other	Other perception of health, quality of life and functional limitation-related information	MAELSTROM:Health_status_functional_limitations	Information about other health status and functional limitation-related information.	signs and symptoms		
+MAELSTROM:Other_admin_info	Other administrative information	MAELSTROM:Administrative_information	Information about other administrative data (e.g. indicator of participant's withdrawal, reason for withdrawal).	survey administration		
+MAELSTROM:Other_death	Other end of life or death-related information	MAELSTROM:End_of_life	Other information related to end of life or death (e.g. preferences with end of life care, funeral).	life stage/time point		
+MAELSTROM:Other_dis	Diseases without precise specification or falling into multiple categories	MAELSTROM:Diseases	Information about past and current diseases without specification of exact disease (e.g. number of chronic diseases, unspecified diseases) or combination of diseases falling into different categories (e.g. Alzheimer or dementia, developmental disability).	diseases		
+MAELSTROM:Other_environment	Other physical environment characteristics	MAELSTROM:Physical_environment	Information about other physical environment characteristics.	socio-demographic and economic characteristics		
+MAELSTROM:Other_health_and_community_care	Other health and community care	MAELSTROM:Health_community_care_utilization	Information about past and current use of other health and community care institutions or services (e.g. group home, shelter, information from Internet).			
+MAELSTROM:Other_lab_measures	Other laboratory measures	MAELSTROM:Laboratory_measures	Information about other laboratory measures.	laboratory measures		
+MAELSTROM:Other_life_events	Other life events, plans and beliefs (under development)	MAELSTROM:Life_events_plans_beliefs	Information about other events, plans and personal beliefs.			
+MAELSTROM:Other_lifestyle	Other and unspecified lifestyle information	MAELSTROM:Lifestyle_behaviours	Information about other (e.g. use of tanning bed) or unspecified lifestyle and behaviours that falls into several categories (e.g. use of tobacco and alcohol).	lifestyle and behaviours		
+MAELSTROM:Other_non_pharmacological_inter	Other and unspecified non-pharmacological interventions	MAELSTROM:Non_pharmacological_interventions	Information about other non-pharmacological interventions not mentioned above (e.g. dental exam) or unspecified non-pharmacological interventions.	non-pharmacological interventions		
+MAELSTROM:Other_pharmacological_inter	Other and unspecified pharmacological interventions	MAELSTROM:Medication_supplements	Information about other pharmacological interventions not mentioned above or unspecified pharmacological interventions (e.g. sunscreen).	medication		
+MAELSTROM:Other_phys_measures	Other physical measures and assessments	MAELSTROM:Physical_measures	Information about other physical measures (e.g. Apgar, Actiwatch measurements (activity, sleep, wake and light exposure)).	physiological measurements		
+MAELSTROM:Other_psycholog_measures	Other psychological measures and assessments	MAELSTROM:Cognitive_psychological_measures	Information about other psychological measures.			
+MAELSTROM:Other_reproductive	Other reproductive health-related information	MAELSTROM:Reproduction	Information about other reproductive health issues.	reproduction		will adopt subclass from Reproduction
+MAELSTROM:Other_school_work	Other preschool, school or work life-related information	MAELSTROM:Preschool_school_work	Information about other preschool, school or work life-related information.	socio-demographic and economic characteristics		
+MAELSTROM:Other_soc_characteristics	Other social environment characteristics	MAELSTROM:Social_environment	Information about other social environment characteristics (e.g. pets one can talk to).	socio-demographic and economic characteristics		
+MAELSTROM:Other_sociodemogr_chars	Other socio-demographic and economic characteristics	MAELSTROM:Sociodemographic_economic_characteristics	Information about other socio-demographic and economic characteristics (e.g. being adopted).	socio-demographic and economic characteristics		
+MAELSTROM:Other_sympt	Symptoms related to multiple categories	MAELSTROM:Symptoms_signs	Information about past and current symptoms and signs related to multiple categories of symptoms and signs (e.g. number of symptoms, unspecified symptoms).	signs and symptoms		
+MAELSTROM:Parenting	Parenting and familial environment	MAELSTROM:Social_environment	"Information about parenting style and behaviours, the parent-child attachment and the home atmosphere (e.g. reading to your child, rules and discipline).
+ Also see Dom. 15 ""Preschool, school and professional life"", under 'Preschool life' for information about child care and daycare environment."	socio-demographic and economic characteristics		
+MAELSTROM:Perc_health	Perception of health	MAELSTROM:Health_status_functional_limitations	Information about the perception of health (e.g. rating of own health compared to others). It refers to the subjective rating of general health considering physical and mental aspects.	signs and symptoms		
+MAELSTROM:Perinatal_cond	Certain conditions originating in the perinatal period (P00-P96)	MAELSTROM:Diseases	"Information about effects of complications of pregnancy, labour and delivery on the fetus and newborn, including birth traumas, disorders and infections specific to the perinatal period (e.g. birth injury, respiratory distress of newborn). Maternal information is excluded here.
+ Also see Dom. 3 ""Birth, pregnancy and reproductive health history"", under 'Pregnancy, delivery, and birth' for information about birth."	diseases		
+MAELSTROM:Pers_hygiene	Personal hygiene	MAELSTROM:Lifestyle_behaviours	Information about personal hygiene, including oral hygiene (e.g. how often teeth are brushed).	lifestyle and behaviours		
+MAELSTROM:Personality	Personality	MAELSTROM:Cognitive_psychological_measures	Information about patterns of thoughts, feelings, and behaviours including traits (e.g. neuroticism, openness, extraversion, conscientiousness, agreeableness) and personality action constructs (e.g. locus of control, self-efficacy, optimism).			
+MAELSTROM:Phys_act	Physical activity	MAELSTROM:Lifestyle_behaviours	Information about the type, frequency and intensity of physical activity such as exercises and sports (e.g. jogging, playing hockey), daily activities (e.g. household chores, walking the dog) or sedentarity (e.g. lounging on the couch).	physical activity		
+MAELSTROM:Physical_characteristics	Physical characteristics	MAELSTROM:Physical_measures	Information about physical characteristics (e.g. natural eye and hair colour, hand, foot and eye dominance).	physiological measurements		
+MAELSTROM:Physical_environment	Physical environment		Information about the characteristics of the physical environment and physical or chemical exposures arising from this environment.	socio-demographic and economic characteristics		No mapping in CINECA
+MAELSTROM:Physical_inter	Physical therapy interventions	MAELSTROM:Non_pharmacological_interventions	Information about preventive or therapeutic physical therapy interventions (e.g. physiotherapy, exercises).	non-pharmacological interventions		
+MAELSTROM:Physical_measure_biosamp_related_info	Physical and cognitive measure and biosample-related information	MAELSTROM:Administrative_information	Information about the physical and cognitive measure and biosample collection (e.g. contextual information about the participant during assessment, biobanking information (number of samples collected, circumstances of specimen analysis), SOP-related information).	survey administration		
+MAELSTROM:Physical_measures	Physical measures and assessments		"Information about physical functioning. Information in this domain is generally measured.
+ See Dom. 18 ""Administrative information"" for measure-related information (e.g. date of test, arm used)."	physiological measurements		
+MAELSTROM:Posology_protocol	Posology and protocol of administration	MAELSTROM:Medication_supplements	Information about the context of medication use (e.g. time, frequency and quantity of medication taken, absorption route and adherence).	prescription|administration		CINECA posology and CINECA 'admin method' should be children of this
+MAELSTROM:Pregnancy_childbirth	Pregnancy, childbirth and the puerperium (O00-O9A)	MAELSTROM:Diseases	"Information about conditions related to or aggravated by pregnancy, childbirth, or by puerperium (maternal causes or obstetric causes) (e.g. eclampsia, placenta praevia). Newborn information is excluded here.
+ Also see Dom. 3 ""Birth, pregnancy and reproductive health history"", under 'Pregnancy, delivery, and birth' for information about pregnancy and delivery."	diseases		
+MAELSTROM:Pregnancy_delivery	Pregnancy, delivery and birth	MAELSTROM:Reproduction	"Information about pregnancy, gravidity, labour, delivery and postpartum including information about any outcomes (e.g. gestational age, expecting/giving birth to twins, parity).
+ Also see Dom. 5 ""Diseases (ICD-10)"", under 'Certain conditions originating in the perinatal period (P00-P96)' for information about birth outcomes."	reproduction		will adopt subclass from Reproduction
+MAELSTROM:Preschool	Preschool life	MAELSTROM:Preschool_school_work	"Information about the care and daycare environment (e.g. frequency of daycare attendance, person taking care of the child during the day, satisfaction with the care received).
+ Also see Dom. 16 ""Social environment and relationships"", under 'Parenting and familial environment' for information about parenting style and behaviours."	socio-demographic and economic characteristics		
+MAELSTROM:Preschool_school_work	Preschool, school and work life		Information about preschool life, school life and work life.	socio-demographic and economic characteristics		No mapping in CINECA
+MAELSTROM:Psychological_emotional_distress	Psychological distress and emotions	MAELSTROM:Cognitive_psychological_measures	Information about mood collected by questionnaires (e.g. depression, anxiety) rather than diagnosis (contrast to F00-F99).	mental and behaviour disorders		
+MAELSTROM:Qual_life	Quality of life	MAELSTROM:Health_status_functional_limitations	Information about past and current quality of life, well-being and life satisfaction (e.g. subjective well-being, assessment of life enjoyment as a whole, happiness).	signs and symptoms		
+MAELSTROM:Questionnaire_interview_related_info	Questionnaire and interview-related information	MAELSTROM:Administrative_information	Information about the questionnaire and/or the interview (e.g. language, version, section of the questionnaire, number of individuals present at interview, questionnaire administration method).	survey administration		
+MAELSTROM:Radiation_exp	Radiation exposure	MAELSTROM:Physical_environment	Information about exposure to radiation (e.g. UV exposure, mobile phone use, frequency of air travel).	socio-demographic and economic characteristics		
+MAELSTROM:Radiological_inter	Radiological interventions	MAELSTROM:Non_pharmacological_interventions	Information about diagnostic, preventive or therapeutic radiological interventions (e.g. x-rays, radiation treatment for cancer).	non-pharmacological interventions		
+MAELSTROM:Reprod_sexual_problems	Fertility and sexual health	MAELSTROM:Reproduction	Information about females' and males' fertility and sexual health (e.g. infertility problems, assisted reproduction).	reproduction		will adopt subclass from Reproduction
+MAELSTROM:Reproduction	Reproduction	MAELSTROM:Physical_measures	Information about reproductive functions (e.g. number of eggs by ultrasound).	reproduction		
+MAELSTROM:Residence	Residence	MAELSTROM:Sociodemographic_economic_characteristics	Information about past and current locations where an individual dwells (e.g. address, region, country, homelessness).	residence		
+MAELSTROM:Respiratory_sys_dis	Diseases of the respiratory system (J00-J99)	MAELSTROM:Diseases	"Information about past and current diseases of the respiratory system (e.g. asthma, bronchitis, emphysema, chronic obstructive pulmonary disease (COPD), pneumonia, influenza, nasopharyngitis, rhinopharyngitis - ""common cold"")."	respiratory system		
+MAELSTROM:School	School life	MAELSTROM:Preschool_school_work	"Information about the school environment (e.g. participation in school activities, favourite subject, performance, number of days missing school, services and support offered by the school). 
+ Also see Dom. 1 ""Socio-demographic and economic characteristics"", under 'Education' for information about the level of education achieved."	socio-demographic and economic characteristics		
+MAELSTROM:Sensory_pain	Sensory and pain	MAELSTROM:Physical_measures	Information about sensory functions (e.g. eye exam, Snellen eye chart, hearing test) and pain (e.g. dolorimetry).	physiological measurements		
+MAELSTROM:Sex	Sex/gender	MAELSTROM:Sociodemographic_economic_characteristics	Information about sex (e.g. biological characteristics) or gender identity.	gender|biological sex		gender and biological sex should be children
+MAELSTROM:Sex_behav	Sexual behaviours and orientation	MAELSTROM:Lifestyle_behaviours	Information about the type and frequency of sexual behaviours (e.g. number of partners, frequency of intercourse) and sexual orientation (e.g. homosexuality).	lifestyle and behaviours		
+MAELSTROM:Skin_subcut_sympt	Symptoms and signs involving the skin and subcutaneous tissue (R20-R23)	MAELSTROM:Symptoms_signs	Information about past and current symptoms and signs involving the skin and subcutaneous tissue (e.g. local swellings, masses, lumps, cyanosis, flushing, desquamation).	signs and symptoms		
+MAELSTROM:Skin_subcutaneous	Skin and subcutaneous tissue	MAELSTROM:Physical_measures	Information about skin and subcutaneous tissue (e.g. skinfold caliper).	physiological measurements		
+MAELSTROM:Skin_subcutaneous_dis	Diseases of the skin and subcutaneous tissue (L00-L99)	MAELSTROM:Diseases	Information about past and current diseases of the skin and subcutaneous tissue (e.g. dermatitis, eczema, urticaria, erythema).	diseases		
+MAELSTROM:Sleep	Sleep	MAELSTROM:Lifestyle_behaviours	Information about the type, frequency and intensity of sleep behaviours (e.g. hours of sleep, quality of sleep).	sleep		
+MAELSTROM:Soc_network	Social network	MAELSTROM:Social_environment	"Information about the composition of personal relationships (e.g. number of friends, number of years since friends were made).
+ Also see Dom. 1 ""Socio-demographic and economic characteristics"", under 'Family and household structure'."	socio-demographic and economic characteristics		
+MAELSTROM:Soc_participation	Social participation	MAELSTROM:Social_environment	Information about social involvement and interaction with others (e.g. volunteering, making donations, participating in recreational and religious activities).	socio-demographic and economic characteristics		
+MAELSTROM:Soc_support	Social support	MAELSTROM:Social_environment	Information about actual or perceived social support. Support can be emotional (e.g. having friends, family members to talk to or to ask for help), or instrumental (e.g. access to information, financial and practical help). The support can be given or received and is based on a personal relationship.	socio-demographic and economic characteristics		
+MAELSTROM:Social_environment	Social environment and relationships		Information about relationships and support given and received from the social environment.	socio-demographic and economic characteristics		No mapping in CINECA
+MAELSTROM:Sociodemographic_economic_characteristics	Socio-demographic and economic characteristics		Information about socio-demographic and economic characteristics.	socio-demographic and economic characteristics		
+MAELSTROM:Speech_voice	Speech and voice	MAELSTROM:Physical_measures	Information about speech and voice (e.g. pitch intensity profile).	physiological measurements		
+MAELSTROM:Speech_voice_sympt	Symptoms and signs involving speech and voice (R47-R49)	MAELSTROM:Symptoms_signs	Information about past and current symptoms and signs involving speech and voice (e.g. aphasia, dysphonia, hypernasality).	signs and symptoms		
+MAELSTROM:Surgical_inter	Surgical interventions	MAELSTROM:Non_pharmacological_interventions	Information about diagnostic, preventive or therapeutic surgical interventions (e.g. biopsy, removal of gall bladder).	surgical interventions		
+MAELSTROM:Symptoms_signs	Symptoms and signs		Information about past and current symptoms and signs as categorized in ICD-10.	signs and symptoms		
+MAELSTROM:Tech_devices	Technological devices	MAELSTROM:Lifestyle_behaviours	Information about the use of electronic devices and associated technologies (e.g. computer, phone, Internet).	lifestyle and behaviours		
+MAELSTROM:Tobacco	Tobacco	MAELSTROM:Lifestyle_behaviours	Information about the consumption of tobacco in any form (e.g. quantity and frequency of smoking, chewing or sniffing) and associated behaviours.	tobacco		
+MAELSTROM:Toxicology	Toxicology	MAELSTROM:Laboratory_measures	Information about toxic components (e.g. amphetamines, cocaine, lead).	laboratory measures		
+MAELSTROM:Transportation	Transportation	MAELSTROM:Lifestyle_behaviours	Information about means of transportation used and associated behaviours (e.g. wearing a seat belt, driving to work).	lifestyle and behaviours		
+MAELSTROM:Twin	Twin	MAELSTROM:Sociodemographic_economic_characteristics	Information about the fact of being a twin or born from a multiple birth (e.g. zygosity ‚Äì identical or not).	socio-demographic and economic characteristics		
+MAELSTROM:Urinary_sympt	Symptoms and signs involving the urinary system (R30-R39)	MAELSTROM:Symptoms_signs	Information about past and current symptoms and signs involving the urinary system (e.g. dysuria, retention of urine).	signs and symptoms		
+MAELSTROM:Use_devices	Use of assistive devices	MAELSTROM:Health_status_functional_limitations	Information about the use of assistive devices to enhance and increase independence in performing activities of daily living (e.g. glasses, hearing aids, crutches).	signs and symptoms		
+MAELSTROM:Virology	Virology	MAELSTROM:Laboratory_measures	Information about viral infections, either observed directly by viral antigen detection (e.g. RSV, HSV) or through an antibody (e.g. HIV, Anti-HBc).	laboratory measures		
+MAELSTROM:Visit_health_prof	Visits to health professionals	MAELSTROM:Health_community_care_utilization	Information about past and current visits to a general practitioner (e.g. family doctor), dentist or specialist (e.g. pediatric doctor, psychologist).			
+MAELSTROM:Work	Work life	MAELSTROM:Preschool_school_work	"Information about the job environment (e.g. responsibilities at work, satisfaction with current employment, reasons for reduction in work performance).
+ Also see Dom. 1 ""Socio-demographic and economic characteristics"", under 'Labour force and retirement' for information about employment status."	socio-demographic and economic characteristics		
+MAELSTROM:Workplace	Workplace characteristics	MAELSTROM:Physical_environment	Information about physical characteristics of the workplace (e.g. address, building characteristics, ventilation, work inside/outside a building).	socio-demographic and economic characteristics		
