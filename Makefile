@@ -9,7 +9,7 @@
 # 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
 # 2. [Update files](update)
 # 3. [Build Mappings](owl)
-# 4. [View results](build/index.html)
+# 4. [View results](build/)
 #
 # Demo browser:
 #
@@ -126,6 +126,7 @@ build/%.html: build/%.owl templates/%.tsv | src/prefixes.json build/robot.jar
 	--skip-row 2 \
 	--format HTML \
 	--standalone true \
+	--write-all true \
 	--output-dir build/
 
 
