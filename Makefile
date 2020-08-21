@@ -89,17 +89,6 @@ build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json |
 owl: $(ONTS) | data_dictionaries
 	cp $^ data_dictionaries/
 
-# The OWL files are based on:
-#    - ROBOT template (build/<cohort-short-name>.tsv)
-#    - GECKO mapping template (build/intermediate/<cohort-short-name>-xrefs.tsv)
-#    - A metadata header (metadata/<cohort-short-name>.ttl)
-
-# In order to build an OWL file, you MUST have all three items (see docs for full details):
-#    - The ROBOT template must be added to the Makefile below
-#    - The mapping sheet must be added to the master Google mapping sheet
-#    - The metadata header must be created and added to the `metadata` folder
-# You must also add the cohort details to data/metadata.json and src/prefixes.json
-
 build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediate/%-xrefs.tsv | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
@@ -177,10 +166,6 @@ build/robot-tree.jar: | build
 build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
-	
-### GECKO Tasks
-
-# GECKO is retrieved from the OBO PURL
 build/gecko.owl: | build
 	curl -L -o $@ $(GECKO_PURL)
 
@@ -216,12 +201,6 @@ build/browser/index.html: src/browser/browser.html | build/browser
 
 # JSON of ancestor GECKO term (key) -> list of cohort terms (value)
 # This is used to drive the filter functionality in the browser
-
-# Query to get cohort terms -> ancestor GECKO terms
-build/intermediate/get-cineca-%.rq: src/queries/build_query.py data/metadata.json | build/intermediate
-	$(eval NAME := $(subst get-cineca-,,$(basename $(notdir $@))))
-	python3 $^ $(NAME) $@
-
 build/browser/%-mapping.json: src/browser/generate_mapping_json.py templates/%.tsv templates/index.tsv | build/browser
 	python3 $^ $@
 
