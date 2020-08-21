@@ -14,6 +14,49 @@
       "environmental_data": true,
       "biospecimens": true,
       "phenotypic_clinical_data": true
+    },
+    "laboratory_measures": [],
+    "questionnaire_survey_data": {
+      "physiological_measurements": {
+        "anthropometry": [
+          "weight"
+        ],
+        "circulation_and_respiration": [
+          "blood_pressure"
+        ]
+      },
+      "lifestyle_and_behaviours": [
+        "tobacco"
+      ],
+      "medication": [
+        "prescription"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "family_and_household_structure"
+      ],
+      "diseases": [
+        "oncological"
+      ],
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ]
+    },
+    "survey_administration": [
+      "unique_identifiers"
+    ],
+    "biosample": {
+      "sample_type": {
+        "blood": [],
+        "general_variables": [
+          "other_biosample_type"
+        ]
+      }
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": []
     }
   },
   {
@@ -36,23 +79,20 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
-    "laboratory_measures": {
-      "microbiology": [
-        "microbial_data"
-      ]
-    },
     "questionnaire_survey_data": {
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ],
-        "circulation_and_respiration": [
-          "heart_rate"
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "socio_demographic_and_economic_characteristics": [
+        "family_and_household_structure"
+      ],
+      "physiological_measurements": []
+    },
+    "biosample": {
+      "sample_type": {
+        "blood": [],
+        "general_variables": [
+          "urine"
         ]
       }
     }
@@ -72,7 +112,40 @@
       "environmental_data": false,
       "biospecimens": true,
       "phenotypic_clinical_data": true
-    }
+    },
+    "laboratory_measures": [],
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ],
+      "population_data": [
+        "location"
+      ]
+    },
+    "questionnaire_survey_data": {
+      "socio_demographic_and_economic_characteristics": [
+        "family_and_household_structure"
+      ],
+      "diseases": [
+        "nervous_system"
+      ],
+      "medication": [
+        "prescription"
+      ],
+      "physiological_measurements": [],
+      "general_variables": [
+        "reproduction"
+      ],
+      "lifestyle_and_behaviours": [
+        "alcohol"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
   },
   {
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
@@ -91,10 +164,20 @@
       "phenotypic_clinical_data": true
     },
     "questionnaire_survey_data": {
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "residence"
+        "biological_sex"
+      ],
+      "general_variables": [
+        "life_stage_time_point"
       ]
-    }
+    },
+    "laboratory_measures": [],
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
   },
   {
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
@@ -112,31 +195,31 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": []
-      }
-    },
+    "laboratory_measures": [],
     "questionnaire_survey_data": {
+      "physiological_measurements": [],
       "lifestyle_and_behaviours": [
         "tobacco"
       ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ],
-        "circulation_and_respiration": [
-          "heart_rate"
-        ]
-      },
+      "medication": [],
+      "diseases": [
+        "oncological"
+      ],
+      "non_pharmacological_interventions": [],
       "general_variables": [
-        "signs_and_symptoms"
+        "reproduction"
       ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ],
+    "biosample": {
+      "sample_type": {
+        "general_variables": [
+          "urine"
+        ],
+        "blood": []
+      }
     }
   },
   {
@@ -148,19 +231,35 @@
     "target_enrollment": "",
     "enrollment_period": "",
     "available_data_types": [],
-    "laboratory_measures": [],
-    "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [],
-      "physiological_measurements": {
-        "circulation_and_respiration": []
-      },
+    "laboratory_measures": {
       "general_variables": [
-        "signs_and_symptoms"
+        "microbiology"
+      ],
+      "genomics": []
+    },
+    "questionnaire_survey_data": {
+      "physiological_measurements": [],
+      "lifestyle_and_behaviours": [
+        "sleep"
+      ],
+      "medication": [
+        "prescription"
       ],
       "socio_demographic_and_economic_characteristics": [
-        "gender"
+        "birthplace"
+      ],
+      "diseases": [
+        "nervous_system"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "general_variables": [
+        "reproduction"
       ]
     },
-    "survey_administration": []
+    "survey_administration": [
+      "date_and_time_related_information"
+    ]
   }
 ]

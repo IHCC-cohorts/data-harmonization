@@ -30,7 +30,6 @@ SHELL := bash
 .SECONDARY:
 
 ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
-ROBOT_RDFXML = java -jar build/robot-rdfxml.jar
 GECKO_PURL = http://purl.obolibrary.org/obo/gecko/views/ihcc-gecko.owl
 
 # Detect the OS and provide proper command
@@ -52,6 +51,8 @@ COHORTS := gcs genomics-england koges maelstrom saprin vukuzazi
 
 # --- DO NOT EDIT BELOW THIS LINE ---
 
+TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
+
 # --- These files are not in version control (all in build directory) ---
 
 # OWL file in the build directory for all cohorts (contains xrefs)
@@ -60,11 +61,6 @@ ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
 TABLES := $(foreach C,$(COHORTS),build/$(C).html)
-
-# --- These files are intermediate build files ---
-
-# ontology (in turtle format) versions of cohort -> GECKO mappings
-TTL_MAPPINGS := $(foreach C,$(COHORTS),build/intermediate/$(C)-mapping.ttl)
 
 
 ### General Tasks
@@ -119,19 +115,6 @@ build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediat
 
 # Intermediate files for GECKO mappings
 
-# Cohort terms + GECKO terms from template
-# The GECKO terms are just referenced and do not have structure/annotations
-build/intermediate/%-mapping.ttl: build/gecko.owl build/%.owl templates/%.tsv | build/intermediate build/robot.jar
-	$(ROBOT) merge \
-	--input $< \
-	--input $(word 2,$^) \
-	template \
-	--template $(word 3,$^) \
-	merge \
-	--input $(word 2,$^) \
-	reason reduce \
-	--output $@
-
 # GECKO terms as xrefs for main files
 # These are required to build the cohort OWL file
 # The xrefs are generated from the mapping template
@@ -147,9 +130,8 @@ build/%-tree.html: build/%.owl | build/robot-tree.jar
 	--input $< \
 	--tree $@
 
-build/%.html: build/%.owl templates/%.tsv | src/prefixes.json build/robot-validate.jar
-	java -jar build/robot-validate.jar validate \
-	--prefixes src/prefixes.json \
+build/%.html: build/%.owl templates/%.tsv | src/prefixes.json build/robot.jar
+	$(ROBOT) validate \
 	--input $< \
 	--table $(word 2,$^) \
 	--skip-row 2 \
@@ -162,8 +144,15 @@ build/%.html: build/%.owl templates/%.tsv | src/prefixes.json build/robot-valida
 
 # Top-level cohort data
 
-data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json src/json/cineca_structure.json $(TTL_MAPPINGS)
-	python3 $(filter-out $(TTL_MAPPINGS),$^) $@
+build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.json
+	java -jar build/robot-tree.jar \
+	--prefixes src/prefixes.json \
+	tree --input $< \
+	--format json \
+	--tree $@
+
+data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json build/gecko_structure.json $(TEMPLATES)
+	python3 $(filter-out $(TEMPLATES),$^) $@
 
 # Real cohort data + randomly-generated cohort data
 
@@ -184,12 +173,6 @@ build/robot.jar: | build
 
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
-
-build/robot-validate.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/validate/lastSuccessfulBuild/artifact/bin/robot.jar
-
-build/robot-rdfxml.jar: | build
-	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/mireot-rdfxml/lastSuccessfulBuild/artifact/bin/robot.jar
 
 build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
@@ -238,9 +221,6 @@ build/browser/index.html: src/browser/browser.html | build/browser
 build/intermediate/get-cineca-%.rq: src/queries/build_query.py data/metadata.json | build/intermediate
 	$(eval NAME := $(subst get-cineca-,,$(basename $(notdir $@))))
 	python3 $^ $(NAME) $@
-
-build/intermediate/%-mapping.csv: build/intermediate/%-mapping.ttl build/intermediate/get-cineca-%.rq | build/intermediate build/robot.jar
-	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
 build/browser/%-mapping.json: src/browser/generate_mapping_json.py templates/%.tsv templates/index.tsv | build/browser
 	python3 $^ $@

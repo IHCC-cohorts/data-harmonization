@@ -1,99 +1,121 @@
 import csv
 import json
-import rdflib
+import os
 
 from argparse import ArgumentParser, FileType
 
-master_map = {}
-ignore_variables = ['venous or arterial', 'fasting or non-fasting', 'DNA/Genotyping', 'WGS', 'WES', 'Sequence variants',
-                    'Epigenetics', 'Metagenomics', 'Microbiome markers', 'RNAseq/gene expression', 'eQTL', 'other']
+bottom_level = []
 
 
 def main():
-    global master_map
-    parser = ArgumentParser(description='Create JSON for IHCC cohort browser')
-    parser.add_argument('cohorts_csv', type=FileType('r'), help='IHCC member cohort details')
-    parser.add_argument('cohorts_metadata', type=FileType('r'), help='Cohort metadata (name -> ID, prefix)')
-    parser.add_argument('cineca', type=FileType('r'), help='JSON structure of CINECA model')
-    parser.add_argument('output', type=FileType('w'), help='output JSON')
+    parser = ArgumentParser(description="Create JSON for IHCC cohort browser")
+    parser.add_argument(
+        "cohorts_csv", type=FileType("r"), help="IHCC member cohort details"
+    )
+    parser.add_argument(
+        "cohorts_metadata",
+        type=FileType("r"),
+        help="Cohort metadata (name -> ID, prefix)",
+    )
+    parser.add_argument("gecko", type=FileType("r"), help="JSON structure of GECKO")
+    parser.add_argument("output", type=FileType("w"), help="output JSON")
 
     args = parser.parse_args()
     cohorts_file = args.cohorts_csv
     metadata_file = args.cohorts_metadata
-    cineca_file = args.cineca
     output_file = args.output
 
     metadata = json.loads(metadata_file.read())
-    cineca = json.loads(cineca_file.read())
+    gecko = json.loads(args.gecko.read())[1]
+    gecko_hierarchy = build_hierarchy(gecko)
 
     cohort_data = {}
     reader = csv.reader(cohorts_file)
     next(reader)
     for row in reader:
         # Parse countries
-        countries = [x.strip() for x in row[2].split(',')]
+        countries = [x.strip() for x in row[2].split(",")]
 
         # Get available datatypes
         genomic = row[6]
         environment = row[7]
         biospecimen = row[8]
         clinical = row[9]
-        datatypes = {'genomic_data': False,
-                     'environmental_data': False,
-                     'biospecimens': False,
-                     'phenotypic_clinical_data': False}
-        if genomic == 'Yes':
-            datatypes['genomic_data'] = True
-        if environment == 'Yes':
-            datatypes['environmental_data'] = True
-        if biospecimen == 'Yes':
-            datatypes['biospecimens'] = True
-        if clinical == 'Yes':
-            datatypes['phenotypic_clinical_data'] = True
+        datatypes = {
+            "genomic_data": False,
+            "environmental_data": False,
+            "biospecimens": False,
+            "phenotypic_clinical_data": False,
+        }
+        if genomic == "Yes":
+            datatypes["genomic_data"] = True
+        if environment == "Yes":
+            datatypes["environmental_data"] = True
+        if biospecimen == "Yes":
+            datatypes["biospecimens"] = True
+        if clinical == "Yes":
+            datatypes["phenotypic_clinical_data"] = True
 
-        cur_enroll = row[3].replace(',', '').strip()
-        target_enroll = row[4].replace(',', '').strip()
+        cur_enroll = row[3].replace(",", "").strip()
+        target_enroll = row[4].replace(",", "").strip()
 
-        if cur_enroll == '':
+        if cur_enroll == "":
             cur_enroll = None
         else:
             cur_enroll = int(cur_enroll)
 
-        if target_enroll == '':
+        if target_enroll == "":
             target_enroll = None
         else:
             target_enroll = int(target_enroll)
 
-        cohort_data[row[0]] = {'cohort_name': row[0],
-                               'countries': countries,
-                               'pi_lead': row[1],
-                               'website': row[11],
-                               'current_enrollment': cur_enroll,
-                               'target_enrollment': target_enroll,
-                               'enrollment_period': row[5],
-                               'available_data_types': datatypes}
+        cohort_data[row[0]] = {
+            "cohort_name": row[0],
+            "countries": countries,
+            "pi_lead": row[1],
+            "website": row[11],
+            "current_enrollment": cur_enroll,
+            "target_enrollment": target_enroll,
+            "enrollment_period": row[5],
+            "available_data_types": datatypes,
+        }
 
     all_data = []
     for cohort_name, cohort_metadata in metadata.items():
-        file_name = 'build/intermediate/{0}-mapping.ttl'.format(cohort_metadata['id'].lower())
-        gin = rdflib.Graph()
-        gin.parse(file_name, format='turtle')
-        child_to_parent = get_children(gin, 'https://purl.ihccglobal.org/GECKO_9999998')
-        master_map = {}
-        data = get_categories(child_to_parent, cineca)
+        cohort_id = cohort_metadata["id"].lower()
+        file_name = f"templates/{cohort_id}.tsv"
+        if not os.path.exists(file_name):
+            print(f"{cohort_name} template {file_name} does not exist!")
+            continue
+        gecko_cats = []
+        with open(file_name, "r") as f:
+            reader = csv.reader(f, delimiter="\t")
+            # Skip header, template, and validation
+            next(reader)
+            next(reader)
+            next(reader)
+            for row in reader:
+                gecko_cat = row[4]
+                if gecko_cat.strip() == "":
+                    continue
+                gecko_cats.extend(gecko_cat.split("|"))
+        gecko_cats = list(set(gecko_cats))
+        data = get_categories(gecko_cats, gecko_hierarchy)
         if cohort_name in cohort_data:
             this_cohort = cohort_data[cohort_name]
             this_cohort.update(data)
             all_data.append(this_cohort)
         else:
-            this_cohort = {'cohort_name': cohort_name,
-                           'countries': [],
-                           'pi_lead': '',
-                           'website': '',
-                           'current_enrollment': '',
-                           'target_enrollment': '',
-                           'enrollment_period': '',
-                           'available_data_types': []}
+            this_cohort = {
+                "cohort_name": cohort_name,
+                "countries": [],
+                "pi_lead": "",
+                "website": "",
+                "current_enrollment": "",
+                "target_enrollment": "",
+                "enrollment_period": "",
+                "available_data_types": [],
+            }
             this_cohort.update(data)
             all_data.append(this_cohort)
 
@@ -102,8 +124,38 @@ def main():
     output_file.close()
 
 
+def build_hierarchy(node):
+    """Build the GECKO hierarchy based on the JSON output from ROBOT tree.
+
+    :param node: current node in nested dict
+    :return: hierarchy dict
+    """
+    global bottom_level
+    if isinstance(node, list):
+        # List of children -> transform to dict
+        nodes = {}
+        gen_vars = []
+        for itm in node:
+            if "children" in itm:
+                nodes[itm["id"]] = build_hierarchy(itm)
+            else:
+                gen_vars.append(itm["id"])
+        if gen_vars and nodes:
+            nodes["general_variables"] = gen_vars
+        if gen_vars and not nodes:
+            return gen_vars
+    else:
+        # Is a dict
+        if "children" in node:
+            return build_hierarchy(node["children"])
+        else:
+            bottom_level.append(node["id"])
+            return None
+    return nodes
+
+
 def build_nested(nested_dict, reverse_path):
-    """Build a nested dictionary from a reveresed path (lowest level -> highest level)
+    """Build a nested dictionary from a reversed path (lowest level -> highest level)
 
     :param nested_dict: starting dictionary
     :param reverse_path: path from current level up
@@ -120,7 +172,8 @@ def build_nested(nested_dict, reverse_path):
 
 
 def clean_dict(d):
-    """Clean dictionary by replacing any spaces and special characters in keys and values with underscores.
+    """Clean dictionary by replacing any spaces and special characters in keys and values with
+    underscores.
 
     :param d: dictionary to clean
     :return: cleaned dictionary
@@ -136,59 +189,26 @@ def clean_dict(d):
 
 
 def clean_string(string):
-    return string.replace(
-        ' ', '_').replace('-', '_').replace('/', '_').replace('(', '').replace(')', '').replace('.', '')
+    return (
+        string.replace(" ", "_")
+        .replace("-", "_")
+        .replace("/", "_")
+        .replace("(", "")
+        .replace(")", "")
+        .replace(".", "")
+    )
 
 
-def get_children(gin, node):
-    """Get map of child -> parent terms.
-
-    :param gin: rdflib Graph
-    :param node: node to get children of
-    :return: map of child -> parent terms
-    """
-    nodes = {}
-    query = '''SELECT ?s ?label ?parent
-               WHERE {
-                       <%s> rdfs:label ?parent .
-                       ?s rdfs:subClassOf <%s> ;
-                          rdfs:label ?label .
-                       FILTER(STRSTARTS(STR(?s), "https://purl.ihccglobal.org/GECKO_0")) }
-               ORDER BY ?label''' % (node, node)
-
-    qres = gin.query(query)
-    for row in qres:
-        if not row.s:
-            continue
-
-        label = str(row.label)
-        if label in ignore_variables:
-            continue
-
-        nodes[label] = str(row.parent)
-        this_children = get_children(gin, row.s)
-        if len(this_children) > 0:
-            nodes.update(this_children)
-
-    return nodes
-
-
-def get_categories(child_to_parent, cineca):
+def get_categories(categories, gecko):
     """Get the CINECA categories used in a cohort as structured dictionary.
 
-    :param child_to_parent: map of all children to their parent terms
-    :param cineca: CINECA structure
-    :return: subset of CINECA structure consisting of only categories used in this cohort
+    :param categories:
+    :param gecko:
+    :return:
     """
-    global master_map
-    bottom_level = []
-    for child, parent in child_to_parent.items():
-        if child not in child_to_parent.values():
-            bottom_level.append(child)
-
     subset = {}
-    for leaf in bottom_level:
-        result = get_path(cineca, leaf)
+    for leaf in categories:
+        result = get_path(gecko, leaf)
         if result is None:
             print('ERROR - unable to find "{0}"'.format(leaf))
             continue
@@ -259,5 +279,5 @@ def get_path(haystack, needle, path=None):
         return None, None
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
