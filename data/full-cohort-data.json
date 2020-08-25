@@ -15,29 +15,44 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "demographic_data": []
-    },
-    "biosample": {
-      "sample_type": [
-        "blood"
-      ]
-    },
     "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
       "physiological_measurements": {
-        "anthropometry": [],
+        "anthropometry": [
+          "height"
+        ],
         "circulation_and_respiration": [
           "blood_pressure"
         ]
       },
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "diseases": [
+        "respiratory_system"
+      ],
+      "medication": [
+        "prescription"
+      ],
+      "socio_demographic_and_economic_characteristics": [],
+      "non_pharmacological_interventions": [],
       "general_variables": [
         "signs_and_symptoms"
-      ],
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
+      ]
+    },
+    "survey_administration": [],
+    "biosample": {
+      "sample_type": {
+        "blood": [],
+        "general_variables": [
+          "other_biosample_type"
+        ]
+      }
+    },
+    "laboratory_measures": [],
+    "basic_cohort_attributes": {
+      "demographic_data": [],
+      "population_data": [
+        "location"
       ]
     }
   },
@@ -61,23 +76,35 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
-    "laboratory_measures": {
-      "microbiology": [
-        "microbial_data"
-      ]
-    },
     "questionnaire_survey_data": {
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "socio_demographic_and_economic_characteristics": [],
+      "diseases": [
+        "respiratory_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight"
+          "height"
         ],
         "circulation_and_respiration": [
-          "heart_rate"
+          "blood_pressure"
+        ]
+      },
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "medication": []
+    },
+    "biosample": {
+      "sample_type": {
+        "blood": [],
+        "general_variables": [
+          "urine"
         ]
       }
     }
@@ -98,34 +125,39 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "basic_cohort_attributes": {
-      "population_data": [
-        "location"
-      ],
-      "general_variables": [
-        "timeline"
-      ]
-    },
-    "laboratory_measures": [],
     "questionnaire_survey_data": {
-      "general_variables": [
-        "signs_and_symptoms"
-      ],
       "lifestyle_and_behaviours": [
         "alcohol"
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight"
+          "height"
         ]
       },
-      "socio_demographic_and_economic_characteristics": [
-        "residence"
+      "diseases": [
+        "respiratory_system"
+      ],
+      "socio_demographic_and_economic_characteristics": [],
+      "general_variables": [
+        "signs_and_symptoms"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "medication": [
+        "prescription"
       ]
     },
-    "survey_administration": [
-      "unique_identifiers"
-    ]
+    "survey_administration": [],
+    "laboratory_measures": [],
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ],
+      "population_data": [
+        "location"
+      ]
+    }
   },
   {
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
@@ -144,10 +176,21 @@
       "phenotypic_clinical_data": true
     },
     "questionnaire_survey_data": {
+      "non_pharmacological_interventions": [],
+      "general_variables": [
+        "reproduction"
+      ],
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "residence"
+        "biological_sex"
       ]
-    }
+    },
+    "survey_administration": [
+      "date_and_time_related_information"
+    ],
+    "laboratory_measures": []
   },
   {
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
@@ -165,32 +208,37 @@
       "biospecimens": true,
       "phenotypic_clinical_data": true
     },
-    "biosample": {
-      "sample_type": [
-        "urine"
-      ]
-    },
-    "laboratory_measures": {
-      "genomics": {
-        "data_type": []
-      }
-    },
     "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [
-        "tobacco"
-      ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight"
+          "height"
         ],
         "circulation_and_respiration": [
-          "heart_rate"
+          "blood_pressure"
         ]
       },
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "diseases": [
+        "respiratory_system"
+      ],
+      "medication": [],
       "general_variables": [
         "signs_and_symptoms"
-      ]
-    }
+      ],
+      "non_pharmacological_interventions": []
+    },
+    "survey_administration": [],
+    "biosample": {
+      "sample_type": {
+        "blood": [],
+        "general_variables": [
+          "urine"
+        ]
+      }
+    },
+    "laboratory_measures": []
   },
   {
     "cohort_name": "Maelstrom",
@@ -201,17 +249,28 @@
     "target_enrollment": "",
     "enrollment_period": "",
     "available_data_types": [],
-    "laboratory_measures": [],
     "questionnaire_survey_data": {
-      "lifestyle_and_behaviours": [],
       "physiological_measurements": {
         "circulation_and_respiration": []
       },
+      "lifestyle_and_behaviours": [
+        "nutrition"
+      ],
+      "socio_demographic_and_economic_characteristics": [],
+      "diseases": [
+        "blood_related_disorders"
+      ],
+      "medication": [
+        "prescription"
+      ],
       "general_variables": [
         "signs_and_symptoms"
       ],
-      "socio_demographic_and_economic_characteristics": [
-        "gender"
+      "non_pharmacological_interventions": []
+    },
+    "laboratory_measures": {
+      "general_variables": [
+        "microbiology"
       ]
     },
     "survey_administration": []

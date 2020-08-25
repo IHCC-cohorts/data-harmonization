@@ -7,29 +7,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:purl="https://purl.ihccglobal.org/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://purl.ihccglobal.org/saprin.owl">
-        <terms:description>TODO</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:rights>You are free to:
-
-Share — copy and redistribute the material in any medium or format
-
-Adapt — remix, transform, and build upon the material
-for any purpose, even commercially.
-
-Under the following terms:
-
-Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-
-No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</terms:rights>
-        <terms:title>South African Population Research Infrastructure Network (SAPRIN)</terms:title>
-        <prov:wasDerivedFrom rdf:resource="https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/saprin.owl"/>
     
 
 
@@ -164,14 +145,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_ANCVisits">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of antenatal care visits during this pregnancy</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANCVisits</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_ANCVisits"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -181,8 +162,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Alternative_surname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An alternative surname (formerly) used by the individual, e.g. maiden name</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alternative surname</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Alternative_surname"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -191,8 +179,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Area">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Village or other higher level spatial grouping of locations</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Area</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Area"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -201,8 +196,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Assets">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Does the household have any of the following items in good working order?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assets</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Assets"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -220,8 +222,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Beneficiary">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the intended beneficiary of the grant. This may be the same as the identifier of the grant holder in the case where the holder is the beneficiary, e.g. old age pension, or different as in the case of care dependency grants, where the grant holder receives the grant on behalf of someone else, e.g. a child</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beneficiary</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Beneficiary"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -230,8 +239,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Birth">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The birth event of an individual</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -239,18 +255,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_BirthAttendant">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BirthAttendant</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Doctor
- ii. Midwife
- iii. Traditional birth attendant
- iv. Lay person</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_BirthAttendant"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -260,8 +272,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_BirthCertificate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whether the birth certificate was observed</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BirthCertificate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_BirthCertificate"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -270,8 +289,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Birth_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Birth event of this individual or the DeliveryEvent resulting in the birth of this individual if the individual enters surveillance through birth</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth (Individual)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth_Individual"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -280,8 +306,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Birth_weight">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth weight as obtained from the Road to Health card in grams</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth weight</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth_weight"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -290,14 +323,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Citizenship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The country of which the individual is a citizen</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000061</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citizenship</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Citizenship"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000061</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnicity/race</rdfs:label>
     </owl:Axiom>
     
 
@@ -307,8 +340,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Civilian_ID_number">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The 13-digit South African civilian identity number</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civilian ID number</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Civilian_ID_number"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique identifiers</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -317,12 +357,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Cooking_fuel">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What is the main fuel used for cooking?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cooking fuel</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Wood
- ii. Gas (LPG)
- iii. Coal
- iv. Electricity</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Cooking_fuel"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -331,8 +374,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Coordinate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latitude and longitude on the WGS84 coordinate system</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Coordinate"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -341,13 +391,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Crime">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has any resident member of the household been a victim of any of these crimes in the past 12 months?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crime</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. None
- ii. Theft
- iii. Assault
- iv. Murder
- v. Other crime</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Crime"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -356,22 +408,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_CurrentEducation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If the individual is currently attending an educational institution, at what level:</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CurrentEducation</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Creche
- ii. Pre-school
- iii. Grade 1-12
- iv. ABET 1-4
- v. NQF 1-4
- vi. Undergraduate degree
- vii. Post-graduate degree
- viii. Not attending</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_CurrentEducation"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">education</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -380,17 +424,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Currently_employed">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Currently employed</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Yes
- ii. Part-time
- iii. No</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Currently_employed"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -400,8 +441,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_DataCollector">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The person responsible for data collection during the visit</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataCollector</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_DataCollector"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -410,8 +458,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_DateRegistered">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which the birth was registered, or null if the birth hasn‚Äôt been registered yet</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DateRegistered</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_DateRegistered"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -420,13 +475,13 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Birth">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Birth"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of birth</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Birth)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_Birth"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000058</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</rdfs:label>
     </owl:Axiom>
     
@@ -437,8 +492,22 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Death">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date of the death</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Death)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_Death"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_Death"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -447,8 +516,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Enumeration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Enumeration"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of enumeration</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Enumeration)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_Enumeration"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -457,8 +533,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Household_Headship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Headship"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date of the change</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Household Headship)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_Household_Headship"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -477,14 +560,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Migration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of migration</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Migration)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_Migration"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
     </owl:Axiom>
     
 
@@ -494,8 +577,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit date</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (Observation)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_Observation"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -504,14 +594,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_PregnancyOutcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date of birth</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (PregnancyOutcome)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_PregnancyOutcome"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -521,8 +611,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Date_UnionEvent">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_UnionEvent"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date of the event</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date (UnionEvent)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Date_UnionEvent"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -531,8 +628,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Death">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The death of an individual</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Death</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -541,8 +645,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_DeathCertificate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observed</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeathCertificate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_DeathCertificate"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -551,15 +662,8 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Destination">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Destination of the migration (location)</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Destination</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Destination"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -567,17 +671,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Diabetes">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000116</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Ever treated - Yes/No
- ii. Treatment started in last 12mos - Yes/No
- iii. Currently on treatment - Yes/No</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Diabetes"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000116</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of diabetes</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
     </owl:Axiom>
     
 
@@ -586,17 +687,8 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Direction">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direction</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. In (migration into this location)
- ii. Out (migration out of this location)</purl:value>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Direction"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -605,14 +697,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Duration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duration in weeks of the pregnancy</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duration</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Duration"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -624,23 +716,15 @@ No additional restrictions — You may not apply legal terms or technological me
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What is the construction materials of the walls?
  What is the construction material of the floor?
  How many bedrooms does your household occupy at this dwelling?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dwelling construction</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Brick
- ii. Cement
- iii. Other modern building material
- iv. Stabilised mud
- v. Traditional mud
- vi. Wood
- vii. Other informal structures
- i. Tiles
- ii. Cement
- iii. Modern carpet
- iv. Wood
- v. Other modern material
- vi. Dirt
- vii. Mat
- viii. Other traditional</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Dwelling_construction"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -649,10 +733,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Electricity_supply">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the household connected to the electricity grid?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electricity supply</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Yes
- ii. No</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Electricity_supply"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -660,22 +749,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Employer">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employer</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Central government
- ii. Provincial administration
- iii. Local / regional authority
- iv. Public corporation
- v. Private sector employer
- vi. Non-profit institution
- vii. Self-employment
- viii. Another household member</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Employer"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -684,30 +765,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EmploymentSector">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmploymentSector</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Agriculture/Fishing/Forestry
- ii. Mining
- iii. Manufacturing
- iv. Electricity and water
- v. Construction
- vi. Wholesale/retail
- vii. Restaurant/Hotels/Sport/Tourism
- viii. Transport and communication
- ix. Finance
- x. Educational services
- xi. Health services
- xii. Legal services
- xiii. Research
- xiv. Domestic services
- xv. Armed forces
- xvi. Informal sector, e.g. street vendor</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_EmploymentSector"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -716,17 +781,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EmploymentType">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmploymentType</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Works as employee
- ii. Work for themselves
- iii. Do odd jobs/piece jobs</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_EmploymentType"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -736,8 +798,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndDate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The end date of the social support</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndDate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_EndDate"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -746,8 +815,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that terminated the episode, can only be Household dissolution, Migration (Direction: Out) and Observation (in which the implication is that the household is last known to be resident)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (HouseholdResidence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_EndEvent_HouseholdResidence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -766,8 +842,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The death event of this individual or the Observation at which this individual was last observed</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Individual)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_EndEvent_Individual"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -786,8 +869,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that terminated the episode, can only be Death, Migration (Direction: Out) and Observation (in which the implication is that the individual is last known to be resident)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Residence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_EndEvent_Residence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -796,8 +886,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_EndEvent_Union">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The end of the union. Can only be Union ‚Äì partner died, Union ‚Äì separation (if there is no marriage date), Union ‚Äì divorce (if there is a marriage date), or Observation if it a current union</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EndEvent (Union)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_EndEvent_Union"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -834,8 +931,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_External_identifier_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The identifier associated with the household during this residence</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External identifier (HouseholdResidence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_External_identifier_HouseholdResidence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -844,8 +948,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_External_identifier_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier used on data collection instruments to uniquely identify the individual, but is removed together with other personally identifiable information when data is made available for analysis</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">External identifier (Individual)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_External_identifier_Individual"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique identifiers</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -854,8 +965,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FatherFirstName">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first name/s of the father</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FatherFirstName</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_FatherFirstName"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -864,8 +982,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FatherId">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique identifier of the father of the individual, if the father is enumerated in the surveillance</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FatherId</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_FatherId"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique identifiers</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -874,13 +999,6 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FatherStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FatherStatus</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Same household
- ii. Same area (village/isigodi)
- iii. Elsewhere in surveillance area
- iv. In the immediate surroundings outside surveillance area
- v. Elsewhere
- vi. Died
- vii. Unknown status</purl:value>
     </owl:Class>
     
 
@@ -890,8 +1008,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FatherSurname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The surname of the father of the individual</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FatherSurname</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_FatherSurname"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -900,13 +1025,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_FinancialStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-reported financial status</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FinancialStatus</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Very Comfortable
- ii. Comfortable
- iii. Just Getting By
- iv. Poor
- v. Extremely Poor</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_FinancialStatus"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -915,13 +1042,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Financial_situation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How would the household classify its financial situation these days?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Financial situation</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Very comfortable
- ii. Comfortable
- iii. Just getting by
- iv. Poor
- v. Extremely poor</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Financial_situation"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -930,8 +1059,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_First_name_1">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first given name of the individual</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First name 1</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_First_name_1"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -940,8 +1076,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_First_name_2">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The second/alternative given name of the individual</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First name 2</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_First_name_2"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -950,10 +1093,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Food_security">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the last 12 months did you or any other member of your household ever cut the size of your meals or skip meals because there was not enough money for food?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food security</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Yes ‚Äì how often (Almost every month, some months but not all, only once or twice)
- ii. No</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Food_security"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -962,8 +1110,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Grantholder">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the person holding the grant</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grantholder</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Grantholder"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -971,16 +1126,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HIV">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIV</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Ever received a test result for HIV - Yes/No
- ii. Ever had a positive HIV result ‚Äì Yes/No</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_HIV"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of HIV</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -990,14 +1143,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HIVResult">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIV serostatus from dried blood spot</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIVResult</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_HIVResult"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of HIV</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory measures</rdfs:label>
     </owl:Axiom>
     
 
@@ -1007,11 +1160,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HealthStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Self-reported health status</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HealthStatus</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Excellent, Very Good or Good
- ii. Fair
- iii. Poor</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_HealthStatus"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1019,13 +1176,15 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Health_care_utilisation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health care utilisation</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Admitted to hospital past month - Yes/No
- ii. Visited a clinic past month ‚Äì Yes/No
- iii. Visited private doctor past month ‚Äì Yes/No
- iv. Used pharmacy/chemist past month ‚Äì Yes/No
- v. Visited traditional healer past month ‚Äì Yes/No</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Health_care_utilisation"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000056</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionnaire/survey data</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1033,18 +1192,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HighestNonSchoolEducation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HighestNonSchoolEducation</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Undergraduate degree
- ii. Postgraduate degree
- iii. ABET 1-4
- iv. NQF 1-4</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_HighestNonSchoolEducation"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">education</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -1054,14 +1209,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_HighestSchoolLevelCompleted">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grade 1 ‚Äì 12</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HighestSchoolLevelCompleted</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_HighestSchoolLevelCompleted"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">education</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -1125,8 +1280,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The household identifier</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household (HouseholdResidence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_HouseholdResidence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1145,8 +1307,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set of data elements collected from a household informant, during a face to face or telephonic interview</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household Status Observation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1154,17 +1323,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Hypertension">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Ever treated - Yes/No
- ii. Treatment started in last 12mos
- iii. Currently on treatment</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Hypertension"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000113</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of hypertension</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -1191,8 +1357,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Identifier_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A globally unique identifier used internally to uniquely identify the individual</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier (Individual)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Identifier_Individual"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique identifiers</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1201,14 +1374,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_If_HIVNeg">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. When last HIV- result (&gt;1yr, &lt;1yr ago)</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If HIV-</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_If_HIVNeg"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of HIV</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -1217,18 +1390,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_If_HIVPos">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If HIV+</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. When first HIV+ result (&gt;1yr, &lt;1yr ago)
- ii. When last HIV- result (&gt;1yr, &lt;1yr ago)
- iii. When first started ART (Never, &lt;1yr, &gt;1yr)
- iv. Currently on ART (Yes/No)</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_If_HIVPos"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000138</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of HIV</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -1238,15 +1407,8 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Base_Entities"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Household members, where a resident is a member of a household who normally lives (i.e. intends to sleep the majority of the time) at the same dwelling as the household; and a non-resident is a member of a household who does not normally live at the same dwelling as the household but is nevertheless considered a member of the household.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000066</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000066</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family and household structure</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -1255,8 +1417,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual1">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of one of the parties to the union. By convention this will be the female in a heterosexual union.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual1</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual1"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1265,8 +1434,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual2">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the second party to the union.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual2</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual2"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1295,8 +1471,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Individual_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual (Residence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_Residence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1315,14 +1498,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_LiveBirths">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of babies born alive resulting from this delivery</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LiveBirths</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_LiveBirths"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -1332,8 +1515,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Base_Entities"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place to which geo-coordinates can be assigned</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1342,8 +1532,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The location identifier</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location (HouseholdResidence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location_HouseholdResidence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1352,8 +1549,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location where the visit took place</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location (Observation)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location_Observation"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1362,8 +1566,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Location_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The location identifier</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location (Residence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location_Residence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1371,19 +1582,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MaritalStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaritalStatus</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Never married
- ii. Married
- iii. Polygamous Marriage
- iv. Divorced/Separated
- v. Widowed</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_MaritalStatus"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000070</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marital status value</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -1393,8 +1599,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MarriageDate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which the union has been formalised as a marriage</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MarriageDate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_MarriageDate"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1433,15 +1646,8 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Migration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A change in location of usual residence</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Migration</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -1450,8 +1656,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MotherFirstName">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first name/s of the mother</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MotherFirstName</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_MotherFirstName"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1460,8 +1673,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MotherId">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique identifier of the mother of the individual, if the mother is enumerated in the surveillance</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MotherId</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_MotherId"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique identifiers</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1470,13 +1690,6 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MotherStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MotherStatus</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Same household
- ii. Same area (village/isigodi)
- iii. Elsewhere in surveillance area
- iv. In the immediate surroundings outside surveillance area
- v. Elsewhere
- vi. Died
- vii. Unknown status</purl:value>
     </owl:Class>
     
 
@@ -1486,8 +1699,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_MotherSurname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The surname of the mother of the individual</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MotherSurname</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_MotherSurname"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1496,14 +1716,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Nationality">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The country of origin of the individual (the country of which the person is/was a citizen by birth)</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000061</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nationality</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Nationality"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000061</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnicity/race</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
     </owl:Axiom>
     
 
@@ -1513,19 +1733,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Not_employed">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type/reason for unemployment</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not employed</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Caring for others/household duties
- ii. Looking for work
- iii. Student or in training
- iv. Unable to work due to illness/disability
- v. Other reason</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Not_employed"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000146</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">occupation</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
     </owl:Axiom>
     
 
@@ -1535,8 +1750,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Observation">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A surveillance visit at a location</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1555,15 +1777,8 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Origin">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Origin of the migration (location)</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Origin</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Origin"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -1572,14 +1787,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Outcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A delivery event or Observation if the pregnancy is still current at the time of observation</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outcome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Outcome"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -1588,12 +1803,15 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_PartnershipStatus">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PartnershipStatus</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Marital Partnership
- ii. Regular Partnership
- iii. Casual Partnership(s)
- iv. No Partnership</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_PartnershipStatus"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1601,11 +1819,15 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Place_Death">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Place (Death)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. In a health care facility
- ii. Outside a health care facility, but not at home (road, etc)
- iii. At home</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Place_Death"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1613,17 +1835,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Place_PregnancyOutcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Place (PregnancyOutcome)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. In a health care facility
- ii. Outside a health care facility, but not at home
- iii. At home</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Place_PregnancyOutcome"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -1633,14 +1852,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Pregnancy">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The period of being pregnant. Also used to record maternity histories retrospectively</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pregnancy</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -1650,14 +1869,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The end event of a pregnancy</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PregnancyOutcome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -1668,17 +1887,6 @@ No additional restrictions — You may not apply legal terms or technological me
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Head_Relationship"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relationship between the individual member (to whom the membership belongs) and the current household head of the household</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relationship</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Self (the individual who is the subject of the membership is the household head)
- ii. Spouse (incl partner in stable relationship)
- iii. Child (incl adopted/foster child)
- iv. Son/daughter-in-law (incl individuals in stable relationship with any child of the household head)
- v. Grandchild
- vi. Parent
- vii. Parent-in-law (incl parent of partner in stable relationship)
- viii. Grandparent
- ix. Other relative
- x. Domestic worker or tenant
- xi. Unrelated household member</purl:value>
     </owl:Class>
     
 
@@ -1688,8 +1896,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An episode during which an individual is resident (sleeping most of the time there) at a particular location that falls within the surveillance area. An individual can only be resident at one location at a time, i.e. residency episodes cannot overlap</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residence</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1715,8 +1930,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Respondent">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The primary respondent at the visit</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Respondent</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Respondent"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1725,13 +1947,13 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Sex">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male (1), female(2) or unknown(0)</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000059</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Sex"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000059</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
     </owl:Axiom>
     
@@ -1742,8 +1964,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Social_support">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Episodes"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The period during which an individual receives a government social support grant</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social support</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1752,8 +1981,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartDate">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The start date of the social support</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartDate</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_StartDate"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">date and time-related information</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1762,8 +1998,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_HouseholdResidence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_HouseholdResidence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that started the episode, can only be Enumeration, Household formation, Migration (Direction: In)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (HouseholdResidence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_StartEvent_HouseholdResidence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1792,8 +2035,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_Residence">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Residence"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The event that started the episode, can only be Enumeration, Birth, Migration (Direction: In)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (Residence)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_StartEvent_Residence"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1802,8 +2052,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_StartEvent_Union">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The start of the union. Can only be Enumeration or Union start</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StartEvent (Union)</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_StartEvent_Union"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1821,14 +2078,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Stillborn">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of still born babies resulting from this delivery</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stillborn</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Stillborn"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -1838,8 +2095,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Surname">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family or last name</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surname</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Surname"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey administration</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1848,13 +2112,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Toilet">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What kind of toilet does the household use</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toilet</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Flush
- ii. Ventilated improved pit
- iii. Other pit
- iv. Bucket
- v. Chemical</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Toilet"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1862,17 +2128,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Tuberculosis">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000125</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tuberculosis</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Ever treated - Yes/No
- ii. Treatment started in last 12 months ‚Äì Yes/No
- iii. Currently on TB treatment ‚Äì Yes/No</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Tuberculosis"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:1000125</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of tuberculosis</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -1882,8 +2145,6 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_Household_Headship">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Headship"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (Household Headship)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Start
- ii. End</purl:value>
     </owl:Class>
     
 
@@ -1892,19 +2153,15 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_Location">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Location"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (Location)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Dwelling. A place of residence within the boundaries of the demographic surveillance area
- ii. Clinic. A primary health care facility, without overnight facilities
- iii. Health Centre. A primary health care facility that is larger than a clinic with some overnight care facilities
- iv. Hospital
- v. Primary School. Teaching up Grade 7
- vi. Secondary School. Teaching from Grade 8 to 12
- vii. Creche. A pre-school child care facility
- viii. Police station
- ix. Tribal authority
- x. Social service office
- xi. Home affairs office</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Type_Location"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1913,9 +2170,6 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_Membership_Events">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Membership_Events"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (Membership Events)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Start
- ii. End
- iii. Household dissolution</purl:value>
     </owl:Class>
     
 
@@ -1924,17 +2178,8 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_Migration">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Migration"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (Migration)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Internal (change of location within surveillance area)
- ii. External (change of location into/out of the surveillance area)</purl:value>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Type_Migration"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residence</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -1943,19 +2188,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_PregnancyOutcome">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_PregnancyOutcome"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Types i-ii is only applicable if the pregnancy end prior to the 28th week of pregnancy, types iii-v is applicable only on or after the 28th week of pregnancy</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (PregnancyOutcome)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Spontaneous abortion
- ii. Assisted abortion
- iii. Caesarean
- iv. Assisted
- v. Normal vaginal</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Type_PregnancyOutcome"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
     
 
@@ -1965,15 +2205,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_Social_support">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Social_support"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of grant</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (Social support)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Old age
- ii. Disability
- iii. War veterans
- iv. Care dependency
- v. Foster child
- vi. Child support
- vii. Grant-in-aid</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Type_Social_support"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -1982,11 +2222,6 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Type_UnionEvent">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_UnionEvent"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type (UnionEvent)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Start
- ii. Marriage
- iii. Separation
- iv. Divorce
- v. Partner died</purl:value>
     </owl:Class>
     
 
@@ -2002,8 +2237,15 @@ No additional restrictions — You may not apply legal terms or technological me
  iv. Social. Do they participate together in social activities; does their society recognise them as a couple?
  v. Support. Do they support each other financially?
  vi. Children. Do they have children together?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Union</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Union"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -2012,8 +2254,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_UnionEvent">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Events"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A change in the union (conjugal relationship) between two individuals</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnionEvent</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_UnionEvent"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -2032,21 +2281,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Vaccination_history">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Individual_StatusObservation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For each vaccination record: date received and source of information (Road to Health Card or recall)</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000091</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaccination history (child &lt;=6yr)</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. At birth ‚Äì BCG &amp; Polio 0
- ii. At 6w ‚Äì Polio1, DTab+IPV+HiB1, HepB1, Rota1, PCV1
- iii. At 10w ‚Äì DtaP+IPV+Hib2, HepB2
- iv. At 14w ‚Äì DtaP+IPV+Hib3, HepB3, Rota2, PCV2
- v. At 9mos ‚Äì Measles1, PCV3
- vi. At 18mos ‚Äì DtaP+IPV+Hib4, Measles2
- vii. At 6yr - DT</purl:value>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Vaccination_history"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000015</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000091</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-pharmacological interventions</rdfs:label>
     </owl:Axiom>
     
 
@@ -2056,8 +2298,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Verbal_autopsy">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Death"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WHO standard verbal autopsy questionnaire items. SAPRIN will adopt the worldwide standardised World Health Organisation (WHO) Verbal Autopsy questionnaires to determine the cause of deaths reported in the surveillance population. The latest version of the WHO Verbal Autopsy Questionnaire is 2016, edited and cognitively tested to facilitate the use of publicly available analytical software for assigning the cause of death.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verbal autopsy</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Verbal_autopsy"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">life stage/time point</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -2066,16 +2315,15 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Water_source">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Household_Status_Observation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The most commonly used (during last year) source of drinking water</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water source</rdfs:label>
-        <purl:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i. Piped ‚Äì to stand/house
- ii. Piped ‚Äì Public tap/kiosk
- iii. Borehole/well
- iv. Rainwater
- v. Flowing river/stream
- vi. Dam/standing water
- vii. Protected spring
- viii. Water carrier or tanker</purl:value>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Water_source"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socio-demographic and economic characteristics</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -2084,14 +2332,14 @@ No additional restrictions — You may not apply legal terms or technological me
     <owl:Class rdf:about="https://purl.ihccglobal.org/SAPRIN_Woman">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/SAPRIN_Pregnancy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The individual identifier of the woman who experienced the pregnancy</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Woman</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_Woman"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0002393</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pregnancy history</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
     </owl:Axiom>
 </rdf:RDF>
 

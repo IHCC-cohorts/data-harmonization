@@ -32,7 +32,7 @@ def main():
             # No curie, skip row
             continue
         # Get the label
-        gecko_label = row[2].strip()
+        gecko_label = row[1].strip()
         if gecko_label == '':
             # No label, skip row
             continue
@@ -61,7 +61,7 @@ def main():
         # Get the CURIE for the subject
         curie = row[0].strip()
         # And the GECKO label (maybe more than one)
-        gecko_labels = row[3].strip()
+        gecko_labels = row[4].strip()
         if gecko_labels == '':
             continue
         iris_labels = {}

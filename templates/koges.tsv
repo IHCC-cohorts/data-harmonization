@@ -1,211 +1,208 @@
-Short ID	Label	Parent
-ID	LABEL	SC %
-	is-required;	
-KoGES:0000001	Core Variables
-KoGES:0000002	Core Questionnaires	Core Variables
-KoGES:0000003	Socio-demographic data	Core Questionnaires
-KoGES:0000004	Education level	Socio-demographic data
-KoGES:0000005	Marital status	Socio-demographic data
-KoGES:0000006	Household income	Socio-demographic data
-KoGES:0000007	Occupation	Socio-demographic data
-KoGES:0000008	Medical history	Core Questionnaires
-KoGES:0000009	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.	Medical history
-KoGES:0000010	Previous diagnosis (Disease history)	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.
-KoGES:0000011	Age at first diagnosis (Disease history)	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.
-KoGES:0000012	Treatment progress (current treatment)	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.
-KoGES:0000013	Treatment method (hypertension, diabetes, hyperlipidemia only)	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.
-KoGES:0000014	Surgery (operation) history	Medical history
-KoGES:0000015	Previous surgery (operation)	Surgery (operation) history
-KoGES:0000016	Age at first surgery	Surgery (operation) history
-KoGES:0000017	Family disease history	Medical history
-KoGES:0000018	Previous diagnosis (Family disease history)	Family disease history
-KoGES:0000019	Relationship	Family disease history
-KoGES:0000020	Age at first diagnosis (Family disease history)	Family disease history
-KoGES:0000021	Number of siblings and children	Family disease history
-KoGES:0000022	Lifestyle	Core Questionnaires
-KoGES:0000023	Smoking habits	Lifestyle
-KoGES:0000024	Amount of ciagrettes	Smoking habits
-KoGES:0000025	Total period of smoking	Smoking habits
-KoGES:0000026	Age at first smoking	Smoking habits
-KoGES:0000027	Secondhand smoking	Smoking habits
-KoGES:0000028	Drinking habits	Lifestyle
-KoGES:0000029	Amount of drinking	Drinking habits
-KoGES:0000030	Total period of drinking	Drinking habits
-KoGES:0000031	Drinking frequency	Drinking habits
-KoGES:0000032	Sleeping pattern	Lifestyle
-KoGES:0000033	Hours of sleep	Sleeping pattern
-KoGES:0000034	Time go to bed and wake up in the morning	Sleeping pattern
-KoGES:0000035	Trouble of sleeping	Sleeping pattern
-KoGES:0000036	Snoring	Trouble of sleeping
-KoGES:0000037	Physical activity	Lifestyle
-KoGES:0000038	Regular physical activity	Physical activity
-KoGES:0000039	Excercises	Physical activity
-KoGES:0000040	Household chores	Physical activity
-KoGES:0000041	Climbing stairs	Physical activity
-KoGES:0000042	Womens health	Core Questionnaires
-KoGES:0000043	Menstrual factors	Womens health
-KoGES:0000044	Age at menarche	Menstrual factors
-KoGES:0000045	Length of menstrual cycle	Menstrual factors
-KoGES:0000046	Menopause status	Womens health
-KoGES:0000047	Reproductive history	Womens health
-KoGES:0000048	Number of pregnancies	Reproductive history
-KoGES:0000049	Age at each pregnancy	Reproductive history
-KoGES:0000050	Durations and outcome of pregnancies	Reproductive history
-KoGES:0000051	Breastfeeding	Reproductive history
-KoGES:0000052	Infertility	Reproductive history
-KoGES:0000053	Dietary survey	Core Questionnaires
-KoGES:0000054	Food Frequency Questionnaire	Dietary survey
-KoGES:0000055	Dietary habits	Dietary survey
-KoGES:0000056	Anthropometric measurements	Core Variables
-KoGES:0000057	Height & weight	Anthropometric measurements
-KoGES:0000058	Waist & hip circumference	Anthropometric measurements
-KoGES:0000059	Body composition	Anthropometric measurements
-KoGES:0000060	Blood pressure & pulse rate	Anthropometric measurements
-KoGES:0000061	Core Clinical examination	Core Variables
-KoGES:0000062	Core Blood test	Core Clinical examination
-KoGES:0000063	Complete blood cell count	Core Blood test
-KoGES:0000064	Glucose (fasting)	Core Blood test
-KoGES:0000065	Albumin	Core Blood test
-KoGES:0000066	Blood urea nitrogen (BUN)	Core Blood test
-KoGES:0000067	Creatinine (Blood)	Core Blood test
-KoGES:0000068	AST (SGOT)	Core Blood test
-KoGES:0000069	ALT (SGPT)	Core Blood test
-KoGES:0000070	y-GTP	Core Blood test
-KoGES:0000071	Total cholesterol	Core Blood test
-KoGES:0000072	HDL-Cholesterol	Core Blood test
-KoGES:0000073	Triglyceride	Core Blood test
-KoGES:0000074	Core Urine test	Core Clinical examination
-KoGES:0000075	pH	Core Urine test
-KoGES:0000076	Protein	Core Urine test
-KoGES:0000077	Glucose	Core Urine test
-KoGES:0000078	Blood	Core Urine test
-KoGES:0000079	Substudy Variables
-KoGES:0000080	Substudy Questionnaires	Substudy Variables
-KoGES:0000081	Psychosocial well-being status (PWI)	Substudy Questionnaires
-KoGES:0000082	Depression (CES-D, BDI)	Substudy Questionnaires
-KoGES:0000083	24 hour recall dietary survey	Substudy Questionnaires
-KoGES:0000084	Sleep disorder	Substudy Questionnaires
-KoGES:0000085	In-depth questionnaire (By disease)	Substudy Variables
-KoGES:0000086	Respiratory disease	In-depth questionnaire (By disease)
-KoGES:0000087	Gastroenterologic disorder	In-depth questionnaire (By disease)
-KoGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	In-depth questionnaire (By disease)
-KoGES:0000089	Arthritis	In-depth questionnaire (By disease)
-KoGES:0000090	Aging study	Substudy Variables
-KoGES:0000091	Aging study Questionnaires	Aging study
-KoGES:0000092	Health-related quality of life (WHOQOL, EQ-SD, SF-12)	Aging study Questionnaires
-KoGES:0000093	Activities of daily living (K-ADL, S-IADL)	Aging study Questionnaires
-KoGES:0000094	Dementia screening (K-MMSE, K-MoCA)	Aging study Questionnaires
-KoGES:0000095	Dementia screening by caregiver (CS-KGDS, KDSQ-C)	Aging study Questionnaires
-KoGES:0000096	Depression (GDS)	Aging study Questionnaires
-KoGES:0000097	Vascular dementia / Alzheimers disease screening (Ischemia Scales)	Aging study Questionnaires
-KoGES:0000098	Aging study Clincial examination	Aging study
-KoGES:0000099	Cognitive Function test	Aging study Clincial examination
-KoGES:0000100	Neuropsychological test (SNSB-II)	Aging study Clincial examination
-KoGES:0000101	Physical performance test (SPPB, SFT)	Aging study Clincial examination
-KoGES:0000102	Grip strength	Aging study Clincial examination
-KoGES:0000103	Brain MRI	Aging study Clincial examination
-KoGES:0000104	Substudy Clinical Examination	Substudy Variables
-KoGES:0000105	Spirometry	Substudy Clinical Examination
-KoGES:0000106	Bone strength (sonometer)	Substudy Clinical Examination
-KoGES:0000107	Bone mineral density (DEXA test)	Substudy Clinical Examination
-KoGES:0000108	X-ray (chest, hand, knee, C-spin)	Substudy Clinical Examination
-KoGES:0000109	Ultrasound carotid Intima Media Thickness (IMT)	Substudy Clinical Examination
-KoGES:0000110	Pulse Wave Velocity (PWV)	Substudy Clinical Examination
-KoGES:0000111	Ecocardiography	Substudy Clinical Examination
-KoGES:0000112	Substudy Blood test	Substudy Clinical Examination
-KoGES:0000113	Glucose (1hr on OGTT)	Substudy Blood test
-KoGES:0000114	Glucose (2hr on OGTT)	Substudy Blood test
-KoGES:0000115	HbA1C	Substudy Blood test
-KoGES:0000116	Insulin	Substudy Blood test
-KoGES:0000117	Insulin(1hr)	Substudy Blood test
-KoGES:0000118	Insulin(2hr)	Substudy Blood test
-KoGES:0000119	Total Protein	Substudy Blood test
-KoGES:0000120	Total Bilirubin	Substudy Blood test
-KoGES:0000121	LDL-Cholesterol	Substudy Blood test
-KoGES:0000122	hs-CRP	Substudy Blood test
-KoGES:0000123	Homocystein	Substudy Blood test
-KoGES:0000203	Uric acid	Substudy Blood test
-KoGES:0000125	Fibrinogen	Substudy Blood test
-KoGES:0000126	Alkaline phosphate	Substudy Blood test
-KoGES:0000127	Folate	Substudy Blood test
-KoGES:0000128	Adiponectin	Substudy Blood test
-KoGES:0000129	Glucagon	Substudy Blood test
-KoGES:0000130	C-peptide	Substudy Blood test
-KoGES:0000170	Renin	Substudy Blood test
-KoGES:0000132	Phosphate	Substudy Blood test
-KoGES:0000133	Tropinin T	Substudy Blood test
-KoGES:0000134	Apolipoprotein A	Substudy Blood test
-KoGES:0000135	Apolipoprotein B	Substudy Blood test
-KoGES:0000136	Sodium(Na) (Blood)	Substudy Blood test
-KoGES:0000137	Potassium(K) (Blood)	Substudy Blood test
-KoGES:0000138	Chloride(Cl)	Substudy Blood test
-KoGES:0000139	Neutrophil	Substudy Blood test
-KoGES:0000140	Lymphocyte	Substudy Blood test
-KoGES:0000141	Monocyte	Substudy Blood test
-KoGES:0000142	Eosinophil	Substudy Blood test
-KoGES:0000143	Basophil	Substudy Blood test
-KoGES:0000144	Red cell distribution width (RDW)	Substudy Blood test
-KoGES:0000145	Mean platelet volume (MPV)	Substudy Blood test
-KoGES:0000146	Platlet crit (PCT)	Substudy Blood test
-KoGES:0000147	Vitamin B12	Substudy Blood test
-KoGES:0000148	25-OH-Vitamin D	Substudy Blood test
-KoGES:0000149	Thyroglobulin	Substudy Blood test
-KoGES:0000152	Ferritin	Substudy Blood test
-KoGES:0000151	UIBC	Substudy Blood test
-KoGES:0000152	Ferritin	Substudy Blood test
-KoGES:0000153	Oxidized LDL	Substudy Blood test
-KoGES:0000154	8-OHdG	Substudy Blood test
-KoGES:0000155	Calcium(Ca) (Blood)	Substudy Blood test
-KoGES:0000156	Free T3	Substudy Blood test
-KoGES:0000157	Free T4	Substudy Blood test
-KoGES:0000158	TSH	Substudy Blood test
-KoGES:0000159	Anti-microsomal Ab	Substudy Blood test
-KoGES:0000160	RF	Substudy Blood test
-KoGES:0000161	Osteocalcin	Substudy Blood test
-KoGES:0000162	C-telopeptide	Substudy Blood test
-KoGES:0000163	Vitamin D	Substudy Blood test
-KoGES:0000164	Estradiol	Substudy Blood test
-KoGES:0000165	Cadmium(Cd)	Substudy Blood test
-KoGES:0000166	Lead(Pb)	Substudy Blood test
-KoGES:0000167	Aluminum(Al)	Substudy Blood test
-KoGES:0000168	Zinc(Zn)	Substudy Blood test
-KoGES:0000169	Blood type	Substudy Blood test
-KoGES:0000170	Renin	Substudy Blood test
-KoGES:0000171	Hepatitis B antibody	Substudy Blood test
-KoGES:0000172	Hepatitis C antibody	Substudy Blood test
-KoGES:0000173	Hepatitis A antibody (HAV)	Substudy Blood test
-KoGES:0000174	HPV(Human Papillomavirus)	Substudy Blood test
-KoGES:0000175	Helicobacter pylori	Substudy Blood test
-KoGES:0000176	Carcinoembryonic antigen (CEA)	Substudy Blood test
-KoGES:0000177	Cancer antigen 125 (CA125)	Substudy Blood test
-KoGES:0000178	DHEA-S	Substudy Blood test
-KoGES:0000179	IGF-1	Substudy Blood test
-KoGES:0000180	Testosterone	Substudy Blood test
-KoGES:0000181	Luteinizing hormone (LH)	Substudy Blood test
-KoGES:0000182	Follicle Stimulation Hormone (FSH)	Substudy Blood test
-KoGES:0000183	Prostate Specific Antigen (PSA)	Substudy Blood test
-KoGES:0000184	Lactate Dehydrogenase (LDH)	Substudy Blood test
-KoGES:0000185	Telomere length	Substudy Blood test
-KoGES:0000186	Apo E genotype	Substudy Blood test
-KoGES:0000187	Substudy Urine test	Substudy Clinical Examination
-KoGES:0000188	Ketone	Substudy Urine test
-KoGES:0000189	Bilirubin	Substudy Urine test
-KoGES:0000190	Urobilinogen	Substudy Urine test
-KoGES:0000191	Nitrite	Substudy Urine test
-KoGES:0000192	Urinary specific gravity	Substudy Urine test
-KoGES:0000193	Hematuria	Substudy Urine test
-KoGES:0000194	Color	Substudy Urine test
-KoGES:0000195	R.B.C.	Substudy Urine test
-KoGES:0000196	W.B.C.	Substudy Urine test
-KoGES:0000197	E.P. cells	Substudy Urine test
-KoGES:0000198	Casts	Substudy Urine test
-KoGES:0000199	Bacteria	Substudy Urine test
-KoGES:0000200	Crystals	Substudy Urine test
-KoGES:0000201	Protein, total	Substudy Urine test
-KoGES:0000202	Creatinine (Urine)	Substudy Urine test
-KoGES:0000203	Uric acid	Substudy Urine test
-KoGES:0000204	Calcium (Urine)	Substudy Urine test
-KoGES:0000205	Sodium (Urine)	Substudy Urine test
-KoGES:0000206	Potassium (Urine)	Substudy Urine test
-KoGES:0000207	Vitamin C	Substudy Urine test
-KoGES:0000208	Microalbumin	Substudy Urine test
+Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
+ID	LABEL	C % SPLIT=|	A definition			
+	is-required;					
+KoGES:0000001	Core Variables					
+KoGES:0000002	Core Questionnaires	KoGES:0000001		questionnaire/survey data		
+KoGES:0000003	Socio-demographic data	KoGES:0000002		socio-demographic and economic characteristics		
+KoGES:0000004	Education level	KoGES:0000003		education		
+KoGES:0000005	Marital status	KoGES:0000003		socio-demographic and economic characteristics		
+KoGES:0000006	Household income	KoGES:0000003		socio-demographic and economic characteristics		
+KoGES:0000007	Occupation	KoGES:0000003		socio-demographic and economic characteristics		
+KoGES:0000008	Medical history	KoGES:0000002		questionnaire/survey data		
+KoGES:0000009	Disease history of hypertension, diabetes, hyperlipidemia, stroke, angina/myocardial infraction, cancer, etc.	KoGES:0000008		diseases		
+KoGES:0000010	Previous diagnosis (Disease history)	KoGES:0000009		diseases		
+KoGES:0000011	Age at first diagnosis (Disease history)	KoGES:0000009		diseases		
+KoGES:0000012	Treatment progress (current treatment)	KoGES:0000009		medication		
+KoGES:0000013	Treatment method (hypertension, diabetes, hyperlipidemia only)	KoGES:0000009		medication		
+KoGES:0000014	Surgery (operation) history	KoGES:0000008		surgical interventions		
+KoGES:0000015	Previous surgery (operation)	KoGES:0000014		surgical interventions		
+KoGES:0000016	Age at first surgery	KoGES:0000014		surgical interventions		
+KoGES:0000017	Family disease history	KoGES:0000008		diseases		
+KoGES:0000018	Previous diagnosis (Family disease history)	KoGES:0000017		diseases		
+KoGES:0000019	Relationship	KoGES:0000017		diseases		
+KoGES:0000020	Age at first diagnosis (Family disease history)	KoGES:0000017		diseases		
+KoGES:0000021	Number of siblings and children	KoGES:0000017		family and household structure		
+KoGES:0000022	Lifestyle	KoGES:0000002		lifestyle and behaviours		
+KoGES:0000023	Smoking habits	KoGES:0000022		tobacco		
+KoGES:0000024	Amount of ciagrettes	KoGES:0000023		tobacco		
+KoGES:0000025	Total period of smoking	KoGES:0000023		tobacco		
+KoGES:0000026	Age at first smoking	KoGES:0000023		tobacco		
+KoGES:0000027	Secondhand smoking	KoGES:0000023		tobacco		
+KoGES:0000028	Drinking habits	KoGES:0000022		alcohol		
+KoGES:0000029	Amount of drinking	KoGES:0000028		alcohol		
+KoGES:0000030	Total period of drinking	KoGES:0000028		alcohol		
+KoGES:0000031	Drinking frequency	KoGES:0000028		alcohol		
+KoGES:0000032	Sleeping pattern	KoGES:0000022		sleep		
+KoGES:0000033	Hours of sleep	KoGES:0000032		sleep		
+KoGES:0000034	Time go to bed and wake up in the morning	KoGES:0000032		sleep		
+KoGES:0000035	Trouble of sleeping	KoGES:0000032		sleep		
+KoGES:0000036	Snoring	KoGES:0000035		sleep		
+KoGES:0000037	Physical activity	KoGES:0000022		physical activity		
+KoGES:0000038	Regular physical activity	KoGES:0000037		physical activity		
+KoGES:0000039	Excercises	KoGES:0000037		physical activity		
+KoGES:0000040	Household chores	KoGES:0000037		physical activity		
+KoGES:0000041	Climbing stairs	KoGES:0000037		physical activity		
+KoGES:0000042	Womens health	KoGES:0000002				
+KoGES:0000043	Menstrual factors	KoGES:0000042		reproduction		
+KoGES:0000044	Age at menarche	KoGES:0000043		reproduction		
+KoGES:0000045	Length of menstrual cycle	KoGES:0000043		reproduction		
+KoGES:0000046	Menopause status	KoGES:0000042		reproduction		
+KoGES:0000047	Reproductive history	KoGES:0000042		reproduction		
+KoGES:0000048	Number of pregnancies	KoGES:0000047		reproduction		
+KoGES:0000049	Age at each pregnancy	KoGES:0000047		reproduction		
+KoGES:0000050	Durations and outcome of pregnancies	KoGES:0000047		reproduction		
+KoGES:0000051	Breastfeeding	KoGES:0000047		reproduction		
+KoGES:0000052	Infertility	KoGES:0000047		reproduction		
+KoGES:0000053	Dietary survey	KoGES:0000002		nutrition		
+KoGES:0000054	Food Frequency Questionnaire	KoGES:0000053		nutrition		
+KoGES:0000055	Dietary habits	KoGES:0000053		nutrition		
+KoGES:0000056	Anthropometric measurements	KoGES:0000001		anthropometry		
+KoGES:0000057	Height & weight	KoGES:0000056		height|weight		
+KoGES:0000058	Waist & hip circumference	KoGES:0000056		anthropometry		
+KoGES:0000059	Body composition	KoGES:0000056		anthropometry		
+KoGES:0000060	Blood pressure & pulse rate	KoGES:0000056		blood pressure|heart rate (HR)		
+KoGES:0000061	Core Clinical examination	KoGES:0000001				
+KoGES:0000062	Core Blood test	KoGES:0000061		blood		
+KoGES:0000063	Complete blood cell count	KoGES:0000062		blood		
+KoGES:0000064	Glucose (fasting)	KoGES:0000062		blood		not fasting specified
+KoGES:0000065	Albumin	KoGES:0000062		blood		not sure if the excretion rate assay is the correct match, but this is the only thing I could find
+KoGES:0000066	Blood urea nitrogen (BUN)	KoGES:0000062		blood		
+KoGES:0000067	Creatinine (Blood)	KoGES:0000062		blood		
+KoGES:0000068	AST (SGOT)	KoGES:0000062		blood		
+KoGES:0000069	ALT (SGPT)	KoGES:0000062		blood		
+KoGES:0000070	y-GTP	KoGES:0000062		blood		
+KoGES:0000071	Total cholesterol	KoGES:0000062		blood		
+KoGES:0000072	HDL-Cholesterol	KoGES:0000062		blood		
+KoGES:0000073	Triglyceride	KoGES:0000062		blood		
+KoGES:0000074	Core Urine test	KoGES:0000061		urine		
+KoGES:0000075	pH	KoGES:0000074		urine		
+KoGES:0000076	Protein	KoGES:0000074		urine		
+KoGES:0000077	Glucose	KoGES:0000074		urine		
+KoGES:0000078	Blood	KoGES:0000074		urine		
+KoGES:0000079	Substudy Variables					
+KoGES:0000080	Substudy Questionnaires	KoGES:0000079		questionnaire/survey data		
+KoGES:0000081	Psychosocial well-being status (PWI)	KoGES:0000080		signs and symptoms		
+KoGES:0000082	Depression (CES-D, BDI)	KoGES:0000080		mental and behaviour disorders		not the exact tests
+KoGES:0000083	24 hour recall dietary survey	KoGES:0000080		nutrition		
+KoGES:0000084	Sleep disorder	KoGES:0000080		mental and behaviour disorders		
+KoGES:0000085	In-depth questionnaire (By disease)	KoGES:0000079		diseases		
+KoGES:0000086	Respiratory disease	KoGES:0000085		respiratory system		
+KoGES:0000087	Gastroenterologic disorder	KoGES:0000085		digestive system		
+KoGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	KoGES:0000085		diseases		
+KoGES:0000089	Arthritis	KoGES:0000085		diseases		
+KoGES:0000090	Aging study	KoGES:0000079				
+KoGES:0000091	Aging study Questionnaires	KoGES:0000090		questionnaire/survey data		
+KoGES:0000092	Health-related quality of life (WHOQOL, EQ-SD, SF-12)	KoGES:0000091		signs and symptoms		
+KoGES:0000093	Activities of daily living (K-ADL, S-IADL)	KoGES:0000091		signs and symptoms		
+KoGES:0000094	Dementia screening (K-MMSE, K-MoCA)	KoGES:0000091		mental and behaviour disorders		
+KoGES:0000095	Dementia screening by caregiver (CS-KGDS, KDSQ-C)	KoGES:0000091		mental and behaviour disorders		not by caregiver
+KoGES:0000096	Depression (GDS)	KoGES:0000091		mental and behaviour disorders		not specific to aging studies
+KoGES:0000097	Vascular dementia / Alzheimers disease screening (Ischemia Scales)	KoGES:0000091		mental and behaviour disorders		
+KoGES:0000098	Aging study Clincial examination	KoGES:0000090				
+KoGES:0000099	Cognitive Function test	KoGES:0000098		physiological measurements		
+KoGES:0000100	Neuropsychological test (SNSB-II)	KoGES:0000098		physiological measurements		
+KoGES:0000101	Physical performance test (SPPB, SFT)	KoGES:0000098		physiological measurements		
+KoGES:0000102	Grip strength	KoGES:0000098		physiological measurements		
+KoGES:0000103	Brain MRI	KoGES:0000098		physiological measurements		
+KoGES:0000104	Substudy Clinical Examination	KoGES:0000079				
+KoGES:0000105	Spirometry	KoGES:0000104		physiological measurements		
+KoGES:0000106	Bone strength (sonometer)	KoGES:0000104		physiological measurements		CMO has a few different terms that measure strength, e.g. ultimate force & stifness, but no exact match
+KoGES:0000107	Bone mineral density (DEXA test)	KoGES:0000104		physiological measurements		
+KoGES:0000108	X-ray (chest, hand, knee, C-spin)	KoGES:0000104		physiological measurements		
+KoGES:0000109	Ultrasound carotid Intima Media Thickness (IMT)	KoGES:0000104		physiological measurements		
+KoGES:0000110	Pulse Wave Velocity (PWV)	KoGES:0000104		physiological measurements		Has different pulse wave measurements, but this is the parent class to all
+KoGES:0000111	Ecocardiography	KoGES:0000104		physiological measurements		
+KoGES:0000112	Substudy Blood test	KoGES:0000104		blood		
+KoGES:0000113	Glucose (1hr on OGTT)	KoGES:0000112		blood		
+KoGES:0000114	Glucose (2hr on OGTT)	KoGES:0000112		blood		
+KoGES:0000115	HbA1C	KoGES:0000112		blood		
+KoGES:0000116	Insulin	KoGES:0000112		blood		
+KoGES:0000117	Insulin(1hr)	KoGES:0000112		blood		
+KoGES:0000118	Insulin(2hr)	KoGES:0000112		blood		
+KoGES:0000119	Total Protein	KoGES:0000112		blood		CMO has plasma and serum total protein measurements
+KoGES:0000120	Total Bilirubin	KoGES:0000112		blood		
+KoGES:0000121	LDL-Cholesterol	KoGES:0000112		blood		
+KoGES:0000122	hs-CRP	KoGES:0000112		blood		
+KoGES:0000123	Homocystein	KoGES:0000112		blood		
+KoGES:0000125	Fibrinogen	KoGES:0000112		blood		
+KoGES:0000126	Alkaline phosphate	KoGES:0000112		blood		
+KoGES:0000127	Folate	KoGES:0000112		blood		
+KoGES:0000128	Adiponectin	KoGES:0000112		blood		
+KoGES:0000129	Glucagon	KoGES:0000112		blood		
+KoGES:0000130	C-peptide	KoGES:0000112		blood		
+KoGES:0000170	Renin	KoGES:0000112		blood		
+KoGES:0000132	Phosphate	KoGES:0000112		blood		
+KoGES:0000133	Tropinin T	KoGES:0000112		blood		
+KoGES:0000134	Apolipoprotein A	KoGES:0000112		blood		
+KoGES:0000135	Apolipoprotein B	KoGES:0000112		blood		Typo in CMO label?
+KoGES:0000136	Sodium(Na) (Blood)	KoGES:0000112		blood		
+KoGES:0000137	Potassium(K) (Blood)	KoGES:0000112		blood		
+KoGES:0000138	Chloride(Cl)	KoGES:0000112		blood		
+KoGES:0000139	Neutrophil	KoGES:0000112		blood		
+KoGES:0000140	Lymphocyte	KoGES:0000112		blood		
+KoGES:0000141	Monocyte	KoGES:0000112		blood		
+KoGES:0000142	Eosinophil	KoGES:0000112		blood		
+KoGES:0000143	Basophil	KoGES:0000112		blood		
+KoGES:0000144	Red cell distribution width (RDW)	KoGES:0000112		blood		
+KoGES:0000145	Mean platelet volume (MPV)	KoGES:0000112		blood		
+KoGES:0000146	Platlet crit (PCT)	KoGES:0000112		blood		
+KoGES:0000147	Vitamin B12	KoGES:0000112		blood		ChEBI stops at B vitamin, but FOODON has vitamin B12 - would that be better?
+KoGES:0000148	25-OH-Vitamin D	KoGES:0000112		blood		I *think* this is the right ChEBI term
+KoGES:0000149	Thyroglobulin	KoGES:0000112		blood		
+KoGES:0000152	Ferritin	KoGES:0000112		blood		
+KoGES:0000151	UIBC	KoGES:0000112		blood		
+KoGES:0000153	Oxidized LDL	KoGES:0000112		blood		not oxidized
+KoGES:0000154	8-OHdG	KoGES:0000112		blood		
+KoGES:0000155	Calcium(Ca) (Blood)	KoGES:0000112		blood		
+KoGES:0000156	Free T3	KoGES:0000112		blood		
+KoGES:0000157	Free T4	KoGES:0000112		blood		
+KoGES:0000158	TSH	KoGES:0000112		blood		
+KoGES:0000159	Anti-microsomal Ab	KoGES:0000112		blood		
+KoGES:0000160	RF	KoGES:0000112		blood		
+KoGES:0000161	Osteocalcin	KoGES:0000112		blood		
+KoGES:0000162	C-telopeptide	KoGES:0000112		blood		
+KoGES:0000163	Vitamin D	KoGES:0000112		blood		
+KoGES:0000164	Estradiol	KoGES:0000112		blood		
+KoGES:0000165	Cadmium(Cd)	KoGES:0000112		blood		
+KoGES:0000166	Lead(Pb)	KoGES:0000112		blood		OK to use lead atom?
+KoGES:0000167	Aluminum(Al)	KoGES:0000112		blood		atom or ion?
+KoGES:0000168	Zinc(Zn)	KoGES:0000112		blood		OK to use atom?
+KoGES:0000169	Blood type	KoGES:0000112		blood		
+KoGES:0000171	Hepatitis B antibody	KoGES:0000112		blood		
+KoGES:0000172	Hepatitis C antibody	KoGES:0000112		blood		
+KoGES:0000173	Hepatitis A antibody (HAV)	KoGES:0000112		blood		
+KoGES:0000174	HPV(Human Papillomavirus)	KoGES:0000112		blood		there's no such thing as an HPV blood test?
+KoGES:0000175	Helicobacter pylori	KoGES:0000112		blood		
+KoGES:0000176	Carcinoembryonic antigen (CEA)	KoGES:0000112		blood		
+KoGES:0000177	Cancer antigen 125 (CA125)	KoGES:0000112		blood		
+KoGES:0000178	DHEA-S	KoGES:0000112		blood		
+KoGES:0000179	IGF-1	KoGES:0000112		blood		
+KoGES:0000180	Testosterone	KoGES:0000112		blood		
+KoGES:0000181	Luteinizing hormone (LH)	KoGES:0000112		blood		
+KoGES:0000182	Follicle Stimulation Hormone (FSH)	KoGES:0000112		blood		
+KoGES:0000183	Prostate Specific Antigen (PSA)	KoGES:0000112		blood		
+KoGES:0000184	Lactate Dehydrogenase (LDH)	KoGES:0000112		blood		
+KoGES:0000185	Telomere length	KoGES:0000112		blood		
+KoGES:0000186	Apo E genotype	KoGES:0000112		blood		Not sure if this is quite right
+KoGES:0000187	Substudy Urine test	KoGES:0000104		urine		
+KoGES:0000188	Ketone	KoGES:0000187		urine		
+KoGES:0000189	Bilirubin	KoGES:0000187		urine		
+KoGES:0000190	Urobilinogen	KoGES:0000187		urine		NCIT does have a term for this - but have not used NCIT so far
+KoGES:0000191	Nitrite	KoGES:0000187		urine		
+KoGES:0000192	Urinary specific gravity	KoGES:0000187		urine		
+KoGES:0000193	Hematuria	KoGES:0000187		urine		No check for blood, though HP does have a term for 'blood in urine'. I think looking at the measurement is better here though
+KoGES:0000194	Color	KoGES:0000187		urine		
+KoGES:0000195	R.B.C.	KoGES:0000187		urine		CMO only has RBC for blood samples
+KoGES:0000196	W.B.C.	KoGES:0000187		urine		CMO only has WBC for blood samples
+KoGES:0000197	E.P. cells	KoGES:0000187		urine		
+KoGES:0000198	Casts	KoGES:0000187		urine		
+KoGES:0000199	Bacteria	KoGES:0000187		urine		No check for bacteria, though HP does have a term for 'bacteria in urine'. I think looking at the measurement is better here though
+KoGES:0000200	Crystals	KoGES:0000187		urine		
+KoGES:0000201	Protein, total	KoGES:0000187		urine		
+KoGES:0000202	Creatinine (Urine)	KoGES:0000187		urine		
+KoGES:0000203	Uric acid	KoGES:0000187		urine		CMO only has blood uric acid
+KoGES:0000204	Calcium (Urine)	KoGES:0000187		urine		
+KoGES:0000205	Sodium (Urine)	KoGES:0000187		urine		
+KoGES:0000206	Potassium (Urine)	KoGES:0000187		urine		
+KoGES:0000207	Vitamin C	KoGES:0000187		urine		no CMO term for vit C levels in urine
+KoGES:0000208	Microalbumin	KoGES:0000187		urine		not sure if the excretion rate assay is the correct match, but this is the only thing I could find
