@@ -227,3 +227,12 @@ browser: $(BROWSER)
 serve: $(BROWSER)
 	cd build/browser && python3 -m http.server 8000
 
+# Pipeline to generate mapping suggestions for a template
+
+x:
+	echo "works"
+
+.PHONY: mapping_suggest_%
+mapping_suggest_%: src/mapping-suggest/zooma_matcher.py src/mapping-suggest/mapping-suggest-config.yml templates/%.tsv
+	python3 $< -c src/mapping-suggest/mapping-suggest-config.yml -t templates/$*.tsv -o templates/_$*.tsv
+
