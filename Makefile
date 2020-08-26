@@ -170,6 +170,9 @@ templates/$(BRANCH).tsv:
 	cogs push
 	cogs open
 
+destroy-cogs: | .cogs
+	cogs delete -f
+
 
 ### Validation
 
