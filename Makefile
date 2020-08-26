@@ -158,6 +158,8 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 # The branch name should be the namespace for the new cohort
 BRANCH := $(shell git branch --show-current)
 
+init-cogs: .cogs
+
 templates/$(BRANCH).tsv:
 	echo -e "Term ID\tLabel\tParent Term\tDefinition\tGECKO Category\tSuggested Categories\tComment\nID\tLABEL\tC % SPLIT=|\tA definition\n\tis-required;" > $@
 
