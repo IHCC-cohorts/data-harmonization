@@ -24,7 +24,7 @@ KoGES:0000020	Age at first diagnosis (Family disease history)	KoGES:0000017		dis
 KoGES:0000021	Number of siblings and children	KoGES:0000017		family and household structure		
 KoGES:0000022	Lifestyle	KoGES:0000002		lifestyle and behaviours		
 KoGES:0000023	Smoking habits	KoGES:0000022		tobacco		
-KoGES:0000024	Amount of ciagrettes	KoGES:0000023		tobacco		
+KoGES:0000024	Amount of cigarettes	KoGES:0000023		tobacco		
 KoGES:0000025	Total period of smoking	KoGES:0000023		tobacco		
 KoGES:0000026	Age at first smoking	KoGES:0000023		tobacco		
 KoGES:0000027	Secondhand smoking	KoGES:0000023		tobacco		
@@ -39,7 +39,7 @@ KoGES:0000035	Trouble of sleeping	KoGES:0000032		sleep
 KoGES:0000036	Snoring	KoGES:0000035		sleep		
 KoGES:0000037	Physical activity	KoGES:0000022		physical activity		
 KoGES:0000038	Regular physical activity	KoGES:0000037		physical activity		
-KoGES:0000039	Excercises	KoGES:0000037		physical activity		
+KoGES:0000039	Exercises	KoGES:0000037		physical activity		
 KoGES:0000040	Household chores	KoGES:0000037		physical activity		
 KoGES:0000041	Climbing stairs	KoGES:0000037		physical activity		
 KoGES:0000042	Womens health	KoGES:0000002				
@@ -98,7 +98,7 @@ KoGES:0000094	Dementia screening (K-MMSE, K-MoCA)	KoGES:0000091		mental and beha
 KoGES:0000095	Dementia screening by caregiver (CS-KGDS, KDSQ-C)	KoGES:0000091		mental and behaviour disorders		not by caregiver
 KoGES:0000096	Depression (GDS)	KoGES:0000091		mental and behaviour disorders		not specific to aging studies
 KoGES:0000097	Vascular dementia / Alzheimers disease screening (Ischemia Scales)	KoGES:0000091		mental and behaviour disorders		
-KoGES:0000098	Aging study Clincial examination	KoGES:0000090				
+KoGES:0000098	Aging study Clinical examination	KoGES:0000090				
 KoGES:0000099	Cognitive Function test	KoGES:0000098		physiological measurements		
 KoGES:0000100	Neuropsychological test (SNSB-II)	KoGES:0000098		physiological measurements		
 KoGES:0000101	Physical performance test (SPPB, SFT)	KoGES:0000098		physiological measurements		
