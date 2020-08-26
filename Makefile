@@ -153,6 +153,37 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 	sed '1d' $(word 2,$^) >> $@
 
 
+### COGS Set Up
+
+# The branch name should be the namespace for the new cohort
+BRANCH := $(shell git branch --show-current)
+
+templates/$(BRANCH).tsv:
+	echo -e "Term ID\tLabel\tParent Term\tDefinition\tGECKO Category\tSuggested Categories\tComment\nID\tLABEL\tC % SPLIT=|\tA definition\n\tis-required;" > $@
+
+# required env var GOOGLE_CREDENTIALS
+.cogs: | templates/$(BRANCH).tsv
+	cogs init -u $(EMAIL) -t $(BRANCH)
+	cogs add $< -r 2
+	cogs push
+	cogs open
+
+
+### Validation
+
+# We always get the latest changes before running validation
+.PHONY: build/$(BRANCH)-problems.tsv
+build/$(BRANCH)-problems.tsv: src/validate.py templates/index.tsv templates/$(BRANCH).tsv
+	cogs fetch
+	cogs pull
+	rm -rf $@ && touch $@
+	python3 $< templates/index.tsv $(BRANCH) $@
+
+apply-problems: build/$(BRANCH)-problems.tsv
+	cogs apply $<
+	cogs push
+
+
 ### Pre-build Tasks
 
 build build/intermediate build/browser build/browser/cohorts data_dictionaries:
