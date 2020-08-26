@@ -3,3 +3,4 @@ pandas
 rdflib
 xlsx2csv
 requests
+ontodev-cogs
