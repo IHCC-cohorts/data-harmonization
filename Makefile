@@ -173,13 +173,16 @@ templates/$(BRANCH).tsv:
 
 ### Validation
 
+build/gecko_labels.tsv: build/gecko.owl src/queries/get_labels.rq | build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
 # We always get the latest changes before running validation
 .PHONY: build/$(BRANCH)-problems.tsv
-build/$(BRANCH)-problems.tsv: src/validate.py templates/index.tsv templates/$(BRANCH).tsv
+build/$(BRANCH)-problems.tsv: src/validate.py build/gecko_labels.tsv templates/$(BRANCH).tsv
 	cogs fetch
 	cogs pull
 	rm -rf $@ && touch $@
-	python3 $< templates/index.tsv $(BRANCH) $@
+	python3 $< $(word 2,$^) $(BRANCH) $@
 
 apply-problems: build/$(BRANCH)-problems.tsv
 	cogs apply $<

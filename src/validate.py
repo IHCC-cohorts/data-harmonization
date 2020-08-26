@@ -22,17 +22,18 @@ def idx_to_a1(row, col):
 
 def main():
     p = ArgumentParser()
-    p.add_argument("index")
+    p.add_argument("labels")
     p.add_argument("namespace")
     p.add_argument("output")
     args = p.parse_args()
 
     gecko_labels = []
-    with open(args.index, "r") as f:
-        reader = csv.DictReader(f, delimiter="\t")
+    with open(args.labels, "r") as f:
+        reader = csv.reader(f, delimiter="\t")
+        # Skip header
         next(reader)
         for row in reader:
-            gecko_labels.append(row["Label"])
+            gecko_labels.append(row[0])
 
     ns = args.namespace
     table = f"templates/{ns}.tsv"
@@ -144,7 +145,11 @@ def main():
     for local_id in ids.values():
         if local_id == "":
             continue
-        num_id = int(local_id.split(":")[1].lstrip("0"))
+        try:
+            num_id = int(local_id.split(":")[1].lstrip("0"))
+        except ValueError:
+            # Not a number - stick with whatever ID counter is currently at
+            num_id = id_counter
         if num_id > id_counter:
             id_counter = num_id
 
