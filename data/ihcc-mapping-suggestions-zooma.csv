@@ -1,19 +1,2 @@
-STUDY	BIOENTITY	PROPERTY_TYPE	PROPERTY_VALUE	SEMANTIC_TAG	ANNOTATOR	ANNOTATION_DATE
-	SAMN14168014	strain	SARS-CoV-2	http://purl.obolibrary.org/obo/NCBITaxon_2697049	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14450688	host disease	COVID19	http://purl.obolibrary.org/obo/MONDO_0100096	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14428242	isolation source	nasal swab	http://purl.obolibrary.org/obo/NCIT_C155833	Fuqi Xu	2020-04-14 17:00:00
-	SAMEA6880656	Organism	Homo Sapien	http://purl.obolibrary.org/obo/NCBITaxon_9606	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14533863	isolation source	nasopharyngeal swab	http://purl.obolibrary.org/obo/NCIT_C155831	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14478675	host disease	novel coronavirus pneumonia	http://purl.obolibrary.org/obo/MONDO_0100096	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14081560	host disease	nCoV pneumonia	http://purl.obolibrary.org/obo/MONDO_0100096	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14081560	isolation source	bronchoalveolar lavage fluid(BALF)	http://purl.obolibrary.org/obo/NCIT_C13195	Fuqi Xu	2020-04-14 17:00:00
-	SAMEA6507890	organism	Wuhan seafood market pneumonia virus	http://purl.obolibrary.org/obo/NCBITaxon_2697049	Fuqi Xu	2020-04-14 17:00:00
-	SAMN07419209	cell line	Vero cells	http://purl.obolibrary.org/obo/CLO_0009524	Fuqi Xu	2020-04-14 17:00:00
-	SAMN13898864	isolate	Sputum	http://purl.obolibrary.org/obo/NCIT_C13278	Fuqi Xu	2020-04-14 17:00:00
-	SAMN13898864	sample type	Sputum	http://purl.obolibrary.org/obo/NCIT_C13278	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14154198	isolation source	swab	http://purl.obolibrary.org/obo/NCIT_C17627	Fuqi Xu	2020-04-14 17:00:00
-	SAMN14535309	host disease	severe acute respiratory syndrome	http://purl.obolibrary.org/obo/MONDO_0005091	Fuqi Xu	2020-04-14 17:00:00
-	 SAMN14422484 	host disease	COVID-19	http://purl.obolibrary.org/obo/MONDO_0100096	Fuqi Xu	2020-05-14 17:00:01
-	SAMN14393543	isolation source	Bronchoalveolar lavage fluid	http://purl.obolibrary.org/obo/NCIT_C13195	Fuqi Xu	2020-05-14 17:00:02
-	SAMN14207959	disease state	Coronavirus infected disease-19 (COVID-19)	http://purl.obolibrary.org/obo/MONDO_0100096	Fuqi Xu	2020-05-14 17:00:05
-	SAMN14207961	tissue	lung	http://purl.obolibrary.org/obo/UBERON_0002048	Fuqi Xu	2020-05-14 17:00:06
+STUDY,PROPERTY_VALUE,SEMANTIC_TAG,ANNOTATOR,ANNOTATION_DATE
+,blood,http://purl.obolibrary.org/obo/UBERON_0000178,Knocean,2020-08-26 17:00:00
