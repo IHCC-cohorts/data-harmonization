@@ -236,3 +236,15 @@ x:
 mapping_suggest_%: src/mapping-suggest/zooma_matcher.py src/mapping-suggest/mapping-suggest-config.yml templates/%.tsv
 	python3 $< -c src/mapping-suggest/mapping-suggest-config.yml -t templates/$*.tsv -o templates/_$*.tsv
 
+
+MAP_DATA := $(foreach C,$(COHORTS),build/intermediate/$(C)-xrefs-sparql.csv)
+
+build/intermediate/%-xrefs-sparql.csv: data_dictionaries/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query src/queries/ihcc-mapping.sparql $@
+	
+build/intermediate/gecko-xrefs-sparql.csv: build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query src/queries/ihcc-mapping-gecko.sparql $@
+
+data/ihcc-mapping-suggestions-zooma.csv: build/intermediate/gecko-xrefs-sparql.csv $(MAP_DATA)
+	echo $^
+	
