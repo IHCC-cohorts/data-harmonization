@@ -88,7 +88,7 @@ def map_term(term):
         confidence = match['confidence']
         for match_iri in match_iris:
             term_xrefs = parse_ols_first(get_json_from_url(ols_term,match_iri),['curie','iri','database_cross_reference'])
-            if not match_iri.startswith("https://purl.ihccglobal.org/"):
+            if term_xrefs and 'curie' in term_xrefs and not match_iri.startswith("https://purl.ihccglobal.org/"):
                 matches.append([term,term_xrefs['curie'],get_label(term_xrefs['curie']),confidence])
             # sometimes the parent has the xref, not the term itself
             if term_xrefs and 'database_cross_reference' in term_xrefs:
@@ -97,6 +97,7 @@ def map_term(term):
                     if xrefconfidence<3:
                          matches.append([term,term_xref,get_label(term_xref),confidence_map[xrefconfidence+1]])
     return matches
+
 
 
 

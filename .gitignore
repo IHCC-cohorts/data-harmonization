@@ -2,3 +2,5 @@
 junk/
 build/
 __pycache__/
+.ipynb_checkpoints
+src/mapping-suggest/combined_csv.csv
