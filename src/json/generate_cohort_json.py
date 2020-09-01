@@ -119,7 +119,7 @@ def main():
             this_cohort.update(data)
             all_data.append(this_cohort)
 
-    json_obj = json.dumps(all_data, indent=2)
+    json_obj = json.dumps(all_data, indent=2, sort_keys=True)
     output_file.write(json_obj)
     output_file.close()
 

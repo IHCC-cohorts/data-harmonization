@@ -505,7 +505,7 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000024">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000023"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</oboInOwl:hasDbXref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount of ciagrettes</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount of cigarettes</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000024"/>
@@ -745,7 +745,7 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000039">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000037"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000104</oboInOwl:hasDbXref>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excercises</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exercises</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/KoGES_0000039"/>
@@ -1673,7 +1673,7 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/KoGES_0000098">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/KoGES_0000090"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aging study Clincial examination</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aging study Clinical examination</rdfs:label>
     </owl:Class>
     
 
