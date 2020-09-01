@@ -141,7 +141,7 @@ build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.
 	--format json \
 	--tree $@
 
-data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json build/gecko_structure.json $(TEMPLATES)
+data/cohort-data.json: src/generate_cohort_json.py data/member_cohorts.csv data/metadata.json build/gecko_structure.json $(TEMPLATES)
 	python3 $(filter-out $(TEMPLATES),$^) $@
 
 # Real cohort data + randomly-generated cohort data

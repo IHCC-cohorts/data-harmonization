@@ -29,19 +29,17 @@
     "laboratory_measures": [],
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
-      "diseases": [],
+      "diseases": [
+        "oncological"
+      ],
       "general_variables": [
         "physician_practitioner_info"
       ],
       "lifestyle_and_behaviours": [
-        "tobacco"
+        "nutrition"
       ],
-      "medication": [
-        "prescription"
-      ],
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
-      ],
+      "medication": [],
+      "non_pharmacological_interventions": [],
       "physiological_measurements": {
         "anthropometry": [],
         "circulation_and_respiration": [
@@ -49,12 +47,10 @@
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "gender"
+        "residence"
       ]
     },
-    "survey_administration": [
-      "date_and_time_related_information"
-    ],
+    "survey_administration": [],
     "target_enrollment": null,
     "website": "https://dceg2.cancer.gov/gemshare/"
   },
@@ -84,23 +80,7 @@
     "current_enrollment": 235000,
     "enrollment_period": "2001:2013",
     "pi_lead": "Sung Soo Kim",
-    "questionnaire_survey_data": {
-      "diseases": [],
-      "general_variables": [
-        "reproduction"
-      ],
-      "lifestyle_and_behaviours": [],
-      "medication": [],
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
-      ],
-      "physiological_measurements": {
-        "anthropometry": []
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure"
-      ]
-    },
+    "questionnaire_survey_data": [],
     "target_enrollment": null,
     "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65199&menuIds=HOME004-MNU2261-MNU2262-MNU2263-MNU2264"
   },
@@ -128,7 +108,9 @@
     "laboratory_measures": [],
     "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
-      "diseases": [],
+      "diseases": [
+        "nervous_system"
+      ],
       "general_variables": [
         "reproduction"
       ],
@@ -141,18 +123,12 @@
       "non_pharmacological_interventions": [
         "surgical_interventions"
       ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "weight"
-        ]
-      },
+      "physiological_measurements": [],
       "socio_demographic_and_economic_characteristics": [
-        "biological_sex"
+        "residence"
       ]
     },
-    "survey_administration": [
-      "date_and_time_related_information"
-    ],
+    "survey_administration": [],
     "target_enrollment": 500000,
     "website": "https://www.genomicsengland.co.uk/"
   },
@@ -172,13 +148,19 @@
     "laboratory_measures": [],
     "pi_lead": "Kobus Herbst",
     "questionnaire_survey_data": {
-      "diseases": [],
-      "non_pharmacological_interventions": [],
+      "diseases": [
+        "endocrine_nutritional_metabolic_disorders"
+      ],
+      "general_variables": [
+        "life_stage_time_point"
+      ],
       "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race"
+        "biological_sex"
       ]
     },
-    "survey_administration": [],
+    "survey_administration": [
+      "date_and_time_related_information"
+    ],
     "target_enrollment": 700000,
     "website": "http://saprin.mrc.ac.za/"
   },
@@ -193,7 +175,7 @@
       "sample_type": {
         "blood": [],
         "general_variables": [
-          "saliva"
+          "other_biosample_type"
         ]
       }
     },
@@ -206,25 +188,22 @@
     "laboratory_measures": [],
     "pi_lead": "Deenan Pillay",
     "questionnaire_survey_data": {
-      "diseases": [],
+      "diseases": [
+        "oncological"
+      ],
       "general_variables": [
         "reproduction"
       ],
       "lifestyle_and_behaviours": [
-        "tobacco"
+        "nutrition"
       ],
       "medication": [],
       "non_pharmacological_interventions": [],
       "physiological_measurements": {
-        "anthropometry": [],
-        "circulation_and_respiration": [
-          "blood_pressure"
-        ]
+        "anthropometry": []
       }
     },
-    "survey_administration": [
-      "date_and_time_related_information"
-    ],
+    "survey_administration": [],
     "target_enrollment": 130000,
     "website": "https://www.ahri.org"
   },
