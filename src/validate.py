@@ -161,31 +161,33 @@ def main():
             local_id = f"{ns}:{id_str}"
             updated_ids[row] = local_id
 
-    if updated_ids:
-        # Write new IDs if we have them
-        with open(table, "w") as f:
-            writer = csv.DictWriter(
-                f,
-                delimiter="\t",
-                lineterminator="\n",
-                fieldnames=[
-                    "Term ID",
-                    "Label",
-                    "Parent Term",
-                    "Definition",
-                    "GECKO Category",
-                    "Suggested Categories",
-                    "Comment",
-                ],
-            )
-            writer.writeheader()
-            row_idx = 1
-            for line in lines:
-                row_idx += 1
-                if row_idx in updated_ids:
-                    local_id = updated_ids[row_idx]
-                    line["Term ID"] = local_id
-                writer.writerow(line)
+    # Fix any leading or trailing whitespace
+    lines = [{k: v.strip() for k, v in x.items()} for x in lines]
+
+    # Write new IDs and trimmed whitespace
+    with open(table, "w") as f:
+        writer = csv.DictWriter(
+            f,
+            delimiter="\t",
+            lineterminator="\n",
+            fieldnames=[
+                "Term ID",
+                "Label",
+                "Parent Term",
+                "Definition",
+                "GECKO Category",
+                "Suggested Categories",
+                "Comment",
+            ],
+        )
+        writer.writeheader()
+        row_idx = 1
+        for line in lines:
+            row_idx += 1
+            if row_idx in updated_ids:
+                local_id = updated_ids[row_idx]
+                line["Term ID"] = local_id
+            writer.writerow(line)
 
     if problems:
         # Write any problems if we have them
