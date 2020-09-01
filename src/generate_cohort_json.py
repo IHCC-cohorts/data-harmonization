@@ -119,7 +119,7 @@ def main():
             this_cohort.update(data)
             all_data.append(this_cohort)
 
-    json_obj = json.dumps(all_data, indent=2)
+    json_obj = json.dumps(all_data, indent=2, sort_keys=True)
     output_file.write(json_obj)
     output_file.close()
 
@@ -243,7 +243,13 @@ def merge(source, target):
             node = target.setdefault(key, {})
             merge(value, node)
         else:
-            target[key] = value
+            if key in target:
+                target_value = target[key]
+                if isinstance(target_value, list) and isinstance(value, list):
+                    target_value.extend(value)
+                    target[key] = target_value
+            else:
+                target[key] = value
 
     return target
 

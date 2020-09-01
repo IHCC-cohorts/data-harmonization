@@ -47,7 +47,7 @@ endif
 # List of cohorts to generate files for (lowercase, using short ID where possible)
 # This short name is used throughout all build tasks and should be consistent for all files
 # --- THIS IS THE ONLY LINE THAT SHOULD BE EDITED WHEN ADDING A NEW COHORT ---
-COHORTS := gcs genomics-england koges maelstrom saprin vukuzazi
+COHORTS := gcs genomics-england koges saprin vukuzazi
 
 # --- DO NOT EDIT BELOW THIS LINE ---
 
@@ -141,7 +141,7 @@ build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.
 	--format json \
 	--tree $@
 
-data/cohort-data.json: src/json/generate_cohort_json.py data/member_cohorts.csv data/metadata.json build/gecko_structure.json $(TEMPLATES)
+data/cohort-data.json: src/generate_cohort_json.py data/member_cohorts.csv data/metadata.json build/gecko_structure.json $(TEMPLATES)
 	python3 $(filter-out $(TEMPLATES),$^) $@
 
 # Real cohort data + randomly-generated cohort data
