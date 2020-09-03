@@ -1,16 +1,36 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.ihccglobal.org/vukuzazi.owl#"
      xml:base="https://purl.ihccglobal.org/vukuzazi.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:purl="https://purl.ihccglobal.org/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://purl.ihccglobal.org/vukuzazi.owl"/>
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/vukuzazi.owl">
+        <dc:description>The data dictionary containing variables collected by the Africa Health Research Institute&apos;s Vukuzazi programme.</dc:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:rights>You are free to:
+
+Share — copy and redistribute the material in any medium or format
+
+Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+Under the following terms:
+
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</terms:rights>
+        <terms:title>Vukuzazi</terms:title>
+        <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC/view"/>
+    </owl:Ontology>
     
 
 

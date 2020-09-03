@@ -89,7 +89,7 @@ build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json |
 owl: $(ONTS) | data_dictionaries
 	cp $^ data_dictionaries/
 
-build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediate/%-xrefs.tsv | build/robot.jar
+build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediate/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
@@ -97,6 +97,7 @@ build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediat
 	--template $(word 3,$^) \
 	--merge-before \
 	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
+	--annotation-file $(word 4,$^) \
 	--output $@
 
 

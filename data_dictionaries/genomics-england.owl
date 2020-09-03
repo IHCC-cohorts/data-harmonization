@@ -1,16 +1,25 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.ihccglobal.org/genomics-england.owl#"
      xml:base="https://purl.ihccglobal.org/genomics-england.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:purl="https://purl.ihccglobal.org/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://purl.ihccglobal.org/genomics-england.owl"/>
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/genomics-england.owl">
+        <dc:description>The main programme data dictionary for the Genomics England Research Environment.</dc:description>
+        <terms:license>TODO: The license URL</terms:license>
+        <terms:rights>TODO: A human-readable description of rights</terms:rights>
+        <terms:title>Genomics England Main Programme Data</terms:title>
+        <prov:wasDerivedFrom rdf:resource="https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195"/>
+    </owl:Ontology>
     
 
 
