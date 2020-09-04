@@ -176,8 +176,11 @@ destroy-cogs: | .cogs
 
 ### Validation
 
-build/gecko_labels.tsv: build/gecko.owl src/queries/get_labels.rq | build/robot.jar
-	$(ROBOT) query --input $< --query $(word 2,$^) $@
+build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "LABEL" \
+	--export $@
 
 # We always get the latest changes before running validation
 .PHONY: build/$(BRANCH)-problems.tsv
