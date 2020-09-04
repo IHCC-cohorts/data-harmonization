@@ -166,7 +166,7 @@ templates/$(BRANCH).tsv:
 # required env var GOOGLE_CREDENTIALS
 .cogs: | templates/$(BRANCH).tsv
 	cogs init -u $(EMAIL) -t $(BRANCH)
-	cogs add $< -r 2
+	cogs add templates/$(BRANCH).tsv -r 2
 	cogs push
 	cogs open
 
