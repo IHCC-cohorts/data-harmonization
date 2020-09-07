@@ -1,0 +1,11 @@
+prefix oio: <http://www.geneontology.org/formats/oboInOwl#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?from ?property ?label WHERE 
+{
+  ?from a owl:Class ;
+     ?property ?label .
+     FILTER(?property in (rdfs:label, oio:hasExactSynonym, oio:hasRelatedSynonym, oio:hasBroadSynonym, oio:hasNarrowSynonym))
+     FILTER(isIRI(?from))
+}

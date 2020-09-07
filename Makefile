@@ -159,10 +159,12 @@ build build/intermediate build/browser build/browser/cohorts data_dictionaries:
 	mkdir -p $@
 
 build/robot.jar: | build
-	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
+	echo "UNSKIP THIS"
+	#curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
 build/robot-tree.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
+	echo "UNSKIP THIS"
+	#curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
 
 build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
@@ -227,3 +229,20 @@ browser: $(BROWSER)
 serve: $(BROWSER)
 	cd build/browser && python3 -m http.server 8000
 
+# Pipeline to generate mapping suggestions for a template
+
+.PHONY: mapping_suggest_%
+mapping_suggest_%: src/mapping-suggest/zooma_matcher.py src/mapping-suggest/mapping-suggest-config.yml templates/%.tsv
+	python3 $< -c src/mapping-suggest/mapping-suggest-config.yml -t templates/$*.tsv -o templates/_$*.tsv
+
+MAP_DATA := $(foreach C,$(COHORTS),build/intermediate/$(C)-xrefs-sparql.csv)
+
+build/intermediate/%-xrefs-sparql.csv: data_dictionaries/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query src/queries/ihcc-mapping.sparql $@
+	
+build/intermediate/gecko-xrefs-sparql.csv: build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query src/queries/ihcc-mapping-gecko.sparql $@
+
+data/ihcc-mapping-suggestions-zooma.csv: build/intermediate/gecko-xrefs-sparql.csv $(MAP_DATA)
+	echo $^
+	

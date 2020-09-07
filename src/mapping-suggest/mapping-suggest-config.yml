@@ -1,0 +1,4 @@
+zooma_annotate: "http://localhost:8009/zooma/v2/api/services/annotate?propertyValue="
+oxo_mapping: "http://localhost:8008/api/mappings?fromId="
+ols_term: "http://localhost:8080/api/terms?iri="
+ols_oboid: "http://localhost:8080/api/terms?obo_id="
