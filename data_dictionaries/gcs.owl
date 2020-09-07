@@ -1,16 +1,23 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.ihccglobal.org/gcs.owl#"
      xml:base="https://purl.ihccglobal.org/gcs.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:purl="https://purl.ihccglobal.org/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://purl.ihccglobal.org/gcs.owl"/>
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/gcs.owl">
+        <dc:description>The data dictionary of items collected by the GCS.</dc:description>
+        <terms:title>Golestan Cohort Study (GCS)</terms:title>
+        <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view"/>
+    </owl:Ontology>
     
 
 

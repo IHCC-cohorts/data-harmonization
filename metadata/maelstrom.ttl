@@ -2,15 +2,16 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
 <>
   rdf:type owl:Ontology ;
   dcterms:title "Maelstrom Area Of Information"@en ;
   dcterms:title "Maelstrom Aires d'information"@fr ;
-  dcterms:description "Information classification developed by Maelstrom Research"@en ;
-  dcterms:description "Classification des informations développée par Maelstrom Research"@fr ;
+  dc:description "Information classification developed by Maelstrom Research"@en ;
+  dc:description "Classification des informations développée par Maelstrom Research"@fr ;
   dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
   dcterms:rights "You are free to:
 
