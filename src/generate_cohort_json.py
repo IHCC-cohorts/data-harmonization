@@ -184,6 +184,7 @@ def clean_dict(d):
             v = clean_dict(v)
         if isinstance(v, list):
             v = [clean_string(x) for x in v]
+            v = sorted(v)
         new[clean_string(k)] = v
     return new
 
