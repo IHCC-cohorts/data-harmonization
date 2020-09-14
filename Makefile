@@ -31,6 +31,7 @@ SHELL := bash
 
 ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 GECKO_PURL = http://purl.obolibrary.org/obo/gecko/views/ihcc-gecko.owl
+TODAY ?= $(shell date +%Y-%m-%d)
 
 # Detect the OS and provide proper command
 # WARNING - will not work with Windows OS
@@ -96,7 +97,7 @@ build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediat
 	template \
 	--template $(word 3,$^) \
 	--merge-before \
-	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
+	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" --version-iri "https://purl.ihccglobal.org/releases/$(TODAY)/$(notdir $@)" \
 	--annotation-file $(word 4,$^) \
 	--output $@
 
