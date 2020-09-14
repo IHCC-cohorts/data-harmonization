@@ -97,7 +97,7 @@ build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediat
 	template \
 	--template $(word 3,$^) \
 	--merge-before \
-	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" --version-iri "https://purl.ihccglobal.org/$(notdir $(basename $@))/$(TODAY)/$(notdir $@)" \
+	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" --version-iri "https://purl.ihccglobal.org/$(notdir $(basename $@))/releases/$(TODAY)/$(notdir $@)" \
 	--annotation-file $(word 4,$^) \
 	--output $@
 
