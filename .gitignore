@@ -4,3 +4,4 @@ build/
 __pycache__/
 .idea
 templates/_*.tsv
+src/mapping-suggest/.ipynb_checkpoints
