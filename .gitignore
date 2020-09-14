@@ -2,6 +2,10 @@
 junk/
 build/
 __pycache__/
+.ipynb_checkpoints
+src/mapping-suggest/combined_csv.csv
 .idea
-templates/_*.tsv
 src/mapping-suggest/.ipynb_checkpoints
+
+templates/_*.tsv
+src/mapping-suggest/raw_data.tsv
