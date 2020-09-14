@@ -281,7 +281,7 @@ serve: $(BROWSER)
 # Pipeline to generate mapping suggestions for a template. The template file is loaded,
 # the suggestions generated and added as a colum "Suggested Categories" to the template.
 
-MAP_SUGGEST := $(foreach C,$(COHORTS),mapping_suggest_$(C))
+MAP_SUGGEST := $(foreach C, $(COHORTS), mapping_suggest_$(C))
 
 .PHONY: all_mapping_suggest
 all_mapping_suggest: src/mapping-suggest/mapping_suggest_qc.py $(MAP_SUGGEST)
@@ -294,7 +294,7 @@ mapping_suggest_%: src/mapping-suggest/mapping_suggest.py src/mapping-suggest/ma
 # Pipeline to build a the zooma dataset that stores the existing mappings
 
 .PHONY: .FORCE
-MAP_DATA := $(foreach C,$(COHORTS),build/intermediate/$(C)-xrefs-sparql.csv)
+MAP_DATA := $(foreach C, $(COHORTS), build/intermediate/$(C)-xrefs-sparql.csv)
 
 # TODO: Should this depend on data_dictionaries/%.owl or better build/%.owl?
 build/intermediate/%-xrefs-sparql.csv: build/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
