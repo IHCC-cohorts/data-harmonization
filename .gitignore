@@ -3,3 +3,4 @@ junk/
 build/
 __pycache__/
 .idea
+templates/_*.tsv
