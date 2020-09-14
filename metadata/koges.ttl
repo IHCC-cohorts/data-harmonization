@@ -2,11 +2,12 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
 <>
   rdf:type owl:Ontology ;
   dcterms:title "Korean Genome and Epidemiology Study (KoGES)" ;
-  dcterms:description "TODO" ;
+  dc:description "The core variables collected in the Korean Genome and Epidemiology Study." ;
   prov:wasDerivedFrom <https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view> .

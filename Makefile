@@ -89,7 +89,7 @@ build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json |
 owl: $(ONTS) | data_dictionaries
 	cp $^ data_dictionaries/
 
-build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediate/%-xrefs.tsv | build/robot.jar
+build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediate/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
@@ -97,6 +97,7 @@ build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediat
 	--template $(word 3,$^) \
 	--merge-before \
 	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
+	--annotation-file $(word 4,$^) \
 	--output $@
 
 
@@ -151,6 +152,48 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 	sed '$$d' $< | sed '$$d' >> $@
 	echo '  },' >> $@
 	sed '1d' $(word 2,$^) >> $@
+
+
+### COGS Set Up
+
+# The branch name should be the namespace for the new cohort
+BRANCH := $(shell git branch --show-current)
+
+init-cogs: .cogs
+
+templates/$(BRANCH).tsv:
+	echo -e "Term ID\tLabel\tParent Term\tDefinition\tGECKO Category\tSuggested Categories\tComment\nID\tLABEL\tC % SPLIT=|\tA definition\n\tis-required;" > $@
+
+# required env var GOOGLE_CREDENTIALS
+.cogs: | templates/$(BRANCH).tsv
+	cogs init -u $(EMAIL) -t $(BRANCH)
+	cogs add templates/$(BRANCH).tsv -r 2
+	cogs push
+	cogs open
+
+destroy-cogs: | .cogs
+	cogs delete -f
+
+
+### Validation
+
+build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "LABEL" \
+	--export $@
+
+# We always get the latest changes before running validation
+.PHONY: build/$(BRANCH)-problems.tsv
+build/$(BRANCH)-problems.tsv: src/validate.py build/gecko_labels.tsv templates/$(BRANCH).tsv
+	cogs fetch
+	cogs pull
+	rm -rf $@ && touch $@
+	python3 $< $(word 2,$^) $(BRANCH) $@
+
+apply-problems: build/$(BRANCH)-problems.tsv
+	cogs apply $<
+	cogs push
 
 
 ### Pre-build Tasks

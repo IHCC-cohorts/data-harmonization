@@ -1,16 +1,23 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.ihccglobal.org/koges.owl#"
      xml:base="https://purl.ihccglobal.org/koges.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:purl="https://purl.ihccglobal.org/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://purl.ihccglobal.org/koges.owl"/>
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/koges.owl">
+        <dc:description>The core variables collected in the Korean Genome and Epidemiology Study.</dc:description>
+        <terms:title>Korean Genome and Epidemiology Study (KoGES)</terms:title>
+        <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view"/>
+    </owl:Ontology>
     
 
 
