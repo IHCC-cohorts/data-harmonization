@@ -29,24 +29,24 @@
     "questionnaire_survey_data": {
       "diseases": [
         "circulatory_system",
-        "respiratory_system",
         "endocrine_nutritional_metabolic_disorders",
-        "oncological"
+        "oncological",
+        "respiratory_system"
       ],
       "general_variables": [
-        "signs_and_symptoms",
-        "physician_practitioner_info"
+        "physician_practitioner_info",
+        "signs_and_symptoms"
       ],
       "lifestyle_and_behaviours": [
         "alcohol",
         "drugs",
-        "tobacco",
+        "nutrition",
         "physical_activity",
-        "nutrition"
+        "tobacco"
       ],
       "medication": [
-        "prescription",
-        "associated_diseases"
+        "associated_diseases",
+        "prescription"
       ],
       "non_pharmacological_interventions": [
         "surgical_interventions"
@@ -57,17 +57,17 @@
           "weight"
         ],
         "circulation_and_respiration": [
-          "heart_rate_HR",
-          "blood_pressure"
+          "blood_pressure",
+          "heart_rate_HR"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure",
-        "ethnicity_race",
-        "residence",
-        "gender",
         "age_birthdate",
-        "education"
+        "education",
+        "ethnicity_race",
+        "family_and_household_structure",
+        "gender",
+        "residence"
       ]
     },
     "survey_administration": [
@@ -103,9 +103,9 @@
     "pi_lead": "Sung Soo Kim",
     "questionnaire_survey_data": {
       "diseases": [
-        "respiratory_system",
+        "digestive_system",
         "mental_and_behaviour_disorders",
-        "digestive_system"
+        "respiratory_system"
       ],
       "general_variables": [
         "reproduction",
@@ -113,10 +113,10 @@
       ],
       "lifestyle_and_behaviours": [
         "alcohol",
-        "tobacco",
-        "physical_activity",
         "nutrition",
-        "sleep"
+        "physical_activity",
+        "sleep",
+        "tobacco"
       ],
       "medication": [],
       "non_pharmacological_interventions": [
@@ -128,13 +128,13 @@
           "weight"
         ],
         "circulation_and_respiration": [
-          "heart_rate_HR",
-          "blood_pressure"
+          "blood_pressure",
+          "heart_rate_HR"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure",
-        "education"
+        "education",
+        "family_and_household_structure"
       ]
     },
     "target_enrollment": null,
@@ -166,24 +166,24 @@
     "questionnaire_survey_data": {
       "diseases": [
         "circulatory_system",
-        "respiratory_system",
-        "nervous_system",
         "endocrine_nutritional_metabolic_disorders",
+        "mental_and_behaviour_disorders",
+        "nervous_system",
         "oncological",
-        "mental_and_behaviour_disorders"
+        "respiratory_system"
       ],
       "general_variables": [
-        "signs_and_symptoms",
+        "physician_practitioner_info",
         "reproduction",
-        "physician_practitioner_info"
+        "signs_and_symptoms"
       ],
       "lifestyle_and_behaviours": [
         "alcohol"
       ],
       "medication": [
-        "prescription",
         "administration",
-        "drug_responses"
+        "drug_responses",
+        "prescription"
       ],
       "non_pharmacological_interventions": [
         "surgical_interventions"
@@ -195,13 +195,13 @@
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "family_and_household_structure",
-        "biological_sex",
-        "ethnicity_race",
-        "residence",
-        "gender",
         "age_birthdate",
-        "education"
+        "biological_sex",
+        "education",
+        "ethnicity_race",
+        "family_and_household_structure",
+        "gender",
+        "residence"
       ]
     },
     "survey_administration": [
@@ -231,21 +231,21 @@
         "endocrine_nutritional_metabolic_disorders"
       ],
       "general_variables": [
-        "reproduction",
-        "life_stage_time_point"
+        "life_stage_time_point",
+        "reproduction"
       ],
       "non_pharmacological_interventions": [],
       "socio_demographic_and_economic_characteristics": [
-        "ethnicity_race",
-        "residence",
         "age_birthdate",
+        "biological_sex",
+        "ethnicity_race",
         "family_and_household_structure",
-        "biological_sex"
+        "residence"
       ]
     },
     "survey_administration": [
-      "unique_identifiers",
-      "date_and_time_related_information"
+      "date_and_time_related_information",
+      "unique_identifiers"
     ],
     "target_enrollment": 700000,
     "website": "http://saprin.mrc.ac.za/"
@@ -260,9 +260,9 @@
     "biosample": {
       "sample_type": [
         "blood",
+        "other_biosample_type",
         "saliva",
-        "urine",
-        "other_biosample_type"
+        "urine"
       ]
     },
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
@@ -276,18 +276,18 @@
     "questionnaire_survey_data": {
       "diseases": [
         "circulatory_system",
-        "respiratory_system",
         "endocrine_nutritional_metabolic_disorders",
-        "oncological"
+        "oncological",
+        "respiratory_system"
       ],
       "general_variables": [
-        "signs_and_symptoms",
-        "reproduction"
+        "reproduction",
+        "signs_and_symptoms"
       ],
       "lifestyle_and_behaviours": [
         "alcohol",
-        "tobacco",
-        "nutrition"
+        "nutrition",
+        "tobacco"
       ],
       "medication": [
         "associated_diseases"
@@ -299,8 +299,8 @@
           "weight"
         ],
         "circulation_and_respiration": [
-          "heart_rate_HR",
-          "blood_pressure"
+          "blood_pressure",
+          "heart_rate_HR"
         ]
       }
     },
