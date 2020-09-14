@@ -13,12 +13,10 @@
       ]
     },
     "biosample": {
-      "sample_type": {
-        "blood": [],
-        "general_variables": [
-          "other_biosample_type"
-        ]
-      }
+      "sample_type": [
+        "other_biosample_type",
+        "blood"
+      ]
     },
     "cohort_name": "Golestan Cohort Study",
     "countries": [
@@ -30,9 +28,9 @@
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
+        "respiratory_system",
         "oncological",
         "circulatory_system",
-        "respiratory_system",
         "endocrine_nutritional_metabolic_disorders"
       ],
       "general_variables": [
@@ -41,10 +39,10 @@
       ],
       "lifestyle_and_behaviours": [
         "tobacco",
-        "alcohol",
-        "physical_activity",
         "drugs",
-        "nutrition"
+        "physical_activity",
+        "nutrition",
+        "alcohol"
       ],
       "medication": [
         "prescription",
@@ -55,26 +53,26 @@
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ],
         "circulation_and_respiration": [
-          "heart_rate_HR",
-          "blood_pressure"
+          "blood_pressure",
+          "heart_rate_HR"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "education",
-        "ethnicity_race",
         "family_and_household_structure",
+        "age_birthdate",
         "residence",
         "gender",
-        "age_birthdate"
+        "education",
+        "ethnicity_race"
       ]
     },
     "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
+      "unique_identifiers",
+      "date_and_time_related_information"
     ],
     "target_enrollment": null,
     "website": "https://dceg2.cancer.gov/gemshare/"
@@ -87,12 +85,10 @@
       "phenotypic_clinical_data": true
     },
     "biosample": {
-      "sample_type": {
-        "blood": [],
-        "general_variables": [
-          "urine"
-        ]
-      }
+      "sample_type": [
+        "blood",
+        "urine"
+      ]
     },
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
     "countries": [
@@ -112,15 +108,15 @@
         "respiratory_system"
       ],
       "general_variables": [
-        "reproduction",
-        "signs_and_symptoms"
+        "signs_and_symptoms",
+        "reproduction"
       ],
       "lifestyle_and_behaviours": [
         "tobacco",
-        "sleep",
-        "alcohol",
         "physical_activity",
-        "nutrition"
+        "nutrition",
+        "alcohol",
+        "sleep"
       ],
       "medication": [],
       "non_pharmacological_interventions": [
@@ -128,17 +124,17 @@
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ],
         "circulation_and_respiration": [
-          "heart_rate_HR",
-          "blood_pressure"
+          "blood_pressure",
+          "heart_rate_HR"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "education",
-        "family_and_household_structure"
+        "family_and_household_structure",
+        "education"
       ]
     },
     "target_enrollment": null,
@@ -169,17 +165,17 @@
     "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
       "diseases": [
-        "oncological",
-        "mental_and_behaviour_disorders",
         "nervous_system",
         "respiratory_system",
+        "oncological",
         "circulatory_system",
-        "endocrine_nutritional_metabolic_disorders"
+        "endocrine_nutritional_metabolic_disorders",
+        "mental_and_behaviour_disorders"
       ],
       "general_variables": [
-        "reproduction",
         "signs_and_symptoms",
-        "physician_practitioner_info"
+        "physician_practitioner_info",
+        "reproduction"
       ],
       "lifestyle_and_behaviours": [
         "alcohol"
@@ -194,23 +190,23 @@
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "education",
         "family_and_household_structure",
-        "biological_sex",
+        "age_birthdate",
         "residence",
         "gender",
-        "age_birthdate",
-        "ethnicity_race"
+        "education",
+        "ethnicity_race",
+        "biological_sex"
       ]
     },
     "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
+      "unique_identifiers",
+      "date_and_time_related_information"
     ],
     "target_enrollment": 500000,
     "website": "https://www.genomicsengland.co.uk/"
@@ -240,11 +236,11 @@
       ],
       "non_pharmacological_interventions": [],
       "socio_demographic_and_economic_characteristics": [
-        "residence",
-        "biological_sex",
-        "age_birthdate",
         "family_and_household_structure",
-        "ethnicity_race"
+        "ethnicity_race",
+        "age_birthdate",
+        "biological_sex",
+        "residence"
       ]
     },
     "survey_administration": [
@@ -262,14 +258,12 @@
       "phenotypic_clinical_data": true
     },
     "biosample": {
-      "sample_type": {
-        "blood": [],
-        "general_variables": [
-          "other_biosample_type",
-          "saliva",
-          "urine"
-        ]
-      }
+      "sample_type": [
+        "other_biosample_type",
+        "saliva",
+        "blood",
+        "urine"
+      ]
     },
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
     "countries": [
@@ -281,19 +275,19 @@
     "pi_lead": "Deenan Pillay",
     "questionnaire_survey_data": {
       "diseases": [
-        "oncological",
         "respiratory_system",
+        "oncological",
         "circulatory_system",
         "endocrine_nutritional_metabolic_disorders"
       ],
       "general_variables": [
-        "reproduction",
-        "signs_and_symptoms"
+        "signs_and_symptoms",
+        "reproduction"
       ],
       "lifestyle_and_behaviours": [
         "tobacco",
-        "alcohol",
-        "nutrition"
+        "nutrition",
+        "alcohol"
       ],
       "medication": [
         "associated_diseases"
@@ -301,18 +295,18 @@
       "non_pharmacological_interventions": [],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ],
         "circulation_and_respiration": [
-          "heart_rate_HR",
-          "blood_pressure"
+          "blood_pressure",
+          "heart_rate_HR"
         ]
       }
     },
     "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
+      "unique_identifiers",
+      "date_and_time_related_information"
     ],
     "target_enrollment": 130000,
     "website": "https://www.ahri.org"
