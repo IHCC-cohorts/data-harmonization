@@ -22,7 +22,7 @@ parser = ArgumentParser()
 parser.add_argument("-c", "--config", dest="config_file",
                     help="Config file", metavar="FILE")
 parser.add_argument("-l", "--lexicaldata", nargs="+", dest="datasets",
-                    help="Template file file", metavar="FILE")
+                    help="Space seperated list of datasets containing labels and synonyms and their corresponding GECKO term.", metavar="FILE")
 parser.add_argument("-z", "--zoomadata", dest="zooma_dataset",
                     help="Output file", metavar="FILE")
 args = parser.parse_args()

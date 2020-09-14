@@ -8,8 +8,9 @@
 #
 # 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
 # 2. [Update files](update)
-# 3. [Build Mappings](owl)
-# 4. [View results](build/)
+# 3. [Update suggested mappings](all_mapping_suggest)
+# 4. [Build Mappings](owl)
+# 5. [View results](build/)
 #
 # Demo browser:
 #
@@ -73,6 +74,7 @@ clean:
 all: $(TREES) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
+all: data/ihcc-mapping-suggestions-zooma.csv
 all: owl
 
 .PHONY: update
@@ -272,20 +274,34 @@ browser: $(BROWSER)
 serve: $(BROWSER)
 	cd build/browser && python3 -m http.server 8000
 
-# Pipeline to generate mapping suggestions for a template
+###################################################
+####### IHCC Mapping suggestions pipeline #########
+###################################################
+
+# Pipeline to generate mapping suggestions for a template. The template file is loaded,
+# the suggestions generated and added as a colum "Suggested Categories" to the template.
+
+MAP_SUGGEST := $(foreach C,$(COHORTS),mapping_suggest_$(C))
+
+.PHONY: all_mapping_suggest
+all_mapping_suggest: src/mapping-suggest/mapping_suggest_qc.py $(MAP_SUGGEST)
+	python3 $< --templates $(TEMPLATES) -v -o $@_report.tsv
 
 .PHONY: mapping_suggest_%
-mapping_suggest_%: src/mapping-suggest/zooma_matcher.py src/mapping-suggest/mapping-suggest-config.yml templates/%.tsv
+mapping_suggest_%: src/mapping-suggest/mapping_suggest.py src/mapping-suggest/mapping-suggest-config.yml templates/%.tsv
 	python3 $< -c src/mapping-suggest/mapping-suggest-config.yml -t templates/$*.tsv -o templates/_$*.tsv
+
+# Pipeline to build a the zooma dataset that stores the existing mappings
 
 MAP_DATA := $(foreach C,$(COHORTS),build/intermediate/$(C)-xrefs-sparql.csv)
 
-build/intermediate/%-xrefs-sparql.csv: data_dictionaries/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
+# TODO: Should this depend on data_dictionaries/%.owl or better build/%.owl?
+build/intermediate/%-xrefs-sparql.csv: build/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query src/queries/ihcc-mapping.sparql $@
-	
+
 build/intermediate/gecko-xrefs-sparql.csv: build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query src/queries/ihcc-mapping-gecko.sparql $@
 
 data/ihcc-mapping-suggestions-zooma.csv: build/intermediate/gecko-xrefs-sparql.csv $(MAP_DATA)
-	echo $^
-	
+	python3 src/mapping-suggest/zooma_dataset.py -l $^ -o $@ 
+
