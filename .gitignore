@@ -7,3 +7,5 @@ src/mapping-suggest/combined_csv.csv
 .idea
 src/mapping-suggest/.ipynb_checkpoints
 
+templates/_*.tsv
+src/mapping-suggest/raw_data.tsv
