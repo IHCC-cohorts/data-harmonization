@@ -264,3 +264,43 @@ If you run into other errors while trying to add a new cohort, please [open an i
 The code in this repository can be used under the [Apache 2.0 License](LICENSE).
 
 The data in this repository can be used under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+# The IHCC automated mapping pipeline
+
+The IHCC automated mapping pipeline is responsible for generating the generating the suggested GECKO categories for each term in a data dictionary. The pipeline has two major components:
+
+1. The mapping suggestion pipeline.
+2. The Zooma dataset generation pipeline
+
+
+## The mapping suggestion pipeline
+
+The mapping suggestion pipeline can be invoked as follows:
+
+```
+make all_mapping_suggest
+```
+
+For all currently registered templates, it will:
+
+1. Given a template, generate suggested GECKO categories based on existing mappings (using the basic mapping facility from ZOOMA, and some basic Natural Language Processing).
+2. Run some quality control checks that notify the IHCC data admin of oddities like identical terms being mapped to different GECKO categories.
+
+Some notebooks and more technical documentation can be found [here](src/mapping-suggest/README.md).
+
+## The Zooma dataset generation pipeline
+
+Rather than simply loading all the data dictionaries into zooma as is, we chose to load a _slighly processed_ version of the existing mappings. For example, a data dictionary may contain a term like: `FoodIntake1`; while we map that term directly, we also map a slightly processed version of the term by splitting numbers, strings and camel case: `Food Intake 1`. Zooma can handle capitalisation, so there was no need to to lower casing.
+
+The Zooma dataset generation pipeline can be invoked as follows:
+
+```
+make data/ihcc-mapping-suggestions-zooma.tsv
+```
+
+Note, however, that this will never be necessary in isolation, because the pipeline is executed as part of the default data harmonization pipeline as well:
+
+```
+make all
+```
+

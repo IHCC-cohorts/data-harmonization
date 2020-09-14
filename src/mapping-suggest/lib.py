@@ -59,7 +59,7 @@ def compute_string_variants(label):
     label_split_numerics_alpha_camel = re.sub('\s+', ' ', label_split_numerics_alpha_camel)
     #label_split_numerics = re.sub('(?<=\d)(?!\d)|(?<!\d)(?=\d)', ' ', label)
     #label_split_numerics = re.sub('\s+', ' ', label_split_numerics)
-    return label_split_numerics_alpha_camel
+    return [label_split_numerics_alpha_camel]
 
 def process_label(label):
     return re.sub('\s+', ' ', label)
@@ -143,3 +143,10 @@ def print_accuracy_results(y_test,y_pred):
     print('F1 micro : ' +str(f1_micro))
     print('F1 macro : ' +str(f1_macro))
     print('F1 for each class : ' +str(f1_all))
+    
+
+def dir_path(string):
+    if os.path.isdir(string):
+        return string
+    else:
+        raise NotADirectoryError(string)

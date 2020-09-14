@@ -31,7 +31,7 @@ parser.add_argument("-o", "--output", dest="report_out_path",
                     help="Output file", metavar="FILE")
 args = parser.parse_args()
 
-df = pd.concat([pd.read_csv(f) for f in datasets])
+df = pd.concat([pd.read_csv(f) for f in args.templates])
 df.head()
 
 ## Two checks: 

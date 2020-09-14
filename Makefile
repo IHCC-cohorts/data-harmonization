@@ -74,7 +74,7 @@ clean:
 all: $(TREES) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
-all: data/ihcc-mapping-suggestions-zooma.csv
+all: data/ihcc-mapping-suggestions-zooma.tsv
 all: owl
 
 .PHONY: update
@@ -293,15 +293,15 @@ mapping_suggest_%: src/mapping-suggest/mapping_suggest.py src/mapping-suggest/ma
 
 # Pipeline to build a the zooma dataset that stores the existing mappings
 
+.PHONY: .FORCE
 MAP_DATA := $(foreach C,$(COHORTS),build/intermediate/$(C)-xrefs-sparql.csv)
 
 # TODO: Should this depend on data_dictionaries/%.owl or better build/%.owl?
 build/intermediate/%-xrefs-sparql.csv: build/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query src/queries/ihcc-mapping.sparql $@
 
-build/intermediate/gecko-xrefs-sparql.csv: build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/intermediate build/robot.jar
+build/intermediate/gecko-xrefs-sparql.csv: build/gecko.owl src/queries/ihcc-mapping-gecko.sparql .FORCE | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query src/queries/ihcc-mapping-gecko.sparql $@
 
-data/ihcc-mapping-suggestions-zooma.csv: build/intermediate/gecko-xrefs-sparql.csv $(MAP_DATA)
-	python3 src/mapping-suggest/zooma_dataset.py -l $^ -o $@ 
-
+data/ihcc-mapping-suggestions-zooma.tsv: build/intermediate/gecko-xrefs-sparql.csv $(MAP_DATA)
+	python3 src/mapping-suggest/ihcc_zooma_dataset.py $(patsubst %, -l %, $^) -w $(shell pwd) -o $@
