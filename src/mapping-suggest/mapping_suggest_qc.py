@@ -24,12 +24,17 @@ class QCReport:
 
 qc_report = QCReport()
 parser = ArgumentParser()
-parser.add_argument('-v', '--verbose', action='store_true')
-parser.add_argument('-vv', '--very-verbose', action='store_true')
-parser.add_argument("-t", "--templates", nargs="+", dest="templates",
-                    help="Space separated list of files", metavar="FILE")
-parser.add_argument("-o", "--output", dest="report_out_path",
-                    help="Output file", metavar="FILE")
+parser.add_argument("-v", "--verbose", action="store_true")
+parser.add_argument("-vv", "--very-verbose", action="store_true")
+parser.add_argument(
+    "-t",
+    "--templates",
+    nargs="+",
+    dest="templates",
+    help="Space separated list of files",
+    metavar="FILE",
+)
+parser.add_argument("-o", "--output", dest="report_out_path", help="Output file", metavar="FILE")
 args = parser.parse_args()
 
 df = pd.concat([pd.read_csv(f) for f in args.templates])

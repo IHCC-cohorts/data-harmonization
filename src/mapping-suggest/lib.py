@@ -27,20 +27,46 @@ def generate_zooma_dataset(df):
     current_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     for index, row in df.iterrows():
-        from_e = row['from']
-        to_e = obo_id_to_iri(row['to'])
+        from_e = row["from"]
+        to_e = obo_id_to_iri(row["to"])
         # propertyE = row['property']
-        label = process_label(row['label'])
-        zooma_file_basic.append(["IHCC Basic", from_e, "information_entity",
-                                 label, to_e, "Knocean", current_date])
-        zooma_file_simplestring.append(["IHCC Simple String", from_e, "information_entity",
-                                        label, to_e, "Knocean", current_date])
+        label = process_label(row["label"])
+        zooma_file_basic.append(
+            ["IHCC Basic", from_e, "information_entity", label, to_e, "Knocean", current_date]
+        )
+        zooma_file_simplestring.append(
+            [
+                "IHCC Simple String",
+                from_e,
+                "information_entity",
+                label,
+                to_e,
+                "Knocean",
+                current_date,
+            ]
+        )
         string_variants = compute_string_variants(label)
         for string_variant in string_variants:
-            zooma_file_simplestring.append(["IHCC Simple String", from_e, "information_entity",
-                                            string_variant, to_e, "Knocean", current_date])
-    columns = ['STUDY', 'BIOENTITY', 'PROPERTY_TYPE', 'PROPERTY_VALUE',
-               'SEMANTIC_TAG', 'ANNOTATOR', 'ANNOTATION_DATE']
+            zooma_file_simplestring.append(
+                [
+                    "IHCC Simple String",
+                    from_e,
+                    "information_entity",
+                    string_variant,
+                    to_e,
+                    "Knocean",
+                    current_date,
+                ]
+            )
+    columns = [
+        "STUDY",
+        "BIOENTITY",
+        "PROPERTY_TYPE",
+        "PROPERTY_VALUE",
+        "SEMANTIC_TAG",
+        "ANNOTATOR",
+        "ANNOTATION_DATE",
+    ]
     df_basic_out = pd.DataFrame(zooma_file_basic, columns=columns)
     df_simplestring_out = pd.DataFrame(zooma_file_simplestring, columns=columns)
     return df_basic_out, df_simplestring_out
@@ -58,26 +84,26 @@ def obo_id_to_iri(obo_id):
 
 
 def compute_string_variants(label):
-    label_alpha = re.sub(r'[^0-9a-zA-Z ]+', ' ', label)
-    label_alpha = re.sub(r'\s+', ' ', label_alpha)
-    label_split_numerics_alpha = re.sub(r'(?<=\d)(?!\d)|(?<!\d)(?=\d)', ' ', label_alpha)
-    label_split_numerics_alpha_camel = re.sub(r'([a-z])([A-Z])',
-                                              r'\g<1> \g<2>',
-                                              label_split_numerics_alpha)
+    label_alpha = re.sub(r"[^0-9a-zA-Z ]+", " ", label)
+    label_alpha = re.sub(r"\s+", " ", label_alpha)
+    label_split_numerics_alpha = re.sub(r"(?<=\d)(?!\d)|(?<!\d)(?=\d)", " ", label_alpha)
+    label_split_numerics_alpha_camel = re.sub(
+        r"([a-z])([A-Z])", r"\g<1> \g<2>", label_split_numerics_alpha
+    )
     # label_split_numerics_alpha = re.sub(r'\s+', ' ', label_split_numerics_alpha)
-    label_split_numerics_alpha_camel = re.sub(r'\s+', ' ', label_split_numerics_alpha_camel)
+    label_split_numerics_alpha_camel = re.sub(r"\s+", " ", label_split_numerics_alpha_camel)
     # label_split_numerics = re.sub('(?<=\d)(?!\d)|(?<!\d)(?=\d)', ' ', label)
     # label_split_numerics = re.sub('\s+', ' ', label_split_numerics)
     return [label_split_numerics_alpha_camel]
 
 
 def process_label(label):
-    return re.sub(r'\s+', ' ', label)
+    return re.sub(r"\s+", " ", label)
 
 
 def load_ihcc_config(config_file):
     config = {}
-    with open(config_file, 'r') as stream:
+    with open(config_file, "r") as stream:
         try:
             config = yaml.safe_load(stream)
         except yaml.YAMLError as exc:
@@ -98,36 +124,41 @@ def get_json_from_url(api, query):
 
 
 def get_label(curie, ols_oboid):
-    label = ''
-    data = parse_ols_first(get_json_from_url(ols_oboid, curie), ['iri', 'label'], ols_oboid)
+    label = ""
+    data = parse_ols_first(get_json_from_url(ols_oboid, curie), ["iri", "label"], ols_oboid)
     if data:
-        if 'label' in data:
-            label = data['label']
+        if "label" in data:
+            label = data["label"]
     return label
 
 
 def parse_ols_first(json_data, fields, ols_oboid):
     data = {}
-    if '_embedded' in json_data:
-        if 'terms' in json_data['_embedded']:
-            for term in json_data['_embedded']['terms']:
-                if 'iri' in term and 'iri' in fields:
-                    data['iri'] = term['iri']
-                if 'obo_id' in term and 'curie' in fields:
-                    data['curie'] = term['obo_id']
-                if 'label' in term and 'label' in fields:
-                    data['label'] = term['label']
-                if 'annotation' in term:
-                    if 'database_cross_reference' in term['annotation'] and \
-                            'database_cross_reference' in fields:
-                        data['database_cross_reference'] = []
-                        for xref_curie in term['annotation']['database_cross_reference']:
-                            xref_data = parse_ols_first(get_json_from_url(ols_oboid, xref_curie),
-                                                        ['iri', 'curie'], ols_oboid)
+    if "_embedded" in json_data:
+        if "terms" in json_data["_embedded"]:
+            for term in json_data["_embedded"]["terms"]:
+                if "iri" in term and "iri" in fields:
+                    data["iri"] = term["iri"]
+                if "obo_id" in term and "curie" in fields:
+                    data["curie"] = term["obo_id"]
+                if "label" in term and "label" in fields:
+                    data["label"] = term["label"]
+                if "annotation" in term:
+                    if (
+                        "database_cross_reference" in term["annotation"]
+                        and "database_cross_reference" in fields
+                    ):
+                        data["database_cross_reference"] = []
+                        for xref_curie in term["annotation"]["database_cross_reference"]:
+                            xref_data = parse_ols_first(
+                                get_json_from_url(ols_oboid, xref_curie),
+                                ["iri", "curie"],
+                                ols_oboid,
+                            )
                             if xref_data:
-                                curie = xref_data['curie']
-                                if not xref_data['iri'].startswith(ihcc_purl_prefix):
-                                    data['database_cross_reference'].append(curie)
+                                curie = xref_data["curie"]
+                                if not xref_data["iri"].startswith(ihcc_purl_prefix):
+                                    data["database_cross_reference"].append(curie)
                 break
     return data
 
@@ -136,36 +167,49 @@ def map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map):
     matches = []
     data = get_json_from_url(zooma_annotate, term)
     for match in data:
-        match_iris = match['semanticTags']
-        confidence = match['confidence']
+        match_iris = match["semanticTags"]
+        confidence = match["confidence"]
         for match_iri in match_iris:
-            term_xrefs = parse_ols_first(get_json_from_url(ols_term, match_iri),
-                                         ['curie', 'iri', 'database_cross_reference'], ols_oboid)
-            if term_xrefs and 'curie' in term_xrefs and \
-                    not match_iri.startswith(ihcc_purl_prefix):
-                matches.append([term, term_xrefs['curie'],
-                                get_label(term_xrefs['curie'], ols_oboid),
-                                confidence])
+            term_xrefs = parse_ols_first(
+                get_json_from_url(ols_term, match_iri),
+                ["curie", "iri", "database_cross_reference"],
+                ols_oboid,
+            )
+            if term_xrefs and "curie" in term_xrefs and not match_iri.startswith(ihcc_purl_prefix):
+                matches.append(
+                    [
+                        term,
+                        term_xrefs["curie"],
+                        get_label(term_xrefs["curie"], ols_oboid),
+                        confidence,
+                    ]
+                )
             # sometimes the parent has the xref, not the term itself
-            if term_xrefs and 'database_cross_reference' in term_xrefs:
-                for term_xref in term_xrefs['database_cross_reference']:
+            if term_xrefs and "database_cross_reference" in term_xrefs:
+                for term_xref in term_xrefs["database_cross_reference"]:
                     xrefconfidence = confidence_map.index(confidence)
                     if xrefconfidence < 3:
-                        matches.append([term, term_xref, get_label(term_xref, ols_oboid),
-                                        confidence_map[xrefconfidence + 1]])
+                        matches.append(
+                            [
+                                term,
+                                term_xref,
+                                get_label(term_xref, ols_oboid),
+                                confidence_map[xrefconfidence + 1],
+                            ]
+                        )
     return matches
 
 
 def print_accuracy_results(y_test, y_pred):
     acc = accuracy_score(y_test, y_pred)
-    print('Overall accuracy : ' + str(acc))
-    f1_micro = f1_score(y_test, y_pred, average='micro')
-    f1_macro = f1_score(y_test, y_pred, average='macro')
+    print("Overall accuracy : " + str(acc))
+    f1_micro = f1_score(y_test, y_pred, average="micro")
+    f1_macro = f1_score(y_test, y_pred, average="macro")
     f1_all = f1_score(y_test, y_pred, average=None)
 
-    print('F1 micro : ' + str(f1_micro))
-    print('F1 macro : ' + str(f1_macro))
-    print('F1 for each class : ' + str(f1_all))
+    print("F1 micro : " + str(f1_micro))
+    print("F1 macro : " + str(f1_macro))
+    print("F1 for each class : " + str(f1_all))
 
 
 def dir_path(string):

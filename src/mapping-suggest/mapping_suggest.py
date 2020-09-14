@@ -14,12 +14,9 @@ from lib import load_ihcc_config, map_term
 
 
 parser = ArgumentParser()
-parser.add_argument("-c", "--config", dest="config_file",
-                    help="Config file", metavar="FILE")
-parser.add_argument("-t", "--template", dest="tsv_path",
-                    help="Template file file", metavar="FILE")
-parser.add_argument("-o", "--output", dest="tsv_out_path",
-                    help="Output file", metavar="FILE")
+parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
+parser.add_argument("-t", "--template", dest="tsv_path", help="Template file file", metavar="FILE")
+parser.add_argument("-o", "--output", dest="tsv_out_path", help="Output file", metavar="FILE")
 args = parser.parse_args()
 
 # Loading config
@@ -35,8 +32,8 @@ print(config)
 
 # Loading data
 tsv = pd.read_csv(args.tsv_path, sep="\t")
-del tsv['Suggested Categories']
-tsv_terms = tsv['Label'].values[2:]
+del tsv["Suggested Categories"]
+tsv_terms = tsv["Label"].values[2:]
 
 # Generating matches
 matches = []
@@ -45,17 +42,17 @@ for term in tsv_terms:
     # print("Matching "+term)
     matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
 
-df = pd.DataFrame(matches, columns=['term', 'match', 'match_label', 'confidence'])
+df = pd.DataFrame(matches, columns=["term", "match", "match_label", "confidence"])
 # df
 
 # Transform matches into the right format and merge into template
-dfs = df[~df['match'].str.startswith("https://purl.ihccglobal.org/")].copy()
-dfs['Suggested Categories'] = dfs[['confidence', 'match', 'match_label']].agg(' '.join, axis=1)
-dfs = dfs[['term', 'Suggested Categories']]
-dfsagg = dfs.groupby('term', as_index=False).agg(lambda x: ' | '.join(set(x.dropna())))
-dfx = pd.merge(tsv, dfsagg, how='left', left_on=['Label'], right_on=['term'])
-del dfx['term']
+dfs = df[~df["match"].str.startswith("https://purl.ihccglobal.org/")].copy()
+dfs["Suggested Categories"] = dfs[["confidence", "match", "match_label"]].agg(" ".join, axis=1)
+dfs = dfs[["term", "Suggested Categories"]]
+dfsagg = dfs.groupby("term", as_index=False).agg(lambda x: " | ".join(set(x.dropna())))
+dfx = pd.merge(tsv, dfsagg, how="left", left_on=["Label"], right_on=["term"])
+del dfx["term"]
 
 # Save template
-with open(args.tsv_out_path, 'w') as write_csv:
-    write_csv.write(dfx.to_csv(sep='\t', index=False))
+with open(args.tsv_out_path, "w") as write_csv:
+    write_csv.write(dfx.to_csv(sep="\t", index=False))
