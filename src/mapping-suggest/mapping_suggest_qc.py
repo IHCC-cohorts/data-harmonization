@@ -10,16 +10,17 @@ author: Nico Matentzoglu for Knocean Inc., 26 August 2020
 
 import pandas as pd
 from argparse import ArgumentParser
-from lib import load_ihcc_config, map_term
+
 
 class QCReport:
     """docstring for ClassName"""
 
     def __init__(self):
         self.errors = []
-    
-    def get_errors():
+
+    def get_errors(self):
         return self.errors
+
 
 qc_report = QCReport()
 parser = ArgumentParser()
@@ -34,15 +35,17 @@ args = parser.parse_args()
 df = pd.concat([pd.read_csv(f) for f in args.templates])
 df.head()
 
-## Two checks: 
-### 1) does the primary recommendation correspond to the mappings?
-### 2) Are their two terms that have the exact same label and map to different terms?
+# Two checks:
+# 1) does the primary recommendation correspond to the mappings?
+# 2) Are their two terms that have the exact same label and map to different terms?
 
-## Save template
-#with open(args.tsv_out_path,'w') as write_csv:
+# Save template
+# with open(args.tsv_out_path,'w') as write_csv:
 #    write_csv.write(dfx.to_csv(sep='\t', index=False))
 
 if qc_report.get_errors():
-    print("WARNING: For some data dictionaries, the mapping recommendation now differs from the orginal mapping! See %s" % report_out_path)
+    warn = "WARNING: For some data dictionaries, the mapping recommendation now differs \
+        from the orginal mapping! See %s"
+    print(warn % args.report_out_path)
 else:
     print("All existing mappings appear to be mapped according to the current recommendation!")

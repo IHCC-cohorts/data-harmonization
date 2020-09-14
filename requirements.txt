@@ -4,3 +4,5 @@ rdflib
 xlsx2csv
 requests
 ontodev-cogs
+pyyaml
+scikit-learn
