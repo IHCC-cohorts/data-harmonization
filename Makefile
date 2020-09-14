@@ -139,7 +139,9 @@ build/%.html: build/%.owl templates/%.tsv | src/prefixes.json build/robot.jar
 build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.json
 	java -jar build/robot-tree.jar \
 	--prefixes src/prefixes.json \
-	tree --input $< \
+	remove --input $< \
+	--term GECKO:0000019 \
+	tree \
 	--format json \
 	--tree $@
 

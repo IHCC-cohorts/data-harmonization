@@ -13,12 +13,10 @@
       ]
     },
     "biosample": {
-      "sample_type": {
-        "blood": [],
-        "general_variables": [
-          "other_biosample_type"
-        ]
-      }
+      "sample_type": [
+        "other_biosample_type",
+        "blood"
+      ]
     },
     "cohort_name": "Golestan Cohort Study",
     "countries": [
@@ -30,21 +28,21 @@
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
-        "endocrine_nutritional_metabolic_disorders",
-        "oncological",
         "respiratory_system",
-        "circulatory_system"
+        "oncological",
+        "circulatory_system",
+        "endocrine_nutritional_metabolic_disorders"
       ],
       "general_variables": [
-        "physician_practitioner_info",
-        "signs_and_symptoms"
+        "signs_and_symptoms",
+        "physician_practitioner_info"
       ],
       "lifestyle_and_behaviours": [
+        "tobacco",
         "drugs",
-        "alcohol",
-        "nutrition",
         "physical_activity",
-        "tobacco"
+        "nutrition",
+        "alcohol"
       ],
       "medication": [
         "prescription",
@@ -55,8 +53,8 @@
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ],
         "circulation_and_respiration": [
           "blood_pressure",
@@ -65,11 +63,11 @@
       },
       "socio_demographic_and_economic_characteristics": [
         "family_and_household_structure",
-        "residence",
-        "education",
         "age_birthdate",
-        "ethnicity_race",
-        "gender"
+        "residence",
+        "gender",
+        "education",
+        "ethnicity_race"
       ]
     },
     "survey_administration": [
@@ -87,12 +85,10 @@
       "phenotypic_clinical_data": true
     },
     "biosample": {
-      "sample_type": {
-        "blood": [],
-        "general_variables": [
-          "urine"
-        ]
-      }
+      "sample_type": [
+        "blood",
+        "urine"
+      ]
     },
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
     "countries": [
@@ -112,15 +108,15 @@
         "respiratory_system"
       ],
       "general_variables": [
-        "reproduction",
-        "signs_and_symptoms"
+        "signs_and_symptoms",
+        "reproduction"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol",
-        "nutrition",
+        "tobacco",
         "physical_activity",
-        "sleep",
-        "tobacco"
+        "nutrition",
+        "alcohol",
+        "sleep"
       ],
       "medication": [],
       "non_pharmacological_interventions": [
@@ -128,8 +124,8 @@
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ],
         "circulation_and_respiration": [
           "blood_pressure",
@@ -169,24 +165,24 @@
     "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
       "diseases": [
-        "mental_and_behaviour_disorders",
-        "endocrine_nutritional_metabolic_disorders",
         "nervous_system",
-        "oncological",
         "respiratory_system",
-        "circulatory_system"
+        "oncological",
+        "circulatory_system",
+        "endocrine_nutritional_metabolic_disorders",
+        "mental_and_behaviour_disorders"
       ],
       "general_variables": [
+        "signs_and_symptoms",
         "physician_practitioner_info",
-        "reproduction",
-        "signs_and_symptoms"
+        "reproduction"
       ],
       "lifestyle_and_behaviours": [
         "alcohol"
       ],
       "medication": [
-        "drug_responses",
         "prescription",
+        "drug_responses",
         "administration"
       ],
       "non_pharmacological_interventions": [
@@ -194,17 +190,17 @@
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
         "family_and_household_structure",
-        "residence",
-        "education",
         "age_birthdate",
-        "ethnicity_race",
+        "residence",
         "gender",
+        "education",
+        "ethnicity_race",
         "biological_sex"
       ]
     },
@@ -241,15 +237,15 @@
       "non_pharmacological_interventions": [],
       "socio_demographic_and_economic_characteristics": [
         "family_and_household_structure",
-        "residence",
-        "age_birthdate",
         "ethnicity_race",
-        "biological_sex"
+        "age_birthdate",
+        "biological_sex",
+        "residence"
       ]
     },
     "survey_administration": [
-      "unique_identifiers",
-      "date_and_time_related_information"
+      "date_and_time_related_information",
+      "unique_identifiers"
     ],
     "target_enrollment": 700000,
     "website": "http://saprin.mrc.ac.za/"
@@ -262,14 +258,12 @@
       "phenotypic_clinical_data": true
     },
     "biosample": {
-      "sample_type": {
-        "blood": [],
-        "general_variables": [
-          "urine",
-          "other_biosample_type",
-          "saliva"
-        ]
-      }
+      "sample_type": [
+        "other_biosample_type",
+        "saliva",
+        "blood",
+        "urine"
+      ]
     },
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
     "countries": [
@@ -281,19 +275,19 @@
     "pi_lead": "Deenan Pillay",
     "questionnaire_survey_data": {
       "diseases": [
-        "endocrine_nutritional_metabolic_disorders",
-        "oncological",
         "respiratory_system",
-        "circulatory_system"
+        "oncological",
+        "circulatory_system",
+        "endocrine_nutritional_metabolic_disorders"
       ],
       "general_variables": [
-        "reproduction",
-        "signs_and_symptoms"
+        "signs_and_symptoms",
+        "reproduction"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol",
+        "tobacco",
         "nutrition",
-        "tobacco"
+        "alcohol"
       ],
       "medication": [
         "associated_diseases"
@@ -301,8 +295,8 @@
       "non_pharmacological_interventions": [],
       "physiological_measurements": {
         "anthropometry": [
-          "weight",
-          "height"
+          "height",
+          "weight"
         ],
         "circulation_and_respiration": [
           "blood_pressure",
