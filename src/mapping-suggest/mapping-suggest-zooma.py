@@ -10,7 +10,7 @@ author: Nico Matentzoglu for Knocean Inc., 26 August 2020
 
 import pandas as pd
 from argparse import ArgumentParser
-from lib import load_ihcc_config, map_term
+from lib import load_ihcc_config, map_term, ihcc_purl_prefix
 
 
 parser = ArgumentParser()
@@ -39,20 +39,14 @@ tsv_terms = tsv["Label"].values[2:]
 matches = []
 
 for term in tsv_terms:
-    # print("Matching "+term)
+    print("Matching "+term)
     matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
 
 df = pd.DataFrame(matches, columns=["term", "match", "match_label", "confidence"])
-# df
+print("Zooma matching successful. First rows:")
+print(df.head())
 
-# Transform matches into the right format and merge into template
-dfs = df[~df["match"].str.startswith("https://purl.ihccglobal.org/")].copy()
-dfs["Suggested Categories"] = dfs[["confidence", "match", "match_label"]].agg(" ".join, axis=1)
-dfs = dfs[["term", "Suggested Categories"]]
-dfsagg = dfs.groupby("term", as_index=False).agg(lambda x: " | ".join(set(x.dropna())))
-dfx = pd.merge(tsv, dfsagg, how="left", left_on=["Label"], right_on=["term"])
-del dfx["term"]
 
 # Save template
 with open(args.tsv_out_path, "w") as write_csv:
-    write_csv.write(dfx.to_csv(sep="\t", index=False))
+    write_csv.write(df.to_csv(sep="\t", index=False))

@@ -5,9 +5,10 @@
 Zooma allows the mapping of datasets. The mappings themselves can be configured:
 The idea here is that all existing mappings and some very simple syntactic derivations
 are loaded into Zooma, which can then be mapped with very high confidence when a new
-data dictionary tries to map the exact same (or very similar) term. In this notebook,
-we load all the (previously generated) lexical data of all existing data dictionaries
-(and GECKO) and generate a Zooma dataset file.
+data dictionary tries to map the exact same (or very similar) term. In this script,
+we load all the terms and their GECKO associations from existing data dictionaries
+(and GECKO) and generate a Zooma dataset file applying a number of simple syntactic
+modifications.
 
 author: Nico Matentzoglu for Knocean Inc., 26 August 2020
 """
