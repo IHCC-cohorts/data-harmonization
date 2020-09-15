@@ -282,14 +282,33 @@ serve: $(BROWSER)
 # the suggestions generated and added as a colum "Suggested Categories" to the template.
 
 MAP_SUGGEST := $(foreach C, $(COHORTS), mapping_suggest_$(C))
+GECKO_LEXICAL = build/intermediate/gecko-xrefs-sparql.csv
+ZOOMA_DATASET = data/ihcc-mapping-suggestions-zooma.tsv
+MAP_SCRIPT_DIR = src/mapping-suggest
+MAP_SCRIPT_CONFIG = $(MAP_SCRIPT_DIR)/mapping-suggest-config.yml
 
 .PHONY: all_mapping_suggest
-all_mapping_suggest: src/mapping-suggest/mapping_suggest_qc.py $(MAP_SUGGEST)
-	python3 $< --templates $(TEMPLATES) -v -o $@_report.tsv
+all_mapping_suggest: src/mapping-suggest/mapping-suggest-qc.py $(MAP_SUGGEST)
+	python3 $< --templates $(TEMPLATES) -v -o build/$@_report.tsv
 
+.PHONY: id_generation_%
+id_generation_%: src/mapping-suggest/id-generator-templates.py $(MAP_SUGGEST)
+	python3 $< -t ../template/$*.tsv
+
+build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
+												   templates/%.tsv $(GECKO_LEXICAL) | build/intermediate
+	python3 $< -z $(ZOOMA_DATASET) -p 0.1 -t templates/$*.tsv -g $(GECKO_LEXICAL) -o $@
+
+build/intermediate/%_mapping_suggestions_zooma.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-zooma.py \
+													$(MAP_SCRIPT_CONFIG) templates/%.tsv | build/intermediate
+	python3 $< -c $(MAP_SCRIPT_CONFIG) -t templates/$*.tsv -o $@
+
+# All of the mapping suggestion tables should have the following columns: ["confidence", "match", "match_label"]
 .PHONY: mapping_suggest_%
-mapping_suggest_%: src/mapping-suggest/mapping_suggest.py src/mapping-suggest/mapping-suggest-config.yml templates/%.tsv
-	python3 $< -c src/mapping-suggest/mapping-suggest-config.yml -t templates/$*.tsv -o templates/_$*.tsv
+mapping_suggest_%: 	templates/%.tsv \
+				  	build/intermediate/%_mapping_suggestions_zooma.tsv \
+					build/intermediate/%_mapping_suggestions_nlp.tsv
+	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^))
 
 # Pipeline to build a the zooma dataset that stores the existing mappings
 
@@ -298,10 +317,10 @@ MAP_DATA := $(foreach C, $(COHORTS), build/intermediate/$(C)-xrefs-sparql.csv)
 
 # TODO: Should this depend on data_dictionaries/%.owl or better build/%.owl?
 build/intermediate/%-xrefs-sparql.csv: build/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
-	$(ROBOT) query --input $< --query src/queries/ihcc-mapping.sparql $@
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
-build/intermediate/gecko-xrefs-sparql.csv: build/gecko.owl src/queries/ihcc-mapping-gecko.sparql .FORCE | build/intermediate build/robot.jar
-	$(ROBOT) query --input $< --query src/queries/ihcc-mapping-gecko.sparql $@
+$(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql .FORCE | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
-data/ihcc-mapping-suggestions-zooma.tsv: build/intermediate/gecko-xrefs-sparql.csv $(MAP_DATA)
-	python3 src/mapping-suggest/ihcc_zooma_dataset.py $(patsubst %, -l %, $^) -w $(shell pwd) -o $@
+$(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
+	python3 $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
