@@ -1,6 +1,4 @@
 Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
-ID	LABEL	C % SPLIT=|	A definition			
-	is-required;					
 VZ:BPMeasuredEver	BP Measured Ever			blood pressure		
 VZ:HighBPInformedEver	Ever Been Informed of High BP			signs and symptoms		
 VZ:HighBPInformed12mo	Informed of High BP in 12 Months			signs and symptoms		

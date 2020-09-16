@@ -1,6 +1,4 @@
 Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
-ID	LABEL	C % SPLIT=|	A definition			
-	is-required;					
 SAPRIN:Base_Entities	Base Entities		The core entities on which longitudinal data will be collected. Each entity has a dated start and end event			
 SAPRIN:Location	Location	Base Entities	A place to which geo-coordinates can be assigned	residence		
 SAPRIN:Type_Location	Type (Location)	Location		residence		

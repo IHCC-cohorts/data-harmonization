@@ -1,6 +1,4 @@
 Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
-ID	LABEL	C % SPLIT=|	AL definition@en			A comment
-	is-required;					
 MAELSTROM:Act_daily_living	Functional limitations	MAELSTROM:Health_status_functional_limitations	"Information about functional activities that involve caring for and moving the body (e.g. walking, bathing, dressing, toileting, eating; i.e. activities of daily living (ADL)) and instrumental activities of daily living (IADL) that people can get help with (e.g. cooking, driving, using the telephone or computer, shopping, handling finances, managing medication). 
  Also see the 'Use of assistive devices' subdomain."	signs and symptoms		
 MAELSTROM:Administrative_information	Administrative information		Information about administrative data.	survey administration		

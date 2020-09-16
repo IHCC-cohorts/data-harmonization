@@ -14,6 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/koges.owl">
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/koges/releases/2020-09-16/koges.owl"/>
         <dc:description>The core variables collected in the Korean Genome and Epidemiology Study.</dc:description>
         <terms:title>Korean Genome and Epidemiology Study (KoGES)</terms:title>
         <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view"/>
