@@ -172,7 +172,7 @@ templates/$(BRANCH).tsv:
 
 # required env var GOOGLE_CREDENTIALS
 .cogs: | templates/$(BRANCH).tsv
-	cogs init -c ../cogs/cred.json -u $(EMAIL) -t $(BRANCH)
+	cogs init -u $(EMAIL) -t $(BRANCH)
 	cogs add templates/$(BRANCH).tsv -r 2
 	cogs push
 	cogs open
