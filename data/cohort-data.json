@@ -7,6 +7,7 @@
       "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
+      "demographic_data": [],
       "population_data": [
         "location"
       ]
@@ -32,8 +33,9 @@
         "oncological",
         "respiratory_system"
       ],
-      "healthcare_information": [
-        "physician_practitioner_info"
+      "general_variables": [
+        "physician_practitioner_info",
+        "signs_and_symptoms"
       ],
       "lifestyle_and_behaviours": [
         "alcohol",
@@ -48,9 +50,6 @@
       ],
       "non_pharmacological_interventions": [
         "surgical_interventions"
-      ],
-      "other_questionnaire_survey_data": [
-        "signs_and_symptoms"
       ],
       "physiological_measurements": {
         "anthropometry": [
@@ -108,6 +107,10 @@
         "mental_and_behaviour_disorders",
         "respiratory_system"
       ],
+      "general_variables": [
+        "reproduction",
+        "signs_and_symptoms"
+      ],
       "lifestyle_and_behaviours": [
         "alcohol",
         "nutrition",
@@ -118,10 +121,6 @@
       "medication": [],
       "non_pharmacological_interventions": [
         "surgical_interventions"
-      ],
-      "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
       ],
       "physiological_measurements": {
         "anthropometry": [
@@ -173,8 +172,10 @@
         "oncological",
         "respiratory_system"
       ],
-      "healthcare_information": [
-        "physician_practitioner_info"
+      "general_variables": [
+        "physician_practitioner_info",
+        "reproduction",
+        "signs_and_symptoms"
       ],
       "lifestyle_and_behaviours": [
         "alcohol"
@@ -186,10 +187,6 @@
       ],
       "non_pharmacological_interventions": [
         "surgical_interventions"
-      ],
-      "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
       ],
       "physiological_measurements": {
         "anthropometry": [
@@ -233,11 +230,11 @@
       "diseases": [
         "endocrine_nutritional_metabolic_disorders"
       ],
-      "non_pharmacological_interventions": [],
-      "other_questionnaire_survey_data": [
+      "general_variables": [
         "life_stage_time_point",
         "reproduction"
       ],
+      "non_pharmacological_interventions": [],
       "socio_demographic_and_economic_characteristics": [
         "age_birthdate",
         "biological_sex",
@@ -283,6 +280,10 @@
         "oncological",
         "respiratory_system"
       ],
+      "general_variables": [
+        "reproduction",
+        "signs_and_symptoms"
+      ],
       "lifestyle_and_behaviours": [
         "alcohol",
         "nutrition",
@@ -292,10 +293,6 @@
         "associated_diseases"
       ],
       "non_pharmacological_interventions": [],
-      "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
-      ],
       "physiological_measurements": {
         "anthropometry": [
           "height",
