@@ -1,6 +1,4 @@
 Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
-ID	LABEL	C % SPLIT=|	A definition				
-	is-required;						
 GE:administrative	Administrative			survey administration		not sure this maps to anything	
 GE:episode_matched	episode_matched	Administrative		survey administration			
 GE:episode_match_rank	EPISODE MATCH RANK	Administrative	a score is attributed to each part of the linking process, where the quality of the match is denoted by the rank, with the lowest rank (i.e. 1) being the highest quality match. The scores for each possible match are compared and the highest match is chosen.	survey administration			

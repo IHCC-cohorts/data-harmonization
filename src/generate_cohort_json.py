@@ -90,9 +90,7 @@ def main():
         gecko_cats = []
         with open(file_name, "r") as f:
             reader = csv.reader(f, delimiter="\t")
-            # Skip header, template, and validation
-            next(reader)
-            next(reader)
+            # Skip header
             next(reader)
             for row in reader:
                 gecko_cat = row[4]
@@ -184,6 +182,7 @@ def clean_dict(d):
             v = clean_dict(v)
         if isinstance(v, list):
             v = [clean_string(x) for x in v]
+            v = sorted(v)
         new[clean_string(k)] = v
     return new
 

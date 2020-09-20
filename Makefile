@@ -32,6 +32,7 @@ SHELL := bash
 
 ROBOT = java -jar build/robot.jar --prefixes src/prefixes.json
 GECKO_PURL = http://purl.obolibrary.org/obo/gecko/views/ihcc-gecko.owl
+TODAY ?= $(shell date +%Y-%m-%d)
 
 # Detect the OS and provide proper command
 # WARNING - will not work with Windows OS
@@ -91,14 +92,17 @@ build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json |
 owl: $(ONTS) | data_dictionaries
 	cp $^ data_dictionaries/
 
-build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediate/%-xrefs.tsv metadata/%.ttl | build/robot.jar
+build/%.tsv: templates/%.tsv
+	sed -E '2s/^/ID	LABEL	C % SPLIT=|	A definition#	is-required;#/' $< | tr '#' '\n' > $@
+
+build/%.owl: build/intermediate/properties.owl build/%.tsv build/intermediate/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
 	--merge-before \
 	--template $(word 2,$^) \
 	template \
 	--template $(word 3,$^) \
 	--merge-before \
-	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
+	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" --version-iri "https://purl.ihccglobal.org/$(notdir $(basename $@))/releases/$(TODAY)/$(notdir $@)" \
 	--annotation-file $(word 4,$^) \
 	--output $@
 
@@ -111,7 +115,7 @@ build/%.owl: build/intermediate/properties.owl templates/%.tsv build/intermediat
 # These are required to build the cohort OWL file
 # The xrefs are generated from the mapping template
 
-build/intermediate/%-xrefs.tsv: src/create_xref_template.py templates/%.tsv templates/index.tsv | build/intermediate
+build/intermediate/%-xrefs.tsv: src/create_xref_template.py build/%.tsv templates/index.tsv | build/intermediate
 	python3 $^ $@
 
 
@@ -122,7 +126,7 @@ build/%-tree.html: build/%.owl | build/robot-tree.jar
 	--input $< \
 	--tree $@
 
-build/%.html: build/%.owl templates/%.tsv | src/prefixes.json build/robot.jar
+build/%.html: build/%.owl build/%.tsv | src/prefixes.json build/robot.jar
 	$(ROBOT) validate \
 	--input $< \
 	--table $(word 2,$^) \
@@ -140,7 +144,9 @@ build/%.html: build/%.owl templates/%.tsv | src/prefixes.json build/robot.jar
 build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.json
 	java -jar build/robot-tree.jar \
 	--prefixes src/prefixes.json \
-	tree --input $< \
+	remove --input $< \
+	--term GECKO:0000019 \
+	tree \
 	--format json \
 	--tree $@
 
@@ -164,7 +170,7 @@ BRANCH := $(shell git branch --show-current)
 init-cogs: .cogs
 
 templates/$(BRANCH).tsv:
-	echo -e "Term ID\tLabel\tParent Term\tDefinition\tGECKO Category\tSuggested Categories\tComment\nID\tLABEL\tC % SPLIT=|\tA definition\n\tis-required;" > $@
+	echo -e "Term ID\tLabel\tParent Term\tDefinition\tGECKO Category\tSuggested Categories\tComment\n" > $@
 
 # required env var GOOGLE_CREDENTIALS
 .cogs: | templates/$(BRANCH).tsv
@@ -249,7 +255,7 @@ build/browser/index.html: src/browser/browser.html | build/browser
 
 # JSON of ancestor GECKO term (key) -> list of cohort terms (value)
 # This is used to drive the filter functionality in the browser
-build/browser/%-mapping.json: src/browser/generate_mapping_json.py templates/%.tsv templates/index.tsv | build/browser
+build/browser/%-mapping.json: src/browser/generate_mapping_json.py build/%.tsv templates/index.tsv | build/browser
 	python3 $^ $@
 
 # Top-level cohort data as HTML pages 
