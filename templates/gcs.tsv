@@ -1,6 +1,4 @@
 Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
-ID	LABEL	C % SPLIT=|	A definition			
-	is-required;					
 GCS:ID	Identity		Identity and contact information	survey administration		
 GCS:DEMO	Demographic Info		Demographic characteristics: sex, age, ethnicity, marital status, education	demographic data		
 GCS:FAM	Family members		Characteristics of relatives in the household	family and household structure		

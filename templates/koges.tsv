@@ -1,6 +1,4 @@
 Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
-ID	LABEL	C % SPLIT=|	A definition			
-	is-required;					
 KOGES:0000001	Core Variables					
 KOGES:0000002	Core Questionnaires	KOGES:0000001		questionnaire/survey data		
 KOGES:0000003	Socio-demographic data	KOGES:0000002		socio-demographic and economic characteristics		
