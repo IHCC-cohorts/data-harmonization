@@ -6,15 +6,14 @@
 
 ### Workflow
 #
-# 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
-# 2. [Update files](update)
-# 3. [Build Mappings](owl)
-# 4. [View results](build/)
-#
-# Demo browser:
-#
-# 1. [Update browser](browser)
-# 2. [View browser](build/browser/index.html)
+# 1. [Upload cohort data](./src/workflow.py?action=create)
+# 2. [Open Google Sheet](./src/workflow.py?action=open)
+# 3. Run automated mapping
+# 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
+# 5. Run automated validation
+# 6. [Build files](owl)
+# 7. [View results](build/)
+# 8. Finalize: commit and push changes
 
 ### Configuration
 #
