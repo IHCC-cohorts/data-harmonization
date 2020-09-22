@@ -13,27 +13,46 @@ from argparse import ArgumentParser
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import SGDClassifier
 
-from lib import load_ihcc_config, map_term, ihcc_purl_prefix
-
 parser = ArgumentParser()
 # parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
-parser.add_argument("-z", "--zooma-data-file", dest="training_data_file", help="Zooma dataset that can be used as training data",
-                    metavar="FILE")
+parser.add_argument(
+    "-z",
+    "--zooma-data-file",
+    dest="training_data_file",
+    help="Zooma dataset that can be used as training data",
+    metavar="FILE",
+)
 parser.add_argument("-t", "--template", dest="template_file", help="Template file", metavar="FILE")
-parser.add_argument("-p", "--probability-cut-off", dest="probability_cut_off", type=float, help="The minimum probability (confidence) you want to except for making a suggestion.", default=0.1)
-parser.add_argument("-g", "--gecko", dest="gecko_labels_file", help="File containing GECKO labels", metavar="FILE")
-parser.add_argument("-o", "--output", dest="prediction_results_file", help="Output file for the prediction results",
-                    metavar="FILE")
+parser.add_argument(
+    "-p",
+    "--probability-cut-off",
+    dest="probability_cut_off",
+    type=float,
+    help="The minimum probability (confidence) for making a suggestion.",
+    default=0.1,
+)
+parser.add_argument(
+    "-g", "--gecko", dest="gecko_labels_file", help="File containing GECKO labels", metavar="FILE"
+)
+parser.add_argument(
+    "-o",
+    "--output",
+    dest="prediction_results_file",
+    help="Output file for the prediction results",
+    metavar="FILE",
+)
 args = parser.parse_args()
 
 # Loading and preprocessing data
+rdfs_label = "http://www.w3.org/2000/01/rdf-schema#label"
 zooma = pd.read_csv(args.training_data_file, sep="\t")
 gecko = pd.read_csv(args.gecko_labels_file, sep=",")
-gecko_labels = gecko[gecko['property'] == "http://www.w3.org/2000/01/rdf-schema#label"][['from', 'label']]
-gecko = gecko[['from', 'label']]
+gecko_labels = gecko[gecko["property"] == rdfs_label][["from", "label"]]
+gecko = gecko[["from", "label"]]
 
 template = pd.read_csv(args.template_file, sep="\t")
-# template['IRI'] = ["https://purl.ihccglobal.org/"+str(item).replace(":","_") for item in template['Term ID']]
+# template['IRI'] = ["https://purl.ihccglobal.org/"+str(item).replace(":","_")
+# for item in template['Term ID']]
 
 
 # Creating training data
@@ -42,48 +61,46 @@ def preprocess_term_label(term):
     return term
 
 
-X = zooma['PROPERTY_VALUE'].tolist()
-y = zooma['SEMANTIC_TAG'].tolist()
-X.extend(gecko['label'].tolist())
-y.extend(gecko['from'].tolist())
+X = zooma["PROPERTY_VALUE"].tolist()
+y = zooma["SEMANTIC_TAG"].tolist()
+X.extend(gecko["label"].tolist())
+y.extend(gecko["from"].tolist())
 X = [preprocess_term_label(term) for term in X]
 
-raw_data = pd.DataFrame(
-    {'X': X,
-     'y': y
-     })
+raw_data = pd.DataFrame({"X": X, "y": y})
 training_data = raw_data.drop_duplicates()
 
 # As input, we only allow terms that already have valid IDs.
-template_data = template[['Term ID', 'Label']].dropna().copy()
-# Next: reduce the template data to rows that actually contain term data (ignoring empty or header rows)
-template_data = template_data[template_data['Term ID'].str.match(r"[a-zA-z]+[:][0-9]+", case=False)]
+template_data = template[["Term ID", "Label"]].dropna().copy()
+# Next: reduce the template data to rows that actually contain
+# term data (ignoring empty or header rows)
+template_data = template_data[template_data["Term ID"].str.match(r"[a-zA-z]+[:][0-9]+", case=False)]
 print(template_data.head())
 
 # Building a TFIDF matrix for the training data
-tfidf_vect = TfidfVectorizer(ngram_range=(1,2), min_df=2).fit(training_data['X'])
-X_tfidf = tfidf_vect.transform(training_data['X'])
+tfidf_vect = TfidfVectorizer(ngram_range=(1, 2), min_df=2).fit(training_data["X"])
+X_tfidf = tfidf_vect.transform(training_data["X"])
 
 # Building a TFIDF matrix for the template data
-X_template_tfidf = tfidf_vect.transform(template_data['Label'])
+X_template_tfidf = tfidf_vect.transform(template_data["Label"])
 
 # Training the model
-clf_lr = SGDClassifier(loss='log').fit(X_tfidf, training_data['y'])
+clf_lr = SGDClassifier(loss="log").fit(X_tfidf, training_data["y"])
 
 # Getting the probabilistic matches from the input data
 probs_lr = clf_lr.predict_proba(X_template_tfidf)
 
 # Finalising the matches into an IHCC matches dataframe
 df_test_probs = pd.DataFrame(probs_lr, columns=clf_lr.classes_)
-df_test_probs['term'] = template_data['Label'].tolist()
-m = pd.melt(df_test_probs, id_vars=['term'], var_name='match', value_name='confidence')
-m = m[m['confidence'] > args.probability_cut_off]
+df_test_probs["term"] = template_data["Label"].tolist()
+m = pd.melt(df_test_probs, id_vars=["term"], var_name="match", value_name="confidence")
+m = m[m["confidence"] > args.probability_cut_off]
 print(m.head())
 
 # Merging GECKO labels back in
-df_out = pd.merge(m, gecko_labels, how='left', left_on=['match'], right_on=['from'])
-df_out.rename({'label': 'match_label'}, axis=1, inplace=True)
-del df_out['from']
+df_out = pd.merge(m, gecko_labels, how="left", left_on=["match"], right_on=["from"])
+df_out.rename({"label": "match_label"}, axis=1, inplace=True)
+del df_out["from"]
 
 print(df_out.head())
 

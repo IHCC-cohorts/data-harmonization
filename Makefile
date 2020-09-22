@@ -298,21 +298,26 @@ all_mapping_suggest: src/mapping-suggest/mapping-suggest-qc.py $(MAP_SUGGEST)
 	python3 $< --templates $(TEMPLATES) -v -o build/$@_report.tsv
 
 .PHONY: id_generation_%
-id_generation_%: src/mapping-suggest/id-generator-templates.py $(MAP_SUGGEST)
-	python3 $< -t ../template/$*.tsv
+id_generation_%: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/%.tsv
+	python3 $< -t $(word 2,$^)
+	
+id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv .cogs/metadata.tsv
+	python3 $< -t $(word 2,$^) -m .cogs/metadata.tsv
 
 build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
-												   templates/%.tsv $(GECKO_LEXICAL) | build/intermediate
+																									templates/%.tsv $(GECKO_LEXICAL) \
+																									id_generation_% | build/intermediate
 	python3 $< -z $(ZOOMA_DATASET) -p 0.1 -t templates/$*.tsv -g $(GECKO_LEXICAL) -o $@
 
 build/intermediate/%_mapping_suggestions_zooma.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-zooma.py \
-													$(MAP_SCRIPT_CONFIG) templates/%.tsv | build/intermediate
+																										$(MAP_SCRIPT_CONFIG) templates/%.tsv \
+																										id_generation_% | build/intermediate
 	python3 $< -c $(MAP_SCRIPT_CONFIG) -t templates/$*.tsv -o $@
 
 # All of the mapping suggestion tables should have the following columns: ["confidence", "match", "match_label"]
 .PHONY: mapping_suggest_%
-mapping_suggest_%: 	templates/%.tsv \
-				  	build/intermediate/%_mapping_suggestions_zooma.tsv \
+mapping_suggest_%: templates/%.tsv \
+					build/intermediate/%_mapping_suggestions_zooma.tsv \
 					build/intermediate/%_mapping_suggestions_nlp.tsv
 	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^))
 
@@ -330,3 +335,9 @@ $(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql .FORCE |
 
 $(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
 	python3 $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
+	
+templates/cogs.tsv: .cogs/terminology.tsv .FORCE
+	echo "cp $< $@ skipped"
+
+cogs_mapping: mapping_suggest_cogs
+	echo "mv (!, not copy) back to .cogs"

@@ -20,11 +20,13 @@ parser.add_argument(
     help="The set of mapping suggestions to be merged.",
 )
 parser.add_argument("-t", "--template", dest="template_file", help="Template file", metavar="FILE")
-parser.add_argument("-o", "--output", dest="mapping_suggestions_out_path", help="Output file", metavar="FILE")
+parser.add_argument(
+    "-o", "--output", dest="mapping_suggestions_out_path", help="Output file", metavar="FILE"
+)
 args = parser.parse_args()
 
 print(args.mapping_suggestion_files)
-df = pd.concat([pd.read_csv(f,sep="\t") for f in args.mapping_suggestion_files])
+df = pd.concat([pd.read_csv(f, sep="\t") for f in args.mapping_suggestion_files])
 df.head()
 
 template = pd.read_csv(args.template_file, sep="\t")
@@ -32,7 +34,7 @@ print(len(template))
 
 # Transform matches into the right format and merge into template
 dfs = df[~df["match"].str.startswith(ihcc_purl_prefix)].copy()
-dfs['confidence'] = dfs['confidence'].astype(str)
+dfs["confidence"] = dfs["confidence"].astype(str)
 dfs["Suggested Categories"] = dfs[["confidence", "match", "match_label"]].agg(" ".join, axis=1)
 dfs = dfs[["term", "Suggested Categories"]]
 dfsagg = dfs.groupby("term", as_index=False).agg(lambda x: " | ".join(set(x.dropna())))

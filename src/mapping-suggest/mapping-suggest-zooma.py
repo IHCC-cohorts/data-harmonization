@@ -10,7 +10,7 @@ author: Nico Matentzoglu for Knocean Inc., 26 August 2020
 
 import pandas as pd
 from argparse import ArgumentParser
-from lib import load_ihcc_config, map_term, ihcc_purl_prefix
+from lib import load_ihcc_config, map_term
 
 
 parser = ArgumentParser()
@@ -39,7 +39,7 @@ tsv_terms = tsv["Label"].values[2:]
 matches = []
 
 for term in tsv_terms:
-    print("Matching "+term)
+    print("Matching " + term)
     matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
 
 df = pd.DataFrame(matches, columns=["term", "match", "match_label", "confidence"])
