@@ -44,22 +44,24 @@ print("Generating IDs for data dictionary: %s" % dd_id)
 NUM_PADDED_ZERO = args.length_of_id
 MAX_ID = int("9" * NUM_PADDED_ZERO)
 PREFIX = "%s:" % dd_id
+COL_TERM_ID = "Term ID"
+
 df = pd.read_csv(args.template_file, sep="\t", dtype=str)
 len_pre = len(df)
 
 highest_current_id = 0
 
-if "ID" in df.columns:
-    df_nn = df[df["ID"].notnull()]
-    ids = df_nn[df_nn["ID"].str.startswith(PREFIX)]["ID"].tolist()
+if COL_TERM_ID in df.columns:
+    df_nn = df[df[COL_TERM_ID].notnull()]
+    ids = df_nn[df_nn[COL_TERM_ID].str.startswith(PREFIX)][COL_TERM_ID].tolist()
     ids = [int(i.replace(PREFIX, "")) for i in ids]
     highest_current_id = max(ids)
 else:
-    df["ID"] = ""
+    df[COL_TERM_ID] = ""
 
 
 for index, row in df.iterrows():
-    value = row["ID"]
+    value = row[COL_TERM_ID]
     if (type(value) != str) or (not value.startswith(PREFIX)):
         highest_current_id = highest_current_id + 1
         if highest_current_id > MAX_ID:
@@ -67,7 +69,10 @@ for index, row in df.iterrows():
                 "The maximum number of digits is exhausted (%d), "
                 + "you need to pick a larger range!" % NUM_PADDED_ZERO
             )
-        df.at[index, "ID"] = "%s%s" % (PREFIX, str(highest_current_id).zfill(NUM_PADDED_ZERO))
+        df.at[index, COL_TERM_ID] = "%s%s" % (
+            PREFIX,
+            str(highest_current_id).zfill(NUM_PADDED_ZERO),
+        )
 
 if len_pre != len(df):
     raise RuntimeError(

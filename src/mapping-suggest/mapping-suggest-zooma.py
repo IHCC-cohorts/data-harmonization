@@ -8,10 +8,11 @@ Suggested mappings, which are added the 'Suggested Mappings' column of the templ
 author: Nico Matentzoglu for Knocean Inc., 26 August 2020
 """
 
-import pandas as pd
 from argparse import ArgumentParser
-from lib import load_ihcc_config, map_term
 
+import pandas as pd
+
+from lib import load_ihcc_config, map_term
 
 parser = ArgumentParser()
 parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
@@ -32,7 +33,6 @@ print(config)
 
 # Loading data
 tsv = pd.read_csv(args.tsv_path, sep="\t")
-del tsv["Suggested Categories"]
 tsv_terms = tsv["Label"].values[2:]
 
 # Generating matches

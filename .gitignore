@@ -9,3 +9,4 @@ src/mapping-suggest/.ipynb_checkpoints
 
 templates/_*.tsv
 src/mapping-suggest/raw_data.tsv
+templates/cogs.tsv

@@ -25,12 +25,33 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
+TEMPLATE_COLUMNS = [
+    "Term ID",
+    "Label",
+    "Parent Term",
+    "Definition",
+    "GECKO Category",
+    "Suggested Categories",
+    "Comment",
+]
+
+
 print(args.mapping_suggestion_files)
 df = pd.concat([pd.read_csv(f, sep="\t") for f in args.mapping_suggestion_files])
-df.head()
+
 
 template = pd.read_csv(args.template_file, sep="\t")
-print(len(template))
+if "Suggested Categories" in template.columns:
+    del template["Suggested Categories"]
+
+len_pre = len(template)
+
+if not set(template.columns.tolist()).issubset(TEMPLATE_COLUMNS):
+    raise ValueError(
+        "There are columns in the template that are not allowed by the spec; "
+        + "please remove them: %s (allowed %s)."
+        % (str(template.columns.tolist()), str(TEMPLATE_COLUMNS))
+    )
 
 # Transform matches into the right format and merge into template
 dfs = df[~df["match"].str.startswith(ihcc_purl_prefix)].copy()
@@ -41,8 +62,14 @@ dfsagg = dfs.groupby("term", as_index=False).agg(lambda x: " | ".join(set(x.drop
 dfx = pd.merge(template, dfsagg, how="left", left_on=["Label"], right_on=["term"])
 del dfx["term"]
 
-print(dfx.head())
-print(len(dfx))
+if len_pre != len(template):
+    raise RuntimeError(
+        "The size of the dictionary changed " + "during the process - something went wrong (KTD)."
+    )
+
+for col in TEMPLATE_COLUMNS:
+    if col not in dfx.columns:
+        dfx[col] = ""
 
 # Save template
 with open(args.template_file, "w") as write_csv:

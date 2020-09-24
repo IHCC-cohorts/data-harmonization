@@ -305,8 +305,8 @@ id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.t
 	python3 $< -t $(word 2,$^) -m .cogs/metadata.tsv
 
 build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
-																									templates/%.tsv $(GECKO_LEXICAL) \
-																									id_generation_% | build/intermediate
+													templates/%.tsv $(GECKO_LEXICAL) \
+													id_generation_% | build/intermediate
 	python3 $< -z $(ZOOMA_DATASET) -p 0.1 -t templates/$*.tsv -g $(GECKO_LEXICAL) -o $@
 
 build/intermediate/%_mapping_suggestions_zooma.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-zooma.py \
@@ -335,9 +335,16 @@ $(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql .FORCE |
 
 $(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
 	python3 $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
-	
-templates/cogs.tsv: .cogs/terminology.tsv .FORCE
-	echo "cp $< $@ skipped"
 
-cogs_mapping: mapping_suggest_cogs
+cogs_pull:
+	cogs fetch
+	cogs pull
+
+templates/cogs.tsv: build/terminology.tsv .FORCE
+	echo "skip" #cp $< $@
+
+cogs_mapping:
+	make cogs_pull
+	make mapping_suggest_cogs
 	echo "mv (!, not copy) back to .cogs"
+	cogs push
