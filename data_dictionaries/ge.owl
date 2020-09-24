@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://purl.ihccglobal.org/genomics-england.owl#"
-     xml:base="https://purl.ihccglobal.org/genomics-england.owl"
+<rdf:RDF xmlns="https://purl.ihccglobal.org/ge.owl#"
+     xml:base="https://purl.ihccglobal.org/ge.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -13,8 +13,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://purl.ihccglobal.org/genomics-england.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/genomics-england/releases/2020-09-16/genomics-england.owl"/>
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/ge.owl">
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/ge/releases/2020-09-24/ge.owl"/>
         <dc:description>The main programme data dictionary for the Genomics England Research Environment.</dc:description>
         <terms:license>TODO: The license URL</terms:license>
         <terms:rights>TODO: A human-readable description of rights</terms:rights>

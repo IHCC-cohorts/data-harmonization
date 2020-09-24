@@ -47,7 +47,7 @@ endif
 # List of cohorts to generate files for (lowercase, using short ID where possible)
 # This short name is used throughout all build tasks and should be consistent for all files
 # --- THIS IS THE ONLY LINE THAT SHOULD BE EDITED WHEN ADDING A NEW COHORT ---
-COHORTS := gcs genomics-england koges saprin vukuzazi
+COHORTS := $(filter-out maelstrom, $(patsubst %.ttl, %, $(notdir $(wildcard metadata/*.ttl))))
 
 # --- DO NOT EDIT BELOW THIS LINE ---
 
@@ -57,6 +57,9 @@ TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 
 # OWL file in the build directory for all cohorts (contains xrefs)
 ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
+
+xx:
+	echo $(COHORTS)
 
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)

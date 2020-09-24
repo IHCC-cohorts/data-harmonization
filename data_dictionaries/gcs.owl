@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/gcs.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gcs/releases/2020-09-16/gcs.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gcs/releases/2020-09-24/gcs.owl"/>
         <dc:description>The data dictionary of items collected by the GCS.</dc:description>
         <terms:title>Golestan Cohort Study (GCS)</terms:title>
         <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view"/>
