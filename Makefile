@@ -58,8 +58,6 @@ TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 # OWL file in the build directory for all cohorts (contains xrefs)
 ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
 
-xx:
-	echo $(COHORTS)
 
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
