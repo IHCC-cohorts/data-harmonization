@@ -10,7 +10,7 @@
 # 2. [Open Google Sheet](./src/workflow.py?action=open)
 # 3. [Run automated mapping](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
-# 5. Run automated validation
+# 5. [Run automated validation](apply_problems)
 # 6. [Build files](owl)
 # 7. [View results](build/)
 # 8. Finalize: commit and push changes
@@ -199,7 +199,7 @@ build/$(BRANCH)-problems.tsv: src/validate.py build/gecko_labels.tsv templates/$
 	rm -rf $@ && touch $@
 	python3 $< $(word 2,$^) $(BRANCH) $@
 
-apply-problems: build/$(BRANCH)-problems.tsv
+apply_problems: build/$(BRANCH)-problems.tsv
 	cogs apply $<
 	cogs push
 
