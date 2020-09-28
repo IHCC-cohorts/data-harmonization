@@ -55,7 +55,8 @@ if COL_TERM_ID in df.columns:
     df_nn = df[df[COL_TERM_ID].notnull()]
     ids = df_nn[df_nn[COL_TERM_ID].str.startswith(PREFIX)][COL_TERM_ID].tolist()
     ids = [int(i.replace(PREFIX, "")) for i in ids]
-    highest_current_id = max(ids)
+    if ids:
+        highest_current_id = max(ids)
 else:
     df[COL_TERM_ID] = ""
 

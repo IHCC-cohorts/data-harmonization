@@ -298,8 +298,8 @@ all_mapping_suggest: src/mapping-suggest/mapping-suggest-qc.py $(MAP_SUGGEST)
 id_generation_%: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/%.tsv
 	python3 $< -t $(word 2,$^)
 	
-id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv .cogs/metadata.tsv
-	python3 $< -t $(word 2,$^) -m .cogs/metadata.tsv
+id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv .cogs/tracked/metadata.tsv
+	python3 $< -t $(word 2,$^) -m .cogs/tracked/metadata.tsv
 
 build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
 													templates/%.tsv $(GECKO_LEXICAL) \
@@ -317,6 +317,12 @@ mapping_suggest_%: templates/%.tsv \
 					build/intermediate/%_mapping_suggestions_zooma.tsv \
 					build/intermediate/%_mapping_suggestions_nlp.tsv
 	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^))
+
+build/data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv
+	python3 $^ $@
+
+cogs_apply: build/data-validation.tsv
+	cogs apply build/data-validation.tsv
 
 # Pipeline to build a the zooma dataset that stores the existing mappings
 
@@ -345,6 +351,7 @@ automated_mapping:
 	make cogs_pull
 	make mapping_suggest_cogs
 	mv templates/cogs.tsv build/terminology.tsv
+	make cogs_apply
 	cogs push
 
 python_requirements: requirements.txt
