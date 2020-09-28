@@ -10,7 +10,7 @@
 # 2. [Open Google Sheet](./src/workflow.py?action=open)
 # 3. [Run automated mapping](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
-# 5. [Run automated validation](apply_problems)
+# 5. [Run automated validation](automated_validation)
 # 6. [Build files](owl)
 # 7. [View results](build/)
 # 8. Finalize: commit and push changes
@@ -179,29 +179,11 @@ templates/$(BRANCH).tsv:
 	cogs push
 	cogs open
 
+cogs-apply-%: build/cogs-%.tsv
+	cogs apply $<
+
 destroy-cogs: | .cogs
 	cogs delete -f
-
-
-### Validation
-
-build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
-	$(ROBOT) export \
-	--input $< \
-	--header "LABEL" \
-	--export $@
-
-# We always get the latest changes before running validation
-.PHONY: build/$(BRANCH)-problems.tsv
-build/$(BRANCH)-problems.tsv: src/validate.py build/gecko_labels.tsv templates/$(BRANCH).tsv
-	cogs fetch
-	cogs pull
-	rm -rf $@ && touch $@
-	python3 $< $(word 2,$^) $(BRANCH) $@
-
-apply_problems: build/$(BRANCH)-problems.tsv
-	cogs apply $<
-	cogs push
 
 
 ### Pre-build Tasks
@@ -278,6 +260,28 @@ browser: $(BROWSER)
 serve: $(BROWSER)
 	cd build/browser && python3 -m http.server 8000
 
+##################################################
+####### IHCC Mapping validation pipeline #########
+##################################################
+
+build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "LABEL" \
+	--export $@
+
+# We always get the latest changes before running validation
+build/cogs-problems.tsv: src/validate.py build/terminology.tsv build/gecko_labels.tsv
+	rm -rf $@ && touch $@
+	python3 $^ $@
+
+.PHONY: automated_validation
+automated_validation:
+	make python_requirements
+	make cogs_pull
+	make cogs-apply-problems
+	cogs push
+
 ###################################################
 ####### IHCC Mapping suggestions pipeline #########
 ###################################################
@@ -319,11 +323,8 @@ mapping_suggest_%: templates/%.tsv \
 					build/intermediate/%_mapping_suggestions_nlp.tsv
 	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^))
 
-build/data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv
+build/cogs-data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv
 	python3 $^ $@
-
-cogs_apply: build/data-validation.tsv
-	cogs apply build/data-validation.tsv
 
 # Pipeline to build a the zooma dataset that stores the existing mappings
 
@@ -352,7 +353,7 @@ automated_mapping:
 	make cogs_pull
 	make mapping_suggest_cogs
 	mv templates/cogs.tsv build/terminology.tsv
-	make cogs_apply
+	make cogs-apply-data-validation
 	cogs push
 
 python_requirements: requirements.txt

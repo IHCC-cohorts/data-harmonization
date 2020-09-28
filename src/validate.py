@@ -1,7 +1,21 @@
 import collections
 import csv
+import logging
+import os
+import sys
 
 from argparse import ArgumentParser
+
+
+expected_headers = [
+    "Term ID",
+    "Label",
+    "Parent Term",
+    "Definition",
+    "GECKO Category",
+    "Suggested Categories",
+    "Comment",
+]
 
 
 def idx_to_a1(row, col):
@@ -20,49 +34,71 @@ def idx_to_a1(row, col):
     return label
 
 
-def main():
-    p = ArgumentParser()
-    p.add_argument("labels")
-    p.add_argument("namespace")
-    p.add_argument("output")
-    args = p.parse_args()
-
-    gecko_labels = []
-    with open(args.labels, "r") as f:
-        reader = csv.reader(f, delimiter="\t")
-        # Skip header
-        next(reader)
-        for row in reader:
-            gecko_labels.append(row[0])
-
-    ns = args.namespace
-    table = f"templates/{ns}.tsv"
-
+def validate(table, gecko_labels):
+    """Validate an IHCC mapping table."""
+    basename = os.path.splitext(os.path.basename(table))[0]
     problems = []
     problem_count = 0
-    # row -> ID
-    ids = {}
     # label -> locs
     labels = {}
     # loc -> parent_term
     parent_terms = {}
 
     lines = []
-
     with open(table, "r") as f:
         reader = csv.DictReader(f, delimiter="\t")
-        # Skip template & validation strings
-        lines.append(next(reader))
-        lines.append(next(reader))
 
-        row_idx = 3
+        # Validate headers
+        headers = reader.fieldnames
+        headers_valid = True
+        col_idx = 0
+        for h in headers:
+            if col_idx < len(expected_headers):
+                matching_header = expected_headers[col_idx]
+                if h != matching_header:
+                    headers_valid = False
+                    problem_count += 1
+                    problems.append(
+                        {
+                            "ID": problem_count,
+                            "table": basename,
+                            "cell": idx_to_a1(1, col_idx + 1),
+                            "level": "error",
+                            "rule ID": "",
+                            "rule name": "Invalid header",
+                            "value": h,
+                            "fix": matching_header,
+                            "instructions": f"This column should be '{matching_header}'",
+                        }
+                    )
+            else:
+                headers_valid = False
+                problem_count += 1
+                problems.append(
+                    {
+                        "ID": problem_count,
+                        "table": basename,
+                        "cell": idx_to_a1(1, col_idx + 1),
+                        "level": "error",
+                        "rule ID": "",
+                        "rule name": "Invalid header",
+                        "value": h,
+                        "fix": "",
+                        "instructions": f"This column should be empty",
+                    }
+                )
+            col_idx += 1
+
+        if not headers_valid:
+            logging.critical(
+                "Unable to complete validation - please fix the headers and try again!"
+            )
+            return None, problems
+
+        # Validate contents
+        row_idx = 2
         for row in reader:
             lines.append(row)
-            row_idx += 1
-
-            # Add ID to IDs (note that this may be empty)
-            local_id = row["Term ID"].strip()
-            ids[row_idx] = local_id
 
             # Add label to labels map
             label = row["Label"]
@@ -83,7 +119,7 @@ def main():
                 problems.append(
                     {
                         "ID": problem_count,
-                        "table": ns,
+                        "table": basename,
                         "cell": idx_to_a1(row_idx, 5),
                         "level": "error",
                         "rule ID": "",
@@ -93,6 +129,7 @@ def main():
                         "instructions": "select a valid GECKO category",
                     }
                 )
+            row_idx += 1
 
     # Validate labels
     duplicates = {k: v for k, v in labels.items() if len(v) > 1}
@@ -104,7 +141,7 @@ def main():
                 problems.append(
                     {
                         "ID": problem_count,
-                        "table": ns,
+                        "table": basename,
                         "cell": loc,
                         "level": "error",
                         "rule ID": "",
@@ -125,7 +162,7 @@ def main():
                 problems.append(
                     {
                         "ID": problem_count,
-                        "table": ns,
+                        "table": basename,
                         "cell": loc,
                         "level": "error",
                         "rule ID": "",
@@ -136,58 +173,49 @@ def main():
                         "label column of this table",
                     }
                 )
+    return lines, problems
 
-    # Maybe assign IDs
-    id_counter = 0
-    updated_ids = {}
 
-    # First get existing max ID number if there are existing IDs
-    for local_id in ids.values():
-        if local_id == "":
-            continue
-        try:
-            num_id = int(local_id.split(":")[1].lstrip("0"))
-        except ValueError:
-            # Not a number - stick with whatever ID counter is currently at
-            num_id = id_counter
-        if num_id > id_counter:
-            id_counter = num_id
+def main():
+    p = ArgumentParser()
+    p.add_argument("table")
+    p.add_argument("labels")
+    p.add_argument("output")
+    args = p.parse_args()
 
-    # Then assign IDs to any without
-    for row, local_id in ids.items():
-        if local_id == "":
-            id_counter += 1
-            id_str = str(id_counter).zfill(7)
-            local_id = f"{ns}:{id_str}"
-            updated_ids[row] = local_id
+    gecko_labels = []
+    with open(args.labels, "r") as f:
+        reader = csv.reader(f, delimiter="\t")
+        # Skip header
+        next(reader)
+        for row in reader:
+            gecko_labels.append(row[0])
 
-    # Fix any leading or trailing whitespace
-    lines = [{k: v.strip() for k, v in x.items()} for x in lines]
+    table = args.table
+    lines, problems = validate(table, basename, gecko_labels)
 
-    # Write new IDs and trimmed whitespace
-    with open(table, "w") as f:
-        writer = csv.DictWriter(
-            f,
-            delimiter="\t",
-            lineterminator="\n",
-            fieldnames=[
-                "Term ID",
-                "Label",
-                "Parent Term",
-                "Definition",
-                "GECKO Category",
-                "Suggested Categories",
-                "Comment",
-            ],
-        )
-        writer.writeheader()
-        row_idx = 1
-        for line in lines:
-            row_idx += 1
-            if row_idx in updated_ids:
-                local_id = updated_ids[row_idx]
-                line["Term ID"] = local_id
-            writer.writerow(line)
+    if lines:
+        # Fix any leading or trailing whitespace
+        lines = [{k: v.strip() for k, v in x.items()} for x in lines]
+
+        # Write new IDs and trimmed whitespace
+        with open(table, "w") as f:
+            writer = csv.DictWriter(
+                f,
+                delimiter="\t",
+                lineterminator="\n",
+                fieldnames=[
+                    "Term ID",
+                    "Label",
+                    "Parent Term",
+                    "Definition",
+                    "GECKO Category",
+                    "Suggested Categories",
+                    "Comment",
+                ],
+            )
+            writer.writeheader()
+            writer.writerows(lines)
 
     if problems:
         # Write any problems if we have them
