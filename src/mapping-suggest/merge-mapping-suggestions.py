@@ -62,7 +62,7 @@ dfx = pd.merge(template, dfsagg, how="left", left_on=["Label"], right_on=["term"
 del dfx["term"]
 
 dfx["Suggested Categories"] = [
-    " ".join(sorted(suggestions.split("|"), reverse=True))
+    "|".join(sorted(suggestions.split("|"), reverse=True))
     for suggestions in dfx["Suggested Categories"]
 ]
 
