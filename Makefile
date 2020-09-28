@@ -14,6 +14,7 @@
 # 6. [Build files](owl)
 # 7. [View results](build/)
 # 8. Finalize: commit and push changes
+# 9. [refresh_requirements](python_requirements)
 
 ### Configuration
 #
@@ -298,8 +299,8 @@ all_mapping_suggest: src/mapping-suggest/mapping-suggest-qc.py $(MAP_SUGGEST)
 id_generation_%: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/%.tsv
 	python3 $< -t $(word 2,$^)
 	
-id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv .cogs/tracked/metadata.tsv
-	python3 $< -t $(word 2,$^) -m .cogs/tracked/metadata.tsv
+id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv build/metadata.tsv
+	python3 $< -t $(word 2,$^) -m build/metadata.tsv
 
 build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
 													templates/%.tsv $(GECKO_LEXICAL) \
@@ -356,3 +357,4 @@ automated_mapping:
 
 python_requirements: requirements.txt
 	pip install -r requirements.txt
+	pip install --upgrade ontodev-cogs
