@@ -8,7 +8,7 @@
 #
 # 1. [Upload cohort data](./src/workflow.py?action=create)
 # 2. [Open Google Sheet](./src/workflow.py?action=open)
-# 3. Run automated mapping
+# 3. [Run automated mapping](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
 # 5. Run automated validation
 # 6. [Build files](owl)
@@ -209,12 +209,10 @@ build build/intermediate build/browser build/browser/cohorts data_dictionaries:
 	mkdir -p $@
 
 build/robot.jar: | build
-	echo "UNSKIP THIS"
-	#curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
 build/robot-tree.jar: | build
-	echo "UNSKIP THIS"
-	#curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
 
 build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
@@ -340,10 +338,14 @@ cogs_pull:
 	cogs pull
 
 templates/cogs.tsv: build/terminology.tsv .FORCE
-	echo "skip" #cp $< $@
+	cp $< $@
 
-cogs_mapping:
+automated_mapping:
+	make python_requirements
 	make cogs_pull
 	make mapping_suggest_cogs
-	echo "mv (!, not copy) back to .cogs"
+	mv templates/cogs.tsv build/terminology.tsv
 	cogs push
+
+python_requirements: requirements.txt
+	pip install -r requirements.txt
