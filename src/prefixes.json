@@ -13,7 +13,7 @@
 		"HP": "http://purl.obolibrary.org/obo/HP_",
 		"IAO": "http://purl.obolibrary.org/obo/IAO_",
 		"IHCC": "https://purl.ihccglobal.org/",
-		"KoGES": "https://purl.ihccglobal.org/KoGES_",
+		"KOGES": "https://purl.ihccglobal.org/KoGES_",
 		"OGMS": "http://purl.obolibrary.org/obo/OGMS_",
 		"MAELSTROM": "https://purl.ihccglobal.org/MAELSTROM_",
 		"MMO": "http://purl.obolibrary.org/obo/MMO_",
