@@ -6,7 +6,7 @@ __pycache__/
 src/mapping-suggest/combined_csv.csv
 .idea
 src/mapping-suggest/.ipynb_checkpoints
-
+.cogs/
 templates/_*.tsv
 src/mapping-suggest/raw_data.tsv
 templates/cogs.tsv

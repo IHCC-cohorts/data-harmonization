@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://purl.ihccglobal.org/vukuzazi.owl#"
-     xml:base="https://purl.ihccglobal.org/vukuzazi.owl"
+<rdf:RDF xmlns="https://purl.ihccglobal.org/vz.owl#"
+     xml:base="https://purl.ihccglobal.org/vz.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -13,8 +13,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://purl.ihccglobal.org/vukuzazi.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/vukuzazi/releases/2020-09-16/vukuzazi.owl"/>
+    <owl:Ontology rdf:about="https://purl.ihccglobal.org/vz.owl">
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/vz/releases/2020-09-24/vz.owl"/>
         <dc:description>The data dictionary containing variables collected by the Africa Health Research Institute&apos;s Vukuzazi programme.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:rights>You are free to:

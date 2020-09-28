@@ -6,16 +6,14 @@
 
 ### Workflow
 #
-# 1. Edit [mapping table](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit)
-# 2. [Update files](update)
-# 3. [Update suggested mappings](all_mapping_suggest)
-# 4. [Build Mappings](owl)
-# 5. [View results](build/)
-#
-# Demo browser:
-#
-# 1. [Update browser](browser)
-# 2. [View browser](build/browser/index.html)
+# 1. [Upload cohort data](./src/workflow.py?action=create)
+# 2. [Open Google Sheet](./src/workflow.py?action=open)
+# 3. Run automated mapping
+# 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
+# 5. Run automated validation
+# 6. [Build files](owl)
+# 7. [View results](build/)
+# 8. Finalize: commit and push changes
 
 ### Configuration
 #
@@ -49,7 +47,7 @@ endif
 # List of cohorts to generate files for (lowercase, using short ID where possible)
 # This short name is used throughout all build tasks and should be consistent for all files
 # --- THIS IS THE ONLY LINE THAT SHOULD BE EDITED WHEN ADDING A NEW COHORT ---
-COHORTS := gcs genomics-england koges saprin vukuzazi
+COHORTS := $(filter-out maelstrom, $(patsubst %.ttl, %, $(notdir $(wildcard metadata/*.ttl))))
 
 # --- DO NOT EDIT BELOW THIS LINE ---
 
@@ -59,6 +57,7 @@ TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 
 # OWL file in the build directory for all cohorts (contains xrefs)
 ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
+
 
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
