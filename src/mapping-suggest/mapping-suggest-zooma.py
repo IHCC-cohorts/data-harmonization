@@ -39,8 +39,11 @@ tsv_terms = tsv["Label"].values[2:]
 matches = []
 
 for term in tsv_terms:
-    print("Matching " + term)
-    matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
+    if isinstance(term,str):
+        print("Matching " + term)
+        matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
+    else:
+        print("ERROR term '%s' does not seem to be a string!" % term)
 
 df = pd.DataFrame(matches, columns=["term", "match", "match_label", "confidence"])
 

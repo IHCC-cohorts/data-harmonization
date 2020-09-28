@@ -51,6 +51,8 @@ len_pre = len(df)
 
 highest_current_id = 0
 
+print(df.head(5))
+
 if COL_TERM_ID in df.columns:
     df_nn = df[df[COL_TERM_ID].notnull()]
     ids = df_nn[df_nn[COL_TERM_ID].str.startswith(PREFIX)][COL_TERM_ID].tolist()
@@ -61,9 +63,13 @@ if COL_TERM_ID in df.columns:
 else:
     df[COL_TERM_ID] = ""
 
+print(df.head(5))
+
 
 for index, row in df.iterrows():
     value = row[COL_TERM_ID]
+    print(value)
+    sdsdsd
     if (type(value) != str) or (not value.startswith(PREFIX)):
         highest_current_id = highest_current_id + 1
         if highest_current_id > MAX_ID:
