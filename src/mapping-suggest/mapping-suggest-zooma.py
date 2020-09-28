@@ -43,8 +43,15 @@ for term in tsv_terms:
     matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
 
 df = pd.DataFrame(matches, columns=["term", "match", "match_label", "confidence"])
+
+zooma_confidence_map = {"LOW": 0.5, "MEDIUM": 0.75, "GOOD": 0.99, "HIGH": 1.0}
+if "zooma_confidence_mappings" in config:
+    zooma_confidence_map = config["zooma_confidence_mappings"]
+
+df["confidence"] = df["confidence"].replace(zooma_confidence_map)
+
 print("Zooma matching successful. First rows:")
-print(df.head())
+print(df.head(3))
 
 
 # Save template

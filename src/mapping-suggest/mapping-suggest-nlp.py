@@ -12,6 +12,9 @@ import pandas as pd
 from argparse import ArgumentParser
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import SGDClassifier
+from sklearn.preprocessing import MinMaxScaler
+
+from lib import ihcc_purl_prefix, obo_purl, load_ihcc_config
 
 parser = ArgumentParser()
 # parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
@@ -23,14 +26,7 @@ parser.add_argument(
     metavar="FILE",
 )
 parser.add_argument("-t", "--template", dest="template_file", help="Template file", metavar="FILE")
-parser.add_argument(
-    "-p",
-    "--probability-cut-off",
-    dest="probability_cut_off",
-    type=float,
-    help="The minimum probability (confidence) for making a suggestion.",
-    default=0.1,
-)
+parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
 parser.add_argument(
     "-g", "--gecko", dest="gecko_labels_file", help="File containing GECKO labels", metavar="FILE"
 )
@@ -45,6 +41,10 @@ args = parser.parse_args()
 
 # Loading and preprocessing data
 rdfs_label = "http://www.w3.org/2000/01/rdf-schema#label"
+config = load_ihcc_config(args.config_file)
+min_match_probability = 0.1
+if "min_match_probability" in config:
+    min_match_probability = config["min_match_probability"]
 zooma = pd.read_csv(args.training_data_file, sep="\t")
 gecko = pd.read_csv(args.gecko_labels_file, sep=",")
 gecko_labels = gecko[gecko["property"] == rdfs_label][["from", "label"]]
@@ -91,15 +91,28 @@ clf_lr = SGDClassifier(loss="log").fit(X_tfidf, training_data["y"])
 probs_lr = clf_lr.predict_proba(X_template_tfidf)
 
 # Finalising the matches into an IHCC matches dataframe
+scale_low = 0
+scale_high = 0.95
+if "rescale_nlp_matches" in config:
+    if "low" in config["rescale_nlp_matches"]:
+        scale_low = config["rescale_nlp_matches"]["low"]
+    if "high" in config["rescale_nlp_matches"]:
+        scale_high = config["rescale_nlp_matches"]["high"]
+scaler = MinMaxScaler(feature_range=(scale_low, scale_high))
 df_test_probs = pd.DataFrame(probs_lr, columns=clf_lr.classes_)
 df_test_probs["term"] = template_data["Label"].tolist()
 m = pd.melt(df_test_probs, id_vars=["term"], var_name="match", value_name="confidence")
-m = m[m["confidence"] > args.probability_cut_off]
+m["confidence"] = scaler.fit_transform(m[["confidence"]])
+m = m[m["confidence"] > min_match_probability]
 print(m.head())
 
 # Merging GECKO labels back in
 df_out = pd.merge(m, gecko_labels, how="left", left_on=["match"], right_on=["from"])
 df_out.rename({"label": "match_label"}, axis=1, inplace=True)
+df_out["match"] = [
+    str(item).replace(obo_purl, "").replace(ihcc_purl_prefix, "").replace("_", ":")
+    for item in df_out["match"]
+]
 del df_out["from"]
 
 print(df_out.head())

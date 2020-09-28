@@ -35,10 +35,8 @@ TEMPLATE_COLUMNS = [
     "Comment",
 ]
 
-
 print(args.mapping_suggestion_files)
 df = pd.concat([pd.read_csv(f, sep="\t") for f in args.mapping_suggestion_files])
-
 
 template = pd.read_csv(args.template_file, sep="\t")
 if "Suggested Categories" in template.columns:
@@ -55,12 +53,16 @@ if not set(template.columns.tolist()).issubset(TEMPLATE_COLUMNS):
 
 # Transform matches into the right format and merge into template
 dfs = df[~df["match"].str.startswith(ihcc_purl_prefix)].copy()
+dfs["confidence"] = ["%.2f" % item for item in dfs["confidence"]]
 dfs["confidence"] = dfs["confidence"].astype(str)
 dfs["Suggested Categories"] = dfs[["confidence", "match", "match_label"]].agg(" ".join, axis=1)
 dfs = dfs[["term", "Suggested Categories"]]
 dfsagg = dfs.groupby("term", as_index=False).agg(lambda x: " | ".join(set(x.dropna())))
 dfx = pd.merge(template, dfsagg, how="left", left_on=["Label"], right_on=["term"])
 del dfx["term"]
+
+dfx['Suggested Categories'] = [" ".join(sorted(suggestions.split("|"), reverse=True))
+                               for suggestions in dfx['Suggested Categories']]
 
 if len_pre != len(template):
     raise RuntimeError(
@@ -71,6 +73,7 @@ for col in TEMPLATE_COLUMNS:
     if col not in dfx.columns:
         dfx[col] = ""
 
+print(dfx.head(5))
 # Save template
 with open(args.template_file, "w") as write_csv:
     write_csv.write(dfx.to_csv(sep="\t", index=False))
