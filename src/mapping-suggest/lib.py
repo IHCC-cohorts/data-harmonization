@@ -212,6 +212,19 @@ def print_accuracy_results(y_test, y_pred):
     print("F1 for each class : " + str(f1_all))
 
 
+def format_suggestions(suggestions):
+    splitted = sorted([x.strip() for x in suggestions.split("|")], reverse=True)
+    covered = []
+    filtered = []
+    for suggestion in splitted:
+        mapping = [x.strip() for x in suggestion.split(" ")][1]
+        print(mapping)
+        if mapping not in covered:
+            filtered.append(suggestion)
+            covered.append(mapping)
+    return " | ".join(filtered).strip()
+
+
 def dir_path(string):
     if os.path.isdir(string):
         return string

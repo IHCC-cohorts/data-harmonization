@@ -9,7 +9,7 @@ author: Nico Matentzoglu for Knocean Inc., 15 September 2020
 
 import pandas as pd
 from argparse import ArgumentParser
-from lib import ihcc_purl_prefix
+from lib import ihcc_purl_prefix, format_suggestions
 
 parser = ArgumentParser()
 parser.add_argument(
@@ -62,8 +62,7 @@ dfx = pd.merge(template, dfsagg, how="left", left_on=["Label"], right_on=["term"
 del dfx["term"]
 
 dfx["Suggested Categories"] = [
-    "|".join(sorted(suggestions.split("|"), reverse=True))
-    for suggestions in dfx["Suggested Categories"]
+    format_suggestions(suggestions) for suggestions in dfx["Suggested Categories"]
 ]
 
 if len_pre != len(template):
