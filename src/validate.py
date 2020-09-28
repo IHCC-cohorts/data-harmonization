@@ -2,6 +2,7 @@ import collections
 import csv
 import logging
 import os
+import re
 import sys
 
 from argparse import ArgumentParser
@@ -100,6 +101,40 @@ def validate(table, gecko_labels):
         for row in reader:
             lines.append(row)
 
+            # Validate that the term ID exists and matches a numeric pattern
+            term_id = row["Term ID"]
+            if not term_id or term_id.strip() == "":
+                problem_count += 1
+                problems.append(
+                    {
+                        "ID": problem_count,
+                        "table": basename,
+                        "cell": idx_to_a1(row_idx, 1),
+                        "level": "error",
+                        "rule ID": "",
+                        "rule name": "Missing term ID",
+                        "value": "",
+                        "fix": "",
+                        "instructions": "run the automated_mapping script to assign term IDs",
+                    }
+                )
+            elif not re.match(r"[A-Z]+:[0-9]{7}", term_id):
+                problem_count += 1
+                problems.append(
+                    {
+                        "ID": problem_count,
+                        "table": basename,
+                        "cell": idx_to_a1(row_idx, 1),
+                        "level": "error",
+                        "rule ID": "",
+                        "rule name": "Invalid term ID",
+                        "value": term_id,
+                        "fix": "",
+                        "instructions": "the term ID must follow the pattern COHORT:num_id where "
+                        "num_id has 7 digits (e.g., FOO:0000020)",
+                    }
+                )
+
             # Add label to labels map
             label = row["Label"]
             if label in labels:
@@ -192,7 +227,7 @@ def main():
             gecko_labels.append(row[0])
 
     table = args.table
-    lines, problems = validate(table, basename, gecko_labels)
+    lines, problems = validate(table, gecko_labels)
 
     if lines:
         # Fix any leading or trailing whitespace
