@@ -304,7 +304,7 @@ id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.t
 build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
 													templates/%.tsv $(GECKO_LEXICAL) \
 													id_generation_% | build/intermediate
-	python3 $< -z $(ZOOMA_DATASET) -p 0.1 -t templates/$*.tsv -g $(GECKO_LEXICAL) -o $@
+	python3 $< -z $(ZOOMA_DATASET) -c $(MAP_SCRIPT_CONFIG) -t templates/$*.tsv -g $(GECKO_LEXICAL) -o $@
 
 build/intermediate/%_mapping_suggestions_zooma.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-zooma.py \
 																										$(MAP_SCRIPT_CONFIG) templates/%.tsv \

@@ -61,8 +61,10 @@ dfsagg = dfs.groupby("term", as_index=False).agg(lambda x: " | ".join(set(x.drop
 dfx = pd.merge(template, dfsagg, how="left", left_on=["Label"], right_on=["term"])
 del dfx["term"]
 
-dfx['Suggested Categories'] = [" ".join(sorted(suggestions.split("|"), reverse=True))
-                               for suggestions in dfx['Suggested Categories']]
+dfx["Suggested Categories"] = [
+    " ".join(sorted(suggestions.split("|"), reverse=True))
+    for suggestions in dfx["Suggested Categories"]
+]
 
 if len_pre != len(template):
     raise RuntimeError(
