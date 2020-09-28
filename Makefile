@@ -298,8 +298,8 @@ all_mapping_suggest: src/mapping-suggest/mapping-suggest-qc.py $(MAP_SUGGEST)
 id_generation_%: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/%.tsv
 	python3 $< -t $(word 2,$^)
 	
-id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv .cogs/metadata.tsv
-	python3 $< -t $(word 2,$^) -m .cogs/metadata.tsv
+id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv .cogs/tracked/metadata.tsv
+	python3 $< -t $(word 2,$^) -m .cogs/tracked/metadata.tsv
 
 build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
 													templates/%.tsv $(GECKO_LEXICAL) \
