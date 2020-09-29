@@ -225,6 +225,14 @@ def format_suggestions(suggestions):
     return " | ".join(filtered).strip()
 
 
+def top_suggestion(suggestions):
+    splitted = sorted([x.strip() for x in suggestions.split("|")], reverse=True)
+    if splitted:
+        mapping = " ".join([x.strip() for x in splitted[0].split(" ")][2:])
+        return mapping
+    return ""
+
+
 def dir_path(string):
     if os.path.isdir(string):
         return string
@@ -237,4 +245,8 @@ class Error(Exception):
 
 
 class FailedWebServiceCallError(Error):
+    pass
+
+
+class QCError(Error):
     pass

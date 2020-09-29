@@ -10,6 +10,7 @@ author: Nico Matentzoglu for Knocean Inc., 26 August 2020
 
 import pandas as pd
 from argparse import ArgumentParser
+from lib import QCError, top_suggestion
 
 
 class QCReport:
@@ -37,8 +38,25 @@ parser.add_argument(
 parser.add_argument("-o", "--output", dest="report_out_path", help="Output file", metavar="FILE")
 args = parser.parse_args()
 
-df = pd.concat([pd.read_csv(f) for f in args.templates])
-df.head()
+df = pd.concat([pd.read_csv(f, sep="\t") for f in args.templates])
+print(df.head())
+print(df.describe())
+
+duplicated = df[df.duplicated(['Term ID'], keep=False)]
+if len(duplicated) > 0:
+    pass
+    print("ERROR: There are templates with duplicate ids: %s" % str(duplicated))
+    # raise QCError("There are templates with duplicate ids: %s" % str(duplicated))
+
+df["Top Suggestion"] = [
+    top_suggestion(suggestions) for suggestions in df["Suggested Categories"]
+]
+
+print(len(df))
+df_wrong_matches = df[df['Top Suggestion'] != df['GECKO Category']]
+print(len(df_wrong_matches))
+df_wrong_matches.to_csv("QC.tsv", sep="\t", index=False)
+print(df_wrong_matches[['Term ID', 'GECKO Category', 'Top Suggestion']].head())
 
 # Two checks:
 # 1) does the primary recommendation correspond to the mappings?

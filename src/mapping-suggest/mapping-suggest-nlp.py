@@ -74,7 +74,7 @@ training_data = raw_data.drop_duplicates()
 template_data = template[["Term ID", "Label"]].dropna().copy()
 # Next: reduce the template data to rows that actually contain
 # term data (ignoring empty or header rows)
-template_data = template_data[template_data["Term ID"].str.match(r"[a-zA-z]+[:][0-9]+", case=False)]
+template_data = template_data[template_data["Term ID"].str.match(r"[a-zA-z]+[:].*", case=False)]
 print(template_data.head())
 
 # Building a TFIDF matrix for the training data
