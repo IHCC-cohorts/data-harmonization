@@ -321,31 +321,33 @@ mapping_suggest_%: templates/%.tsv \
 build/data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv
 	python3 $^ $@
 
+.PHONY: cogs_apply
 cogs_apply: build/data-validation.tsv
 	cogs apply build/data-validation.tsv
 
 # Pipeline to build a the zooma dataset that stores the existing mappings
 
-.PHONY: .FORCE
 MAP_DATA := $(foreach C, $(COHORTS), build/intermediate/$(C)-xrefs-sparql.csv)
 
 # TODO: Should this depend on data_dictionaries/%.owl or better build/%.owl?
 build/intermediate/%-xrefs-sparql.csv: build/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
-$(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql .FORCE | build/intermediate build/robot.jar
+$(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
 $(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
 	python3 $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
 
+.PHONY: cogs_pull
 cogs_pull:
 	cogs fetch
 	cogs pull
 
-templates/cogs.tsv: build/terminology.tsv .FORCE
+templates/cogs.tsv: build/terminology.tsv
 	cp $< $@
 
+.PHONY: automated_mapping
 automated_mapping:
 	make cogs_pull
 	make mapping_suggest_cogs
