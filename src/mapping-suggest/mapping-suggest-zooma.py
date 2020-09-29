@@ -16,7 +16,7 @@ from lib import load_ihcc_config, map_term
 
 parser = ArgumentParser()
 parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
-parser.add_argument("-t", "--template", dest="tsv_path", help="Template file file", metavar="FILE")
+parser.add_argument("-t", "--template", dest="tsv_path", help="Template file", metavar="FILE")
 parser.add_argument("-o", "--output", dest="tsv_out_path", help="Output file", metavar="FILE")
 args = parser.parse_args()
 
@@ -39,7 +39,7 @@ tsv_terms = tsv["Label"].values[2:]
 matches = []
 
 for term in tsv_terms:
-    if isinstance(term,str):
+    if isinstance(term, str):
         print("Matching " + term)
         matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
     else:

@@ -7,6 +7,7 @@ author: Nico Matentzoglu for Knocean Inc., 22 September 2020
 """
 
 import pandas as pd
+import numpy as np
 from pathlib import Path
 from argparse import ArgumentParser
 
@@ -45,6 +46,7 @@ NUM_PADDED_ZERO = args.length_of_id
 MAX_ID = int("9" * NUM_PADDED_ZERO)
 PREFIX = "%s:" % dd_id
 COL_TERM_ID = "Term ID"
+COL_LABEL = "Label"
 
 df = pd.read_csv(args.template_file, sep="\t", dtype=str)
 len_pre = len(df)
@@ -58,7 +60,7 @@ if COL_TERM_ID in df.columns:
     ids = df_nn[df_nn[COL_TERM_ID].str.startswith(PREFIX)][COL_TERM_ID].tolist()
     ids = [i.replace(PREFIX, "") for i in ids]
     ids_int = [int(i) for i in ids if i.isdigit()]
-    if ids_int: 
+    if ids_int:
         highest_current_id = max(ids)
 else:
     df[COL_TERM_ID] = ""
@@ -68,19 +70,19 @@ print(df.head(5))
 
 for index, row in df.iterrows():
     value = row[COL_TERM_ID]
-    print(value)
-    sdsdsd
-    if (type(value) != str) or (not value.startswith(PREFIX)):
-        highest_current_id = highest_current_id + 1
-        if highest_current_id > MAX_ID:
-            raise RuntimeError(
-                "The maximum number of digits is exhausted (%d), "
-                + "you need to pick a larger range!" % NUM_PADDED_ZERO
+    if row[COL_LABEL] or (value.dtype == float and not np.isnan(value)):
+        print(str(value) + " " + str(row[COL_LABEL]))
+        if (type(value) != str) or (not value.startswith(PREFIX)):
+            highest_current_id = highest_current_id + 1
+            if highest_current_id > MAX_ID:
+                raise RuntimeError(
+                    "The maximum number of digits is exhausted (%d), "
+                    + "you need to pick a larger range!" % NUM_PADDED_ZERO
+                )
+            df.at[index, COL_TERM_ID] = "%s%s" % (
+                PREFIX,
+                str(highest_current_id).zfill(NUM_PADDED_ZERO),
             )
-        df.at[index, COL_TERM_ID] = "%s%s" % (
-            PREFIX,
-            str(highest_current_id).zfill(NUM_PADDED_ZERO),
-        )
 
 if len_pre != len(df):
     raise RuntimeError(

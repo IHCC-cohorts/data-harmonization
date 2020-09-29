@@ -6,3 +6,4 @@ requests
 ontodev-cogs
 pyyaml
 scikit-learn
+numpy
