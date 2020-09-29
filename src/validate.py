@@ -149,21 +149,23 @@ def validate(table, gecko_labels):
 
             # Check that GECKO category is valid
             gecko_cat = row["GECKO Category"].strip()
-            if gecko_cat != "" and gecko_cat not in gecko_labels:
-                problem_count += 1
-                problems.append(
-                    {
-                        "ID": problem_count,
-                        "table": basename,
-                        "cell": idx_to_a1(row_idx, 5),
-                        "level": "error",
-                        "rule ID": "",
-                        "rule name": "Invalid GECKO category",
-                        "value": gecko_cat,
-                        "fix": "",
-                        "instructions": "select a valid GECKO category",
-                    }
-                )
+            if gecko_cat != "":
+                for gc in gecko_cat.split("|"):
+                    if gc not in gecko_labels:
+                        problem_count += 1
+                        problems.append(
+                            {
+                                "ID": problem_count,
+                                "table": basename,
+                                "cell": idx_to_a1(row_idx, 5),
+                                "level": "error",
+                                "rule ID": "",
+                                "rule name": "Invalid GECKO category",
+                                "value": gecko_cat,
+                                "fix": "",
+                                "instructions": "select a valid GECKO category",
+                            }
+                        )
             row_idx += 1
 
     # Validate labels
@@ -253,6 +255,7 @@ def main():
             writer.writerows(lines)
 
     if problems:
+        logging.critical(f"Validation failed with {problem_count} errors!")
         # Write any problems if we have them
         with open(args.output, "w") as f:
             writer = csv.DictWriter(
