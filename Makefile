@@ -11,7 +11,7 @@
 # 3. [Run automated mapping](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
 # 5. [Run automated validation](automated_validation)
-# 6. [Build files](owl)
+# 6. [Build files](build_files)
 # 7. [View results](build/)
 # 8. Finalize: commit and push changes
 # 9. [refresh_requirements](python_requirements)
@@ -102,9 +102,21 @@ build/%.owl: build/intermediate/properties.owl build/%.tsv build/intermediate/%-
 	template \
 	--template $(word 3,$^) \
 	--merge-before \
-	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" --version-iri "https://purl.ihccglobal.org/$(notdir $(basename $@))/releases/$(TODAY)/$(notdir $@)" \
+	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
+	--version-iri "https://purl.ihccglobal.org/$(notdir $(basename $@))/releases/$(TODAY)/$(notdir $@)" \
 	--annotation-file $(word 4,$^) \
 	--output $@
+
+# Generate a metadata file for the current cohort, move the terminology to templates, & add the prefix
+# TODO - this should not be a phony task name,
+#        ideally we should use the branch name here but all other tasks are using the "metadata" file
+prepare_build: src/prepare_build.py build/metadata.tsv build/terminology.tsv src/prefixes.json
+	python3 $^
+
+.PHONY: build_files
+build_files:
+	make prepare_build
+	make owl
 
 
 ### GECKO Mapping TSVs
@@ -323,7 +335,7 @@ mapping_suggest_%: templates/%.tsv \
 					build/intermediate/%_mapping_suggestions_nlp.tsv
 	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^))
 
-build/cogs-data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv
+build/cogs-data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv build/gecko_labels.tsv
 	python3 $^ $@
 
 # Pipeline to build a the zooma dataset that stores the existing mappings
