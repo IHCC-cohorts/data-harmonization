@@ -25,9 +25,10 @@ props = {
 
 def main():
     p = ArgumentParser()
-    p.add_argument("metadata")
+    p.add_argument("cohort_metadata")
     p.add_argument("terminology")
     p.add_argument("prefixes")
+    p.add_argument("all_metadata")
     args = p.parse_args()
 
     # Create a graph to store the triples about the cohort
@@ -39,7 +40,8 @@ def main():
     # Parse the metadata file and add contents to the graph
     cohort_id = None
     ontology_iri = None
-    with open(args.metadata, "r") as f:
+    title = None
+    with open(args.cohort_metadata, "r") as f:
         reader = csv.reader(f, delimiter="\t")
         idx = 1
         for row in reader:
@@ -49,6 +51,8 @@ def main():
                 ontology_iri = f"https://purl.ihccglobal.org/{cohort_id}.owl"
                 gout.add((URIRef(ontology_iri), RDF.type, OWL.Ontology))
             elif key in props:
+                if key == "Title":
+                    title = row[1].strip()
                 if not ontology_iri:
                     logging.critical("This sheet must define a 'Cohort ID' first")
                     sys.exit(1)
@@ -67,11 +71,23 @@ def main():
     prefix = cohort_id.upper()
     prefixes["@context"][prefix] = f"https://purl.ihccglobal.org/{prefix}_"
     with open(args.prefixes, "w") as f:
-        f.write(json.dumps(prefixes, indent=4))
+        f.write(json.dumps(prefixes, indent=4, sort_keys=True))
+
+    # Add cohort details to data/metadata.json
+    if not title:
+        logging.error(
+            "Cohort title is missing from the metadata sheet "
+            "- this cohort will not appear in the index!"
+        )
+    else:
+        with open(args.all_metadata, "r") as f:
+            metadata = json.load(f)
+        metadata[title] = {"id": prefix, "prefix": prefix, "data_dictionary": "", "mapping": ""}
+        with open(args.all_metadata, "w") as f:
+            f.write(json.dumps(metadata, indent=4, sort_keys=True))
 
     # Copy the terminology file
     shutil.copyfile(args.terminology, f"templates/{cohort_id}.tsv")
-
 
 
 if __name__ == "__main__":

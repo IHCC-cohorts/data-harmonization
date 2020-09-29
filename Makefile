@@ -110,7 +110,7 @@ build/%.owl: build/intermediate/properties.owl build/%.tsv build/intermediate/%-
 # Generate a metadata file for the current cohort, move the terminology to templates, & add the prefix
 # TODO - this should not be a phony task name,
 #        ideally we should use the branch name here but all other tasks are using the "metadata" file
-prepare_build: src/prepare_build.py build/metadata.tsv build/terminology.tsv src/prefixes.json
+prepare_build: src/prepare.py build/metadata.tsv build/terminology.tsv src/prefixes.json data/metadata.json
 	python3 $^
 
 .PHONY: build_files
