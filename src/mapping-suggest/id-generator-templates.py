@@ -69,7 +69,6 @@ for index, row in df.iterrows():
     if row[COL_LABEL] or (value.dtype == float and not np.isnan(value)):
         print(str(value) + " " + str(row[COL_LABEL]))
         if (type(value) != str) or (not value.startswith(PREFIX)):
-            print(highest_current_id)
             highest_current_id = highest_current_id + 1
             if highest_current_id > MAX_ID:
                 raise RuntimeError(
