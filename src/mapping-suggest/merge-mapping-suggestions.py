@@ -77,4 +77,4 @@ for col in TEMPLATE_COLUMNS:
 print(dfx.head(5))
 # Save template
 with open(args.template_file, "w") as write_csv:
-    write_csv.write(dfx.to_csv(sep="\t", index=False))
+    write_csv.write(dfx[TEMPLATE_COLUMNS].to_csv(sep="\t", index=False))
