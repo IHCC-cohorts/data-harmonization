@@ -14,7 +14,6 @@
 # 6. [Build files](owl)
 # 7. [View results](build/)
 # 8. Finalize: commit and push changes
-# 9. [refresh_requirements](python_requirements)
 
 ### Configuration
 #
@@ -348,13 +347,8 @@ templates/cogs.tsv: build/terminology.tsv .FORCE
 	cp $< $@
 
 automated_mapping:
-	make python_requirements
 	make cogs_pull
 	make mapping_suggest_cogs
 	mv templates/cogs.tsv build/terminology.tsv
 	make cogs_apply
 	cogs push
-
-python_requirements: requirements.txt
-	pip install -r requirements.txt
-	pip install --upgrade ontodev-cogs
