@@ -29,7 +29,7 @@ ols_oboid = config["ols_oboid"]
 
 # These are the default confidence levels from Zooma
 confidence_map = ["HIGH", "GOOD", "MEDIUM", "LOW"]
-print(config)
+print("Zooma config: %s" % str(config))
 
 # Loading data
 tsv = pd.read_csv(args.tsv_path, sep="\t")
@@ -40,7 +40,7 @@ matches = []
 
 for term in tsv_terms:
     if isinstance(term, str):
-        print("Matching " + term)
+        # print("Matching " + term)
         matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
     else:
         print("ERROR term '%s' does not seem to be a string!" % term)
@@ -53,9 +53,11 @@ if "zooma_confidence_mappings" in config:
 
 df["confidence"] = df["confidence"].replace(zooma_confidence_map)
 
-print("Zooma matching successful. First rows:")
-print(df.head(3))
-
+if len(df) > 0:
+    print("Zooma matching successful. First two results:")
+    print(df[["term", "match", "confidence"]].head(2))
+else:
+    print("WARNING: Zooma matching did not yield any results at all")
 
 # Save template
 with open(args.tsv_out_path, "w") as write_csv:

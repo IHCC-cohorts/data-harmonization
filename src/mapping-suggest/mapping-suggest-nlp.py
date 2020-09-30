@@ -75,7 +75,6 @@ template_data = template[["Term ID", "Label"]].dropna().copy()
 # Next: reduce the template data to rows that actually contain
 # term data (ignoring empty or header rows)
 template_data = template_data[template_data["Term ID"].str.match(r"[a-zA-z]+[:].*", case=False)]
-print(template_data.head())
 
 # Building a TFIDF matrix for the training data
 tfidf_vect = TfidfVectorizer(ngram_range=(1, 2), min_df=2).fit(training_data["X"])
@@ -104,7 +103,6 @@ df_test_probs["term"] = template_data["Label"].tolist()
 m = pd.melt(df_test_probs, id_vars=["term"], var_name="match", value_name="confidence")
 m["confidence"] = scaler.fit_transform(m[["confidence"]])
 m = m[m["confidence"] > min_match_probability]
-print(m.head())
 
 # Merging GECKO labels back in
 df_out = pd.merge(m, gecko_labels, how="left", left_on=["match"], right_on=["from"])
@@ -115,7 +113,11 @@ df_out["match"] = [
 ]
 del df_out["from"]
 
-print(df_out.head())
+if len(df_out) > 0:
+    print("NLP matching successful. First two results:")
+    print(df_out[["term", "match", "confidence"]].head(2))
+else:
+    print("WARNING: NLP matching did not yield any results at all")
 
 # Save template
 with open(args.prediction_results_file, "w") as write_csv:

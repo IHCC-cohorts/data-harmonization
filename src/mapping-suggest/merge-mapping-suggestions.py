@@ -9,7 +9,7 @@ author: Nico Matentzoglu for Knocean Inc., 15 September 2020
 
 import pandas as pd
 from argparse import ArgumentParser
-from lib import ihcc_purl_prefix, format_suggestions
+from lib import ihcc_purl_prefix, format_suggestions, QCError
 
 parser = ArgumentParser()
 parser.add_argument(
@@ -74,7 +74,12 @@ for col in TEMPLATE_COLUMNS:
     if col not in dfx.columns:
         dfx[col] = ""
 
-print(dfx.head(5))
+if len(dfx) > 0:
+    print("Merging suggestions successful. First two results:")
+    print(dfx[TEMPLATE_COLUMNS].head(2))
+else:
+    raise QCError("Merging the suggestions failed: empty result.")
+
 # Save template
-with open(args.template_file, "w") as write_csv:
+with open(args.mapping_suggestions_out_path, "w") as write_csv:
     write_csv.write(dfx[TEMPLATE_COLUMNS].to_csv(sep="\t", index=False))
