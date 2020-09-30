@@ -5,18 +5,22 @@
 # Ensure that your text editor shows you those characters.
 
 ### Workflow
+# The following workflow defines all tasks necessary to upload,
+# preprocess, share, and map a new data dictionary.
 #
 # 1. [Upload cohort data](./src/workflow.py?action=create)
 # 2. [Open Google Sheet](./src/workflow.py?action=open)
-# 3. [Run automated mapping](automated_mapping)
+# 3. [Run automated mapping for new data dictionary](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
 # 5. Run automated validation
-# 6. [Build files](owl)
+# 6. Rebuild data dictionaries (see in tasks below)
 # 7. [View results](build/)
 # 8. Finalize: commit and push changes
 #
-#### Other tasks
-# * [Run all mappings](all_mapping_suggest)
+#### IHCC Data Admin Tasks
+# * [Rebuild data dictionaries](owl)
+# * [Update all data](update)
+# * [Run all mappings (quality control)](all_mapping_suggest)
 
 ### Configuration
 #
@@ -287,7 +291,7 @@ serve: $(BROWSER)
 # Pipeline to generate mapping suggestions for a template. The template file is loaded,
 # the suggestions generated and added as a colum "Suggested Categories" to the template.
 
-MAP_SUGGEST := $(foreach C, $(COHORTS), mapping_suggest_$(C))
+MAP_SUGGEST := $(foreach C, $(COHORTS), build/suggestions_$(C).tsv)
 GECKO_LEXICAL = build/intermediate/gecko-xrefs-sparql.csv
 ZOOMA_DATASET = data/ihcc-mapping-suggestions-zooma.tsv
 MAP_SCRIPT_DIR = src/mapping-suggest
@@ -295,7 +299,7 @@ MAP_SCRIPT_CONFIG = $(MAP_SCRIPT_DIR)/mapping-suggest-config.yml
 
 .PHONY: all_mapping_suggest
 all_mapping_suggest: src/mapping-suggest/mapping-suggest-qc.py $(MAP_SUGGEST)
-	python3 $< --templates $(TEMPLATES) -v -o build/$@_report.tsv
+	python3 $< --templates $(MAP_SUGGEST) -v -o build/$@_report.tsv
 
 .PHONY: id_generation_%
 id_generation_%: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/%.tsv
@@ -310,16 +314,15 @@ build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-sugg
 	python3 $< -z $(ZOOMA_DATASET) -c $(MAP_SCRIPT_CONFIG) -t templates/$*.tsv -g $(GECKO_LEXICAL) -o $@
 
 build/intermediate/%_mapping_suggestions_zooma.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-zooma.py \
-																										$(MAP_SCRIPT_CONFIG) templates/%.tsv \
-																										id_generation_% | build/intermediate
+													$(MAP_SCRIPT_CONFIG) templates/%.tsv \
+													id_generation_% | build/intermediate
 	python3 $< -c $(MAP_SCRIPT_CONFIG) -t templates/$*.tsv -o $@
 
 # All of the mapping suggestion tables should have the following columns: ["confidence", "match", "match_label"]
-.PHONY: mapping_suggest_%
-mapping_suggest_%: templates/%.tsv \
+build/suggestions_%.tsv: templates/%.tsv \
 					build/intermediate/%_mapping_suggestions_zooma.tsv \
 					build/intermediate/%_mapping_suggestions_nlp.tsv
-	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^))
+	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^)) -o $@
 
 build/data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv
 	python3 $^ $@
@@ -339,21 +342,20 @@ build/intermediate/%-xrefs-sparql.csv: build/%.owl src/queries/ihcc-mapping.spar
 $(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/intermediate build/robot.jar
 	$(ROBOT) query --input $< --query $(word 2,$^) $@
 
-$(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
-	python3 $(MAP_SCRIPT_DIR)/ihcc_zooma_dataset.py $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
+$(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc-zooma-dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
+	python3 $< $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
 
 .PHONY: cogs_pull
 cogs_pull:
 	cogs fetch
 	cogs pull
 
-templates/cogs.tsv: build/terminology.tsv
-	cp $< $@
-
 .PHONY: automated_mapping
 automated_mapping:
 	make cogs_pull
-	make mapping_suggest_cogs
-	mv templates/cogs.tsv build/terminology.tsv
+	cp build/terminology.tsv templates/cogs.tsv
+	make build/suggestions_cogs.tsv
+	cp build/suggestions_cogs.tsv build/terminology.tsv
+	rm -f templates/cogs.tsv
 	make cogs_apply
 	cogs push

@@ -1,4 +1,4 @@
-PYTHON_FILE_NAMES := id-generator-templates create-data-validation merge-mapping-suggestions mapping-suggest-qc mapping-suggest-nlp mapping-suggest-zooma ihcc-zooma-dataset lib
+PYTHON_FILE_NAMES := id-generator-templates merge-mapping-suggestions mapping-suggest-qc mapping-suggest-nlp mapping-suggest-zooma ihcc-zooma-dataset lib
 PYTHON_FILES := $(patsubst %, %.py, $(PYTHON_FILE_NAMES))
 
 .PHONY: lint
