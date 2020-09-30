@@ -292,12 +292,10 @@ build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
 
 # We always get the latest changes before running validation
 build/cogs-problems.tsv: src/validate.py build/terminology.tsv build/gecko_labels.tsv
-	rm -rf $@ && touch $@
 	python3 $^ $@
 
 .PHONY: automated_validation
 automated_validation:
-	make python_requirements
 	make cogs_pull
 	make cogs-apply-problems
 	cogs push

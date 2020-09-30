@@ -254,27 +254,27 @@ def main():
             writer.writeheader()
             writer.writerows(lines)
 
-    if problems:
-        logging.critical(f"Validation failed with {problem_count} errors!")
-        # Write any problems if we have them
-        with open(args.output, "w") as f:
-            writer = csv.DictWriter(
-                f,
-                delimiter="\t",
-                lineterminator="\n",
-                fieldnames=[
-                    "ID",
-                    "table",
-                    "cell",
-                    "level",
-                    "rule ID",
-                    "rule name",
-                    "value",
-                    "fix",
-                    "instructions",
-                ],
-            )
-            writer.writeheader()
+    # Write any problems if we have them (always write the headers)
+    with open(args.output, "w") as f:
+        writer = csv.DictWriter(
+            f,
+            delimiter="\t",
+            lineterminator="\n",
+            fieldnames=[
+                "ID",
+                "table",
+                "cell",
+                "level",
+                "rule ID",
+                "rule name",
+                "value",
+                "fix",
+                "instructions",
+            ],
+        )
+        writer.writeheader()
+        if problems:
+            logging.critical(f"Validation failed with {len(problems)} errors!")
             writer.writerows(problems)
 
 
