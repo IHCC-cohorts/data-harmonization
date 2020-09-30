@@ -18,9 +18,10 @@
 # 8. Finalize: commit and push changes
 #
 #### IHCC Data Admin Tasks
-# * [Rebuild data dictionaries](owl)
-# * [Update all data](update)
+# * [Update all data, including data dictionaries](all)
+# * [Update only data dictionaries](owl)
 # * [Run all mappings (quality control)](all_mapping_suggest)
+# * [Clean build directory](clean)
 
 ### Configuration
 #
