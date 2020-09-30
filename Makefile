@@ -14,6 +14,9 @@
 # 6. [Build files](owl)
 # 7. [View results](build/)
 # 8. Finalize: commit and push changes
+#
+#### Other tasks
+# * [Run all mappings](all_mapping_suggest)
 
 ### Configuration
 #

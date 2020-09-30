@@ -40,7 +40,7 @@ matches = []
 
 for term in tsv_terms:
     if isinstance(term, str):
-        print("Matching " + term)
+        # print("Matching " + term)
         matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
     else:
         print("ERROR term '%s' does not seem to be a string!" % term)

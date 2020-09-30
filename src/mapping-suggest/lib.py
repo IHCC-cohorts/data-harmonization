@@ -213,12 +213,19 @@ def print_accuracy_results(y_test, y_pred):
 
 
 def format_suggestions(suggestions):
+    if not isinstance(suggestions, str):
+        return ""
+    if not (len(suggestions) > 4):
+        # There have to be at least 5 characters even in the
+        # most conservative of assumptions: '0 A A'
+        print("WARNING: %s is not a valid suggestion and will be removed!" % suggestions)
+        return ""
     splitted = sorted([x.strip() for x in suggestions.split("|")], reverse=True)
     covered = []
     filtered = []
     for suggestion in splitted:
         mapping = [x.strip() for x in suggestion.split(" ")][1]
-        print(mapping)
+        # print(mapping)
         if mapping not in covered:
             filtered.append(suggestion)
             covered.append(mapping)
@@ -226,6 +233,13 @@ def format_suggestions(suggestions):
 
 
 def top_suggestion(suggestions):
+    if not isinstance(suggestions, str):
+        return ""
+    if not (len(suggestions) > 4):
+        # There have to be at least 5 characters even in the
+        # most conservative of assumptions: '0 A A'
+        print("WARNING: %s is not a valid suggestion and will be removed!" % suggestions)
+        return ""
     splitted = sorted([x.strip() for x in suggestions.split("|")], reverse=True)
     if splitted:
         mapping = " ".join([x.strip() for x in splitted[0].split(" ")][2:])
