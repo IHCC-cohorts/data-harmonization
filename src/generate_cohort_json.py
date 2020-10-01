@@ -1,5 +1,6 @@
 import csv
 import json
+import logging
 import os
 
 from argparse import ArgumentParser, FileType
@@ -82,10 +83,10 @@ def main():
 
     all_data = []
     for cohort_name, cohort_metadata in metadata.items():
-        cohort_id = cohort_metadata["id"].lower()
+        cohort_id = cohort_metadata["prefix"].lower()
         file_name = f"templates/{cohort_id}.tsv"
         if not os.path.exists(file_name):
-            print(f"{cohort_name} template {file_name} does not exist!")
+            logging.critical(f"{cohort_name} template {file_name} does not exist!")
             continue
         gecko_cats = []
         with open(file_name, "r") as f:
@@ -209,11 +210,11 @@ def get_categories(categories, gecko):
     for leaf in categories:
         result = get_path(gecko, leaf)
         if result is None:
-            print('ERROR - unable to find "{0}"'.format(leaf))
+            logging.error(f'unable to find "{leaf}"')
             continue
         path = result[0]
         if path is None:
-            print('ERROR - unable to find "{0}"'.format(leaf))
+            logging.error(f'unable to find "{leaf}"')
             continue
         has_children = result[1]
         path.reverse()
