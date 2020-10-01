@@ -92,8 +92,8 @@ def validate(table, gecko_labels):
             col_idx += 1
 
         if not headers_valid:
-            logging.critical(
-                "Unable to complete validation - please fix the headers and try again!"
+            print(
+                "\nERROR: Unable to complete validation due to invalid headers\n"
             )
             return None, problems
 
@@ -267,8 +267,10 @@ def main():
         )
         writer.writeheader()
         if problems:
-            logging.critical(f"Validation failed with {len(problems)} errors!")
+            print(f"\nERROR: Validation failed with {len(problems)} errors!\n")
             writer.writerows(problems)
+        else:
+            print("\nValidation completed successfully!\n")
 
 
 if __name__ == "__main__":
