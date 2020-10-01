@@ -13,9 +13,9 @@
 # 3. [Run automated mapping for new data dictionary](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
 # 5. [Run automated validation](automated_validation)
-# 6. Rebuild data dictionaries (see in tasks below)
+# 6. [Make a test build](build_all)
 # 7. [View results](build/)
-# 8. [Add files to Version Control](finalize)
+# 8. [Add data dictionary to Version Control](finalize)
 #
 #### IHCC Data Admin Tasks
 # * [Update all data, including data dictionaries](build_all)
