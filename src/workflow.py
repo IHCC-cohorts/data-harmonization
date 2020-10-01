@@ -15,7 +15,7 @@ prefixes = {}
 
 email_pattern = re.compile("^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$")
 cohort_pattern = re.compile("^[A-Z0-9]+$")
-file_pattern = re.compile("/.+/ring-multipart-\d+.tmp")
+file_pattern = re.compile("\"(/.+/ring-multipart-\d+.tmp)\"")
 sheet_pattern = re.compile("^\w+$")
 
 
@@ -89,14 +89,14 @@ def main():
             # TODO: This is a hack around https://github.com/ontodev/droid/issues/49
             match = file_pattern.search(args[name])
             if match:
-                args[name] = match[0]
-                if not os.path.isfile(args[name]):
-                    invalid[name] = "File does not exist"
-                elif os.path.getsize(args[name]) == 0:
-                    invalid[name] = "File is empty"
+                filename = match[1]
+                if not os.path.isfile(filename):
+                    invalid[name] = f"File does not exist: {args[name]}"
+                elif os.path.getsize(filename) == 0:
+                    invalid[name] = f"File is empty: {args[name]}"
                 else:
                     os.makedirs(build, exist_ok=True)
-                    shutil.copyfile(args[name], upload)
+                    shutil.copyfile(filename, upload)
                     try:
                         wb = load_workbook(upload)
                         if "Instructions" not in wb.sheetnames:
