@@ -31,6 +31,7 @@ TEMPLATE_COLUMNS = [
     "Parent Term",
     "Definition",
     "GECKO Category",
+    "Internal ID",
     "Suggested Categories",
     "Comment",
 ]
