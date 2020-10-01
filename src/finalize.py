@@ -31,11 +31,11 @@ def main():
         sys.exit(1)
     owl = f"data_dictionaries/{cohort_id}.owl"
     if not os.path.exists(owl):
-        print(f"ERROR: '{template}' does not exists - run update task and try again")
+        print(f"ERROR: '{owl}' does not exists - run update task and try again")
         sys.exit(1)
     metadata = f"metadata/{cohort_id}.ttl"
     if not os.path.exists(metadata):
-        print(f"ERROR: '{template}' does not exists - run update task and try again")
+        print(f"ERROR: '{metadata}' does not exists - run update task and try again")
         sys.exit(1)
 
     for file in [
