@@ -14,6 +14,7 @@ expected_headers = [
     "Parent Term",
     "Definition",
     "GECKO Category",
+    "Internal ID",
     "Suggested Categories",
     "Comment",
 ]
@@ -235,21 +236,13 @@ def main():
         # Fix any leading or trailing whitespace
         lines = [{k: v.strip() for k, v in x.items()} for x in lines]
 
-        # Write new IDs and trimmed whitespace
+        # Write lines with trimmed whitespace
         with open(table, "w") as f:
             writer = csv.DictWriter(
                 f,
                 delimiter="\t",
                 lineterminator="\n",
-                fieldnames=[
-                    "Term ID",
-                    "Label",
-                    "Parent Term",
-                    "Definition",
-                    "GECKO Category",
-                    "Suggested Categories",
-                    "Comment",
-                ],
+                fieldnames=expected_headers,
             )
             writer.writeheader()
             writer.writerows(lines)

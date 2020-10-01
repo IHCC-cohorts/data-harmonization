@@ -106,7 +106,7 @@ owl: $(ONTS) | data_dictionaries
 	cp $^ data_dictionaries/
 
 build/%.tsv: templates/%.tsv
-	sed -E '2s/^/ID	LABEL	C % SPLIT=|	A definition#	is-required;#/' $< | tr '#' '\n' > $@
+	sed -E '2s/^/ID	LABEL	C % SPLIT=|	A definition		A internal ID#	is-required;#/' $< | tr '#' '\n' > $@
 
 build/%.owl: build/intermediate/properties.owl build/%.tsv build/intermediate/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
@@ -217,7 +217,7 @@ build/robot.jar: | build
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
 
-build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
+build/intermediate/properties.owl: templates/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
 build/gecko.owl: | build
