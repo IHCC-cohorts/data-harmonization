@@ -2,7 +2,7 @@
 
 ## Initial registration
 
-1. Download the [data dictionary registration template](../data/ihcc-data-dictionary-registration-template.xlsx). It is an Excel Workbook in XLSX format, containing the following three sheets:
+1. Download the [data dictionary registration template](../data/ihcc-data-dictionary-registration-template.xlsx?raw=true). It is an Excel Workbook in XLSX format, containing the following three sheets:
   1. *Instructions*. Please read this table carefully before you continue.
   1. *Metadata*. Contains basic metadata about your data dictionary, such as name, description and license.
   1. *Terminology*. Contains the terms of your data dictionary, alongside a few optional columns.
