@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import urllib.parse
+import json
 
 from openpyxl import load_workbook
 
@@ -40,18 +41,18 @@ def main():
 
     # If COGS has already run, redirect to the Google Sheet
     if action == "open":
-        return open_sheet()
+        return open_sheet(args)
 
     # Create a new cohort entry: show empty form.
     elif action == "create":
         if os.path.exists("../.cogs/config.tsv"):
-            return open_sheet()
+            return open_sheet(args)
         return build_form(args)
 
     # Validate the submitted form.
     elif action == "upload":
         if os.path.exists("../.cogs/config.tsv"):
-            return open_sheet()
+            return open_sheet(args)
 
         valid = {}
         invalid = {}
@@ -151,8 +152,8 @@ def main():
         p = subprocess.run(["cogs", "open"], stdout=subprocess.PIPE, text=True, cwd=cwd)
         link = p.stdout.strip()
 
-        p = subprocess.run(["git", "branch", "--show-current"], stdout=subprocess.PIPE, text=True)
-        branch = p.stdout.strip()
+        project_name = args["project-name"]
+        branch_name = args["branch-name"]
 
         output = [
             "div",
@@ -160,7 +161,7 @@ def main():
             [
                 "ul",
                 ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
-                ["li", ["a", {"href": f"/data-harmonization/branches/{branch}"}, "Back"]],
+                ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
             ],
         ]
         return render_output(output)
@@ -173,16 +174,16 @@ def save_sheet(ws, path):
             writer.writerow(row)
 
 
-def open_sheet():
+def open_sheet(args):
     if os.path.exists("../.cogs/config.tsv"):
         p = subprocess.run(["cogs", "open"], stdout=subprocess.PIPE, text=True, cwd="..")
         link = p.stdout.strip()
-        p = subprocess.run(["git", "branch", "--show-current"], stdout=subprocess.PIPE, text=True)
-        branch = p.stdout.strip()
+        project_name = args["project-name"]
+        branch_name = args["branch-name"]
         output = [
             "ul",
             ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
-            ["li", ["a", {"href": f"/data-harmonization/branches/{branch}"}, "Back"]],
+            ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
             ["script", {"type": "text/javascript"}, f"window.open('{link}', '_blank');"]
             # ["meta", {"http-equiv": "refresh", "content": f"0; URL=../.."}]
         ]
