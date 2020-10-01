@@ -1,0 +1,21 @@
+prefix oio: <http://www.geneontology.org/formats/oboInOwl#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?from ?to ?property ?label WHERE 
+{
+  ?from a owl:Class ;
+     ?property ?label .
+     FILTER(?property in (rdfs:label, oio:hasExactSynonym, oio:hasRelatedSynonym, oio:hasBroadSynonym, oio:hasNarrowSynonym))
+     FILTER(isIRI(?from))
+     BIND(
+    		IF(	
+    			regex(str(?from), "http[:][/][/]www[.]ebi[.]ac[.]uk[/]efo[/]EFO[_]")
+    				|| regex(str(?from), "http[:][/][/]purl[.]obolibrary[.]org[/]obo[/]")
+    				|| regex(str(?from), "http[:][/][/]www[.]orpha.net[/]ORDO[/]"),
+    			REPLACE(
+    				REPLACE(STR(?from), "http[:][/][/]purl[.]obolibrary[.]org[/]obo[/]|http[:][/][/]www[.]ebi[.]ac[.]uk[/]efo[/]|http[:][/][/]www[.]orpha.net[/]ORDO[/]", "", "i"),
+    			"[_]", ":", "i")
+    			,?from) 
+    		AS ?to)
+}

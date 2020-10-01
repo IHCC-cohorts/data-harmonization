@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import urllib.parse
+import json
 
 from openpyxl import load_workbook
 
@@ -15,8 +16,9 @@ prefixes = {}
 
 email_pattern = re.compile("^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$")
 cohort_pattern = re.compile("^[A-Z0-9]+$")
-file_pattern = re.compile("/tmp/ring-multipart-\d+.tmp")
+file_pattern = re.compile("\"(/.+/ring-multipart-\d+.tmp)\"")
 sheet_pattern = re.compile("^\w+$")
+
 
 def main():
     output = ["h1", "Unhandled input"]
@@ -31,26 +33,26 @@ def main():
 
     if not "action" in args or not args["action"]:
         output = ["h1", "Error: please specify an action"]
-        #output.append(["p", str(args)])
-        #output.append(["p", "STDIN: ", str(sys.stdin.read())])
+        # output.append(["p", str(args)])
+        # output.append(["p", "STDIN: ", str(sys.stdin.read())])
         return render_output(output)
 
     action = args["action"]
 
     # If COGS has already run, redirect to the Google Sheet
     if action == "open":
-        return open_sheet()
+        return open_sheet(args)
 
     # Create a new cohort entry: show empty form.
     elif action == "create":
         if os.path.exists("../.cogs/config.tsv"):
-            return open_sheet()
+            return open_sheet(args)
         return build_form(args)
 
     # Validate the submitted form.
     elif action == "upload":
         if os.path.exists("../.cogs/config.tsv"):
-            return open_sheet()
+            return open_sheet(args)
 
         valid = {}
         invalid = {}
@@ -88,14 +90,14 @@ def main():
             # TODO: This is a hack around https://github.com/ontodev/droid/issues/49
             match = file_pattern.search(args[name])
             if match:
-                args[name] = match[0]
-                if not os.path.isfile(args[name]):
-                    invalid[name] = "File does not exist"
-                elif os.path.getsize(args[name]) == 0:
-                    invalid[name] = "File is empty"
+                filename = match[1]
+                if not os.path.isfile(filename):
+                    invalid[name] = f"File does not exist: {args[name]}"
+                elif os.path.getsize(filename) == 0:
+                    invalid[name] = f"File is empty: {args[name]}"
                 else:
                     os.makedirs(build, exist_ok=True)
-                    shutil.copyfile(args[name], upload)
+                    shutil.copyfile(filename, upload)
                     try:
                         wb = load_workbook(upload)
                         if "Instructions" not in wb.sheetnames:
@@ -110,7 +112,7 @@ def main():
                         invalid[name] = "Not a valid Excel file"
             else:
                 invalid[name] = f"Not a valid file name {args[name]}"
-        
+
         if invalid:
             args["valid"] = valid
             args["invalid"] = invalid
@@ -121,18 +123,28 @@ def main():
         cohort_id = args["cohort_id"]
         instructions = f"build/instructions.tsv".lower()
         # TODO: These are the paths that I want once we fix https://github.com/ontodev/cogs/issues/59
-        #metadata = f"metadata/{cohort_id}.tsv".lower()
-        #terminology = f"templates/{cohort_id}.tsv".lower()
+        # metadata = f"metadata/{cohort_id}.tsv".lower()
+        # terminology = f"templates/{cohort_id}.tsv".lower()
         metadata = f"build/metadata.tsv".lower()
         terminology = f"build/terminology.tsv".lower()
 
         save_sheet(wb["Instructions"], "../" + instructions)
         save_sheet(wb["Metadata"], "../" + metadata)
-        save_sheet(wb["Terminology"],  "../" + terminology)
+        save_sheet(wb["Terminology"], "../" + terminology)
 
         # TODO: These would be better as Python calls.
         cwd = ".."
-        subprocess.call(["cogs", "init", "--title", f"IHCC Data Harmonization: {cohort_id}", "--user", args["admin_google_id"]], cwd=cwd)
+        subprocess.call(
+            [
+                "cogs",
+                "init",
+                "--title",
+                f"IHCC Data Harmonization: {cohort_id}",
+                "--user",
+                args["admin_google_id"],
+            ],
+            cwd=cwd,
+        )
         subprocess.call(["cogs", "add", instructions], cwd=cwd)
         subprocess.call(["cogs", "add", metadata], cwd=cwd)
         subprocess.call(["cogs", "add", terminology, "--freeze-row", "1"], cwd=cwd)
@@ -140,11 +152,18 @@ def main():
         p = subprocess.run(["cogs", "open"], stdout=subprocess.PIPE, text=True, cwd=cwd)
         link = p.stdout.strip()
 
-        output = ["div",
-                  ["p", f"Google Sheet created and shared with '{args['admin_google_id']}'."],
-                  ["ul",
-                   ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
-                   ["li", ["a", {"href": link}, "Back"]]]]
+        project_name = args["project-name"]
+        branch_name = args["branch-name"]
+
+        output = [
+            "div",
+            ["p", f"Google Sheet created and shared with '{args['admin_google_id']}'."],
+            [
+                "ul",
+                ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
+                ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
+            ],
+        ]
         return render_output(output)
 
 
@@ -155,34 +174,41 @@ def save_sheet(ws, path):
             writer.writerow(row)
 
 
-def open_sheet():
+def open_sheet(args):
     if os.path.exists("../.cogs/config.tsv"):
         p = subprocess.run(["cogs", "open"], stdout=subprocess.PIPE, text=True, cwd="..")
         link = p.stdout.strip()
-        output = ["ul",
-                   ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
-                   ["li", ["a", {"href": link}, "Back"]],
-                   ["script", {"type": "text/javascript"}, f"window.open('{link}', '_blank');"]
-                   #["meta", {"http-equiv": "refresh", "content": f"0; URL=../.."}]
-                  ]
+        project_name = args["project-name"]
+        branch_name = args["branch-name"]
+        output = [
+            "ul",
+            ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
+            ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
+            ["script", {"type": "text/javascript"}, f"window.open('{link}', '_blank');"]
+            # ["meta", {"http-equiv": "refresh", "content": f"0; URL=../.."}]
+        ]
     else:
-        output = ["div",
-                  ["h1", "Error: No Google Sheet has been configured"],
-                  ["p", ["a", {"href": "workflow.py?action=create"}, "Upload cohort data"]]]
+        output = [
+            "div",
+            ["h1", "Error: No Google Sheet has been configured"],
+            ["p", ["a", {"href": "workflow.py?action=create"}, "Upload cohort data"]],
+        ]
     return render_output(output)
 
 
 def build_form(args):
-    output = ["form",
-              {"action": "workflow.py", "method": "POST", "enctype": "multipart/form-data"},
-              ["p", "Submit a new cohort:"],
-              #["p", str(args)],
-              ["input", {"type": "hidden", "name": "action", "value": "upload"}],
-              build_input(args, "Admin Google ID"),
-              build_input(args, "Submitter Google ID"),
-              build_input(args, "Cohort ID"),
-              build_input(args, "Upload Template", input_type="file"),
-              build_input(args, "Submit", input_type="submit")]
+    output = [
+        "form",
+        {"action": "workflow.py", "method": "POST", "enctype": "multipart/form-data"},
+        ["p", "Submit a new cohort:"],
+        # ["p", str(args)],
+        ["input", {"type": "hidden", "name": "action", "value": "upload"}],
+        build_input(args, "Admin Google ID"),
+        build_input(args, "Submitter Google ID"),
+        build_input(args, "Cohort ID"),
+        build_input(args, "Upload Template", input_type="file"),
+        build_input(args, "Submit", input_type="submit"),
+    ]
     return render_output(output)
 
 
@@ -206,12 +232,18 @@ def build_input(args, label, input_type="text"):
     elif input_type == "file":
         output.append(["label", {"for": name, "class": label_classes}, label])
         control_classes = control_classes.replace("form-control", "form-control-file")
-        output.append(["input", {"type": "file", "class": control_classes, "name": name, "value": label}])
+        output.append(
+            ["input", {"type": "file", "class": control_classes, "name": name, "value": label}]
+        )
     elif input_type == "submit":
-        output.append(["input", {"type": "submit", "class": "btn btn-primary", "name": name, "value": label}])
+        output.append(
+            ["input", {"type": "submit", "class": "btn btn-primary", "name": name, "value": label}]
+        )
     else:
         output.append(["label", {"for": name, "class": label_classes}, label])
-        output.append(["input", {"type": "text", "class": control_classes, "name": name, "value": value}])
+        output.append(
+            ["input", {"type": "text", "class": control_classes, "name": name, "value": value}]
+        )
 
     if "valid" in args and name in args["valid"] and isinstance(args["valid"][name], str):
         output.append(["div", {"class": left}])
@@ -301,5 +333,3 @@ def render_text(element):
 
 if __name__ == "__main__":
     main()
-
-

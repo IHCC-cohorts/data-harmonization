@@ -5,15 +5,23 @@
 # Ensure that your text editor shows you those characters.
 
 ### Workflow
+# The following workflow defines all tasks necessary to upload,
+# preprocess, share, and map a new data dictionary.
 #
 # 1. [Upload cohort data](./src/workflow.py?action=create)
 # 2. [Open Google Sheet](./src/workflow.py?action=open)
-# 3. Run automated mapping
+# 3. [Run automated mapping for new data dictionary](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
-# 5. Run automated validation
-# 6. [Build files](owl)
+# 5. [Run automated validation](automated_validation)
+# 6. Rebuild data dictionaries (see in tasks below)
 # 7. [View results](build/)
-# 8. Finalize: commit and push changes
+# 8. [Add files to Version Control](finalize)
+#
+#### IHCC Data Admin Tasks
+# * [Update all data, including data dictionaries](build_all)
+# * [Update only data dictionaries](build_files)
+# * [Run all mappings (quality control)](all_mapping_suggest)
+# * [Clean build directory](clean)
 
 ### Configuration
 #
@@ -46,10 +54,7 @@ endif
 
 # List of cohorts to generate files for (lowercase, using short ID where possible)
 # This short name is used throughout all build tasks and should be consistent for all files
-# --- THIS IS THE ONLY LINE THAT SHOULD BE EDITED WHEN ADDING A NEW COHORT ---
 COHORTS := $(filter-out maelstrom, $(patsubst %.ttl, %, $(notdir $(wildcard metadata/*.ttl))))
-
-# --- DO NOT EDIT BELOW THIS LINE ---
 
 TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 
@@ -57,7 +62,6 @@ TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 
 # OWL file in the build directory for all cohorts (contains xrefs)
 ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
-
 
 # HTML tree browser and table for each cohort
 TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
@@ -74,13 +78,28 @@ clean:
 all: $(TREES) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
+all: data/ihcc-mapping-suggestions-zooma.tsv
 all: owl
+
+# "all" task to include newly added cohort for workflow
+.PHONY: build_all
+build_all: build_files
+build_all: all
+
+# Pre-all task for newly added cohort workflow
+.PHONY: build_files
+build_files: prepare_build
+build_files: owl
 
 .PHONY: update
 update: clean all
 
 build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(ONTS) $(TREES) $(TABLES)
 	python3 $^ $@
+
+.PHONY: finalize
+finalize: src/finalize.py build/metadata.tsv
+	python3 $^
 
 
 ### Cohort OWL Files
@@ -91,7 +110,7 @@ owl: $(ONTS) | data_dictionaries
 	cp $^ data_dictionaries/
 
 build/%.tsv: templates/%.tsv
-	sed -E '2s/^/ID	LABEL	C % SPLIT=|	A definition#	is-required;#/' $< | tr '#' '\n' > $@
+	sed -E '2s/^/ID	LABEL	C % SPLIT=|	A definition		A internal ID#	is-required;#/' $< | tr '#' '\n' > $@
 
 build/%.owl: build/intermediate/properties.owl build/%.tsv build/intermediate/%-xrefs.tsv metadata/%.ttl | build/robot.jar
 	$(ROBOT) template --input $< \
@@ -100,9 +119,17 @@ build/%.owl: build/intermediate/properties.owl build/%.tsv build/intermediate/%-
 	template \
 	--template $(word 3,$^) \
 	--merge-before \
-	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" --version-iri "https://purl.ihccglobal.org/$(notdir $(basename $@))/releases/$(TODAY)/$(notdir $@)" \
+	annotate --ontology-iri "https://purl.ihccglobal.org/$(notdir $@)" \
+	--version-iri "https://purl.ihccglobal.org/$(notdir $(basename $@))/releases/$(TODAY)/$(notdir $@)" \
 	--annotation-file $(word 4,$^) \
 	--output $@
+
+# Generate a metadata file for the current cohort, move the terminology to templates, & add the prefix
+# TODO - this should not be a phony task name,
+#        ideally we should use the branch name here but all other tasks are using the "metadata" file
+.PHONY: prepare_build
+prepare_build: src/prepare.py build/metadata.tsv build/terminology.tsv src/prefixes.json data/metadata.json
+	python3 $^
 
 
 ### GECKO Mapping TSVs
@@ -160,7 +187,7 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 	sed '1d' $(word 2,$^) >> $@
 
 
-### COGS Set Up
+### COGS Set Up & Tasks
 
 # The branch name should be the namespace for the new cohort
 BRANCH := $(shell git branch --show-current)
@@ -177,29 +204,11 @@ templates/$(BRANCH).tsv:
 	cogs push
 	cogs open
 
+cogs-apply-%: build/cogs-%.tsv
+	cogs apply $<
+
 destroy-cogs: | .cogs
 	cogs delete -f
-
-
-### Validation
-
-build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
-	$(ROBOT) export \
-	--input $< \
-	--header "LABEL" \
-	--export $@
-
-# We always get the latest changes before running validation
-.PHONY: build/$(BRANCH)-problems.tsv
-build/$(BRANCH)-problems.tsv: src/validate.py build/gecko_labels.tsv templates/$(BRANCH).tsv
-	cogs fetch
-	cogs pull
-	rm -rf $@ && touch $@
-	python3 $< $(word 2,$^) $(BRANCH) $@
-
-apply-problems: build/$(BRANCH)-problems.tsv
-	cogs apply $<
-	cogs push
 
 
 ### Pre-build Tasks
@@ -213,7 +222,7 @@ build/robot.jar: | build
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
 
-build/intermediate/properties.owl: src/properties.tsv | build/intermediate build/robot.jar
+build/intermediate/properties.owl: templates/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
 
 build/gecko.owl: | build
@@ -276,3 +285,94 @@ browser: $(BROWSER)
 serve: $(BROWSER)
 	cd build/browser && python3 -m http.server 8000
 
+##################################################
+####### IHCC Mapping validation pipeline #########
+##################################################
+
+build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
+	$(ROBOT) export \
+	--input $< \
+	--header "LABEL" \
+	--export $@
+
+# We always get the latest changes before running validation
+build/cogs-problems.tsv: src/validate.py build/terminology.tsv build/gecko_labels.tsv
+	python3 $^ $@
+
+.PHONY: automated_validation
+automated_validation:
+	make cogs_pull
+	make cogs-apply-problems
+	cogs push
+
+###################################################
+####### IHCC Mapping suggestions pipeline #########
+###################################################
+
+# Pipeline to generate mapping suggestions for a template. The template file is loaded,
+# the suggestions generated and added as a colum "Suggested Categories" to the template.
+
+MAP_SUGGEST := $(foreach C, $(COHORTS), build/suggestions_$(C).tsv)
+GECKO_LEXICAL = build/intermediate/gecko-xrefs-sparql.csv
+ZOOMA_DATASET = data/ihcc-mapping-suggestions-zooma.tsv
+MAP_SCRIPT_DIR = src/mapping-suggest
+MAP_SCRIPT_CONFIG = $(MAP_SCRIPT_DIR)/mapping-suggest-config.yml
+
+.PHONY: all_mapping_suggest
+all_mapping_suggest: src/mapping-suggest/mapping-suggest-qc.py $(MAP_SUGGEST)
+	python3 $< --templates $(MAP_SUGGEST) -v -o build/$@_report.tsv
+
+.PHONY: id_generation_%
+id_generation_%: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/%.tsv
+	python3 $< -t $(word 2,$^)
+	
+id_generation_cogs: $(MAP_SCRIPT_DIR)/id-generator-templates.py templates/cogs.tsv build/metadata.tsv
+	python3 $< -t $(word 2,$^) -m build/metadata.tsv
+
+build/intermediate/%_mapping_suggestions_nlp.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-nlp.py \
+													templates/%.tsv $(GECKO_LEXICAL) \
+													id_generation_% | build/intermediate
+	python3 $< -z $(ZOOMA_DATASET) -c $(MAP_SCRIPT_CONFIG) -t templates/$*.tsv -g $(GECKO_LEXICAL) -o $@
+
+build/intermediate/%_mapping_suggestions_zooma.tsv: $(MAP_SCRIPT_DIR)/mapping-suggest-zooma.py \
+													$(MAP_SCRIPT_CONFIG) templates/%.tsv \
+													id_generation_% | build/intermediate
+	python3 $< -c $(MAP_SCRIPT_CONFIG) -t templates/$*.tsv -o $@
+
+# All of the mapping suggestion tables should have the following columns: ["confidence", "match", "match_label"]
+build/suggestions_%.tsv: templates/%.tsv \
+					build/intermediate/%_mapping_suggestions_zooma.tsv \
+					build/intermediate/%_mapping_suggestions_nlp.tsv
+	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^)) -o $@
+
+build/cogs-data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv build/gecko_labels.tsv
+	python3 $^ $@
+
+# Pipeline to build a the zooma dataset that stores the existing mappings
+
+MAP_DATA := $(foreach C, $(COHORTS), build/intermediate/$(C)-xrefs-sparql.csv)
+
+# TODO: Should this depend on data_dictionaries/%.owl or better build/%.owl?
+build/intermediate/%-xrefs-sparql.csv: build/%.owl src/queries/ihcc-mapping.sparql | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
+$(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/intermediate build/robot.jar
+	$(ROBOT) query --input $< --query $(word 2,$^) $@
+
+$(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc-zooma-dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
+	python3 $< $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
+
+.PHONY: cogs_pull
+cogs_pull:
+	cogs fetch
+	cogs pull
+
+.PHONY: automated_mapping
+automated_mapping:
+	make cogs_pull
+	cp build/terminology.tsv templates/cogs.tsv
+	make build/suggestions_cogs.tsv
+	cp build/suggestions_cogs.tsv build/terminology.tsv
+	rm -f templates/cogs.tsv
+	make cogs-apply-data-validation
+	cogs push
