@@ -15,7 +15,7 @@
 # 5. [Run automated validation](automated_validation)
 # 6. Rebuild data dictionaries (see in tasks below)
 # 7. [View results](build/)
-# 8. Finalize: commit and push changes
+# 8. [Add files to Version Control](finalize)
 #
 #### IHCC Data Admin Tasks
 # * [Update all data, including data dictionaries](build_all)
@@ -97,6 +97,10 @@ update: clean all
 build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(ONTS) $(TREES) $(TABLES)
 	python3 $^ $@
 
+.PHONY: finalize
+finalize: src/finalize.py build/metadata.tsv
+	python3 $^
+
 
 ### Cohort OWL Files
 
@@ -123,6 +127,7 @@ build/%.owl: build/intermediate/properties.owl build/%.tsv build/intermediate/%-
 # Generate a metadata file for the current cohort, move the terminology to templates, & add the prefix
 # TODO - this should not be a phony task name,
 #        ideally we should use the branch name here but all other tasks are using the "metadata" file
+.PHONY: prepare_build
 prepare_build: src/prepare.py build/metadata.tsv build/terminology.tsv src/prefixes.json data/metadata.json
 	python3 $^
 
