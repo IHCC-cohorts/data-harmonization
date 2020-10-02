@@ -1,32 +1,32 @@
 {
-	"Golestan Cohort Study": {
-		"id": "GCS",
-		"prefix": "GCS",
-		"data_dictionary": "https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view",
-		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1184636935"
-	},
-	"Korean Genome and Epidemiology Study (KoGES)": {
-		"id": "KoGES",
-		"prefix": "KoGES",
-		"data_dictionary": "https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view",
-		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=737702084"
-	},
-	"Genomics England / 100,000 Genomes Project": {
-		"id": "Genomics-England",
-		"prefix": "GE",
-		"data_dictionary": "https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195",
-		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=888808694"
-	},
-	"SAPRIN (South African Population Research Infrastructure Network)": {
-		"id": "SAPRIN",
-		"prefix": "SAPRIN",
-		"data_dictionary": "https://drive.google.com/file/d/1u1sXEAAU7N_n2-WqfF6lMJozVVQSI0EU",
-		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=2135840437"
-	},
-	"Africa Health Research Institute (AHRI) Population Cohort": {
-		"id": "Vukuzazi",
-		"prefix": "VZ",
-		"data_dictionary": "https://drive.google.com/file/d/1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC/view",
-		"mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=817993717"
-	}
+    "Africa Health Research Institute (AHRI) Population Cohort": {
+        "data_dictionary": "https://drive.google.com/file/d/1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC/view",
+        "id": "Vukuzazi",
+        "mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=817993717",
+        "prefix": "VZ"
+    },
+    "Genomics England / 100,000 Genomes Project": {
+        "data_dictionary": "https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195",
+        "id": "Genomics-England",
+        "mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=888808694",
+        "prefix": "GE"
+    },
+    "Golestan Cohort Study": {
+        "data_dictionary": "https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view",
+        "id": "GCS",
+        "mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=1184636935",
+        "prefix": "GCS"
+    },
+    "Korean Genome and Epidemiology Study (KoGES)": {
+        "data_dictionary": "https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view",
+        "id": "KoGES",
+        "mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=737702084",
+        "prefix": "KoGES"
+    },
+    "SAPRIN (South African Population Research Infrastructure Network)": {
+        "data_dictionary": "https://drive.google.com/file/d/1u1sXEAAU7N_n2-WqfF6lMJozVVQSI0EU",
+        "id": "SAPRIN",
+        "mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=2135840437",
+        "prefix": "SAPRIN"
+    }
 }
