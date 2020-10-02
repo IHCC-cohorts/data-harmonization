@@ -16,6 +16,8 @@
 # 6. [Build data dictionary](build_all)
 # 7. [View results](build/)
 # 8. [Add data dictionary to Version Control](finalize)
+# 9. Prepare git commit (click on `Commit` in `Version Control` menu)
+# 10. Push changes to GitHub (click on `Push` in `Version Control` menu), and make pull request.
 #
 #### IHCC Data Admin Tasks
 # * [Update all data, including data dictionaries](build_all)
