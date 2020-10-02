@@ -28,5 +28,11 @@
         "id": "SAPRIN",
         "mapping": "https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4/edit#gid=2135840437",
         "prefix": "SAPRIN"
+    },
+    "The Test Cohort Data Dictionary": {
+        "data_dictionary": "",
+        "id": "KORT",
+        "mapping": "",
+        "prefix": "KORT"
     }
 }

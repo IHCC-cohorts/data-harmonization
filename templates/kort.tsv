@@ -1,0 +1,6 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+KORT:0000001	Tobacco	Smoking		tobacco	a1	0.72 GECKO:0000068 tobacco	test comment 1
+KORT:0000002	Smoking			tobacco	a2	0.72 GECKO:0000068 tobacco	
+KORT:0000003	Birth date		Test Definition 1	reproduction	a3	0.98 PATO:0000011 age/birthdate | 0.39 STATO:0000093 date and time-related information | 0.18 GECKO:0000114 reproduction	test comment 2
+KORT:0000004	residence			DNA/Genotyping	a4	1.00 GECKO:0000064 residence	
+KORT:0000005	food		Test Definition 2	socio-demographic and economic characteristics	a5	0.76 PATO:0001995 socio-demographic and economic characteristics | 0.76 GECKO:0000072 nutrition	
