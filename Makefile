@@ -13,7 +13,7 @@
 # 3. [Run automated mapping for new data dictionary](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
 # 5. [Run automated validation](automated_validation)
-# 6. [Make a test build](build_all)
+# 6. [Build data dictionary](build_all)
 # 7. [View results](build/)
 # 8. [Add data dictionary to Version Control](finalize)
 #
