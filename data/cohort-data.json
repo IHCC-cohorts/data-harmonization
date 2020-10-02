@@ -2,6 +2,140 @@
   {
     "available_data_types": {
       "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "blood",
+        "other_biosample_type",
+        "saliva",
+        "urine"
+      ]
+    },
+    "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+    "countries": [
+      "South Africa"
+    ],
+    "current_enrollment": 130000,
+    "enrollment_period": "2000:ongoing",
+    "laboratory_measures": [],
+    "pi_lead": "Deenan Pillay",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "circulatory_system",
+        "endocrine_nutritional_metabolic_disorders",
+        "oncological",
+        "respiratory_system"
+      ],
+      "lifestyle_and_behaviours": [
+        "alcohol",
+        "nutrition",
+        "tobacco"
+      ],
+      "medication": [
+        "associated_diseases"
+      ],
+      "non_pharmacological_interventions": [],
+      "other_questionnaire_survey_data": [
+        "reproduction",
+        "signs_and_symptoms"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height",
+          "weight"
+        ],
+        "circulation_and_respiration": [
+          "blood_pressure",
+          "heart_rate_HR"
+        ]
+      }
+    },
+    "survey_administration": [
+      "date_and_time_related_information",
+      "unique_identifiers"
+    ],
+    "target_enrollment": 130000,
+    "website": "https://www.ahri.org"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ],
+      "population_data": [
+        "location"
+      ]
+    },
+    "cohort_name": "Genomics England / 100,000 Genomes Project",
+    "countries": [
+      "England"
+    ],
+    "current_enrollment": 100000,
+    "enrollment_period": "2013:2018",
+    "laboratory_measures": [],
+    "pi_lead": "Mark Caulfield",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "circulatory_system",
+        "endocrine_nutritional_metabolic_disorders",
+        "mental_and_behaviour_disorders",
+        "nervous_system",
+        "oncological",
+        "respiratory_system"
+      ],
+      "healthcare_information": [
+        "physician_practitioner_info"
+      ],
+      "lifestyle_and_behaviours": [
+        "alcohol"
+      ],
+      "medication": [
+        "administration",
+        "drug_responses",
+        "prescription"
+      ],
+      "non_pharmacological_interventions": [
+        "surgical_interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "reproduction",
+        "signs_and_symptoms"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "height",
+          "weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "age_birthdate",
+        "biological_sex",
+        "education",
+        "ethnicity_race",
+        "family_and_household_structure",
+        "gender",
+        "residence"
+      ]
+    },
+    "survey_administration": [
+      "date_and_time_related_information",
+      "unique_identifiers"
+    ],
+    "target_enrollment": 500000,
+    "website": "https://www.genomicsengland.co.uk/"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
       "environmental_data": true,
       "genomic_data": false,
       "phenotypic_clinical_data": true
@@ -146,79 +280,6 @@
     "available_data_types": {
       "biospecimens": true,
       "environmental_data": false,
-      "genomic_data": true,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "general_variables": [
-        "aims_and_objectives"
-      ],
-      "population_data": [
-        "location"
-      ]
-    },
-    "cohort_name": "Genomics England / 100,000 Genomes Project",
-    "countries": [
-      "England"
-    ],
-    "current_enrollment": 100000,
-    "enrollment_period": "2013:2018",
-    "laboratory_measures": [],
-    "pi_lead": "Mark Caulfield",
-    "questionnaire_survey_data": {
-      "diseases": [
-        "circulatory_system",
-        "endocrine_nutritional_metabolic_disorders",
-        "mental_and_behaviour_disorders",
-        "nervous_system",
-        "oncological",
-        "respiratory_system"
-      ],
-      "healthcare_information": [
-        "physician_practitioner_info"
-      ],
-      "lifestyle_and_behaviours": [
-        "alcohol"
-      ],
-      "medication": [
-        "administration",
-        "drug_responses",
-        "prescription"
-      ],
-      "non_pharmacological_interventions": [
-        "surgical_interventions"
-      ],
-      "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height",
-          "weight"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "age_birthdate",
-        "biological_sex",
-        "education",
-        "ethnicity_race",
-        "family_and_household_structure",
-        "gender",
-        "residence"
-      ]
-    },
-    "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
-    ],
-    "target_enrollment": 500000,
-    "website": "https://www.genomicsengland.co.uk/"
-  },
-  {
-    "available_data_types": {
-      "biospecimens": true,
-      "environmental_data": false,
       "genomic_data": false,
       "phenotypic_clinical_data": true
     },
@@ -255,64 +316,33 @@
     "website": "http://saprin.mrc.ac.za/"
   },
   {
-    "available_data_types": {
-      "biospecimens": true,
-      "environmental_data": false,
-      "genomic_data": true,
-      "phenotypic_clinical_data": true
+    "available_data_types": [],
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ]
     },
     "biosample": {
       "sample_type": [
-        "blood",
-        "other_biosample_type",
-        "saliva",
-        "urine"
+        "blood"
       ]
     },
-    "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
-    "countries": [
-      "South Africa"
-    ],
-    "current_enrollment": 130000,
-    "enrollment_period": "2000:ongoing",
-    "laboratory_measures": [],
-    "pi_lead": "Deenan Pillay",
+    "cohort_name": "The EGA Cohort",
+    "countries": [],
+    "current_enrollment": "",
+    "enrollment_period": "",
+    "pi_lead": "",
     "questionnaire_survey_data": {
-      "diseases": [
-        "circulatory_system",
-        "endocrine_nutritional_metabolic_disorders",
-        "oncological",
-        "respiratory_system"
-      ],
-      "lifestyle_and_behaviours": [
-        "alcohol",
-        "nutrition",
-        "tobacco"
-      ],
-      "medication": [
-        "associated_diseases"
-      ],
-      "non_pharmacological_interventions": [],
       "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
+        "reproduction"
       ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "height",
-          "weight"
-        ],
-        "circulation_and_respiration": [
-          "blood_pressure",
-          "heart_rate_HR"
-        ]
-      }
+      "socio_demographic_and_economic_characteristics": [
+        "age_birthdate",
+        "biological_sex"
+      ]
     },
-    "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
-    ],
-    "target_enrollment": 130000,
-    "website": "https://www.ahri.org"
+    "survey_administration": [],
+    "target_enrollment": "",
+    "website": ""
   }
 ]
