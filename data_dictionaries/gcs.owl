@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/gcs.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gcs/releases/2020-09-24/gcs.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gcs/releases/2020-10-02/gcs.owl"/>
         <dc:description>The data dictionary of items collected by the GCS.</dc:description>
         <terms:title>Golestan Cohort Study (GCS)</terms:title>
         <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view"/>
@@ -97,6 +97,14 @@
     
 
 
+    <!-- https://purl.ihccglobal.org/internal-id -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/internal-id">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">internal ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- https://purl.ihccglobal.org/measurement-time -->
 
     <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/measurement-time">
@@ -134,6 +142,49 @@
     <owl:AnnotationProperty rdf:about="https://purl.ihccglobal.org/value">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">value</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/has_target -->
+
+    <owl:ObjectProperty rdf:about="https://purl.ihccglobal.org/has_target">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has target</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/measurement_of -->
+
+    <owl:ObjectProperty rdf:about="https://purl.ihccglobal.org/measurement_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.ihccglobal.org/output_of -->
+
+    <owl:ObjectProperty rdf:about="https://purl.ihccglobal.org/output_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">output of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
