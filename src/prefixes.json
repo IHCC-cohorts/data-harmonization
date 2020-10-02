@@ -6,6 +6,7 @@
         "CMO": "http://purl.obolibrary.org/obo/CMO_",
         "COB": "http://purl.obolibrary.org/obo/COB_",
         "EFO": "http://purl.obolibrary.org/obo/EFO_",
+        "EGA": "https://purl.ihccglobal.org/EGA_",
         "GCS": "https://purl.ihccglobal.org/GCS_",
         "GE": "https://purl.ihccglobal.org/GE_",
         "GECKO": "http://purl.obolibrary.org/obo/GECKO_",

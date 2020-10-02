@@ -1,0 +1,10 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/ega.owl> a owl:Ontology ;
+    dc:description "The EGA Cohort is a population cohort and disease; cancer, heart disease, stroke, diabetes, arthritis, osteoporosis, eye disorder, depression and form of dementia" ;
+    dcterms:license "CC BY 4.0" ;
+    dcterms:rights "" ;
+    dcterms:title "The EGA Cohort" .
+

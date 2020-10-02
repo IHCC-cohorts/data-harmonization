@@ -1,0 +1,12 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+EGA:0000001	Nationality		The country of origin of the individual (the country of which the person is/was a citizen by birth)	survey administration		0.27 GECKO:0000052 survey administration	
+EGA:0000002	Citizenship		The country of which the individual is a citizen	survey administration		0.27 GECKO:0000052 survey administration	
+EGA:0000003	Surname		Family or last name	survey administration		1.00 GECKO:0000052 survey administration	
+EGA:0000004	First Name		The first given name of the individual	survey administration		1.00 GECKO:0000052 survey administration	
+EGA:0000005	Sex		Male (1), female(2) or unknown(0)	biological sex		1.00 PATO:0000047 biological sex	
+EGA:0000006	Birth Date		Date of Birth	age/birthdate		0.98 PATO:0000011 age/birthdate | 0.45 STATO:0000093 date and time-related information | 0.22 GECKO:0000114 reproduction	
+EGA:0000007	Employment Type		Employed, Unemployed, Part time,  Retired	socio-demographic and economic characteristics		1.00 PATO:0001995 socio-demographic and economic characteristics | 0.28 GECKO:0000052 survey administration	
+EGA:0000008	Marital Status		Never Married, Married, Divorced/Separated, Widowed	socio-demographic and economic characteristics		1.00 PATO:0001995 socio-demographic and economic characteristics	
+EGA:0000009	Birth Weight		Birth weight in grams	reproduction		1.00 GECKO:0000114 reproduction	
+EGA:0000010	Blood cell count		Complete blood cell count	blood		1.00 UBERON:0000178 blood	
+EGA:0000011	Glucose		Fasting glucose level	urine		1.00 UBERON:0001088 urine | 0.65 UBERON:0000178 blood | 0.11 GECKO:0000052 survey administration	
