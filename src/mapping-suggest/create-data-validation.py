@@ -47,7 +47,17 @@ def main():
                     if score > 0.97:
                         rewrite_table = True
                         row["GECKO Category"] = gecko_cat
-                        problem_rows.append({"ID": row_num, "table": "terminology", "cell": f"E{row_num}", "level": "INFO", "rule ID": "automatically_assigned_category", "rule name": f"this is an automatically assigned category based on a score of {score}", "value": gecko_cat})
+                        problem_rows.append(
+                            {
+                                "ID": row_num,
+                                "table": "terminology",
+                                "cell": f"E{row_num}",
+                                "level": "INFO",
+                                "rule ID": "automatically_assigned_category",
+                                "rule name": f"this is an automatically assigned category based on a score of {score}",
+                                "value": gecko_cat,
+                            }
+                        )
             updated_rows.append(row)
 
             # Then add them to the sheet
@@ -92,18 +102,36 @@ def main():
             )
             writer.writeheader()
             writer.writerows(updated_rows)
-    
+
     # Create a "problems table" to apply (not really a problem)
     # These are just the INFO messages for the auto-assigned categories
     with open(args.problem_table, "w") as f:
-        writer = csv.DictWriter(f, fieldnames=["ID", "table", "cell", "level", "rule ID", "rule name", "value", "fix", "instructions"], delimiter="\t", lineterminator="\n")
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "ID",
+                "table",
+                "cell",
+                "level",
+                "rule ID",
+                "rule name",
+                "value",
+                "fix",
+                "instructions",
+            ],
+            delimiter="\t",
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(problem_rows)
 
     # Write a data-validation sheet for `cogs apply`
     with open(args.data_validation, "w") as f:
         writer = csv.DictWriter(
-            f, fieldnames=["table", "range", "condition", "value"], delimiter="\t", lineterminator="\n"
+            f,
+            fieldnames=["table", "range", "condition", "value"],
+            delimiter="\t",
+            lineterminator="\n",
         )
         writer.writeheader()
         writer.writerows(dv_rows)
