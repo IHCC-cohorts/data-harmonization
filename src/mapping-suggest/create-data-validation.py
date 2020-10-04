@@ -61,7 +61,7 @@ def main():
                 cat_names.extend(gecko_copy)
             else:
                 # No suggested categories, add all the labels in alphabetical order
-                cat_names = sorted(gecko_copy, key=str.casefold)
+                cat_names = gecko_copy
             dv_rows.append(
                 {
                     "table": "terminology",
