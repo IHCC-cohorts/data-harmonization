@@ -347,8 +347,8 @@ build/suggestions_%.tsv: templates/%.tsv \
 					build/intermediate/%_mapping_suggestions_nlp.tsv
 	python3 $(MAP_SCRIPT_DIR)/merge-mapping-suggestions.py -t $< $(patsubst %, -s %, $(filter-out $<,$^)) -o $@
 
-build/cogs-data-validation.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv build/gecko_labels.tsv
-	python3 $^ $@
+build/cogs-data-validation.tsv build/cogs-info-table.tsv: $(MAP_SCRIPT_DIR)/create-data-validation.py build/terminology.tsv build/gecko_labels.tsv
+	python3 $^ build/cogs-data-validation.tsv build/cogs-info-table.tsv
 
 # Pipeline to build a the zooma dataset that stores the existing mappings
 
@@ -377,4 +377,5 @@ automated_mapping:
 	cp build/suggestions_cogs.tsv build/terminology.tsv
 	rm -f templates/cogs.tsv
 	make cogs-apply-data-validation
+	make cogs-apply-info-table
 	cogs push
