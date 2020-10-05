@@ -1,0 +1,10 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/kort.owl> a owl:Ontology ;
+    dc:description "Hello World" ;
+    dcterms:license "http://creativecommons.org/licenses/by/4.0/" ;
+    dcterms:rights "You have no rights do do anything." ;
+    dcterms:title "The Test Cohort Data Dictionary" .
+

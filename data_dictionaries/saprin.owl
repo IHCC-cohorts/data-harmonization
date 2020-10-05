@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/saprin.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/saprin/releases/2020-10-02/saprin.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/saprin/releases/2020-10-05/saprin.owl"/>
         <dc:description>The core data elements collected by SAPRIN.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:rights>You are free to:

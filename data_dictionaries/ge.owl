@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/ge.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/ge/releases/2020-10-02/ge.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/ge/releases/2020-10-05/ge.owl"/>
         <dc:description>The main programme data dictionary for the Genomics England Research Environment.</dc:description>
         <terms:license>TODO: The license URL</terms:license>
         <terms:rights>TODO: A human-readable description of rights</terms:rights>
