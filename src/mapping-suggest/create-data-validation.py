@@ -11,7 +11,8 @@ def main():
     p = ArgumentParser()
     p.add_argument("table")
     p.add_argument("gecko_labels")
-    p.add_argument("output")
+    p.add_argument("data_validation")
+    p.add_argument("problem_table")
     args = p.parse_args()
 
     gecko_labels = []
@@ -19,9 +20,13 @@ def main():
         next(f)
         for line in f:
             gecko_labels.append(line.strip())
+    gecko_labels = sorted(gecko_labels, key=str.casefold)
 
     # Create the rows for the data-validation sheet
     dv_rows = []
+    updated_rows = []
+    problem_rows = []
+    rewrite_table = False
     with open(args.table, "r") as f:
         reader = csv.DictReader(f, delimiter="\t")
         row_num = 2
@@ -34,9 +39,28 @@ def main():
             # Parse suggested categories into a list
             cat_names = []
             for sc in suggested_cats.split(" | "):
-                match = re.search(r"[^ ]+ [A-Z]+:[0-9]+ (.+)", sc)
+                auto_assigned = False
+                match = re.search(r"([^ ]+) [A-Z]+:[0-9]+ (.+)", sc)
                 if match:
-                    cat_names.append(match.group(1))
+                    gecko_cat = match.group(2)
+                    cat_names.append(gecko_cat)
+                    score = float(match.group(1))
+                    if score > 0.97 and not auto_assigned:
+                        auto_assigned = True
+                        rewrite_table = True
+                        row["GECKO Category"] = gecko_cat
+                        problem_rows.append(
+                            {
+                                "ID": row_num,
+                                "table": "terminology",
+                                "cell": f"E{row_num}",
+                                "level": "INFO",
+                                "rule ID": "automatically_assigned_category",
+                                "rule name": f"this is an automatically assigned category based on a score of {score}",
+                                "value": gecko_cat,
+                            }
+                        )
+            updated_rows.append(row)
 
             # Then add them to the sheet
             if cat_names:
@@ -60,10 +84,56 @@ def main():
             )
             row_num += 1
 
-    # Write a data-validation sheet for `cogs apply`
-    with open(args.output, "w") as f:
+    if rewrite_table:
+        # Write updated rows (with top-scored categories)
+        with open(args.table, "w") as f:
+            writer = csv.DictWriter(
+                f,
+                fieldnames=[
+                    "Term ID",
+                    "Label",
+                    "Parent Term",
+                    "Definition",
+                    "GECKO Category",
+                    "Internal ID",
+                    "Suggested Categories",
+                    "Comment",
+                ],
+                delimiter="\t",
+                lineterminator="\n",
+            )
+            writer.writeheader()
+            writer.writerows(updated_rows)
+
+    # Create a "problems table" to apply (not really a problem)
+    # These are just the INFO messages for the auto-assigned categories
+    with open(args.problem_table, "w") as f:
         writer = csv.DictWriter(
-            f, delimiter="\t", fieldnames=["table", "range", "condition", "value"]
+            f,
+            fieldnames=[
+                "ID",
+                "table",
+                "cell",
+                "level",
+                "rule ID",
+                "rule name",
+                "value",
+                "fix",
+                "instructions",
+            ],
+            delimiter="\t",
+            lineterminator="\n",
+        )
+        writer.writeheader()
+        writer.writerows(problem_rows)
+
+    # Write a data-validation sheet for `cogs apply`
+    with open(args.data_validation, "w") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=["table", "range", "condition", "value"],
+            delimiter="\t",
+            lineterminator="\n",
         )
         writer.writeheader()
         writer.writerows(dv_rows)
