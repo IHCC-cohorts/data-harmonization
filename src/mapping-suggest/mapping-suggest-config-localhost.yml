@@ -1,0 +1,13 @@
+zooma_annotate: "http://localhost:8009/zooma/v2/api/services/annotate?propertyValue="
+oxo_mapping: "http://localhost:8008/api/mappings?fromId="
+ols_term: "http://localhost:8080/api/terms?iri="
+ols_oboid: "http://localhost:8080/api/terms?obo_id="
+min_match_probability: 0.1
+rescale_nlp_matches:
+  low: 0
+  high: 0.9
+zooma_confidence_mappings:
+  LOW: 0.51
+  MEDIUM: 0.76
+  GOOD: 0.98
+  HIGH: 1

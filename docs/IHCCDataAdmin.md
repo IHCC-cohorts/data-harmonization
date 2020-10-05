@@ -35,3 +35,14 @@ The data stewards has three main responsibilities:
 11. Next, click on `Run automated mapping for new data dictionary`. This will trigger the automated mapping process. In the console below, you will see the progress of the mapping. When the process is finished, the data dictionary will have been uploaded along with the mapping suggestions into. After refreshing a few times, you will hopefully see a Green confirmation pronouncing `Success`. Else, you will have to read the log file and look out for [typical errors](TypicalDataDictionaryBuildErrors.md)
 12. You can now share the data dictionary with the submitter by clicking `Share Google Sheet with submitter`.
 13. When you receive word from the data dictionary maintainer that they have finished their mappings, you can `Run automated validation`. If everything is correct, you should, after a while, see the green `Success` message. Watch out: `Success` does not mean that there are no errors! It only means that the validation process ran successfully. Read the short log file for potential problems, and communicate them back to the data dictionary providers. DROID will have added validation errors into the Google sheet itself, so they can be fixed by the data dictionary maintainers.
+
+
+Notes to incorporate:
+- You can upload only once - after that, the upload cohort data button redirects to the open google sheet action
+- GitHub user handle should be submitted alongside data submission
+- Wait for changes to be saved in google sheets before running droid
+- Lower case for branch name
+- When should I start to panic when the process takes very long? Add to docs
+- Add note on the meaning of “delete”
+- Add SOP for updating a data dictionary should that become important
+- Ad-blocker problem
