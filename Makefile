@@ -13,15 +13,17 @@
 # 3. [Run automated mapping for new data dictionary](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
 # 5. [Run automated validation](automated_validation)
-# 6. [Build data dictionary](build_all)
-# 7. [View results](build/)
-# 8. [Add data dictionary to Version Control](finalize)
-# 9. Prepare git commit (click on `Commit` in `Version Control` menu)
-# 10. Push changes to GitHub (click on `Push` in `Version Control` menu), and make pull request.
+# 6. [Prepare data dictionary for build](prepare_build)
+# 7. [Build data dictionary](all)
+# 8. [View results](build/)
+# 9. [Add data dictionary to Version Control](finalize)
+# 10. Prepare git commit (click on `Commit` in `Version Control` menu)
+# 11. Push changes to GitHub (click on `Push` in `Version Control` menu), and make pull request.
+# 12. [Delete Google sheet (Caution, cannot be undone)](cogs_delete)
 #
 #### IHCC Data Admin Tasks
-# * [Update all data, including data dictionaries](build_all)
-# * [Update only data dictionaries](build_files)
+# * [Update all data, including data dictionaries](all)
+# * [Update only data dictionaries](owl)
 # * [Run all mappings (quality control)](all_mapping_suggest)
 # * [Clean build directory](clean)
 
@@ -59,6 +61,7 @@ endif
 COHORTS := $(filter-out maelstrom, $(patsubst %.ttl, %, $(notdir $(wildcard metadata/*.ttl))))
 
 TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
+METADATA := $(foreach C,$(COHORTS),metadata/$(C).ttl)
 
 # --- These files are not in version control (all in build directory) ---
 
@@ -82,16 +85,6 @@ all: build/index.html
 all: data/cohort-data.json
 all: data/ihcc-mapping-suggestions-zooma.tsv
 all: owl
-
-# "all" task to include newly added cohort for workflow
-.PHONY: build_all
-build_all: build_files
-build_all: all
-
-# Pre-all task for newly added cohort workflow
-.PHONY: build_files
-build_files: prepare_build
-build_files: owl
 
 .PHONY: update
 update: clean all
@@ -317,6 +310,7 @@ automated_validation:
 MAP_SUGGEST := $(foreach C, $(COHORTS), build/suggestions_$(C).tsv)
 GECKO_LEXICAL = build/intermediate/gecko-xrefs-sparql.csv
 ZOOMA_DATASET = data/ihcc-mapping-suggestions-zooma.tsv
+OLS_CONFIG = data/ols-config.yaml
 MAP_SCRIPT_DIR = src/mapping-suggest
 MAP_SCRIPT_CONFIG = $(MAP_SCRIPT_DIR)/mapping-suggest-config.yml
 
@@ -364,10 +358,18 @@ $(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/
 $(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc-zooma-dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
 	python3 $< $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
 
+.PHONY: update_ols
+update_ols: src/prepare_ols_config.py $(OLS_CONFIG) $(METADATA)
+	python3 $< $(patsubst %, -m %, $(METADATA)) -o $(OLS_CONFIG)
+
 .PHONY: cogs_pull
 cogs_pull:
 	cogs fetch
 	cogs pull
+	
+.PHONY: cogs_delete
+cogs_delete:
+	cogs delete -f
 
 .PHONY: automated_mapping
 automated_mapping:
