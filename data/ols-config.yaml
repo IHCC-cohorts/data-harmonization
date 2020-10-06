@@ -1,0 +1,51 @@
+"@context":
+
+ontologies:
+  - id: gecko
+    title: Genomics Cohorts Knowledge Ontology
+    preferredPrefix: GECKO
+    base_uri:
+      - http://purl.obolibrary.org/obo/GECKO_
+    ontology_purl: http://purl.obolibrary.org/obo/gecko/views/ihcc-gecko.owl
+    
+    - id: gecko
+      preferredPrefix: GECKO
+      base_uri:
+        - http://purl.obolibrary.org/obo/GECKO_
+      ontology_purl: http://purl.obolibrary.org/obo/gecko/views/ihcc-gecko.owl
+      
+  - id: maelstrom
+    preferredPrefix: MAELSTROM
+    base_uri:
+      - https://purl.ihccglobal.org/MAELSTROM_
+    ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/maelstrom.owl
+
+  - id: ge
+    preferredPrefix: GE
+    base_uri:
+      - https://purl.ihccglobal.org/GE_
+    ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/genomics-england.owl
+
+  - id: gcs
+    preferredPrefix: GCS
+    base_uri:
+      - https://purl.ihccglobal.org/GCS_
+    ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/gcs.owl
+
+  - id: koges
+    preferredPrefix: KOGES
+    base_uri:
+      - https://purl.ihccglobal.org/KOGES_
+    ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/koges.owl
+
+  - id: saprin
+    preferredPrefix: SAPRIN
+    base_uri:
+      - https://purl.ihccglobal.org/SAPRIN_
+    ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/saprin.owl
+
+  - id: vz
+    preferredPrefix: VZ
+    base_uri:
+      - https://purl.ihccglobal.org/VZ_
+    ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/vukuzazi.owl
