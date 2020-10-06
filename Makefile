@@ -363,7 +363,7 @@ cogs_pull:
 	
 .PHONY: cogs_delete
 cogs_delete:
-	cogs delete
+	cogs delete -f
 
 .PHONY: automated_mapping
 automated_mapping:
