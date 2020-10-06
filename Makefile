@@ -358,11 +358,9 @@ $(GECKO_LEXICAL): build/gecko.owl src/queries/ihcc-mapping-gecko.sparql | build/
 $(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc-zooma-dataset.py $(GECKO_LEXICAL) $(MAP_DATA)
 	python3 $< $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
 
-$(OLS_CONFIG): src/prepare_ols_config.py $(METADATA)
-	python3 $< $(patsubst %, -m %, $(METADATA)) -o $@
-
 .PHONY: update_ols
-update_ols: $(OLS_CONFIG)
+update_ols: src/prepare_ols_config.py $(OLS_CONFIG) $(METADATA)
+	python3 $< $(patsubst %, -m %, $(METADATA)) -o $(OLS_CONFIG)
 
 .PHONY: cogs_pull
 cogs_pull:
