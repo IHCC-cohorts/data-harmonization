@@ -11,7 +11,7 @@
   dcterms:title "South African Population Research Infrastructure Network (SAPRIN)" ;
   dc:description "The core data elements collected by SAPRIN." ;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  dcterms:rights "You are free to:
+  dcterms:rights """You are free to:
 
 Share — copy and redistribute the material in any medium or format
 
@@ -22,5 +22,5 @@ Under the following terms:
 
 Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
-No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits." ;
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.""" ;
   prov:wasDerivedFrom <https://docs.google.com/spreadsheets/d/1KjULwQ38IkWqJxOCZZ2em8ge7NZJEngOZqI3ebC9Wkk/edit?usp=sharing> .
