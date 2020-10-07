@@ -1,413 +1,413 @@
-Term ID	Label	Parent Term	Definition	GECKO Category	Suggested Categories	Comment
-VZ:BPMeasuredEver	BP Measured Ever			blood pressure		
-VZ:HighBPInformedEver	Ever Been Informed of High BP			signs and symptoms		
-VZ:HighBPInformed12mo	Informed of High BP in 12 Months			signs and symptoms		
-VZ:HighBPConsult6mo	High BP Consultation 6 months			signs and symptoms		
-VZ:HighBPTx2wks	High BP Treatment in the Last 2 Weeks			associated disease(s)		
-VZ:BPReferralExist	Referral due to Existing High Blood Pressure			signs and symptoms		
-VZ:BPReferralExistReason	Reasons for Referral due to Existing High Blood Pressure			signs and symptoms		
-VZ:BPReferralNonExist	Referral due to Non Existing High Blood Pressure			signs and symptoms		
-VZ:BPReferralNonExistReason	Reasons for Referral due to Non Existing High Blood Pressure			signs and symptoms		
-VZ:HighBPConsultHealer	High BP Consultation With Traditional Healer			signs and symptoms		
-VZ:HighBPHerbalCurr	Currently Taking Herbal Treatment for Raised BP			non-pharmacological interventions		
-VZ:BSugarMeasuredEver	Blood Sugar Measured Ever			blood		
-VZ:HighBSugarInformedEver	High Blood Sugar Informed Ever			signs and symptoms		
-VZ:HighBSugarInformed12mo	High Blood Sugar Informed Past 12 Months			signs and symptoms		
-VZ:HighBSugarConsult6mo	High Blood Sugar Consultation Past 6 months			signs and symptoms		
-VZ:HighBSugarTx2wks	High Blood Sugar Treatment Past 2 Weeks			associated disease(s)		
-VZ:InsulinTxCurr	Currently Taking Insulin for Diabetes			associated disease(s)		
-VZ:HighBSugarConsultHealer	High Blood Sugar Consultation With Traditional Healer			signs and symptoms		
-VZ:CholestMeasuredEver	Cholesterol Measured Ever			blood		
-VZ:HighCholestInformedEver	High Cholesterol Informed Ever			signs and symptoms		
-VZ:HighCholestInformed12mo	High Cholesterol Informed Past 12 Months			signs and symptoms		
-VZ:HighCholestTx2wks	High Cholesterol Treatment Past 2 Weeks			associated disease(s)		
-VZ:HighCholestConsultHealer	High Cholesterol Consultation With Traditional Healer			signs and symptoms		
-VZ:HighCholestHerbalCurr	Currently Taking Herbal Treatment for Raised Cholesterol			non-pharmacological interventions		
-VZ:HeartAttackEver	Heart Attack Ever			circulatory system		
-VZ:HeartAttackAspirinTxCurr	Currently Taking Aspirin Treatment			medication		
-VZ:HeartAttackStatinsTxCurr	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Heart Disease			medication		
-VZ:ParentHistHeartAttack	Parental History of Heart Attack			circulatory system		
-VZ:HadStrokeEver	History of Stroke			circulatory system		
-VZ:StrokeAspirinTxCurr	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Stroke			medication		
-VZ:ParentHistStroke	Parental History of Stroke			circulatory system		
-VZ:CancerTxEver	Cancer Treatment Before					is this non-pharmacological (potential surgery) or medication for cancer?
-VZ:CurrSmoker	Currently Smoking Tobacco			tobacco		
-VZ:CurrSmokerDaily	Smoke Tobacco Products Daily			tobacco		
-VZ:StopSmoking12mo	Quit Stopping Tobacco			tobacco		
-VZ:EverSmoked	Ever Smoked Tobacco Products			tobacco		
-VZ:EverSmokedDaily	Ever Smoked Tobacco Products Daily			tobacco		
-VZ:EverConsumedAlcohol	Ever Consumed Alcohol			alcohol		
-VZ:ConsumedAlcohol12mo	Consumed Alcohol Last 12 Months			alcohol		
-VZ:StoppedAlcoholHealth	Stopped Alcohol for Health Reasons			alcohol		
-VZ:ConsumedAlcohol30d	Consumed Alcohol Last 30 days			alcohol		
-VZ:TBTxCurrent	TB Current Treatment			associated disease(s)		
-VZ:ReceivedTBInjections	TB Current Treatment			associated disease(s)		
-VZ:TBTxEver	Ever had TB Treatment			associated disease(s)		
-VZ:HomesteadMemberTBEver	Homestead Member TB Ever			diseases		
-VZ:HomesteadMemberTBCurr	Homestead (or residential plot) currently on TB treatment			diseases		
-VZ:CoughCurr	currently have a cough?			signs and symptoms		
-VZ:FeverCurr	Have a fever currently			signs and symptoms		
-VZ:NightSweatsCurr	Night Sweats			signs and symptoms		
-VZ:WeightLoss6mo	Weight Loss in 6 months			signs and symptoms		
-VZ:OtherSymptoms	Other TB Symptoms			signs and symptoms		
-VZ:Fatigue	Fatigue			signs and symptoms		
-VZ:Haemoptysis	Haemoptysis			signs and symptoms		
-VZ:Chestpain	Chestpain			signs and symptoms		
-VZ:Lymphadenitis	Lymphadenitis			signs and symptoms		
-VZ:TBSymptDur	Duration of the TB symptoms(weeks)			signs and symptoms		
-VZ:HighAsthmaInformedEver	High Asthma InformededEver			respiratory system		
-VZ:HighAsthmaInformed12mo	Been told of high Asthma			respiratory system		
-VZ:HighhAsthmaTx2wks	Taken any medication for asthma/COPD prescribed by a doctor or other health worker			associated disease(s)		
-VZ:BreathShortness	Shortness of breath after exercise or physical activity			signs and symptoms		
-VZ:WakeUpBreathShortness	Wake up at night because of difficulties in breathing/shortness of breath			signs and symptoms		
-VZ:NightWheezing	NightWheezing			signs and symptoms		
-VZ:ReceivedHIVTestResult	Received HIV Test Result			laboratory measures		
-VZ:HadPosHIVResult	Had Positive HIV Result			laboratory measures|diseases		
-VZ:CurrentlyOnART	Currently On ART Treatment			associated disease(s)		
-VZ:ARTDefault	Ever Defaulted ART treatment			associated disease(s)		
-VZ:ConcurrMed1Curr	Taking Concurrent Medication 1			medication		
-VZ:ConcurrMed2Curr	Taking Concurrent Medication 2			medication		
-VZ:ConcurrMed3Curr	Taking Concurrent Medication 3			medication		
-VZ:ConcurrMed4Curr	Taking Concurrent Medication 4			medication		
-VZ:ConcurrMed2Adher	Adherence Concurrent Medication 2			medication		
-VZ:ConcurrMed3Adher	Adherence Concurrent Medication 3			medication		
-VZ:ConcurrMed4Adher	Adherence Concurrent Medication 4			medication		
-VZ:ConcurrMed5Adher	Adherence Concurrent Medication 5			medication		
-VZ:ConcurrMed1Stopped	Stopped Concurrent Medication 1			medication		
-VZ:ConcurrMed2Stopped	Stopped Concurrent Medication 2			medication		
-VZ:ConcurrMed3Stopped	Stopped Concurrent Medication 3			medication		
-VZ:ConcurrMed4Stopped	Stopped Concurrent Medication 4			medication		
-VZ:ConcurrMed5Stopped	Stopped Concurrent Medication 5			medication		
-VZ:IsPregant	Is Pregant			reproduction		
-VZ:AllComplete	All Complete			survey administration		
-VZ:CxrScreeningResult	Chest X Ray Screening Result			physiological measurements		
-VZ:ReferalBasisCxr	Chest X Referal Basis			physiological measurements		
-VZ:CXRScore	Chest X Ray Score			physiological measurements		
-VZ:SputumReferral	Sputum Referral			survey administration		
-VZ:CxrMOConclusion	Chest X Ray Medical Officer Conclusion			physiological measurements		
-VZ:CxrMODiagnosticOther	Chest X Ray Medical Officer Diagnostic Other			physiological measurements		
-VZ:CxrMOReport	Chest X Ray Medical Officer Report			physiological measurements		
-VZ:CxrRadiologistDiagnosticOther	Chest X Ray Radiologist Diagnostic Other			physiological measurements		
-VZ:CxrRadiologistReport	Chest X Ray Radiologist Report			physiological measurements		
-VZ:HIVElisaReview	HIV Elisa Medical Officer Review			laboratory measures		
-VZ:CD4Review	CD4 Medical Officer Review			laboratory measures		
-VZ:VLReview	Viral Load Medical Officer Review			laboratory measures		
-VZ:GeneXpertReview	GeneXpert Medical Officer Review			laboratory measures		
-VZ:RifampicinReview	Rifampicin Medical Officer Review					
-VZ:LiquidCultureReview	LiquidCulture Medical Officer Review			laboratory measures		
-VZ:SolidCultureReview	SolidCulture Medical Officer Review			laboratory measures		
-VZ:HBA1CPercentReview	HBA1CPercent Medical Officer Review			laboratory measures		
-VZ:CXRInterpretation	Medical Officer CXR Interpretation			physiological measurements		
-VZ:CXRInterpretationDesc	Medical Officer CXR Interpretation Description			physiological measurements		
-VZ:MOSuggestedOutcome	Medical Officer Suggested Outcome			survey administration		
-VZ:MOFinalOutcome	Medical Officer Final Outcome			survey administration		
-VZ:MOSuggestedSecondRoundOutcome	Medical Officer Suggested Second Outcome			survey administration		
-VZ:MOSecondRoundOutcome	Medical Officer Second Round Final Outcome			survey administration		
-VZ:DiabetesMessage	Medical Officer Diabetes Message			endocrine/nutritional/metabolic disorders		
-VZ:HIVMessage	Medical Officer HIV Message			diseases		
-VZ:CxrMessage	Medical Officer Chest X-Ray Message			physiological measurements		
-VZ:SecondRoundMessage	Medical Officer Second Round Message			survey administration		
-VZ:MOSecondRoundMessage	System Algorythm Flaged Conditions			survey administration		
-VZ:MOAgreeSecondRoundMessage	Medical Officer Agreement with System Generated Message			survey administration		
-VZ:MOOutcomeDesc	Medical Officer Outcome Description			survey administration		
-VZ:MOSuggestedSecondCondition	Medical Officer Suggested Second Condition			survey administration		
-VZ:MOAgreeSecondRoundOutcome	Medical Officer Agreement with Second Outcome			survey administration		
-VZ:MOSecondRoundOutcomeDesc	Medical Officer Outcome Description			survey administration		
-VZ:MOConditions	Medical Officer Conditions			survey administration		
-VZ:BPReferallFU	BP Referral from Follow up Visit			signs and symptoms		
-VZ:DiabetesReferallFU	Diabetes Referral from Follow up Visit			endocrine/nutritional/metabolic disorders		
-VZ:HIVReferallFU	HIV Referral from Follow up Visit			diseases		
-VZ:TBReferallFU	TB Referral from Follow up Visit			diseases		
-VZ:InducedTBSputumHome	Homestead Induced TB Sputum Collected			other biosample type		
-VZ:SpontTBSputumHome	Homestead Spontatneous TB Sputum Collected			other biosample type		
-VZ:HomeTBSputumOutcome	Home TB Sputum Outcomeollected			other biosample type		
-VZ:FUGlucose	Follow Up Glucose			blood		
-VZ:FUGlucoseResult	Follow Up Glucose Result			blood		
-VZ:FUDiabetesDiagnosis	FUDiabetesDiagnosis			endocrine/nutritional/metabolic disorders		
-VZ:FUDiabetesClinicDate	Follow Up Target Clinic/Hospital Date for Diabetes			endocrine/nutritional/metabolic disorders|date and time-related information		
-VZ:FUSystolicBp	Clinical Systolic Blood pressure reading			blood pressure		
-VZ:FUDiastolicBp	Clinical Diastolic Blood pressure reading			blood pressure		
-VZ:FUBpDiagnosis	FUBpDiagnosis			signs and symptoms		
-VZ:FUTBpClinicDate	Follow Up Target Clinic/Hospital for Blood Pressure			signs and symptoms		
-VZ:FUHIVStatusInformed	Follow Up Target Clinic/Hospital Date			date and time-related information		
-VZ:SST1Collected	SST1 Collected			other biosample type		
-VZ:SST1NotCollectedReason	SST1 Not Collected Reason			survey administration		
-VZ:EDT1Collected	EDT1 Collected			other biosample type		
-VZ:EDT1NotCollectedReason	EDT1 Not Collected Reasonn			survey administration		
-VZ:EDT2Collected	EDT2 Collected			other biosample type		
-VZ:EDT2NotCollectedReason	EDT2 Not Collected Reasonn			survey administration		
-VZ:EDT3_1Collected	EDT3_1 Collected			other biosample type		
-VZ:EDT3_1NotCollectedReason	EDT3_1 Not Collected Reasonn			survey administration		
-VZ:EDT3_2Collected	EDT3_2 Collected			other biosample type		
-VZ:EDT3_2NotCollectedReason	EDT3_2 Not Collected Reasonn			survey administration		
-VZ:PAX1Collected	PAX1 Collected			other biosample type		
-VZ:PAX1NotCollectedReason	PAX1 Not Collected Reason			survey administration		
-VZ:Ssp1Collected	Ssp1 Collected			other biosample type		
-VZ:SpontaneousSputumObtained	Spontaneous Sputum Obtained			survey administration		
-VZ:SpontaneousSputumNotObtainedReason	Spontaneous Sputum Not Obtained Reason			survey administration		
-VZ:InducedSputumObtained	Induced Sputum Obtained			other biosample type		
-VZ:InducedSputumNotObtainedReason	Induced Sputum Not Obtained Reason			survey administration		
-VZ:SSPBottleCollected	SSP Bottle Collected			other biosample type		
-VZ:InducedSputumNotObtainedOtherReasonExplain	Induced Sputum Not Obtained Other Reason Explain			survey administration		
-VZ:SwabSample1Collected	Swab Sample1 Collected			other biosample type		
-VZ:SwabSample1NotCollectedReason	Swab Sample1 Not Collected Reason			survey administration		
-VZ:SwabSample2Collected	Swab Sample2 Collected			other biosample type		
-VZ:SwabSample2NotCollectedReason	Swab Sample2 Not Collected Reason			survey administration		
-VZ:UrineSampleCollected	Urine Sample Collected			urine		
-VZ:UrineSampleNotCollectedReason	Urine Sample Not Collected Reason			survey administration		
-VZ:UrineSampleCollected	Urine Sample Collected			urine		
-VZ:UrineSampleNotCollectedReason	Urine Sample Not Collected Reason			survey administration		
-VZ:PregTestResult	pregnancy Test Result			reproduction		
-VZ:PregTestResultNotified	pregnancy Test Result Notified			survey administration		
-VZ:BloodGlucoseFailFU	Failed to measure Blood Glucose at Home Follow Up visit			survey administration		
-VZ:BPFailFU	Failed to measure Blood Pressure at Home Follow Up visit			survey administration		
-VZ:NewHIVReferralFailFU	Failed to refer New HIV Positive case to Clinic at Home Follow Up visit			survey administration		
-VZ:CD4LabStatus	CD4 quantity not sufficient, specimen missing, or unable to run			survey administration		
-VZ:CD4LabComment	CD4 quantity not sufficient, specimen missing, or unable to run comment			survey administration		
-VZ:HIVELisaLabStatus	HIV ELISA quantity not sufficient, specimen missing, or unable to run			survey administration		
-VZ:HIVELisaLabComment	HIV ELISA quantity not sufficient, specimen missing, or unable to run comment			survey administration		
-VZ:VLLabStatus	VL quantity not sufficient, specimen missing, or unable to run			survey administration		
-VZ:VLLabComment	VL quantity not sufficient, specimen missing, or unable to run comment			survey administration		
-VZ:HbA1LabStatus	Hb A1c quantity not sufficient, specimen missing, or unable to run			survey administration		
-VZ:HbA1LabComment	Hb A1c quantity not sufficient, specimen missing, or unable to run comment			survey administration		
-VZ:GeneXpertLabStatus	Gene Xpert quantity not sufficient, specimen missing, or unable to run			survey administration		
-VZ:GeneXpertLabComment	Gene Xpert quantity not sufficient, specimen missing, or unable to run comment			survey administration		
-VZ:MGITCultureLabStatus	MGIT culture quantity not sufficient, specimen missing, or unable to run			survey administration		
-VZ:MGITCultureLabComment	MGIT culture quantity not sufficient, specimen missing, or unable to run comment			survey administration		
-VZ:SolidCultureLabStatus	Solid culture quantity not sufficient, specimen missing, or unable to run			survey administration		
-VZ:SolidCultureLabComment	Solid culture quantity not sufficient, specimen missing, or unable to run comment			survey administration		
-VZ:PhoneCallFail	Phone Call Attempts failed to contact Participant			survey administration		
-VZ:HomeVisitFail	Home Visit Attempts failed to contact Participant			survey administration		
-VZ:SputumPosRefFail	Failed to refer Positive Sputum case to Clinic or Hospital			survey administration		
-VZ:ConsentInformedHIV	Has the participant consented to be informed about their HIV results			survey administration		
-VZ:FUCXROtherReferral	Participant Has Diagnosis Other than TB that requires referral to the clinic or hospital			diseases		
-VZ:CancerType	Cancer Type			oncological		
-VZ:AgeStartedSmoking	Age Started Smoking Tobacco			tobacco		
-VZ:YearsAgoStartedSmoking	Years Ago Individual Started Smoking			tobacco		
-VZ:MonthsAgoStartedSmoking	Months Ago Individual Started Smoking			tobacco		
-VZ:WeeksAgoStartedSmoking	Weeks Ago Individual Started Smoking			tobacco		
-VZ:ManufacturedCigarettesDaily	Manufactured Cigarettes Smoked Daily			tobacco		
-VZ:ManufacturedCigarettesWeekly	Manufactured Cigarettes Smoked Weekly			tobacco		
-VZ:HandRolledCigarettesDaily	Hand Rolled Cigarettes Smoked Daily			tobacco		
-VZ:HandRolledCigarettesWeekly	Hand Rolled Cigarettes Smoked Weekly			tobacco		
-VZ:PipedTobaccoDaily	Piped Tobacco Cigarettes Smoked Daily			tobacco		
-VZ:PipedTobaccoWeekly	Piped Tobacco Cigarettes Smoked Weekly			tobacco		
-VZ:PipedTobaccoWeekly	Piped Tobacco Cigarettes Smoked Weekly			tobacco		
-VZ:CigarsRcherootsDaily	Cigars or Cheroots Daily			tobacco		
-VZ:CigarsORcherootsWeekly	Cigars or Cheroots Smoked Weekly			tobacco		
-VZ:ShishaSessionsDaily	Cigars or Cheroots Smoked Daily			tobacco		
-VZ:ShishaSessionsWeekly	Cigars or Cheroots Smoked Weekly			tobacco		
-VZ:OtherTobaccoSpecifyDaily	Other Tobacco Smoked Daily			tobacco		
-VZ:OtherTobaccoWeekly	Other Tobacco Smoked Weekly			tobacco		
-VZ:OtherTobaccoSpecifyDailySpec	Other Tobacco Specify Daily			tobacco		
-VZ:OtherTobaccoWeeklySpec	Other Tobacco Specify Weekly			tobacco		
-VZ:ConsumptionFrequency	Alcohol Consumption Frequency			alcohol		
-VZ:ConsumedAlcoholOccassions	Occassions Consumed Alcohol			alcohol		
-VZ:DrinksConsumedOccassions	Drinks Consumed During Occassion			alcohol		
-VZ:DrinksPerOccassion	Drinks Per Occassion			alcohol		
-VZ:SixDrinksPerOccassion	Six Drinks Per Occassion or More Consumed			alcohol		
-VZ:LastWeekMondayDrinks	Last Week Monday Drinks			alcohol		
-VZ:LastWeekTuesdayDrinks	Last Week Tuesday Drinks			alcohol		
-VZ:LastWeekWednesdayDrinks	Last Week Wednesday Drinks			alcohol		
-VZ:LastWeekThursdayDrinks	Last Week Thursday Drinks			alcohol		
-VZ:LastWeekFridayDrinks	Last Week Friday Drinks			alcohol		
-VZ:LastWeekSaturdayDrinks	Last Week Saturday Drinks			alcohol		
-VZ:LastWeekSundayDrinks	Last Week Sunday Drinks			alcohol		
-VZ:ConsumedHomeBredAlcohol	Consumed Home Bred Alcohol			alcohol		
-VZ:NumberHomeBredSpirits	Number Home Bred Spirits			alcohol		
-VZ:NumberHomeBredBeer	Number Home Bred Beer			alcohol		
-VZ:NumberAlcoholImported	Number Alcohol Imported			alcohol		
-VZ:NumberAlcoholForbidden	Number Alcohol Forbidden			alcohol		
-VZ:NumberAlcoholUntaxed	Number of Alcohol Untaxed			alcohol		
-VZ:NumberTBTxEver	Number of Times On TB Treatment			associated disease(s)		
-VZ:LastTBDateCompletion	TB Completion Date			associated disease(s)|date and time-related information		
-VZ:CoughDuration	Cough Duration			signs and symptoms		
-VZ:CoughSputum	Cough Sputum			other biosample type		
-VZ:FeverDuration	Fever Duration			signs and symptoms		
-VZ:NightSweatsDuration	Night Sweats Duration			signs and symptoms		
-VZ:WeightLossNumber	Weight Loss Number			signs and symptoms		
-VZ:HIVPosResult1stDate	Date of First HIV Positive Result			date and time-related information|diseases		
-VZ:ARTInitiationDate	Date Of ART Initiation			date and time-related information|medication		
-VZ:ARTDefaultTimes	Number of Times ART Defaulted			medication		
-VZ:LastHIVNegResultDate	Date of Last HIV Negative Result			date and time-related information		
-VZ:Medication1	Medication 1			medication		
-VZ:Medication2	Medication 2			medication		
-VZ:Medication3	Medication 3			medication		
-VZ:Medication4	Medication 4			medication		
-VZ:Medication5	Medication 5			medication		
-VZ:Medication6	Medication 6			medication		
-VZ:Medication7	Medication 7			medication		
-VZ:Medication8	Medication 8			medication		
-VZ:Medication1StartDate	Medication 1 Start Date			medication		
-VZ:Medication2StartDate	Medication 2 Start Date			medication		
-VZ:Medication3StartDate	Medication 3 Start Date			medication		
-VZ:Medication4StartDate	Medication 4 Start Date			medication		
-VZ:Medication5StartDate	Medication 5 Start Date			medication		
-VZ:Medication6StartDate	Medication 6 Start Date			medication		
-VZ:Medication7StartDate	Medication 7 Start Date			medication		
-VZ:Medication8StartDate	Medication 8 Start Date			medication		
-VZ:Medication9StartDate	Medication 9 Start Date			medication		
-VZ:ConcurrMed1	Concurrent Medication 1			medication		
-VZ:ConcurrMed2	Concurrent Medication 2			medication		
-VZ:ConcurrMed3	Concurrent Medication 3			medication		
-VZ:ConcurrMed4	Concurrent Medication 4			medication		
-VZ:ConcurrMed5	Concurrent Medication 5			medication		
-VZ:ConcurrMedIndica1	Concurrent Medication Indication 1			medication		
-VZ:ConcurrMedIndica2	Concurrent Medication Indication 2			medication		
-VZ:ConcurrMedIndica3	Concurrent Medication Indication 3			medication		
-VZ:ConcurrMedIndica4	Concurrent Medication Indication 4			medication		
-VZ:ConcurrMedIndica5	Concurrent Medication Indication 5			medication		
-VZ:ConcurrMed1StartDate	Concurrent Medication 1 Start Date			medication		
-VZ:ConcurrMed2StartDate	Concurrent Medication 2 Start Date			medication		
-VZ:ConcurrMed3StartDate	Concurrent Medication 3 Start Date			medication		
-VZ:ConcurrMed4StartDate	Concurrent Medication 4 Start Date			medication		
-VZ:ConcurrMed5StartDate	Concurrent Medication 5 Start Date			medication		
-VZ:ConcurrMed5Curr	Taking Concurrent Medication 5			medication		
-VZ:ConcurrMed1Adher	Adherence Concurrent Medication 1			medication		
-VZ:TimeLastMeal	Time Last Meal			nutrition		
-VZ:LastMenstrualDate	Date of Last Menstrual			reproduction		
-VZ:FoodVoucherId	Food Voucher Id			nutrition		
-VZ:FoodPackId	Food Pack Id			nutrition		
-VZ:NotAllCompleteReaons	Not All Complete Reasons			survey administration		
-VZ:SST1	SST1			other biosample type		
-VZ:EDT1	EDT1			other biosample type		
-VZ:EDT2	EDT2			other biosample type		
-VZ:EDT3_1	EDT3_1			other biosample type		
-VZ:EDT3_2	EDT3_2			other biosample type		
-VZ:PAX1	PAX1			other biosample type		
-VZ:Ssp1	Ssp1			other biosample type		
-VZ:SSPBottle	SSPBottle			other biosample type		
-VZ:SwabSample1CollectedId	Swab Sample1 Collected Id			saliva|unique identifiers		
-VZ:SwabSample2CollectedId	Swab Sample2 Collected Id			saliva|unique identifiers		
-VZ:UrineSampleCollectedId	Urine Sample Collected Id			urine|unique identifiers		
-VZ:UrineSampleCollectedId	Urine Sample Collected Id			urine|unique identifiers		
-VZ:PregTestDeviceId	pregnancy Test Device Id			reproduction|unique identifiers		
-VZ:CxrRadiologistConclusion	Chest X Ray Radiologist Conclusion			physiological measurements		
-VZ:MOLungField	Medical Officer LungFields			physiological measurements		
-VZ:RadiologistLungField	Radiologist LungFields			physiological measurements		
-VZ:UrineRefusal	Refused Urine Sample COllection			survey administration		
-VZ:HeightCm	Height in Cm			height		
-VZ:WeightKg	Weight in Kg			weight		
-VZ:WaistCircumferenceCm	Waist Circumference in Cm			anthropometry		
-VZ:BPCuffSize	BP Cuff Size			anthropometry		
-VZ:BPFirstSystolic	BP First Systolic			blood pressure		
-VZ:BPFirstDiastolic	BP First Diastolic			blood pressure		
-VZ:BPSecondSystolic	BP Second Systolic			blood pressure		
-VZ:BPSecondDiastolic	BP Second Diastolic			blood pressure		
-VZ:BPThirdSystolic	BP Third Systolic			blood pressure		
-VZ:BPThirdDiastolic	BP Third Diastolic			blood pressure		
-VZ:BPForthSystolic	BP Forth Systolic			blood pressure		
-VZ:BPForthDiastolic	BP Forth Diastolic			blood pressure		
-VZ:LowestBpSystolic	BP Lowest Systolic			blood pressure		
-VZ:LowestBpDiastolic	BP Lowest Diastolic			blood pressure		
-VZ:HipCircumference	Hip Circumference			anthropometry		
-VZ:ArmCircumference	Arm Circumference			anthropometry		
-VZ:HeartRateFirstReading	Heart Rate First Reading			heart rate (HR)		
-VZ:HeartRateSecondReading	Heart Rate Second Reading			heart rate (HR)		
-VZ:HeartRateThirdReading	Heart RateThird Reading			heart rate (HR)		
-VZ:HeartRateForthReading	Heart Rate Forth Reading			heart rate (HR)		
-VZ:Pregnant	Pregnant			reproduction		
-VZ:ActiveTB	CXR proposed diagnostic-ActiveTB			diseases		
-VZ:OldTB	CXR proposed diagnostic-OldTB			diseases		
-VZ:ProbableTB	CXR proposed diagnostic-ProbableTB			diseases		
-VZ:OtherInfection	CXR proposed diagnostic-OtherInfection			diseases		
-VZ:InflammatoryDisorder	CXR proposed diagnostic-InflammatoryDisorder			diseases		
-VZ:Neoplasm	CXR proposed diagnostic-Neoplasm			oncological		
-VZ:Trauma	CXR proposed diagnostic-Trauma			diseases		
-VZ:CongenitalAbnormality	CXR proposed diagnostic-CongenitalAbnormality			diseases		
-VZ:CardiacDisorder	CXR proposed diagnostic-CardiacDisorder			circulatory system		
-VZ:VascularDisorder	CXR proposed diagnostic-VascularDisorder			circulatory system		
-VZ:DegenerativeDisorder	CXR proposed diagnostic-DegenerativeDisorder			diseases		
-VZ:LeftLung	CXR pattern Left lung field & pleura			physiological measurements		
-VZ:RightLung	CXR pattern Right lung field & pleura			physiological measurements		
-VZ:TBDiagnosticOther	TB Diagnostic Other			diseases		
-VZ:MOTBDiagnosticOther	Medical Officer Diagnostic TB Diagnostic Other			diseases		
-VZ:RadLeftLungNormal	Radiologist Left Lung Normal			physiological measurements		
-VZ:RadLeftLungConsolid	Radiologist Left Lung Consolidation			physiological measurements		
-VZ:RadLeftLungCavitation	Radiologist Left Lung Cavitation			physiological measurements		
-VZ:RadLeftLungNodules	Radiologist Left Lung Nodules			physiological measurements		
-VZ:RadLeftLungMass	Radiologist Left Lung Mass			physiological measurements		
-VZ:RadLeftLungReticular	Radiologist Left Lung ReticularOpacities			physiological measurements		
-VZ:RadLeftLungFibrosis	Radiologist Left Lung Fibrosis			physiological measurements		
-VZ:RadLeftLungCalcification	Radiologist Left Lung Calcification			physiological measurements		
-VZ:RadLeftLungPleuralThick	Radiologist Left Lung Pleural Thickening			physiological measurements		
-VZ:RadLeftLungPleuralEffusion	Radiologist Left Lung PleuralEffusion			physiological measurements		
-VZ:RadLeftLungNodeEnlarge	Radiologist Left Lung Node Enlargement			physiological measurements		
-VZ:RadLeftLungOther	Radiologist Left Lung Other			physiological measurements		
-VZ:RadRightLungNormal	Radiologist Right Lung Normal			physiological measurements		
-VZ:RadRightLungConsolid	Radiologist Right Lung Consolidation			physiological measurements		
-VZ:RadRightLungCavitation	Radiologist Right Lung Cavitation			physiological measurements		
-VZ:RadRightLungNodules	Radiologist Right Lung Nodules			physiological measurements		
-VZ:RadRightLungMass	Radiologist Right Lung Mass			physiological measurements		
-VZ:RadRightLungReticular	Radiologist Right Lung ReticularOpacities			physiological measurements		
-VZ:RadRightLungFibrosis	Radiologist Right Lung Fibrosis			physiological measurements		
-VZ:RadRightLungCalcification	Radiologist Right Lung Calcification			physiological measurements		
-VZ:RadRightLungPleuralThick	Radiologist Right Lung Pleural Thickening			physiological measurements		
-VZ:RadRightLungPleuralEffusion	Radiologist Right Lung Pleural Effusion			physiological measurements		
-VZ:RadRightLungNodeEnlarge	Radiologist Right Lung Node Enlargement			physiological measurements		
-VZ:RadRightLungOther	Radiologist Right Lung Other			physiological measurements		
-VZ:WillingSurveyedAttempt1	Willing Surveyed Attempt 1			survey administration		
-VZ:RadActiveTB	Radiologist Diagnostic ActiveTB			diseases		
-VZ:RadOldTB	Radiologist Diagnostic OldTB			diseases		
-VZ:RadProbableTB	Radiologist Diagnostic ProbableTB			diseases		
-VZ:RadOtherInfection	Radiologist Diagnostic Other Infection			diseases		
-VZ:RadInflammatoryDisorder	Radiologist Diagnostic Inflammatory Disorder			diseases		
-VZ:RadNeoplasm	Radiologistr Diagnostic Neoplasm			oncological		
-VZ:RadTrauma	Radiologist Diagnostic Trauma			diseases		
-VZ:RadCongenitalAbnormality	Radiologist Diagnostic CongenitalAbnormality			diseases		
-VZ:RadCardiacDisorder	Radiologist Diagnostic CardiacDisorder			circulatory system		
-VZ:RadVascularDisorder	Radiologist Diagnostic VascularDisorder			circulatory system		
-VZ:RadDegenerativeDisorder	Radiologist Diagnostic Degenerative Disorder			diseases		
-VZ:RadTBDiagnosticOther	Radiologist TB Diagnostic Other			diseases		
-VZ:LabResultDate	Lab Result Date			date and time-related information		
-VZ:AbnormalResult	Is Result Abnormal?			survey administration		
-VZ:ClinicalReview	Needs Clinical Review?			survey administration		
-VZ:CD4LymphPercent	CD4 Lymphocytes %			blood		
-VZ:CD4LymphAb	CD4 Lymphocytes Abs			blood		
-VZ:CD4CD8Ratio	CD4/CD8 Ratio			blood		
-VZ:CD8LymphPercent	CD8 Lymphocytes %			blood		
-VZ:CD8LymphAb	CD8 Lymphocytes Abs			blood		
-VZ:HBA1c	HBA1c			blood		
-VZ:HBA1CPercent	HBA1C%			blood		
-VZ:Glucose	Glucose Average (calculated)			blood		
-VZ:Rifampicin	Rifampicin Resistance			laboratory measures		
-VZ:GeneXpert	TB GeneXpert Test Result			laboratory measures		
-VZ:LiquidCulture	Liquid Culture Result(MGIT)			laboratory measures		
-VZ:SolidCulture	Solid Culture Result(7H11)			laboratory measures		
-VZ:SolidIncub	Solid Culture Incubation			laboratory measures		
-VZ:HIVElisa	HIV Elisa Result			laboratory measures		
-VZ:VL	HIV Viral Load Result			laboratory measures		
-VZ:MOLeftLungNormal	Medical Officer Left Lung Normal			physiological measurements		
-VZ:MOLeftLungConsolid	Medical Officer Left Lung Consolidation			physiological measurements		
-VZ:MOLeftLungCavitation	Medical Officer Left Lung Cavitation			physiological measurements		
-VZ:MOLeftLungNodules	Medical Officer Left Lung Nodules			physiological measurements		
-VZ:MOLeftLungMass	Medical Officer Left Lung Mass			physiological measurements		
-VZ:MOLeftLungReticular	Medical Officer Left Lung Reticular Opacities			physiological measurements		
-VZ:MOLeftLungFibrosis	Medical Officer Left Lung Fibrosis			physiological measurements		
-VZ:MOLeftLungCalcification	Medical Officer Left Lung calcification			physiological measurements		
-VZ:MOLeftLungPleuralThick	Medical Officer Left Lung Pleural Thickening			physiological measurements		
-VZ:MOLeftLungPleuralEffusion	Medical Officer Left Lung Pleural Effusion			physiological measurements		
-VZ:MOLeftLungNodeEnlarge	Medical Officer Left Lung Node Enlargement			physiological measurements		
-VZ:MOLeftLungOther	Medical Officer Left Lung Other			physiological measurements		
-VZ:MORightLungNormal	Medical Officer Right Lung Normal			physiological measurements		
-VZ:MORightLungConsolid	Medical Officer Right Lung Consolidation			physiological measurements		
-VZ:MORightLungCavitation	Medical Officer Right Lung Cavitation			physiological measurements		
-VZ:MORightLungNodules	Medical Officer Right Lung Nodules			physiological measurements		
-VZ:MORightLungMass	Medical Officer Right Lung Mass			physiological measurements		
-VZ:MORightLungReticular	Medical Officer Right Lung ReticularOpacities			physiological measurements		
-VZ:MORightLungFibrosis	Medical Officer Right Lung Fibrosis			physiological measurements		
-VZ:MORightLungCalcification	Medical Officer Right Lung Calcification			physiological measurements		
-VZ:MORightLungPleuralThick	Medical Officer Right Lung Pleural Thickening			physiological measurements		
-VZ:MORightLungPleuralEffusion	Medical Officer Right Lung Pleural Effusion			physiological measurements		
-VZ:MORightLungNodeEnlarge	Medical Officer Right Lung Node Enlargement			physiological measurements		
-VZ:MORightLungOther	Medical Officer Right Lung Other			physiological measurements		
-VZ:MOActiveTB	Medical Officer Diagnostic ActiveTB			diseases		
-VZ:MOOldTB	Medical Officer Diagnostic OldTB			diseases		
-VZ:MOProbableTB	Medical Officer Diagnostic ProbableTB			diseases		
-VZ:MOOtherInfection	Medical Officer Diagnostic Other Infection			diseases		
-VZ:MOInflammatoryDisorder	Medical Officer Diagnostic Inflammatory Disorder			diseases		
-VZ:MONeoplasm	Medical Officer Diagnostic Neoplasm			oncological		
-VZ:MOTrauma	Medical Officer Diagnostic Trauma			diseases		
-VZ:MOCongenitalAbnormality	Medical Officer Diagnostic CongenitalAbnormality			diseases		
-VZ:MOCardiacDisorder	Medical Officer Diagnostic CardiacDisorder			circulatory system		
-VZ:MOVascularDisorder	Medical Officer Diagnostic VascularDisorder			circulatory system		
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+VZ:0000001	BP Measured Ever			blood pressure	BPMeasuredEver		
+VZ:0000002	Ever Been Informed of High BP			signs and symptoms	HighBPInformedEver		
+VZ:0000003	Informed of High BP in 12 Months			signs and symptoms	HighBPInformed12mo		
+VZ:0000004	High BP Consultation 6 months			signs and symptoms	HighBPConsult6mo		
+VZ:0000005	High BP Treatment in the Last 2 Weeks			associated disease(s)	HighBPTx2wks		
+VZ:0000006	Referral due to Existing High Blood Pressure			signs and symptoms	BPReferralExist		
+VZ:0000007	Reasons for Referral due to Existing High Blood Pressure			signs and symptoms	BPReferralExistReason		
+VZ:0000008	Referral due to Non Existing High Blood Pressure			signs and symptoms	BPReferralNonExist		
+VZ:0000009	Reasons for Referral due to Non Existing High Blood Pressure			signs and symptoms	BPReferralNonExistReason		
+VZ:0000010	High BP Consultation With Traditional Healer			signs and symptoms	HighBPConsultHealer		
+VZ:0000011	Currently Taking Herbal Treatment for Raised BP			non-pharmacological interventions	HighBPHerbalCurr		
+VZ:0000012	Blood Sugar Measured Ever			blood	BSugarMeasuredEver		
+VZ:0000013	High Blood Sugar Informed Ever			signs and symptoms	HighBSugarInformedEver		
+VZ:0000014	High Blood Sugar Informed Past 12 Months			signs and symptoms	HighBSugarInformed12mo		
+VZ:0000015	High Blood Sugar Consultation Past 6 months			signs and symptoms	HighBSugarConsult6mo		
+VZ:0000016	High Blood Sugar Treatment Past 2 Weeks			associated disease(s)	HighBSugarTx2wks		
+VZ:0000017	Currently Taking Insulin for Diabetes			associated disease(s)	InsulinTxCurr		
+VZ:0000018	High Blood Sugar Consultation With Traditional Healer			signs and symptoms	HighBSugarConsultHealer		
+VZ:0000019	Cholesterol Measured Ever			blood	CholestMeasuredEver		
+VZ:0000020	High Cholesterol Informed Ever			signs and symptoms	HighCholestInformedEver		
+VZ:0000021	High Cholesterol Informed Past 12 Months			signs and symptoms	HighCholestInformed12mo		
+VZ:0000022	High Cholesterol Treatment Past 2 Weeks			associated disease(s)	HighCholestTx2wks		
+VZ:0000023	High Cholesterol Consultation With Traditional Healer			signs and symptoms	HighCholestConsultHealer		
+VZ:0000024	Currently Taking Herbal Treatment for Raised Cholesterol			non-pharmacological interventions	HighCholestHerbalCurr		
+VZ:0000025	Heart Attack Ever			circulatory system	HeartAttackEver		
+VZ:0000026	Currently Taking Aspirin Treatment			medication	HeartAttackAspirinTxCurr		
+VZ:0000027	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Heart Disease			medication	HeartAttackStatinsTxCurr		
+VZ:0000028	Parental History of Heart Attack			circulatory system	ParentHistHeartAttack		
+VZ:0000029	History of Stroke			circulatory system	HadStrokeEver		
+VZ:0000030	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Stroke			medication	StrokeAspirinTxCurr		
+VZ:0000031	Parental History of Stroke			circulatory system	ParentHistStroke		
+VZ:0000032	Cancer Treatment Before				CancerTxEver		is this non-pharmacological (potential surgery) or medication for cancer?
+VZ:0000033	Currently Smoking Tobacco			tobacco	CurrSmoker		
+VZ:0000034	Smoke Tobacco Products Daily			tobacco	CurrSmokerDaily		
+VZ:0000035	Quit Stopping Tobacco			tobacco	StopSmoking12mo		
+VZ:0000036	Ever Smoked Tobacco Products			tobacco	EverSmoked		
+VZ:0000037	Ever Smoked Tobacco Products Daily			tobacco	EverSmokedDaily		
+VZ:0000038	Ever Consumed Alcohol			alcohol	EverConsumedAlcohol		
+VZ:0000039	Consumed Alcohol Last 12 Months			alcohol	ConsumedAlcohol12mo		
+VZ:0000040	Stopped Alcohol for Health Reasons			alcohol	StoppedAlcoholHealth		
+VZ:0000041	Consumed Alcohol Last 30 days			alcohol	ConsumedAlcohol30d		
+VZ:0000042	TB Current Treatment			associated disease(s)	TBTxCurrent		
+VZ:0000043	TB Current Treatment			associated disease(s)	ReceivedTBInjections		
+VZ:0000044	Ever had TB Treatment			associated disease(s)	TBTxEver		
+VZ:0000045	Homestead Member TB Ever			diseases	HomesteadMemberTBEver		
+VZ:0000046	Homestead (or residential plot) currently on TB treatment			diseases	HomesteadMemberTBCurr		
+VZ:0000047	currently have a cough?			signs and symptoms	CoughCurr		
+VZ:0000048	Have a fever currently			signs and symptoms	FeverCurr		
+VZ:0000049	Night Sweats			signs and symptoms	NightSweatsCurr		
+VZ:0000050	Weight Loss in 6 months			signs and symptoms	WeightLoss6mo		
+VZ:0000051	Other TB Symptoms			signs and symptoms	OtherSymptoms		
+VZ:0000052	Fatigue			signs and symptoms	Fatigue		
+VZ:0000053	Haemoptysis			signs and symptoms	Haemoptysis		
+VZ:0000054	Chestpain			signs and symptoms	Chestpain		
+VZ:0000055	Lymphadenitis			signs and symptoms	Lymphadenitis		
+VZ:0000056	Duration of the TB symptoms(weeks)			signs and symptoms	TBSymptDur		
+VZ:0000057	High Asthma InformededEver			respiratory system	HighAsthmaInformedEver		
+VZ:0000058	Been told of high Asthma			respiratory system	HighAsthmaInformed12mo		
+VZ:0000059	Taken any medication for asthma/COPD prescribed by a doctor or other health worker			associated disease(s)	HighhAsthmaTx2wks		
+VZ:0000060	Shortness of breath after exercise or physical activity			signs and symptoms	BreathShortness		
+VZ:0000061	Wake up at night because of difficulties in breathing/shortness of breath			signs and symptoms	WakeUpBreathShortness		
+VZ:0000062	NightWheezing			signs and symptoms	NightWheezing		
+VZ:0000063	Received HIV Test Result			laboratory measures	ReceivedHIVTestResult		
+VZ:0000064	Had Positive HIV Result			laboratory measures|diseases	HadPosHIVResult		
+VZ:0000065	Currently On ART Treatment			associated disease(s)	CurrentlyOnART		
+VZ:0000066	Ever Defaulted ART treatment			associated disease(s)	ARTDefault		
+VZ:0000067	Taking Concurrent Medication 1			medication	ConcurrMed1Curr		
+VZ:0000068	Taking Concurrent Medication 2			medication	ConcurrMed2Curr		
+VZ:0000069	Taking Concurrent Medication 3			medication	ConcurrMed3Curr		
+VZ:0000070	Taking Concurrent Medication 4			medication	ConcurrMed4Curr		
+VZ:0000071	Adherence Concurrent Medication 2			medication	ConcurrMed2Adher		
+VZ:0000072	Adherence Concurrent Medication 3			medication	ConcurrMed3Adher		
+VZ:0000073	Adherence Concurrent Medication 4			medication	ConcurrMed4Adher		
+VZ:0000074	Adherence Concurrent Medication 5			medication	ConcurrMed5Adher		
+VZ:0000075	Stopped Concurrent Medication 1			medication	ConcurrMed1Stopped		
+VZ:0000076	Stopped Concurrent Medication 2			medication	ConcurrMed2Stopped		
+VZ:0000077	Stopped Concurrent Medication 3			medication	ConcurrMed3Stopped		
+VZ:0000078	Stopped Concurrent Medication 4			medication	ConcurrMed4Stopped		
+VZ:0000079	Stopped Concurrent Medication 5			medication	ConcurrMed5Stopped		
+VZ:0000080	Is Pregant			reproduction	IsPregant		
+VZ:0000081	All Complete			survey administration	AllComplete		
+VZ:0000082	Chest X Ray Screening Result			physiological measurements	CxrScreeningResult		
+VZ:0000083	Chest X Referal Basis			physiological measurements	ReferalBasisCxr		
+VZ:0000084	Chest X Ray Score			physiological measurements	CXRScore		
+VZ:0000085	Sputum Referral			survey administration	SputumReferral		
+VZ:0000086	Chest X Ray Medical Officer Conclusion			physiological measurements	CxrMOConclusion		
+VZ:0000087	Chest X Ray Medical Officer Diagnostic Other			physiological measurements	CxrMODiagnosticOther		
+VZ:0000088	Chest X Ray Medical Officer Report			physiological measurements	CxrMOReport		
+VZ:0000089	Chest X Ray Radiologist Diagnostic Other			physiological measurements	CxrRadiologistDiagnosticOther		
+VZ:0000090	Chest X Ray Radiologist Report			physiological measurements	CxrRadiologistReport		
+VZ:0000091	HIV Elisa Medical Officer Review			laboratory measures	HIVElisaReview		
+VZ:0000092	CD4 Medical Officer Review			laboratory measures	CD4Review		
+VZ:0000093	Viral Load Medical Officer Review			laboratory measures	VLReview		
+VZ:0000094	GeneXpert Medical Officer Review			laboratory measures	GeneXpertReview		
+VZ:0000095	Rifampicin Medical Officer Review				RifampicinReview		
+VZ:0000096	LiquidCulture Medical Officer Review			laboratory measures	LiquidCultureReview		
+VZ:0000097	SolidCulture Medical Officer Review			laboratory measures	SolidCultureReview		
+VZ:0000098	HBA1CPercent Medical Officer Review			laboratory measures	HBA1CPercentReview		
+VZ:0000099	Medical Officer CXR Interpretation			physiological measurements	CXRInterpretation		
+VZ:0000100	Medical Officer CXR Interpretation Description			physiological measurements	CXRInterpretationDesc		
+VZ:0000101	Medical Officer Suggested Outcome			survey administration	MOSuggestedOutcome		
+VZ:0000102	Medical Officer Final Outcome			survey administration	MOFinalOutcome		
+VZ:0000103	Medical Officer Suggested Second Outcome			survey administration	MOSuggestedSecondRoundOutcome		
+VZ:0000104	Medical Officer Second Round Final Outcome			survey administration	MOSecondRoundOutcome		
+VZ:0000105	Medical Officer Diabetes Message			endocrine/nutritional/metabolic disorders	DiabetesMessage		
+VZ:0000106	Medical Officer HIV Message			diseases	HIVMessage		
+VZ:0000107	Medical Officer Chest X-Ray Message			physiological measurements	CxrMessage		
+VZ:0000108	Medical Officer Second Round Message			survey administration	SecondRoundMessage		
+VZ:0000109	System Algorythm Flaged Conditions			survey administration	MOSecondRoundMessage		
+VZ:0000110	Medical Officer Agreement with System Generated Message			survey administration	MOAgreeSecondRoundMessage		
+VZ:0000111	Medical Officer Outcome Description			survey administration	MOOutcomeDesc		
+VZ:0000112	Medical Officer Suggested Second Condition			survey administration	MOSuggestedSecondCondition		
+VZ:0000113	Medical Officer Agreement with Second Outcome			survey administration	MOAgreeSecondRoundOutcome		
+VZ:0000114	Medical Officer Outcome Description			survey administration	MOSecondRoundOutcomeDesc		
+VZ:0000115	Medical Officer Conditions			survey administration	MOConditions		
+VZ:0000116	BP Referral from Follow up Visit			signs and symptoms	BPReferallFU		
+VZ:0000117	Diabetes Referral from Follow up Visit			endocrine/nutritional/metabolic disorders	DiabetesReferallFU		
+VZ:0000118	HIV Referral from Follow up Visit			diseases	HIVReferallFU		
+VZ:0000119	TB Referral from Follow up Visit			diseases	TBReferallFU		
+VZ:0000120	Homestead Induced TB Sputum Collected			other biosample type	InducedTBSputumHome		
+VZ:0000121	Homestead Spontatneous TB Sputum Collected			other biosample type	SpontTBSputumHome		
+VZ:0000122	Home TB Sputum Outcomeollected			other biosample type	HomeTBSputumOutcome		
+VZ:0000123	Follow Up Glucose			blood	FUGlucose		
+VZ:0000124	Follow Up Glucose Result			blood	FUGlucoseResult		
+VZ:0000125	FUDiabetesDiagnosis			endocrine/nutritional/metabolic disorders	FUDiabetesDiagnosis		
+VZ:0000126	Follow Up Target Clinic/Hospital Date for Diabetes			endocrine/nutritional/metabolic disorders|date and time-related information	FUDiabetesClinicDate		
+VZ:0000127	Clinical Systolic Blood pressure reading			blood pressure	FUSystolicBp		
+VZ:0000128	Clinical Diastolic Blood pressure reading			blood pressure	FUDiastolicBp		
+VZ:0000129	FUBpDiagnosis			signs and symptoms	FUBpDiagnosis		
+VZ:0000130	Follow Up Target Clinic/Hospital for Blood Pressure			signs and symptoms	FUTBpClinicDate		
+VZ:0000131	Follow Up Target Clinic/Hospital Date			date and time-related information	FUHIVStatusInformed		
+VZ:0000132	SST1 Collected			other biosample type	SST1Collected		
+VZ:0000133	SST1 Not Collected Reason			survey administration	SST1NotCollectedReason		
+VZ:0000134	EDT1 Collected			other biosample type	EDT1Collected		
+VZ:0000135	EDT1 Not Collected Reasonn			survey administration	EDT1NotCollectedReason		
+VZ:0000136	EDT2 Collected			other biosample type	EDT2Collected		
+VZ:0000137	EDT2 Not Collected Reasonn			survey administration	EDT2NotCollectedReason		
+VZ:0000138	EDT3_1 Collected			other biosample type	EDT3_1Collected		
+VZ:0000139	EDT3_1 Not Collected Reasonn			survey administration	EDT3_1NotCollectedReason		
+VZ:0000140	EDT3_2 Collected			other biosample type	EDT3_2Collected		
+VZ:0000141	EDT3_2 Not Collected Reasonn			survey administration	EDT3_2NotCollectedReason		
+VZ:0000142	PAX1 Collected			other biosample type	PAX1Collected		
+VZ:0000143	PAX1 Not Collected Reason			survey administration	PAX1NotCollectedReason		
+VZ:0000144	Ssp1 Collected			other biosample type	Ssp1Collected		
+VZ:0000145	Spontaneous Sputum Obtained			survey administration	SpontaneousSputumObtained		
+VZ:0000146	Spontaneous Sputum Not Obtained Reason			survey administration	SpontaneousSputumNotObtainedReason		
+VZ:0000147	Induced Sputum Obtained			other biosample type	InducedSputumObtained		
+VZ:0000148	Induced Sputum Not Obtained Reason			survey administration	InducedSputumNotObtainedReason		
+VZ:0000149	SSP Bottle Collected			other biosample type	SSPBottleCollected		
+VZ:0000150	Induced Sputum Not Obtained Other Reason Explain			survey administration	InducedSputumNotObtainedOtherReasonExplain		
+VZ:0000151	Swab Sample1 Collected			other biosample type	SwabSample1Collected		
+VZ:0000152	Swab Sample1 Not Collected Reason			survey administration	SwabSample1NotCollectedReason		
+VZ:0000153	Swab Sample2 Collected			other biosample type	SwabSample2Collected		
+VZ:0000154	Swab Sample2 Not Collected Reason			survey administration	SwabSample2NotCollectedReason		
+VZ:0000155	Urine Sample Collected			urine	UrineSampleCollected		
+VZ:0000156	Urine Sample Not Collected Reason			survey administration	UrineSampleNotCollectedReason		
+VZ:0000157	Urine Sample Collected			urine	UrineSampleCollected		
+VZ:0000158	Urine Sample Not Collected Reason			survey administration	UrineSampleNotCollectedReason		
+VZ:0000159	pregnancy Test Result			reproduction	PregTestResult		
+VZ:0000160	pregnancy Test Result Notified			survey administration	PregTestResultNotified		
+VZ:0000161	Failed to measure Blood Glucose at Home Follow Up visit			survey administration	BloodGlucoseFailFU		
+VZ:0000162	Failed to measure Blood Pressure at Home Follow Up visit			survey administration	BPFailFU		
+VZ:0000163	Failed to refer New HIV Positive case to Clinic at Home Follow Up visit			survey administration	NewHIVReferralFailFU		
+VZ:0000164	CD4 quantity not sufficient, specimen missing, or unable to run			survey administration	CD4LabStatus		
+VZ:0000165	CD4 quantity not sufficient, specimen missing, or unable to run comment			survey administration	CD4LabComment		
+VZ:0000166	HIV ELISA quantity not sufficient, specimen missing, or unable to run			survey administration	HIVELisaLabStatus		
+VZ:0000167	HIV ELISA quantity not sufficient, specimen missing, or unable to run comment			survey administration	HIVELisaLabComment		
+VZ:0000168	VL quantity not sufficient, specimen missing, or unable to run			survey administration	VLLabStatus		
+VZ:0000169	VL quantity not sufficient, specimen missing, or unable to run comment			survey administration	VLLabComment		
+VZ:0000170	Hb A1c quantity not sufficient, specimen missing, or unable to run			survey administration	HbA1LabStatus		
+VZ:0000171	Hb A1c quantity not sufficient, specimen missing, or unable to run comment			survey administration	HbA1LabComment		
+VZ:0000172	Gene Xpert quantity not sufficient, specimen missing, or unable to run			survey administration	GeneXpertLabStatus		
+VZ:0000173	Gene Xpert quantity not sufficient, specimen missing, or unable to run comment			survey administration	GeneXpertLabComment		
+VZ:0000174	MGIT culture quantity not sufficient, specimen missing, or unable to run			survey administration	MGITCultureLabStatus		
+VZ:0000175	MGIT culture quantity not sufficient, specimen missing, or unable to run comment			survey administration	MGITCultureLabComment		
+VZ:0000176	Solid culture quantity not sufficient, specimen missing, or unable to run			survey administration	SolidCultureLabStatus		
+VZ:0000177	Solid culture quantity not sufficient, specimen missing, or unable to run comment			survey administration	SolidCultureLabComment		
+VZ:0000178	Phone Call Attempts failed to contact Participant			survey administration	PhoneCallFail		
+VZ:0000179	Home Visit Attempts failed to contact Participant			survey administration	HomeVisitFail		
+VZ:0000180	Failed to refer Positive Sputum case to Clinic or Hospital			survey administration	SputumPosRefFail		
+VZ:0000181	Has the participant consented to be informed about their HIV results			survey administration	ConsentInformedHIV		
+VZ:0000182	Participant Has Diagnosis Other than TB that requires referral to the clinic or hospital			diseases	FUCXROtherReferral		
+VZ:0000183	Cancer Type			oncological	CancerType		
+VZ:0000184	Age Started Smoking Tobacco			tobacco	AgeStartedSmoking		
+VZ:0000185	Years Ago Individual Started Smoking			tobacco	YearsAgoStartedSmoking		
+VZ:0000186	Months Ago Individual Started Smoking			tobacco	MonthsAgoStartedSmoking		
+VZ:0000187	Weeks Ago Individual Started Smoking			tobacco	WeeksAgoStartedSmoking		
+VZ:0000188	Manufactured Cigarettes Smoked Daily			tobacco	ManufacturedCigarettesDaily		
+VZ:0000189	Manufactured Cigarettes Smoked Weekly			tobacco	ManufacturedCigarettesWeekly		
+VZ:0000190	Hand Rolled Cigarettes Smoked Daily			tobacco	HandRolledCigarettesDaily		
+VZ:0000191	Hand Rolled Cigarettes Smoked Weekly			tobacco	HandRolledCigarettesWeekly		
+VZ:0000192	Piped Tobacco Cigarettes Smoked Daily			tobacco	PipedTobaccoDaily		
+VZ:0000193	Piped Tobacco Cigarettes Smoked Weekly			tobacco	PipedTobaccoWeekly		
+VZ:0000194	Piped Tobacco Cigarettes Smoked Weekly			tobacco	PipedTobaccoWeekly		
+VZ:0000195	Cigars or Cheroots Daily			tobacco	CigarsRcherootsDaily		
+VZ:0000196	Cigars or Cheroots Smoked Weekly			tobacco	CigarsORcherootsWeekly		
+VZ:0000197	Cigars or Cheroots Smoked Daily			tobacco	ShishaSessionsDaily		
+VZ:0000198	Cigars or Cheroots Smoked Weekly			tobacco	ShishaSessionsWeekly		
+VZ:0000199	Other Tobacco Smoked Daily			tobacco	OtherTobaccoSpecifyDaily		
+VZ:0000200	Other Tobacco Smoked Weekly			tobacco	OtherTobaccoWeekly		
+VZ:0000201	Other Tobacco Specify Daily			tobacco	OtherTobaccoSpecifyDailySpec		
+VZ:0000202	Other Tobacco Specify Weekly			tobacco	OtherTobaccoWeeklySpec		
+VZ:0000203	Alcohol Consumption Frequency			alcohol	ConsumptionFrequency		
+VZ:0000204	Occassions Consumed Alcohol			alcohol	ConsumedAlcoholOccassions		
+VZ:0000205	Drinks Consumed During Occassion			alcohol	DrinksConsumedOccassions		
+VZ:0000206	Drinks Per Occassion			alcohol	DrinksPerOccassion		
+VZ:0000207	Six Drinks Per Occassion or More Consumed			alcohol	SixDrinksPerOccassion		
+VZ:0000208	Last Week Monday Drinks			alcohol	LastWeekMondayDrinks		
+VZ:0000209	Last Week Tuesday Drinks			alcohol	LastWeekTuesdayDrinks		
+VZ:0000210	Last Week Wednesday Drinks			alcohol	LastWeekWednesdayDrinks		
+VZ:0000211	Last Week Thursday Drinks			alcohol	LastWeekThursdayDrinks		
+VZ:0000212	Last Week Friday Drinks			alcohol	LastWeekFridayDrinks		
+VZ:0000213	Last Week Saturday Drinks			alcohol	LastWeekSaturdayDrinks		
+VZ:0000214	Last Week Sunday Drinks			alcohol	LastWeekSundayDrinks		
+VZ:0000215	Consumed Home Bred Alcohol			alcohol	ConsumedHomeBredAlcohol		
+VZ:0000216	Number Home Bred Spirits			alcohol	NumberHomeBredSpirits		
+VZ:0000217	Number Home Bred Beer			alcohol	NumberHomeBredBeer		
+VZ:0000218	Number Alcohol Imported			alcohol	NumberAlcoholImported		
+VZ:0000219	Number Alcohol Forbidden			alcohol	NumberAlcoholForbidden		
+VZ:0000220	Number of Alcohol Untaxed			alcohol	NumberAlcoholUntaxed		
+VZ:0000221	Number of Times On TB Treatment			associated disease(s)	NumberTBTxEver		
+VZ:0000222	TB Completion Date			associated disease(s)|date and time-related information	LastTBDateCompletion		
+VZ:0000223	Cough Duration			signs and symptoms	CoughDuration		
+VZ:0000224	Cough Sputum			other biosample type	CoughSputum		
+VZ:0000225	Fever Duration			signs and symptoms	FeverDuration		
+VZ:0000226	Night Sweats Duration			signs and symptoms	NightSweatsDuration		
+VZ:0000227	Weight Loss Number			signs and symptoms	WeightLossNumber		
+VZ:0000228	Date of First HIV Positive Result			date and time-related information|diseases	HIVPosResult1stDate		
+VZ:0000229	Date Of ART Initiation			date and time-related information|medication	ARTInitiationDate		
+VZ:0000230	Number of Times ART Defaulted			medication	ARTDefaultTimes		
+VZ:0000231	Date of Last HIV Negative Result			date and time-related information	LastHIVNegResultDate		
+VZ:0000232	Medication 1			medication	Medication1		
+VZ:0000233	Medication 2			medication	Medication2		
+VZ:0000234	Medication 3			medication	Medication3		
+VZ:0000235	Medication 4			medication	Medication4		
+VZ:0000236	Medication 5			medication	Medication5		
+VZ:0000237	Medication 6			medication	Medication6		
+VZ:0000238	Medication 7			medication	Medication7		
+VZ:0000239	Medication 8			medication	Medication8		
+VZ:0000240	Medication 1 Start Date			medication	Medication1StartDate		
+VZ:0000241	Medication 2 Start Date			medication	Medication2StartDate		
+VZ:0000242	Medication 3 Start Date			medication	Medication3StartDate		
+VZ:0000243	Medication 4 Start Date			medication	Medication4StartDate		
+VZ:0000244	Medication 5 Start Date			medication	Medication5StartDate		
+VZ:0000245	Medication 6 Start Date			medication	Medication6StartDate		
+VZ:0000246	Medication 7 Start Date			medication	Medication7StartDate		
+VZ:0000247	Medication 8 Start Date			medication	Medication8StartDate		
+VZ:0000248	Medication 9 Start Date			medication	Medication9StartDate		
+VZ:0000249	Concurrent Medication 1			medication	ConcurrMed1		
+VZ:0000250	Concurrent Medication 2			medication	ConcurrMed2		
+VZ:0000251	Concurrent Medication 3			medication	ConcurrMed3		
+VZ:0000252	Concurrent Medication 4			medication	ConcurrMed4		
+VZ:0000253	Concurrent Medication 5			medication	ConcurrMed5		
+VZ:0000254	Concurrent Medication Indication 1			medication	ConcurrMedIndica1		
+VZ:0000255	Concurrent Medication Indication 2			medication	ConcurrMedIndica2		
+VZ:0000256	Concurrent Medication Indication 3			medication	ConcurrMedIndica3		
+VZ:0000257	Concurrent Medication Indication 4			medication	ConcurrMedIndica4		
+VZ:0000258	Concurrent Medication Indication 5			medication	ConcurrMedIndica5		
+VZ:0000259	Concurrent Medication 1 Start Date			medication	ConcurrMed1StartDate		
+VZ:0000260	Concurrent Medication 2 Start Date			medication	ConcurrMed2StartDate		
+VZ:0000261	Concurrent Medication 3 Start Date			medication	ConcurrMed3StartDate		
+VZ:0000262	Concurrent Medication 4 Start Date			medication	ConcurrMed4StartDate		
+VZ:0000263	Concurrent Medication 5 Start Date			medication	ConcurrMed5StartDate		
+VZ:0000264	Taking Concurrent Medication 5			medication	ConcurrMed5Curr		
+VZ:0000265	Adherence Concurrent Medication 1			medication	ConcurrMed1Adher		
+VZ:0000266	Time Last Meal			nutrition	TimeLastMeal		
+VZ:0000267	Date of Last Menstrual			reproduction	LastMenstrualDate		
+VZ:0000268	Food Voucher Id			nutrition	FoodVoucherId		
+VZ:0000269	Food Pack Id			nutrition	FoodPackId		
+VZ:0000270	Not All Complete Reasons			survey administration	NotAllCompleteReaons		
+VZ:0000271	SST1			other biosample type	SST1		
+VZ:0000272	EDT1			other biosample type	EDT1		
+VZ:0000273	EDT2			other biosample type	EDT2		
+VZ:0000274	EDT3_1			other biosample type	EDT3_1		
+VZ:0000275	EDT3_2			other biosample type	EDT3_2		
+VZ:0000276	PAX1			other biosample type	PAX1		
+VZ:0000277	Ssp1			other biosample type	Ssp1		
+VZ:0000278	SSPBottle			other biosample type	SSPBottle		
+VZ:0000279	Swab Sample1 Collected Id			saliva|unique identifiers	SwabSample1CollectedId		
+VZ:0000280	Swab Sample2 Collected Id			saliva|unique identifiers	SwabSample2CollectedId		
+VZ:0000281	Urine Sample Collected Id			urine|unique identifiers	UrineSampleCollectedId		
+VZ:0000282	Urine Sample Collected Id			urine|unique identifiers	UrineSampleCollectedId		
+VZ:0000283	pregnancy Test Device Id			reproduction|unique identifiers	PregTestDeviceId		
+VZ:0000284	Chest X Ray Radiologist Conclusion			physiological measurements	CxrRadiologistConclusion		
+VZ:0000285	Medical Officer LungFields			physiological measurements	MOLungField		
+VZ:0000286	Radiologist LungFields			physiological measurements	RadiologistLungField		
+VZ:0000287	Refused Urine Sample COllection			survey administration	UrineRefusal		
+VZ:0000288	Height in Cm			height	HeightCm		
+VZ:0000289	Weight in Kg			weight	WeightKg		
+VZ:0000290	Waist Circumference in Cm			anthropometry	WaistCircumferenceCm		
+VZ:0000291	BP Cuff Size			anthropometry	BPCuffSize		
+VZ:0000292	BP First Systolic			blood pressure	BPFirstSystolic		
+VZ:0000293	BP First Diastolic			blood pressure	BPFirstDiastolic		
+VZ:0000294	BP Second Systolic			blood pressure	BPSecondSystolic		
+VZ:0000295	BP Second Diastolic			blood pressure	BPSecondDiastolic		
+VZ:0000296	BP Third Systolic			blood pressure	BPThirdSystolic		
+VZ:0000297	BP Third Diastolic			blood pressure	BPThirdDiastolic		
+VZ:0000298	BP Forth Systolic			blood pressure	BPForthSystolic		
+VZ:0000299	BP Forth Diastolic			blood pressure	BPForthDiastolic		
+VZ:0000300	BP Lowest Systolic			blood pressure	LowestBpSystolic		
+VZ:0000301	BP Lowest Diastolic			blood pressure	LowestBpDiastolic		
+VZ:0000302	Hip Circumference			anthropometry	HipCircumference		
+VZ:0000303	Arm Circumference			anthropometry	ArmCircumference		
+VZ:0000304	Heart Rate First Reading			heart rate (HR)	HeartRateFirstReading		
+VZ:0000305	Heart Rate Second Reading			heart rate (HR)	HeartRateSecondReading		
+VZ:0000306	Heart RateThird Reading			heart rate (HR)	HeartRateThirdReading		
+VZ:0000307	Heart Rate Forth Reading			heart rate (HR)	HeartRateForthReading		
+VZ:0000308	Pregnant			reproduction	Pregnant		
+VZ:0000309	CXR proposed diagnostic-ActiveTB			diseases	ActiveTB		
+VZ:0000310	CXR proposed diagnostic-OldTB			diseases	OldTB		
+VZ:0000311	CXR proposed diagnostic-ProbableTB			diseases	ProbableTB		
+VZ:0000312	CXR proposed diagnostic-OtherInfection			diseases	OtherInfection		
+VZ:0000313	CXR proposed diagnostic-InflammatoryDisorder			diseases	InflammatoryDisorder		
+VZ:0000314	CXR proposed diagnostic-Neoplasm			oncological	Neoplasm		
+VZ:0000315	CXR proposed diagnostic-Trauma			diseases	Trauma		
+VZ:0000316	CXR proposed diagnostic-CongenitalAbnormality			diseases	CongenitalAbnormality		
+VZ:0000317	CXR proposed diagnostic-CardiacDisorder			circulatory system	CardiacDisorder		
+VZ:0000318	CXR proposed diagnostic-VascularDisorder			circulatory system	VascularDisorder		
+VZ:0000319	CXR proposed diagnostic-DegenerativeDisorder			diseases	DegenerativeDisorder		
+VZ:0000320	CXR pattern Left lung field & pleura			physiological measurements	LeftLung		
+VZ:0000321	CXR pattern Right lung field & pleura			physiological measurements	RightLung		
+VZ:0000322	TB Diagnostic Other			diseases	TBDiagnosticOther		
+VZ:0000323	Medical Officer Diagnostic TB Diagnostic Other			diseases	MOTBDiagnosticOther		
+VZ:0000324	Radiologist Left Lung Normal			physiological measurements	RadLeftLungNormal		
+VZ:0000325	Radiologist Left Lung Consolidation			physiological measurements	RadLeftLungConsolid		
+VZ:0000326	Radiologist Left Lung Cavitation			physiological measurements	RadLeftLungCavitation		
+VZ:0000327	Radiologist Left Lung Nodules			physiological measurements	RadLeftLungNodules		
+VZ:0000328	Radiologist Left Lung Mass			physiological measurements	RadLeftLungMass		
+VZ:0000329	Radiologist Left Lung ReticularOpacities			physiological measurements	RadLeftLungReticular		
+VZ:0000330	Radiologist Left Lung Fibrosis			physiological measurements	RadLeftLungFibrosis		
+VZ:0000331	Radiologist Left Lung Calcification			physiological measurements	RadLeftLungCalcification		
+VZ:0000332	Radiologist Left Lung Pleural Thickening			physiological measurements	RadLeftLungPleuralThick		
+VZ:0000333	Radiologist Left Lung PleuralEffusion			physiological measurements	RadLeftLungPleuralEffusion		
+VZ:0000334	Radiologist Left Lung Node Enlargement			physiological measurements	RadLeftLungNodeEnlarge		
+VZ:0000335	Radiologist Left Lung Other			physiological measurements	RadLeftLungOther		
+VZ:0000336	Radiologist Right Lung Normal			physiological measurements	RadRightLungNormal		
+VZ:0000337	Radiologist Right Lung Consolidation			physiological measurements	RadRightLungConsolid		
+VZ:0000338	Radiologist Right Lung Cavitation			physiological measurements	RadRightLungCavitation		
+VZ:0000339	Radiologist Right Lung Nodules			physiological measurements	RadRightLungNodules		
+VZ:0000340	Radiologist Right Lung Mass			physiological measurements	RadRightLungMass		
+VZ:0000341	Radiologist Right Lung ReticularOpacities			physiological measurements	RadRightLungReticular		
+VZ:0000342	Radiologist Right Lung Fibrosis			physiological measurements	RadRightLungFibrosis		
+VZ:0000343	Radiologist Right Lung Calcification			physiological measurements	RadRightLungCalcification		
+VZ:0000344	Radiologist Right Lung Pleural Thickening			physiological measurements	RadRightLungPleuralThick		
+VZ:0000345	Radiologist Right Lung Pleural Effusion			physiological measurements	RadRightLungPleuralEffusion		
+VZ:0000346	Radiologist Right Lung Node Enlargement			physiological measurements	RadRightLungNodeEnlarge		
+VZ:0000347	Radiologist Right Lung Other			physiological measurements	RadRightLungOther		
+VZ:0000348	Willing Surveyed Attempt 1			survey administration	WillingSurveyedAttempt1		
+VZ:0000349	Radiologist Diagnostic ActiveTB			diseases	RadActiveTB		
+VZ:0000350	Radiologist Diagnostic OldTB			diseases	RadOldTB		
+VZ:0000351	Radiologist Diagnostic ProbableTB			diseases	RadProbableTB		
+VZ:0000352	Radiologist Diagnostic Other Infection			diseases	RadOtherInfection		
+VZ:0000353	Radiologist Diagnostic Inflammatory Disorder			diseases	RadInflammatoryDisorder		
+VZ:0000354	Radiologistr Diagnostic Neoplasm			oncological	RadNeoplasm		
+VZ:0000355	Radiologist Diagnostic Trauma			diseases	RadTrauma		
+VZ:0000356	Radiologist Diagnostic CongenitalAbnormality			diseases	RadCongenitalAbnormality		
+VZ:0000357	Radiologist Diagnostic CardiacDisorder			circulatory system	RadCardiacDisorder		
+VZ:0000358	Radiologist Diagnostic VascularDisorder			circulatory system	RadVascularDisorder		
+VZ:0000359	Radiologist Diagnostic Degenerative Disorder			diseases	RadDegenerativeDisorder		
+VZ:0000360	Radiologist TB Diagnostic Other			diseases	RadTBDiagnosticOther		
+VZ:0000361	Lab Result Date			date and time-related information	LabResultDate		
+VZ:0000362	Is Result Abnormal?			survey administration	AbnormalResult		
+VZ:0000363	Needs Clinical Review?			survey administration	ClinicalReview		
+VZ:0000364	CD4 Lymphocytes %			blood	CD4LymphPercent		
+VZ:0000365	CD4 Lymphocytes Abs			blood	CD4LymphAb		
+VZ:0000366	CD4/CD8 Ratio			blood	CD4CD8Ratio		
+VZ:0000367	CD8 Lymphocytes %			blood	CD8LymphPercent		
+VZ:0000368	CD8 Lymphocytes Abs			blood	CD8LymphAb		
+VZ:0000369	HBA1c			blood	HBA1c		
+VZ:0000370	HBA1C%			blood	HBA1CPercent		
+VZ:0000371	Glucose Average (calculated)			blood	Glucose		
+VZ:0000372	Rifampicin Resistance			laboratory measures	Rifampicin		
+VZ:0000373	TB GeneXpert Test Result			laboratory measures	GeneXpert		
+VZ:0000374	Liquid Culture Result(MGIT)			laboratory measures	LiquidCulture		
+VZ:0000375	Solid Culture Result(7H11)			laboratory measures	SolidCulture		
+VZ:0000376	Solid Culture Incubation			laboratory measures	SolidIncub		
+VZ:0000377	HIV Elisa Result			laboratory measures	HIVElisa		
+VZ:0000378	HIV Viral Load Result			laboratory measures	VL		
+VZ:0000379	Medical Officer Left Lung Normal			physiological measurements	MOLeftLungNormal		
+VZ:0000380	Medical Officer Left Lung Consolidation			physiological measurements	MOLeftLungConsolid		
+VZ:0000381	Medical Officer Left Lung Cavitation			physiological measurements	MOLeftLungCavitation		
+VZ:0000382	Medical Officer Left Lung Nodules			physiological measurements	MOLeftLungNodules		
+VZ:0000383	Medical Officer Left Lung Mass			physiological measurements	MOLeftLungMass		
+VZ:0000384	Medical Officer Left Lung Reticular Opacities			physiological measurements	MOLeftLungReticular		
+VZ:0000385	Medical Officer Left Lung Fibrosis			physiological measurements	MOLeftLungFibrosis		
+VZ:0000386	Medical Officer Left Lung calcification			physiological measurements	MOLeftLungCalcification		
+VZ:0000387	Medical Officer Left Lung Pleural Thickening			physiological measurements	MOLeftLungPleuralThick		
+VZ:0000388	Medical Officer Left Lung Pleural Effusion			physiological measurements	MOLeftLungPleuralEffusion		
+VZ:0000389	Medical Officer Left Lung Node Enlargement			physiological measurements	MOLeftLungNodeEnlarge		
+VZ:0000390	Medical Officer Left Lung Other			physiological measurements	MOLeftLungOther		
+VZ:0000391	Medical Officer Right Lung Normal			physiological measurements	MORightLungNormal		
+VZ:0000392	Medical Officer Right Lung Consolidation			physiological measurements	MORightLungConsolid		
+VZ:0000393	Medical Officer Right Lung Cavitation			physiological measurements	MORightLungCavitation		
+VZ:0000394	Medical Officer Right Lung Nodules			physiological measurements	MORightLungNodules		
+VZ:0000395	Medical Officer Right Lung Mass			physiological measurements	MORightLungMass		
+VZ:0000396	Medical Officer Right Lung ReticularOpacities			physiological measurements	MORightLungReticular		
+VZ:0000397	Medical Officer Right Lung Fibrosis			physiological measurements	MORightLungFibrosis		
+VZ:0000398	Medical Officer Right Lung Calcification			physiological measurements	MORightLungCalcification		
+VZ:0000399	Medical Officer Right Lung Pleural Thickening			physiological measurements	MORightLungPleuralThick		
+VZ:0000400	Medical Officer Right Lung Pleural Effusion			physiological measurements	MORightLungPleuralEffusion		
+VZ:0000401	Medical Officer Right Lung Node Enlargement			physiological measurements	MORightLungNodeEnlarge		
+VZ:0000402	Medical Officer Right Lung Other			physiological measurements	MORightLungOther		
+VZ:0000403	Medical Officer Diagnostic ActiveTB			diseases	MOActiveTB		
+VZ:0000404	Medical Officer Diagnostic OldTB			diseases	MOOldTB		
+VZ:0000405	Medical Officer Diagnostic ProbableTB			diseases	MOProbableTB		
+VZ:0000406	Medical Officer Diagnostic Other Infection			diseases	MOOtherInfection		
+VZ:0000407	Medical Officer Diagnostic Inflammatory Disorder			diseases	MOInflammatoryDisorder		
+VZ:0000408	Medical Officer Diagnostic Neoplasm			oncological	MONeoplasm		
+VZ:0000409	Medical Officer Diagnostic Trauma			diseases	MOTrauma		
+VZ:0000410	Medical Officer Diagnostic CongenitalAbnormality			diseases	MOCongenitalAbnormality		
+VZ:0000411	Medical Officer Diagnostic CardiacDisorder			circulatory system	MOCardiacDisorder		
+VZ:0000412	Medical Officer Diagnostic VascularDisorder			circulatory system	MOVascularDisorder		
