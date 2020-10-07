@@ -1,0 +1,6 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+KORT:0000001	Tobacco	Smoking		tobacco	a1		test comment 1
+KORT:0000002	Smoking			tobacco	a2		
+KORT:0000003	Birth date		Test Definition 1	age/birthdate	a3		test comment 2
+KORT:0000004	residence			residence	a4		
+KORT:0000005	food		Test Definition 2	socio-demographic and economic characteristics	a5		

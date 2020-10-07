@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/vz.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/vz/releases/2020-10-02/vz.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/vz/releases/2020-10-07/vz.owl"/>
         <dc:description>The data dictionary containing variables collected by the Africa Health Research Institute&apos;s Vukuzazi programme.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:rights>You are free to:
