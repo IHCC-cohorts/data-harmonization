@@ -1,7 +1,6 @@
 import csv
 import json
 import logging
-import shutil
 import sys
 
 from argparse import ArgumentParser
@@ -9,7 +8,7 @@ from rdflib import Graph, Literal, OWL, RDF, URIRef
 import pandas as pd
 
 
-# Perpare the newly added cohort for building by doing the following:
+# Prepare the newly added cohort for building by doing the following:
 # - create metadata/[cohort_id].ttl file from build/metadata.tsv
 # - create templates/[cohort_id].tsv from build/terminology.tsv
 # - add [COHORT_ID] to src/prefixes.json
@@ -90,7 +89,7 @@ def main():
     # Remove Suggested Categories from template and safe.
     df = pd.read_csv(args.terminology, sep="\t")
     df["Suggested Categories"] = ""
-    df.to_csv(f"templates/{cohort_id}.tsv", sep="\t")
+    df.to_csv(f"templates/{cohort_id}.tsv", sep="\t", index=None)
 
 
 if __name__ == "__main__":
