@@ -76,8 +76,8 @@ Note that the ODK is currently configured to consume up to 4GB of RAM; should yo
 
 **Generated Files in Version Control**
 
-* `templates/*.csv`: ROBOT template for cohort data dictionary to build ontology file from [ROBOT Templates](https://docs.google.com/spreadsheets/d/1FwYYlJPzFAAItZyaKY2YnP01yQw6BkARq3CPifQSx1A)
-* `mappings/*.csv`: ROBOT template for cohort data dictionary mappings to GECKO from [GECKO Mappings](https://docs.google.com/spreadsheets/d/1IRAv5gKADr329kx2rJnJgtpYYqUhZcwLutKke8Q48j4)
+* `templates/*.csv`: ROBOT template for cohort data dictionary to build ontology file
+* `mappings/*.csv`: ROBOT template for cohort data dictionary mappings to GECKO
 
 **Generated Files in Build**
 
