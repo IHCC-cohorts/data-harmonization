@@ -6,6 +6,7 @@ import sys
 
 from argparse import ArgumentParser
 from rdflib import Graph, Literal, OWL, RDF, URIRef
+import pandas as pd
 
 
 # Perpare the newly added cohort for building by doing the following:
@@ -86,8 +87,10 @@ def main():
         with open(args.all_metadata, "w") as f:
             f.write(json.dumps(metadata, indent=4, sort_keys=True))
 
-    # Copy the terminology file
-    shutil.copyfile(args.terminology, f"templates/{cohort_id}.tsv")
+    # Remove Suggested Categories from template and safe.
+    df = pd.read_csv(args.terminology, sep="\t")
+    del df["Suggested Categories"]
+    df.to_csv(f"templates/{cohort_id}.tsv", sep="\t")
 
 
 if __name__ == "__main__":
