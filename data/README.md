@@ -14,3 +14,5 @@
 - `cohort-data.json` contains each cohort that has been converted to OWL and mapped to GECKO (includes details `member_cohorts.csv` and upper-level GECKO categories that are included in the cohort data dictionary)
 - `random-data.json` contains the same details (with randomly-generated GECKO categories) for all cohorts from `member_cohorts.csv` that have **not** been converted to OWL
 - `full-cohort-data.json` combines `cohort-data.json` and `random-data.json` for use in the IHCC browser demo
+- `ols-config.yaml` contains the configuration file for the IHCC OLS instance (https://registry.ihccglobal.app/index)
+- `ihcc-mapping-suggestions-zooma.tsv` contains the mapping database that is loaded into the [IHCC Zooma instance](https://mapping.ihccglobal.app/zooma/)
