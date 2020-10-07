@@ -10,7 +10,6 @@ author: Nico Matentzoglu for Knocean Inc., 26 August 2020
 
 import pandas as pd
 from argparse import ArgumentParser
-from lib import QCError, top_suggestion
 
 
 class QCReport:
@@ -39,33 +38,58 @@ parser.add_argument("-o", "--output", dest="report_out_path", help="Output file"
 args = parser.parse_args()
 
 df = pd.concat([pd.read_csv(f, sep="\t") for f in args.templates])
-print(df.head())
-print(df.describe())
 
 duplicated = df[df.duplicated(["Term ID"], keep=False)]
 if len(duplicated) > 0:
     print("ERROR: There are templates with duplicate ids: %s" % str(duplicated))
     # raise QCError("There are templates with duplicate ids: %s" % str(duplicated))
 
-df["Top Suggestion"] = [top_suggestion(suggestions) for suggestions in df["Suggested Categories"]]
 
-print(len(df))
-df_wrong_matches = df[df["Top Suggestion"] != df["GECKO Category"]]
-print(len(df_wrong_matches))
-df_wrong_matches.to_csv("QC.tsv", sep="\t", index=False)
-print(df_wrong_matches[["Term ID", "GECKO Category", "Top Suggestion"]].head())
+ID_COLUMN = "Term ID"
+GECKO_COLUMN = "GECKO Category"
+SUGGESTED_COLUMN = "Suggested Categories"
+CERTAIN_MAPPING = 0.97
+df_mappings = df[[ID_COLUMN, GECKO_COLUMN]].copy()
+df_suggestions = df[[ID_COLUMN, SUGGESTED_COLUMN]].copy()
 
-# Two checks:
-# 1) does the primary recommendation correspond to the mappings?
-# 2) Are their two terms that have the exact same label and map to different terms?
+df_mappings.dropna(inplace=True)
+df_suggestions.dropna(inplace=True)
 
-# Save template
-# with open(args.tsv_out_path,'w') as write_csv:
-#    write_csv.write(dfx.to_csv(sep='\t', index=False))
+data = []
+for term in df_mappings[ID_COLUMN].unique().tolist():
+    dft = df_mappings[df_mappings[ID_COLUMN] == term]
+    for mapping in dft[GECKO_COLUMN].unique().tolist():
+        for m in mapping.split("|"):
+            data.append([term, m.strip()])
+df_mappings = pd.DataFrame(data, columns=['term', 'mapping'])
 
-if qc_report.get_errors():
-    warn = "WARNING: For some data dictionaries, the mapping recommendation now differs \
-        from the orginal mapping! See %s"
-    print(warn % args.report_out_path)
-else:
-    print("All existing mappings appear to be mapped according to the current recommendation!")
+data = []
+for term in df_suggestions[ID_COLUMN].unique().tolist():
+    dft = df_suggestions[df_suggestions[ID_COLUMN] == term]
+    for mapping in dft[SUGGESTED_COLUMN].unique().tolist():
+        for m in mapping.split("|"):
+            m = m.strip()
+            mp = " ".join([x.strip() for x in m.split(" ")][2:])
+            conf = float(m.split(" ")[0])
+            if conf >= CERTAIN_MAPPING:
+                data.append([term, mp])
+
+df_suggestions = pd.DataFrame(data, columns=['term', 'suggestion'])
+
+
+vec_mappings = df_mappings['term'] + "-" + df_mappings['mapping']
+vec_mappings = set(vec_mappings.tolist())
+
+vec_suggestions = df_suggestions['term'] + "-" + df_suggestions['suggestion']
+vec_suggestions = set(vec_suggestions.tolist())
+
+vec_mappings_not_suggestions = vec_mappings - vec_suggestions
+vec_suggestions_not_mappings = vec_suggestions - vec_mappings
+
+print("Strong suggestions that have not been mapped: %d" % len(vec_suggestions_not_mappings))
+for e in vec_suggestions_not_mappings:
+    print(e)
+
+print("Actual mappings that have not been suggested sufficiently strongly %d" % len(vec_mappings_not_suggestions))
+for e in vec_mappings_not_suggestions:
+    print(e)
