@@ -62,6 +62,8 @@ COHORTS := $(filter-out maelstrom, $(patsubst %.ttl, %, $(notdir $(wildcard meta
 
 TEMPLATES := $(foreach C,$(COHORTS),templates/$(C).tsv)
 METADATA := $(foreach C,$(COHORTS),metadata/$(C).ttl)
+ZOOMA_DATASET = data/ihcc-mapping-suggestions-zooma.tsv
+OLS_CONFIG = data/ols-config.yaml
 
 # --- These files are not in version control (all in build directory) ---
 
@@ -83,8 +85,10 @@ clean:
 all: $(TREES) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
-all: data/ihcc-mapping-suggestions-zooma.tsv
 all: owl
+all: $(ZOOMA_DATASET)
+all: $(OLS_CONFIG)
+
 
 .PHONY: update
 update: clean all
@@ -309,8 +313,6 @@ automated_validation:
 
 MAP_SUGGEST := $(foreach C, $(COHORTS), build/suggestions_$(C).tsv)
 GECKO_LEXICAL = build/intermediate/gecko-xrefs-sparql.csv
-ZOOMA_DATASET = data/ihcc-mapping-suggestions-zooma.tsv
-OLS_CONFIG = data/ols-config.yaml
 MAP_SCRIPT_DIR = src/mapping-suggest
 MAP_SCRIPT_CONFIG = $(MAP_SCRIPT_DIR)/mapping-suggest-config.yml
 
@@ -359,7 +361,9 @@ $(ZOOMA_DATASET): $(MAP_SCRIPT_DIR)/ihcc-zooma-dataset.py $(GECKO_LEXICAL) $(MAP
 	python3 $< $(patsubst %, -l %, $(filter-out $<,$^)) -w $(shell pwd) -o $@
 
 .PHONY: update_ols
-update_ols: src/prepare_ols_config.py $(OLS_CONFIG) $(METADATA)
+update_ols: $(OLS_CONFIG)
+
+$(OLS_CONFIG): src/prepare_ols_config.py $(METADATA)
 	python3 $< $(patsubst %, -m %, $(METADATA)) -o $(OLS_CONFIG)
 
 .PHONY: cogs_pull
