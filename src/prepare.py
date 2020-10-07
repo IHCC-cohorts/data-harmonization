@@ -89,7 +89,7 @@ def main():
 
     # Remove Suggested Categories from template and safe.
     df = pd.read_csv(args.terminology, sep="\t")
-    del df["Suggested Categories"]
+    df["Suggested Categories"] = ""
     df.to_csv(f"templates/{cohort_id}.tsv", sep="\t")
 
 
