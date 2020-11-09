@@ -233,6 +233,14 @@
     "current_enrollment": 235000,
     "enrollment_period": "2001:2013",
     "pi_lead": "Hyun Young Park",
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "aims_and_objectives"
+      ],
+      "population_data": [
+        "location"
+      ]
+    },
     "questionnaire_survey_data": {
       "diseases": [
         "digestive_system",
@@ -265,8 +273,10 @@
         ]
       },
       "socio_demographic_and_economic_characteristics": [
+        "age_birthdate",
         "education",
-        "family_and_household_structure"
+        "family_and_household_structure",
+        "gender"
       ]
     },
     "target_enrollment": null,
