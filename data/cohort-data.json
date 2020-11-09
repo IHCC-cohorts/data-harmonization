@@ -228,15 +228,11 @@
     },
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
     "countries": [
-      "South Korea",
-      "Vietnam",
-      "Cambodia",
-      "Japan",
-      "China"
+      "South Korea"
     ],
     "current_enrollment": 235000,
     "enrollment_period": "2001:2013",
-    "pi_lead": "Sung Soo Kim",
+    "pi_lead": "Hyun Young Park",
     "questionnaire_survey_data": {
       "diseases": [
         "digestive_system",
