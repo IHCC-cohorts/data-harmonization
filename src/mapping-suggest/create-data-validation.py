@@ -51,13 +51,11 @@ def main():
                         row["GECKO Category"] = gecko_cat
                         problem_rows.append(
                             {
-                                "ID": row_num,
-                                "table": "terminology",
+                                "table": "Terminology",
                                 "cell": f"E{row_num}",
                                 "level": "INFO",
                                 "rule ID": "automatically_assigned_category",
-                                "rule name": f"this is an automatically assigned category based on a score of {score}",
-                                "value": gecko_cat,
+                                "rule": f"this is an automatically assigned category based on a score of {score}",
                             }
                         )
             updated_rows.append(row)
@@ -76,7 +74,7 @@ def main():
                 cat_names = gecko_copy
             dv_rows.append(
                 {
-                    "table": "terminology",
+                    "table": "Terminology",
                     "range": f"E{row_num}",
                     "condition": "ONE_OF_LIST",
                     "value": ", ".join(cat_names),
@@ -111,15 +109,11 @@ def main():
         writer = csv.DictWriter(
             f,
             fieldnames=[
-                "ID",
                 "table",
                 "cell",
                 "level",
                 "rule ID",
-                "rule name",
-                "value",
-                "fix",
-                "instructions",
+                "rule",
             ],
             delimiter="\t",
             lineterminator="\n",
