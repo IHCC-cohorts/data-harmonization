@@ -38,7 +38,7 @@ def idx_to_a1(row, col):
 
 def validate(table, gecko_labels):
     """Validate an IHCC mapping table."""
-    basename = os.path.splitext(os.path.basename(table))[0]
+    basename = os.path.splitext(os.path.basename(table))[0].capitalize()
     problems = []
     problem_count = 0
     # label -> locs
