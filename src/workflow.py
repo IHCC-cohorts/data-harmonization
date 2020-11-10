@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import cogs
 import csv
 import os
 import re
@@ -10,11 +11,12 @@ import urllib.parse
 import json
 
 from openpyxl import load_workbook
+from cogs.helpers import get_sheet_url
 
 output_format = "text"
 prefixes = {}
 
-email_pattern = re.compile("^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$")
+email_pattern = re.compile("^\S+@\S+$")
 cohort_pattern = re.compile("^[A-Z0-9]+$")
 file_pattern = re.compile("\"(/.+/ring-multipart-\d+.tmp)\"")
 sheet_pattern = re.compile("^\w+$")
@@ -22,6 +24,7 @@ sheet_pattern = re.compile("^\w+$")
 
 def main():
     output = ["h1", "Unhandled input"]
+    build = "../build"
 
     # Read arguments from STDIN as a query string
     args = {}
@@ -56,7 +59,6 @@ def main():
 
         valid = {}
         invalid = {}
-        build = "../build"
         upload = build + "/upload.xlsx"
         wb = None
 
@@ -118,7 +120,9 @@ def main():
             args["invalid"] = invalid
             return build_form(args)
 
-        # TODO: Store the submitter_google_id
+        os.makedirs(build, exist_ok=True)
+        with open(build + "/submitter_google_id", "w") as f:
+            f.write(args["submitter_google_id"])
 
         cohort_id = args["cohort_id"]
         instructions = f"build/instructions.tsv".lower()
@@ -133,24 +137,17 @@ def main():
         save_sheet(wb["Terminology"], "../" + terminology)
 
         # TODO: These would be better as Python calls.
-        cwd = ".."
-        subprocess.call(
-            [
-                "cogs",
-                "init",
-                "--title",
-                f"IHCC Data Harmonization: {cohort_id}",
-                "--user",
-                args["admin_google_id"],
-            ],
-            cwd=cwd,
+        os.chdir("..")
+        cogs.init(
+            f"IHCC Data Harmonization: {cohort_id}",
+            user=args["admin_google_id"],
+            role="writer"
         )
-        subprocess.call(["cogs", "add", instructions], cwd=cwd)
-        subprocess.call(["cogs", "add", metadata], cwd=cwd)
-        subprocess.call(["cogs", "add", terminology, "--freeze-row", "1"], cwd=cwd)
-        subprocess.call(["cogs", "push"], cwd=cwd)
-        p = subprocess.run(["cogs", "open"], stdout=subprocess.PIPE, text=True, cwd=cwd)
-        link = p.stdout.strip()
+        cogs.add(instructions, title="Instructions")
+        cogs.add(metadata, title="Metadata")
+        cogs.add(terminology, title="Terminology", freeze_row=1)
+        cogs.push()
+        link = get_sheet_url()
 
         project_name = args["project-name"]
         branch_name = args["branch-name"]
@@ -166,6 +163,55 @@ def main():
         ]
         return render_output(output)
 
+    if action == "share":
+        submitter_google_id = None
+        if not os.path.exists("../.cogs/config.tsv"):
+            output = [
+                "div",
+                ["h1", "Error: No Google Sheet has been configured"],
+                ["p", ["a", {"href": "workflow.py?action=create"}, "Upload cohort data"]],
+            ]
+            return render_output(output)
+
+        if "submitter_google_id" in args:
+            submitter_google_id = args["submitter_google_id"]
+        else:
+            try:
+                with open(build + "/submitter_google_id") as f:
+                    submitter_google_id = f.read().strip()
+            except:
+                pass
+
+        invalid = {}
+        name = "submitter_google_id"
+        if submitter_google_id and not email_pattern.match(submitter_google_id):
+            invalid[name] = "Must be a valid email address"
+        if not submitter_google_id or invalid:
+            args["invalid"] = invalid
+            output = [
+                "form",
+                {"action": "workflow.py"},
+                ["p", "Share Google Sheet with submitter:"],
+                ["input", {"type": "hidden", "name": "action", "value": "share"}],
+                build_input(args, "Submitter Google ID"),
+                build_input(args, "Submit", input_type="submit"),
+            ]
+            return render_output(output)
+
+        os.chdir("..")
+        cogs.share(submitter_google_id, "writer")
+        link = get_sheet_url()
+        project_name = args["project-name"]
+        branch_name = args["branch-name"]
+        output = [
+            "div",
+            ["h1", "Google Sheet Shared"],
+            ["p", submitter_google_id],
+            ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
+            ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
+        ]
+        return render_output(output)
+
 
 def save_sheet(ws, path):
     with open(path, "w") as fh:
@@ -176,8 +222,7 @@ def save_sheet(ws, path):
 
 def open_sheet(args):
     if os.path.exists("../.cogs/config.tsv"):
-        p = subprocess.run(["cogs", "open"], stdout=subprocess.PIPE, text=True, cwd="..")
-        link = p.stdout.strip()
+        link = get_sheet_url()
         project_name = args["project-name"]
         branch_name = args["branch-name"]
         output = [
@@ -326,6 +371,8 @@ def render_text(element):
                     output += render_text(child)
                 except Exception as e:
                     raise Exception(f"Bad child in '{element}'", e)
+            elif isinstance(child, dict):
+                pass
             else:
                 raise Exception(f"Bad type for child '{child}' in '{element}'")
     return output
