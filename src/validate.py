@@ -231,7 +231,6 @@ def main():
                 "cell",
                 "level",
                 "rule",
-                "value",
                 "message",
                 "suggestion",
             ],
