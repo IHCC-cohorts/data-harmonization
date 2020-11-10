@@ -65,7 +65,7 @@ def validate(table, gecko_labels):
                             "table": basename,
                             "cell": idx_to_a1(1, col_idx + 1),
                             "level": "error",
-                            "rule name": "Invalid header",
+                            "rule": "Invalid header",
                             "suggestion": matching_header,
                             "message": f"This column ({h}) should be '{matching_header}'",
                         }
@@ -78,7 +78,7 @@ def validate(table, gecko_labels):
                         "table": basename,
                         "cell": idx_to_a1(1, col_idx + 1),
                         "level": "error",
-                        "rule name": "Invalid header",
+                        "rule": "Invalid header",
                         "message": f"This column ({h}) should be empty",
                     }
                 )
@@ -104,7 +104,7 @@ def validate(table, gecko_labels):
                         "table": basename,
                         "cell": idx_to_a1(row_idx, 1),
                         "level": "error",
-                        "rule name": "Missing term ID",
+                        "rule": "Missing term ID",
                         "message": "run the automated_mapping script to assign term IDs",
                     }
                 )
@@ -115,7 +115,7 @@ def validate(table, gecko_labels):
                         "table": basename,
                         "cell": idx_to_a1(row_idx, 1),
                         "level": "error",
-                        "rule name": "Invalid term ID",
+                        "rule": "Invalid term ID",
                         "message": "the term ID must follow the pattern COHORT:num_id where "
                         "num_id has 7 digits (e.g., FOO:0000020)",
                     }
@@ -144,7 +144,7 @@ def validate(table, gecko_labels):
                                 "table": basename,
                                 "cell": idx_to_a1(row_idx, 5),
                                 "level": "error",
-                                "rule name": "Invalid GECKO category",
+                                "rule": "Invalid GECKO category",
                                 "message": "select a valid GECKO category",
                             }
                         )
@@ -162,7 +162,7 @@ def validate(table, gecko_labels):
                         "table": basename,
                         "cell": loc,
                         "level": "error",
-                        "rule name": "Duplicate label",
+                        "rule": "Duplicate label",
                         "message": f"update this label ({label}) & label(s) in cell(s): {other_locs}",
                     }
                 )
@@ -179,7 +179,7 @@ def validate(table, gecko_labels):
                         "table": basename,
                         "cell": loc,
                         "level": "error",
-                        "rule name": "Invalid parent term",
+                        "rule": "Invalid parent term",
                         "instructions": f"make sure that the parent term ({pt}) is a label listed "
                         "in the label column of this table",
                     }
@@ -230,7 +230,7 @@ def main():
                 "table",
                 "cell",
                 "level",
-                "rule name",
+                "rule",
                 "value",
                 "message",
                 "suggestion",
