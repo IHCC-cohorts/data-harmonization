@@ -103,7 +103,6 @@ def main():
         if cohort_name in cohort_data:
             this_cohort = cohort_data[cohort_name]
             this_cohort.update(data)
-            all_data.append(this_cohort)
         else:
             this_cohort = {
                 "cohort_name": cohort_name,
@@ -115,8 +114,12 @@ def main():
                 "enrollment_period": "",
                 "available_data_types": [],
             }
-            this_cohort.update(data)
-            all_data.append(this_cohort)
+
+        # Add other metadata elements
+        for key in ["recontact_in_place", "irb_approved_data_sharing", "longitudinal_data"]:
+            this_cohort.update({key: cohort_metadata.get(key, False)})
+        
+        all_data.append(this_cohort)
 
     json_obj = json.dumps(all_data, indent=2, sort_keys=True)
     output_file.write(json_obj)
