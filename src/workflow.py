@@ -14,7 +14,7 @@ from openpyxl import load_workbook
 output_format = "text"
 prefixes = {}
 
-email_pattern = re.compile("^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$")
+email_pattern = re.compile("^\S+@\S+$")
 cohort_pattern = re.compile("^[A-Z0-9]+$")
 file_pattern = re.compile("\"(/.+/ring-multipart-\d+.tmp)\"")
 sheet_pattern = re.compile("^\w+$")
