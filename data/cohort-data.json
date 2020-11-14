@@ -20,7 +20,9 @@
     ],
     "current_enrollment": 130000,
     "enrollment_period": "2000:ongoing",
+    "irb_approved_data_sharing": false,
     "laboratory_measures": [],
+    "longitudinal_data": false,
     "pi_lead": "Deenan Pillay",
     "questionnaire_survey_data": {
       "diseases": [
@@ -53,6 +55,7 @@
         ]
       }
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "date_and_time_related_information",
       "unique_identifiers"
@@ -81,7 +84,9 @@
     ],
     "current_enrollment": 100000,
     "enrollment_period": "2013:2018",
+    "irb_approved_data_sharing": false,
     "laboratory_measures": [],
+    "longitudinal_data": false,
     "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
       "diseases": [
@@ -126,6 +131,7 @@
         "residence"
       ]
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "date_and_time_related_information",
       "unique_identifiers"
@@ -158,7 +164,9 @@
     ],
     "current_enrollment": 50000,
     "enrollment_period": "2004:2008",
+    "irb_approved_data_sharing": false,
     "laboratory_measures": [],
+    "longitudinal_data": false,
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
@@ -206,6 +214,7 @@
         "residence"
       ]
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "date_and_time_related_information",
       "unique_identifiers"
@@ -232,6 +241,8 @@
     ],
     "current_enrollment": 235000,
     "enrollment_period": "2001:2013",
+    "irb_approved_data_sharing": false,
+    "longitudinal_data": false,
     "pi_lead": "Hyun Young Park",
     "questionnaire_survey_data": {
       "diseases": [
@@ -269,6 +280,7 @@
         "family_and_household_structure"
       ]
     },
+    "recontact_in_place": false,
     "target_enrollment": null,
     "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65199&menuIds=HOME004-MNU2261-MNU2262-MNU2263-MNU2264"
   },
@@ -285,7 +297,9 @@
     ],
     "current_enrollment": 350000,
     "enrollment_period": "1993:ongoing",
+    "irb_approved_data_sharing": false,
     "laboratory_measures": [],
+    "longitudinal_data": false,
     "pi_lead": "Kobus Herbst",
     "questionnaire_survey_data": {
       "diseases": [
@@ -304,6 +318,7 @@
         "residence"
       ]
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "date_and_time_related_information",
       "unique_identifiers"

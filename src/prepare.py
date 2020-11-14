@@ -4,7 +4,7 @@ import logging
 import sys
 
 from argparse import ArgumentParser
-from rdflib import Graph, Literal, OWL, RDF, URIRef
+from rdflib import Graph, Literal, OWL, RDF, URIRef, XSD
 import pandas as pd
 
 
@@ -41,23 +41,39 @@ def main():
     cohort_id = None
     ontology_iri = None
     title = None
+    recontact = False
+    data_sharing = False
+    longitudinal_data = False
+    data_dictionary = ""
     with open(args.cohort_metadata, "r") as f:
         reader = csv.reader(f, delimiter="\t")
         idx = 1
         for row in reader:
             key = row[0]
+            val = row[1].strip()
             if key == "Cohort ID":
                 cohort_id = row[1].lower().strip()
                 ontology_iri = f"https://purl.ihccglobal.org/{cohort_id}.owl"
                 gout.add((URIRef(ontology_iri), RDF.type, OWL.Ontology))
+            elif key == "Recontact in Place":
+                if val.lower() == "true":
+                    recontact = True
+            elif key == "IRB-Approved Data Sharing":
+                if val.lower() == "true":
+                    data_sharing = True
+            elif key == "Longitudinal Data":
+                if val.lower() == "true":
+                    longitudinal_data = True
+            elif key == "Data Dictionary":
+                data_dictionary = val
             elif key in props:
                 if key == "Title":
-                    title = row[1].strip()
+                    title = val
                 if not ontology_iri:
                     logging.critical("This sheet must define a 'Cohort ID' first")
                     sys.exit(1)
                 prop = props[key]
-                gout.add((URIRef(ontology_iri), URIRef(prop), Literal(row[1].strip())))
+                gout.add((URIRef(ontology_iri), URIRef(prop), Literal(val)))
             else:
                 logging.critical(f"Unknown key on line {idx}: {key}")
                 sys.exit(1)
@@ -82,7 +98,15 @@ def main():
     else:
         with open(args.all_metadata, "r") as f:
             metadata = json.load(f)
-        metadata[title] = {"id": prefix, "prefix": prefix, "data_dictionary": "", "mapping": ""}
+        metadata[title] = {
+            "id": prefix,
+            "prefix": prefix,
+            "data_dictionary": data_dictionary,
+            "mapping": "",
+            "recontact_in_place": recontact,
+            "irb_approved_data_sharing": data_sharing,
+            "longitudinal_data": longitudinal_data,
+        }
         with open(args.all_metadata, "w") as f:
             f.write(json.dumps(metadata, indent=4, sort_keys=True))
 
