@@ -31,17 +31,16 @@ def main():
     gecko_hierarchy = build_hierarchy(gecko)
 
     cohort_data = {}
-    reader = csv.reader(cohorts_file)
-    next(reader)
+    reader = csv.DictReader(cohorts_file)
     for row in reader:
         # Parse countries
-        countries = [x.strip() for x in row[2].split(",")]
+        countries = [x.strip() for x in row["Regions"].split(",")]
 
         # Get available datatypes
-        genomic = row[7]
-        environment = row[8]
-        biospecimen = row[9]
-        clinical = row[10]
+        genomic = row["Genomic Data "]
+        environment = row["Env. Data"]
+        biospecimen = row["Bio specimens"]
+        clinical = row["Phenotypic Data"]
         datatypes = {
             "genomic_data": False,
             "environmental_data": False,
@@ -57,8 +56,8 @@ def main():
         if clinical == "Yes":
             datatypes["phenotypic_clinical_data"] = True
 
-        cur_enroll = row[5].replace(",", "").strip()
-        target_enroll = row[6].replace(",", "").strip()
+        cur_enroll = row["Enrolled"].replace(",", "").strip()
+        target_enroll = row["Target Enrollment"].replace(",", "").strip()
 
         if cur_enroll == "":
             cur_enroll = None
@@ -70,8 +69,8 @@ def main():
         else:
             target_enroll = int(float(target_enroll))
 
-        enroll_start = row[3]
-        enroll_end = row[4]
+        enroll_start = row["Enroll Start"]
+        enroll_end = row["Enroll End"]
         if not enroll_start and not enroll_end:
             enroll_period = None
         elif enroll_end and not enroll_start:
@@ -80,11 +79,11 @@ def main():
             enroll_period = f"{enroll_start}:{enroll_end}"
 
 
-        cohort_data[row[0]] = {
-            "cohort_name": row[0],
+        cohort_data[row["Cohort Name"]] = {
+            "cohort_name": row["Cohort Name"],
             "countries": countries,
-            "pi_lead": row[1],
-            "website": row[12],
+            "pi_lead": row["PI/Lead"],
+            "website": row["Study website"],
             "current_enrollment": cur_enroll,
             "target_enrollment": target_enroll,
             "enrollment_period": enroll_period,
@@ -100,11 +99,9 @@ def main():
             continue
         gecko_cats = []
         with open(file_name, "r") as f:
-            reader = csv.reader(f, delimiter="\t")
-            # Skip header
-            next(reader)
+            reader = csv.DictReader(f, delimiter="\t")
             for row in reader:
-                gecko_cat = row[4]
+                gecko_cat = row["GECKO Category"]
                 if gecko_cat.strip() == "":
                     continue
                 gecko_cats.extend(gecko_cat.split("|"))
