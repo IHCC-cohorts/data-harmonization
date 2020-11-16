@@ -19,9 +19,9 @@
       "South Africa"
     ],
     "current_enrollment": 130000,
-    "enrollment_period": "2000:ongoing",
+    "enrollment_period": "2000:Ongoing",
     "laboratory_measures": [],
-    "pi_lead": "Deenan Pillay",
+    "pi_lead": "Willem Hankom",
     "questionnaire_survey_data": {
       "diseases": [
         "circulatory_system",
@@ -270,7 +270,7 @@
       ]
     },
     "target_enrollment": null,
-    "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65199&menuIds=HOME004-MNU2261-MNU2262-MNU2263-MNU2264"
+    "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
   },
   {
     "available_data_types": {
