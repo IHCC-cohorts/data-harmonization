@@ -11,7 +11,7 @@ bottom_level = []
 def main():
     parser = ArgumentParser(description="Create JSON for IHCC cohort browser")
     parser.add_argument(
-        "cohorts_csv", type=FileType("r"), help="IHCC member cohort details"
+        "cohorts_csv", type=FileType("r", encoding='ISO-8859-1'), help="IHCC member cohort details"
     )
     parser.add_argument(
         "cohorts_metadata",
@@ -38,10 +38,10 @@ def main():
         countries = [x.strip() for x in row[2].split(",")]
 
         # Get available datatypes
-        genomic = row[6]
-        environment = row[7]
-        biospecimen = row[8]
-        clinical = row[9]
+        genomic = row[7]
+        environment = row[8]
+        biospecimen = row[9]
+        clinical = row[10]
         datatypes = {
             "genomic_data": False,
             "environmental_data": False,
@@ -57,27 +57,37 @@ def main():
         if clinical == "Yes":
             datatypes["phenotypic_clinical_data"] = True
 
-        cur_enroll = row[3].replace(",", "").strip()
-        target_enroll = row[4].replace(",", "").strip()
+        cur_enroll = row[5].replace(",", "").strip()
+        target_enroll = row[6].replace(",", "").strip()
 
         if cur_enroll == "":
             cur_enroll = None
         else:
-            cur_enroll = int(cur_enroll)
+            cur_enroll = int(float(cur_enroll))
 
         if target_enroll == "":
             target_enroll = None
         else:
-            target_enroll = int(target_enroll)
+            target_enroll = int(float(target_enroll))
+
+        enroll_start = row[3]
+        enroll_end = row[4]
+        if not enroll_start and not enroll_end:
+            enroll_period = None
+        elif enroll_end and not enroll_start:
+            enroll_period = enroll_end
+        else:
+            enroll_period = f"{enroll_start}:{enroll_end}"
+
 
         cohort_data[row[0]] = {
             "cohort_name": row[0],
             "countries": countries,
             "pi_lead": row[1],
-            "website": row[11],
+            "website": row[12],
             "current_enrollment": cur_enroll,
             "target_enrollment": target_enroll,
-            "enrollment_period": row[5],
+            "enrollment_period": enroll_period,
             "available_data_types": datatypes,
         }
 
