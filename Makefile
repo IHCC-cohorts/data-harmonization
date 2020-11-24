@@ -139,7 +139,13 @@ prepare_build: src/prepare.py build/metadata.tsv build/terminology.tsv src/prefi
 # These are required to build the cohort OWL file
 # The xrefs are generated from the mapping template
 
-build/intermediate/%-xrefs.tsv: src/create_xref_template.py build/%.tsv templates/index.tsv | build/intermediate
+build/intermediate/gecko_index.tsv: build/gecko.owl | build/robot.jar build/intermediate
+	$(ROBOT) export --input $< \
+	 --header "ID|LABEL" \
+	 --sort "ID" \
+	 --output $@
+
+build/intermediate/%-xrefs.tsv: src/create_xref_template.py build/%.tsv build/intermediate/gecko_index.tsv | build/intermediate
 	python3 $^ $@
 
 
@@ -259,7 +265,7 @@ build/browser/index.html: src/browser/browser.html | build/browser
 
 # JSON of ancestor GECKO term (key) -> list of cohort terms (value)
 # This is used to drive the filter functionality in the browser
-build/browser/%-mapping.json: src/browser/generate_mapping_json.py build/%.tsv templates/index.tsv | build/browser
+build/browser/%-mapping.json: src/browser/generate_mapping_json.py build/%.tsv build/intermediate/gecko_index.tsv | build/browser
 	python3 $^ $@
 
 # Top-level cohort data as HTML pages 

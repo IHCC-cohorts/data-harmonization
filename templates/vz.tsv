@@ -31,15 +31,15 @@ VZ:0000029	History of Stroke			circulatory system	HadStrokeEver
 VZ:0000030	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Stroke			medication	StrokeAspirinTxCurr		
 VZ:0000031	Parental History of Stroke			circulatory system	ParentHistStroke		
 VZ:0000032	Cancer Treatment Before				CancerTxEver		is this non-pharmacological (potential surgery) or medication for cancer?
-VZ:0000033	Currently Smoking Tobacco			tobacco	CurrSmoker		
-VZ:0000034	Smoke Tobacco Products Daily			tobacco	CurrSmokerDaily		
-VZ:0000035	Quit Stopping Tobacco			tobacco	StopSmoking12mo		
-VZ:0000036	Ever Smoked Tobacco Products			tobacco	EverSmoked		
-VZ:0000037	Ever Smoked Tobacco Products Daily			tobacco	EverSmokedDaily		
-VZ:0000038	Ever Consumed Alcohol			alcohol	EverConsumedAlcohol		
-VZ:0000039	Consumed Alcohol Last 12 Months			alcohol	ConsumedAlcohol12mo		
-VZ:0000040	Stopped Alcohol for Health Reasons			alcohol	StoppedAlcoholHealth		
-VZ:0000041	Consumed Alcohol Last 30 days			alcohol	ConsumedAlcohol30d		
+VZ:0000033	Currently Smoking Tobacco			tobacco use history	CurrSmoker		
+VZ:0000034	Smoke Tobacco Products Daily			tobacco use history	CurrSmokerDaily		
+VZ:0000035	Quit Stopping Tobacco			tobacco use history	StopSmoking12mo		
+VZ:0000036	Ever Smoked Tobacco Products			tobacco use history	EverSmoked		
+VZ:0000037	Ever Smoked Tobacco Products Daily			tobacco use history	EverSmokedDaily		
+VZ:0000038	Ever Consumed Alcohol			alcohol use history	EverConsumedAlcohol		
+VZ:0000039	Consumed Alcohol Last 12 Months			alcohol use history	ConsumedAlcohol12mo		
+VZ:0000040	Stopped Alcohol for Health Reasons			alcohol use history	StoppedAlcoholHealth		
+VZ:0000041	Consumed Alcohol Last 30 days			alcohol use history	ConsumedAlcohol30d		
 VZ:0000042	TB Current Treatment			associated disease(s)	TBTxCurrent		
 VZ:0000043	TB Current Treatment			associated disease(s)	ReceivedTBInjections		
 VZ:0000044	Ever had TB Treatment			associated disease(s)	TBTxEver		
@@ -182,43 +182,43 @@ VZ:0000180	Failed to refer Positive Sputum case to Clinic or Hospital			survey a
 VZ:0000181	Has the participant consented to be informed about their HIV results			survey administration	ConsentInformedHIV		
 VZ:0000182	Participant Has Diagnosis Other than TB that requires referral to the clinic or hospital			diseases	FUCXROtherReferral		
 VZ:0000183	Cancer Type			oncological	CancerType		
-VZ:0000184	Age Started Smoking Tobacco			tobacco	AgeStartedSmoking		
-VZ:0000185	Years Ago Individual Started Smoking			tobacco	YearsAgoStartedSmoking		
-VZ:0000186	Months Ago Individual Started Smoking			tobacco	MonthsAgoStartedSmoking		
-VZ:0000187	Weeks Ago Individual Started Smoking			tobacco	WeeksAgoStartedSmoking		
-VZ:0000188	Manufactured Cigarettes Smoked Daily			tobacco	ManufacturedCigarettesDaily		
-VZ:0000189	Manufactured Cigarettes Smoked Weekly			tobacco	ManufacturedCigarettesWeekly		
-VZ:0000190	Hand Rolled Cigarettes Smoked Daily			tobacco	HandRolledCigarettesDaily		
-VZ:0000191	Hand Rolled Cigarettes Smoked Weekly			tobacco	HandRolledCigarettesWeekly		
-VZ:0000192	Piped Tobacco Cigarettes Smoked Daily			tobacco	PipedTobaccoDaily		
-VZ:0000193	Piped Tobacco Cigarettes Smoked Weekly			tobacco	PipedTobaccoWeekly		
-VZ:0000194	Piped Tobacco Cigarettes Smoked Weekly			tobacco	PipedTobaccoWeekly		
-VZ:0000195	Cigars or Cheroots Daily			tobacco	CigarsRcherootsDaily		
-VZ:0000196	Cigars or Cheroots Smoked Weekly			tobacco	CigarsORcherootsWeekly		
-VZ:0000197	Cigars or Cheroots Smoked Daily			tobacco	ShishaSessionsDaily		
-VZ:0000198	Cigars or Cheroots Smoked Weekly			tobacco	ShishaSessionsWeekly		
-VZ:0000199	Other Tobacco Smoked Daily			tobacco	OtherTobaccoSpecifyDaily		
-VZ:0000200	Other Tobacco Smoked Weekly			tobacco	OtherTobaccoWeekly		
-VZ:0000201	Other Tobacco Specify Daily			tobacco	OtherTobaccoSpecifyDailySpec		
-VZ:0000202	Other Tobacco Specify Weekly			tobacco	OtherTobaccoWeeklySpec		
-VZ:0000203	Alcohol Consumption Frequency			alcohol	ConsumptionFrequency		
-VZ:0000204	Occassions Consumed Alcohol			alcohol	ConsumedAlcoholOccassions		
-VZ:0000205	Drinks Consumed During Occassion			alcohol	DrinksConsumedOccassions		
-VZ:0000206	Drinks Per Occassion			alcohol	DrinksPerOccassion		
-VZ:0000207	Six Drinks Per Occassion or More Consumed			alcohol	SixDrinksPerOccassion		
-VZ:0000208	Last Week Monday Drinks			alcohol	LastWeekMondayDrinks		
-VZ:0000209	Last Week Tuesday Drinks			alcohol	LastWeekTuesdayDrinks		
-VZ:0000210	Last Week Wednesday Drinks			alcohol	LastWeekWednesdayDrinks		
-VZ:0000211	Last Week Thursday Drinks			alcohol	LastWeekThursdayDrinks		
-VZ:0000212	Last Week Friday Drinks			alcohol	LastWeekFridayDrinks		
-VZ:0000213	Last Week Saturday Drinks			alcohol	LastWeekSaturdayDrinks		
-VZ:0000214	Last Week Sunday Drinks			alcohol	LastWeekSundayDrinks		
-VZ:0000215	Consumed Home Bred Alcohol			alcohol	ConsumedHomeBredAlcohol		
-VZ:0000216	Number Home Bred Spirits			alcohol	NumberHomeBredSpirits		
-VZ:0000217	Number Home Bred Beer			alcohol	NumberHomeBredBeer		
-VZ:0000218	Number Alcohol Imported			alcohol	NumberAlcoholImported		
-VZ:0000219	Number Alcohol Forbidden			alcohol	NumberAlcoholForbidden		
-VZ:0000220	Number of Alcohol Untaxed			alcohol	NumberAlcoholUntaxed		
+VZ:0000184	Age Started Smoking Tobacco			tobacco use history	AgeStartedSmoking		
+VZ:0000185	Years Ago Individual Started Smoking			tobacco use history	YearsAgoStartedSmoking		
+VZ:0000186	Months Ago Individual Started Smoking			tobacco use history	MonthsAgoStartedSmoking		
+VZ:0000187	Weeks Ago Individual Started Smoking			tobacco use history	WeeksAgoStartedSmoking		
+VZ:0000188	Manufactured Cigarettes Smoked Daily			tobacco use history	ManufacturedCigarettesDaily		
+VZ:0000189	Manufactured Cigarettes Smoked Weekly			tobacco use history	ManufacturedCigarettesWeekly		
+VZ:0000190	Hand Rolled Cigarettes Smoked Daily			tobacco use history	HandRolledCigarettesDaily		
+VZ:0000191	Hand Rolled Cigarettes Smoked Weekly			tobacco use history	HandRolledCigarettesWeekly		
+VZ:0000192	Piped Tobacco Cigarettes Smoked Daily			tobacco use history	PipedTobaccoDaily		
+VZ:0000193	Piped Tobacco Cigarettes Smoked Weekly			tobacco use history	PipedTobaccoWeekly		
+VZ:0000194	Piped Tobacco Cigarettes Smoked Weekly			tobacco use history	PipedTobaccoWeekly		
+VZ:0000195	Cigars or Cheroots Daily			tobacco use history	CigarsRcherootsDaily		
+VZ:0000196	Cigars or Cheroots Smoked Weekly			tobacco use history	CigarsORcherootsWeekly		
+VZ:0000197	Cigars or Cheroots Smoked Daily			tobacco use history	ShishaSessionsDaily		
+VZ:0000198	Cigars or Cheroots Smoked Weekly			tobacco use history	ShishaSessionsWeekly		
+VZ:0000199	Other Tobacco Smoked Daily			tobacco use history	OtherTobaccoSpecifyDaily		
+VZ:0000200	Other Tobacco Smoked Weekly			tobacco use history	OtherTobaccoWeekly		
+VZ:0000201	Other Tobacco Specify Daily			tobacco use history	OtherTobaccoSpecifyDailySpec		
+VZ:0000202	Other Tobacco Specify Weekly			tobacco use history	OtherTobaccoWeeklySpec		
+VZ:0000203	Alcohol Consumption Frequency			alcohol use history	ConsumptionFrequency		
+VZ:0000204	Occassions Consumed Alcohol			alcohol use history	ConsumedAlcoholOccassions		
+VZ:0000205	Drinks Consumed During Occassion			alcohol use history	DrinksConsumedOccassions		
+VZ:0000206	Drinks Per Occassion			alcohol use history	DrinksPerOccassion		
+VZ:0000207	Six Drinks Per Occassion or More Consumed			alcohol use history	SixDrinksPerOccassion		
+VZ:0000208	Last Week Monday Drinks			alcohol use history	LastWeekMondayDrinks		
+VZ:0000209	Last Week Tuesday Drinks			alcohol use history	LastWeekTuesdayDrinks		
+VZ:0000210	Last Week Wednesday Drinks			alcohol use history	LastWeekWednesdayDrinks		
+VZ:0000211	Last Week Thursday Drinks			alcohol use history	LastWeekThursdayDrinks		
+VZ:0000212	Last Week Friday Drinks			alcohol use history	LastWeekFridayDrinks		
+VZ:0000213	Last Week Saturday Drinks			alcohol use history	LastWeekSaturdayDrinks		
+VZ:0000214	Last Week Sunday Drinks			alcohol use history	LastWeekSundayDrinks		
+VZ:0000215	Consumed Home Bred Alcohol			alcohol use history	ConsumedHomeBredAlcohol		
+VZ:0000216	Number Home Bred Spirits			alcohol use history	NumberHomeBredSpirits		
+VZ:0000217	Number Home Bred Beer			alcohol use history	NumberHomeBredBeer		
+VZ:0000218	Number Alcohol Imported			alcohol use history	NumberAlcoholImported		
+VZ:0000219	Number Alcohol Forbidden			alcohol use history	NumberAlcoholForbidden		
+VZ:0000220	Number of Alcohol Untaxed			alcohol use history	NumberAlcoholUntaxed		
 VZ:0000221	Number of Times On TB Treatment			associated disease(s)	NumberTBTxEver		
 VZ:0000222	TB Completion Date			associated disease(s)|date and time-related information	LastTBDateCompletion		
 VZ:0000223	Cough Duration			signs and symptoms	CoughDuration		
@@ -264,10 +264,10 @@ VZ:0000262	Concurrent Medication 4 Start Date			medication	ConcurrMed4StartDate
 VZ:0000263	Concurrent Medication 5 Start Date			medication	ConcurrMed5StartDate		
 VZ:0000264	Taking Concurrent Medication 5			medication	ConcurrMed5Curr		
 VZ:0000265	Adherence Concurrent Medication 1			medication	ConcurrMed1Adher		
-VZ:0000266	Time Last Meal			nutrition	TimeLastMeal		
+VZ:0000266	Time Last Meal			dietary history	TimeLastMeal		
 VZ:0000267	Date of Last Menstrual			reproduction	LastMenstrualDate		
-VZ:0000268	Food Voucher Id			nutrition	FoodVoucherId		
-VZ:0000269	Food Pack Id			nutrition	FoodPackId		
+VZ:0000268	Food Voucher Id			dietary history	FoodVoucherId		
+VZ:0000269	Food Pack Id			dietary history	FoodPackId		
 VZ:0000270	Not All Complete Reasons			survey administration	NotAllCompleteReaons		
 VZ:0000271	SST1			other biosample type	SST1		
 VZ:0000272	EDT1			other biosample type	EDT1		
