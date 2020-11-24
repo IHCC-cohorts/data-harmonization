@@ -30,9 +30,9 @@
         "respiratory_system"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol",
-        "nutrition",
-        "tobacco"
+        "alcohol_use_history",
+        "dietary_history",
+        "tobacco_use_history"
       ],
       "medication": [
         "associated_diseases"
@@ -96,7 +96,7 @@
         "physician_practitioner_info"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol"
+        "alcohol_use_history"
       ],
       "medication": [
         "administration",
@@ -171,11 +171,11 @@
         "physician_practitioner_info"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol",
-        "drugs",
-        "nutrition",
-        "physical_activity",
-        "tobacco"
+        "alcohol_use_history",
+        "dietary_history",
+        "physical_activity_history",
+        "recreational_drug_history",
+        "tobacco_use_history"
       ],
       "medication": [
         "associated_diseases",
@@ -240,11 +240,11 @@
         "respiratory_system"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol",
-        "nutrition",
-        "physical_activity",
-        "sleep",
-        "tobacco"
+        "alcohol_use_history",
+        "dietary_history",
+        "physical_activity_history",
+        "sleep_history",
+        "tobacco_use_history"
       ],
       "medication": [],
       "non_pharmacological_interventions": [
