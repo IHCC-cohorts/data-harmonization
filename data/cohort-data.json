@@ -8,10 +8,10 @@
     },
     "biosample": {
       "sample_type": [
-        "blood",
-        "other_biosample_type",
-        "saliva",
-        "urine"
+        "Blood",
+        "Other biosample type",
+        "Saliva",
+        "Urine"
       ]
     },
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
@@ -24,38 +24,38 @@
     "pi_lead": "Willem Hankom",
     "questionnaire_survey_data": {
       "diseases": [
-        "circulatory_system",
-        "endocrine_nutritional_metabolic_disorders",
-        "oncological",
-        "respiratory_system"
+        "Circulatory system",
+        "Endocrine/nutritional/metabolic disorders",
+        "Oncological",
+        "Respiratory system"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol_use_history",
-        "dietary_history",
-        "tobacco_use_history"
+        "Alcohol use history",
+        "Dietary history",
+        "Tobacco use history"
       ],
       "medication": [
-        "associated_diseases"
+        "Associated disease(s)"
       ],
       "non_pharmacological_interventions": [],
       "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
+        "Reproduction",
+        "Signs and symptoms"
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "height",
-          "weight"
+          "Height",
+          "Weight"
         ],
         "circulation_and_respiration": [
-          "blood_pressure",
-          "heart_rate_HR"
+          "Blood pressure",
+          "Heart rate (hr)"
         ]
       }
     },
     "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
+      "Date and time-related information",
+      "Unique identifiers"
     ],
     "target_enrollment": 130000,
     "website": "https://www.ahri.org"
@@ -69,10 +69,10 @@
     },
     "basic_cohort_attributes": {
       "general_variables": [
-        "aims_and_objectives"
+        "Aims and objectives"
       ],
       "population_data": [
-        "location"
+        "Location"
       ]
     },
     "cohort_name": "Genomics England / 100,000 Genomes Project",
@@ -85,50 +85,50 @@
     "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
       "diseases": [
-        "circulatory_system",
-        "endocrine_nutritional_metabolic_disorders",
-        "mental_and_behaviour_disorders",
-        "nervous_system",
-        "oncological",
-        "respiratory_system"
+        "Circulatory system",
+        "Endocrine/nutritional/metabolic disorders",
+        "Mental and behaviour disorders",
+        "Nervous system",
+        "Oncological",
+        "Respiratory system"
       ],
       "healthcare_information": [
-        "physician_practitioner_info"
+        "Physician/practitioner info"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol_use_history"
+        "Alcohol use history"
       ],
       "medication": [
-        "administration",
-        "drug_responses",
-        "prescription"
+        "Administration",
+        "Drug response(s)",
+        "Prescription"
       ],
       "non_pharmacological_interventions": [
-        "surgical_interventions"
+        "Surgical interventions"
       ],
       "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
+        "Reproduction",
+        "Signs and symptoms"
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "height",
-          "weight"
+          "Height",
+          "Weight"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "age_birthdate",
-        "biological_sex",
-        "education",
-        "ethnicity_race",
-        "family_and_household_structure",
-        "gender",
-        "residence"
+        "Age/birthdate",
+        "Biological sex",
+        "Education",
+        "Ethnicity/race",
+        "Family and household structure",
+        "Gender",
+        "Residence"
       ]
     },
     "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
+      "Date and time-related information",
+      "Unique identifiers"
     ],
     "target_enrollment": 500000,
     "website": "https://www.genomicsengland.co.uk/"
@@ -143,13 +143,13 @@
     "basic_cohort_attributes": {
       "demographic_data": [],
       "population_data": [
-        "location"
+        "Location"
       ]
     },
     "biosample": {
       "sample_type": [
-        "blood",
-        "other_biosample_type"
+        "Blood",
+        "Other biosample type"
       ]
     },
     "cohort_name": "Golestan Cohort Study",
@@ -162,53 +162,53 @@
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
-        "circulatory_system",
-        "endocrine_nutritional_metabolic_disorders",
-        "oncological",
-        "respiratory_system"
+        "Circulatory system",
+        "Endocrine/nutritional/metabolic disorders",
+        "Oncological",
+        "Respiratory system"
       ],
       "healthcare_information": [
-        "physician_practitioner_info"
+        "Physician/practitioner info"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol_use_history",
-        "dietary_history",
-        "physical_activity_history",
-        "recreational_drug_history",
-        "tobacco_use_history"
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Recreational drug history",
+        "Tobacco use history"
       ],
       "medication": [
-        "associated_diseases",
-        "prescription"
+        "Associated disease(s)",
+        "Prescription"
       ],
       "non_pharmacological_interventions": [
-        "surgical_interventions"
+        "Surgical interventions"
       ],
       "other_questionnaire_survey_data": [
-        "signs_and_symptoms"
+        "Signs and symptoms"
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "height",
-          "weight"
+          "Height",
+          "Weight"
         ],
         "circulation_and_respiration": [
-          "blood_pressure",
-          "heart_rate_HR"
+          "Blood pressure",
+          "Heart rate (hr)"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "age_birthdate",
-        "education",
-        "ethnicity_race",
-        "family_and_household_structure",
-        "gender",
-        "residence"
+        "Age/birthdate",
+        "Education",
+        "Ethnicity/race",
+        "Family and household structure",
+        "Gender",
+        "Residence"
       ]
     },
     "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
+      "Date and time-related information",
+      "Unique identifiers"
     ],
     "target_enrollment": null,
     "website": "https://dceg2.cancer.gov/gemshare/"
@@ -222,8 +222,8 @@
     },
     "biosample": {
       "sample_type": [
-        "blood",
-        "urine"
+        "Blood",
+        "Urine"
       ]
     },
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
@@ -235,38 +235,38 @@
     "pi_lead": "Hyun Young Park",
     "questionnaire_survey_data": {
       "diseases": [
-        "digestive_system",
-        "mental_and_behaviour_disorders",
-        "respiratory_system"
+        "Digestive system",
+        "Mental and behaviour disorders",
+        "Respiratory system"
       ],
       "lifestyle_and_behaviours": [
-        "alcohol_use_history",
-        "dietary_history",
-        "physical_activity_history",
-        "sleep_history",
-        "tobacco_use_history"
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Sleep history",
+        "Tobacco use history"
       ],
       "medication": [],
       "non_pharmacological_interventions": [
-        "surgical_interventions"
+        "Surgical interventions"
       ],
       "other_questionnaire_survey_data": [
-        "reproduction",
-        "signs_and_symptoms"
+        "Reproduction",
+        "Signs and symptoms"
       ],
       "physiological_measurements": {
         "anthropometry": [
-          "height",
-          "weight"
+          "Height",
+          "Weight"
         ],
         "circulation_and_respiration": [
-          "blood_pressure",
-          "heart_rate_HR"
+          "Blood pressure",
+          "Heart rate (hr)"
         ]
       },
       "socio_demographic_and_economic_characteristics": [
-        "education",
-        "family_and_household_structure"
+        "Education",
+        "Family and household structure"
       ]
     },
     "target_enrollment": null,
@@ -289,24 +289,24 @@
     "pi_lead": "Kobus Herbst",
     "questionnaire_survey_data": {
       "diseases": [
-        "endocrine_nutritional_metabolic_disorders"
+        "Endocrine/nutritional/metabolic disorders"
       ],
       "non_pharmacological_interventions": [],
       "other_questionnaire_survey_data": [
-        "life_stage_time_point",
-        "reproduction"
+        "Life stage/time point",
+        "Reproduction"
       ],
       "socio_demographic_and_economic_characteristics": [
-        "age_birthdate",
-        "biological_sex",
-        "ethnicity_race",
-        "family_and_household_structure",
-        "residence"
+        "Age/birthdate",
+        "Biological sex",
+        "Ethnicity/race",
+        "Family and household structure",
+        "Residence"
       ]
     },
     "survey_administration": [
-      "date_and_time_related_information",
-      "unique_identifiers"
+      "Date and time-related information",
+      "Unique identifiers"
     ],
     "target_enrollment": 700000,
     "website": "http://saprin.mrc.ac.za/"

@@ -78,7 +78,6 @@ def main():
         else:
             enroll_period = f"{enroll_start}:{enroll_end}"
 
-
         cohort_data[row["Cohort Name"]] = {
             "cohort_name": row["Cohort Name"],
             "countries": countries,
@@ -189,7 +188,7 @@ def clean_dict(d):
         if isinstance(v, dict):
             v = clean_dict(v)
         if isinstance(v, list):
-            v = [clean_string(x) for x in v]
+            v = [x.capitalize() for x in v]
             v = sorted(v)
         new[clean_string(k)] = v
     return new
