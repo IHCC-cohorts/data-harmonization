@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/vz.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/vz/releases/2020-10-07/vz.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/vz/releases/2020-12-01/vz.owl"/>
         <dc:description>The data dictionary containing variables collected by the Africa Health Research Institute&apos;s Vukuzazi programme.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:rights>You are free to:
@@ -607,7 +607,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000025"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -655,7 +655,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000028"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -671,7 +671,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000029"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -703,7 +703,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000031"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -728,7 +728,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000033"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -744,7 +744,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000034"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -760,7 +760,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000035"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -776,7 +776,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000036"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -792,7 +792,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000037"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -808,7 +808,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000038"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -824,7 +824,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000039"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -840,7 +840,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000040"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -856,7 +856,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000041"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -1112,7 +1112,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000057"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005087</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -1128,7 +1128,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000058"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005087</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -1880,7 +1880,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000105"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2072,7 +2072,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000117"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2200,7 +2200,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000125"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2217,7 +2217,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000126"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000126"/>
@@ -3135,7 +3135,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000183"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -3151,7 +3151,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000184"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3167,7 +3167,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000185"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3183,7 +3183,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000186"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3199,7 +3199,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000187"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3215,7 +3215,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000188"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3231,7 +3231,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000189"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3247,7 +3247,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000190"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3263,7 +3263,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000191"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3279,7 +3279,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000192"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3295,7 +3295,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000193"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3311,7 +3311,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000194"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3327,7 +3327,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000195"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3343,7 +3343,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000196"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3359,7 +3359,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000197"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3375,7 +3375,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000198"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3391,7 +3391,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000199"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3407,7 +3407,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000200"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3423,7 +3423,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000201"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3439,7 +3439,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000202"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobacco use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3455,7 +3455,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000203"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3471,7 +3471,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000204"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3487,7 +3487,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000205"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3503,7 +3503,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000206"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3519,7 +3519,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000207"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3535,7 +3535,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000208"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3551,7 +3551,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000209"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3567,7 +3567,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000210"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3583,7 +3583,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000211"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3599,7 +3599,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000212"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3615,7 +3615,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000213"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3631,7 +3631,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000214"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3647,7 +3647,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000215"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3663,7 +3663,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000216"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3679,7 +3679,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000217"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3695,7 +3695,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000218"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3711,7 +3711,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000219"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -3727,7 +3727,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000220"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -4484,7 +4484,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000266"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000072</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary history</rdfs:label>
     </owl:Axiom>
     
 
@@ -4516,7 +4516,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000268"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000072</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary history</rdfs:label>
     </owl:Axiom>
     
 
@@ -4532,7 +4532,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000269"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000072</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nutrition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary history</rdfs:label>
     </owl:Axiom>
     
 
@@ -5287,7 +5287,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000314"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -5335,7 +5335,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000317"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -5351,7 +5351,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000318"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -5927,7 +5927,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000354"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -5975,7 +5975,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000357"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -5991,7 +5991,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000358"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -6791,7 +6791,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000408"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -6839,7 +6839,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000411"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -6855,7 +6855,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/VZ_0000412"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
 </rdf:RDF>
 

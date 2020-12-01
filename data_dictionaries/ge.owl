@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/ge.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/ge/releases/2020-10-07/ge.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/ge/releases/2020-12-01/ge.owl"/>
         <dc:description>The main programme data dictionary for the Genomics England Research Environment.</dc:description>
         <terms:license>TODO: The license URL</terms:license>
         <terms:rights>TODO: A human-readable description of rights</terms:rights>
@@ -3195,7 +3195,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000172"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -3213,7 +3213,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000173"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -7093,7 +7093,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000390"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -7112,7 +7112,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000391"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -7130,7 +7130,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000392"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol use history</rdfs:label>
     </owl:Axiom>
     
 
@@ -9682,7 +9682,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000528"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -9719,7 +9719,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000530"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -9755,7 +9755,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000532"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005071</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous system disorders</rdfs:label>
     </owl:Axiom>
     
 
@@ -9791,7 +9791,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000534"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -9809,7 +9809,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000535"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005087</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -9827,7 +9827,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000536"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circulatory system</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardiovascular diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -9864,7 +9864,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000538"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -17645,14 +17645,14 @@
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/GE_0000952">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The overall aim of the Anti Cancer Drug Programme</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COB:0000076</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000005</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intent_of_treatment</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intent_of_treatment</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000952"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COB:0000076</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000005</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aims and objectives</rdfs:label>
     </owl:Axiom>
     
@@ -17687,7 +17687,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000954"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -17847,7 +17847,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000964"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -17864,7 +17864,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000965"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -17881,7 +17881,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0000966"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 
@@ -18634,7 +18634,7 @@
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/GE_0001010"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oncological</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer</rdfs:label>
     </owl:Axiom>
     
 

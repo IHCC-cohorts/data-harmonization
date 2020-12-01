@@ -175,8 +175,8 @@ GE:0000168	ACPSOUR_N	Augmented/critical care period		location	acpsour_8
 GE:0000169	ACPSOUR_N	Augmented/critical care period		location	acpsour_9		
 GE:0000170	Number of augmented care periods within episode	Augmented/critical care period	This derived field gives the number of augmented care periods (ACPs) within episode.	survey administration	numacp		
 GE:0000171	High-dependency care level	Augmented/critical care period	This field contains the number of days of high dependency care in a period of augmented care.	date and time-related information	depdays_1		are these questions to determine if hip replacement is NEEDED (symptoms) or after hip replacement?
-GE:0000172	Cancer diagnosis			oncological	cancer_diagnosis		
-GE:0000173	Early cancer diagnosis	Cancer diagnosis	Descriptive categorisation, based on a subset of submitted NICIP or SNOMED-CT imaging codes particularly used to diagnose or discount the following cancers, as identified by clinicians	oncological	ic_cancer_desc		
+GE:0000172	Cancer diagnosis			cancer	cancer_diagnosis		
+GE:0000173	Early cancer diagnosis	Cancer diagnosis	Descriptive categorisation, based on a subset of submitted NICIP or SNOMED-CT imaging codes particularly used to diagnose or discount the following cancers, as identified by clinicians	cancer	ic_cancer_desc		
 GE:0000174	CCG			physician/practitioner info	ccg		clincial commision groups - this is broader than physcian?
 GE:0000175	CCG Code	CCG	Returns the CCG code of the referring organisation, derived from the submitted field General Medical Practice Code (Patient Registration)	physician/practitioner info	ic_ccgcode		clinical commission group
 GE:0000176	CCG Name	CCG	Descriptive field (based on the CCG Code) returning the CCG title, derived from the submitted field General Medical Practice Code (Patient Registration)	physician/practitioner info	ic_ccgname		clinical commission group
@@ -690,19 +690,19 @@ GE:0000525	Indicators				indicators
 GE:0000526	Complete	Indicators	Indicates that there is a complete Q1 and Q2.	survey administration	complete		indicator if Q1 and Q2 are complete
 GE:0000527	Circulation	Indicators	"Response to corresponding Q1 general health question:
  Have you been told by a doctor that you have leg pain when walking due to poor circulation?"	signs and symptoms	circulation		leg pain due to poor circulation
-GE:0000528	Liver Disease	Indicators	Have you been told by a doctor that you have liver disease?	endocrine/nutritional/metabolic disorders	liver_disease		
+GE:0000528	Liver Disease	Indicators	Have you been told by a doctor that you have liver disease?	endocrine system diseases	liver_disease		
 GE:0000529	Arthritis Indicator	Indicators	Response to corresponding Q1 general health question: Have you been told by a doctor that you have arthritis?	diseases	arthritis		
 GE:0000530	Diabetes	Indicators	"Response to corresponding Q1 general health question: 
- Have you been told by a doctor that you have diabetes?"	endocrine/nutritional/metabolic disorders	diabetes		
+ Have you been told by a doctor that you have diabetes?"	endocrine system diseases	diabetes		
 GE:0000531	Depression	Indicators	Response to corresponding Q1 general health question: Have you been told by a doctor that you have depression?	mental and behaviour disorders	depression		
-GE:0000532	nervous_system	Indicators	Have you been told by a doctor that you have diseases of the nervous system?	nervous system	nervous_system		
+GE:0000532	nervous_system	Indicators	Have you been told by a doctor that you have diseases of the nervous system?	nervous system disorders	nervous_system		
 GE:0000533	stroke	Indicators	Have you been told by a doctor that you have problems caused by a stroke?	signs and symptoms	stroke		
-GE:0000534	Cancer Indicator	Indicators	Response to corresponding Q1 general health question: Have you been told by a doctor that you have cancer?	oncological	cancer		
-GE:0000535	Lung Disease	Indicators	Have you been told by a doctor that you have lung disease?	respiratory system	lung_disease		
-GE:0000536	Heart Disease Indicator	Indicators	Response to corresponding Q1 general health question: Have you been told by a doctor that you have heart disease?	circulatory system	heart_disease		
+GE:0000534	Cancer Indicator	Indicators	Response to corresponding Q1 general health question: Have you been told by a doctor that you have cancer?	cancer	cancer		
+GE:0000535	Lung Disease	Indicators	Have you been told by a doctor that you have lung disease?	respiratory system diseases	lung_disease		
+GE:0000536	Heart Disease Indicator	Indicators	Response to corresponding Q1 general health question: Have you been told by a doctor that you have heart disease?	cardiovascular diseases	heart_disease		
 GE:0000537	High Blood Pressiure Indicator	Indicators	"Response to corresponding Q1 general health question:
  Have you been told by a doctor that you have high blood pressure?"	signs and symptoms	high_bp		
-GE:0000538	Kidney Disease	Indicators	Have you been told by a doctor that you have kidney disease?	endocrine/nutritional/metabolic disorders	kidney_disease		
+GE:0000538	Kidney Disease	Indicators	Have you been told by a doctor that you have kidney disease?	endocrine system diseases	kidney_disease		
 GE:0000539	Knee Replacement - Q1				knee_replacement_q1		
 GE:0000540	Q1 - KR10	Knee Replacement - Q1	During the past 4 weeks, have you felt that your knee might suddenly 'give way' or let you down?	signs and symptoms	kr_q1_confidence		
 GE:0000541	Q1 - KR8	Knee Replacement - Q1	During the past 4 weeks, could you kneel down and get up again afterwards	signs and symptoms	kr_q1_kneeling		
@@ -1532,7 +1532,7 @@ GE:0000950	mhd_age		Age	age/birthdate	mhd_age
 GE:0000951	supplied_date_of_birth		Supplied participant date of birth	age/birthdate	supplied_date_of_birth		
 GE:0000952	intent_of_treatment		The overall aim of the Anti Cancer Drug Programme	aims and objectives	intent_of_treatment		
 GE:0000953	mhd_sex_code		Sex of Patients Code	biological sex	mhd_sex_code		
-GE:0000954	latest_gender		Latest participant gender	endocrine/nutritional/metabolic disorders	latest_gender		
+GE:0000954	latest_gender		Latest participant gender	endocrine system diseases	latest_gender		
 GE:0000955	ic_rec_endrp_sct_flag		Indicates whether the record has an open SCT episode at the end of the Reporting Period.	ethnicity/race	ic_rec_endrp_sct_flag		
 GE:0000956	mhd_ethnicity		Ethnic Category	ethnicity/race	mhd_ethnicity		
 GE:0000957	mhd_gender		Person Gender Code Current	gender	mhd_gender		
@@ -1541,9 +1541,9 @@ GE:0000959	date_of_death		Date of the participant's death	date and time-related 
 GE:0000960	start_date_of_regimen		This should be recorded if the¬†First Definitive Treatment¬†is¬†Chemotherapy¬†and/or other anti-cancer drug treatments.	date and time-related information|medication	start_date_of_regimen		
 GE:0000961	date_decision_to_treat		DECISION TO TREAT DATE (ANTI-CANCER DRUG REGIMEN)¬†is the¬†DECISION TO TREAT DATE¬†of the¬†Planned Cancer Treatment¬†with a¬†PLANNED CANCER TREATMENT TYPE¬†of National Code¬†'Chemotherapy'¬†or¬†'Hormone Therapy'¬†and where the¬†FIRST DEFINITIVE TREATMENT PLANNED¬†is classification¬†'First Definitive Treatment¬†planned'.	date and time-related information	date_decision_to_treat		
 GE:0000962	start_date_of_cycle		The¬†date of the first drug administration in each¬†Systemic Anti-Cancer Drug Cycle.	date and time-related information	start_date_of_cycle		
-GE:0000964	morphology_clean		Morphology (ICD-O on SACT initiation) for the cell type at the start of SACT drug programme.	oncological	morphology_clean		morphology for cell type before cancer treatment - maybe physiological?
-GE:0000965	primary_diagnosis		Primary diagnosis (on SACT initiation)	oncological	primary_diagnosis		
-GE:0000966	stage_at_start		Tumour Node and Metastasis stage grouping (final pretreatment)	oncological	stage_at_start		tumor/metastasis stage before treatment
+GE:0000964	morphology_clean		Morphology (ICD-O on SACT initiation) for the cell type at the start of SACT drug programme.	cancer	morphology_clean		morphology for cell type before cancer treatment - maybe physiological?
+GE:0000965	primary_diagnosis		Primary diagnosis (on SACT initiation)	cancer	primary_diagnosis		
+GE:0000966	stage_at_start		Tumour Node and Metastasis stage grouping (final pretreatment)	cancer	stage_at_start		tumor/metastasis stage before treatment
 GE:0000967	consultant_speciality_code		Care professional main speciality code (start SACT)	physician/practitioner info	consultant_speciality_code		provider specialty code for cancer treatment
 GE:0000968	mhd_ccg_of_gp_practice		GP_Practice	physician/practitioner info	mhd_ccg_of_gp_practice		
 GE:0000969	mhd_code_of_gp_practice		Organisation Code (GP Practice Responsibility)	physician/practitioner info	mhd_code_of_gp_practice		
@@ -1587,7 +1587,7 @@ GE:0001006	mhd_wardsec_level		Ward Security Level	survey administration	mhd_ward
 GE:0001007	mhd_weekly_hours_worked		Weekly hours worked for a patient in employment	socio-demographic and economic characteristics	mhd_weekly_hours_worked		
 GE:0001008	mhd_year_of_first_known_psychiatric_care		submitted, not derived	date and time-related information	mhd_year_of_first_known_psychiatric_care		
 GE:0001009	nhs_number_status		The trace status of the NHS Number	survey administration	nhs_number_status		
-GE:0001010	Sub Early cancer diagnosis		Descriptive sub-division of each identified cancer category. The following categories have been identified by clinicians.	oncological	ic_sub_cancer_desc		
+GE:0001010	Sub Early cancer diagnosis		Descriptive sub-division of each identified cancer category. The following categories have been identified by clinicians.	cancer	ic_sub_cancer_desc		
 GE:0001011	date_of_registration		Date of registration of the event	date and time-related information	date_of_registration		maybe time point?
 GE:0001012	ic_annual_id		The ID that represents the financial year the YTD file falls within	unique identifiers	ic_annual_id		
 GE:0001013	ic_epi_rp_days		The number of days the episode was open (in the Reporting Period) based on the start and end dates of the episode. Where the episode start date is before the start or the reporting period, the start of the reporting period is used. Where end date is not present, date the episode was deemed to be inactive is used and if this is not present, the end of the reporting period is used.	date and time-related information	ic_epi_rp_days		

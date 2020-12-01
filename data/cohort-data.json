@@ -24,10 +24,10 @@
     "pi_lead": "Willem Hankom",
     "questionnaire_survey_data": {
       "diseases": [
-        "Circulatory system",
-        "Endocrine/nutritional/metabolic disorders",
-        "Oncological",
-        "Respiratory system"
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Respiratory system diseases"
       ],
       "lifestyle_and_behaviours": [
         "Alcohol use history",
@@ -85,12 +85,12 @@
     "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
       "diseases": [
-        "Circulatory system",
-        "Endocrine/nutritional/metabolic disorders",
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
         "Mental and behaviour disorders",
-        "Nervous system",
-        "Oncological",
-        "Respiratory system"
+        "Nervous system disorders",
+        "Respiratory system diseases"
       ],
       "healthcare_information": [
         "Physician/practitioner info"
@@ -162,10 +162,10 @@
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
-        "Circulatory system",
-        "Endocrine/nutritional/metabolic disorders",
-        "Oncological",
-        "Respiratory system"
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Respiratory system diseases"
       ],
       "healthcare_information": [
         "Physician/practitioner info"
@@ -235,9 +235,9 @@
     "pi_lead": "Hyun Young Park",
     "questionnaire_survey_data": {
       "diseases": [
-        "Digestive system",
+        "Digestive system diseases",
         "Mental and behaviour disorders",
-        "Respiratory system"
+        "Respiratory system diseases"
       ],
       "lifestyle_and_behaviours": [
         "Alcohol use history",
@@ -289,7 +289,7 @@
     "pi_lead": "Kobus Herbst",
     "questionnaire_survey_data": {
       "diseases": [
-        "Endocrine/nutritional/metabolic disorders"
+        "Endocrine system diseases"
       ],
       "non_pharmacological_interventions": [],
       "other_questionnaire_survey_data": [

@@ -136,7 +136,7 @@ SAPRIN:0000128	If HIV+	Individual StatusObservation		diseases	If_HIVPos
 SAPRIN:0000129	If HIV-	Individual StatusObservation	i. When last HIV- result (>1yr, <1yr ago)	diseases	If_HIVNeg		
 SAPRIN:0000130	HIVResult	Individual StatusObservation	HIV serostatus from dried blood spot	laboratory measures	HIVResult		
 SAPRIN:0000131	Hypertension	Individual StatusObservation		diseases	Hypertension		
-SAPRIN:0000132	Diabetes	Individual StatusObservation		endocrine/nutritional/metabolic disorders	Diabetes		
+SAPRIN:0000132	Diabetes	Individual StatusObservation		endocrine system diseases	Diabetes		
 SAPRIN:0000133	Health care utilisation	Individual StatusObservation		questionnaire/survey data	Health_care_utilisation		
 SAPRIN:0000134	Vaccination history (child <=6yr)	Individual StatusObservation	For each vaccination record: date received and source of information (Road to Health Card or recall)	non-pharmacological interventions	Vaccination_history		
 SAPRIN:0000135	Household Status Observation	StatusObservation	Set of data elements collected from a household informant, during a face to face or telephonic interview	socio-demographic and economic characteristics	Household_Status_Observation		

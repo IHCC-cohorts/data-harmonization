@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/saprin.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/saprin/releases/2020-10-07/saprin.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/saprin/releases/2020-12-01/saprin.owl"/>
         <dc:description>The core data elements collected by SAPRIN.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:rights>You are free to:
@@ -2338,7 +2338,7 @@ No additional restrictions — You may not apply legal terms or technological me
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/SAPRIN_0000132"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine/nutritional/metabolic disorders</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine system diseases</rdfs:label>
     </owl:Axiom>
     
 
