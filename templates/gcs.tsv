@@ -9,19 +9,19 @@ GCS:0000007	Food preservation and cooking		Food preservation, frying, boiling, B
 GCS:0000008	Properties		Transferable and non-transferable belongings and wealth score (Multiple Correspondence Analysis)	socio-demographic and economic characteristics	PROP		
 GCS:0000009	Medical History		Suffering from any disease at the baseline of cohort	diseases	MED		
 GCS:0000010	Chief complaints		The complaints of participants from their physical or mental sufferings	signs and symptoms	CC		
-GCS:0000011	Cancer History		History of cancer, site, and age diagnosed in the participant or any of his/her relatives	oncological	CANCER		
-GCS:0000012	Smoking		Ever or current smoker, age of use, type, number per day and days per week	tobacco	SMOK		
-GCS:0000013	Opium use		Ever or current user, age and route of use, type, time per day and days per week	drugs	OPIUM		
-GCS:0000014	Alcohol use		Ever or current user, age of use, type, quantity per episode and episodes per month	alcohol	ALC		
+GCS:0000011	Cancer History		History of cancer, site, and age diagnosed in the participant or any of his/her relatives	cancer	CANCER		
+GCS:0000012	Smoking		Ever or current smoker, age of use, type, number per day and days per week	tobacco use history	SMOK		
+GCS:0000013	Opium use		Ever or current user, age and route of use, type, time per day and days per week	recreational drug history	OPIUM		
+GCS:0000014	Alcohol use		Ever or current user, age of use, type, quantity per episode and episodes per month	alcohol use history	ALC		
 GCS:0000015	Drug history (1)		The main created categories of drugs consumed by participants	medication	DRUGCAT		
 GCS:0000016	Drug History (2)		The exact name, duration, dose, and frequency of drugs consumed	medication	DRUGDETAIL		
 GCS:0000017	Oral health		Decayed, filled, and missing teeth along with the age of the participant in each of these occasions		ORAL		Signs and symptoms? Diseases? Lifestyle?
 GCS:0000018	Tea		Tea temperature, type of tea, and type of habit for drinking the tea	socio-demographic and economic characteristics	TEA		
-GCS:0000019	Physical activity		The duration and intensity of physical activities during working and leasure times of the day, and Metabolic Equivalent Task (MET)	physical activity	ACTIVITY		
+GCS:0000019	Physical activity		The duration and intensity of physical activities during working and leasure times of the day, and Metabolic Equivalent Task (MET)	physical activity history	ACTIVITY		
 GCS:0000020	Animal contact		The age of the participant in contact with animals, the duration and intensity of animal contact, and the type of animal	socio-demographic and economic characteristics	ANIMAL		
 GCS:0000021	Anthropometric measurements		Physically measured height, weight, waist circumference, hip circumference and data of pictogram	anthropometry	ANTHRO		
 GCS:0000022	Blood pressure measurements		Both systolic and diastolic blood pressure measured in sitting position twice from each arm	blood pressure	BP		
-GCS:0000023	Food Frequency Questionnaire		Units of food categories consumed per day	nutrition	FFQ		
+GCS:0000023	Food Frequency Questionnaire		Units of food categories consumed per day	dietary history	FFQ		
 GCS:0000024	Lab markers		Biochemical markers	laboratory measures	LAB		
 GCS:0000025	PID	Identity	The Unique Id for eatch participant	unique identifiers	PID		
 GCS:0000026	FirstName	Identity	The first name of participant.	survey administration	FirstName		
@@ -175,24 +175,24 @@ GCS:0000173	HaveKitchen	Properties	Specifies if the household has kitchen	socio-
 GCS:0000174	MCA	Properties	Composite wealth score (Multiple Correspondence Analysis)	socio-demographic and economic characteristics	MCA		
 GCS:0000175	NumberPregnancies	Medical History	Specifies the number of Pregnancies for women only	socio-demographic and economic characteristics	NumberPregnancies		
 GCS:0000176	NumberLiveBirths	Medical History	Specifies the number of live births for women only	socio-demographic and economic characteristics	NumberLiveBirths		
-GCS:0000177	DisRheumaticHeartDx	Medical History	if the diagnosis of Rheumatic Heart Disease was made for participant by a physician	circulatory system	DisRheumaticHeartDx		
-GCS:0000178	DisRheumaticHeartAge	Medical History	participant age at Rheumatic Heart Disease diagnosis	circulatory system	DisRheumaticHeartAge		
-GCS:0000179	DisHeartDiseaseDx	Medical History	if the diagnosis of Heart Disease was made for participant by a physician	circulatory system	DisHeartDiseaseDx		
-GCS:0000180	DisHeartDiseaseAge	Medical History	participant age in first Heart Disease diagnosis	circulatory system	DisHeartDiseaseAge		
+GCS:0000177	DisRheumaticHeartDx	Medical History	if the diagnosis of Rheumatic Heart Disease was made for participant by a physician	cardiovascular diseases	DisRheumaticHeartDx		
+GCS:0000178	DisRheumaticHeartAge	Medical History	participant age at Rheumatic Heart Disease diagnosis	cardiovascular diseases	DisRheumaticHeartAge		
+GCS:0000179	DisHeartDiseaseDx	Medical History	if the diagnosis of Heart Disease was made for participant by a physician	cardiovascular diseases	DisHeartDiseaseDx		
+GCS:0000180	DisHeartDiseaseAge	Medical History	participant age in first Heart Disease diagnosis	cardiovascular diseases	DisHeartDiseaseAge		
 GCS:0000181	DisStrokeDx	Medical History	if the diagnosis of Stroke was made for participant by a physician	signs and symptoms	DisStrokeDx		
 GCS:0000182	DisStrokeAge	Medical History	participant age in first Stroke diagnosis	signs and symptoms	DisStrokeAge		
-GCS:0000183	DisHypertensionDx	Medical History	if the diagnosis of Hypertension was made for participant by a physician	circulatory system	DisHypertensionDx		
-GCS:0000184	DisHypertensionAge	Medical History	participant age in first Hypertension diagnosis	circulatory system	DisHypertensionAge		
-GCS:0000185	DisDiabetesDx	Medical History	if the diagnosis of Diabetes was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisDiabetesDx		
-GCS:0000186	DisDiabetesAge	Medical History	participant age in first Diabetes diagnosis	endocrine/nutritional/metabolic disorders	DisDiabetesAge		
-GCS:0000187	DisCOPDDx	Medical History	if the diagnosis of COPD was made for participant by a physician	respiratory system	DisCOPDDx		
-GCS:0000188	DisCOPDAge	Medical History	participant age in first COPD diagnosis	respiratory system	DisCOPDAge		
-GCS:0000189	DisRenalFailureDx	Medical History	if the diagnosis of Renal Failure was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisRenalFailureDx		
-GCS:0000190	DisRenalFailureAge	Medical History	participant age in first RenalFailure diagnosis	endocrine/nutritional/metabolic disorders	DisRenalFailureAge		
-GCS:0000191	DisJaundiceDx	Medical History	if the diagnosis of Jaundice was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisJaundiceDx		
-GCS:0000192	DisJaundiceAge	Medical History	participant age in first Jaundice diagnosis	endocrine/nutritional/metabolic disorders	DisJaundiceAge		
-GCS:0000193	DisLiverDx	Medical History	if the diagnosis of Chronic Liver Failure was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisLiverDx		
-GCS:0000194	DisLiverAge	Medical History	participant age in first Chronic liver failure diagnosis	endocrine/nutritional/metabolic disorders	DisLiverAge		
+GCS:0000183	DisHypertensionDx	Medical History	if the diagnosis of Hypertension was made for participant by a physician	cardiovascular diseases	DisHypertensionDx		
+GCS:0000184	DisHypertensionAge	Medical History	participant age in first Hypertension diagnosis	cardiovascular diseases	DisHypertensionAge		
+GCS:0000185	DisDiabetesDx	Medical History	if the diagnosis of Diabetes was made for participant by a physician	endocrine system diseases	DisDiabetesDx		
+GCS:0000186	DisDiabetesAge	Medical History	participant age in first Diabetes diagnosis	endocrine system diseases	DisDiabetesAge		
+GCS:0000187	DisCOPDDx	Medical History	if the diagnosis of COPD was made for participant by a physician	respiratory system diseases	DisCOPDDx		
+GCS:0000188	DisCOPDAge	Medical History	participant age in first COPD diagnosis	respiratory system diseases	DisCOPDAge		
+GCS:0000189	DisRenalFailureDx	Medical History	if the diagnosis of Renal Failure was made for participant by a physician	endocrine system diseases	DisRenalFailureDx		
+GCS:0000190	DisRenalFailureAge	Medical History	participant age in first RenalFailure diagnosis	endocrine system diseases	DisRenalFailureAge		
+GCS:0000191	DisJaundiceDx	Medical History	if the diagnosis of Jaundice was made for participant by a physician	endocrine system diseases	DisJaundiceDx		
+GCS:0000192	DisJaundiceAge	Medical History	participant age in first Jaundice diagnosis	endocrine system diseases	DisJaundiceAge		
+GCS:0000193	DisLiverDx	Medical History	if the diagnosis of Chronic Liver Failure was made for participant by a physician	endocrine system diseases	DisLiverDx		
+GCS:0000194	DisLiverAge	Medical History	participant age in first Chronic liver failure diagnosis	endocrine system diseases	DisLiverAge		
 GCS:0000195	DisTBDx	Medical History	if the diagnosis of Tuberculosis was made for participant by a physician	diseases	DisTBDx		should TB fall under respiratory?
 GCS:0000196	DisTBAge	Medical History	participant age in first Tuberculosis diagnosis	diseases	DisTBAge		should TB fall under respiratory?
 GCS:0000197	SurgeryFlag	Medical History	If the participant had had any history of surgery	surgical interventions	SurgeryFlag		
@@ -214,111 +214,111 @@ GCS:0000212	RefluxHeartburnTXFlag	Chief complaints	if participant used drug for 
 GCS:0000213	WeightLossFlag	Chief complaints	if the patient has Weightloss in past year select yes if not select no	signs and symptoms	WeightLossFlag		
 GCS:0000214	WeightLossAmount	Chief complaints	Specifies the amount of weight loss	signs and symptoms	WeightLossAmount		
 GCS:0000215	WeightLossIntent	Chief complaints	if the patient has Intentional weight loss select Yes if not select no and doesn't have weight loss select I have no weight loss	signs and symptoms	WeightLossIntent		
-GCS:0000216	cancerdxflag	Cancer History	Past history of cancer diagnosed by a physician?	oncological	cancerdxflag		
-GCS:0000217	cancerdxage	Cancer History	Year of diagnosis of cancer if detected in participant	oncological	cancerdxage		
-GCS:0000218	cancerdxsite	Cancer History	Original site of cancer	oncological	cancerdxsite		
-GCS:0000219	CancRelRelativeCode_1	Cancer History	Specifies the relative of participants with a history of cancer	oncological	CancRelRelativeCode_1		
-GCS:0000220	CancRelAgeDiagnosis_1	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_1		
-GCS:0000221	CancRelSite_1	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_1		
-GCS:0000222	CancRelICD10_1	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_1		
-GCS:0000223	CancRelRelativeCode_2	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological	CancRelRelativeCode_2		
-GCS:0000224	CancRelAgeDiagnosis_2	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_2		
-GCS:0000225	CancRelSite_2	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_2		
-GCS:0000226	CancRelICD10_2	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_2		
-GCS:0000227	CancRelRelativeCode_3	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological	CancRelRelativeCode_3		
-GCS:0000228	CancRelAgeDiagnosis_3	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_3		
-GCS:0000229	CancRelSite_3	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_3		
-GCS:0000230	CancRelICD10_3	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_3		
-GCS:0000231	CancRelRelativeCode_4	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological	CancRelRelativeCode_4		
-GCS:0000232	CancRelAgeDiagnosis_4	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_4		
-GCS:0000233	CancRelSite_4	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_4		
-GCS:0000234	CancRelICD10_4	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_4		
-GCS:0000235	TobEverRegularFlag	Smoking	Specifies the participant used cigar for 6 Months	tobacco	TobEverRegularFlag		
-GCS:0000236	TobCigsNow	Smoking	Specifies the participant uses cigar Now	tobacco	TobCigsNow		
-GCS:0000237	TobNonCigFlag	Smoking	Specifies the participant used tobacco other than cigar for 6 Months	tobacco	TobNonCigFlag		
-GCS:0000238	TobStartAge_1	Smoking	Specifies the participant Used this Tobacco type From Age, first history	tobacco	TobStartAge_1		
-GCS:0000239	TobEndAge_1	Smoking	Specifies the participant Used this Tobacco type To Age, first history	tobacco	TobEndAge_1		
-GCS:0000240	TobDuration_1	Smoking	Specifies the participant Used tobacco Duration, first history	tobacco	TobDuration_1		
-GCS:0000241	TobType_1	Smoking	Specifies the participant Used type of Tobacco, first history	tobacco	TobType_1		
-GCS:0000242	TobNumberPerDay_1	Smoking	Specifies the participant Used this tobacco how many times per day, first history	tobacco	TobNumberPerDay_1		
-GCS:0000243	TobDaysPerWeek_1	Smoking	Specifies the participant Used this tobacco how many days in week, first history	tobacco	TobDaysPerWeek_1		
-GCS:0000244	CigNumPerDay_1	Smoking	Specifies the participant Used this cigar how many times per day, first history	tobacco	CigNumPerDay_1		
-GCS:0000245	Cigpackyear_1	Smoking	Specifies the participant cumulative use, first history	tobacco	Cigpackyear_1		
-GCS:0000246	TobStartAge_2	Smoking	Specifies the participant Used this Tobacco type From Age, second history	tobacco	TobStartAge_2		
-GCS:0000247	TobEndAge_2	Smoking	Specifies the participant Used this Tobacco type To Age, second history	tobacco	TobEndAge_2		
-GCS:0000248	TobDuration_2	Smoking	Specifies the participant Used tobacco Duration, second history	tobacco	TobDuration_2		
-GCS:0000249	TobType_2	Smoking	Specifies the participant Used type of Tobacco, second history	tobacco	TobType_2		
-GCS:0000250	TobNumberPerDay_2	Smoking	Specifies the participant Used this tobacco how many times per day, second history	tobacco	TobNumberPerDay_2		
-GCS:0000251	TobDaysPerWeek_2	Smoking	Specifies the participant Used this tobacco how many days in week, second history	tobacco	TobDaysPerWeek_2		
-GCS:0000252	CigNumPerDay_2	Smoking	Specifies the participant Used this cigar how many times per day, second history	tobacco	CigNumPerDay_2		
-GCS:0000253	Cigpackyear_2	Smoking	Specifies the participant cumulative use, second history	tobacco	Cigpackyear_2		
-GCS:0000254	TobStartAge_3	Smoking	Specifies the participant Used this Tobacco type From Age, third history	tobacco	TobStartAge_3		
-GCS:0000255	TobEndAge_3	Smoking	Specifies the participant Used this Tobacco type To Age, third history	tobacco	TobEndAge_3		
-GCS:0000256	TobDuration_3	Smoking	Specifies the participant Used tobacco Duration, third history	tobacco	TobDuration_3		
-GCS:0000257	TobType_3	Smoking	Specifies the participant Used type of Tobacco, third history	tobacco	TobType_3		
-GCS:0000258	TobNumberPerDay_3	Smoking	Specifies the participant Used this tobacco how many times per day, third history	tobacco	TobNumberPerDay_3		
-GCS:0000259	TobDaysPerWeek_3	Smoking	Specifies the participant Used this tobacco how many days in week, third history	tobacco	TobDaysPerWeek_3		
-GCS:0000260	CigNumPerDay_3	Smoking	Specifies the participant Used this cigar how many times per day, third history	tobacco	CigNumPerDay_3		
-GCS:0000261	Cigpackyear_3	Smoking	Specifies the participant cumulative use, third history	tobacco	Cigpackyear_3		
-GCS:0000262	TobStartAge_4	Smoking	Specifies the participant Used this Tobacco type From Age, fourth history	tobacco	TobStartAge_4		
-GCS:0000263	TobEndAge_4	Smoking	Specifies the participant Used this Tobacco type To Age, fourth history	tobacco	TobEndAge_4		
-GCS:0000264	TobDuration_4	Smoking	Specifies the participant Used tobacco Duration, fourth history	tobacco	TobDuration_4		
-GCS:0000265	TobType_4	Smoking	Specifies the participant Used type of Tobacco, fourth history	tobacco	TobType_4		
-GCS:0000266	TobNumberPerDay_4	Smoking	Specifies the participant Used this tobacco how many times per day, fourth history	tobacco	TobNumberPerDay_4		
-GCS:0000267	TobDaysPerWeek_4	Smoking	Specifies the participant Used this tobacco how many days in week, fourth history	tobacco	TobDaysPerWeek_4		
-GCS:0000268	CigNumPerDay_4	Smoking	Specifies the participant Used this cigar how many times per day, fourth history	tobacco	CigNumPerDay_4		
-GCS:0000269	Cigpackyear_4	Smoking	Specifies the participant cumulative use, fourth history	tobacco	Cigpackyear_4		
-GCS:0000270	total_packyear	Smoking	Specifies the participant total cumulative use	tobacco	total_packyear		
-GCS:0000271	OpiateEverRegularFlag	Opium use	Specifies the participant ever used opiume for 6 Months	drugs	OpiateEverRegularFlag		
-GCS:0000272	OpiatePersonalChildhoodExp	Opium use	Specifies the using opium in Childhood	drugs	OpiatePersonalChildhoodExp		
-GCS:0000273	OpiateAdministeredToChildrenFlag	Opium use	Specifies the participant gave opium to children	drugs	OpiateAdministeredToChildrenFlag		
-GCS:0000274	OpiateType	Opium use	Specifies the participant Used Opium type	drugs	OpiateType		
-GCS:0000275	OpiateRoute	Opium use	Specifies the route by which participant uses opium	drugs	OpiateRoute		
-GCS:0000276	OpiateStartAge_1	Opium use	Specifies the participant Used this Opium type From Age, first history	drugs	OpiateStartAge_1		
-GCS:0000277	OpiateEndAge_1	Opium use	Specifies the participant Used this Opium type To Age, first history	drugs	OpiateEndAge_1		
-GCS:0000278	OpiateDuration_1	Opium use	Specifies the participant Used this Opium Duration, first history	drugs	OpiateDuration_1		
-GCS:0000279	OpiateNokhod_1	Opium use	Specifies the participant Used this Opium amount in Pea size, first history	drugs	OpiateNokhod_1		
-GCS:0000280	OpiateDaysPerWeek_1	Opium use	Specifies the participant Used this Opium day in week, first history	drugs	OpiateDaysPerWeek_1		
-GCS:0000281	OpiateAmountperDay_1	Opium use	Specifies the participant Used this Opium Amount per day, first history	drugs	OpiateAmountperDay_1		
-GCS:0000282	Opiatecum_1	Opium use	Specifies the participant cumulative use of Opium, first history	drugs	Opiatecum_1		
-GCS:0000283	OpiateStartAge_2	Opium use	Specifies the participant Used this Opium type From Age, second history	drugs	OpiateStartAge_2		
-GCS:0000284	OpiateEndAge_2	Opium use	Specifies the participant Used this Opium type To Age, second history	drugs	OpiateEndAge_2		
-GCS:0000285	OpiateDuration_2	Opium use	Specifies the participant Used this Opium Duration, second history	drugs	OpiateDuration_2		
-GCS:0000286	OpiateNokhod_2	Opium use	Specifies the participant Used this Opium amount in Pea size, second history	drugs	OpiateNokhod_2		
-GCS:0000287	OpiateDaysPerWeek_2	Opium use	Specifies the participant Used this Opium day in week, second history	drugs	OpiateDaysPerWeek_2		
-GCS:0000288	OpiateAmountperDay_2	Opium use	Specifies the participant Used this Opium Amount per day, second history	drugs	OpiateAmountperDay_2		
-GCS:0000289	Opiatecum_2	Opium use	Specifies the participant cumulative use of Opium, second history	drugs	Opiatecum_2		
-GCS:0000290	OpiateStartAge_3	Opium use	Specifies the participant Used this Opium type From Age, third history	drugs	OpiateStartAge_3		
-GCS:0000291	OpiateEndAge_3	Opium use	Specifies the participant Used this Opium type To Age, third history	drugs	OpiateEndAge_3		
-GCS:0000292	OpiateDuration_3	Opium use	Specifies the participant Used this Opium Duration, third history	drugs	OpiateDuration_3		
-GCS:0000293	OpiateNokhod_3	Opium use	Specifies the participant Used this Opium amount in Pea size, third history	drugs	OpiateNokhod_3		
-GCS:0000294	OpiateDaysPerWeek_3	Opium use	Specifies the participant Used this Opium day in week, third history	drugs	OpiateDaysPerWeek_3		
-GCS:0000295	OpiateAmountperDay_3	Opium use	Specifies the participant Used this Opium Amount per day, third history	drugs	OpiateAmountperDay_3		
-GCS:0000296	Opiatecum_3	Opium use	Specifies the participant cumulative use of Opium, third history	drugs	Opiatecum_3		
-GCS:0000297	OpiateStartAge_4	Opium use	Specifies the participant Used this Opium type From Age, fourth history	drugs	OpiateStartAge_4		
-GCS:0000298	OpiateEndAge_4	Opium use	Specifies the participant Used this Opium type To Age, fourth history	drugs	OpiateEndAge_4		
-GCS:0000299	OpiateDuration_4	Opium use	Specifies the participant Used this Opium Duration, fourth history	drugs	OpiateDuration_4		
-GCS:0000300	OpiateNokhod_4	Opium use	Specifies the participant Used this Opium amount in Pea size, fourth history	drugs	OpiateNokhod_4		
-GCS:0000301	OpiateDaysPerWeek_4	Opium use	Specifies the participant Used this Opium day in week, fourth history	drugs	OpiateDaysPerWeek_4		
-GCS:0000302	OpiateAmountperDay_4	Opium use	Specifies the participant Used this Opium Amount per day, fourth history	drugs	OpiateAmountperDay_4		
-GCS:0000303	Opiatecum_4	Opium use	Specifies the participant cumulative use of Opium, fourth history	drugs	Opiatecum_4		
-GCS:0000304	TotalNokhodDay	Opium use	Specifies the participant total cumulative use of Opium	drugs	TotalNokhodDay		
-GCS:0000305	AlcEverRegularFlag	Alcohol use	Specifies the participant ever used alcohol for 6 Months	alcohol	AlcEverRegularFlag		
-GCS:0000306	AlcStartAge_1	Alcohol use	Specifies the participant used alcohol From Age, first history	alcohol	AlcStartAge_1		
-GCS:0000307	AlcEndAge_1	Alcohol use	Specifies the participant used alcohol To Age, first history	alcohol	AlcEndAge_1		
-GCS:0000308	AlcType_1	Alcohol use	Specifies the participant alcohol used Type, first history	alcohol	AlcType_1		
-GCS:0000309	AlcQuantityPerEpisode_1	Alcohol use	Specifies the average alcohol the participant used per episode, first history	alcohol	AlcQuantityPerEpisode_1		
-GCS:0000310	AlcEpisodesPerMonth_1	Alcohol use	Specifies the participant Alcohol episodes in month, first history	alcohol	AlcEpisodesPerMonth_1		
-GCS:0000311	AlcStartAge_2	Alcohol use	Specifies the participant used alcohol From Age, second history	alcohol	AlcStartAge_2		
-GCS:0000312	AlcEndAge_2	Alcohol use	Specifies the participant used alcohol To Age, second history	alcohol	AlcEndAge_2		
-GCS:0000313	AlcType_2	Alcohol use	Specifies the participant alcohol used Type, second history	alcohol	AlcType_2		
-GCS:0000314	AlcQuantityPerEpisode_2	Alcohol use	Specifies the average alcohol the participant used per episode, second history	alcohol	AlcQuantityPerEpisode_2		
-GCS:0000315	AlcEpisodesPerMonth_2	Alcohol use	Specifies the participant Alcohol episodes in month, second history	alcohol	AlcEpisodesPerMonth_2		
-GCS:0000316	AlcStartAge_3	Alcohol use	Specifies the participant used alcohol From Age, third history	alcohol	AlcStartAge_3		
-GCS:0000317	AlcEndAge_3	Alcohol use	Specifies the participant used alcohol To Age, third history	alcohol	AlcEndAge_3		
-GCS:0000318	AlcType_3	Alcohol use	Specifies the participant alcohol used Type, third history	alcohol	AlcType_3		
-GCS:0000319	AlcQuantityPerEpisode_3	Alcohol use	Specifies the average alcohol the participant used per episode, third history	alcohol	AlcQuantityPerEpisode_3		
-GCS:0000320	AlcEpisodesPerMonth_3	Alcohol use	Specifies the participant Alcohol episodes in month, third history	alcohol	AlcEpisodesPerMonth_3		
+GCS:0000216	cancerdxflag	Cancer History	Past history of cancer diagnosed by a physician?	cancer	cancerdxflag		
+GCS:0000217	cancerdxage	Cancer History	Year of diagnosis of cancer if detected in participant	cancer	cancerdxage		
+GCS:0000218	cancerdxsite	Cancer History	Original site of cancer	cancer	cancerdxsite		
+GCS:0000219	CancRelRelativeCode_1	Cancer History	Specifies the relative of participants with a history of cancer	cancer	CancRelRelativeCode_1		
+GCS:0000220	CancRelAgeDiagnosis_1	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_1		
+GCS:0000221	CancRelSite_1	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_1		
+GCS:0000222	CancRelICD10_1	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_1		
+GCS:0000223	CancRelRelativeCode_2	Cancer History	Specifies the additional relative of participants with a history of cancer	cancer	CancRelRelativeCode_2		
+GCS:0000224	CancRelAgeDiagnosis_2	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_2		
+GCS:0000225	CancRelSite_2	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_2		
+GCS:0000226	CancRelICD10_2	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_2		
+GCS:0000227	CancRelRelativeCode_3	Cancer History	Specifies the additional relative of participants with a history of cancer	cancer	CancRelRelativeCode_3		
+GCS:0000228	CancRelAgeDiagnosis_3	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_3		
+GCS:0000229	CancRelSite_3	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_3		
+GCS:0000230	CancRelICD10_3	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_3		
+GCS:0000231	CancRelRelativeCode_4	Cancer History	Specifies the additional relative of participants with a history of cancer	cancer	CancRelRelativeCode_4		
+GCS:0000232	CancRelAgeDiagnosis_4	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_4		
+GCS:0000233	CancRelSite_4	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_4		
+GCS:0000234	CancRelICD10_4	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_4		
+GCS:0000235	TobEverRegularFlag	Smoking	Specifies the participant used cigar for 6 Months	tobacco use history	TobEverRegularFlag		
+GCS:0000236	TobCigsNow	Smoking	Specifies the participant uses cigar Now	tobacco use history	TobCigsNow		
+GCS:0000237	TobNonCigFlag	Smoking	Specifies the participant used tobacco other than cigar for 6 Months	tobacco use history	TobNonCigFlag		
+GCS:0000238	TobStartAge_1	Smoking	Specifies the participant Used this Tobacco type From Age, first history	tobacco use history	TobStartAge_1		
+GCS:0000239	TobEndAge_1	Smoking	Specifies the participant Used this Tobacco type To Age, first history	tobacco use history	TobEndAge_1		
+GCS:0000240	TobDuration_1	Smoking	Specifies the participant Used tobacco Duration, first history	tobacco use history	TobDuration_1		
+GCS:0000241	TobType_1	Smoking	Specifies the participant Used type of Tobacco, first history	tobacco use history	TobType_1		
+GCS:0000242	TobNumberPerDay_1	Smoking	Specifies the participant Used this tobacco how many times per day, first history	tobacco use history	TobNumberPerDay_1		
+GCS:0000243	TobDaysPerWeek_1	Smoking	Specifies the participant Used this tobacco how many days in week, first history	tobacco use history	TobDaysPerWeek_1		
+GCS:0000244	CigNumPerDay_1	Smoking	Specifies the participant Used this cigar how many times per day, first history	tobacco use history	CigNumPerDay_1		
+GCS:0000245	Cigpackyear_1	Smoking	Specifies the participant cumulative use, first history	tobacco use history	Cigpackyear_1		
+GCS:0000246	TobStartAge_2	Smoking	Specifies the participant Used this Tobacco type From Age, second history	tobacco use history	TobStartAge_2		
+GCS:0000247	TobEndAge_2	Smoking	Specifies the participant Used this Tobacco type To Age, second history	tobacco use history	TobEndAge_2		
+GCS:0000248	TobDuration_2	Smoking	Specifies the participant Used tobacco Duration, second history	tobacco use history	TobDuration_2		
+GCS:0000249	TobType_2	Smoking	Specifies the participant Used type of Tobacco, second history	tobacco use history	TobType_2		
+GCS:0000250	TobNumberPerDay_2	Smoking	Specifies the participant Used this tobacco how many times per day, second history	tobacco use history	TobNumberPerDay_2		
+GCS:0000251	TobDaysPerWeek_2	Smoking	Specifies the participant Used this tobacco how many days in week, second history	tobacco use history	TobDaysPerWeek_2		
+GCS:0000252	CigNumPerDay_2	Smoking	Specifies the participant Used this cigar how many times per day, second history	tobacco use history	CigNumPerDay_2		
+GCS:0000253	Cigpackyear_2	Smoking	Specifies the participant cumulative use, second history	tobacco use history	Cigpackyear_2		
+GCS:0000254	TobStartAge_3	Smoking	Specifies the participant Used this Tobacco type From Age, third history	tobacco use history	TobStartAge_3		
+GCS:0000255	TobEndAge_3	Smoking	Specifies the participant Used this Tobacco type To Age, third history	tobacco use history	TobEndAge_3		
+GCS:0000256	TobDuration_3	Smoking	Specifies the participant Used tobacco Duration, third history	tobacco use history	TobDuration_3		
+GCS:0000257	TobType_3	Smoking	Specifies the participant Used type of Tobacco, third history	tobacco use history	TobType_3		
+GCS:0000258	TobNumberPerDay_3	Smoking	Specifies the participant Used this tobacco how many times per day, third history	tobacco use history	TobNumberPerDay_3		
+GCS:0000259	TobDaysPerWeek_3	Smoking	Specifies the participant Used this tobacco how many days in week, third history	tobacco use history	TobDaysPerWeek_3		
+GCS:0000260	CigNumPerDay_3	Smoking	Specifies the participant Used this cigar how many times per day, third history	tobacco use history	CigNumPerDay_3		
+GCS:0000261	Cigpackyear_3	Smoking	Specifies the participant cumulative use, third history	tobacco use history	Cigpackyear_3		
+GCS:0000262	TobStartAge_4	Smoking	Specifies the participant Used this Tobacco type From Age, fourth history	tobacco use history	TobStartAge_4		
+GCS:0000263	TobEndAge_4	Smoking	Specifies the participant Used this Tobacco type To Age, fourth history	tobacco use history	TobEndAge_4		
+GCS:0000264	TobDuration_4	Smoking	Specifies the participant Used tobacco Duration, fourth history	tobacco use history	TobDuration_4		
+GCS:0000265	TobType_4	Smoking	Specifies the participant Used type of Tobacco, fourth history	tobacco use history	TobType_4		
+GCS:0000266	TobNumberPerDay_4	Smoking	Specifies the participant Used this tobacco how many times per day, fourth history	tobacco use history	TobNumberPerDay_4		
+GCS:0000267	TobDaysPerWeek_4	Smoking	Specifies the participant Used this tobacco how many days in week, fourth history	tobacco use history	TobDaysPerWeek_4		
+GCS:0000268	CigNumPerDay_4	Smoking	Specifies the participant Used this cigar how many times per day, fourth history	tobacco use history	CigNumPerDay_4		
+GCS:0000269	Cigpackyear_4	Smoking	Specifies the participant cumulative use, fourth history	tobacco use history	Cigpackyear_4		
+GCS:0000270	total_packyear	Smoking	Specifies the participant total cumulative use	tobacco use history	total_packyear		
+GCS:0000271	OpiateEverRegularFlag	Opium use	Specifies the participant ever used opiume for 6 Months	recreational drug history	OpiateEverRegularFlag		
+GCS:0000272	OpiatePersonalChildhoodExp	Opium use	Specifies the using opium in Childhood	recreational drug history	OpiatePersonalChildhoodExp		
+GCS:0000273	OpiateAdministeredToChildrenFlag	Opium use	Specifies the participant gave opium to children	recreational drug history	OpiateAdministeredToChildrenFlag		
+GCS:0000274	OpiateType	Opium use	Specifies the participant Used Opium type	recreational drug history	OpiateType		
+GCS:0000275	OpiateRoute	Opium use	Specifies the route by which participant uses opium	recreational drug history	OpiateRoute		
+GCS:0000276	OpiateStartAge_1	Opium use	Specifies the participant Used this Opium type From Age, first history	recreational drug history	OpiateStartAge_1		
+GCS:0000277	OpiateEndAge_1	Opium use	Specifies the participant Used this Opium type To Age, first history	recreational drug history	OpiateEndAge_1		
+GCS:0000278	OpiateDuration_1	Opium use	Specifies the participant Used this Opium Duration, first history	recreational drug history	OpiateDuration_1		
+GCS:0000279	OpiateNokhod_1	Opium use	Specifies the participant Used this Opium amount in Pea size, first history	recreational drug history	OpiateNokhod_1		
+GCS:0000280	OpiateDaysPerWeek_1	Opium use	Specifies the participant Used this Opium day in week, first history	recreational drug history	OpiateDaysPerWeek_1		
+GCS:0000281	OpiateAmountperDay_1	Opium use	Specifies the participant Used this Opium Amount per day, first history	recreational drug history	OpiateAmountperDay_1		
+GCS:0000282	Opiatecum_1	Opium use	Specifies the participant cumulative use of Opium, first history	recreational drug history	Opiatecum_1		
+GCS:0000283	OpiateStartAge_2	Opium use	Specifies the participant Used this Opium type From Age, second history	recreational drug history	OpiateStartAge_2		
+GCS:0000284	OpiateEndAge_2	Opium use	Specifies the participant Used this Opium type To Age, second history	recreational drug history	OpiateEndAge_2		
+GCS:0000285	OpiateDuration_2	Opium use	Specifies the participant Used this Opium Duration, second history	recreational drug history	OpiateDuration_2		
+GCS:0000286	OpiateNokhod_2	Opium use	Specifies the participant Used this Opium amount in Pea size, second history	recreational drug history	OpiateNokhod_2		
+GCS:0000287	OpiateDaysPerWeek_2	Opium use	Specifies the participant Used this Opium day in week, second history	recreational drug history	OpiateDaysPerWeek_2		
+GCS:0000288	OpiateAmountperDay_2	Opium use	Specifies the participant Used this Opium Amount per day, second history	recreational drug history	OpiateAmountperDay_2		
+GCS:0000289	Opiatecum_2	Opium use	Specifies the participant cumulative use of Opium, second history	recreational drug history	Opiatecum_2		
+GCS:0000290	OpiateStartAge_3	Opium use	Specifies the participant Used this Opium type From Age, third history	recreational drug history	OpiateStartAge_3		
+GCS:0000291	OpiateEndAge_3	Opium use	Specifies the participant Used this Opium type To Age, third history	recreational drug history	OpiateEndAge_3		
+GCS:0000292	OpiateDuration_3	Opium use	Specifies the participant Used this Opium Duration, third history	recreational drug history	OpiateDuration_3		
+GCS:0000293	OpiateNokhod_3	Opium use	Specifies the participant Used this Opium amount in Pea size, third history	recreational drug history	OpiateNokhod_3		
+GCS:0000294	OpiateDaysPerWeek_3	Opium use	Specifies the participant Used this Opium day in week, third history	recreational drug history	OpiateDaysPerWeek_3		
+GCS:0000295	OpiateAmountperDay_3	Opium use	Specifies the participant Used this Opium Amount per day, third history	recreational drug history	OpiateAmountperDay_3		
+GCS:0000296	Opiatecum_3	Opium use	Specifies the participant cumulative use of Opium, third history	recreational drug history	Opiatecum_3		
+GCS:0000297	OpiateStartAge_4	Opium use	Specifies the participant Used this Opium type From Age, fourth history	recreational drug history	OpiateStartAge_4		
+GCS:0000298	OpiateEndAge_4	Opium use	Specifies the participant Used this Opium type To Age, fourth history	recreational drug history	OpiateEndAge_4		
+GCS:0000299	OpiateDuration_4	Opium use	Specifies the participant Used this Opium Duration, fourth history	recreational drug history	OpiateDuration_4		
+GCS:0000300	OpiateNokhod_4	Opium use	Specifies the participant Used this Opium amount in Pea size, fourth history	recreational drug history	OpiateNokhod_4		
+GCS:0000301	OpiateDaysPerWeek_4	Opium use	Specifies the participant Used this Opium day in week, fourth history	recreational drug history	OpiateDaysPerWeek_4		
+GCS:0000302	OpiateAmountperDay_4	Opium use	Specifies the participant Used this Opium Amount per day, fourth history	recreational drug history	OpiateAmountperDay_4		
+GCS:0000303	Opiatecum_4	Opium use	Specifies the participant cumulative use of Opium, fourth history	recreational drug history	Opiatecum_4		
+GCS:0000304	TotalNokhodDay	Opium use	Specifies the participant total cumulative use of Opium	recreational drug history	TotalNokhodDay		
+GCS:0000305	AlcEverRegularFlag	Alcohol use	Specifies the participant ever used alcohol for 6 Months	alcohol use history	AlcEverRegularFlag		
+GCS:0000306	AlcStartAge_1	Alcohol use	Specifies the participant used alcohol From Age, first history	alcohol use history	AlcStartAge_1		
+GCS:0000307	AlcEndAge_1	Alcohol use	Specifies the participant used alcohol To Age, first history	alcohol use history	AlcEndAge_1		
+GCS:0000308	AlcType_1	Alcohol use	Specifies the participant alcohol used Type, first history	alcohol use history	AlcType_1		
+GCS:0000309	AlcQuantityPerEpisode_1	Alcohol use	Specifies the average alcohol the participant used per episode, first history	alcohol use history	AlcQuantityPerEpisode_1		
+GCS:0000310	AlcEpisodesPerMonth_1	Alcohol use	Specifies the participant Alcohol episodes in month, first history	alcohol use history	AlcEpisodesPerMonth_1		
+GCS:0000311	AlcStartAge_2	Alcohol use	Specifies the participant used alcohol From Age, second history	alcohol use history	AlcStartAge_2		
+GCS:0000312	AlcEndAge_2	Alcohol use	Specifies the participant used alcohol To Age, second history	alcohol use history	AlcEndAge_2		
+GCS:0000313	AlcType_2	Alcohol use	Specifies the participant alcohol used Type, second history	alcohol use history	AlcType_2		
+GCS:0000314	AlcQuantityPerEpisode_2	Alcohol use	Specifies the average alcohol the participant used per episode, second history	alcohol use history	AlcQuantityPerEpisode_2		
+GCS:0000315	AlcEpisodesPerMonth_2	Alcohol use	Specifies the participant Alcohol episodes in month, second history	alcohol use history	AlcEpisodesPerMonth_2		
+GCS:0000316	AlcStartAge_3	Alcohol use	Specifies the participant used alcohol From Age, third history	alcohol use history	AlcStartAge_3		
+GCS:0000317	AlcEndAge_3	Alcohol use	Specifies the participant used alcohol To Age, third history	alcohol use history	AlcEndAge_3		
+GCS:0000318	AlcType_3	Alcohol use	Specifies the participant alcohol used Type, third history	alcohol use history	AlcType_3		
+GCS:0000319	AlcQuantityPerEpisode_3	Alcohol use	Specifies the average alcohol the participant used per episode, third history	alcohol use history	AlcQuantityPerEpisode_3		
+GCS:0000320	AlcEpisodesPerMonth_3	Alcohol use	Specifies the participant Alcohol episodes in month, third history	alcohol use history	AlcEpisodesPerMonth_3		
 GCS:0000321	DrugCurrentuse	Drug history (1)	Currently taking any medication?	medication	DrugCurrentuse		
 GCS:0000322	antiHTN	Drug history (1)	Anti-hypertensive drugs: 1: diuretics 2: beta-blockers 3: ACE Inhibitors 4: ARBs 5: Alpha-adrenergic blockers 6: Calcium channel blockers 7:other anti-hypertensives	associated disease(s)	antiHTN		
 GCS:0000323	antiDM	Drug history (1)	Anti-diabetic drugs: 1: Glibenclamide 2: metformin 3: insulin 4: other	associated disease(s)	antiDM		
@@ -409,27 +409,27 @@ GCS:0000407	TeaTempDegrees	Tea	Specifies participant consumption of tea temperat
 GCS:0000408	TeaTempDescription	Tea	Specifies participant used tea type	socio-demographic and economic characteristics	TeaTempDescription		
 GCS:0000409	TeaSteepingTime	Tea	Specifies the duration between pouring and drinking the tea	socio-demographic and economic characteristics	TeaSteepingTime		
 GCS:0000410	TeaSipOrGulp	Tea	Specifies how participant drinks tea	socio-demographic and economic characteristics	TeaSipOrGulp		
-GCS:0000411	physactworkallyearflag	Physical activity	Working all months of the year?	physical activity	physactworkallyearflag		
-GCS:0000412	physactworkmonths	Physical activity	Number of working months in a year	physical activity	physactworkmonths		
-GCS:0000413	physactworkstrenuousflag	Physical activity	Daily intensive physical activity?	physical activity	physactworkstrenuousflag		
-GCS:0000414	physactworkstrenuousfreq	Physical activity	Number of working days in a week	physical activity	physactworkstrenuousfreq		
-GCS:0000415	physactworkstrenuoushours	Physical activity	Number of working hours in a day	physical activity	physactworkstrenuoushours		
-GCS:0000416	physactworkstrenuousyears	Physical activity	Number of entire working years	physical activity	physactworkstrenuousyears		
-GCS:0000417	physacthouseworkflag	Physical activity	Doing house work?	physical activity	physacthouseworkflag		
-GCS:0000418	physacthouseworkfreq	Physical activity	Number of working days in a week	physical activity	physacthouseworkfreq		
-GCS:0000419	physacthouseworkhours	Physical activity	Number of working hours in a day	physical activity	physacthouseworkhours		
-GCS:0000420	physacthouseworkyears	Physical activity	Number of entire working years	physical activity	physacthouseworkyears		
-GCS:0000421	physacthouseworkminsduringwork	Physical activity	Doing house work: minutes during working times	physical activity	physacthouseworkminsduringwork		
-GCS:0000422	physacthouseworkminsnowork	Physical activity	Doing house work: minutes during leasure times	physical activity	physacthouseworkminsnowork		
-GCS:0000423	physactexmildminsduringwork	Physical activity	Mild exercise such as jogging: minutes during working times	physical activity	physactexmildminsduringwork		
-GCS:0000424	physactexmildminsnowork	Physical activity	Mild exercise such as jogging: minutes during leasure times	physical activity	physactexmildminsnowork		
-GCS:0000425	physactexmodminsduringwork	Physical activity	Moderate exercise such as volleyball: minutes during working times	physical activity	physactexmodminsduringwork		
-GCS:0000426	physactexmodminsnowork	Physical activity	Moderate exercise such as volleyball: minutes during leasure times	physical activity	physactexmodminsnowork		
-GCS:0000427	physactexstrenminsduringwork	Physical activity	Intensive exercise such as horse riding: minutes during working times	physical activity	physactexstrenminsduringwork		
-GCS:0000428	physactexstrenminsnowork	Physical activity	Intensive exercise such as horse riding: minutes during leasure times	physical activity	physactexstrenminsnowork		
-GCS:0000429	physacttvminsduringwork	Physical activity	Watching TV, resting, reading: minutes during working times	physical activity	physacttvminsduringwork		
-GCS:0000430	physacttvminsnowork	Physical activity	Watching TV, resting, reading: minutes during leasure times	physical activity	physacttvminsnowork		
-GCS:0000431	Metabolic Equivalent Task	Physical activity	Energy cost of physical activities defined as the ratio of metabolic rate (and therefore the rate of energy consumption) during a specific physical activity to a reference metabolic rate	physical activity	Metabolic_Equivalent_Task		
+GCS:0000411	physactworkallyearflag	Physical activity	Working all months of the year?	physical activity history	physactworkallyearflag		
+GCS:0000412	physactworkmonths	Physical activity	Number of working months in a year	physical activity history	physactworkmonths		
+GCS:0000413	physactworkstrenuousflag	Physical activity	Daily intensive physical activity?	physical activity history	physactworkstrenuousflag		
+GCS:0000414	physactworkstrenuousfreq	Physical activity	Number of working days in a week	physical activity history	physactworkstrenuousfreq		
+GCS:0000415	physactworkstrenuoushours	Physical activity	Number of working hours in a day	physical activity history	physactworkstrenuoushours		
+GCS:0000416	physactworkstrenuousyears	Physical activity	Number of entire working years	physical activity history	physactworkstrenuousyears		
+GCS:0000417	physacthouseworkflag	Physical activity	Doing house work?	physical activity history	physacthouseworkflag		
+GCS:0000418	physacthouseworkfreq	Physical activity	Number of working days in a week	physical activity history	physacthouseworkfreq		
+GCS:0000419	physacthouseworkhours	Physical activity	Number of working hours in a day	physical activity history	physacthouseworkhours		
+GCS:0000420	physacthouseworkyears	Physical activity	Number of entire working years	physical activity history	physacthouseworkyears		
+GCS:0000421	physacthouseworkminsduringwork	Physical activity	Doing house work: minutes during working times	physical activity history	physacthouseworkminsduringwork		
+GCS:0000422	physacthouseworkminsnowork	Physical activity	Doing house work: minutes during leasure times	physical activity history	physacthouseworkminsnowork		
+GCS:0000423	physactexmildminsduringwork	Physical activity	Mild exercise such as jogging: minutes during working times	physical activity history	physactexmildminsduringwork		
+GCS:0000424	physactexmildminsnowork	Physical activity	Mild exercise such as jogging: minutes during leasure times	physical activity history	physactexmildminsnowork		
+GCS:0000425	physactexmodminsduringwork	Physical activity	Moderate exercise such as volleyball: minutes during working times	physical activity history	physactexmodminsduringwork		
+GCS:0000426	physactexmodminsnowork	Physical activity	Moderate exercise such as volleyball: minutes during leasure times	physical activity history	physactexmodminsnowork		
+GCS:0000427	physactexstrenminsduringwork	Physical activity	Intensive exercise such as horse riding: minutes during working times	physical activity history	physactexstrenminsduringwork		
+GCS:0000428	physactexstrenminsnowork	Physical activity	Intensive exercise such as horse riding: minutes during leasure times	physical activity history	physactexstrenminsnowork		
+GCS:0000429	physacttvminsduringwork	Physical activity	Watching TV, resting, reading: minutes during working times	physical activity history	physacttvminsduringwork		
+GCS:0000430	physacttvminsnowork	Physical activity	Watching TV, resting, reading: minutes during leasure times	physical activity history	physacttvminsnowork		
+GCS:0000431	Metabolic Equivalent Task	Physical activity	Energy cost of physical activities defined as the ratio of metabolic rate (and therefore the rate of energy consumption) during a specific physical activity to a reference metabolic rate	physical activity history	Metabolic_Equivalent_Task		
 GCS:0000432	AnimalStartAge_1	Animal contact	Specifies the age of the participants he had contact with animals, first history	socio-demographic and economic characteristics	AnimalStartAge_1		
 GCS:0000433	AnimalEndAge_1	Animal contact	Specifies the age of the participants he didn't have contact with animals, first history	socio-demographic and economic characteristics	AnimalEndAge_1		
 GCS:0000434	AnimalLevelOfContact_1	Animal contact	The intensity of animal contact, first history	socio-demographic and economic characteristics	AnimalLevelOfContact_1		
@@ -467,52 +467,52 @@ GCS:0000465	m_dbp	Blood pressure measurements	Mean diastolic blood pressure meas
 GCS:0000466	high_sbp	Blood pressure measurements	Systolic blood pressure >= 140 mmHg	signs and symptoms	high_sbp		
 GCS:0000467	high_dbp	Blood pressure measurements	Diastolic blood pressure >= 90 mmHg	signs and symptoms	high_dbp		
 GCS:0000468	htndrug	Blood pressure measurements	Consumption of any anti-hypertensive medication for more than 6 months	prescription	htndrug		
-GCS:0000469	HTN	Blood pressure measurements	Being hypertensive	circulatory system	HTN		
-GCS:0000470	HTNcat	Blood pressure measurements	Categorization of hypetrension	circulatory system	HTNcat		
-GCS:0000471	preHTN	Blood pressure measurements	SBP/DBP >=120/80 AND <140/90	circulatory system	preHTN		
+GCS:0000469	HTN	Blood pressure measurements	Being hypertensive	cardiovascular diseases	HTN		
+GCS:0000470	HTNcat	Blood pressure measurements	Categorization of hypetrension	cardiovascular diseases	HTNcat		
+GCS:0000471	preHTN	Blood pressure measurements	SBP/DBP >=120/80 AND <140/90	cardiovascular diseases	preHTN		
 GCS:0000472	pulse_p	Blood pressure measurements	Difference between SBP and DBP	heart rate (HR)	pulse_p		
 GCS:0000473	mean_bp	Blood pressure measurements	mean value of SBP and DBP	blood pressure	mean_bp		
 GCS:0000474	mid_bp	Blood pressure measurements	Mid value of SBP and DBP	blood pressure	mid_bp		
 GCS:0000475	diffsbp_right_left	Blood pressure measurements	Difference in SBP between arms	blood pressure	diffsbp_right_left		
 GCS:0000476	diffdbp_right_left	Blood pressure measurements	Difference in DBP between arms	blood pressure	diffdbp_right_left		
-GCS:0000477	Energy	Food Frequency Questionnaire	Amount consumed per day	nutrition	Energy		
-GCS:0000478	fat	Food Frequency Questionnaire	Amount consumed per day	nutrition	fat		
-GCS:0000479	salt	Food Frequency Questionnaire	Amount consumed per day	nutrition	salt		
-GCS:0000480	protein	Food Frequency Questionnaire	Amount consumed per day	nutrition	protein		
-GCS:0000481	total saturated fat	Food Frequency Questionnaire	Amount consumed per day	nutrition	total_saturated_fat		
-GCS:0000482	total trans fat	Food Frequency Questionnaire	Amount consumed per day	nutrition	total_trans_fat		
-GCS:0000483	hydrogenated oil	Food Frequency Questionnaire	Amount consumed per day	nutrition	hydrogenated_oil		
-GCS:0000484	carbohyderate	Food Frequency Questionnaire	Amount consumed per day	nutrition	carbohyderate		
-GCS:0000485	red meat	Food Frequency Questionnaire	Amount consumed per day	nutrition	red_meat		
-GCS:0000486	processed meat	Food Frequency Questionnaire	Amount consumed per day	nutrition	processed_meat		
-GCS:0000487	fruits	Food Frequency Questionnaire	Amount consumed per day	nutrition	fruits		
-GCS:0000488	vegetables	Food Frequency Questionnaire	Amount consumed per day	nutrition	vegetables		
-GCS:0000489	dairy products	Food Frequency Questionnaire	Amount consumed per day	nutrition	dairy_products		
-GCS:0000490	milk	Food Frequency Questionnaire	Amount consumed per day	nutrition	milk		
-GCS:0000491	dietary fiber	Food Frequency Questionnaire	Amount consumed per day	nutrition	dietary_fiber		
-GCS:0000492	Fish	Food Frequency Questionnaire	Amount consumed per day	nutrition	Fish		
-GCS:0000493	Chicken	Food Frequency Questionnaire	Amount consumed per day	nutrition	Chicken		
-GCS:0000494	SodiumNa	Food Frequency Questionnaire	Amount consumed per day	nutrition	SodiumNa		
-GCS:0000495	Calcium	Food Frequency Questionnaire	Amount consumed per day	nutrition	Calcium		
-GCS:0000496	Fe	Food Frequency Questionnaire	Amount consumed per day	nutrition	Fe		
-GCS:0000497	Magnesium	Food Frequency Questionnaire	Amount consumed per day	nutrition	Magnesium		
-GCS:0000498	Phosphorus	Food Frequency Questionnaire	Amount consumed per day	nutrition	Phosphorus		
-GCS:0000499	Potassium	Food Frequency Questionnaire	Amount consumed per day	nutrition	Potassium		
-GCS:0000500	Zinc	Food Frequency Questionnaire	Amount consumed per day	nutrition	Zinc		
-GCS:0000501	Folate	Food Frequency Questionnaire	Amount consumed per day	nutrition	Folate		
-GCS:0000502	Vitamin D	Food Frequency Questionnaire	Amount consumed per day	nutrition	Vitamin_D		
-GCS:0000503	Vitamin A	Food Frequency Questionnaire	Amount consumed per day	nutrition	Vitamin_A		
-GCS:0000504	Vitamin B1	Food Frequency Questionnaire	Amount consumed per day	nutrition	Vitamin_B1		
-GCS:0000505	Vitamin B2	Food Frequency Questionnaire	Amount consumed per day	nutrition	Vitamin_B2		
-GCS:0000506	Vitamin B12	Food Frequency Questionnaire	Amount consumed per day	nutrition	Vitamin_B12		
-GCS:0000507	Vitamin C	Food Frequency Questionnaire	Amount consumed per day	nutrition	Vitamin_C		
-GCS:0000508	Niacin	Food Frequency Questionnaire	Amount consumed per day	nutrition	Niacin		
-GCS:0000509	Glycemic load	Food Frequency Questionnaire	Amount consumed per day	nutrition	Glycemic_load		
-GCS:0000510	Glycemic Index	Food Frequency Questionnaire	Amount consumed per day	nutrition	Glycemic_Index		
-GCS:0000511	Sugar intake	Food Frequency Questionnaire	Amount consumed per day	nutrition	Sugar_intake		
-GCS:0000512	Nuts	Food Frequency Questionnaire	Amount consumed per day	nutrition	Nuts		
-GCS:0000513	tea	Food Frequency Questionnaire	Amount consumed per day	nutrition	tea		
-GCS:0000514	Coffee	Food Frequency Questionnaire	Amount consumed per day	nutrition	Coffee		
+GCS:0000477	Energy	Food Frequency Questionnaire	Amount consumed per day	dietary history	Energy		
+GCS:0000478	fat	Food Frequency Questionnaire	Amount consumed per day	dietary history	fat		
+GCS:0000479	salt	Food Frequency Questionnaire	Amount consumed per day	dietary history	salt		
+GCS:0000480	protein	Food Frequency Questionnaire	Amount consumed per day	dietary history	protein		
+GCS:0000481	total saturated fat	Food Frequency Questionnaire	Amount consumed per day	dietary history	total_saturated_fat		
+GCS:0000482	total trans fat	Food Frequency Questionnaire	Amount consumed per day	dietary history	total_trans_fat		
+GCS:0000483	hydrogenated oil	Food Frequency Questionnaire	Amount consumed per day	dietary history	hydrogenated_oil		
+GCS:0000484	carbohyderate	Food Frequency Questionnaire	Amount consumed per day	dietary history	carbohyderate		
+GCS:0000485	red meat	Food Frequency Questionnaire	Amount consumed per day	dietary history	red_meat		
+GCS:0000486	processed meat	Food Frequency Questionnaire	Amount consumed per day	dietary history	processed_meat		
+GCS:0000487	fruits	Food Frequency Questionnaire	Amount consumed per day	dietary history	fruits		
+GCS:0000488	vegetables	Food Frequency Questionnaire	Amount consumed per day	dietary history	vegetables		
+GCS:0000489	dairy products	Food Frequency Questionnaire	Amount consumed per day	dietary history	dairy_products		
+GCS:0000490	milk	Food Frequency Questionnaire	Amount consumed per day	dietary history	milk		
+GCS:0000491	dietary fiber	Food Frequency Questionnaire	Amount consumed per day	dietary history	dietary_fiber		
+GCS:0000492	Fish	Food Frequency Questionnaire	Amount consumed per day	dietary history	Fish		
+GCS:0000493	Chicken	Food Frequency Questionnaire	Amount consumed per day	dietary history	Chicken		
+GCS:0000494	SodiumNa	Food Frequency Questionnaire	Amount consumed per day	dietary history	SodiumNa		
+GCS:0000495	Calcium	Food Frequency Questionnaire	Amount consumed per day	dietary history	Calcium		
+GCS:0000496	Fe	Food Frequency Questionnaire	Amount consumed per day	dietary history	Fe		
+GCS:0000497	Magnesium	Food Frequency Questionnaire	Amount consumed per day	dietary history	Magnesium		
+GCS:0000498	Phosphorus	Food Frequency Questionnaire	Amount consumed per day	dietary history	Phosphorus		
+GCS:0000499	Potassium	Food Frequency Questionnaire	Amount consumed per day	dietary history	Potassium		
+GCS:0000500	Zinc	Food Frequency Questionnaire	Amount consumed per day	dietary history	Zinc		
+GCS:0000501	Folate	Food Frequency Questionnaire	Amount consumed per day	dietary history	Folate		
+GCS:0000502	Vitamin D	Food Frequency Questionnaire	Amount consumed per day	dietary history	Vitamin_D		
+GCS:0000503	Vitamin A	Food Frequency Questionnaire	Amount consumed per day	dietary history	Vitamin_A		
+GCS:0000504	Vitamin B1	Food Frequency Questionnaire	Amount consumed per day	dietary history	Vitamin_B1		
+GCS:0000505	Vitamin B2	Food Frequency Questionnaire	Amount consumed per day	dietary history	Vitamin_B2		
+GCS:0000506	Vitamin B12	Food Frequency Questionnaire	Amount consumed per day	dietary history	Vitamin_B12		
+GCS:0000507	Vitamin C	Food Frequency Questionnaire	Amount consumed per day	dietary history	Vitamin_C		
+GCS:0000508	Niacin	Food Frequency Questionnaire	Amount consumed per day	dietary history	Niacin		
+GCS:0000509	Glycemic load	Food Frequency Questionnaire	Amount consumed per day	dietary history	Glycemic_load		
+GCS:0000510	Glycemic Index	Food Frequency Questionnaire	Amount consumed per day	dietary history	Glycemic_Index		
+GCS:0000511	Sugar intake	Food Frequency Questionnaire	Amount consumed per day	dietary history	Sugar_intake		
+GCS:0000512	Nuts	Food Frequency Questionnaire	Amount consumed per day	dietary history	Nuts		
+GCS:0000513	tea	Food Frequency Questionnaire	Amount consumed per day	dietary history	tea		
+GCS:0000514	Coffee	Food Frequency Questionnaire	Amount consumed per day	dietary history	Coffee		
 GCS:0000515	fbg	Lab markers	Fasting Blood Glucose	blood	fbg		
 GCS:0000516	urea	Lab markers	Urea	blood	urea		
 GCS:0000517	creatinine	Lab markers	Creatinine	blood	creatinine		Some of these could be blood or urine, but it looks like they don't collect urine

@@ -21,25 +21,25 @@ KOGES:0000019	Relationship	Family disease history		diseases
 KOGES:0000020	Age at first diagnosis (Family disease history)	Family disease history		diseases		
 KOGES:0000021	Number of siblings and children	Family disease history		family and household structure		
 KOGES:0000022	Lifestyle	Core Questionnaires		lifestyle and behaviours		
-KOGES:0000023	Smoking habits	Lifestyle		tobacco		
-KOGES:0000024	Amount of cigarettes	Smoking habits		tobacco		
-KOGES:0000025	Total period of smoking	Smoking habits		tobacco		
-KOGES:0000026	Age at first smoking	Smoking habits		tobacco		
-KOGES:0000027	Secondhand smoking	Smoking habits		tobacco		
-KOGES:0000028	Drinking habits	Lifestyle		alcohol		
-KOGES:0000029	Amount of drinking	Drinking habits		alcohol		
-KOGES:0000030	Total period of drinking	Drinking habits		alcohol		
-KOGES:0000031	Drinking frequency	Drinking habits		alcohol		
-KOGES:0000032	Sleeping pattern	Lifestyle		sleep		
-KOGES:0000033	Hours of sleep	Sleeping pattern		sleep		
-KOGES:0000034	Time go to bed and wake up in the morning	Sleeping pattern		sleep		
-KOGES:0000035	Trouble of sleeping	Sleeping pattern		sleep		
-KOGES:0000036	Snoring	Trouble of sleeping		sleep		
-KOGES:0000037	Physical activity	Lifestyle		physical activity		
-KOGES:0000038	Regular physical activity	Physical activity		physical activity		
-KOGES:0000039	Exercises	Physical activity		physical activity		
-KOGES:0000040	Household chores	Physical activity		physical activity		
-KOGES:0000041	Climbing stairs	Physical activity		physical activity		
+KOGES:0000023	Smoking habits	Lifestyle		tobacco use history		
+KOGES:0000024	Amount of cigarettes	Smoking habits		tobacco use history		
+KOGES:0000025	Total period of smoking	Smoking habits		tobacco use history		
+KOGES:0000026	Age at first smoking	Smoking habits		tobacco use history		
+KOGES:0000027	Secondhand smoking	Smoking habits		tobacco use history		
+KOGES:0000028	Drinking habits	Lifestyle		alcohol use history		
+KOGES:0000029	Amount of drinking	Drinking habits		alcohol use history		
+KOGES:0000030	Total period of drinking	Drinking habits		alcohol use history		
+KOGES:0000031	Drinking frequency	Drinking habits		alcohol use history		
+KOGES:0000032	Sleeping pattern	Lifestyle		sleep history		
+KOGES:0000033	Hours of sleep	Sleeping pattern		sleep history		
+KOGES:0000034	Time go to bed and wake up in the morning	Sleeping pattern		sleep history		
+KOGES:0000035	Trouble of sleeping	Sleeping pattern		sleep history		
+KOGES:0000036	Snoring	Trouble of sleeping		sleep history		
+KOGES:0000037	Physical activity	Lifestyle		physical activity history		
+KOGES:0000038	Regular physical activity	Physical activity		physical activity history		
+KOGES:0000039	Exercises	Physical activity		physical activity history		
+KOGES:0000040	Household chores	Physical activity		physical activity history		
+KOGES:0000041	Climbing stairs	Physical activity		physical activity history		
 KOGES:0000042	Womens health	Core Questionnaires				
 KOGES:0000043	Menstrual factors	Womens health		reproduction		
 KOGES:0000044	Age at menarche	Menstrual factors		reproduction		
@@ -51,9 +51,9 @@ KOGES:0000049	Age at each pregnancy	Reproductive history		reproduction
 KOGES:0000050	Durations and outcome of pregnancies	Reproductive history		reproduction		
 KOGES:0000051	Breastfeeding	Reproductive history		reproduction		
 KOGES:0000052	Infertility	Reproductive history		reproduction		
-KOGES:0000053	Dietary survey	Core Questionnaires		nutrition		
-KOGES:0000054	Food Frequency Questionnaire	Dietary survey		nutrition		
-KOGES:0000055	Dietary habits	Dietary survey		nutrition		
+KOGES:0000053	Dietary survey	Core Questionnaires		dietary history		
+KOGES:0000054	Food Frequency Questionnaire	Dietary survey		dietary history		
+KOGES:0000055	Dietary habits	Dietary survey		dietary history		
 KOGES:0000056	Anthropometric measurements	Core Variables		anthropometry		
 KOGES:0000057	Height & weight	Anthropometric measurements		height|weight		
 KOGES:0000058	Waist & hip circumference	Anthropometric measurements		anthropometry		
@@ -81,11 +81,11 @@ KOGES:0000079	Substudy Variables
 KOGES:0000080	Substudy Questionnaires	Substudy Variables		questionnaire/survey data		
 KOGES:0000081	Psychosocial well-being status (PWI)	Substudy Questionnaires		signs and symptoms		
 KOGES:0000082	Depression (CES-D, BDI)	Substudy Questionnaires		mental and behaviour disorders		not the exact tests
-KOGES:0000083	24 hour recall dietary survey	Substudy Questionnaires		nutrition		
+KOGES:0000083	24 hour recall dietary survey	Substudy Questionnaires		dietary history		
 KOGES:0000084	Sleep disorder	Substudy Questionnaires		mental and behaviour disorders		
 KOGES:0000085	In-depth questionnaire (By disease)	Substudy Variables		diseases		
-KOGES:0000086	Respiratory disease	In-depth questionnaire (By disease)		respiratory system		
-KOGES:0000087	Gastroenterologic disorder	In-depth questionnaire (By disease)		digestive system		
+KOGES:0000086	Respiratory disease	In-depth questionnaire (By disease)		respiratory system diseases		
+KOGES:0000087	Gastroenterologic disorder	In-depth questionnaire (By disease)		digestive system diseases		
 KOGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	In-depth questionnaire (By disease)		diseases		
 KOGES:0000089	Arthritis	In-depth questionnaire (By disease)		diseases		
 KOGES:0000090	Aging study	Substudy Variables				

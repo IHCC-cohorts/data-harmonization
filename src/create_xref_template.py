@@ -21,7 +21,6 @@ def main():
     reader = csv.reader(mapping_index, delimiter='\t')
     # Skip header and template rows
     next(reader)
-    next(reader)
     for row in reader:
         if not row:
             # Row is empty
