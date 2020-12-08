@@ -9,7 +9,7 @@ GCS:0000007	Food preservation and cooking		Food preservation, frying, boiling, B
 GCS:0000008	Properties		Transferable and non-transferable belongings and wealth score (Multiple Correspondence Analysis)	socio-demographic and economic characteristics	PROP		
 GCS:0000009	Medical History		Suffering from any disease at the baseline of cohort	diseases	MED		
 GCS:0000010	Chief complaints		The complaints of participants from their physical or mental sufferings	signs and symptoms	CC		
-GCS:0000011	Cancer History		History of cancer, site, and age diagnosed in the participant or any of his/her relatives	oncological	CANCER		
+GCS:0000011	Cancer History		History of cancer, site, and age diagnosed in the participant or any of his/her relatives	cancer	CANCER		
 GCS:0000012	Smoking		Ever or current smoker, age of use, type, number per day and days per week	tobacco use history	SMOK		
 GCS:0000013	Opium use		Ever or current user, age and route of use, type, time per day and days per week	recreational drug history	OPIUM		
 GCS:0000014	Alcohol use		Ever or current user, age of use, type, quantity per episode and episodes per month	alcohol use history	ALC		
@@ -175,24 +175,24 @@ GCS:0000173	HaveKitchen	Properties	Specifies if the household has kitchen	socio-
 GCS:0000174	MCA	Properties	Composite wealth score (Multiple Correspondence Analysis)	socio-demographic and economic characteristics	MCA		
 GCS:0000175	NumberPregnancies	Medical History	Specifies the number of Pregnancies for women only	socio-demographic and economic characteristics	NumberPregnancies		
 GCS:0000176	NumberLiveBirths	Medical History	Specifies the number of live births for women only	socio-demographic and economic characteristics	NumberLiveBirths		
-GCS:0000177	DisRheumaticHeartDx	Medical History	if the diagnosis of Rheumatic Heart Disease was made for participant by a physician	circulatory system	DisRheumaticHeartDx		
-GCS:0000178	DisRheumaticHeartAge	Medical History	participant age at Rheumatic Heart Disease diagnosis	circulatory system	DisRheumaticHeartAge		
-GCS:0000179	DisHeartDiseaseDx	Medical History	if the diagnosis of Heart Disease was made for participant by a physician	circulatory system	DisHeartDiseaseDx		
-GCS:0000180	DisHeartDiseaseAge	Medical History	participant age in first Heart Disease diagnosis	circulatory system	DisHeartDiseaseAge		
+GCS:0000177	DisRheumaticHeartDx	Medical History	if the diagnosis of Rheumatic Heart Disease was made for participant by a physician	cardiovascular diseases	DisRheumaticHeartDx		
+GCS:0000178	DisRheumaticHeartAge	Medical History	participant age at Rheumatic Heart Disease diagnosis	cardiovascular diseases	DisRheumaticHeartAge		
+GCS:0000179	DisHeartDiseaseDx	Medical History	if the diagnosis of Heart Disease was made for participant by a physician	cardiovascular diseases	DisHeartDiseaseDx		
+GCS:0000180	DisHeartDiseaseAge	Medical History	participant age in first Heart Disease diagnosis	cardiovascular diseases	DisHeartDiseaseAge		
 GCS:0000181	DisStrokeDx	Medical History	if the diagnosis of Stroke was made for participant by a physician	signs and symptoms	DisStrokeDx		
 GCS:0000182	DisStrokeAge	Medical History	participant age in first Stroke diagnosis	signs and symptoms	DisStrokeAge		
-GCS:0000183	DisHypertensionDx	Medical History	if the diagnosis of Hypertension was made for participant by a physician	circulatory system	DisHypertensionDx		
-GCS:0000184	DisHypertensionAge	Medical History	participant age in first Hypertension diagnosis	circulatory system	DisHypertensionAge		
-GCS:0000185	DisDiabetesDx	Medical History	if the diagnosis of Diabetes was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisDiabetesDx		
-GCS:0000186	DisDiabetesAge	Medical History	participant age in first Diabetes diagnosis	endocrine/nutritional/metabolic disorders	DisDiabetesAge		
-GCS:0000187	DisCOPDDx	Medical History	if the diagnosis of COPD was made for participant by a physician	respiratory system	DisCOPDDx		
-GCS:0000188	DisCOPDAge	Medical History	participant age in first COPD diagnosis	respiratory system	DisCOPDAge		
-GCS:0000189	DisRenalFailureDx	Medical History	if the diagnosis of Renal Failure was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisRenalFailureDx		
-GCS:0000190	DisRenalFailureAge	Medical History	participant age in first RenalFailure diagnosis	endocrine/nutritional/metabolic disorders	DisRenalFailureAge		
-GCS:0000191	DisJaundiceDx	Medical History	if the diagnosis of Jaundice was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisJaundiceDx		
-GCS:0000192	DisJaundiceAge	Medical History	participant age in first Jaundice diagnosis	endocrine/nutritional/metabolic disorders	DisJaundiceAge		
-GCS:0000193	DisLiverDx	Medical History	if the diagnosis of Chronic Liver Failure was made for participant by a physician	endocrine/nutritional/metabolic disorders	DisLiverDx		
-GCS:0000194	DisLiverAge	Medical History	participant age in first Chronic liver failure diagnosis	endocrine/nutritional/metabolic disorders	DisLiverAge		
+GCS:0000183	DisHypertensionDx	Medical History	if the diagnosis of Hypertension was made for participant by a physician	cardiovascular diseases	DisHypertensionDx		
+GCS:0000184	DisHypertensionAge	Medical History	participant age in first Hypertension diagnosis	cardiovascular diseases	DisHypertensionAge		
+GCS:0000185	DisDiabetesDx	Medical History	if the diagnosis of Diabetes was made for participant by a physician	endocrine system diseases	DisDiabetesDx		
+GCS:0000186	DisDiabetesAge	Medical History	participant age in first Diabetes diagnosis	endocrine system diseases	DisDiabetesAge		
+GCS:0000187	DisCOPDDx	Medical History	if the diagnosis of COPD was made for participant by a physician	respiratory system diseases	DisCOPDDx		
+GCS:0000188	DisCOPDAge	Medical History	participant age in first COPD diagnosis	respiratory system diseases	DisCOPDAge		
+GCS:0000189	DisRenalFailureDx	Medical History	if the diagnosis of Renal Failure was made for participant by a physician	endocrine system diseases	DisRenalFailureDx		
+GCS:0000190	DisRenalFailureAge	Medical History	participant age in first RenalFailure diagnosis	endocrine system diseases	DisRenalFailureAge		
+GCS:0000191	DisJaundiceDx	Medical History	if the diagnosis of Jaundice was made for participant by a physician	endocrine system diseases	DisJaundiceDx		
+GCS:0000192	DisJaundiceAge	Medical History	participant age in first Jaundice diagnosis	endocrine system diseases	DisJaundiceAge		
+GCS:0000193	DisLiverDx	Medical History	if the diagnosis of Chronic Liver Failure was made for participant by a physician	endocrine system diseases	DisLiverDx		
+GCS:0000194	DisLiverAge	Medical History	participant age in first Chronic liver failure diagnosis	endocrine system diseases	DisLiverAge		
 GCS:0000195	DisTBDx	Medical History	if the diagnosis of Tuberculosis was made for participant by a physician	diseases	DisTBDx		should TB fall under respiratory?
 GCS:0000196	DisTBAge	Medical History	participant age in first Tuberculosis diagnosis	diseases	DisTBAge		should TB fall under respiratory?
 GCS:0000197	SurgeryFlag	Medical History	If the participant had had any history of surgery	surgical interventions	SurgeryFlag		
@@ -214,25 +214,25 @@ GCS:0000212	RefluxHeartburnTXFlag	Chief complaints	if participant used drug for 
 GCS:0000213	WeightLossFlag	Chief complaints	if the patient has Weightloss in past year select yes if not select no	signs and symptoms	WeightLossFlag		
 GCS:0000214	WeightLossAmount	Chief complaints	Specifies the amount of weight loss	signs and symptoms	WeightLossAmount		
 GCS:0000215	WeightLossIntent	Chief complaints	if the patient has Intentional weight loss select Yes if not select no and doesn't have weight loss select I have no weight loss	signs and symptoms	WeightLossIntent		
-GCS:0000216	cancerdxflag	Cancer History	Past history of cancer diagnosed by a physician?	oncological	cancerdxflag		
-GCS:0000217	cancerdxage	Cancer History	Year of diagnosis of cancer if detected in participant	oncological	cancerdxage		
-GCS:0000218	cancerdxsite	Cancer History	Original site of cancer	oncological	cancerdxsite		
-GCS:0000219	CancRelRelativeCode_1	Cancer History	Specifies the relative of participants with a history of cancer	oncological	CancRelRelativeCode_1		
-GCS:0000220	CancRelAgeDiagnosis_1	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_1		
-GCS:0000221	CancRelSite_1	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_1		
-GCS:0000222	CancRelICD10_1	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_1		
-GCS:0000223	CancRelRelativeCode_2	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological	CancRelRelativeCode_2		
-GCS:0000224	CancRelAgeDiagnosis_2	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_2		
-GCS:0000225	CancRelSite_2	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_2		
-GCS:0000226	CancRelICD10_2	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_2		
-GCS:0000227	CancRelRelativeCode_3	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological	CancRelRelativeCode_3		
-GCS:0000228	CancRelAgeDiagnosis_3	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_3		
-GCS:0000229	CancRelSite_3	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_3		
-GCS:0000230	CancRelICD10_3	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_3		
-GCS:0000231	CancRelRelativeCode_4	Cancer History	Specifies the additional relative of participants with a history of cancer	oncological	CancRelRelativeCode_4		
-GCS:0000232	CancRelAgeDiagnosis_4	Cancer History	Specifies the age of relative when cancer was diagnosed	oncological	CancRelAgeDiagnosis_4		
-GCS:0000233	CancRelSite_4	Cancer History	Specifies the site of cancer in the relative of participant	oncological	CancRelSite_4		
-GCS:0000234	CancRelICD10_4	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	oncological	CancRelICD10_4		
+GCS:0000216	cancerdxflag	Cancer History	Past history of cancer diagnosed by a physician?	cancer	cancerdxflag		
+GCS:0000217	cancerdxage	Cancer History	Year of diagnosis of cancer if detected in participant	cancer	cancerdxage		
+GCS:0000218	cancerdxsite	Cancer History	Original site of cancer	cancer	cancerdxsite		
+GCS:0000219	CancRelRelativeCode_1	Cancer History	Specifies the relative of participants with a history of cancer	cancer	CancRelRelativeCode_1		
+GCS:0000220	CancRelAgeDiagnosis_1	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_1		
+GCS:0000221	CancRelSite_1	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_1		
+GCS:0000222	CancRelICD10_1	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_1		
+GCS:0000223	CancRelRelativeCode_2	Cancer History	Specifies the additional relative of participants with a history of cancer	cancer	CancRelRelativeCode_2		
+GCS:0000224	CancRelAgeDiagnosis_2	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_2		
+GCS:0000225	CancRelSite_2	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_2		
+GCS:0000226	CancRelICD10_2	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_2		
+GCS:0000227	CancRelRelativeCode_3	Cancer History	Specifies the additional relative of participants with a history of cancer	cancer	CancRelRelativeCode_3		
+GCS:0000228	CancRelAgeDiagnosis_3	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_3		
+GCS:0000229	CancRelSite_3	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_3		
+GCS:0000230	CancRelICD10_3	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_3		
+GCS:0000231	CancRelRelativeCode_4	Cancer History	Specifies the additional relative of participants with a history of cancer	cancer	CancRelRelativeCode_4		
+GCS:0000232	CancRelAgeDiagnosis_4	Cancer History	Specifies the age of relative when cancer was diagnosed	cancer	CancRelAgeDiagnosis_4		
+GCS:0000233	CancRelSite_4	Cancer History	Specifies the site of cancer in the relative of participant	cancer	CancRelSite_4		
+GCS:0000234	CancRelICD10_4	Cancer History	Specifies the ICD-10 code of cancer in the relative of participant	cancer	CancRelICD10_4		
 GCS:0000235	TobEverRegularFlag	Smoking	Specifies the participant used cigar for 6 Months	tobacco use history	TobEverRegularFlag		
 GCS:0000236	TobCigsNow	Smoking	Specifies the participant uses cigar Now	tobacco use history	TobCigsNow		
 GCS:0000237	TobNonCigFlag	Smoking	Specifies the participant used tobacco other than cigar for 6 Months	tobacco use history	TobNonCigFlag		
@@ -467,9 +467,9 @@ GCS:0000465	m_dbp	Blood pressure measurements	Mean diastolic blood pressure meas
 GCS:0000466	high_sbp	Blood pressure measurements	Systolic blood pressure >= 140 mmHg	signs and symptoms	high_sbp		
 GCS:0000467	high_dbp	Blood pressure measurements	Diastolic blood pressure >= 90 mmHg	signs and symptoms	high_dbp		
 GCS:0000468	htndrug	Blood pressure measurements	Consumption of any anti-hypertensive medication for more than 6 months	prescription	htndrug		
-GCS:0000469	HTN	Blood pressure measurements	Being hypertensive	circulatory system	HTN		
-GCS:0000470	HTNcat	Blood pressure measurements	Categorization of hypetrension	circulatory system	HTNcat		
-GCS:0000471	preHTN	Blood pressure measurements	SBP/DBP >=120/80 AND <140/90	circulatory system	preHTN		
+GCS:0000469	HTN	Blood pressure measurements	Being hypertensive	cardiovascular diseases	HTN		
+GCS:0000470	HTNcat	Blood pressure measurements	Categorization of hypetrension	cardiovascular diseases	HTNcat		
+GCS:0000471	preHTN	Blood pressure measurements	SBP/DBP >=120/80 AND <140/90	cardiovascular diseases	preHTN		
 GCS:0000472	pulse_p	Blood pressure measurements	Difference between SBP and DBP	heart rate (HR)	pulse_p		
 GCS:0000473	mean_bp	Blood pressure measurements	mean value of SBP and DBP	blood pressure	mean_bp		
 GCS:0000474	mid_bp	Blood pressure measurements	Mid value of SBP and DBP	blood pressure	mid_bp		

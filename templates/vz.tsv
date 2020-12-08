@@ -23,13 +23,13 @@ VZ:0000021	High Cholesterol Informed Past 12 Months			signs and symptoms	HighCho
 VZ:0000022	High Cholesterol Treatment Past 2 Weeks			associated disease(s)	HighCholestTx2wks		
 VZ:0000023	High Cholesterol Consultation With Traditional Healer			signs and symptoms	HighCholestConsultHealer		
 VZ:0000024	Currently Taking Herbal Treatment for Raised Cholesterol			non-pharmacological interventions	HighCholestHerbalCurr		
-VZ:0000025	Heart Attack Ever			circulatory system	HeartAttackEver		
+VZ:0000025	Heart Attack Ever			cardiovascular diseases	HeartAttackEver		
 VZ:0000026	Currently Taking Aspirin Treatment			medication	HeartAttackAspirinTxCurr		
 VZ:0000027	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Heart Disease			medication	HeartAttackStatinsTxCurr		
-VZ:0000028	Parental History of Heart Attack			circulatory system	ParentHistHeartAttack		
-VZ:0000029	History of Stroke			circulatory system	HadStrokeEver		
+VZ:0000028	Parental History of Heart Attack			cardiovascular diseases	ParentHistHeartAttack		
+VZ:0000029	History of Stroke			cardiovascular diseases	HadStrokeEver		
 VZ:0000030	Currently Taking statins (Lovastatin/Simvastatin/Atorvastatin) to prevent Stroke			medication	StrokeAspirinTxCurr		
-VZ:0000031	Parental History of Stroke			circulatory system	ParentHistStroke		
+VZ:0000031	Parental History of Stroke			cardiovascular diseases	ParentHistStroke		
 VZ:0000032	Cancer Treatment Before				CancerTxEver		is this non-pharmacological (potential surgery) or medication for cancer?
 VZ:0000033	Currently Smoking Tobacco			tobacco use history	CurrSmoker		
 VZ:0000034	Smoke Tobacco Products Daily			tobacco use history	CurrSmokerDaily		
@@ -55,8 +55,8 @@ VZ:0000053	Haemoptysis			signs and symptoms	Haemoptysis
 VZ:0000054	Chestpain			signs and symptoms	Chestpain		
 VZ:0000055	Lymphadenitis			signs and symptoms	Lymphadenitis		
 VZ:0000056	Duration of the TB symptoms(weeks)			signs and symptoms	TBSymptDur		
-VZ:0000057	High Asthma InformededEver			respiratory system	HighAsthmaInformedEver		
-VZ:0000058	Been told of high Asthma			respiratory system	HighAsthmaInformed12mo		
+VZ:0000057	High Asthma InformededEver			respiratory system diseases	HighAsthmaInformedEver		
+VZ:0000058	Been told of high Asthma			respiratory system diseases	HighAsthmaInformed12mo		
 VZ:0000059	Taken any medication for asthma/COPD prescribed by a doctor or other health worker			associated disease(s)	HighhAsthmaTx2wks		
 VZ:0000060	Shortness of breath after exercise or physical activity			signs and symptoms	BreathShortness		
 VZ:0000061	Wake up at night because of difficulties in breathing/shortness of breath			signs and symptoms	WakeUpBreathShortness		
@@ -103,7 +103,7 @@ VZ:0000101	Medical Officer Suggested Outcome			survey administration	MOSuggested
 VZ:0000102	Medical Officer Final Outcome			survey administration	MOFinalOutcome		
 VZ:0000103	Medical Officer Suggested Second Outcome			survey administration	MOSuggestedSecondRoundOutcome		
 VZ:0000104	Medical Officer Second Round Final Outcome			survey administration	MOSecondRoundOutcome		
-VZ:0000105	Medical Officer Diabetes Message			endocrine/nutritional/metabolic disorders	DiabetesMessage		
+VZ:0000105	Medical Officer Diabetes Message			endocrine system diseases	DiabetesMessage		
 VZ:0000106	Medical Officer HIV Message			diseases	HIVMessage		
 VZ:0000107	Medical Officer Chest X-Ray Message			physiological measurements	CxrMessage		
 VZ:0000108	Medical Officer Second Round Message			survey administration	SecondRoundMessage		
@@ -115,7 +115,7 @@ VZ:0000113	Medical Officer Agreement with Second Outcome			survey administration
 VZ:0000114	Medical Officer Outcome Description			survey administration	MOSecondRoundOutcomeDesc		
 VZ:0000115	Medical Officer Conditions			survey administration	MOConditions		
 VZ:0000116	BP Referral from Follow up Visit			signs and symptoms	BPReferallFU		
-VZ:0000117	Diabetes Referral from Follow up Visit			endocrine/nutritional/metabolic disorders	DiabetesReferallFU		
+VZ:0000117	Diabetes Referral from Follow up Visit			endocrine system diseases	DiabetesReferallFU		
 VZ:0000118	HIV Referral from Follow up Visit			diseases	HIVReferallFU		
 VZ:0000119	TB Referral from Follow up Visit			diseases	TBReferallFU		
 VZ:0000120	Homestead Induced TB Sputum Collected			other biosample type	InducedTBSputumHome		
@@ -123,8 +123,8 @@ VZ:0000121	Homestead Spontatneous TB Sputum Collected			other biosample type	Spo
 VZ:0000122	Home TB Sputum Outcomeollected			other biosample type	HomeTBSputumOutcome		
 VZ:0000123	Follow Up Glucose			blood	FUGlucose		
 VZ:0000124	Follow Up Glucose Result			blood	FUGlucoseResult		
-VZ:0000125	FUDiabetesDiagnosis			endocrine/nutritional/metabolic disorders	FUDiabetesDiagnosis		
-VZ:0000126	Follow Up Target Clinic/Hospital Date for Diabetes			endocrine/nutritional/metabolic disorders|date and time-related information	FUDiabetesClinicDate		
+VZ:0000125	FUDiabetesDiagnosis			endocrine system diseases	FUDiabetesDiagnosis		
+VZ:0000126	Follow Up Target Clinic/Hospital Date for Diabetes			endocrine system diseases|date and time-related information	FUDiabetesClinicDate		
 VZ:0000127	Clinical Systolic Blood pressure reading			blood pressure	FUSystolicBp		
 VZ:0000128	Clinical Diastolic Blood pressure reading			blood pressure	FUDiastolicBp		
 VZ:0000129	FUBpDiagnosis			signs and symptoms	FUBpDiagnosis		
@@ -181,7 +181,7 @@ VZ:0000179	Home Visit Attempts failed to contact Participant			survey administra
 VZ:0000180	Failed to refer Positive Sputum case to Clinic or Hospital			survey administration	SputumPosRefFail		
 VZ:0000181	Has the participant consented to be informed about their HIV results			survey administration	ConsentInformedHIV		
 VZ:0000182	Participant Has Diagnosis Other than TB that requires referral to the clinic or hospital			diseases	FUCXROtherReferral		
-VZ:0000183	Cancer Type			oncological	CancerType		
+VZ:0000183	Cancer Type			cancer	CancerType		
 VZ:0000184	Age Started Smoking Tobacco			tobacco use history	AgeStartedSmoking		
 VZ:0000185	Years Ago Individual Started Smoking			tobacco use history	YearsAgoStartedSmoking		
 VZ:0000186	Months Ago Individual Started Smoking			tobacco use history	MonthsAgoStartedSmoking		
@@ -312,11 +312,11 @@ VZ:0000310	CXR proposed diagnostic-OldTB			diseases	OldTB
 VZ:0000311	CXR proposed diagnostic-ProbableTB			diseases	ProbableTB		
 VZ:0000312	CXR proposed diagnostic-OtherInfection			diseases	OtherInfection		
 VZ:0000313	CXR proposed diagnostic-InflammatoryDisorder			diseases	InflammatoryDisorder		
-VZ:0000314	CXR proposed diagnostic-Neoplasm			oncological	Neoplasm		
+VZ:0000314	CXR proposed diagnostic-Neoplasm			cancer	Neoplasm		
 VZ:0000315	CXR proposed diagnostic-Trauma			diseases	Trauma		
 VZ:0000316	CXR proposed diagnostic-CongenitalAbnormality			diseases	CongenitalAbnormality		
-VZ:0000317	CXR proposed diagnostic-CardiacDisorder			circulatory system	CardiacDisorder		
-VZ:0000318	CXR proposed diagnostic-VascularDisorder			circulatory system	VascularDisorder		
+VZ:0000317	CXR proposed diagnostic-CardiacDisorder			cardiovascular diseases	CardiacDisorder		
+VZ:0000318	CXR proposed diagnostic-VascularDisorder			cardiovascular diseases	VascularDisorder		
 VZ:0000319	CXR proposed diagnostic-DegenerativeDisorder			diseases	DegenerativeDisorder		
 VZ:0000320	CXR pattern Left lung field & pleura			physiological measurements	LeftLung		
 VZ:0000321	CXR pattern Right lung field & pleura			physiological measurements	RightLung		
@@ -352,11 +352,11 @@ VZ:0000350	Radiologist Diagnostic OldTB			diseases	RadOldTB
 VZ:0000351	Radiologist Diagnostic ProbableTB			diseases	RadProbableTB		
 VZ:0000352	Radiologist Diagnostic Other Infection			diseases	RadOtherInfection		
 VZ:0000353	Radiologist Diagnostic Inflammatory Disorder			diseases	RadInflammatoryDisorder		
-VZ:0000354	Radiologistr Diagnostic Neoplasm			oncological	RadNeoplasm		
+VZ:0000354	Radiologistr Diagnostic Neoplasm			cancer	RadNeoplasm		
 VZ:0000355	Radiologist Diagnostic Trauma			diseases	RadTrauma		
 VZ:0000356	Radiologist Diagnostic CongenitalAbnormality			diseases	RadCongenitalAbnormality		
-VZ:0000357	Radiologist Diagnostic CardiacDisorder			circulatory system	RadCardiacDisorder		
-VZ:0000358	Radiologist Diagnostic VascularDisorder			circulatory system	RadVascularDisorder		
+VZ:0000357	Radiologist Diagnostic CardiacDisorder			cardiovascular diseases	RadCardiacDisorder		
+VZ:0000358	Radiologist Diagnostic VascularDisorder			cardiovascular diseases	RadVascularDisorder		
 VZ:0000359	Radiologist Diagnostic Degenerative Disorder			diseases	RadDegenerativeDisorder		
 VZ:0000360	Radiologist TB Diagnostic Other			diseases	RadTBDiagnosticOther		
 VZ:0000361	Lab Result Date			date and time-related information	LabResultDate		
@@ -406,8 +406,8 @@ VZ:0000404	Medical Officer Diagnostic OldTB			diseases	MOOldTB
 VZ:0000405	Medical Officer Diagnostic ProbableTB			diseases	MOProbableTB		
 VZ:0000406	Medical Officer Diagnostic Other Infection			diseases	MOOtherInfection		
 VZ:0000407	Medical Officer Diagnostic Inflammatory Disorder			diseases	MOInflammatoryDisorder		
-VZ:0000408	Medical Officer Diagnostic Neoplasm			oncological	MONeoplasm		
+VZ:0000408	Medical Officer Diagnostic Neoplasm			cancer	MONeoplasm		
 VZ:0000409	Medical Officer Diagnostic Trauma			diseases	MOTrauma		
 VZ:0000410	Medical Officer Diagnostic CongenitalAbnormality			diseases	MOCongenitalAbnormality		
-VZ:0000411	Medical Officer Diagnostic CardiacDisorder			circulatory system	MOCardiacDisorder		
-VZ:0000412	Medical Officer Diagnostic VascularDisorder			circulatory system	MOVascularDisorder		
+VZ:0000411	Medical Officer Diagnostic CardiacDisorder			cardiovascular diseases	MOCardiacDisorder		
+VZ:0000412	Medical Officer Diagnostic VascularDisorder			cardiovascular diseases	MOVascularDisorder		

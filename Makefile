@@ -143,7 +143,7 @@ build/intermediate/gecko_index.tsv: build/gecko.owl | build/robot.jar build/inte
 	$(ROBOT) export --input $< \
 	 --header "ID|LABEL" \
 	 --sort "ID" \
-	 --output $@
+	 --export $@
 
 build/intermediate/%-xrefs.tsv: src/create_xref_template.py build/%.tsv build/intermediate/gecko_index.tsv | build/intermediate
 	python3 $^ $@

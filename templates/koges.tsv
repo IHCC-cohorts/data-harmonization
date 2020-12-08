@@ -84,8 +84,8 @@ KOGES:0000082	Depression (CES-D, BDI)	Substudy Questionnaires		mental and behavi
 KOGES:0000083	24 hour recall dietary survey	Substudy Questionnaires		dietary history		
 KOGES:0000084	Sleep disorder	Substudy Questionnaires		mental and behaviour disorders		
 KOGES:0000085	In-depth questionnaire (By disease)	Substudy Variables		diseases		
-KOGES:0000086	Respiratory disease	In-depth questionnaire (By disease)		respiratory system		
-KOGES:0000087	Gastroenterologic disorder	In-depth questionnaire (By disease)		digestive system		
+KOGES:0000086	Respiratory disease	In-depth questionnaire (By disease)		respiratory system diseases		
+KOGES:0000087	Gastroenterologic disorder	In-depth questionnaire (By disease)		digestive system diseases		
 KOGES:0000088	Otorhinolaryngologic disorder (Ear, Nose)	In-depth questionnaire (By disease)		diseases		
 KOGES:0000089	Arthritis	In-depth questionnaire (By disease)		diseases		
 KOGES:0000090	Aging study	Substudy Variables				
