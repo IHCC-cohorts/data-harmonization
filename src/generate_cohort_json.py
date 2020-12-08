@@ -105,7 +105,7 @@ def main():
                     continue
                 gecko_cats.extend(gecko_cat.split("|"))
         gecko_cats = list(set(gecko_cats))
-        data = get_categories(gecko_cats, gecko_hierarchy)
+        data = get_categories(cohort_name, gecko_cats, gecko_hierarchy)
         if cohort_name in cohort_data:
             this_cohort = cohort_data[cohort_name]
             this_cohort.update(data)
@@ -122,9 +122,11 @@ def main():
             }
 
         # Add other metadata elements
-        for key in ["recontact_in_place", "irb_approved_data_sharing", "longitudinal_data"]:
+        for key in ["active_recruitment", "includes_50_to_60", "irb_approved_data_sharing", "recontact_in_place"]:
             this_cohort.update({key: cohort_metadata.get(key, False)})
-        
+        for key in ["ehr_data", "longitudinal_data"]:
+            this_cohort["available_data_types"][key] = cohort_metadata.get(key, False)
+
         all_data.append(this_cohort)
 
     json_obj = json.dumps(all_data, indent=2, sort_keys=True)
@@ -208,7 +210,7 @@ def clean_string(string):
     )
 
 
-def get_categories(categories, gecko):
+def get_categories(cohort_name, categories, gecko):
     """Get the CINECA categories used in a cohort as structured dictionary.
 
     :param categories:
@@ -219,11 +221,11 @@ def get_categories(categories, gecko):
     for leaf in categories:
         result = get_path(gecko, leaf)
         if result is None:
-            logging.error(f'unable to find "{leaf}"')
+            logging.error(f'unable to find "{leaf}" for {cohort_name}')
             continue
         path = result[0]
         if path is None:
-            logging.error(f'unable to find "{leaf}"')
+            logging.error(f'unable to find "{leaf}" for {cohort_name}')
             continue
         has_children = result[1]
         path.reverse()

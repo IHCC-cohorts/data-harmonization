@@ -1,9 +1,12 @@
 [
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": false,
       "genomic_data": true,
+      "longitudinal_data": false,
       "phenotypic_clinical_data": true
     },
     "biosample": {
@@ -20,9 +23,9 @@
     ],
     "current_enrollment": 130000,
     "enrollment_period": "2000:Ongoing",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": false,
     "laboratory_measures": [],
-    "longitudinal_data": false,
     "pi_lead": "Willem Hankom",
     "questionnaire_survey_data": {
       "diseases": [
@@ -64,10 +67,13 @@
     "website": "https://www.ahri.org"
   },
   {
+    "active_recruitment": true,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": true,
       "environmental_data": false,
       "genomic_data": true,
+      "longitudinal_data": true,
       "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
@@ -84,9 +90,9 @@
     ],
     "current_enrollment": 100000,
     "enrollment_period": "2013:2018",
-    "irb_approved_data_sharing": false,
+    "includes_50_to_60": true,
+    "irb_approved_data_sharing": true,
     "laboratory_measures": [],
-    "longitudinal_data": false,
     "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
       "diseases": [
@@ -131,7 +137,7 @@
         "Residence"
       ]
     },
-    "recontact_in_place": false,
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -140,10 +146,13 @@
     "website": "https://www.genomicsengland.co.uk/"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": true,
       "genomic_data": false,
+      "longitudinal_data": false,
       "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
@@ -164,9 +173,9 @@
     ],
     "current_enrollment": 50000,
     "enrollment_period": "2004:2008",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": false,
     "laboratory_measures": [],
-    "longitudinal_data": false,
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
@@ -223,10 +232,13 @@
     "website": "https://dceg2.cancer.gov/gemshare/"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": true,
       "genomic_data": true,
+      "longitudinal_data": true,
       "phenotypic_clinical_data": true
     },
     "biosample": {
@@ -241,8 +253,8 @@
     ],
     "current_enrollment": 235000,
     "enrollment_period": "2001:2013",
-    "irb_approved_data_sharing": false,
-    "longitudinal_data": false,
+    "includes_50_to_60": true,
+    "irb_approved_data_sharing": true,
     "pi_lead": "Hyun Young Park",
     "questionnaire_survey_data": {
       "diseases": [
@@ -280,15 +292,18 @@
         "Family and household structure"
       ]
     },
-    "recontact_in_place": false,
+    "recontact_in_place": true,
     "target_enrollment": null,
     "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": false,
       "genomic_data": false,
+      "longitudinal_data": false,
       "phenotypic_clinical_data": true
     },
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
@@ -297,9 +312,9 @@
     ],
     "current_enrollment": 350000,
     "enrollment_period": "1993:ongoing",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": false,
     "laboratory_measures": [],
-    "longitudinal_data": false,
     "pi_lead": "Kobus Herbst",
     "questionnaire_survey_data": {
       "diseases": [

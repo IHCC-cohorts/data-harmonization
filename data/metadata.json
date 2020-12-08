@@ -1,27 +1,57 @@
 {
     "Africa Health Research Institute (AHRI) Population Cohort": {
+        "active_recruitment": false,
+        "ehr_data": false,
         "data_dictionary": "https://drive.google.com/file/d/1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC/view",
         "id": "VZ",
-        "prefix": "VZ"
+        "includes_50_to_60": false,
+        "irb_approved_data_sharing": false,
+        "longitudinal_data": false,
+        "prefix": "VZ",
+        "recontact_in_place": false
     },
     "Genomics England / 100,000 Genomes Project": {
+        "active_recruitment": true,
+        "ehr_data": true,
         "data_dictionary": "https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195",
         "id": "Genomics-England",
-        "prefix": "GE"
+        "includes_50_to_60": true,
+        "irb_approved_data_sharing": true,
+        "longitudinal_data": true,
+        "prefix": "GE",
+        "recontact_in_place": true
     },
     "Golestan Cohort Study": {
+        "active_recruitment": false,
+        "ehr_data": false,
         "data_dictionary": "https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view",
         "id": "GCS",
-        "prefix": "GCS"
+        "includes_50_to_60": false,
+        "irb_approved_data_sharing": false,
+        "longitudinal_data": false,
+        "prefix": "GCS",
+        "recontact_in_place": false
     },
     "Korean Genome and Epidemiology Study (KoGES)": {
+        "active_recruitment": false,
+        "ehr_data": false,
         "data_dictionary": "https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view",
         "id": "KOGES",
-        "prefix": "KOGES"
+        "includes_50_to_60": true,
+        "irb_approved_data_sharing": true,
+        "longitudinal_data": true,
+        "prefix": "KOGES",
+        "recontact_in_place": true
     },
     "SAPRIN (South African Population Research Infrastructure Network)": {
+        "active_recruitment": false,
+        "ehr_data": false,
         "data_dictionary": "https://drive.google.com/file/d/1u1sXEAAU7N_n2-WqfF6lMJozVVQSI0EU",
         "id": "SAPRIN",
-        "prefix": "SAPRIN"
+        "includes_50_to_60": false,
+        "irb_approved_data_sharing": false,
+        "longitudinal_data": false,
+        "prefix": "SAPRIN",
+        "recontact_in_place": false
     }
 }

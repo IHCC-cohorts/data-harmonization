@@ -41,10 +41,16 @@ def main():
     cohort_id = None
     ontology_iri = None
     title = None
-    recontact = False
-    data_sharing = False
+
+    active_recruitment = False
+    ehr_data = False
+    includes_50_to_60 = False
+    irb_data_sharing = False
     longitudinal_data = False
+    recontact = False
+
     data_dictionary = ""
+    print(args.cohort_metadata)
     with open(args.cohort_metadata, "r") as f:
         reader = csv.reader(f, delimiter="\t")
         idx = 1
@@ -55,12 +61,21 @@ def main():
                 cohort_id = row[1].lower().strip()
                 ontology_iri = f"https://purl.ihccglobal.org/{cohort_id}.owl"
                 gout.add((URIRef(ontology_iri), RDF.type, OWL.Ontology))
+            elif key == "Active Recruitment":
+                if val.lower() == "true":
+                    active_recruitment = True
+            elif key == "EHR Data":
+                if val.lower() == "true":
+                    ehr_data = True
             elif key == "Recontact in Place":
                 if val.lower() == "true":
                     recontact = True
+            elif key == "Includes 50-60 y/o":
+                if val.lower() == "true":
+                    includes_50_to_60 = True
             elif key == "IRB-Approved Data Sharing":
                 if val.lower() == "true":
-                    data_sharing = True
+                    irb_data_sharing = True
             elif key == "Longitudinal Data":
                 if val.lower() == "true":
                     longitudinal_data = True
@@ -103,9 +118,12 @@ def main():
             "prefix": prefix,
             "data_dictionary": data_dictionary,
             "mapping": "",
-            "recontact_in_place": recontact,
-            "irb_approved_data_sharing": data_sharing,
+            "active_recruitment": active_recruitment,
+            "ehr_data": ehr_data,
+            "includes_50_to_60": includes_50_to_60,
+            "irb_approved_data_sharing": irb_data_sharing,
             "longitudinal_data": longitudinal_data,
+            "recontact_in_place": recontact,
         }
         with open(args.all_metadata, "w") as f:
             f.write(json.dumps(metadata, indent=4, sort_keys=True))
