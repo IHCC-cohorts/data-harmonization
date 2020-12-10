@@ -4,6 +4,12 @@
         "id": "VZ",
         "prefix": "VZ"
     },
+    "Canadian Partnership for Tomorrow's Health (CanPath)": {
+        "data_dictionary": "",
+        "id": "CANPATH",
+        "mapping": "",
+        "prefix": "CANPATH"
+    },
     "Genomics England / 100,000 Genomes Project": {
         "data_dictionary": "https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195",
         "id": "Genomics-England",
