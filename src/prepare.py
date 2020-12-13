@@ -21,7 +21,7 @@ props = {
     "Rights": "http://purl.org/dc/terms/rights",
 }
 
-datatypes = ["Biospecimens", "Environmental Data", "Genomic Data", "Phenotypic Data"]
+datatypes = ["Biospecimens", "Environmental Data", "Genomic Data", "Phenotypic/Clinical Data"]
 
 
 def main():
@@ -51,7 +51,7 @@ def main():
             "biospecimens": False,
             "environmental_data": False,
             "genomic_data": False,
-            "phenotypic_data": False,
+            "phenotypic_clinical_data": False,
         },
         "cohort_name": None,
         "countries": None,
@@ -97,7 +97,7 @@ def main():
                 bool_val = False
                 if val.lower() == "true":
                     bool_val = True
-                dt_key = key.lower().replace(" ", "_")
+                dt_key = key.lower().replace(" ", "_").replace("/", "_")
                 d["available_datatypes"][dt_key] = bool_val
             elif key == "Countries":
                 d["countries"] = val.split(", ")

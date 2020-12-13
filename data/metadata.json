@@ -1,10 +1,10 @@
 {
     "GCS": {
-        "available_datatypes": {
+        "available_data_types": {
             "biospecimens": true,
             "environmental_data": true,
             "genomic_data": false,
-            "phenotypic_data": true
+            "phenotypic_clinical_data": true
         },
         "cohort_name": "Golestan Cohort Study",
         "countries": [
@@ -18,11 +18,11 @@
         "website": "https://dceg2.cancer.gov/gemshare/"
     },
     "GE": {
-        "available_datatypes": {
+        "available_data_types": {
             "biospecimens": true,
             "environmental_data": false,
             "genomic_data": true,
-            "phenotypic_data": true
+            "phenotypic_clinical_data": true
         },
         "cohort_name": "Genomics England / 100,000 Genomes Project",
         "countries": [
@@ -36,11 +36,11 @@
         "website": "https://www.genomicsengland.co.uk/"
     },
     "KOGES": {
-        "available_datatypes": {
+        "available_data_types": {
             "biospecimens": true,
             "environmental_data": true,
             "genomic_data": true,
-            "phenotypic_data": true
+            "phenotypic_clinical_data": true
         },
         "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
         "countries": [
@@ -54,11 +54,11 @@
         "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
     },
     "SAPRIN": {
-        "available_datatypes": {
+        "available_data_types": {
             "biospecimens": true,
             "environmental_data": false,
             "genomic_data": false,
-            "phenotypic_data": true
+            "phenotypic_clinical_data": true
         },
         "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
         "countries": [
@@ -72,11 +72,11 @@
         "website": "http://saprin.mrc.ac.za/"
     },
     "VZ": {
-        "available_datatypes": {
+        "available_data_types": {
             "biospecimens": true,
             "environmental_data": false,
             "genomic_data": true,
-            "phenotypic_data": true
+            "phenotypic_clinical_data": true
         },
         "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
         "countries": [

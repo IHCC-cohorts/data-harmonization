@@ -1,10 +1,10 @@
 [
   {
-    "available_datatypes": {
+    "available_data_types": {
       "biospecimens": true,
       "environmental_data": true,
       "genomic_data": false,
-      "phenotypic_data": true
+      "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
       "demographic_data": [],
@@ -81,11 +81,11 @@
     "website": "https://dceg2.cancer.gov/gemshare/"
   },
   {
-    "available_datatypes": {
+    "available_data_types": {
       "biospecimens": true,
       "environmental_data": false,
       "genomic_data": true,
-      "phenotypic_data": true
+      "phenotypic_clinical_data": true
     },
     "basic_cohort_attributes": {
       "general_variables": [
@@ -155,11 +155,11 @@
     "website": "https://www.genomicsengland.co.uk/"
   },
   {
-    "available_datatypes": {
+    "available_data_types": {
       "biospecimens": true,
       "environmental_data": true,
       "genomic_data": true,
-      "phenotypic_data": true
+      "phenotypic_clinical_data": true
     },
     "biosample": {
       "sample_type": [
@@ -215,11 +215,11 @@
     "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
   },
   {
-    "available_datatypes": {
+    "available_data_types": {
       "biospecimens": true,
       "environmental_data": false,
       "genomic_data": false,
-      "phenotypic_data": true
+      "phenotypic_clinical_data": true
     },
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
     "countries": [
@@ -255,11 +255,11 @@
     "website": "http://saprin.mrc.ac.za/"
   },
   {
-    "available_datatypes": {
+    "available_data_types": {
       "biospecimens": true,
       "environmental_data": false,
       "genomic_data": true,
-      "phenotypic_data": true
+      "phenotypic_clinical_data": true
     },
     "biosample": {
       "sample_type": [
