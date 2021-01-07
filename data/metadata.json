@@ -1,33 +1,110 @@
 {
-    "Africa Health Research Institute (AHRI) Population Cohort": {
-        "data_dictionary": "https://drive.google.com/file/d/1YpwjiYDos5ZkXMQR6wG4Qug7sMmKB5xC/view",
-        "id": "VZ",
-        "prefix": "VZ"
+    "CANPATH": {
+        "available_data_types": {
+          "biospecimens": true,
+          "environmental_data": true,
+          "genomic_data": true,
+          "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Canadian Partnership for Tomorrow's Health",
+        "countries": [
+            "Canada"
+        ],
+        "current_enrollment": 330000,
+        "enrollment_period": "2008:Ongoing",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Philip Awadalla",
+        "target_enrollment": null,
+        "website": "https://canpath.ca/"
     },
-    "Canadian Partnership for Tomorrow's Health (CanPath)": {
-        "data_dictionary": "",
-        "id": "CANPATH",
-        "mapping": "",
-        "prefix": "CANPATH"
+    "GCS": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": true,
+            "genomic_data": false,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Golestan Cohort Study",
+        "countries": [
+            "Iran"
+        ],
+        "current_enrollment": 50000,
+        "enrollment_period": "2004:2008",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
+        "target_enrollment": null,
+        "website": "https://dceg2.cancer.gov/gemshare/"
     },
-    "Genomics England / 100,000 Genomes Project": {
-        "data_dictionary": "https://cnfl.extge.co.uk/pages/viewpage.action?pageId=113189195",
-        "id": "Genomics-England",
-        "prefix": "GE"
+    "GE": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": false,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Genomics England / 100,000 Genomes Project",
+        "countries": [
+            "England"
+        ],
+        "current_enrollment": 100000,
+        "enrollment_period": "2013:2018",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Mark Caulfield",
+        "target_enrollment": 500000,
+        "website": "https://www.genomicsengland.co.uk/"
     },
-    "Golestan Cohort Study": {
-        "data_dictionary": "https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view",
-        "id": "GCS",
-        "prefix": "GCS"
+    "KOGES": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": true,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
+        "countries": [
+            "South Korea"
+        ],
+        "current_enrollment": 235000,
+        "enrollment_period": "2001:2013",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Hyun Young Park",
+        "target_enrollment": null,
+        "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
     },
-    "Korean Genome and Epidemiology Study (KoGES)": {
-        "data_dictionary": "https://drive.google.com/file/d/1Hh_cG9HcZWXs70FEun8iDZZbt0H_J1oq/view",
-        "id": "KOGES",
-        "prefix": "KOGES"
+    "SAPRIN": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": false,
+            "genomic_data": false,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
+        "countries": [
+            "South Africa"
+        ],
+        "current_enrollment": 350000,
+        "enrollment_period": "1993:Ongoing",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Kobus Herbst",
+        "target_enrollment": 700000,
+        "website": "http://saprin.mrc.ac.za/"
     },
-    "SAPRIN (South African Population Research Infrastructure Network)": {
-        "data_dictionary": "https://drive.google.com/file/d/1u1sXEAAU7N_n2-WqfF6lMJozVVQSI0EU",
-        "id": "SAPRIN",
-        "prefix": "SAPRIN"
+    "VZ": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": false,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+        "countries": [
+            "South Africa"
+        ],
+        "current_enrollment": 130000,
+        "enrollment_period": "2000:Ongoing",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Willem Hankom",
+        "target_enrollment": 130000,
+        "website": "https://www.ahri.org"
     }
 }
