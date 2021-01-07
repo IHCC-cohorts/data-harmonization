@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/canpath.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/canpath/releases/2020-12-10/canpath.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/canpath/releases/2021-01-07/canpath.owl"/>
         <dc:description>To help researchers better understand the causes of chronic diseases like cancer, heart disease and diabetes, and to develop new ways to prevent and treat them.</dc:description>
         <terms:license></terms:license>
         <terms:rights></terms:rights>
