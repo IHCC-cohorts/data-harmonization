@@ -1,0 +1,9 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/uklwc.owl> a owl:Ontology ;
+    dc:description "Bioresource created during the course of the United Kingdom Collaborative Trial of Ovarian Cancer Screening (UKCTOCS)" ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+    dcterms:title "UKCTOCS Longitudinal Women's Cohort (UKLWC)" .
+

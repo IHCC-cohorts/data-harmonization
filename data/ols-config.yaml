@@ -1,6 +1,37 @@
 '@context': null
 ontologies:
 - base_uri:
+  - https://purl.ihccglobal.org/VZ_
+  description: The data dictionary containing variables collected by the Africa Health
+    Research Institute's Vukuzazi programme.
+  id: vz
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/vz.owl
+  preferredPrefix: VZ
+  title: Vukuzazi
+- base_uri:
+  - https://purl.ihccglobal.org/SAPRIN_
+  description: The core data elements collected by SAPRIN.
+  id: saprin
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/saprin.owl
+  preferredPrefix: SAPRIN
+  title: South African Population Research Infrastructure Network (SAPRIN)
+- base_uri:
+  - https://purl.ihccglobal.org/KOGES_
+  description: The core variables collected in the Korean Genome and Epidemiology
+    Study.
+  id: koges
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/koges.owl
+  preferredPrefix: KOGES
+  title: Korean Genome and Epidemiology Study (KoGES)
+- base_uri:
+  - https://purl.ihccglobal.org/UKLWC_
+  description: Bioresource created during the course of the United Kingdom Collaborative
+    Trial of Ovarian Cancer Screening (UKCTOCS)
+  id: uklwc
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/uklwc.owl
+  preferredPrefix: UKLWC
+  title: UKCTOCS Longitudinal Women's Cohort (UKLWC)
+- base_uri:
   - https://purl.ihccglobal.org/GCS_
   description: The data dictionary of items collected by the GCS.
   id: gcs
@@ -15,26 +46,3 @@ ontologies:
   ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/ge.owl
   preferredPrefix: GE
   title: Genomics England Main Programme Data
-- base_uri:
-  - https://purl.ihccglobal.org/KOGES_
-  description: The core variables collected in the Korean Genome and Epidemiology
-    Study.
-  id: koges
-  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/koges.owl
-  preferredPrefix: KOGES
-  title: Korean Genome and Epidemiology Study (KoGES)
-- base_uri:
-  - https://purl.ihccglobal.org/SAPRIN_
-  description: The core data elements collected by SAPRIN.
-  id: saprin
-  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/saprin.owl
-  preferredPrefix: SAPRIN
-  title: South African Population Research Infrastructure Network (SAPRIN)
-- base_uri:
-  - https://purl.ihccglobal.org/VZ_
-  description: The data dictionary containing variables collected by the Africa Health
-    Research Institute's Vukuzazi programme.
-  id: vz
-  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/vz.owl
-  preferredPrefix: VZ
-  title: Vukuzazi

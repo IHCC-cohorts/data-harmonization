@@ -47,7 +47,7 @@ def main():
 
     # Cohort metadata dictionary
     d = {
-        "available_datatypes": {
+        "available_data_types": {
             "biospecimens": False,
             "environmental_data": False,
             "genomic_data": False,

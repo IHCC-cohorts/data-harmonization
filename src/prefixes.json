@@ -27,6 +27,7 @@
         "SAPRIN": "https://purl.ihccglobal.org/SAPRIN_",
         "STATO": "http://purl.obolibrary.org/obo/STATO_",
         "UBERON": "http://purl.obolibrary.org/obo/UBERON_",
+        "UKLWC": "https://purl.ihccglobal.org/UKLWC_",
         "VZ": "https://purl.ihccglobal.org/VZ_",
         "obo": "http://purl.obolibrary.org/obo/",
         "oboInOwl": "http://www.geneontology.org/formats/oboInOwl#",
