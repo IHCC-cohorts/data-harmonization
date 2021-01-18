@@ -85,7 +85,7 @@ clean:
 all: $(TREES) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
-all: data/member_cohorts.csv
+all: build/member_cohorts.csv
 all: owl
 all: $(ZOOMA_DATASET)
 all: $(OLS_CONFIG)
