@@ -49,6 +49,7 @@ for f in args.metadata_files:
     query_results.append(df)
 
 df = pd.concat(query_results)
+df.sort_values(by=['id'], inplace=True)
 
 data_dictionaries = []
 
