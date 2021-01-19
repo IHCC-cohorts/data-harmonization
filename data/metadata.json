@@ -71,6 +71,26 @@
         "target_enrollment": 700000,
         "website": "http://saprin.mrc.ac.za/"
     },
+    "UKLWC": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": false,
+            "genomic_data": false,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "UKCTOCS Longitudinal Women's Cohort (UKLWC)",
+        "countries": [
+            "England",
+            "Wales",
+            "Northern Ireland"
+        ],
+        "current_enrollment": 202638,
+        "enrollment_period": "2001:2005",
+        "irb_approved_data_sharing": false,
+        "pi_lead": "Prof. Usha Menon",
+        "target_enrollment": 200000,
+        "website": "http://uklwc.mrcctu.ucl.ac.uk/"
+    },
     "VZ": {
         "available_data_types": {
             "biospecimens": true,
