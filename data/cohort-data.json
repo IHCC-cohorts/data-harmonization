@@ -3,6 +3,101 @@
     "available_data_types": {
       "biospecimens": true,
       "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": []
+    },
+    "cohort_name": "Center for Applied Genomics, Children's Hospital of Philadelphia",
+    "countries": [
+      "USA"
+    ],
+    "current_enrollment": 130000,
+    "enrollment_period": "2006:Ongoing",
+    "irb_approved_data_sharing": true,
+    "laboratory_measures": {
+      "genomics": [
+        "Dna/genotyping",
+        "Wes",
+        "Wgs"
+      ]
+    },
+    "pi_lead": "Hakon Hakonarson",
+    "questionnaire_survey_data": {
+      "cognitive_and_psychological_measurements": {
+        "cognitive_functioning": [
+          "Penn cnb"
+        ]
+      },
+      "diseases": [
+        "Blood-related disorders",
+        "Cancer",
+        "Cardiovascular diseases",
+        "Congenital and genetic disorders",
+        "Digestive system diseases",
+        "Diseases of the ear, nose, and/or throat",
+        "Endocrine system diseases",
+        "Immune system diseases",
+        "Infectious diseases",
+        "Injuries",
+        "Mental and behaviour disorders",
+        "Musculoskeletal system diseases",
+        "Nervous system disorders",
+        "Poisoning",
+        "Respiratory system diseases",
+        "Urinary system diseases",
+        "Visual system diseases"
+      ],
+      "healthcare_information": [
+        "Hospitalizations"
+      ],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Recreational drug history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [],
+      "non_pharmacological_interventions": [
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Life stage/time point",
+        "Signs and symptoms",
+        "Social environment"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Perception of health",
+        "Quality of life"
+      ],
+      "physical_environment": [],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Education",
+        "Ethnicity/race",
+        "Gender"
+      ]
+    },
+    "survey_administration": [
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": 2000000,
+    "website": "caglab.org"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
       "genomic_data": false,
       "phenotypic_clinical_data": true
     },

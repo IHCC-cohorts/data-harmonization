@@ -2,6 +2,7 @@
     "@context": {
         "BFO": "http://purl.obolibrary.org/obo/BFO_",
         "CHEBI": "http://purl.obolibrary.org/obo/CHEBI_",
+        "CHOP": "https://purl.ihccglobal.org/CHOP_",
         "CL": "http://purl.obolibrary.org/obo/CL_",
         "CMO": "http://purl.obolibrary.org/obo/CMO_",
         "COB": "http://purl.obolibrary.org/obo/COB_",
