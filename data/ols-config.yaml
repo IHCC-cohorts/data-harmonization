@@ -1,6 +1,14 @@
 '@context': null
 ontologies:
 - base_uri:
+  - https://purl.ihccglobal.org/ELSABRASIL_
+  description: A cohort of Brazilian public servants from 6 large cities that aim
+    to investigate chronic disorders and their determinants.
+  id: elsabrasil
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/elsabrasil.owl
+  preferredPrefix: ELSABRASIL
+  title: ELSA-Brasil
+- base_uri:
   - https://purl.ihccglobal.org/GCS_
   description: The data dictionary of items collected by the GCS.
   id: gcs

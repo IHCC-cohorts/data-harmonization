@@ -1,0 +1,9 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/elsabrasil.owl> a owl:Ontology ;
+    dc:description "A cohort of Brazilian public servants from 6 large cities that aim to investigate chronic disorders and their determinants." ;
+    dcterms:license "N/A" ;
+    dcterms:title "ELSA-Brasil" .
+

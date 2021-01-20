@@ -3,6 +3,114 @@
     "available_data_types": {
       "biospecimens": true,
       "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "Study design"
+      ],
+      "population_data": [
+        "Location"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood",
+        "Other biosample type",
+        "Urine"
+      ]
+    },
+    "cohort_name": "ELSA-Brasil",
+    "countries": [
+      "Brazil"
+    ],
+    "current_enrollment": 15105,
+    "enrollment_period": "2008:2010",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Paulo Lotufo; Isabela Besenor; Sandhi Barreto; Bruce Duncan; Maria Ines Schimdt; Jose Mill; Rosane Griep; Conceicao Almeida; Maria Del Carmen Molina; and others.",
+    "questionnaire_survey_data": {
+      "cognitive_and_psychological_measurements": {
+        "cognitive_functioning": [],
+        "general_variables": [
+          "Psychological distress and emotions"
+        ]
+      },
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Digestive system diseases",
+        "Endocrine system diseases",
+        "Immune system diseases",
+        "Infectious diseases",
+        "Injuries",
+        "Mental and behaviour disorders",
+        "Musculoskeletal system diseases",
+        "Respiratory system diseases",
+        "Urinary system diseases",
+        "Visual system diseases"
+      ],
+      "healthcare_information": [
+        "Hospitalizations"
+      ],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [
+        "Administration",
+        "Associated disease(s)"
+      ],
+      "non_pharmacological_interventions": [
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Family history of disease",
+        "Reproduction",
+        "Signs and symptoms",
+        "Social environment"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Perception of health",
+        "Quality of life"
+      ],
+      "physical_environment": [],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ],
+        "circulation_and_respiration": [
+          "Blood pressure",
+          "Heart rate (hr)"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Biological sex",
+        "Education",
+        "Ethnicity/race",
+        "Family and household structure",
+        "Income and possessions",
+        "Marital status",
+        "Occupation",
+        "Religion"
+      ]
+    },
+    "survey_administration": [
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": 15105,
+    "website": "www.elsa.org.br"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
       "genomic_data": false,
       "phenotypic_clinical_data": true
     },
