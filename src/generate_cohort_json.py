@@ -11,18 +11,14 @@ bottom_level = []
 def main():
     parser = ArgumentParser(description="Create JSON for IHCC cohort browser")
     parser.add_argument(
-        "cohorts_csv", type=FileType("r", encoding='ISO-8859-1'), help="IHCC member cohort details"
-    )
-    parser.add_argument(
         "cohorts_metadata",
         type=FileType("r"),
-        help="Cohort metadata (name -> ID, prefix)",
+        help="All cohort metadata (ID -> details)",
     )
     parser.add_argument("gecko", type=FileType("r"), help="JSON structure of GECKO")
     parser.add_argument("output", type=FileType("w"), help="output JSON")
 
     args = parser.parse_args()
-    cohorts_file = args.cohorts_csv
     metadata_file = args.cohorts_metadata
     output_file = args.output
 
@@ -30,72 +26,12 @@ def main():
     gecko = json.loads(args.gecko.read())[1]
     gecko_hierarchy = build_hierarchy(gecko)
 
-    cohort_data = {}
-    reader = csv.DictReader(cohorts_file)
-    for row in reader:
-        # Parse countries
-        countries = [x.strip() for x in row["Regions"].split(",")]
-
-        # Get available datatypes
-        genomic = row["Genomic Data "]
-        environment = row["Env. Data"]
-        biospecimen = row["Bio specimens"]
-        clinical = row["Phenotypic Data"]
-        datatypes = {
-            "genomic_data": False,
-            "environmental_data": False,
-            "biospecimens": False,
-            "phenotypic_clinical_data": False,
-        }
-        if genomic == "Yes":
-            datatypes["genomic_data"] = True
-        if environment == "Yes":
-            datatypes["environmental_data"] = True
-        if biospecimen == "Yes":
-            datatypes["biospecimens"] = True
-        if clinical == "Yes":
-            datatypes["phenotypic_clinical_data"] = True
-
-        cur_enroll = row["Enrolled"].replace(",", "").strip()
-        target_enroll = row["Target Enrollment"].replace(",", "").strip()
-
-        if cur_enroll == "":
-            cur_enroll = None
-        else:
-            cur_enroll = int(float(cur_enroll))
-
-        if target_enroll == "":
-            target_enroll = None
-        else:
-            target_enroll = int(float(target_enroll))
-
-        enroll_start = row["Enroll Start"]
-        enroll_end = row["Enroll End"]
-        if not enroll_start and not enroll_end:
-            enroll_period = None
-        elif enroll_end and not enroll_start:
-            enroll_period = enroll_end
-        else:
-            enroll_period = f"{enroll_start}:{enroll_end}"
-
-        cohort_data[row["Cohort Name"]] = {
-            "cohort_name": row["Cohort Name"],
-            "countries": countries,
-            "pi_lead": row["PI/Lead"],
-            "website": row["Study website"],
-            "current_enrollment": cur_enroll,
-            "target_enrollment": target_enroll,
-            "enrollment_period": enroll_period,
-            "available_data_types": datatypes,
-        }
-
     all_data = []
-    for cohort_name, cohort_metadata in metadata.items():
-        cohort_id = cohort_metadata["prefix"].lower()
-        file_name = f"templates/{cohort_id}.tsv"
+    for cohort_id, cohort_metadata in metadata.items():
+        file_name = f"templates/{cohort_id.lower()}.tsv"
         if not os.path.exists(file_name):
             logging.critical(f"{cohort_name} template {file_name} does not exist!")
-            continue
+            sys.exit(1)
         gecko_cats = []
         with open(file_name, "r") as f:
             reader = csv.DictReader(f, delimiter="\t")
@@ -105,29 +41,9 @@ def main():
                     continue
                 gecko_cats.extend(gecko_cat.split("|"))
         gecko_cats = list(set(gecko_cats))
-        data = get_categories(cohort_name, gecko_cats, gecko_hierarchy)
-        if cohort_name in cohort_data:
-            this_cohort = cohort_data[cohort_name]
-            this_cohort.update(data)
-        else:
-            this_cohort = {
-                "cohort_name": cohort_name,
-                "countries": [],
-                "pi_lead": "",
-                "website": "",
-                "current_enrollment": "",
-                "target_enrollment": "",
-                "enrollment_period": "",
-                "available_data_types": [],
-            }
-
-        # Add other metadata elements
-        for key in ["active_recruitment", "includes_50_to_60", "irb_approved_data_sharing", "recontact_in_place"]:
-            this_cohort.update({key: cohort_metadata.get(key, False)})
-        for key in ["ehr_data", "longitudinal_data"]:
-            this_cohort["available_data_types"][key] = cohort_metadata.get(key, False)
-
-        all_data.append(this_cohort)
+        data = get_categories(gecko_cats, gecko_hierarchy)
+        cohort_metadata.update(data)
+        all_data.append(cohort_metadata)
 
     json_obj = json.dumps(all_data, indent=2, sort_keys=True)
     output_file.write(json_obj)
@@ -210,9 +126,8 @@ def clean_string(string):
     )
 
 
-def get_categories(cohort_name, categories, gecko):
+def get_categories(categories, gecko):
     """Get the CINECA categories used in a cohort as structured dictionary.
-
     :param categories:
     :param gecko:
     :return:
@@ -221,11 +136,11 @@ def get_categories(cohort_name, categories, gecko):
     for leaf in categories:
         result = get_path(gecko, leaf)
         if result is None:
-            logging.error(f'unable to find "{leaf}" for {cohort_name}')
+            logging.error(f'unable to find "{leaf}"')
             continue
         path = result[0]
         if path is None:
-            logging.error(f'unable to find "{leaf}" for {cohort_name}')
+            logging.error(f'unable to find "{leaf}"')
             continue
         has_children = result[1]
         path.reverse()

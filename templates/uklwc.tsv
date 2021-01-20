@@ -1,0 +1,198 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+UKLWC:0000001	Age at recruitment	BASEQ	Years	age/birthdate	VC_AgeRandomisation		
+UKLWC:0000002	Ethnicity	BASEQ		ethnicity/race	VC_Ethnicity2		
+UKLWC:0000003	Height	BASEQ	cm	height	V_HeightCm		
+UKLWC:0000004	Weight	BASEQ	Kg	weight	V_WeightKg		
+UKLWC:0000005	Age at last period	BASEQ	Years	reproduction|age/birthdate	VC_AgeLastPeriod		
+UKLWC:0000006	Age at first period	BASEQ	Years	reproduction|age/birthdate	V_FirstPeriod		
+UKLWC:0000007	Age at HRT start	BASEQ	Years	medication|age/birthdate	VC_AgeStartHRT		
+UKLWC:0000008	HRT at recruitment	BASEQ		medication	V_HRT		
+UKLWC:0000009	Hysterectomy prior to recruitment	BASEQ		surgical interventions	V_Hysterectomy		
+UKLWC:0000010	Ovaries removed prior to recruitment	BASEQ		surgical interventions	V_OvariesRemoved		
+UKLWC:0000011	History of cancer	BASEQ		cancer	V_CancerHistory		
+UKLWC:0000012	Age at cancer diagnosis	BASEQ	Years	cancer|age/birthdate	VC_AgeCancerDiagnosis		
+UKLWC:0000013	Cancer treatment in the year prior to recruitment	BASEQ		cancer	V_CancerTreatmentLastYr		"Should we add ""medication"" in case chemotherapy was involved in the cancer treatment?"
+UKLWC:0000014	Oral Contraceptive Pill (OCP) use ever	BASEQ		medication	V_Pill		
+UKLWC:0000015	Years of OCP use	BASEQ	Years	medication	V_PillDuration		
+UKLWC:0000016	Number of pregnancies that ended before they reached 6 months	BASEQ	Number	reproduction	V_PregnanciesL6Mth		
+UKLWC:0000017	Number of pregnancies that laster beyond 6 months	BASEQ	Number	reproduction	V_PregnanciesG6Mth		
+UKLWC:0000018	Sterilisation operation	BASEQ		surgical interventions	V_Sterilisation		
+UKLWC:0000019	Treatment for Infertility	BASEQ		medication|surgical interventions	V_Infertility		have added surgical interventions
+UKLWC:0000020	Country of Birth	BASEQ		birthplace	VC_CountryOfBirth		birthplace?
+UKLWC:0000021	Ovarian cancer pre-recruitment	BASEQ		cancer	V_CancerOvarian		
+UKLWC:0000022	Breast cancer pre-recruitment	BASEQ		cancer	V_CancerBreast		
+UKLWC:0000023	Bowel cancer pre-recruitment	BASEQ		cancer	V_CancerBowel		
+UKLWC:0000024	Lung cancer pre-recruitment	BASEQ		cancer	V_CancerLung		
+UKLWC:0000025	Other cancer pre-recruitment	BASEQ		cancer	V_CancerOther		
+UKLWC:0000026	Mother with Ovarian cancer	BASEQ		family history of disease	V_MotherOvarian		
+UKLWC:0000027	Mother with Breast cancer	BASEQ		family history of disease	V_MotherBreast		
+UKLWC:0000028	Daughters with Ovarian cancer	BASEQ	Number	family history of disease	V_DaughterOvarian		
+UKLWC:0000029	Daughters with Breast cancer	BASEQ	Number	family history of disease	V_DaughterBreast		
+UKLWC:0000030	Grand Mothers with Ovarian cancer	BASEQ	Number	family history of disease	V_GrandMotherOvarian		
+UKLWC:0000031	Grand Mothers with Breast cancer	BASEQ	Number	family history of disease	V_GrandMotherBreast		
+UKLWC:0000032	Grand Daughters with Ovarian cancer	BASEQ	Number	family history of disease	V_GrandDaughterOvarian		
+UKLWC:0000033	Grand Daughters with Breast cancer	BASEQ	Number	family history of disease	V_GrandDaughterBreast		
+UKLWC:0000034	Sisters with Ovarian cancer	BASEQ	Number	family history of disease	V_SisterOvarian		
+UKLWC:0000035	Sisters with Breast cancer	BASEQ	Number	family history of disease	V_SisterBreast		
+UKLWC:0000036	Aunts with Ovarian cancer	BASEQ	Number	family history of disease	V_AuntOvarian		
+UKLWC:0000037	Aunts with Breast cancer	BASEQ	Number	family history of disease	V_AuntBreast		
+UKLWC:0000038	Relatives with Ovarian cancer	BASEQ	Number	family history of disease	V_RelativesOvarian		
+UKLWC:0000039	Relatives with Breast cancer	BASEQ	Number	family history of disease	V_RelativesBreast		
+UKLWC:0000040	Age at sample blood draw	SERUM		blood|age/birthdate	SRC_AgeSampleTaken		Multiple samples per participant
+UKLWC:0000041	Hours from blood draw to centrifugation	SERUM		blood|date and time-related information	SRC_TransportTime		Multiple samples per participant
+UKLWC:0000042	Age at completion (FUQ1)	FUQ1		age/birthdate	QUC_AgeAtCompletion		
+UKLWC:0000043	O level or equivalent	FUQ1		education	QU_Edu_1		
+UKLWC:0000044	A level or equivalent	FUQ1		education	QU_Edu_2		
+UKLWC:0000045	Clerical or commercial qualification	FUQ1		education	QU_Edu_3		
+UKLWC:0000046	Nursing or teaching	FUQ1		education	QU_Edu_4		
+UKLWC:0000047	College/university degree or equivalent	FUQ1		education	QU_Edu_5		
+UKLWC:0000048	None of these	FUQ1		education	QU_Edu_6		
+UKLWC:0000049	Quantity of alcohol per week	FUQ1		alcohol use history	QUC_Alcohol		
+UKLWC:0000050	Smoker ever	FUQ1		tobacco use history	QU_Smoker		
+UKLWC:0000051	No of years smoking	FUQ1		tobacco use history	QU_SmokingYears		
+UKLWC:0000052	Average daily cigarettes smoked	FUQ1		tobacco use history	QU_SmokingNo		
+UKLWC:0000053	Skirt size in early twenties	FUQ1		anthropometry	QU_SkirtSizeBefore		
+UKLWC:0000054	Skirt size now	FUQ1		anthropometry	QU_SkirtSizeAftere		
+UKLWC:0000055	Currently on HRT	FUQ1		medication	QU_HRT		
+UKLWC:0000056	Outlook - hopeful	FUQ1		quality of life	QUC_Outlook1		
+UKLWC:0000057	Outlook - goals	FUQ1		quality of life	QUC_Outlook2		
+UKLWC:0000058	High Blood Pressure	FUQ1		signs and symptoms	QU_CondBP		
+UKLWC:0000059	Heart disease	FUQ1		cardiovascular diseases	QU_CondHeart		
+UKLWC:0000060	High blood cholesterol	FUQ1		cardiovascular diseases|signs and symptoms	QU_CondCholesterol		Have added signs and symptoms
+UKLWC:0000061	Stroke	FUQ1		cardiovascular diseases	QU_CondStroke		
+UKLWC:0000062	Diabetes	FUQ1		endocrine system diseases	QU_CondDiabetes		
+UKLWC:0000063	Rheumatoid arthritus	FUQ1		musculoskeletal system diseases	QU_CondRA		
+UKLWC:0000064	Osteoarthritus	FUQ1		musculoskeletal system diseases	QU_CondOA		
+UKLWC:0000065	Osteoporosis	FUQ1		musculoskeletal system diseases	QU_CondOP		
+UKLWC:0000066	No treatment for HBP/CVD/HBC/Stroke/Diabetes/RA/OP/OA	FUQ1		non-pharmacological interventions|medication	QU_CondNegative		is treatment medication or non-pharmacological? Could be either (Andy/Sophia)
+UKLWC:0000067	Age at Laparoscopy since recruitment	FUQ1		surgical interventions|age/birthdate	QUC_AgeAtLapro		
+UKLWC:0000068	Age at Hysterectomy since recruitment	FUQ1		surgical interventions|age/birthdate	QUC_AgeAtHyst		
+UKLWC:0000069	Age at Oophorectomy since recruitment	FUQ1		surgical interventions|age/birthdate	QUC_AgeAtOoph		
+UKLWC:0000070	Type of ovary removal since recruitment	FUQ1		surgical interventions	QUC_OvariesRemoved		
+UKLWC:0000071	Age at Hysteroscopy since recruitment	FUQ1		surgical interventions|age/birthdate	QUC_AgeAtDC		
+UKLWC:0000072	Age at Breast investigation since recruitment	FUQ1		surgical interventions|age/birthdate	QUC_AgeAtBreast		
+UKLWC:0000073	No cancer diagnosis since recruitment (FUQ1)	FUQ1			QU_CancerNegative		Have removed Cancer
+UKLWC:0000074	Cervical cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_CerCa		
+UKLWC:0000075	Endometrial cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_EndoCa		
+UKLWC:0000076	Bowel cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_BowelCa		
+UKLWC:0000077	Pancreatic cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_PancrCa		
+UKLWC:0000078	Kidney cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_KidneyCa		
+UKLWC:0000079	Gastric cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_GastricCa		
+UKLWC:0000080	Lung cancer diagnosis since recruitment	FUQ1		cancer	QU_LungCa		
+UKLWC:0000081	Vulval cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_VulvalCa		
+UKLWC:0000082	BCC diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_BCCCa		
+UKLWC:0000083	Other cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_OtherCa		
+UKLWC:0000084	Breast cancer diagnosis since recruitment (FUQ1)	FUQ1		cancer	QU_BrCa		
+UKLWC:0000085	Age at Cancer 1 diagnosis since recruitment	FUQ1		cancer|age/birthdate	QUC_AgeAtCancer1		added |age/birthdate
+UKLWC:0000086	Cancer 1 type since recruitment	FUQ1		cancer	QUC_Cancer1		
+UKLWC:0000087	Age at cancer 2 diagnosis since recruitment	FUQ1		cancer|age/birthdate	QUC_AgeAtCancer2		added |age/birthdate
+UKLWC:0000088	Cancer 2 type since recruitment	FUQ1		cancer	QUC_Cancer2		
+UKLWC:0000089	Management of Menopausal Symptoms	FUQ1		non-pharmacological interventions|medication	QUC_MenoRelief		medication or non-pharmacological? Eiither (Andy / Sophia)
+UKLWC:0000090	Herbal remedies	FUQ1		non-pharmacological interventions	QU_MenoHerba		
+UKLWC:0000091	Homeopathic remedies	FUQ1		non-pharmacological interventions	QU_MenoHomeo		
+UKLWC:0000092	Phytoestrogens or soy products	FUQ1		dietary history|non-pharmacological interventions	QU_MenoPhyto		Added non-pharmacological interventions
+UKLWC:0000093	Aromatherapy, reflexology or acupuncture	FUQ1		non-pharmacological interventions	QU_MenoAroma		
+UKLWC:0000094	Vitamins	FUQ1		dietary history	QU_MenoVitam		
+UKLWC:0000095	Life style changes	FUQ1		lifestyle and behaviours	QU_MenoLifeS		
+UKLWC:0000096	Other Menopausal Relief	FUQ1		non-pharmacological interventions|medication	QU_MenoOther		medication or non-pharmacological? Eiither (Andy / Sophia)
+UKLWC:0000097	Age at completion (FUQ2)	FUQ2		age/birthdate	Q2C_AgeAtCompletion		
+UKLWC:0000098	Marital status currently	FUQ2		marital status	Q2_Marital_Status_Current		
+UKLWC:0000099	Marital status before recruitment (2000)	FUQ2		marital status	Q2_Marital_Status_Before		
+UKLWC:0000100	Primary occupation	FUQ2		occupation	Q2_Primary_Occupation		
+UKLWC:0000101	Height measurement	FUQ2		height	Q2C_Measurements_Height		
+UKLWC:0000102	Weight measurement	FUQ2		weight	Q2C_Measurements_Weight		
+UKLWC:0000103	Waist measurement	FUQ2		anthropometry	Q2_Measurements_Waist		
+UKLWC:0000104	Hips measurement	FUQ2		anthropometry	Q2_Measurements_Hips		
+UKLWC:0000105	Operation to look at/remove ovaries/fallopian tubes since recruitment	FUQ2		surgical interventions	Q2_Operation_to_look_at_tubes		
+UKLWC:0000106	Operation to look at womb/endometrial biopsy/D&C since recruitment	FUQ2		surgical interventions	Q2_Operation_to_look_in_to_biopsy		
+UKLWC:0000107	Operation hysterectomy since recruitment	FUQ2		surgical interventions	Q2_Remove_Womb		
+UKLWC:0000108	Operation breast lumpectomy/wide local excision/mastectomy since recruitment	FUQ2		surgical interventions	Q2_Remove_Breast		
+UKLWC:0000109	Operation other gynaecological surgery since recruitment	FUQ2		surgical interventions	Q2_Any_other_gynae_surgery		
+UKLWC:0000110	Operation 1 type	FUQ2		surgical interventions	Q2_GynaeSurg_1_Type_Of_Operation		
+UKLWC:0000111	Operation 1 age at surgery	FUQ2		surgical interventions|age/birthdate	Q2C_GynaeSurg_1_age_at_surgery		
+UKLWC:0000112	Operation 2 type	FUQ2		surgical interventions	Q2_GynaeSurg_2_Type_Of_Operation		
+UKLWC:0000113	Operation 2 age at surgery	FUQ2		surgical interventions|age/birthdate	Q2C_GynaeSurg_2_age_at_surgery		
+UKLWC:0000114	No cancer diagnosis since recruitment (FUQ2)	FUQ2			Q2_Not_diagnosed		Removed cancer
+UKLWC:0000115	Ovarian cancer diagnosis since recruitment	FUQ2		cancer	Q2_Ovarian_Cancer		
+UKLWC:0000116	Bowel cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Bowel		
+UKLWC:0000117	Lymphoma  diagnosis since recruitment	FUQ2		cancer	Q2_Lymphoma		
+UKLWC:0000118	Breast cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Breast		
+UKLWC:0000119	Gastric cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Gastric		
+UKLWC:0000120	Leukaemia  diagnosis since recruitment	FUQ2		cancer	Q2_Leukaemia		
+UKLWC:0000121	Cervical cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Cervical		
+UKLWC:0000122	Pancreatic cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Pancreatic		
+UKLWC:0000123	BCC diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_BCC		
+UKLWC:0000124	Endometrial cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Womb_Cancer		
+UKLWC:0000125	Kidney cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Kidney_Cancer		
+UKLWC:0000126	Melanoma diagnosis since recruitment	FUQ2		cancer	Q2_Melanoma		
+UKLWC:0000127	Vulval cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Vulval		
+UKLWC:0000128	Bladder cancer diagnosis since recruitment	FUQ2		cancer	Q2_Bladder		
+UKLWC:0000129	Other cancer diagnosis since recruitment (FUQ2)	FUQ2		cancer	Q2_Other		
+UKLWC:0000130	Type of other cancer diagniosed since recruitment	FUQ2		cancer	Q2_Please_Specify		
+UKLWC:0000131	Cancer 1 type	FUQ2		cancer	Q2_OtherCa_1_Type_Of_Cancer		
+UKLWC:0000132	Cancer 1 age at diagnosis	FUQ2		cancer|age/birthdate	Q2C_Cancer1_age_at_diagnosis		
+UKLWC:0000133	Cancer 2 type	FUQ2		cancer	Q2_OtherCa_2_Type_Of_Cancer		
+UKLWC:0000134	Cancer 2 age at diagnosis	FUQ2		cancer|age/birthdate	Q2C_Cancer2_age_at_diagnosis		
+UKLWC:0000135	Do not have/being treated for any listed conditions	FUQ2			Q2_No_conditions		Have removed diseases
+UKLWC:0000136	Currently have/being treated for High Blood Pressure	FUQ2		signs and symptoms	Q2_High_Blood_Preasure		
+UKLWC:0000137	Currently have/being treated for Diabetes	FUQ2		endocrine system diseases	Q2_Diabetes		
+UKLWC:0000138	Currently have/being treated for Kidney Disease	FUQ2		urinary system diseases	Q2_Kindney_Disease		
+UKLWC:0000139	Currently have/being treated for Heart Disease	FUQ2		cardiovascular diseases	Q2_Heart_Disease		
+UKLWC:0000140	Currently have/being treated for Arthritis	FUQ2		musculoskeletal system diseases	Q2_Arthritis		
+UKLWC:0000141	Currently have/being treated for Bowel Diesease	FUQ2		digestive system diseases	Q2_Bowel_Disease		
+UKLWC:0000142	Currently have/being treated for Osteoarthritus	FUQ2		musculoskeletal system diseases	Q2_Osteoarthritus		
+UKLWC:0000143	Currently have/being treated for Liver Disease	FUQ2		digestive system diseases|endocrine system diseases	Q2_Liver_Disease		Have added endocrine system diseases
+UKLWC:0000144	Currently have/being treated for High Cholesterol	FUQ2		cardiovascular diseases|signs and symptoms	Q2_High_Cholesterol		Have added signs and symptoms
+UKLWC:0000145	Currently have/being treated for Osteoporosis	FUQ2		musculoskeletal system diseases	Q2_Osteoporosis		
+UKLWC:0000146	Currently have/being treated for COPD	FUQ2		respiratory system diseases	Q2_COPD		
+UKLWC:0000147	Currently have/being treated for Stroke	FUQ2		cardiovascular diseases	Q2_Stroke		
+UKLWC:0000148	Currently have/being treated for thyroid Disease	FUQ2		endocrine system diseases	Q2_Thyroid_Disease		
+UKLWC:0000149	Condition 1 type	FUQ2		diseases	Q2_OtherCond_1_Condition		
+UKLWC:0000150	Condition 1 age at diagnosis	FUQ2		diseases|age/birthdate	Q2C_Cond_1_age_at_diagnosis		
+UKLWC:0000151	Condition 2 type	FUQ2		diseases	Q2_OtherCond_2_Condition		
+UKLWC:0000152	Condition 2 age at diagnosis	FUQ2		diseases|age/birthdate	Q2C_Cond_2_age_at_diagnosis		
+UKLWC:0000153	Medication Tamoxifen	FUQ2		medication	Q2_Tamoxifen		
+UKLWC:0000154	Medication Tamoxifen age at start	FUQ2		medication|age/birthdate	Q2C_Tamoxifen_age_at_start		Have added |age/birthdate
+UKLWC:0000155	Medication Tamoxifen age when stopped	FUQ2		medication|age/birthdate	Q2C_Tamoxifen_age_at_stop		Have added |age/birthdate
+UKLWC:0000156	Medication Statins	FUQ2		medication	Q2_Statins		
+UKLWC:0000157	Medication Statins age at start	FUQ2		medication|age/birthdate	Q2C_Statins_age_at_start		Have added |age/birthdate
+UKLWC:0000158	Medication Statins age when stopped	FUQ2		medication|age/birthdate	Q2C_Statins_age_at_stop		Have added |age/birthdate
+UKLWC:0000159	Medication Asprin	FUQ2		medication	Q2_Asprin		
+UKLWC:0000160	Medication Asprin age at start	FUQ2		medication|age/birthdate	Q2C_Asprin_age_at_start		Have added |age/birthdate
+UKLWC:0000161	Medication Asprin age when stopped	FUQ2		medication|age/birthdate	Q2C_Asprin_age_at_stop		Have added |age/birthdate
+UKLWC:0000162	Ovarian cancer Mother	FUQ2		family history of disease	Q2_OvCr_Mother		
+UKLWC:0000163	Ovarian cancer Daughters	FUQ2		family history of disease	Q2_OvCr_Daughter		
+UKLWC:0000164	Ovarian cancer Paternal Aunts	FUQ2		family history of disease	Q2_OvCr_Paternal_Aunt		
+UKLWC:0000165	Ovarian cancer Paternal Grandmother	FUQ2		family history of disease	Q2_OvCr_Paternal_Grandmother		
+UKLWC:0000166	Ovarian cancer Sisters	FUQ2		family history of disease	Q2_OvCr_Sister		
+UKLWC:0000167	Ovarian cancer Granddaughters	FUQ2		family history of disease	Q2_OvCr_Granddaughter		
+UKLWC:0000168	Ovarian cancer Maternal Aunts	FUQ2		family history of disease	Q2_OvCr_Maternal_Aunt		
+UKLWC:0000169	Ovarian cancer Maternal Grandmother	FUQ2		family history of disease	Q2_OvCr_Maternal_Grandmother		
+UKLWC:0000170	Breast cancer Mother	FUQ2		family history of disease	Q2_BrCr_Mother		
+UKLWC:0000171	Breast cancer Daughters	FUQ2		family history of disease	Q2_BrCr_Daughter		
+UKLWC:0000172	Breast cancer Paternal Aunts	FUQ2		family history of disease	Q2_BrCr_Paternal_Aunt		
+UKLWC:0000173	Breast cancer Paternal Grandmother	FUQ2		family history of disease	Q2_BrCr_Paternal_Grandmother		
+UKLWC:0000174	Breast cancer Sisters	FUQ2		family history of disease	Q2_BrCr_Sister		
+UKLWC:0000175	Breast cancer Granddaughters	FUQ2		family history of disease	Q2_BrCr_Granddaughter		
+UKLWC:0000176	Breast cancer Maternal Aunts	FUQ2		family history of disease	Q2_BrCr_Maternal_Aunt		
+UKLWC:0000177	Breast cancer Maternal Grandmother	FUQ2		family history of disease	Q2_BrCr_Maternal_Grandmother		
+UKLWC:0000178	Endometrial cancer Mother	FUQ2		family history of disease	Q2_EndoCr_Mother		
+UKLWC:0000179	Endometrial cancer Daughters	FUQ2		family history of disease	Q2_EndoCr_Daughter		
+UKLWC:0000180	Endometrial cancer Paternal Aunts	FUQ2		family history of disease	Q2_EndoCr_Paternal_Aunt		
+UKLWC:0000181	Endometrial cancer Paternal Grandmother	FUQ2		family history of disease	Q2_EndoCr_Paternal_Grandmother		
+UKLWC:0000182	Endometrial cancer Sisters	FUQ2		family history of disease	Q2_EndoCr_Sister		
+UKLWC:0000183	Endometrial cancer Granddaughters	FUQ2		family history of disease	Q2_EndoCr_Granddaughter		
+UKLWC:0000184	Endometrial cancer Maternal Aunts	FUQ2		family history of disease	Q2_EndoCr_Maternal_Aunt		
+UKLWC:0000185	Endometrial cancer Maternal Grandmother	FUQ2		family history of disease	Q2_EndoCr_Maternal_Grandmother		
+UKLWC:0000186	death status	DEATH REGISTRATION		life stage/time point			We don't think that survey administration is correct. This is vital status or death certificate (Becky: updated to life stage/time point)
+UKLWC:0000187	age at death	DEATH REGISTRATION		age/birthdate			
+UKLWC:0000188	primary underlying ICD10 cause of death	DEATH REGISTRATION		cause of death			
+UKLWC:0000189	other underlying ICD10 causes of death	DEATH REGISTRATION		cause of death			Multiple records per participant
+UKLWC:0000190	ICD10 cancer code	CANCER REGISTRATION		cancer			Multiple records per participant
+UKLWC:0000191	age at cancer diagnosis	CANCER REGISTRATION		cancer|age/birthdate			Multiple records per participant
+UKLWC:0000192	BASEQ						These are table/survey names NOT variables
+UKLWC:0000193	SERUM						These are table/survey names NOT variables
+UKLWC:0000194	FUQ1						These are table/survey names NOT variables
+UKLWC:0000195	FUQ2						These are table/survey names NOT variables
+UKLWC:0000196	DEATH REGISTRATION						These are table/survey names NOT variables
+UKLWC:0000197	CANCER REGISTRATION						These are table/survey names NOT variables

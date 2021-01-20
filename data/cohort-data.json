@@ -4,29 +4,33 @@
     "available_data_types": {
       "biospecimens": true,
       "ehr_data": false,
-      "environmental_data": false,
-      "genomic_data": true,
+      "environmental_data": true,
+      "genomic_data": false,
       "longitudinal_data": false,
       "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [],
+      "population_data": [
+        "Location"
+      ]
     },
     "biosample": {
       "sample_type": [
         "Blood",
-        "Other biosample type",
-        "Saliva",
-        "Urine"
+        "Other biosample type"
       ]
     },
-    "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+    "cohort_name": "Golestan Cohort Study",
     "countries": [
-      "South Africa"
+      "Iran"
     ],
-    "current_enrollment": 130000,
-    "enrollment_period": "2000:Ongoing",
+    "current_enrollment": 50000,
+    "enrollment_period": "2004:2008",
     "includes_50_to_60": false,
-    "irb_approved_data_sharing": false,
+    "irb_approved_data_sharing": true,
     "laboratory_measures": [],
-    "pi_lead": "Willem Hankom",
+    "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
         "Cancer",
@@ -34,17 +38,24 @@
         "Endocrine system diseases",
         "Respiratory system diseases"
       ],
+      "healthcare_information": [
+        "Physician/practitioner info"
+      ],
       "lifestyle_and_behaviours": [
         "Alcohol use history",
         "Dietary history",
+        "Physical activity history",
+        "Recreational drug history",
         "Tobacco use history"
       ],
       "medication": [
-        "Associated disease(s)"
+        "Associated disease(s)",
+        "Prescription"
       ],
-      "non_pharmacological_interventions": [],
+      "non_pharmacological_interventions": [
+        "Surgical interventions"
+      ],
       "other_questionnaire_survey_data": [
-        "Reproduction",
         "Signs and symptoms"
       ],
       "physiological_measurements": {
@@ -56,15 +67,23 @@
           "Blood pressure",
           "Heart rate (hr)"
         ]
-      }
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Education",
+        "Ethnicity/race",
+        "Family and household structure",
+        "Gender",
+        "Residence"
+      ]
     },
     "recontact_in_place": false,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
     ],
-    "target_enrollment": 130000,
-    "website": "https://www.ahri.org"
+    "target_enrollment": null,
+    "website": "https://dceg2.cancer.gov/gemshare/"
   },
   {
     "active_recruitment": true,
@@ -151,92 +170,6 @@
       "biospecimens": true,
       "ehr_data": false,
       "environmental_data": true,
-      "genomic_data": false,
-      "longitudinal_data": false,
-      "phenotypic_clinical_data": true
-    },
-    "basic_cohort_attributes": {
-      "demographic_data": [],
-      "population_data": [
-        "Location"
-      ]
-    },
-    "biosample": {
-      "sample_type": [
-        "Blood",
-        "Other biosample type"
-      ]
-    },
-    "cohort_name": "Golestan Cohort Study",
-    "countries": [
-      "Iran"
-    ],
-    "current_enrollment": 50000,
-    "enrollment_period": "2004:2008",
-    "includes_50_to_60": false,
-    "irb_approved_data_sharing": false,
-    "laboratory_measures": [],
-    "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
-    "questionnaire_survey_data": {
-      "diseases": [
-        "Cancer",
-        "Cardiovascular diseases",
-        "Endocrine system diseases",
-        "Respiratory system diseases"
-      ],
-      "healthcare_information": [
-        "Physician/practitioner info"
-      ],
-      "lifestyle_and_behaviours": [
-        "Alcohol use history",
-        "Dietary history",
-        "Physical activity history",
-        "Recreational drug history",
-        "Tobacco use history"
-      ],
-      "medication": [
-        "Associated disease(s)",
-        "Prescription"
-      ],
-      "non_pharmacological_interventions": [
-        "Surgical interventions"
-      ],
-      "other_questionnaire_survey_data": [
-        "Signs and symptoms"
-      ],
-      "physiological_measurements": {
-        "anthropometry": [
-          "Height",
-          "Weight"
-        ],
-        "circulation_and_respiration": [
-          "Blood pressure",
-          "Heart rate (hr)"
-        ]
-      },
-      "socio_demographic_and_economic_characteristics": [
-        "Age/birthdate",
-        "Education",
-        "Ethnicity/race",
-        "Family and household structure",
-        "Gender",
-        "Residence"
-      ]
-    },
-    "recontact_in_place": false,
-    "survey_administration": [
-      "Date and time-related information",
-      "Unique identifiers"
-    ],
-    "target_enrollment": null,
-    "website": "https://dceg2.cancer.gov/gemshare/"
-  },
-  {
-    "active_recruitment": false,
-    "available_data_types": {
-      "biospecimens": true,
-      "ehr_data": false,
-      "environmental_data": true,
       "genomic_data": true,
       "longitudinal_data": true,
       "phenotypic_clinical_data": true
@@ -311,9 +244,9 @@
       "South Africa"
     ],
     "current_enrollment": 350000,
-    "enrollment_period": "1993:ongoing",
+    "enrollment_period": "1993:Ongoing",
     "includes_50_to_60": false,
-    "irb_approved_data_sharing": false,
+    "irb_approved_data_sharing": true,
     "laboratory_measures": [],
     "pi_lead": "Kobus Herbst",
     "questionnaire_survey_data": {
@@ -340,5 +273,149 @@
     ],
     "target_enrollment": 700000,
     "website": "http://saprin.mrc.ac.za/"
+  },
+  {
+    "active_recruitment": false,
+    "available_data_types": {
+      "biospecimens": true,
+      "ehr_data": true,
+      "environmental_data": false,
+      "genomic_data": false,
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "UKCTOCS Longitudinal Women's Cohort (UKLWC)",
+    "countries": [
+      "England",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "current_enrollment": 202638,
+    "enrollment_period": "2001:2005",
+    "includes_50_to_60": true,
+    "irb_approved_data_sharing": false,
+    "pi_lead": "Prof. Usha Menon",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Digestive system diseases",
+        "Endocrine system diseases",
+        "Musculoskeletal system diseases",
+        "Respiratory system diseases",
+        "Urinary system diseases"
+      ],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Tobacco use history"
+      ],
+      "medication": [],
+      "non_pharmacological_interventions": [
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Cause of death",
+        "Family history of disease",
+        "Life stage/time point",
+        "Reproduction",
+        "Signs and symptoms"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Quality of life"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Birthplace",
+        "Education",
+        "Ethnicity/race",
+        "Marital status",
+        "Occupation"
+      ]
+    },
+    "recontact_in_place": true,
+    "survey_administration": [
+      "Date and time-related information"
+    ],
+    "target_enrollment": 200000,
+    "website": "http://uklwc.mrcctu.ucl.ac.uk/"
+  },
+  {
+    "active_recruitment": false,
+    "available_data_types": {
+      "biospecimens": true,
+      "ehr_data": false,
+      "environmental_data": false,
+      "genomic_data": true,
+      "longitudinal_data": false,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood",
+        "Other biosample type",
+        "Saliva",
+        "Urine"
+      ]
+    },
+    "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+    "countries": [
+      "South Africa"
+    ],
+    "current_enrollment": 130000,
+    "enrollment_period": "2000:Ongoing",
+    "includes_50_to_60": false,
+    "irb_approved_data_sharing": true,
+    "laboratory_measures": [],
+    "pi_lead": "Willem Hankom",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Respiratory system diseases"
+      ],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Tobacco use history"
+      ],
+      "medication": [
+        "Associated disease(s)"
+      ],
+      "non_pharmacological_interventions": [],
+      "other_questionnaire_survey_data": [
+        "Reproduction",
+        "Signs and symptoms"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ],
+        "circulation_and_respiration": [
+          "Blood pressure",
+          "Heart rate (hr)"
+        ]
+      }
+    },
+    "recontact_in_place": false,
+    "survey_administration": [
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": 130000,
+    "website": "https://www.ahri.org"
   }
 ]

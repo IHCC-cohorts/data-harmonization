@@ -85,6 +85,7 @@ clean:
 all: $(TREES) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
+all: build/member_cohorts.csv
 all: owl
 all: $(ZOOMA_DATASET)
 all: $(OLS_CONFIG)
@@ -180,7 +181,7 @@ build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.
 	--format json \
 	--tree $@
 
-data/cohort-data.json: src/generate_cohort_json.py data/member_cohorts.csv data/metadata.json build/gecko_structure.json $(TEMPLATES)
+data/cohort-data.json: src/generate_cohort_json.py data/metadata.json build/gecko_structure.json $(TEMPLATES)
 	python3 $(filter-out $(TEMPLATES),$^) $@
 
 # Real cohort data + randomly-generated cohort data
@@ -190,6 +191,12 @@ data/full-cohort-data.json: data/cohort-data.json data/random-data.json
 	sed '$$d' $< | sed '$$d' >> $@
 	echo '  },' >> $@
 	sed '1d' $(word 2,$^) >> $@
+
+
+### Admin Metadata
+
+build/member_cohorts.csv: src/convert_metadata.py data/metadata.json
+	python3 $^ $@
 
 
 ### COGS Set Up & Tasks
