@@ -24,6 +24,14 @@ ontologies:
   preferredPrefix: KOGES
   title: Korean Genome and Epidemiology Study (KoGES)
 - base_uri:
+  - https://purl.ihccglobal.org/PLCO_
+  description: This was a randomized trial of screening for four cancers and also
+    a long-term cohort focused on all-cancer outcomes
+  id: plco
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/plco.owl
+  preferredPrefix: PLCO
+  title: Prostate, Lung, Colorectal and Ovarian Cancer Screening Trial
+- base_uri:
   - https://purl.ihccglobal.org/SAPRIN_
   description: The core data elements collected by SAPRIN.
   id: saprin

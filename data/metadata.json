@@ -53,6 +53,24 @@
         "target_enrollment": null,
         "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
     },
+    "PLCO": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": true,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Prostate, Lung, Colorectal and Ovarian Cancer Screening Trial",
+        "countries": [
+            "U.S."
+        ],
+        "current_enrollment": 155000,
+        "enrollment_period": "1993:2001",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Neal Freedman, Paul Pinsky",
+        "target_enrollment": null,
+        "website": "cdas.cancer.gov/plco/"
+    },
     "SAPRIN": {
         "available_data_types": {
             "biospecimens": true,
