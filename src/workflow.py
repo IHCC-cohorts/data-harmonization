@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import cgi
 import cogs
 import csv
 import os
@@ -28,8 +29,12 @@ def main():
 
     # Read arguments from STDIN as a query string
     args = {}
+    fields = None
     if os.environ["REQUEST_METHOD"] == "POST":
-        args = dict(urllib.parse.parse_qsl(sys.stdin.read()))
+        fields = cgi.FieldStorage()
+        args = {}
+        for key in fields.keys():
+            args[key] = fields[key].value
     elif "QUERY_STRING" in os.environ:
         args = dict(urllib.parse.parse_qsl(os.environ["QUERY_STRING"]))
     # TODO: read command-line arguments
@@ -59,7 +64,6 @@ def main():
 
         valid = {}
         invalid = {}
-        upload = build + "/upload.xlsx"
         wb = None
 
         for name in ["admin_google_id", "submitter_google_id"]:
@@ -89,31 +93,18 @@ def main():
         if not name in args:
             invalid[name] = "This is a required field"
         else:
-            # TODO: This is a hack around https://github.com/ontodev/droid/issues/49
-            match = file_pattern.search(args[name])
-            if match:
-                filename = match[1]
-                if not os.path.isfile(filename):
-                    invalid[name] = f"File does not exist: {args[name]}"
-                elif os.path.getsize(filename) == 0:
-                    invalid[name] = f"File is empty: {args[name]}"
+            try:
+                wb = load_workbook(fields[name].file)
+                if "Instructions" not in wb.sheetnames:
+                    invalid[name] = "Instructions sheet is required"
+                elif "Metadata" not in wb.sheetnames:
+                    invalid[name] = "Metadata sheet is required"
+                elif "Terminology" not in wb.sheetnames:
+                    invalid[name] = "Terminology sheet is required"
                 else:
-                    os.makedirs(build, exist_ok=True)
-                    shutil.copyfile(filename, upload)
-                    try:
-                        wb = load_workbook(upload)
-                        if "Instructions" not in wb.sheetnames:
-                            invalid[name] = "Instructions sheet is required"
-                        elif "Metadata" not in wb.sheetnames:
-                            invalid[name] = "Metadata sheet is required"
-                        elif "Terminology" not in wb.sheetnames:
-                            invalid[name] = "Terminology sheet is required"
-                        else:
-                            valid[name] = True
-                    except:
-                        invalid[name] = "Not a valid Excel file"
-            else:
-                invalid[name] = f"Not a valid file name {args[name]}"
+                    valid[name] = True
+            except Exception as e:
+                invalid[name] = f"Not a valid Excel file: {e}"
 
         if invalid:
             args["valid"] = valid
@@ -149,16 +140,12 @@ def main():
         cogs.push()
         link = get_sheet_url()
 
-        project_name = args["project-name"]
-        branch_name = args["branch-name"]
-
         output = [
             "div",
             ["p", f"Google Sheet created and shared with '{args['admin_google_id']}'."],
             [
                 "ul",
                 ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
-                ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
             ],
         ]
         return render_output(output)
@@ -201,14 +188,11 @@ def main():
         os.chdir("..")
         cogs.share(submitter_google_id, "writer")
         link = get_sheet_url()
-        project_name = args["project-name"]
-        branch_name = args["branch-name"]
         output = [
             "div",
             ["h1", "Google Sheet Shared"],
             ["p", submitter_google_id],
             ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
-            ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
         ]
         return render_output(output)
 
@@ -223,12 +207,9 @@ def save_sheet(ws, path):
 def open_sheet(args):
     if os.path.exists("../.cogs/config.tsv"):
         link = get_sheet_url()
-        project_name = args["project-name"]
-        branch_name = args["branch-name"]
         output = [
             "ul",
             ["li", ["a", {"href": link, "target": "_blank"}, "Open Google Sheet"]],
-            ["li", ["a", {"href": f"/{project_name}/branches/{branch_name}"}, "Back"]],
             ["script", {"type": "text/javascript"}, f"window.open('{link}', '_blank');"]
             # ["meta", {"http-equiv": "refresh", "content": f"0; URL=../.."}]
         ]

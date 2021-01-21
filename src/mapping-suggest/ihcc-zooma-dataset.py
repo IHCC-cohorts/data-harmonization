@@ -57,6 +57,9 @@ df = pd.concat([pd.read_csv(f) for f in args.datasets])
 # Building the Zooma dataset from lexical data
 df_basic_out, df_simplestring_out = generate_zooma_dataset(df)
 
+# Sort on IRI & property value (where an IRI has more than one value)
+df_simplestring_out.sort_values(by=["BIOENTITY", "PROPERTY_VALUE"], inplace=True)
+
 # Saving the Zooma dataset
 df_simplestring_out.drop_duplicates().to_csv(
     args.zooma_dataset, index=False, sep="\t", quoting=csv.QUOTE_NONE, escapechar="\\"

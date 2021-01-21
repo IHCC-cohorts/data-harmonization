@@ -1,0 +1,13 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/chop.owl> a owl:Ontology ;
+    dc:description "Data elements collected by CHOP to develop the Philadelphia Neurodevelopmental Cohort (PNC) plus data developed with the University of Pennsylvania on Alzheimer's susceptibility" ;
+    dcterms:license "https://creativecommons.org/licenses/by-nc-sa/4.0/" ;
+    dcterms:rights """This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms: 
+BY: Credit must be given to the creator
+NC: Only noncommercial uses of the work are permitted
+SA: Adaptations must be shared under the same terms""" ;
+    dcterms:title "Center for Applied Genomics, Children's Hospital of Philadelphia" .
+

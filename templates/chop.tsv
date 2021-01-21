@@ -1,0 +1,997 @@
+Term ID	Label	Parent Term	Defintion	GECKO Category	Internal ID	Suggested Categories	Comment
+CHOP:0000001	subjid		anonymized patient ID	unique identifiers	subjid		Random Integer
+CHOP:0000002	surveyYear		year of sample collection	date and time-related information	surveyDate		Integer
+CHOP:0000003	Gender			gender	Gender		Encoded Value
+CHOP:0000004	ageYears		age at sample collection	age/birthdate	ageYears		Integer
+CHOP:0000005	WeightKgs		weight at sample collection	weight	WeightKgs		decimal
+CHOP:0000006	HeightCm		height at sample collection	height	HeightCm		decimal
+CHOP:0000007	race			ethnicity/race	race		Encoded Value
+CHOP:0000008	isAsian		yes or no	ethnicity/race	isAsian		Yes-No
+CHOP:0000009	asianType			ethnicity/race	asianType		Encoded Value
+CHOP:0000010	chiefComplaint_1		description of symptom or condition	signs and symptoms	chiefComplaint_1		Text
+CHOP:0000011	chiefComplaint_2		description of symptom or condition	signs and symptoms	chiefComplaint_2		Text
+CHOP:0000012	chiefComplaint_3		description of symptom or condition	signs and symptoms	chiefComplaint_3		Text
+CHOP:0000013	chiefComplaint_4		description of symptom or condition	signs and symptoms	chiefComplaint_4		Text
+CHOP:0000014	gestationalDiabetes		yes or no	endocrine system diseases	gestationalDiabetes		Yes-No
+CHOP:0000015	preeClampsia		yes or no	cardiovascular diseases	preeClampsia		Yes-No
+CHOP:0000016	glassesForDistance		yes or no	visual system diseases	glassesForDistance		Yes-No
+CHOP:0000017	havePets		yes or no	lifestyle and behaviours	havePets		Yes-No
+CHOP:0000018	goodHealth		yes or no	perception of health	goodHealth		Yes-No
+CHOP:0000019	haveAllergy		yes or no	signs and symptoms	haveAllergy		Yes-No
+CHOP:0000020	healthyDiet		yes or no	dietary history	healthyDiet		Yes-No
+CHOP:0000021	isActive		yes or no	physical activity history	isActive		Yes-No
+CHOP:0000022	isSmoker		is there a smoker in the family	tobacco use history	isSmoker		Yes-No
+CHOP:0000023	sleepProblem		yes or no	sleep history	sleepProblem		Yes-No
+CHOP:0000024	sleepProblemType_1		description of symptom or condition	sleep history	sleepProblemType_1		text
+CHOP:0000025	sleepProblemType_2		description of symptom or condition	sleep history	sleepProblemType_2		Text
+CHOP:0000026	sleepProblemType_3		description of symptom or condition	sleep history	sleepProblemType_3		Text
+CHOP:0000027	takesMedication		yes or no	medication	takesMedication		Yes-No
+CHOP:0000028	medicationType_1		medications at time of sample collection	medication	medicationType_1		Text
+CHOP:0000029	medicationType_2		medications at time of sample collection	medication	medicationType_2		Text
+CHOP:0000030	medicationType_3		medications at time of sample collection	medication	medicationType_3		Text
+CHOP:0000031	medicationType_4		medications at time of sample collection	medication	medicationType_4		Text
+CHOP:0000032	medicationType_5		medications at time of sample collection	medication	medicationType_5		Text
+CHOP:0000033	medicationType_6		medications at time of sample collection	medication	medicationType_6		Text
+CHOP:0000034	medicationType_7		medications at time of sample collection	medication	medicationType_7		Text
+CHOP:0000035	medicationType_8		medications at time of sample collection	medication	medicationType_8		Text
+CHOP:0000036	medicationType_9		medications at time of sample collection	medication	medicationType_9		Text
+CHOP:0000037	medicationType_10		medications at time of sample collection	medication	medicationType_10		Text
+CHOP:0000038	screenForAutism		yes or no	mental and behaviour disorders	screenForAutism		Yes-No
+CHOP:0000039	hasAutism		yes or no	mental and behaviour disorders	hasAutism		Yes-No
+CHOP:0000040	hasBehavioralProblems		yes or no	mental and behaviour disorders	hasBehavioralProblems		Yes-No
+CHOP:0000041	behavioralProblemsType_1		description of symptom or condition	mental and behaviour disorders	behavioralProblemsType_1		Text
+CHOP:0000042	behavioralProblemsType_2		description of symptom or condition	mental and behaviour disorders	behavioralProblemsType_2		Text
+CHOP:0000043	sampleType		type of sample collected	sample type	sampleType		Encoded Value
+CHOP:0000044	age_alzheimers_onset		EHR record	mental and behaviour disorders	diagnosis_age_alz		Integer
+CHOP:0000045	icd9_dx_alzheimers		EHR record	mental and behaviour disorders	diagnosis_code_alz		Encoded Value
+CHOP:0000046	icd9_age_alzheimers		EHR record	mental and behaviour disorders	diagnosis_age_alz		Integer
+CHOP:0000047	icd10_dx_alzheimers		EHR record	mental and behaviour disorders	diagnosis_code_alz		Encoded Value
+CHOP:0000048	icd10_age_alzheimers		EHR record	mental and behaviour disorders	diagnosis_age_alz		Integer
+CHOP:0000049	proc_name_alzheimers		EHR record	mental and behaviour disorders	proc_name_alz		Encoded Value
+CHOP:0000050	proc_code_alzheimers		EHR record	mental and behaviour disorders	proc_code_alz		Encoded Value
+CHOP:0000051	proc_findings_alzheimers		EHR record	mental and behaviour disorders	proc_value_alz		Encoded Value
+CHOP:0000052	proc_impression_alzheimers		EHR record	mental and behaviour disorders	proc_value_alz		Encoded Value
+CHOP:0000053	proc_age_alzheimers		EHR record	mental and behaviour disorders	proc_age_alz		Integer
+CHOP:0000054	lab_name_alzheimers		EHR record	mental and behaviour disorders	lab_name_alz		Encoded Value
+CHOP:0000055	lab_code_alzheimers		EHR record	mental and behaviour disorders	lab_code_alz		Encoded Value
+CHOP:0000056	lab_findings_alzheimers		EHR record	mental and behaviour disorders	lab_value_alz		Encoded Value
+CHOP:0000057	lab_impression_alzheimers		EHR record	mental and behaviour disorders	lab_value_alz		Encoded Value
+CHOP:0000058	lab_age_alzheimers		EHR record	mental and behaviour disorders	lab_age_alz		Integer
+CHOP:0000059	age_dementia_onset		EHR record	mental and behaviour disorders	diagnosis_age_dem		Integer
+CHOP:0000060	icd9_dx_dementia		EHR record	mental and behaviour disorders	diagnosis_code_dem		Encoded Value
+CHOP:0000061	icd9_age_dementia		EHR record	mental and behaviour disorders	diagnosis_age_dem		Integer
+CHOP:0000062	icd10_dx_dementia		EHR record	mental and behaviour disorders	diagnosis_code_dem		Encoded Value
+CHOP:0000063	icd10_age_dementia		EHR record	mental and behaviour disorders	diagnosis_age_dem		Integer
+CHOP:0000064	proc_name_dementia		EHR record	mental and behaviour disorders	proc_name_dem		Encoded Value
+CHOP:0000065	proc_code_dementia		EHR record	mental and behaviour disorders	proc_code_dem		Encoded Value
+CHOP:0000066	proc_findings_dementia		EHR record	mental and behaviour disorders	proc_value_dem		Encoded Value
+CHOP:0000067	proc_impression_dementia		EHR record	mental and behaviour disorders	proc_value_dem		Encoded Value
+CHOP:0000068	proc_age_dementia		EHR record	mental and behaviour disorders	proc_age_dem		Integer
+CHOP:0000069	lab_name_dementia		EHR record	mental and behaviour disorders	lab_name_dem		Encoded Value
+CHOP:0000070	lab_code_dementia		EHR record	mental and behaviour disorders	lab_code_dem		Encoded Value
+CHOP:0000071	lab_findings_dementia		EHR record	mental and behaviour disorders	lab_value_dem		Encoded Value
+CHOP:0000072	lab_impression_dementia		EHR record	mental and behaviour disorders	lab_value_dem		Encoded Value
+CHOP:0000073	lab_age_dementia		EHR record	mental and behaviour disorders	lab_age_dem		Integer
+CHOP:0000074	age_cardiovascular_onset		EHR record	cardiovascular diseases	diagnosis_age_cardiovas		Integer
+CHOP:0000075	icd9_dx_cardiovascular		EHR record	cardiovascular diseases	diagnosis_code_cardiovas		Encoded Value
+CHOP:0000076	icd9_age_cardiovascular		EHR record	cardiovascular diseases	diagnosis_age_cardiovas		Integer
+CHOP:0000077	icd10_dx_cardiovascular		EHR record	cardiovascular diseases	diagnosis_code_cardiovas		Encoded Value
+CHOP:0000078	icd10_age_cardiovascular		EHR record	cardiovascular diseases	diagnosis_age_cardiovas		Integer
+CHOP:0000079	proc_name_cardiovascular		EHR record	cardiovascular diseases	proc_name_cardiovas		Encoded Value
+CHOP:0000080	proc_code_cardiovascular		EHR record	cardiovascular diseases	proc_code_cardiovas		Encoded Value
+CHOP:0000081	proc_findings_cardiovascular		EHR record	cardiovascular diseases	proc_value_cardiovas		Encoded Value
+CHOP:0000082	proc_impression_cardiovascular		EHR record	cardiovascular diseases	proc_value_cardiovas		Encoded Value
+CHOP:0000083	proc_age_cardiovascular		EHR record	cardiovascular diseases	proc_age_cardiovas		Integer
+CHOP:0000084	lab_name_cardiovascular		EHR record	cardiovascular diseases	lab_name_cardiovas		Encoded Value
+CHOP:0000085	lab_code_cardiovascular		EHR record	cardiovascular diseases	lab_code_cardiovas		Encoded Value
+CHOP:0000086	lab_findings_cardiovascular		EHR record	cardiovascular diseases	lab_value_cardiovas		Encoded Value
+CHOP:0000087	lab_impression_cardiovascular		EHR record	cardiovascular diseases	lab_value_cardiovas		Encoded Value
+CHOP:0000088	lab_age_cardiovascular		EHR record	cardiovascular diseases	lab_age_cardiovas		Integer
+CHOP:0000089	PNC_INT_NUM		Number of Interviews associated to the participant	survey administration	INT_NUM		Encoded Value
+CHOP:0000090	PNC_INT_TYPE		Type of Interview	survey administration	INT_TYPE		Encoded Value
+CHOP:0000091	PNC_ADD011		Attention Deficit Disorder: Did you often have trouble paying attention or keeping your mind on your school, work, chores, or other activities that you were doing?	mental and behaviour disorders|cognitive functioning	ADD011		Encoded Value
+CHOP:0000092	PNC_ADD012		Attention Deficit Disorder: Did you often have problems following instructions and often fail to finish school, work, or other things you meant to get done?	mental and behaviour disorders|cognitive functioning	ADD012		Encoded Value
+CHOP:0000093	PNC_ADD013		Attention Deficit Disorder: Did you often dislike, avoid, or put off school or homework (or any other activity requiring concentration)	mental and behaviour disorders|cognitive functioning	ADD013		Encoded Value
+CHOP:0000094	PNC_ADD014		Attention Deficit Disorder: Did you often lose things you needed for school or projects at home (assignments or books) or make careless mistakes in school work or other activities?	mental and behaviour disorders|cognitive functioning	ADD014		Encoded Value
+CHOP:0000095	PNC_ADD015		Attention Deficit Disorder: Did you often have trouble making plans, doing things that had to be done in a certain kind of order, or that had a lot of different steps?	mental and behaviour disorders|cognitive functioning	ADD015		Encoded Value
+CHOP:0000096	PNC_ADD016		Attention Deficit Disorder: Did you often have people tell you that you did not seem to be listening when they spoke to you or that you were daydreaming?	mental and behaviour disorders|cognitive functioning	ADD016		Encoded Value
+CHOP:0000097	PNC_ADD017		Attention Deficit Disorder: Did you have these difficulties at home (with your parents)?	mental and behaviour disorders|cognitive functioning	ADD017		Encoded Value
+CHOP:0000098	PNC_ADD018		Attention Deficit Disorder: Did you have these difficulties at school (with your teachers)?	mental and behaviour disorders|cognitive functioning	ADD018		Encoded Value
+CHOP:0000099	PNC_ADD019		Attention Deficit Disorder: Did you have these difficulties anywhere else (with other adults)?	mental and behaviour disorders|cognitive functioning	ADD019		Encoded Value
+CHOP:0000100	PNC_ADD020		"Attention Deficit Disorder: Did you often have difficulty sitting still for more than a few minutes at a time, even after being asked to stay seated, or did you often fidget with your hands or feet or wiggle in your seat or were you ""always on the go""?"	mental and behaviour disorders|cognitive functioning	ADD020		Encoded Value
+CHOP:0000101	PNC_ADD021		Attention Deficit Disorder: Did you often blurt out answers to other people's questions before they finished speaking or interrupt people abruptly?	mental and behaviour disorders|cognitive functioning	ADD021		Encoded Value
+CHOP:0000102	PNC_ADD022		Attention Deficit Disorder: Did you often join other people's conversations or have trouble waiting your turn (e.g., waiting in line, waiting for a teacher to call on you in class)?	mental and behaviour disorders|cognitive functioning	ADD022		Encoded Value
+CHOP:0000103	PNC_ADD023		Attention Deficit Disorder: Did you have these difficulties at home (with your parents)?	mental and behaviour disorders|cognitive functioning	ADD023		Encoded Value
+CHOP:0000104	PNC_ADD024		Attention Deficit Disorder: Did you have these difficulties at school (with your teachers)?	mental and behaviour disorders|cognitive functioning	ADD024		Encoded Value
+CHOP:0000105	PNC_ADD025		Attention Deficit Disorder: Did you have these difficulties anywhere else (with others adults)?	mental and behaviour disorders|cognitive functioning	ADD025		Encoded Value
+CHOP:0000106	PNC_ADD026		Attention Deficit Disorder: When did these difficulties with attention and/or restlessness begin? (age)	mental and behaviour disorders|cognitive functioning	ADD026		Encoded Value
+CHOP:0000107	PNC_ADD027		Attention Deficit Disorder: You told me that you (list endorsed attentional problems). How much did having difficulties with concentration, attention, or being restless or impatient upset or bother you?	mental and behaviour disorders|cognitive functioning	ADD027		Encoded Value
+CHOP:0000108	PNC_ADD028		Attention Deficit Disorder: Did family members seem upset, angry, or annoyed with you because of your difficulties?	mental and behaviour disorders|cognitive functioning	ADD028		Encoded Value
+CHOP:0000109	PNC_ADD029		Attention Deficit Disorder: Did these behaviors/inattention bother your friends?	mental and behaviour disorders|cognitive functioning	ADD029		Encoded Value
+CHOP:0000110	PNC_ADD030		Attention Deficit Disorder: Did teachers or classmates (or co-workers/supervisors) complain about your inattention/behavior?	mental and behaviour disorders|cognitive functioning	ADD030		Encoded Value
+CHOP:0000111	PNC_ADD032		Attention Deficit Disorder: Did you stay home from school or work because of your difficulties with inattention or overactivity? (For example: Were you sent home?)	mental and behaviour disorders|cognitive functioning	ADD032		Encoded Value
+CHOP:0000112	PNC_ADD033		Attention Deficit Disorder: How many days of school or work did you miss because of your difficulties with attention or overactivity? (lifetime)	mental and behaviour disorders|cognitive functioning	ADD033		Encoded Value
+CHOP:0000113	PNC_ADD034		Attention Deficit Disorder: How old were you the first time you did these (list behaviors)? (Age)	mental and behaviour disorders|cognitive functioning	ADD034		Encoded Value
+CHOP:0000114	PNC_ADD034a		Attention Deficit Disorder: How old were you the first time you did these (list behaviors)? (Always)	mental and behaviour disorders|cognitive functioning	ADD034a		Encoded Value
+CHOP:0000115	PNC_ADD035		Attention Deficit Disorder: Do you still have any of these (list behaviors)?	mental and behaviour disorders|cognitive functioning	ADD035		Encoded Value
+CHOP:0000116	PNC_ADD036		Attention Deficit Disorder: How old were you the last time you did this behavior?	mental and behaviour disorders|cognitive functioning	ADD036		Encoded Value
+CHOP:0000117	PNC_ADD050		Attention Deficit Disorder: Did a teacher ever talk to your parents about problems paying attention or sitting still?	mental and behaviour disorders|cognitive functioning	ADD050		Encoded Value
+CHOP:0000118	PNC_AGR001		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: being in crowds (for example, a classroom, cafeteria, restaurant, or movie theater)?	mental and behaviour disorders|cognitive functioning	AGR001		Encoded Value
+CHOP:0000119	PNC_AGR002		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: going to public places (such as a store or shopping mall)?	mental and behaviour disorders|cognitive functioning	AGR002		Encoded Value
+CHOP:0000120	PNC_AGR003		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: being in an open field?	mental and behaviour disorders|cognitive functioning	AGR003		Encoded Value
+CHOP:0000121	PNC_AGR004		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: going over bridges or through tunnels?	mental and behaviour disorders|cognitive functioning	AGR004		Encoded Value
+CHOP:0000122	PNC_AGR005		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: traveling by yourself?	mental and behaviour disorders|cognitive functioning	AGR005		Encoded Value
+CHOP:0000123	PNC_AGR006		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: traveling away from home?	mental and behaviour disorders|cognitive functioning	AGR006		Encoded Value
+CHOP:0000124	PNC_AGR007		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: traveling in a car?	mental and behaviour disorders|cognitive functioning	AGR007		Encoded Value
+CHOP:0000125	PNC_AGR008		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of: using public transportation like a bus or SEPTA?	mental and behaviour disorders|cognitive functioning	AGR008		Encoded Value
+CHOP:0000126	PNC_AGR009		Agoraphopbia: Have you been afraid about (insert all situations endorsed) because you were worried about having a scary/strange feeling in your body or other body problem(s)?	mental and behaviour disorders|cognitive functioning	AGR009		Encoded Value
+CHOP:0000127	PNC_AGR010		Agoraphopbia: Have you been afraid of being in places because you were worried that you might get trapped, couldn't escape, would be embarrassed to escape or couldn't get help?	mental and behaviour disorders|cognitive functioning	AGR010		Encoded Value
+CHOP:0000128	PNC_AGR011		Agoraphopbia: When you had to do (insert all situations endorsed), did your heart ever beat very fast, did you feel sweaty or have trouble breathing, did you feel like crying, losing your temper, or like you couldn't move around?	mental and behaviour disorders|cognitive functioning	AGR011		Encoded Value
+CHOP:0000129	PNC_AGR012		Agoraphopbia: Were you only able to face (fear) when you were with a parent or friend?	mental and behaviour disorders|cognitive functioning	AGR012		Encoded Value
+CHOP:0000130	PNC_AGR013		Agoraphopbia: When you had to face (feared situations), did you try to avoid it or if you couldn't avoid it, did you feel very distressed or need someone with you when you faced it?	mental and behaviour disorders|cognitive functioning	AGR013		Encoded Value
+CHOP:0000131	PNC_AGR014		Agoraphopbia: How much did having this fear upset or bother you?	mental and behaviour disorders|cognitive functioning	AGR014		Encoded Value
+CHOP:0000132	PNC_AGR015		Agoraphopbia: How much did the fear you told me about cause problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders|cognitive functioning	AGR015		Encoded Value
+CHOP:0000133	PNC_AGR016		Agoraphopbia: Did you stay home from school or work because of your fear?	mental and behaviour disorders|cognitive functioning	AGR016		Encoded Value
+CHOP:0000134	PNC_AGR017		Agoraphopbia: How many days of school/work did you miss? (lifetime) (Days)	mental and behaviour disorders|cognitive functioning	AGR017		Encoded Value
+CHOP:0000135	PNC_AGR018		Agoraphopbia: How many days of school/work did you miss? (lifetime) (Weeks)	mental and behaviour disorders|cognitive functioning	AGR018		Encoded Value
+CHOP:0000136	PNC_AGR019		Agoraphopbia: How many days of school/work did you miss? (lifetime) (Months)	mental and behaviour disorders|cognitive functioning	AGR019		Encoded Value
+CHOP:0000137	PNC_AGR020		Agoraphopbia: Did you ever avoid going to fun activities/events like amusement parks, movies, or parties because of your fear?	mental and behaviour disorders|cognitive functioning	AGR020		Encoded Value
+CHOP:0000138	PNC_AGR021		Agoraphopbia: How many times? (did you avoid going to fun activities)	mental and behaviour disorders|cognitive functioning	AGR021		Encoded Value
+CHOP:0000139	PNC_AGR022		Agoraphopbia: How old were you the first time you were afraid of (fear)? (Age)	mental and behaviour disorders|cognitive functioning	AGR022		Encoded Value
+CHOP:0000140	PNC_AGR022a		Agoraphopbia: How old were you the first time you were afraid of (fear)? (Always)	mental and behaviour disorders|cognitive functioning	AGR022a		Encoded Value
+CHOP:0000141	PNC_AGR023		Agoraphopbia: Are you still afraid of (fear)?	mental and behaviour disorders|cognitive functioning	AGR023		Encoded Value
+CHOP:0000142	PNC_AGR024		Agoraphopbia: How old were you the last time you had this fear?	mental and behaviour disorders|cognitive functioning	AGR024		Encoded Value
+CHOP:0000143	PNC_AGR030		Agoraphopbia: Is your fear of (insert situation) related to your fear of (insert previously reported fear)?	mental and behaviour disorders|cognitive functioning	AGR030		Encoded Value
+CHOP:0000144	PNC_AGR035		Agoraphopbia: Looking at this card, have you ever been very nervous or afraid of being in crowds, going to public places, traveling by yourself, traveling away from home, or using public transportation like a bus or SEPTA?	mental and behaviour disorders|cognitive functioning	AGR035		Encoded Value
+CHOP:0000145	PNC_CDD001		Conduct Disorder: Was there ever a time when you often did things that got you into trouble with adults like lying or stealing (something worth more than $5, from family, others, or stores)?	mental and behaviour disorders|cognitive functioning	CDD001		Encoded Value
+CHOP:0000146	PNC_CDD001a		Conduct Disorder: Was there ever a time when you did things that got you into trouble with adults like lying or stealing or breaking rules?	mental and behaviour disorders|cognitive functioning	CDD001a		Encoded Value
+CHOP:0000147	PNC_CDD002		Conduct Disorder: Did you ever skip school, stay out at night later than you were supposed to (more than 2 hours), or run away from home overnight?	mental and behaviour disorders|cognitive functioning	CDD002		Encoded Value
+CHOP:0000148	PNC_CDD002a		Conduct Disorder: Did you ever skip school, stay out at night later than you were supposed to, or run away from home overnight?	mental and behaviour disorders|cognitive functioning	CDD002a		Encoded Value
+CHOP:0000149	PNC_CDD003		Conduct Disorder: Did you ever set fires, break into cars, or destroy someone else's property on purpose?	mental and behaviour disorders|cognitive functioning	CDD003		Encoded Value
+CHOP:0000150	PNC_CDD004		Conduct Disorder: Do you have a probation officer or have you ever been on probation?	mental and behaviour disorders|cognitive functioning	CDD004		Encoded Value
+CHOP:0000151	PNC_CDD005		Conduct Disorder: Did you often bully others (hitting, threatening or scaring someone who was younger or smaller), threaten or frighten someone on purpose, or often start physical fights with others?	mental and behaviour disorders|cognitive functioning	CDD005		Encoded Value
+CHOP:0000152	PNC_CDD006		Conduct Disorder: Have you ever been physically cruel to an animal or person (on purpose)?	mental and behaviour disorders|cognitive functioning	CDD006		Encoded Value
+CHOP:0000153	PNC_CDD007		Conduct Disorder: Did you ever: try to hurt someone with a weapon (a bat, brick, broken bottle, knife, or gun)?	mental and behaviour disorders|cognitive functioning	CDD007		Encoded Value
+CHOP:0000154	PNC_CDD008		Conduct Disorder: Did you ever: threaten someone?	mental and behaviour disorders|cognitive functioning	CDD008		Encoded Value
+CHOP:0000155	PNC_CDD009		Conduct Disorder: Did you ever: hold someone up?	mental and behaviour disorders|cognitive functioning	CDD009		Encoded Value
+CHOP:0000156	PNC_CDD010		Conduct Disorder: Did you ever: attack someone to steal from them?	mental and behaviour disorders|cognitive functioning	CDD010		Encoded Value
+CHOP:0000157	PNC_CDD011		Conduct Disorder: Did you ever: trick or threaten someone into having sex with you, or did anyone ever accuse you of making them do something sexual?	mental and behaviour disorders|cognitive functioning	CDD011		Encoded Value
+CHOP:0000158	PNC_CDD013		Conduct Disorder: Were you ever suspended from school?	mental and behaviour disorders|cognitive functioning	CDD013		Encoded Value
+CHOP:0000159	PNC_CDD014		Conduct Disorder: How many times? (were you suspended from school)	mental and behaviour disorders|cognitive functioning	CDD014		Encoded Value
+CHOP:0000160	PNC_CDD015		Conduct Disorder: Were you ever expelled from school?	mental and behaviour disorders|cognitive functioning	CDD015		Encoded Value
+CHOP:0000161	PNC_CDD016		Conduct Disorder: Were you ever in trouble with the police? (includes probation)	mental and behaviour disorders|cognitive functioning	CDD016		Encoded Value
+CHOP:0000162	PNC_CDD017		Conduct Disorder: Have you ever actually been arrested or sent to juvenile court for something you have done?	mental and behaviour disorders|cognitive functioning	CDD017		Encoded Value
+CHOP:0000163	PNC_CDD019		Conduct Disorder: Have you ever been involved in juvenile court for family problems?	mental and behaviour disorders|cognitive functioning	CDD019		Encoded Value
+CHOP:0000164	PNC_CDD020		Conduct Disorder: You told me that you (list endorsed behaviors). How much did having these behavior(s) upset or bother you?	mental and behaviour disorders|cognitive functioning	CDD020		Encoded Value
+CHOP:0000165	PNC_CDD021		Conduct Disorder: How much did these behaviors change your relationships with your family? (Did your family say something about this to you? Did family members seem upset, angry, or annoyed with you because of your behavior(s))?	mental and behaviour disorders|cognitive functioning	CDD021		Encoded Value
+CHOP:0000166	PNC_CDD022		Conduct Disorder: How much did these behaviors change your relationships with your friends? (Did you find yourself spending much less time than usual with your friends? Did your friends say something about this)?	mental and behaviour disorders|cognitive functioning	CDD022		Encoded Value
+CHOP:0000167	PNC_CDD023		Conduct Disorder: How much did these behaviors change your relationships with your teachers or classmates? change how well you did at school, on tests, homework, or grades?	mental and behaviour disorders|cognitive functioning	CDD023		Encoded Value
+CHOP:0000168	PNC_CDD024		Conduct Disorder: Did you stay home or were you sent home from school because of your behavior?	mental and behaviour disorders|cognitive functioning	CDD024		Encoded Value
+CHOP:0000169	PNC_CDD025		Conduct Disorder: How many days of school did you miss? (lifetime)	mental and behaviour disorders|cognitive functioning	CDD025		Encoded Value
+CHOP:0000170	PNC_CDD026		Conduct Disorder: How old were you the first time you did these (list behaviors)? (Age)	mental and behaviour disorders|cognitive functioning	CDD026		Encoded Value
+CHOP:0000171	PNC_CDD026a		Conduct Disorder: How old were you the first time you did these (list behaviors)? (Always)	mental and behaviour disorders|cognitive functioning	CDD026a		Encoded Value
+CHOP:0000172	PNC_CDD027		Conduct Disorder: Do you still (insert behavior(s))?	mental and behaviour disorders|cognitive functioning	CDD027		Encoded Value
+CHOP:0000173	PNC_CDD028		Conduct Disorder: How old were you the last time you did these behaviors?	mental and behaviour disorders|cognitive functioning	CDD028		Encoded Value
+CHOP:0000174	PNC_DEP001		Depression: Has there ever been a time when you felt sad or depressed most of the time?	mental and behaviour disorders|cognitive functioning	DEP001		Encoded Value
+CHOP:0000175	PNC_DEP002		Depression: Has there ever been a time when you cried a lot, or felt like crying?	mental and behaviour disorders|cognitive functioning	DEP002		Encoded Value
+CHOP:0000176	PNC_DEP003		Depression: Was this different from how you usually are?	mental and behaviour disorders|cognitive functioning	DEP003		Encoded Value
+CHOP:0000177	PNC_DEP004		Depression: Has there ever been a time when you felt grouchy, irritable or in a bad mood most of the time; even little things would make you mad?	mental and behaviour disorders|cognitive functioning	DEP004		Encoded Value
+CHOP:0000178	PNC_DEP005		Depression: Was this different from how you usually are?	mental and behaviour disorders|cognitive functioning	DEP005		Encoded Value
+CHOP:0000179	PNC_DEP006		Depression: Has there ever been a time when nothing was fun for you and you just weren't interested in anything?	mental and behaviour disorders|cognitive functioning	DEP006		Encoded Value
+CHOP:0000180	PNC_DEP007		Depression: Was this different from how you usually are?	mental and behaviour disorders|cognitive functioning	DEP007		Encoded Value
+CHOP:0000181	PNC_DEP008		Depression: Did other people say that you seemed (more sad, more grouchy, or like you weren't having as much fun as usual)?	mental and behaviour disorders|cognitive functioning	DEP008		Encoded Value
+CHOP:0000182	PNC_DEP009		Depression: When did you feel the most (sad, grouchy, irritable, in a bad mood, had touble having fun)?	mental and behaviour disorders|cognitive functioning	DEP009		Encoded Value
+CHOP:0000183	PNC_DEP010		Depression: During that time when you were feeling the most (sad, grouchy, irritable, in a bad mood, had trouble having fun), did that/those feeling(s) last most of the day?	mental and behaviour disorders|cognitive functioning	DEP010		Encoded Value
+CHOP:0000184	PNC_DEP011		Depression: Did you feel this way nearly every day for at least one week?	mental and behaviour disorders|cognitive functioning	DEP011		Encoded Value
+CHOP:0000185	PNC_DEP012		Depression: During this time, did you have problems falling asleep, waking up before you had to, or sleeping more than usual for you?	mental and behaviour disorders|cognitive functioning	DEP012		Encoded Value
+CHOP:0000186	PNC_DEP013		Depression: During this time, did you eat less/more or feel less/more hungry than usual? (Did you lose/gain weight)?	mental and behaviour disorders|cognitive functioning	DEP013		Encoded Value
+CHOP:0000187	PNC_DEP014		Depression: During this time, did you have trouble sitting still or feel like you had to keep moving around OR did you move or think more slowly than usual?	mental and behaviour disorders|cognitive functioning	DEP014		Encoded Value
+CHOP:0000188	PNC_DEP015		Depression: During this time, did you feel really tired or have less energy than usual?	mental and behaviour disorders|cognitive functioning	DEP015		Encoded Value
+CHOP:0000189	PNC_DEP016		Depression: During this time, did you have problems keeping your mind on things (like homework), remembering things, thinking clearly, or making decisions?	mental and behaviour disorders|cognitive functioning	DEP016		Encoded Value
+CHOP:0000190	PNC_DEP017		Depression: During this time, did you blame yourself for bad things that happened or feel like you didn't really matter?	mental and behaviour disorders|cognitive functioning	DEP017		Encoded Value
+CHOP:0000191	PNC_DEP018		Depression: How much did your feeling (sad, grouchy, like nothing was fun) upset or bother you?	mental and behaviour disorders|cognitive functioning	DEP018		Encoded Value
+CHOP:0000192	PNC_DEP019		Depression: How much did your feeling (sad, grouchy, like nothing was fun) you told me about cause problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders|cognitive functioning	DEP019		Encoded Value
+CHOP:0000193	PNC_DEP020		Depression: Did you stay home from school or work because of the way you were feeling?	mental and behaviour disorders|cognitive functioning	DEP020		Encoded Value
+CHOP:0000194	PNC_DEP021		Depression: How many days of school/work did you miss? (during the worst episode)	mental and behaviour disorders|cognitive functioning	DEP021		Encoded Value
+CHOP:0000195	PNC_DEP022		Depression: How old were you the very first time in your life that you felt (sad, depressed/grouchy, like nothing was fun) most of the time?	mental and behaviour disorders|cognitive functioning	DEP022		Encoded Value
+CHOP:0000196	PNC_DEP023		Depression: How long did it last? (Days)	mental and behaviour disorders|cognitive functioning	DEP023		Encoded Value
+CHOP:0000197	PNC_DEP024		Depression: How long did it last? (Weeks)	mental and behaviour disorders|cognitive functioning	DEP024		Encoded Value
+CHOP:0000198	PNC_DEP025		Depression: How old were you when it ended?	mental and behaviour disorders|cognitive functioning	DEP025		Encoded Value
+CHOP:0000199	PNC_DEP026		Depression: Including the times you just told me about, how many different times in your life have you felt (sad, grouchy, like nothing was fun) most of the time?	mental and behaviour disorders|cognitive functioning	DEP026		Encoded Value
+CHOP:0000200	PNC_DEP030		Depression: How long was the longest time you felt (sad, grouchy/, like nothing was fun)?  (Days)	mental and behaviour disorders|cognitive functioning	DEP030		Encoded Value
+CHOP:0000201	PNC_DEP031		Depression: How long was the longest time you felt (sad, grouchy/, like nothing was fun)?  (Weeks)	mental and behaviour disorders|cognitive functioning	DEP031		Encoded Value
+CHOP:0000202	PNC_DEP032		Depression: How long was the longest time you felt (sad, grouchy/, like nothing was fun)?  (Months)	mental and behaviour disorders|cognitive functioning	DEP032		Encoded Value
+CHOP:0000203	PNC_DEP033		Depression: How long was the longest time you felt (sad, grouchy/, like nothing was fun)?  (Years)	mental and behaviour disorders|cognitive functioning	DEP033		Encoded Value
+CHOP:0000204	PNC_DEP034		Depression: How long was the shortest time you felt this way?  (Days)	mental and behaviour disorders|cognitive functioning	DEP034		Encoded Value
+CHOP:0000205	PNC_DEP035		Depression: How long was the shortest time you felt this way? (Weeks)	mental and behaviour disorders|cognitive functioning	DEP035		Encoded Value
+CHOP:0000206	PNC_DEP036		Depression: How long was the shortest time you felt this way? (Months)	mental and behaviour disorders|cognitive functioning	DEP036		Encoded Value
+CHOP:0000207	PNC_DEP037		Depression: How long was the shortest time you felt this way? (Years)	mental and behaviour disorders|cognitive functioning	DEP037		Encoded Value
+CHOP:0000208	PNC_DEP038		Depression: How long do the (sad, depression, grouchy, like nothing was fun) feelings usually last?  (Days)	mental and behaviour disorders|cognitive functioning	DEP038		Encoded Value
+CHOP:0000209	PNC_DEP039		Depression: How long do the (sad, depression, grouchy, like nothing was fun) feelings usually last?  (Weeks)	mental and behaviour disorders|cognitive functioning	DEP039		Encoded Value
+CHOP:0000210	PNC_DEP040		Depression: How long do the (sad, depression, grouchy, like nothing was fun) feelings usually last?  (Months)	mental and behaviour disorders|cognitive functioning	DEP040		Encoded Value
+CHOP:0000211	PNC_DEP041		Depression: How long do the (sad, depression, grouchy, like nothing was fun) feelings usually last?  (Years)	mental and behaviour disorders|cognitive functioning	DEP041		Encoded Value
+CHOP:0000212	PNC_DEP042		Depression: Have these sad feelings lasted most of the time for as long as one year?	mental and behaviour disorders|cognitive functioning	DEP042		Encoded Value
+CHOP:0000213	PNC_DEP043		Depression: Would you say that you have been (sad, depressed, grouchy, like nothing was fun) more often than not during your lifetime?	mental and behaviour disorders|cognitive functioning	DEP043		Encoded Value
+CHOP:0000214	PNC_DEP044		Depression: Did you feel (sad/ grouchy/ like nothing was fun) at certain times of the year, like in the winter, spring, summer, or fall 	mental and behaviour disorders|cognitive functioning	DEP044		Encoded Value
+CHOP:0000215	PNC_DEP050		Depression: INTERVIEWER: Is there more than one episode?If No, SKIP to next section.	mental and behaviour disorders|cognitive functioning	DEP050		Encoded Value
+CHOP:0000216	PNC_EAT001		Eating Disorder: Was there ever a time when you felt really fat or heavy, but other people said that you were too thin?  	mental and behaviour disorders|cognitive functioning	EAT001		Encoded Value
+CHOP:0000217	PNC_EAT002		Eating Disorder: At that time, did you lose a lot of weight on purpose (like you were trying to do so)?	mental and behaviour disorders|cognitive functioning	EAT002		Encoded Value
+CHOP:0000218	PNC_EAT003		Eating Disorder: Were you still very much afraid that you could become fat, even after you'd lost a lot of weight?	mental and behaviour disorders|cognitive functioning	EAT003		Encoded Value
+CHOP:0000219	PNC_EAT004		Eating Disorder: (If Female) Have you begun to have menstrual periods?	mental and behaviour disorders|cognitive functioning	EAT004		Encoded Value
+CHOP:0000220	PNC_EAT005		Eating Disorder: (If Yes) Have you ever had regular menstrual periods, meaning every month for at least six months?	mental and behaviour disorders|cognitive functioning	EAT005		Encoded Value
+CHOP:0000221	PNC_EAT006		Eating Disorder: (If Yes) Did your periods ever stop for at least 3 cycles in a row?	mental and behaviour disorders|cognitive functioning	EAT006		Encoded Value
+CHOP:0000222	PNC_EAT007		Eating Disorder: Has there been a time when your eating was out of control - you'd eat a large amount of food in a short period of time and could not stop yourself?  	mental and behaviour disorders|cognitive functioning	EAT007		Encoded Value
+CHOP:0000223	PNC_EAT008		Eating Disorder: At that time, did you ever do anything to stop yourself from gaining weight like taking pills or making yourself throw up?	mental and behaviour disorders|cognitive functioning	EAT008		Encoded Value
+CHOP:0000224	PNC_EAT009		Eating Disorder: You told me you (insert endorsed thoughts/behaviors). How much did these behaviors upset or bother you?	mental and behaviour disorders|cognitive functioning	EAT009		Encoded Value
+CHOP:0000225	PNC_EAT010		Eating Disorder: I want to know how much the behaviors you told me about have caused problems for you at home, at school or work, or with your family or friends.	mental and behaviour disorders|cognitive functioning	EAT010		Encoded Value
+CHOP:0000226	PNC_EAT011		Eating Disorder: Did you stay home from school or work because of these behaviors?	mental and behaviour disorders|cognitive functioning	EAT011		Encoded Value
+CHOP:0000227	PNC_EAT012		Eating Disorder: How many days of school/work did you miss? (lifetime)	mental and behaviour disorders|cognitive functioning	EAT012		Encoded Value
+CHOP:0000228	PNC_EAT013		Eating Disorder: How old were you the first time you had concerns about these behaviors? (Age)	mental and behaviour disorders|cognitive functioning	EAT013		Encoded Value
+CHOP:0000229	PNC_EAT013a		Eating Disorder: How old were you the first time you had these concerns about these behaviors? (Always)	mental and behaviour disorders|cognitive functioning	EAT013a		Encoded Value
+CHOP:0000230	PNC_EAT014		Eating Disorder: Do you have these concerns now?	mental and behaviour disorders|cognitive functioning	EAT014		Encoded Value
+CHOP:0000231	PNC_EAT015		Eating Disorder: How old were you the last time you had these concerns?	mental and behaviour disorders|cognitive functioning	EAT015		Encoded Value
+CHOP:0000232	PNC_GAD001		Generalized Anxiety Disorder: Have you ever been a worrier?	mental and behaviour disorders|cognitive functioning	GAD001		Encoded Value
+CHOP:0000233	PNC_GAD002		Generalized Anxiety Disorder: Did you worry a lot more than most children/people your age?	mental and behaviour disorders|cognitive functioning	GAD002		Encoded Value
+CHOP:0000234	PNC_GAD003a		Generalized Anxiety Disorder: Please look at this list and tell me if you worry a lot about: Your performance in school and/or sports	mental and behaviour disorders|cognitive functioning	GAD003a		Encoded Value
+CHOP:0000235	PNC_GAD003b		Generalized Anxiety Disorder: Please look at this list and tell me if you worry a lot about: Being on time	mental and behaviour disorders|cognitive functioning	GAD003b		Encoded Value
+CHOP:0000236	PNC_GAD003c		Generalized Anxiety Disorder: Please look at this list and tell me if you worry a lot about: Never making mistakes	mental and behaviour disorders|cognitive functioning	GAD003c		Encoded Value
+CHOP:0000237	PNC_GAD003d		Generalized Anxiety Disorder: Please look at this list and tell me if you worry a lot about: Your own health or the health of significant others	mental and behaviour disorders|cognitive functioning	GAD003d		Encoded Value
+CHOP:0000238	PNC_GAD003e		Generalized Anxiety Disorder: Please look at this list and tell me if you worry a lot about: Family situations (for example, divorce, finances)	mental and behaviour disorders|cognitive functioning	GAD003e		Encoded Value
+CHOP:0000239	PNC_GAD003f		Generalized Anxiety Disorder: Please look at this list and tell me if you worry a lot about: Things going on in the world (for example, war, terrorism, crime)?	mental and behaviour disorders|cognitive functioning	GAD003f		Encoded Value
+CHOP:0000240	PNC_GAD011		Generalized Anxiety Disorder: When you worried the most, did you worry a lot about things either before they happened (for example, starting school in the fall, taking a test, going to see a doctor) or after they happened (for example, how well you behaved or whether you did/said the right thing)? 	mental and behaviour disorders|cognitive functioning	GAD011		Encoded Value
+CHOP:0000241	PNC_GAD011a		Generalized Anxiety Disorder: When you worried the most, did you worry a lot about things before they happened (for example, starting school in the fall, taking a test, going to see a doctor)?	mental and behaviour disorders|cognitive functioning	GAD011a		Encoded Value
+CHOP:0000242	PNC_GAD011b		Generalized Anxiety Disorder: When you worried the most, did you worry a lot about things after they happened (for example, how well you behaved or whether you did/said the right thing)?	mental and behaviour disorders|cognitive functioning	GAD011b		Encoded Value
+CHOP:0000243	PNC_GAD012		Generalized Anxiety Disorder: (If GAD011 =yes) Was it hard for you to stop yourself from worrying about these things (endorsed in before/after q's)?	mental and behaviour disorders|cognitive functioning	GAD012		Encoded Value
+CHOP:0000244	PNC_GAD013		Generalized Anxiety Disorder: Has anyone said that you are a worrier or that you worry too much?	mental and behaviour disorders|cognitive functioning	GAD013		Encoded Value
+CHOP:0000245	PNC_GAD015		Generalized Anxiety Disorder: Did you feel any of the following physical symptoms when you worried the most: restlessness?	mental and behaviour disorders|cognitive functioning	GAD015		Encoded Value
+CHOP:0000246	PNC_GAD016		Generalized Anxiety Disorder: Did you feel any of the following physical symptoms when you worried the most: fatigue (feeling tired)?	mental and behaviour disorders|cognitive functioning	GAD016		Encoded Value
+CHOP:0000247	PNC_GAD017		Generalized Anxiety Disorder: Did you feel any of the following physical symptoms when you worried the most: concentration problems (trouble focusing or paying attention)?	mental and behaviour disorders|cognitive functioning	GAD017		Encoded Value
+CHOP:0000248	PNC_GAD018		Generalized Anxiety Disorder: Did you feel any of the following physical symptoms when you worried the most: irritability (feeling easily annoyed)?	mental and behaviour disorders|cognitive functioning	GAD018		Encoded Value
+CHOP:0000249	PNC_GAD019		Generalized Anxiety Disorder: Did you feel any of the following physical symptoms when you worried the most: muscle tension (feeling tense or tight muscles)?	mental and behaviour disorders|cognitive functioning	GAD019		Encoded Value
+CHOP:0000250	PNC_GAD020		Generalized Anxiety Disorder: Did you feel any of the following physical symptoms when you worried the most: sleep disturbance (trouble sleeping)?	mental and behaviour disorders|cognitive functioning	GAD020		Encoded Value
+CHOP:0000251	PNC_GAD021		Generalized Anxiety Disorder: Did you worry on more days than you didn't?	mental and behaviour disorders|cognitive functioning	GAD021		Encoded Value
+CHOP:0000252	PNC_GAD022		Generalized Anxiety Disorder: What was the longest period of time that your worrying AND (insert endorsed physical symptoms) lasted? (Days)	mental and behaviour disorders|cognitive functioning	GAD022		Encoded Value
+CHOP:0000253	PNC_GAD023		Generalized Anxiety Disorder: What was the longest period of time that your worrying AND (insert endorsed physical symptoms) lasted? (Weeks)	mental and behaviour disorders|cognitive functioning	GAD023		Encoded Value
+CHOP:0000254	PNC_GAD024		Generalized Anxiety Disorder: What was the longest period of time that your worrying AND (insert endorsed physical symptoms) lasted? (Months)	mental and behaviour disorders|cognitive functioning	GAD024		Encoded Value
+CHOP:0000255	PNC_GAD025		Generalized Anxiety Disorder: What was the longest period of time that your worrying AND (insert endorsed physical symptoms) lasted? (Years)	mental and behaviour disorders|cognitive functioning	GAD025		Encoded Value
+CHOP:0000256	PNC_GAD039		Generalized Anxiety Disorder: You told me that you (list endorsed worries). How much did having these worries upset or bother you?	mental and behaviour disorders|cognitive functioning	GAD039		Encoded Value
+CHOP:0000257	PNC_GAD040		Generalized Anxiety Disorder: How much have the worries you have told me about caused problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders|cognitive functioning	GAD040		Encoded Value
+CHOP:0000258	PNC_GAD041		Generalized Anxiety Disorder: Did you stay home from school or work because of your worry?	mental and behaviour disorders|cognitive functioning	GAD041		Encoded Value
+CHOP:0000259	PNC_GAD042		Generalized Anxiety Disorder: How many days of school or work did you miss? (lifetime)	mental and behaviour disorders|cognitive functioning	GAD042		Encoded Value
+CHOP:0000260	PNC_GAD043		Generalized Anxiety Disorder: How old were you the first time you had these worries? (Age)	mental and behaviour disorders|cognitive functioning	GAD043		Encoded Value
+CHOP:0000261	PNC_GAD043a		Generalized Anxiety Disorder: How old were you the first time you had these worries? (Always)	mental and behaviour disorders|cognitive functioning	GAD043a		Encoded Value
+CHOP:0000262	PNC_GAD044		Generalized Anxiety Disorder: Do you have these worries now?	mental and behaviour disorders|cognitive functioning	GAD044		Encoded Value
+CHOP:0000263	PNC_GAD045		Generalized Anxiety Disorder: How old were you the last time you had these worries?	mental and behaviour disorders|cognitive functioning	GAD045		Encoded Value
+CHOP:0000264	PNC_GAD060		Generalized Anxiety Disorder: Has there ever been a time when you felt nervous or scared a lot of the time?	mental and behaviour disorders|cognitive functioning	GAD060		Encoded Value
+CHOP:0000265	PNC_GAF001		Global Assessment of Functioning: Ratings Current	cognitive functioning	GAF001		Encoded Value
+CHOP:0000266	PNC_GAF002		Global Assessment of Functioning: Ratings Most severe past	cognitive functioning	GAF002		Encoded Value
+CHOP:0000267	PNC_GAF003		Global Assessment of Functioning: Ratings Lifetime	cognitive functioning	GAF003		Encoded Value
+CHOP:0000268	PNC_MAN001		Mania/ Hypomania: Have there been times when you were much more active, excited or energetic than usual, had problems sitting still, or needed to move around a lot?	mental and behaviour disorders|cognitive functioning	MAN001		Encoded Value
+CHOP:0000269	PNC_MAN002		Mania/ Hypomania: Has there ever been a time when you felt so full of energy that you couldn't stop doing things and didn't get tired?	mental and behaviour disorders|cognitive functioning	MAN002		Encoded Value
+CHOP:0000270	PNC_MAN003		Mania/ Hypomania: Has there ever been a time when you felt like you hardly needed sleep?	mental and behaviour disorders|cognitive functioning	MAN003		Encoded Value
+CHOP:0000271	PNC_MAN004		Mania/ Hypomania: Have there been times when you kept talking a lot, couldn't stop talking, talked faster than usual, had thoughts faster than usual, or had so many ideas in your head that you could hardly keep track of them?	mental and behaviour disorders|cognitive functioning	MAN004		Encoded Value
+CHOP:0000272	PNC_MAN005		Mania/ Hypomania: Have you ever had a time when you felt much more happy or excited than you usually do when there was nothing special going on?	mental and behaviour disorders|cognitive functioning	MAN005		Encoded Value
+CHOP:0000273	PNC_MAN006		Mania/ Hypomania: Have you ever had a time when you felt like you could do almost anything?	mental and behaviour disorders|cognitive functioning	MAN006		Encoded Value
+CHOP:0000274	PNC_MAN007		Mania/ Hypomania: Has there ever been a time when you felt unusually grouchy, cranky, or irritable; when the smallest things would make you really mad?	mental and behaviour disorders|cognitive functioning	MAN007		Encoded Value
+CHOP:0000275	PNC_MAN008		Mania/ Hypomania: Did other people, like parents or teachers, notice this change or worry about you? 	mental and behaviour disorders|cognitive functioning	MAN008		Encoded Value
+CHOP:0000276	PNC_MAN009		Mania/ Hypomania: Was this different from how you usually are?	mental and behaviour disorders|cognitive functioning	MAN009		Encoded Value
+CHOP:0000277	PNC_MAN010		Mania/ Hypomania: If yes, During that time/those times, how often did you feel that way?	mental and behaviour disorders|cognitive functioning	MAN010		Encoded Value
+CHOP:0000278	PNC_MAN011		Mania/ Hypomania: If yes, On the days you felt this way, how much of the day did it last?	mental and behaviour disorders|cognitive functioning	MAN011		Encoded Value
+CHOP:0000279	PNC_MAN012		Mania/ Hypomania: How many times a year?	mental and behaviour disorders|cognitive functioning	MAN012		Encoded Value
+CHOP:0000280	PNC_MAN020		Mania/ Hypomania: When did you feel the most (too happy/excited/grouchy/energetic)?	mental and behaviour disorders|cognitive functioning	MAN020		Encoded Value
+CHOP:0000281	PNC_MAN021		Mania/ Hypomania: During this time when you felt the most (too happy/excited/grouchy/energetic) did you get through school work much more easily or faster than usual?	mental and behaviour disorders|cognitive functioning	MAN021		Encoded Value
+CHOP:0000282	PNC_MAN022		Mania/ Hypomania: During this time when you felt the most (too happy/excited/grouchy/energetic) did you talk on the phone a lot more?	mental and behaviour disorders|cognitive functioning	MAN022		Encoded Value
+CHOP:0000283	PNC_MAN023		Mania/ Hypomania: During this time when you felt the most (too happy/excited/grouchy/energetic) did you spend more time with your friends?	mental and behaviour disorders|cognitive functioning	MAN023		Encoded Value
+CHOP:0000284	PNC_MAN024		Mania/ Hypomania: During this time when you felt the most (too happy/excited/grouchy/energetic) did you go out more?	mental and behaviour disorders|cognitive functioning	MAN024		Encoded Value
+CHOP:0000285	PNC_MAN025		Mania/ Hypomania: During this time when you felt the most (too happy/excited/grouchy/energetic) did you do more physical activities, like exercising or playing sports?	mental and behaviour disorders|cognitive functioning	MAN025		Encoded Value
+CHOP:0000286	PNC_MAN026		Mania/ Hypomania: During this time when you felt the most (too happy/excited/grouchy/energetic) did you become more interested in sex or more sexually active?	mental and behaviour disorders|cognitive functioning	MAN026		Encoded Value
+CHOP:0000287	PNC_MAN030		Mania/ Hypomania: How much did your feeling (too happy/excited/grouchy/energetic) upset or bother you?	mental and behaviour disorders|cognitive functioning	MAN030		Encoded Value
+CHOP:0000288	PNC_MAN040		Mania/ Hypomania: How much did the feeling (too happy/excited/grouchy/energetic) you told me about cause problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders|cognitive functioning	MAN040		Encoded Value
+CHOP:0000289	PNC_MAN041		Mania/ Hypomania: Did you stay home from school or work because of the way you were feeling?	mental and behaviour disorders|cognitive functioning	MAN041		Encoded Value
+CHOP:0000290	PNC_MAN042		Mania/ Hypomania: How many days of school or work did you miss? (episode)	mental and behaviour disorders|cognitive functioning	MAN042		Encoded Value
+CHOP:0000291	PNC_MAN043		Mania/ Hypomania: Have there been other times when you felt (list symptoms)?	mental and behaviour disorders|cognitive functioning	MAN043		Encoded Value
+CHOP:0000292	PNC_MAN044		Mania/ Hypomania: How old were you when this happened for the very first time?	mental and behaviour disorders|cognitive functioning	MAN044		Encoded Value
+CHOP:0000293	PNC_MAN045		Mania/ Hypomania: How long did it last then? (Days)	mental and behaviour disorders|cognitive functioning	MAN045		Encoded Value
+CHOP:0000294	PNC_MAN046		Mania/ Hypomania: How long did it last then? (Weeks)	mental and behaviour disorders|cognitive functioning	MAN046		Encoded Value
+CHOP:0000295	PNC_MAN047		Mania/ Hypomania: How long did it last then? (Months)	mental and behaviour disorders|cognitive functioning	MAN047		Encoded Value
+CHOP:0000296	PNC_MAN048		Mania/ Hypomania: How long did it last then? (Years)	mental and behaviour disorders|cognitive functioning	MAN048		Encoded Value
+CHOP:0000297	PNC_MAN049		Mania/ Hypomania: How many times have you felt this way in your lifetime?	mental and behaviour disorders|cognitive functioning	MAN049		Encoded Value
+CHOP:0000298	PNC_MAN050		Mania/ Hypomania: What is the most number of episodes you've had in one year?	mental and behaviour disorders|cognitive functioning	MAN050		Encoded Value
+CHOP:0000299	PNC_MAN051		Mania/ Hypomania: How long on average did each of these episodes typically last during that year? (Days)	mental and behaviour disorders|cognitive functioning	MAN051		Encoded Value
+CHOP:0000300	PNC_MAN052		Mania/ Hypomania: How long on average did each of these episodes typically last during that year? (Weeks)	mental and behaviour disorders|cognitive functioning	MAN052		Encoded Value
+CHOP:0000301	PNC_MAN053		Mania/ Hypomania: How long on average did each of these episodes typically last during that year? (Months)	mental and behaviour disorders|cognitive functioning	MAN053		Encoded Value
+CHOP:0000302	PNC_MAN054		Mania/ Hypomania:How long on average did each of these episodes typically last during that year? (Years)	mental and behaviour disorders|cognitive functioning	MAN054		Encoded Value
+CHOP:0000303	PNC_MAN055		Mania/ Hypomania: How long was the longest episode? (Days)	mental and behaviour disorders|cognitive functioning	MAN055		Encoded Value
+CHOP:0000304	PNC_MAN056		Mania/ Hypomania: How long was the longest episode? (Weeks)	mental and behaviour disorders|cognitive functioning	MAN056		Encoded Value
+CHOP:0000305	PNC_MAN057		Mania/ Hypomania: How long was the longest episode? (Months)	mental and behaviour disorders|cognitive functioning	MAN057		Encoded Value
+CHOP:0000306	PNC_MAN058		Mania/ Hypomania: How long was the longest episode? (Years)	mental and behaviour disorders|cognitive functioning	MAN058		Encoded Value
+CHOP:0000307	PNC_MAN059		Mania/ Hypomania: Would you say that you have felt this (list participant's endorsed symptoms) more often than not during your lifetime?	mental and behaviour disorders|cognitive functioning	MAN059		Encoded Value
+CHOP:0000308	PNC_MAN070		Mania/ Hypomania: How long was the shortest episode?  (Days)	mental and behaviour disorders|cognitive functioning	MAN070		Encoded Value
+CHOP:0000309	PNC_MAN071		Mania/ Hypomania: How long was the shortest episode? (Weeks)	mental and behaviour disorders|cognitive functioning	MAN071		Encoded Value
+CHOP:0000310	PNC_MAN072		Mania/ Hypomania: How long was the shortest episode? (Months)	mental and behaviour disorders|cognitive functioning	MAN072		Encoded Value
+CHOP:0000311	PNC_MAN073		Mania/ Hypomania: How long was the shortest episode? (Years)	mental and behaviour disorders|cognitive functioning	MAN073		Encoded Value
+CHOP:0000312	PNC_MAN074		Mania/ Hypomania: How long does a typical episode last? (Days)	mental and behaviour disorders|cognitive functioning	MAN074		Encoded Value
+CHOP:0000313	PNC_MAN075		Mania/ Hypomania: How long does a typical episode last? (Weeks)	mental and behaviour disorders|cognitive functioning	MAN075		Encoded Value
+CHOP:0000314	PNC_MAN076		Mania/ Hypomania: How long does a typical episode last? (Months)	mental and behaviour disorders|cognitive functioning	MAN076		Encoded Value
+CHOP:0000315	PNC_MAN077		Mania/ Hypomania: How long does a typical episode last? (Years)	mental and behaviour disorders|cognitive functioning	MAN077		Encoded Value
+CHOP:0000316	PNC_MAN080		Mania/ Hypomania: Did the periods of these feelings tend to begin in any particular season? 	mental and behaviour disorders|cognitive functioning	MAN080		Integer
+CHOP:0000317	PNC_MED001		Medical: Height: ft.	height	MED001		Integer
+CHOP:0000318	PNC_MED002		Medical: Height: in.	height	MED002		Integer
+CHOP:0000319	PNC_MED003		Medical: Weight: lb.	weight	MED003		Encoded Value
+CHOP:0000320	PNC_MED070		Childhood: Was your birth (that is, while your mom was carrying you, or the time of your delivery) abnormal in any way? This includes premature or overdue births.	life stage/time point	MED070		Encoded Value
+CHOP:0000321	PNC_MED072		Childhood: Was any part of your development abnormal in any way? For example, did you walk or talk later than other children?	life stage/time point	MED072		Encoded Value
+CHOP:0000322	PNC_MED074		Migraine & Recurrent Headaches: Have you ever had headaches?  	signs and symptoms	MED074		Encoded Value
+CHOP:0000323	PNC_MED075		Migraine & Recurrent Headaches: Did these headaches occur only while you were sick or right after an illness?	signs and symptoms	MED075		Encoded Value
+CHOP:0000324	PNC_MED076		Migraine & Recurrent Headaches: During headaches, does light or noise bother you a lot more than when you don't have a headache?	signs and symptoms	MED076		Encoded Value
+CHOP:0000325	PNC_MED077		Migraine & Recurrent Headaches: During headaches, do you feel sick to your stomach?	signs and symptoms	MED077		Encoded Value
+CHOP:0000326	PNC_MED078		Migraine & Recurrent Headaches: Is the headache pain ever on only one side of your head? 	signs and symptoms	MED078		Encoded Value
+CHOP:0000327	PNC_MED079		Migraine & Recurrent Headaches: Does the pain ever throb or come in pulses during your headaches?	signs and symptoms	MED079		Encoded Value
+CHOP:0000328	PNC_MED080		Migraine & Recurrent Headaches: Do your headaches make it hard for you to do your school work or other things you want(s) to do?	signs and symptoms	MED080		Encoded Value
+CHOP:0000329	PNC_MED081		Migraine & Recurrent Headaches: Did you ever see a doctor for your headaches?	signs and symptoms	MED081		Encoded Value
+CHOP:0000330	PNC_MED082		Migraine & Recurrent Headaches: (If yes), Did the doctor say that you had a migraine?	signs and symptoms	MED082		Encoded Value
+CHOP:0000331	PNC_MED083		Migraine & Recurrent Headaches: Did you ever get treated for a migraine?	signs and symptoms	MED083		Encoded Value
+CHOP:0000332	PNC_MED116		Epilepsy/Convulsions/Seizures: Have you ever had convulsions or seizures?	signs and symptoms	MED116		Encoded Value
+CHOP:0000333	PNC_MED117		Epilepsy/Convulsions/Seizures: Have you ever been diagnosed with epilepsy?	signs and symptoms	MED117		Encoded Value
+CHOP:0000334	PNC_MED118		Epilepsy/Convulsions/Seizures: Have you ever been treated for epilepsy, convulsions or seizures?	signs and symptoms	MED118		Encoded Value
+CHOP:0000335	PNC_MED119		Epilepsy/Convulsions/Seizures: How many times have you had a seizure?	signs and symptoms	MED119		Encoded Value
+CHOP:0000336	PNC_MED120		Epilepsy/Convulsions/Seizures: How old were you when you last had a seizure?	signs and symptoms	MED120		Encoded Value
+CHOP:0000337	PNC_MED121		Epilepsy/Convulsions/Seizures: Was a cause found for the seizure(s)?	signs and symptoms	MED121		Encoded Value
+CHOP:0000338	PNC_MED124		Epilepsy/Convulsions/Seizures: Were these seizures only during a fever?	signs and symptoms	MED124		Encoded Value
+CHOP:0000339	PNC_MED125		Serious Head Injury: Have you ever had a serious head injury? (that is, traumatic injury, impact to face or head causing their brain to be jarred)	injuries	MED125		Encoded Value
+CHOP:0000340	PNC_MED126		Serious Head Injury: How many times have you had a serious head injury?	injuries	MED126		Encoded Value
+CHOP:0000341	PNC_MED127		Serious Head Injury: Did you ever lose consciousness from a head injury?	injuries	MED127		Encoded Value
+CHOP:0000342	PNC_MED128		Serious Head Injury: For how long? (Minutes)	injuries	MED128		Encoded Value
+CHOP:0000343	PNC_MED129		Serious Head Injury: For how long? (Hours)	injuries	MED129		Encoded Value
+CHOP:0000344	PNC_MED130		Serious Head Injury: For how long? (Days)	injuries	MED130		Encoded Value
+CHOP:0000345	PNC_MED131		Serious Head Injury: How old were you when you first lost consciousness from a head injury?	injuries	MED131		Encoded Value
+CHOP:0000346	PNC_MED132		Serious Head Injury: Did you fracture or break your skull?	injuries	MED132		Encoded Value
+CHOP:0000347	PNC_MED133		Serious Head Injury: Did you have surgery to the head because of this injury?	injuries	MED133		Encoded Value
+CHOP:0000348	PNC_MED134		Serious Head Injury: Did you have amnesia or memory loss?	injuries	MED134		Encoded Value
+CHOP:0000349	PNC_MED135		Serious Head Injury: How long did it last? (Minutes)	injuries	MED135		Encoded Value
+CHOP:0000350	PNC_MED136		Serious Head Injury: How long did it last? (Hours)	injuries	MED136		Encoded Value
+CHOP:0000351	PNC_MED137		Serious Head Injury: How long did it last? (Days)	injuries	MED137		Encoded Value
+CHOP:0000352	PNC_MED138		Serious Head Injury: After this head injury, did you start getting headaches that you had not had before?	injuries	MED138		Encoded Value
+CHOP:0000353	PNC_MED139		Serious Head Injury: Did you have memory loss after the headache?	injuries	MED139		Encoded Value
+CHOP:0000354	PNC_MED140		Serious Head Injury: How many times?	injuries	MED140		Encoded Value
+CHOP:0000355	PNC_MED141		Serious Head Injury: How long did the memory loss last? (Days)	injuries	MED141		Encoded Value
+CHOP:0000356	PNC_MED142		Serious Head Injury: How long did the memory loss last? (Weeks)	injuries	MED142		Encoded Value
+CHOP:0000357	PNC_MED143		Serious Head Injury: How long did the memory loss last? (Months)	injuries	MED143		Encoded Value
+CHOP:0000358	PNC_MED144		HSerious Head Injury: How old were you the first time?	injuries	MED144		Encoded Value
+CHOP:0000359	PNC_MED145		Other Neurological: Have you ever been unconscious for any other reason? (Not including general anesthesia, seizures, or head injuries mentioned above)	signs and symptoms	MED145		Encoded Value
+CHOP:0000360	PNC_MED147		Other Neurological: Hospitalization (overnight)?	hospitalizations	MED147		Encoded Value
+CHOP:0000361	PNC_MED148		Other Neurological: Age	age/birthdate	MED148		Encoded Value
+CHOP:0000362	PNC_MED150		Other Neurological: Hospitalization (overnight)?	hospitalizations	MED150		Encoded Value
+CHOP:0000363	PNC_MED151		Other Neurological: Age	age/birthdate	MED151		Encoded Value
+CHOP:0000364	PNC_MED153		Other Neurological: Hospitalization (overnight)?	hospitalizations	MED153		Encoded Value
+CHOP:0000365	PNC_MED154		Other Neurological: Age	age/birthdate	MED154		Encoded Value
+CHOP:0000366	PNC_MED236		Birth defects - Do/did you have this problem?	congenital and genetic disorders	MED236		Encoded Value
+CHOP:0000367	PNC_MED238		Birth defects - Do/did you receive treatment from a doctor/physician?	congenital and genetic disorders	MED238		Encoded Value
+CHOP:0000368	PNC_MED241		Birth defects - Is this a current condition?	congenital and genetic disorders	MED241		Encoded Value
+CHOP:0000369	PNC_MED242		Lead poisoning - Do/did you have this problem?	poisoning	MED242		Encoded Value
+CHOP:0000370	PNC_MED244		Lead poisoning - Do/did you receive treatment from a doctor/physician?	poisoning	MED244		Encoded Value
+CHOP:0000371	PNC_MED247		Lead poisoning - Is this a current condition?	poisoning	MED247		Encoded Value
+CHOP:0000372	PNC_MED248		Speech problem - Do/did you have this problem?	signs and symptoms	MED248		Encoded Value
+CHOP:0000373	PNC_MED250		Speech problem - Do/did you receive treatment from a doctor/physician?	signs and symptoms	MED250		Encoded Value
+CHOP:0000374	PNC_MED253		Speech problem - Is this a current condition?	signs and symptoms	MED253		Encoded Value
+CHOP:0000375	PNC_MED254		Vocal Tics (that is, noises or words that you made without being able to control them) - Do/did you have this problem?	signs and symptoms	MED254		Encoded Value
+CHOP:0000376	PNC_MED256		Vocal Tics (that is, noises or words that you made without being able to control them) - Do/did you receive treatment from a doctor/physician?	signs and symptoms	MED256		Encoded Value
+CHOP:0000377	PNC_MED259		Vocal Tics (that is, noises or words that you made without being able to control them) - Is this a current condition?	signs and symptoms	MED259		Encoded Value
+CHOP:0000378	PNC_MED260		Motor Tics (that is, sudden jerks in your face or parts of your body that you weren't able to control) - Do/did you have this problem?	signs and symptoms	MED260		Encoded Value
+CHOP:0000379	PNC_MED262		Motor Tics (that is, sudden jerks in your face or parts of your body that you weren't able to control) - Do/did you receive treatment from a doctor/physician?	signs and symptoms	MED262		Encoded Value
+CHOP:0000380	PNC_MED265		Motor Tics (that is, sudden jerks in your face or parts of your body that you weren't able to control) - Is this a current condition?	signs and symptoms	MED265		Encoded Value
+CHOP:0000381	PNC_MED267		Reading problem (for example, dyslexia) - Do/did you have this problem?	signs and symptoms	MED267		Encoded Value
+CHOP:0000382	PNC_MED269		Reading problem (for example, dyslexia) - Do/did you receive treatment from a doctor/physician?	signs and symptoms	MED269		Encoded Value
+CHOP:0000383	PNC_MED272		Reading problem (for example, dyslexia) - Is this a current condition?	signs and symptoms	MED272		Encoded Value
+CHOP:0000384	PNC_MED273		Learning problem  - Do/did you have this problem?	signs and symptoms	MED273		Encoded Value
+CHOP:0000385	PNC_MED275		Learning problem  - Do/did you receive treatment from a doctor/physician?	signs and symptoms	MED275		Encoded Value
+CHOP:0000386	PNC_MED278		Learning problem  - Is this a current condition?	signs and symptoms	MED278		Encoded Value
+CHOP:0000387	PNC_MED291		Autism or Pervasive Developmental Disorder - Do/did you have this problem?	mental and behaviour disorders	MED291		Encoded Value
+CHOP:0000388	PNC_MED293		Autism or Pervasive Developmental Disorder - Do/did you receive treatment from a doctor/physician?	mental and behaviour disorders	MED293		Encoded Value
+CHOP:0000389	PNC_MED296		Autism or Pervasive Developmental Disorder - Is this a current condition?	mental and behaviour disorders	MED296		Encoded Value
+CHOP:0000390	PNC_MED297		Sleepwalking - Do/did you have this problem?	signs and symptoms|sleep history	MED297		Encoded Value
+CHOP:0000391	PNC_MED299		Sleepwalking - Do/did you receive treatment from a doctor/physician?	signs and symptoms|sleep history	MED299		Encoded Value
+CHOP:0000392	PNC_MED302		Sleepwalking - Is this a current condition?	signs and symptoms|sleep history	MED302		Encoded Value
+CHOP:0000393	PNC_MED303		Bedwetting (after 5 years old) - Do/did you have this problem?	signs and symptoms|sleep history	MED303		Encoded Value
+CHOP:0000394	PNC_MED305		Bedwetting (after 5 years old) - Do/did you receive treatment from a doctor/physician?	signs and symptoms|sleep history	MED305		Encoded Value
+CHOP:0000395	PNC_MED308		Bedwetting (after 5 years old) - Is this a current condition?	signs and symptoms|sleep history	MED308		Encoded Value
+CHOP:0000396	PNC_MED598		Corrected Vision  - Do/did you have this problem?	visual system diseases	MED598		Encoded Value
+CHOP:0000397	PNC_MED604		Near sightedness (need glasses for distance) - Do/did you have this problem?	visual system diseases	MED604		Encoded Value
+CHOP:0000398	PNC_MED606		Near sightedness (need glasses for distance) - Did you receive treatment from a doctor/physician?	visual system diseases	MED606		Encoded Value
+CHOP:0000399	PNC_MED609		Near sightedness (need glasses for distance) - Is this a current condition?	visual system diseases	MED609		Encoded Value
+CHOP:0000400	PNC_MED610		Far sightedness (need glasses for reading) - Do/did you have this problem?	visual system diseases	MED610		Encoded Value
+CHOP:0000401	PNC_MED612		Far sightedness (need glasses for reading) - Did you receive treatment from a doctor/physician?	visual system diseases	MED612		Encoded Value
+CHOP:0000402	PNC_MED615		Far sightedness (need glasses for reading) - Is this a current condition?	visual system diseases	MED615		Encoded Value
+CHOP:0000403	PNC_MED616		Astigmatism - Do/did you have this problem?	visual system diseases	MED616		Encoded Value
+CHOP:0000404	PNC_MED618		Astigmatism - Did you receive treatment from a doctor/physician?	visual system diseases	MED618		Encoded Value
+CHOP:0000405	PNC_MED621		Astigmatism - Is this a current condition?	visual system diseases	MED621		Encoded Value
+CHOP:0000406	PNC_MED622		Other Vision problems (for example glaucoma, cataracts) - Do/did you have this problem?	visual system diseases	MED622		Encoded Value
+CHOP:0000407	PNC_MED624		Other Vision problems (for example glaucoma, cataracts) - Did you receive treatment from a doctor/physician?	visual system diseases	MED624		Encoded Value
+CHOP:0000408	PNC_MED627		Other Vision problems (for example glaucoma, cataracts) - Is this a current condition?	visual system diseases	MED627		Encoded Value
+CHOP:0000409	PNC_MED628		Hearing Problems - Do/did you have this problem?	diseases of the ear, nose, and/or throat	MED628		Encoded Value
+CHOP:0000410	PNC_MED634		Hearing Problems -Mild - Do/did you have this problem?	diseases of the ear, nose, and/or throat	MED634		Encoded Value
+CHOP:0000411	PNC_MED636		Hearing Problems -Mild - Did you receive treatment from a doctor/physician?	diseases of the ear, nose, and/or throat	MED636		Encoded Value
+CHOP:0000412	PNC_MED639		Hearing Problems -Mild - Is this a current condition?	diseases of the ear, nose, and/or throat	MED639		Encoded Value
+CHOP:0000413	PNC_MED640		Hearing Problems -Severe - Do/did you have this problem?	diseases of the ear, nose, and/or throat	MED640		Encoded Value
+CHOP:0000414	PNC_MED642		Hearing Problems -Severe - Did you receive treatment from a doctor/physician?	diseases of the ear, nose, and/or throat	MED642		Encoded Value
+CHOP:0000415	PNC_MED645		Hearing Problems -Severe - Is this a current condition?	diseases of the ear, nose, and/or throat	MED645		Encoded Value
+CHOP:0000416	PNC_MED646		Hearing Problems -Congenital - Do/did you have this problem?	diseases of the ear, nose, and/or throat	MED646		Encoded Value
+CHOP:0000417	PNC_MED648		Hearing Problems -Congenital - Did you receive treatment from a doctor/physician?	diseases of the ear, nose, and/or throat	MED648		Encoded Value
+CHOP:0000418	PNC_MED651		Hearing Problems -Congenital - Is this a current condition?	diseases of the ear, nose, and/or throat	MED651		Encoded Value
+CHOP:0000419	PNC_MED652		Hearing Problems -Acquired Deafness - Do/did you have this problem?	diseases of the ear, nose, and/or throat	MED652		Encoded Value
+CHOP:0000420	PNC_MED654		Hearing Problems -Acquired Deafness - Did you receive treatment from a doctor/physician?	diseases of the ear, nose, and/or throat	MED654		Encoded Value
+CHOP:0000421	PNC_MED657		Hearing Problems -Acquired Deafness - Is this a current condition?	diseases of the ear, nose, and/or throat	MED657		Encoded Value
+CHOP:0000422	PNC_MED714		Huntington's - Do/did you have this problem?	nervous system disorders	MED714		Encoded Value
+CHOP:0000423	PNC_MED716		Huntington's - Did you receive treatment from a doctor/physician?	nervous system disorders	MED716		Encoded Value
+CHOP:0000424	PNC_MED719		Huntington's - Is this a current condition?	nervous system disorders	MED719		Encoded Value
+CHOP:0000425	PNC_MED732		Meningitis (inflammation of brain covering) - Do/did you have this problem?	infectious diseases	MED732		Encoded Value
+CHOP:0000426	PNC_MED734		Meningitis (inflammation of brain covering) - Did you receive treatment from a doctor/physician?	infectious diseases	MED734		Encoded Value
+CHOP:0000427	PNC_MED737		Meningitis (inflammation of brain covering) - Is this a current condition?	infectious diseases	MED737		Encoded Value
+CHOP:0000428	PNC_MED738		Motion Sickness, 5 or more episodes (nausea, dizziness) - Do/did you have this problem?	signs and symptoms	MED738		Encoded Value
+CHOP:0000429	PNC_MED740		Motion Sickness, 5 or more episodes (nausea, dizziness) - Did you receive treatment from a doctor/physician?	signs and symptoms	MED740		Encoded Value
+CHOP:0000430	PNC_MED743		Motion Sickness, 5 or more episodes (nausea, dizziness) - Is this a current condition?	signs and symptoms	MED743		Encoded Value
+CHOP:0000431	PNC_MED744		Multiple Sclerosis - Do/did you have this problem?	immune system diseases|nervous system disorders	MED744		Encoded Value
+CHOP:0000432	PNC_MED746		Multiple Sclerosis - Did you receive treatment from a doctor/physician?	immune system diseases|nervous system disorders	MED746		Encoded Value
+CHOP:0000433	PNC_MED749		Multiple Sclerosis - Is this a current condition?	immune system diseases|nervous system disorders	MED749		Encoded Value
+CHOP:0000434	PNC_MED750		Other Neurological/_x000B_Neuromuscular problems - Do/did you have this problem?	nervous system disorders	MED750		Encoded Value
+CHOP:0000435	PNC_MED752		Other Neurological/_x000B_Neuromuscular problems - Did you receive treatment from a doctor/physician?	nervous system disorders	MED752		Encoded Value
+CHOP:0000436	PNC_MED755		Other Neurological/_x000B_Neuromuscular problems - Is this a current condition?	nervous system disorders	MED755		Encoded Value
+CHOP:0000437	PNC_MED800		Do you or did you have any of the following problems? - Allergies - an allergic reaction, sensitivity to food, insects, hay fever (Has Problem?)	immune system diseases	MED800		Encoded Value
+CHOP:0000438	PNC_MED800c		Is it (allergy problems) current (within last 6 months)?	immune system diseases	MED800c		Encoded Value
+CHOP:0000439	PNC_MED801		Do you or did you have any of the following problems? - Cardiovascular - heart and blood vessels (Has Problem?)	cardiovascular diseases	MED801		Encoded Value
+CHOP:0000440	PNC_MED801c		Is it (cardiovascular problems) current (within last 6 months)?	cardiovascular diseases	MED801c		Encoded Value
+CHOP:0000441	PNC_MED802		Do you or did you have any of the following problems? - Endocrinology - hormone disease (Has Problem?)	endocrine system diseases	MED802		Encoded Value
+CHOP:0000442	PNC_MED802c		Is it (endocrinology problems) current (within last 6 months)?	endocrine system diseases	MED802c		Encoded Value
+CHOP:0000443	PNC_MED803		Do you or did you have any of the following problems? - Ear/Nose/Throat (ENT) (Has Problem?)	diseases of the ear, nose, and/or throat	MED803		Encoded Value
+CHOP:0000444	PNC_MED803c		Is it (ear/nose/throat problems) current (within last 6 months)?	diseases of the ear, nose, and/or throat	MED803c		Encoded Value
+CHOP:0000445	PNC_MED804		Do you or did you have any of the following problems? - Gastrointestinal - digestive system, gut (Has Problem?)	digestive system diseases	MED804		Encoded Value
+CHOP:0000446	PNC_MED804c		Is it (gastrointestinal problems) current (within last 6 months)?	digestive system diseases	MED804c		Encoded Value
+CHOP:0000447	PNC_MED805		Do you or did you have any of the following problems? - Genetics Disorder - an illness caused by abnormalities in genes or chromosomes (Has Problem?)	congenital and genetic disorders	MED805		Encoded Value
+CHOP:0000448	PNC_MED805c		Is it (genetics disorder) current (within last 6 months)?	congenital and genetic disorders	MED805c		Encoded Value
+CHOP:0000449	PNC_MED806		Do you or did you have any of the following problems? - Hematology - blood disease (Has Problem?)	blood-related disorders	MED806		Encoded Value
+CHOP:0000450	PNC_MED806c		Is it (hematology condition) current (within last 6 months)?	blood-related disorders	MED806c		Encoded Value
+CHOP:0000451	PNC_MED807		Do you or did you have any of the following problems? - Hepatology - liver disease (Has Problem?)	digestive system diseases	MED807		Encoded Value
+CHOP:0000452	PNC_MED807c		Is it (hepatology condition) current (within last 6 months)?	digestive system diseases	MED807c		Encoded Value
+CHOP:0000453	PNC_MED808		Do you or did you have any of the following problems? - Immunology - disorder of the immune system that fights disease (Has Problem?)	immune system diseases	MED808		Encoded Value
+CHOP:0000454	PNC_MED808c		Is it (immunology condition) current (within last 6 months)?	immune system diseases	MED808c		Encoded Value
+CHOP:0000455	PNC_MED809		Do you or did you have any of the following problems? - Infectious Disease - an illness from a virus, bacteria (Has Problem?)	infectious diseases	MED809		Encoded Value
+CHOP:0000456	PNC_MED809c		Is it (infectious disease) current (within last 6 months)?	infectious diseases	MED809c		Encoded Value
+CHOP:0000457	PNC_MED810		Do you or did you have any of the following problems? - Metabolic - disease when the body cannot process substances normally (Has Problem?)	endocrine system diseases	MED810		Encoded Value
+CHOP:0000458	PNC_MED810c		Is it (metabolic disease) current (within last 6 months)?	endocrine system diseases	MED810c		Encoded Value
+CHOP:0000459	PNC_MED811		Do you or did you have any of the following problems? - Nephrology - kidney disease (Has Problem?)	urinary system diseases	MED811		Encoded Value
+CHOP:0000460	PNC_MED811c		Is it (nephrology problems) current (within last 6 months)?	urinary system diseases	MED811c		Encoded Value
+CHOP:0000461	PNC_MED812		Do you or did you have any of the following problems? - Oncology - cancer (Has Problem?)	cancer	MED812		Encoded Value
+CHOP:0000462	PNC_MED812c		Is it (oncology condition) current (within last 6 months)?	cancer	MED812c		Encoded Value
+CHOP:0000463	PNC_MED813		Do you or did you have any of the following problems? - Orthopedic - musculoskeletal system, bones in arms, legs, back (Has Problem?)	musculoskeletal system diseases	MED813		Encoded Value
+CHOP:0000464	PNC_MED813c		Is it (orthopedic condition) current (within last 6 months)?	musculoskeletal system diseases	MED813c		Encoded Value
+CHOP:0000465	PNC_MED814		Do you or did you have any of the following problems? - Plastics - surgery to change the way you look (Has Problem?)	surgical interventions	MED814		Encoded Value
+CHOP:0000466	PNC_MED814c		Is it (plastics problems) current (within last 6 months)?	surgical interventions	MED814c		Encoded Value
+CHOP:0000467	PNC_MED815		Do you or did you have any of the following problems? - Pulmonary - lung disease (Has Problem?)	respiratory system diseases	MED815		Encoded Value
+CHOP:0000468	PNC_MED815c		Is it (pulmonary condition) current (within last 6 months)?	respiratory system diseases	MED815c		Encoded Value
+CHOP:0000469	PNC_MED816		Do you or did you have any of the following problems? - Rheumatology - joint disease (Has Problem?)	musculoskeletal system diseases	MED816		Encoded Value
+CHOP:0000470	PNC_MED816c		Is it (rheumatology condition) current (within last 6 months)?	musculoskeletal system diseases	MED816c		Encoded Value
+CHOP:0000471	PNC_MED817		Do you or did you have any of the following problems? - Urology/Gynecology - problems of the urinary tract or genitals (Has Problem?)	urinary system diseases	MED817		Encoded Value
+CHOP:0000472	PNC_MED817c		Is it (urology/gynecology conditions) current (within last 6 months)?	urinary system diseases	MED817c		Encoded Value
+CHOP:0000473	PNC_OCD001		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as concern with harming others/self?	mental and behaviour disorders	OCD001		Encoded Value
+CHOP:0000474	PNC_OCD002		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as pictures of violent things?	mental and behaviour disorders	OCD002		Encoded Value
+CHOP:0000475	PNC_OCD003		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as thoughts about contamination/germs/illness?	mental and behaviour disorders	OCD003		Encoded Value
+CHOP:0000476	PNC_OCD004		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as fear that you would do something/say something bad without intending to?	mental and behaviour disorders	OCD004		Encoded Value
+CHOP:0000477	PNC_OCD005		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as feelings that bad things that happened were your fault?	mental and behaviour disorders	OCD005		Encoded Value
+CHOP:0000478	PNC_OCD006		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as forbidden/bad thoughts?	mental and behaviour disorders	OCD006		Encoded Value
+CHOP:0000479	PNC_OCD007		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as need for symmetry/exactness?	mental and behaviour disorders	OCD007		Encoded Value
+CHOP:0000480	PNC_OCD008		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away, such as religious thoughts?	mental and behaviour disorders	OCD008		Encoded Value
+CHOP:0000481	PNC_OCD009		Obsessive Compulsive Disorder: Did these thoughts continue to bother you no matter how hard you tried to get rid of them or ignore them?	mental and behaviour disorders	OCD009		Encoded Value
+CHOP:0000482	PNC_OCD010		Obsessive Compulsive Disorder: Did you try not to think about (thoughts), try to keep them out of your head, or try to push the thoughts away?	mental and behaviour disorders	OCD010		Encoded Value
+CHOP:0000483	PNC_OCD011		Obsessive Compulsive Disorder: Have you ever had to do something over and over again - that would have made you feel really nervous if you couldn't do it, like: cleaning or washing (for example, your hands, house)?	mental and behaviour disorders	OCD011		Encoded Value
+CHOP:0000484	PNC_OCD012		Obsessive Compulsive Disorder: Have you ever had to do something over and over again - that would have made you feel really nervous if you couldn't do it, like: counting?	mental and behaviour disorders	OCD012		Encoded Value
+CHOP:0000485	PNC_OCD013		Obsessive Compulsive Disorder: Have you ever had to do something over and over again - that would have made you feel really nervous if you couldn't do it, like: checking (for example, doors, locks, ovens)?	mental and behaviour disorders	OCD013		Encoded Value
+CHOP:0000486	PNC_OCD014		Obsessive Compulsive Disorder: Have you ever had to do something over and over again - that would have made you feel really nervous if you couldn't do it, like: getting dressed over and over again?	mental and behaviour disorders	OCD014		Encoded Value
+CHOP:0000487	PNC_OCD015		Obsessive Compulsive Disorder: Have you ever had to do something over and over again - that would have made you feel really nervous if you couldn't do it, like: going in and out a door over and over again?	mental and behaviour disorders	OCD015		Encoded Value
+CHOP:0000488	PNC_OCD016		Obsessive Compulsive Disorder: Have you ever had to do something over and over again - that would have made you feel really nervous if you couldn't do it, like: ordering or arranging things?	mental and behaviour disorders	OCD016		Encoded Value
+CHOP:0000489	PNC_OCD017		Obsessive Compulsive Disorder: Have you ever had to do something over and over again - that would have made you feel really nervous if you couldn't do it, like: doing things over and over again at bedtime, like arranging the pillows, sheets, or other things?	mental and behaviour disorders	OCD017		Encoded Value
+CHOP:0000490	PNC_OCD018		Obsessive Compulsive Disorder: Have you ever saved up so many things that people complained or they got in the way?	mental and behaviour disorders	OCD018		Encoded Value
+CHOP:0000491	PNC_OCD019		Obsessive Compulsive Disorder: Do you feel the need to do things just right (like they have to be perfect)?	mental and behaviour disorders	OCD019		Encoded Value
+CHOP:0000492	PNC_OCD020		Obsessive Compulsive Disorder: Thinking about all of these thoughts and behaviors, what is the longest period that you have had these thoughts or behaviors? (Days)	mental and behaviour disorders	OCD020		Encoded Value
+CHOP:0000493	PNC_OCD021		Obsessive Compulsive Disorder: Thinking about all of these thoughts and behaviors, what is the longest period of time that you have had these thoughts or behaviors? (Weeks)	mental and behaviour disorders	OCD021		Encoded Value
+CHOP:0000494	PNC_OCD022		Obsessive Compulsive Disorder: Thinking about all of these thoughts and behaviors, what is the longest period of time that you have had these thoughts or behaviors? (Months)	mental and behaviour disorders	OCD022		Encoded Value
+CHOP:0000495	PNC_OCD023		Obsessive Compulsive Disorder: Thinking about all of these thoughts and behaviors, what is the longest period of time that you have had these thoughts or behaviors? (Years)	mental and behaviour disorders	OCD023		Encoded Value
+CHOP:0000496	PNC_OCD024		Obsessive Compulsive Disorder: Did they prevent you from doing things you normally would do?	mental and behaviour disorders	OCD024		Encoded Value
+CHOP:0000497	PNC_OCD025		Obsessive Compulsive Disorder: Did having these thoughts or behaviors bother you a lot?	mental and behaviour disorders	OCD025		Encoded Value
+CHOP:0000498	PNC_OCD026		Obsessive Compulsive Disorder: About how much of a typical day did you spend thinking these thoughts or engaging in these behaviors? (Minutes)	mental and behaviour disorders	OCD026		Encoded Value
+CHOP:0000499	PNC_OCD027		Obsessive Compulsive Disorder: About how much of a typical day did you spend thinking these thoughts or engaging in these behaviors? (Hours)	mental and behaviour disorders	OCD027		Encoded Value
+CHOP:0000500	PNC_OCD028		Obsessive Compulsive Disorder: For how long did you have these thoughts/behaviors?  (Days)	mental and behaviour disorders	OCD028		Encoded Value
+CHOP:0000501	PNC_OCD029		Obsessive Compulsive Disorder: For how long did you have these thoughts/behaviors?  (Weeks)	mental and behaviour disorders	OCD029		Encoded Value
+CHOP:0000502	PNC_OCD030		Obsessive Compulsive Disorder: For how long did you have these thoughts/behaviors?  (Months)	mental and behaviour disorders	OCD030		Encoded Value
+CHOP:0000503	PNC_OCD031		Obsessive Compulsive Disorder: For how long did you have these thoughts/behaviors?  (Years)	mental and behaviour disorders	OCD031		Encoded Value
+CHOP:0000504	PNC_OCD032		Obsessive Compulsive Disorder: You told me (insert endorsed thoughts/behaviors). How much did having these thoughts/behaviors upset or bother you? How much did you ever feel upset or disappointed with yourself because of your thoughts/behaviors?	mental and behaviour disorders	OCD032		Encoded Value
+CHOP:0000505	PNC_OCD033		Obsessive Compulsive Disorder: How much did the thoughts/behaviors you have told me about cause problems for you at home, at school/work, or with your family or friends?	mental and behaviour disorders	OCD033		Encoded Value
+CHOP:0000506	PNC_OCD034		Obsessive Compulsive Disorder: Did you stay home from school/work because of your behaviors/thoughts?	mental and behaviour disorders	OCD034		Encoded Value
+CHOP:0000507	PNC_OCD035		Obsessive Compulsive Disorder: How many days of school or work did you miss? (lifetime)	mental and behaviour disorders	OCD035		Encoded Value
+CHOP:0000508	PNC_OCD036		Obsessive Compulsive Disorder: How old were you the first time you had this (list endorsed thoughts/behaviors)? (Age)	mental and behaviour disorders	OCD036		Encoded Value
+CHOP:0000509	PNC_OCD036a		Obsessive Compulsive Disorder: How old were you the first time you had this (insert endorsed thoughts/behaviors)? (Always)	mental and behaviour disorders	OCD036a		Encoded Value
+CHOP:0000510	PNC_OCD037		Obsessive Compulsive Disorder: Do you have this (insert endorsed thoughts/behaviors) now?	mental and behaviour disorders	OCD037		Encoded Value
+CHOP:0000511	PNC_OCD038		Obsessive Compulsive Disorder: How old were you the last time you had these thoughts/behaviors?	mental and behaviour disorders	OCD038		Encoded Value
+CHOP:0000512	PNC_OCD040		Obsessive Compulsive Disorder: Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away?	mental and behaviour disorders	OCD040		Encoded Value
+CHOP:0000513	PNC_OCD041		Obsessive Compulsive Disorder: Have you ever had to do something over and over again _ like washing your hands, or re-arranging or touching things in a certain way _ that would have made you feel really nervous if you couldnˆt do it?	mental and behaviour disorders	OCD041		Encoded Value
+CHOP:0000514	PNC_ODD001		Oppositional Defiant Disorder: Was there a time when you often did things that got you into trouble with adults such as losing your temper, arguing with or talking back to adults, or being grouchy or irritable with them?	mental and behaviour disorders	ODD001		Encoded Value
+CHOP:0000515	PNC_ODD002		Oppositional Defiant Disorder: Was there a time when you often got into trouble with adults for refusing to do what they told you to do or for breaking rules at home/school?	mental and behaviour disorders	ODD002		Encoded Value
+CHOP:0000516	PNC_ODD002a		Oppositional Defiant Disorder: Was there a time when you often got into trouble with adults for refusing to do what they told you to do?	mental and behaviour disorders	ODD002a		Encoded Value
+CHOP:0000517	PNC_ODD003		Oppositional Defiant Disorder: Did you often annoy other people on purpose or blame other people for your mistakes (excluding siblings)?	mental and behaviour disorders	ODD003		Encoded Value
+CHOP:0000518	PNC_ODD003a		Oppositional Defiant Disorder: Did you often annoy other people on purpose?	mental and behaviour disorders	ODD003a		Encoded Value
+CHOP:0000519	PNC_ODD005		Oppositional Defiant Disorder: Did you ever get into trouble for getting even with other people by doing things to hurt them, telling lies about them, or messing up their things?	mental and behaviour disorders	ODD005		Encoded Value
+CHOP:0000520	PNC_ODD006		Oppositional Defiant Disorder: Were you often irritable or grouchy, or did you often get angry because you thought that things were unfair?	mental and behaviour disorders	ODD006		Encoded Value
+CHOP:0000521	PNC_ODD018		Oppositional Defiant Disorder: You told me that you (list endorsed behaviors). How much did having these behaviors upset or bother you?	mental and behaviour disorders	ODD018		Encoded Value
+CHOP:0000522	PNC_ODD019		Oppositional Defiant Disorder: How much did these behaviors change your relationships with your family? (Did your family say something about this to you? Did family members seem upset, angry, or annoyed with you because of your behavior?)	mental and behaviour disorders	ODD019		Encoded Value
+CHOP:0000523	PNC_ODD020		Oppositional Defiant Disorder: How much did these behaviors change your relationships with your friends? (Did you find yourself spending much less time than usual with your friends? Did your friends say something about your behavior?)	mental and behaviour disorders	ODD020		Encoded Value
+CHOP:0000524	PNC_ODD021		Oppositional Defiant Disorder: How much did these behaviors change your relationships with your teachers or classmates (co-workers/supervisors)? change how well you did at school, on tests, homework, or grades (or at job duties)?	mental and behaviour disorders	ODD021		Encoded Value
+CHOP:0000525	PNC_ODD022		Oppositional Defiant Disorder: Did you stay home or were you sent home from school/work because of your behavior?	mental and behaviour disorders	ODD022		Encoded Value
+CHOP:0000526	PNC_ODD023		Oppositional Defiant Disorder: How many days of school/work did you miss? (lifetime)	mental and behaviour disorders	ODD023		Encoded Value
+CHOP:0000527	PNC_ODD025		Oppositional Defiant Disorder: How old were you the first time you did these (insert behavior)? (Age)	mental and behaviour disorders	ODD025		Encoded Value
+CHOP:0000528	PNC_ODD025a		Oppositional Defiant Disorder: How old were you the first time you did these (insert behavior)? (Always)	mental and behaviour disorders	ODD025a		Encoded Value
+CHOP:0000529	PNC_ODD026		Oppositional Defiant Disorder: Do you still have any of these (insert behaviors)?	mental and behaviour disorders	ODD026		Encoded Value
+CHOP:0000530	PNC_ODD027		Oppositional Defiant Disorder: How old were you the last time you did this behavior?	mental and behaviour disorders	ODD027		Encoded Value
+CHOP:0000531	PNC_PAN001		Panic Disorder: Have you ever had an attack like this?	mental and behaviour disorders	PAN001		Encoded Value
+CHOP:0000532	PNC_PAN003		Panic Disorder: Has there ever been a time when all of a sudden you felt very, very scared or uncomfortable - and your chest hurt, you couldn't catch your breath, your heart beat very fast, you felt very shaky, and sweaty/tingly/numb in your hands or feet?	mental and behaviour disorders	PAN003		Encoded Value
+CHOP:0000533	PNC_PAN004		Panic Disorder: Has there ever been a time when all of a sudden, you felt that you were losing control, something terrible was going to happen, that you were going crazy, or going to die?	mental and behaviour disorders	PAN004		Encoded Value
+CHOP:0000534	PNC_PAN005		"Panic Disorder: Did the attack/any of the attacks ever occur ""out of the blue"" when nothing scary was happening, or when you least expected (it/them)?"	mental and behaviour disorders	PAN005		Encoded Value
+CHOP:0000535	PNC_PAN006		Panic Disorder: Did (list endorsed symptoms) start within the same few minutes, like around the same time?	mental and behaviour disorders	PAN006		Encoded Value
+CHOP:0000536	PNC_PAN007		Panic Disorder: After an attack like this, did you ever worry that it would happen again or did you stop doing things, or do things differently, because of fear of an attack?	mental and behaviour disorders	PAN007		Encoded Value
+CHOP:0000537	PNC_PAN008		Panic Disorder: (If yes to PAN 007) What is the longest time that you worried it would happen again, or that you stopped doing things, or did things differently because of fear of an attack? (Minutes)	mental and behaviour disorders	PAN008		Encoded Value
+CHOP:0000538	PNC_PAN009		Panic Disorder: (If yes to PAN007) What is the longest time that you worried it would happen again, or that you stopped doing things, or did things differently because of fear of an attack? (Hours)	mental and behaviour disorders	PAN009		Encoded Value
+CHOP:0000539	PNC_PAN010		Panic Disorder: (If yes to PAN007) What is the longest time that you worried it would happen again, or that you stopped doing things, or did things differently because of fear of an attack? (Days)	mental and behaviour disorders	PAN010		Encoded Value
+CHOP:0000540	PNC_PAN012		Panic Disorder: How much did having these attacks upset or bother you?	mental and behaviour disorders	PAN012		Encoded Value
+CHOP:0000541	PNC_PAN013		Panic Disorder: How much did the attacks you have told me about cause problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders	PAN013		Encoded Value
+CHOP:0000542	PNC_PAN014		Panic Disorder: Did you stay home from school/work because of your attacks?	mental and behaviour disorders	PAN014		Encoded Value
+CHOP:0000543	PNC_PAN015		Panic Disorder: How many days of school/work did you miss? (lifetime)	mental and behaviour disorders	PAN015		Encoded Value
+CHOP:0000544	PNC_PAN016		Panic Disorder: How many attacks like this have you had in your life?	mental and behaviour disorders	PAN016		Encoded Value
+CHOP:0000545	PNC_PAN017		Panic Disorder: How old were you when you first had one of these attacks?	mental and behaviour disorders	PAN017		Encoded Value
+CHOP:0000546	PNC_PAN018		Panic Disorder: How old were you the last time you had one of these attacks?	mental and behaviour disorders	PAN018		Encoded Value
+CHOP:0000547	PNC_PAN019		Panic Disorder: Thinking about all of your panic attacks: What is the longest period of time that the attacks did not bother you? (Days)	mental and behaviour disorders	PAN019		Encoded Value
+CHOP:0000548	PNC_PAN020		Panic Disorder: Thinking about all of your panic attacks: What is the longest period of time that the attacks did not bother you? (Weeks)	mental and behaviour disorders	PAN020		Encoded Value
+CHOP:0000549	PNC_PAN021		Panic Disorder: Thinking about all of your panic attacks: What is the longest period of time that the attacks did not bother you? (Months)	mental and behaviour disorders	PAN021		Encoded Value
+CHOP:0000550	PNC_PAN022		Panic Disorder: Thinking about all of your panic attacks: What is the longest period of time that the attacks did not bother you? (Years)	mental and behaviour disorders	PAN022		Encoded Value
+CHOP:0000551	PNC_PHB001		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of animals or bugs, like dogs, snakes, or spiders?	mental and behaviour disorders	PHB001		Encoded Value
+CHOP:0000552	PNC_PHB002		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of being in really high places, like a roof or tall building?	mental and behaviour disorders	PHB002		Encoded Value
+CHOP:0000553	PNC_PHB003		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of water or situations involving water, such as a swimming pool, lake, or ocean?	mental and behaviour disorders	PHB003		Encoded Value
+CHOP:0000554	PNC_PHB004		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of storms, thunder, or lightning?	mental and behaviour disorders	PHB004		Encoded Value
+CHOP:0000555	PNC_PHB005		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of doctors, needles, or blood?	mental and behaviour disorders	PHB005		Encoded Value
+CHOP:0000556	PNC_PHB006		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of closed spaces, like elevators or closets?	mental and behaviour disorders	PHB006		Encoded Value
+CHOP:0000557	PNC_PHB007		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of flying or airplanes?	mental and behaviour disorders	PHB007		Encoded Value
+CHOP:0000558	PNC_PHB008		Specific Phobia: Looking at this card, have you ever been very nervous or afraid of any other things or situations?	mental and behaviour disorders	PHB008		Encoded Value
+CHOP:0000559	PNC_PHB010		Specific Phobia: Did facing (insert worst fear) almost always make you feel scared (for example, feeling nervous inside, crying, throwing a tantrum or needing to be near your parents)?	mental and behaviour disorders	PHB010		Encoded Value
+CHOP:0000560	PNC_PHB011		Specific Phobia: When you had to (or knew you had to) face (insert worst fear), did you try to avoid it, or if you couldn't avoid it, did you feel very distressed when you faced it?	mental and behaviour disorders	PHB011		Encoded Value
+CHOP:0000561	PNC_PHB012		Specific Phobia: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did this fear last? (Days)	mental and behaviour disorders	PHB012		Encoded Value
+CHOP:0000562	PNC_PHB013		Specific Phobia: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did this fear last? (Weeks)	mental and behaviour disorders	PHB013		Encoded Value
+CHOP:0000563	PNC_PHB014		Specific Phobia: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did this fear last? (Months)	mental and behaviour disorders	PHB014		Encoded Value
+CHOP:0000564	PNC_PHB015		Specific Phobia: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did this fear last? (Years)	mental and behaviour disorders	PHB015		Encoded Value
+CHOP:0000565	PNC_PHB020		Specific Phobia: How much did having this fear of (insert worst fear) upset or bother you?	mental and behaviour disorders	PHB020		Encoded Value
+CHOP:0000566	PNC_PHB021		Specific Phobia: How much did the fear of (insert worst fear) cause problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders	PHB021		Encoded Value
+CHOP:0000567	PNC_PHB022		Specific Phobia: Did you stay home frome school or work because of your fear of (insert worst fear)?	mental and behaviour disorders	PHB022		Encoded Value
+CHOP:0000568	PNC_PHB023		Specific Phobia: How many days of school/work did you miss? (lifetime)	mental and behaviour disorders	PHB023		Encoded Value
+CHOP:0000569	PNC_PHB024		Specific Phobia: How old were you the first time you had this fear of (insert worst fear)? (Age)	mental and behaviour disorders	PHB024		Encoded Value
+CHOP:0000570	PNC_PHB024a		Specific Phobia: How old were you the first time you had this fear of (insert worst fear)? (Always)	mental and behaviour disorders	PHB024a		Encoded Value
+CHOP:0000571	PNC_PHB025		Specific Phobia: Are you still afraid of (insert worst fear)?	mental and behaviour disorders	PHB025		Encoded Value
+CHOP:0000572	PNC_PHB026		Specific Phobia: How old were you the last time you had this fear?	mental and behaviour disorders	PHB026		Encoded Value
+CHOP:0000573	PNC_PSY001		Psychosis: Have you ever heard voices when no one was there?	mental and behaviour disorders	PSY001		Encoded Value
+CHOP:0000574	PNC_PSY003		Psychosis: How many voices did you hear?	mental and behaviour disorders	PSY003		Encoded Value
+CHOP:0000575	PNC_PSY004		Psychosis: Was anyone else nearby when you heard this?	mental and behaviour disorders	PSY004		Encoded Value
+CHOP:0000576	PNC_PSY005		Psychosis: (If yes) Did they hear it too?	mental and behaviour disorders	PSY005		Encoded Value
+CHOP:0000577	PNC_PSY006		Psychosis: Have you ever heard a voice saying what you were doing, feeling or thinking, and nobody else could hear it?	mental and behaviour disorders	PSY006		Encoded Value
+CHOP:0000578	PNC_PSY007		Psychosis: Have you ever heard two or more voices talking to each other that nobody else could hear?	mental and behaviour disorders	PSY007		Encoded Value
+CHOP:0000579	PNC_PSY008		Psychosis: Have you ever heard your thoughts spoken out loud, from outside your head so that others could hear what you were thinking?	mental and behaviour disorders	PSY008		Encoded Value
+CHOP:0000580	PNC_PSY009		Psychosis: Have you ever heard voices telling you to do something and nobody else could hear it?	mental and behaviour disorders	PSY009		Encoded Value
+CHOP:0000581	PNC_PSY010		Psychosis: Have you ever heard voices making fun of you? Threatening you? Saying bad things about you?	mental and behaviour disorders	PSY010		Encoded Value
+CHOP:0000582	PNC_PSY011		Psychosis: You told me that you heard (insert endorsed voices). How many times have you heard these voices?	mental and behaviour disorders	PSY011		Encoded Value
+CHOP:0000583	PNC_PSY012		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Mins)	mental and behaviour disorders	PSY012		Encoded Value
+CHOP:0000584	PNC_PSY013		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Hours)	mental and behaviour disorders	PSY013		Encoded Value
+CHOP:0000585	PNC_PSY014		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Days)	mental and behaviour disorders	PSY014		Encoded Value
+CHOP:0000586	PNC_PSY015		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Weeks)	mental and behaviour disorders	PSY015		Encoded Value
+CHOP:0000587	PNC_PSY016		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Months)	mental and behaviour disorders	PSY016		Encoded Value
+CHOP:0000588	PNC_PSY017		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Yrs)	mental and behaviour disorders	PSY017		Encoded Value
+CHOP:0000589	PNC_PSY020		Psychosis: Did you ever hear other sounds or noises that other people couldn't hear?	mental and behaviour disorders	PSY020		Encoded Value
+CHOP:0000590	PNC_PSY0200		Psychosis: Has there ever been anything unusual about the way things smelled or felt or looked?	mental and behaviour disorders	PSY0200		Encoded Value
+CHOP:0000591	PNC_PSY0202		Psychosis: Is this something that is considered unusual for the child?	mental and behaviour disorders	PSY0202		Encoded Value
+CHOP:0000592	PNC_PSY0204		Psychosis: Have you ever had your imagination play tricks on you?	mental and behaviour disorders	PSY0204		Encoded Value
+CHOP:0000593	PNC_PSY020a		Psychosis: Have you ever heard things other people couldnˆt hear?	mental and behaviour disorders	PSY020a		Encoded Value
+CHOP:0000594	PNC_PSY022		Psychosis: Was anyone else in the room when you heard this?	mental and behaviour disorders	PSY022		Encoded Value
+CHOP:0000595	PNC_PSY023		Psychosis: (If yes) Did they hear it too?	mental and behaviour disorders	PSY023		Encoded Value
+CHOP:0000596	PNC_PSY024		Psychosis: You told me that you heard (insert endorsed non-verbal sounds). How many times have you heard this?	mental and behaviour disorders	PSY024		Encoded Value
+CHOP:0000597	PNC_PSY025		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Mins)	mental and behaviour disorders	PSY025		Encoded Value
+CHOP:0000598	PNC_PSY026		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Hours)	mental and behaviour disorders	PSY026		Encoded Value
+CHOP:0000599	PNC_PSY027		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Days)	mental and behaviour disorders	PSY027		Encoded Value
+CHOP:0000600	PNC_PSY028		Psychosis: How long was the longest time that this lasted? (Estimate duration; can be intermittent over this time) (Weeks)	mental and behaviour disorders	PSY028		Encoded Value
+CHOP:0000601	PNC_PSY029		Psychosis: Have you ever seen visions or seen things which other people could not see?	mental and behaviour disorders	PSY029		Encoded Value
+CHOP:0000602	PNC_PSY029a		Psychosis: Have you ever seen things that other people couldnˆt see?	mental and behaviour disorders	PSY029a		Encoded Value
+CHOP:0000603	PNC_PSY029b		Psychosis: Have you ever seen visions?	mental and behaviour disorders	PSY029b		Encoded Value
+CHOP:0000604	PNC_PSY031		Psychosis: Did you see it as clearly as you can see me?	mental and behaviour disorders	PSY031		Encoded Value
+CHOP:0000605	PNC_PSY032		Psychosis: Did it come from a shadow?	mental and behaviour disorders	PSY032		Encoded Value
+CHOP:0000606	PNC_PSY033		Psychosis: Were you sleeping, or just falling asleep, or just waking up at the time?	mental and behaviour disorders	PSY033		Encoded Value
+CHOP:0000607	PNC_PSY034		Psychosis: Was anyone else in the room when you saw this?	mental and behaviour disorders	PSY034		Encoded Value
+CHOP:0000608	PNC_PSY035		Psychosis: (If yes) Did they see it too?	mental and behaviour disorders	PSY035		Encoded Value
+CHOP:0000609	PNC_PSY036		Psychosis: You told me that you saw (insert endorsed vision). How many times have you seen things like this that other people couldn't see?	mental and behaviour disorders	PSY036		Encoded Value
+CHOP:0000610	PNC_PSY037		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Mins)	mental and behaviour disorders	PSY037		Encoded Value
+CHOP:0000611	PNC_PSY038		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Hours)	mental and behaviour disorders	PSY038		Encoded Value
+CHOP:0000612	PNC_PSY039		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Days)	mental and behaviour disorders	PSY039		Encoded Value
+CHOP:0000613	PNC_PSY040		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Weeks)	mental and behaviour disorders	PSY040		Encoded Value
+CHOP:0000614	PNC_PSY050		Psychosis: Have you ever smelled strange odors other people could not smell?	mental and behaviour disorders	PSY050		Encoded Value
+CHOP:0000615	PNC_PSY052		Psychosis: Was anyone else in the room when you smelled this?	mental and behaviour disorders	PSY052		Encoded Value
+CHOP:0000616	PNC_PSY053		Psychosis: (If yes) Did they smell it too?	mental and behaviour disorders	PSY053		Encoded Value
+CHOP:0000617	PNC_PSY054		Psychosis: How many times have you smelled strange odors like this that other people couldn't smell?	mental and behaviour disorders	PSY054		Encoded Value
+CHOP:0000618	PNC_PSY055		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Mins)	mental and behaviour disorders	PSY055		Encoded Value
+CHOP:0000619	PNC_PSY056		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Hours)	mental and behaviour disorders	PSY056		Encoded Value
+CHOP:0000620	PNC_PSY057		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Days)	mental and behaviour disorders	PSY057		Encoded Value
+CHOP:0000621	PNC_PSY058		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Weeks)	mental and behaviour disorders	PSY058		Encoded Value
+CHOP:0000622	PNC_PSY060		Psychosis: Have you ever had strange feelings in your body like things were crawling on you or someone touching you and nothing or no one was there?	mental and behaviour disorders	PSY060		Encoded Value
+CHOP:0000623	PNC_PSY062		Psychosis: How many times have you had strange feelings in your body like this?	mental and behaviour disorders	PSY062		Encoded Value
+CHOP:0000624	PNC_PSY063		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Mins)	mental and behaviour disorders	PSY063		Encoded Value
+CHOP:0000625	PNC_PSY064		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Hours)	mental and behaviour disorders	PSY064		Encoded Value
+CHOP:0000626	PNC_PSY065		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Days)	mental and behaviour disorders	PSY065		Encoded Value
+CHOP:0000627	PNC_PSY066		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Weeks)	mental and behaviour disorders	PSY066		Encoded Value
+CHOP:0000628	PNC_PSY070		Psychosis: Have you ever believed in things that most other people or your parents don't believe in?	mental and behaviour disorders	PSY070		Encoded Value
+CHOP:0000629	PNC_PSY071		Psychosis: Have you ever believed in things and later found out they weren't true, like people being out to get you, or talking about you behind your back, or controlling what you do or think?	mental and behaviour disorders	PSY071		Encoded Value
+CHOP:0000630	PNC_PSY072		Psychosis: Have you ever felt that you were under someone else's control? (If yes) Who?	mental and behaviour disorders	PSY072		Encoded Value
+CHOP:0000631	PNC_PSY073		"Psychosis: Have you ever felt that you could be made to do something against your will, like to say or think or do things, without wanting to? (If yes:) Did you feel that your thoughts, feelings or actions were not your own?"""	mental and behaviour disorders	PSY073		Encoded Value
+CHOP:0000632	PNC_PSY074		Psychosis: Have you ever felt that people could put thoughts in your mind?	mental and behaviour disorders	PSY074		Encoded Value
+CHOP:0000633	PNC_PSY075		Psychosis: Have you ever felt that people could know what you were thinking or could read your mind?	mental and behaviour disorders	PSY075		Encoded Value
+CHOP:0000634	PNC_PSY076		Psychosis: Have you ever felt that something was happening to your insides or that something was living inside of you?	mental and behaviour disorders	PSY076		Encoded Value
+CHOP:0000635	PNC_PSY077		Psychosis: Have you ever felt that you were a very important person or that you had special powers?	mental and behaviour disorders	PSY077		Encoded Value
+CHOP:0000636	PNC_PSY078		Psychosis: Have you ever felt that people were talking about you behind your back, including people on the TV or radio?	mental and behaviour disorders	PSY078		Encoded Value
+CHOP:0000637	PNC_PSY079		Psychosis: Have you ever felt that the world was coming to an end soon?	mental and behaviour disorders	PSY079		Encoded Value
+CHOP:0000638	PNC_PSY080		Psychosis: Have you ever felt that there were secret meanings for you in what ordinary people did?	mental and behaviour disorders	PSY080		Encoded Value
+CHOP:0000639	PNC_PSY081		Psychosis: Have you ever felt that people were going after you to hurt you or get at you?	mental and behaviour disorders	PSY081		Encoded Value
+CHOP:0000640	PNC_PSY082		Psychosis: Have you ever felt that you were being (or should be) punished because you were evil?	mental and behaviour disorders	PSY082		Encoded Value
+CHOP:0000641	PNC_PSY086		Psychosis: So, were you sure of it at the time or did you think it just might be so?	mental and behaviour disorders	PSY086		Encoded Value
+CHOP:0000642	PNC_PSY088		Psychosis: How many times have you had beliefs like this?	mental and behaviour disorders	PSY088		Encoded Value
+CHOP:0000643	PNC_PSY089		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Mins)	mental and behaviour disorders	PSY089		Encoded Value
+CHOP:0000644	PNC_PSY090		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Hours)	mental and behaviour disorders	PSY090		Encoded Value
+CHOP:0000645	PNC_PSY091		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Days)	mental and behaviour disorders	PSY091		Encoded Value
+CHOP:0000646	PNC_PSY092		Psychosis: How long was the longest time that this lasted? (Estimate duration, can be intermittent over this time) (Weeks)	mental and behaviour disorders	PSY092		Encoded Value
+CHOP:0000647	PNC_PSY101		Psychosis: At the time that you were having (insert symptoms), were you also physically ill (for example, high fever, migraine, epilepsy)?	mental and behaviour disorders	PSY101		Encoded Value
+CHOP:0000648	PNC_PSY102		Psychosis: At the time that you were having (insert symptoms), were you also taking prescribed medication? (for example, Serpasil, birth control pills, antihistamines or cold pills, antihypertensives, cortisone or other steroids, or diet pills)	mental and behaviour disorders	PSY102		Encoded Value
+CHOP:0000649	PNC_PSY103		Psychosis: At the time that you were having (insert symptoms), were you also using alcohol/drugs?	mental and behaviour disorders	PSY103		Encoded Value
+CHOP:0000650	PNC_PSY104		Psychosis: At the time that you were having (insert symptoms), were you also depressed (Feeling very sad)?	mental and behaviour disorders	PSY104		Encoded Value
+CHOP:0000651	PNC_PSY105		Psychosis: At the time that you were having (insert symptoms), were you also manic (feeling very energetic/active)?	mental and behaviour disorders	PSY105		Encoded Value
+CHOP:0000652	PNC_PSY106		Psychosis: At the time that you were having (insert symptoms), were you also diagnosed with schizophrenia?	mental and behaviour disorders	PSY106		Encoded Value
+CHOP:0000653	PNC_PSY107		Psychosis: At the time that you were having (insert symptoms), were you also experiencing any other situation that could account for it?	mental and behaviour disorders	PSY107		Encoded Value
+CHOP:0000654	PNC_PSY110		Psychosis: How much did your feelings/behaviors associated with this event upset or bother you?	mental and behaviour disorders	PSY110		Encoded Value
+CHOP:0000655	PNC_PSY120		Psychosis: How much have the feelings/behaviors that you have told me about caused problems for you at home, at school, or with your family or friends?	mental and behaviour disorders	PSY120		Encoded Value
+CHOP:0000656	PNC_PSY121		Psychosis: Did you stay home from school because of the way you were feeling?	mental and behaviour disorders	PSY121		Encoded Value
+CHOP:0000657	PNC_PSY122		Psychosis: If yes: How many days of school did you miss because of (insert symptoms)? (lifetime) (Days)	mental and behaviour disorders	PSY122		Encoded Value
+CHOP:0000658	PNC_PSY123		Psychosis: If yes: How many days of school did you miss because of (insert symptoms)? (lifetime) (Weeks)	mental and behaviour disorders	PSY123		Encoded Value
+CHOP:0000659	PNC_PSY124		Psychosis: If yes: How many days of school did you miss because of (insert symptoms)? (lifetime) (Months)	mental and behaviour disorders	PSY124		Encoded Value
+CHOP:0000660	PNC_PSY130		Psychosis: How old were you the first time you had these behaviors/feelings? (Age)	mental and behaviour disorders	PSY130		Encoded Value
+CHOP:0000661	PNC_PSY130a		Psychosis: How old were you the first time you had these behaviors/feelings? (Always)	mental and behaviour disorders	PSY130a		Encoded Value
+CHOP:0000662	PNC_PSY131		Psychosis: Are you still having these (behaviors/feelings) now?	mental and behaviour disorders	PSY131		Encoded Value
+CHOP:0000663	PNC_PSY132		Psychosis: How old were you the last time you had these behaviors/feelings?	mental and behaviour disorders	PSY132		Encoded Value
+CHOP:0000664	PNC_PSY133		Psychosis: How long did you feel (__)? (Days)	mental and behaviour disorders	PSY133		Encoded Value
+CHOP:0000665	PNC_PSY134		Psychosis: How long did you feel (__)? (Weeks)	mental and behaviour disorders	PSY134		Encoded Value
+CHOP:0000666	PNC_PSY135		Psychosis: How long did you feel (__)? (Months)	mental and behaviour disorders	PSY135		Encoded Value
+CHOP:0000667	PNC_PSY136		Psychosis: Was that the worst you have felt?	mental and behaviour disorders	PSY136		Encoded Value
+CHOP:0000668	PNC_PSY137		Psychosis: Is this the worst you have felt?	mental and behaviour disorders	PSY137		Encoded Value
+CHOP:0000669	PNC_PSY138		Psychosis: How long have you been feeling this way? (Days)	mental and behaviour disorders	PSY138		Encoded Value
+CHOP:0000670	PNC_PSY139		Psychosis: How long have you been feeling this way? (Months)	mental and behaviour disorders	PSY139		Encoded Value
+CHOP:0000671	PNC_PSY140		Psychosis: How long have you been feeling this way? (Years)	mental and behaviour disorders	PSY140		Encoded Value
+CHOP:0000672	PNC_PSY141		Psychosis: How many different times have you (____)?	mental and behaviour disorders	PSY141		Encoded Value
+CHOP:0000673	PNC_PSY142		Psychosis: When you felt your worst, how long did that feeling last? (Days)	mental and behaviour disorders	PSY142		Encoded Value
+CHOP:0000674	PNC_PSY143		Psychosis: When you felt your worst, how long did that feeling last? (Months)	mental and behaviour disorders	PSY143		Encoded Value
+CHOP:0000675	PNC_PSY144		Psychosis: When you felt your worst, how long did that feeling last? (Years)	mental and behaviour disorders	PSY144		Encoded Value
+CHOP:0000676	PNC_PSY145		Psychosis: How old were you then?	mental and behaviour disorders	PSY145		Encoded Value
+CHOP:0000677	PNC_PSY146		"Psychosis: Since you were (age of onset) until (offset age, or ""now"" if current), was there ever a time when you did not have these behaviors/feelings?"	mental and behaviour disorders	PSY146		Encoded Value
+CHOP:0000678	PNC_PSY147		Psychosis: During that time, what was the longest period of time that (behavior/feeling) did not bother you? (Weeks)	mental and behaviour disorders	PSY147		Encoded Value
+CHOP:0000679	PNC_PSY148		Psychosis: During that time, what was the longest period of time that (behavior/feeling) did not bother you? (Months)	mental and behaviour disorders	PSY148		Encoded Value
+CHOP:0000680	PNC_PSY149		Psychosis: During that time, what was the longest period of time that (behavior/feeling) did not bother you? (Years)	mental and behaviour disorders	PSY149		Encoded Value
+CHOP:0000681	PNC_PSY150		Psychosis: How long did this last? (Mins)	mental and behaviour disorders	PSY150		Encoded Value
+CHOP:0000682	PNC_PSY151		Psychosis: How long did this last? (Hours)	mental and behaviour disorders	PSY151		Encoded Value
+CHOP:0000683	PNC_PSY152		Psychosis: How long did this last? (Days)	mental and behaviour disorders	PSY152		Encoded Value
+CHOP:0000684	PNC_PSY153		Psychosis: How long did this last? (Weeks)	mental and behaviour disorders	PSY153		Encoded Value
+CHOP:0000685	PNC_PSY154		Psychosis: Was your speech mixed up?	mental and behaviour disorders	PSY154		Encoded Value
+CHOP:0000686	PNC_PSY155		Psychosis: Did you make sense?	mental and behaviour disorders	PSY155		Encoded Value
+CHOP:0000687	PNC_PSY156		Psychosis: Could you make yourself understood if people told you that you couldn't be understood?	mental and behaviour disorders	PSY156		Encoded Value
+CHOP:0000688	PNC_PSY157		"Psychosis: Were you ""high"" at the time?"	mental and behaviour disorders	PSY157		Encoded Value
+CHOP:0000689	PNC_PSY158		Psychosis: Were you sick?	mental and behaviour disorders	PSY158		Encoded Value
+CHOP:0000690	PNC_PSY159		Psychosis: Had you taken pills?	mental and behaviour disorders	PSY159		Encoded Value
+CHOP:0000691	PNC_PSY160		"Psychosis: (If yes) Did people have trouble understanding you when you weren't ""high""?"	mental and behaviour disorders	PSY160		Encoded Value
+CHOP:0000692	PNC_PTD001		Have you ever been in a flood or a tornado or an earthquake or a hurricane or some other natural disaster where you thought you were going to die or be seriously hurt?	physical environment	PTD001		Encoded Value
+CHOP:0000693	PNC_PTD002		Post-Traumatic Stress: Have you ever been in a situation where you thought you or someone close to you was going to be killedor be hurt very badly (e.g. family violence)?	mental and behaviour disorders	PTD002		Encoded Value
+CHOP:0000694	PNC_PTD003		Post-Traumatic Stress: Have you ever been attacked by somebodyor badly beaten?	mental and behaviour disorders	PTD003		Encoded Value
+CHOP:0000695	PNC_PTD004		Post-Traumatic Stress: Have you ever been very upset by someone forcing you to do something sexual?	mental and behaviour disorders	PTD004		Encoded Value
+CHOP:0000696	PNC_PTD005		Post-Traumatic Stress: Have you ever been attacked sexually or raped?	mental and behaviour disorders	PTD005		Encoded Value
+CHOP:0000697	PNC_PTD006		Post-Traumatic Stress: Have you ever been threatened with a weapon?	mental and behaviour disorders	PTD006		Encoded Value
+CHOP:0000698	PNC_PTD007		Post-Traumatic Stress: Have you ever been in a bad accident?	mental and behaviour disorders	PTD007		Encoded Value
+CHOP:0000699	PNC_PTD008		Post-Traumatic Stress: Other than television or at the movies, have you ever seen or heard somebody get killed_or get hurt very badlyor die?	mental and behaviour disorders	PTD008		Encoded Value
+CHOP:0000700	PNC_PTD009		Post-Traumatic Stress: Have you ever been very upset by seeing a dead body or by seeing pictures of the dead body of somebody you knew well?  	mental and behaviour disorders	PTD009		Encoded Value
+CHOP:0000701	PNC_PTD020		Post-Traumatic Stress: When did (insert worst event name) occur? (Age)	mental and behaviour disorders	PTD020		Encoded Value
+CHOP:0000702	PNC_PTD021		Post-Traumatic Stress: When did (insert worst event name) occur? (Month)	mental and behaviour disorders	PTD021		Encoded Value
+CHOP:0000703	PNC_PTD022		Post-Traumatic Stress: When did (insert worst event name) occur? (Year)	mental and behaviour disorders	PTD022		Encoded Value
+CHOP:0000704	PNC_PTD024		Post-Traumatic Stress: Sometimes these things keep coming back in nightmares, flashbacks, or thoughts that you can't get rid of. Has that ever happened to you? 	mental and behaviour disorders	PTD024		Encoded Value
+CHOP:0000705	PNC_PTD025		Post-Traumatic Stress: What about being very upset when you were in a situation that reminded you of this event?	mental and behaviour disorders	PTD025		Encoded Value
+CHOP:0000706	PNC_PTD026		Post-Traumatic Stress: How long after (insert worst event) did you begin having (insert nightmares/flashbacks/recurrent thoughts/upset when in situation that reminded) related to the event? (Days)	mental and behaviour disorders	PTD026		Encoded Value
+CHOP:0000707	PNC_PTD027		Post-Traumatic Stress: How long after (insert worst event) did you begin having (insert nightmares/flashbacks/recurrent thoughts/upset when in situation that reminded) related to the event? (Weeks)	mental and behaviour disorders	PTD027		Encoded Value
+CHOP:0000708	PNC_PTD028		Post-Traumatic Stress: How long after (insert worst event) did you begin having (insert nightmares/flashbacks/recurrent thoughts/upset when in situation that reminded) related to the event? (Months)	mental and behaviour disorders	PTD028		Encoded Value
+CHOP:0000709	PNC_PTD029		Post-Traumatic Stress: How often did you have these feelings/behaviors?	mental and behaviour disorders	PTD029		Encoded Value
+CHOP:0000710	PNC_PTD030		Post-Traumatic Stress: INTERVIEWER: Record age of onset of symptoms. (Age)	mental and behaviour disorders	PTD030		Encoded Value
+CHOP:0000711	PNC_PTD031		Post-Traumatic Stress: INTERVIEWER: Record age of onset of symptoms. (Month)	mental and behaviour disorders	PTD031		Encoded Value
+CHOP:0000712	PNC_PTD032		Post-Traumatic Stress: INTERVIEWER: Record age of onset of symptoms. (Year)	mental and behaviour disorders	PTD032		Encoded Value
+CHOP:0000713	PNC_PTD033		Post-Traumatic Stress: When was the last time you had (insert nightmares/flashbacks/recurrent thoughts/upset when in a situation that reminded) related to (insert worst event)? (Age)	mental and behaviour disorders	PTD033		Encoded Value
+CHOP:0000714	PNC_PTD034		Post-Traumatic Stress: When was the last time you had (insert nightmares/flashbacks/recurrent thoughts/upset when in a situation that reminded) related to (insert worst event)? (Month)	mental and behaviour disorders	PTD034		Encoded Value
+CHOP:0000715	PNC_PTD035		Post-Traumatic Stress: When was the last time you had (insert nightmares/flashbacks/recurrent thoughts/upset when in a situation that reminded) related to (insert worst event)? (Year)	mental and behaviour disorders	PTD035		Encoded Value
+CHOP:0000716	PNC_PTD036		Post-Traumatic Stress: INTERVIEWER: Record duration of symptoms. If not clear, ask if it was more or less than one month. (Months)	mental and behaviour disorders	PTD036		Encoded Value
+CHOP:0000717	PNC_PTD037		Post-Traumatic Stress: INTERVIEWER: Record duration of symptoms. If not clear, ask if it was more or less than one month. (Years)	mental and behaviour disorders	PTD037		Encoded Value
+CHOP:0000718	PNC_PTD040		Post-Traumatic Stress: How much did your feelings/behaviors associated with (insert worst event) upset or bother you?	mental and behaviour disorders	PTD040		Encoded Value
+CHOP:0000719	PNC_PTD041		Post-Traumatic Stress: How much have the feelings/behaviors you have told me about caused problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders	PTD041		Encoded Value
+CHOP:0000720	PNC_PTD042		Post-Traumatic Stress: Did you stay home from school or work because of the way you were feeling?	mental and behaviour disorders	PTD042		Encoded Value
+CHOP:0000721	PNC_PTD043		Post-Traumatic Stress: If yes: How many days of school/work did you miss because of these feelings?	mental and behaviour disorders	PTD043		Encoded Value
+CHOP:0000722	PNC_SCR001		General Probes: Have you ever talked to a counselor, psychologist, social worker, psychiatrist or some other professional about your feelings or problems with your mood or behaviors? 	quality of life	SCR001		Encoded Value
+CHOP:0000723	PNC_SCR001a		General Probes: Have you ever talked to a counselor, psychologist, social worker, psychiatrist, or some other professional about your feelings, or problems with your mood or behaviors?  Or are you currently taking medication because of your emotions and/or behaviors?	quality of life	SCR001a		Encoded Value
+CHOP:0000724	PNC_SCR003		General Probes: How many separate times did you go to see someone?	quality of life	SCR003		Encoded Value
+CHOP:0000725	PNC_SCR004		General Probes: How long did you see someone in total? 	quality of life	SCR004		Encoded Value
+CHOP:0000726	PNC_SCR005		General Probes: About how many talk sessions did you have in total?	quality of life	SCR005		Encoded Value
+CHOP:0000727	PNC_SCR006		General Probes: Are you currently taking medication because of your emotions and/or behaviors?	medication	SCR006		Encoded Value
+CHOP:0000728	PNC_SCR007		General Probes: Have you ever had to go to a hospital and stay overnight because of problems with your mood, feelings, or how you were acting?	hospitalizations	SCR007		Encoded Value
+CHOP:0000729	PNC_SCR008		General Probes: Have you or anyone else (like your friends, parents, or teachers) ever thought you needed help because of problems with your mood, feelings, or how you were acting?	social environment	SCR008		Encoded Value
+CHOP:0000730	PNC_SCR010		General Probes hospitalization: Age	hospitalizations|age/birthdate	SCR010		Encoded Value
+CHOP:0000731	PNC_SCR013		General Probes hospitalization: Days in Hospital	hospitalizations	SCR013		Encoded Value
+CHOP:0000732	PNC_SCR020		General Probes hospitalization: Age	hospitalizations|age/birthdate	SCR020		Encoded Value
+CHOP:0000733	PNC_SCR023		General Probes hospitalization: Days in Hospital	hospitalizations	SCR023		Encoded Value
+CHOP:0000734	PNC_SCR030		General Probes hospitalization: Age	hospitalizations|age/birthdate	SCR030		Encoded Value
+CHOP:0000735	PNC_SCR033		General Probes hospitalization: Days in Hospital	hospitalizations	SCR033		Encoded Value
+CHOP:0000736	PNC_SCR136		General Probes: Was there ever a time when you or someone else thought you needed help or treatment for any problems we haven't discussed?	social environment	SCR136		Encoded Value
+CHOP:0000737	PNC_SEP500		Separation Anxiety: Since you were 5 years old, has there ever been a time when you had a lot of worries about your (attachment figures) and were very upset or got sick (for example, felt sick to your stomach, headaches, thrown-up) when you were away from him/her?	mental and behaviour disorders	SEP500		Encoded Value
+CHOP:0000738	PNC_SEP501		Separation Anxiety: Did you worry about this more than most children/people your age?	mental and behaviour disorders	SEP501		Encoded Value
+CHOP:0000739	PNC_SEP508		Separation Anxiety: Has there ever been a time when you wanted to stay home from school or not go to other places (for example, sleep-overs) without your (attachment figures)?	mental and behaviour disorders	SEP508		Encoded Value
+CHOP:0000740	PNC_SEP509		Separation Anxiety: When you knew that you were going to be away from home or (attachment figure(s)), did you get very upset and worry (e.g., when you learned (attachment figure(s)) were going on an upcoming trip or night out)?	mental and behaviour disorders	SEP509		Encoded Value
+CHOP:0000741	PNC_SEP510		Separation Anxiety: Did you ever worry/have bad dreams about something terrible happening to you or your (attachment figures) so that you would not see them again?	mental and behaviour disorders	SEP510		Encoded Value
+CHOP:0000742	PNC_SEP511		Separation Anxiety: Were you scared to be alone in your room (or any place in your house) or did you need your (attachment figure(s)) to stay with you while you fell asleep?	mental and behaviour disorders	SEP511		Encoded Value
+CHOP:0000743	PNC_SEP512		Separation Anxiety: How long was your longest period of worry about your (attachment figures)? (Days)	mental and behaviour disorders	SEP512		Encoded Value
+CHOP:0000744	PNC_SEP513		Separation Anxiety: How long was your longest period of worry about your (attachment figures)? (Weeks)	mental and behaviour disorders	SEP513		Encoded Value
+CHOP:0000745	PNC_SEP514		Separation Anxiety: How long was your longest period of worry about your (attachment figures)? (Months)	mental and behaviour disorders	SEP514		Encoded Value
+CHOP:0000746	PNC_SEP520		Separation Anxiety: Did you have these worries only during a time when you had a serious physical illness?	mental and behaviour disorders	SEP520		Encoded Value
+CHOP:0000747	PNC_SEP521		Separation Anxiety: Did you have these worries only during a time when your (attachment figures) had a serious physical illness?	mental and behaviour disorders	SEP521		Encoded Value
+CHOP:0000748	PNC_SEP525		Separation Anxiety: You told me that you (list endorsed worries). How much did having these worries (about the attachment figure) upset or bother you?	mental and behaviour disorders	SEP525		Encoded Value
+CHOP:0000749	PNC_SEP526		Separation Anxiety: How much did the worries you have told me about cause problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders	SEP526		Encoded Value
+CHOP:0000750	PNC_SEP527		Separation Anxiety: Did you stay home from school or work because of these worries about (the attachment figure)?	mental and behaviour disorders	SEP527		Encoded Value
+CHOP:0000751	PNC_SEP528		Separation Anxiety: How many days of school/work did you miss because of these worries? (lifetime)	mental and behaviour disorders	SEP528		Encoded Value
+CHOP:0000752	PNC_SEP529		Separation Anxiety: How old were you the first time you had these worries?	mental and behaviour disorders	SEP529		Encoded Value
+CHOP:0000753	PNC_SEP530		Separation Anxiety: Do you have these worries now?	mental and behaviour disorders	SEP530		Encoded Value
+CHOP:0000754	PNC_SEP531		Separation Anxiety: How old were you the last time you had these worries?	mental and behaviour disorders	SEP531		Encoded Value
+CHOP:0000755	PNC_SIP001		SIPS- Structured Interview for Prodromal Symptoms: TROUBLE WITH FOCUS AND ATTENTION Severity Scale	mental and behaviour disorders|cognitive and psychological measurements	SIP001		Encoded Value
+CHOP:0000756	PNC_SIP002		SIPS- Structured Interview for Prodromal Symptoms: Trouble With Focus and Attention: Symptom Onset	mental and behaviour disorders|cognitive and psychological measurements	SIP002		Encoded Value
+CHOP:0000757	PNC_SIP003		SIPS- PRIME SCREEN-REVISED: I think that I have felt that there are odd or unusual things going on that I can't explain.	mental and behaviour disorders|cognitive and psychological measurements	SIP003		Encoded Value
+CHOP:0000758	PNC_SIP004		SIPS- PRIME SCREEN-REVISED: I think that I might be able to predict the future.	mental and behaviour disorders|cognitive and psychological measurements	SIP004		Encoded Value
+CHOP:0000759	PNC_SIP005		SIPS- PRIME SCREEN-REVISED- Structured Interview for Prodromal Symptoms: I may have felt that there could possibly be something interrupting or controlling my thoughts, feelings, or actions.	mental and behaviour disorders|cognitive and psychological measurements	SIP005		Encoded Value
+CHOP:0000760	PNC_SIP006		SIPS- PRIME SCREEN-REVISED- Structured Interview for Prodromal Symptoms: I have had the experience of doing something differently because of my superstitions.	mental and behaviour disorders|cognitive and psychological measurements	SIP006		Encoded Value
+CHOP:0000761	PNC_SIP007		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think I may get confused at times whether something I experience or perceive may be real or may be just part of my imagination or dreams.	mental and behaviour disorders|cognitive and psychological measurements	SIP007		Encoded Value
+CHOP:0000762	PNC_SIP008		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I have thought that it might be possible that other people can read my mind, or that I can read others' minds	mental and behaviour disorders|cognitive and psychological measurements	SIP008		Encoded Value
+CHOP:0000763	PNC_SIP009		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I wonder if people may be planning to hurt me or even may be about to hurt me.	mental and behaviour disorders|cognitive and psychological measurements	SIP009		Encoded Value
+CHOP:0000764	PNC_SIP010		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I believe that I have special natural or supernatural gifts beyond my talents and natural strengths.	mental and behaviour disorders|cognitive and psychological measurements	SIP010		Encoded Value
+CHOP:0000765	PNC_SIP011		"SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think I might feel like my mind is ""playing tricks"" on me."	mental and behaviour disorders|cognitive and psychological measurements	SIP011		Encoded Value
+CHOP:0000766	PNC_SIP012		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I have had the experience of hearing faint or clear sounds of people or a person mumbling or talking when there is no one near me.	mental and behaviour disorders|cognitive and psychological measurements	SIP012		Encoded Value
+CHOP:0000767	PNC_SIP013		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think that I may hear my own thoughts being said out loud.	mental and behaviour disorders|cognitive and psychological measurements	SIP013		Encoded Value
+CHOP:0000768	PNC_SIP014		"SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I have been concerned that I might be ""going crazy."""	mental and behaviour disorders|cognitive and psychological measurements	SIP014		Encoded Value
+CHOP:0000769	PNC_SIP015		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think I have felt that there are odd or unusual things going on that I can't explain.	mental and behaviour disorders|cognitive and psychological measurements	SIP015		Encoded Value
+CHOP:0000770	PNC_SIP016		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think that I might be able to predict the future.	mental and behaviour disorders|cognitive and psychological measurements	SIP016		Encoded Value
+CHOP:0000771	PNC_SIP017		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I may have felt that there could possibly be something interrupting or controlling my thoughts, feelings, or actions.	mental and behaviour disorders|cognitive and psychological measurements	SIP017		Encoded Value
+CHOP:0000772	PNC_SIP018		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I have had the experience of doing something differently because of my superstitions.	mental and behaviour disorders|cognitive and psychological measurements	SIP018		Encoded Value
+CHOP:0000773	PNC_SIP019		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think that I may get confused at times whether something I experience or perceive may be real or may be just part of my imagination or dreams.	mental and behaviour disorders|cognitive and psychological measurements	SIP019		Encoded Value
+CHOP:0000774	PNC_SIP020		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I have thought that it might be possible that other people can read my mind, or that I can read others' minds.	mental and behaviour disorders|cognitive and psychological measurements	SIP020		Encoded Value
+CHOP:0000775	PNC_SIP021		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I wonder if people may be planning to hurt me or even may be about to hurt me.	mental and behaviour disorders|cognitive and psychological measurements	SIP021		Encoded Value
+CHOP:0000776	PNC_SIP022		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I believe that I have special natural or supernatural gifts beyond my talents and natural strengths.	mental and behaviour disorders|cognitive and psychological measurements	SIP022		Encoded Value
+CHOP:0000777	PNC_SIP023		"SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think I might feel like my mind is ""playing tricks"" on me."	mental and behaviour disorders|cognitive and psychological measurements	SIP023		Encoded Value
+CHOP:0000778	PNC_SIP024		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I have had the experience of hearing faint or clear sounds of people or a person mumbling or talking when there is no one near me.	mental and behaviour disorders|cognitive and psychological measurements	SIP024		Encoded Value
+CHOP:0000779	PNC_SIP025		SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I think that I may hear my own thoughts being said out loud.	mental and behaviour disorders|cognitive and psychological measurements	SIP025		Encoded Value
+CHOP:0000780	PNC_SIP026		"SIPS- PRIME SCREEN-REVISED Structured Interview for Prodromal Symptoms: I have been concerned that I might be ""going crazy."""	mental and behaviour disorders|cognitive and psychological measurements	SIP026		Encoded Value
+CHOP:0000781	PNC_SIP027		SIPS- Structured Interview for Prodromal Symptoms: Do people ever tell you that they can't understand you?	mental and behaviour disorders|cognitive and psychological measurements	SIP027		Encoded Value
+CHOP:0000782	PNC_SIP028		SIPS- Structured Interview for Prodromal Symptoms: Do people ever seem to have difficulty understanding you?	mental and behaviour disorders|cognitive and psychological measurements	SIP028		Encoded Value
+CHOP:0000783	PNC_SIP030		SIPS- Structured Interview for Prodromal Symptoms: Changes in speech, disorganized communication, tangential speech Severity Scale	mental and behaviour disorders|cognitive and psychological measurements	SIP030		Encoded Value
+CHOP:0000784	PNC_SIP031		SIPS- Structured Interview for Prodromal Symptoms:  Changes in speech, disorganized communication, tangential speech: How long has it been since you first had this experience? Less than 1 month, between 1 month and 1 year, more than a year? Your entire lifetime or ever since you can remember?	mental and behaviour disorders|cognitive and psychological measurements	SIP031		Encoded Value
+CHOP:0000785	PNC_SIP032		SIPS- Structured Interview for Prodromal Symptoms: Do you ever feel a loss of sense of self or feel disconnected from yourself or your life?	mental and behaviour disorders|cognitive and psychological measurements	SIP032		Encoded Value
+CHOP:0000786	PNC_SIP033		SIPS- Structured Interview for Prodromal Symptoms: Has anyone pointed out to you that you are less emotional or connected to people than you used to be?	mental and behaviour disorders|cognitive and psychological measurements	SIP033		Encoded Value
+CHOP:0000787	PNC_SIP035		SIPS- Structured Interview for Prodromal Symptoms: Changes in perception of self, others, or the world in general: Severity Scale	mental and behaviour disorders|cognitive and psychological measurements	SIP035		Encoded Value
+CHOP:0000788	PNC_SIP036		SIPS- Structured Interview for Prodromal Symptoms: Changes in perception of self, others, or the world in general: How long has it been since you first had this experience? Less than 1 month, between 1 month and 1 year, more than a year? Your entire lifetime or ever since you can remember?	mental and behaviour disorders|cognitive and psychological measurements	SIP036		Encoded Value
+CHOP:0000789	PNC_SIP037		SIPS- Structured Interview for Prodromal Symptoms: EXPRESSION OF EMOTION: Severity Scale	mental and behaviour disorders|cognitive and psychological measurements	SIP037		Encoded Value
+CHOP:0000790	PNC_SIP038		SIPS- Structured Interview for Prodromal Symptoms: Within the past 6 months, are you having a harder time getting your work or schoolwork done?	mental and behaviour disorders|cognitive and psychological measurements	SIP038		Encoded Value
+CHOP:0000791	PNC_SIP039		SIPS- Structured Interview for Prodromal Symptoms: Within the past 6 months, are you having a harder time getting normal activities done?	mental and behaviour disorders|cognitive and psychological measurements	SIP039		Encoded Value
+CHOP:0000792	PNC_SIP041		SIPS- Structured Interview for Prodromal Symptoms: Occupational Functioning Severity Scale 	mental and behaviour disorders|cognitive and psychological measurements	SIP041		Encoded Value
+CHOP:0000793	PNC_SIP042		SIPS- Structured Interview for Prodromal Symptoms: Occupational Functioning: How long has it been since you first had this trouble?	mental and behaviour disorders|cognitive and psychological measurements	SIP042		Encoded Value
+CHOP:0000794	PNC_SIP043		SIPS- Structured Interview for Prodromal Symptoms:  Avolition Severity Scale 	mental and behaviour disorders|cognitive and psychological measurements	SIP043		Encoded Value
+CHOP:0000795	PNC_SIP044		SIPS- Structured Interview for Prodromal Symptoms: Avolition: How long has it been since you first had this trouble? Less than 1 month, between 1 month and 1 year, more than a year? Your entire lifetime or ever since you can remember?	mental and behaviour disorders|cognitive and psychological measurements	SIP044		Encoded Value
+CHOP:0000796	PNC_SOC001		Social Anxiety: Looking at this card, was there ever a time in your life when you felt afraid or uncomfortable or really, really shy with people, like meeting new people, going to parties, or eating or drinking, writing or doing homework in front of others?	mental and behaviour disorders	SOC001		Encoded Value
+CHOP:0000797	PNC_SOC002		Social Anxiety:  Looking at this card, was there ever a time in your life when you felt afraid or uncomfortable talking on the telephone or with people your own age who you don't know very well?	mental and behaviour disorders	SOC002		Encoded Value
+CHOP:0000798	PNC_SOC003		Social Anxiety: Looking at this card, was there ever a time in your life when you felt afraid or uncomfortable when you had to do something in front of a group of people, like speaking in class? 	mental and behaviour disorders	SOC003		Encoded Value
+CHOP:0000799	PNC_SOC004		Social Anxiety: Looking at this card, was there ever a time in your life when you felt afraid or uncomfortable acting, performing, giving a talk/speech, playing a sport or doing a musical performance, or taking an important test or exam (even though you studied enough)?	mental and behaviour disorders	SOC004		Encoded Value
+CHOP:0000800	PNC_SOC005		Social Anxiety: Looking at this card, was there ever a time in your life when you felt afraid or uncomfortable because you were the center of attention and were concerned something embarrassing might happen and you felt very afraid or felt uncomfortable?	mental and behaviour disorders	SOC005		Encoded Value
+CHOP:0000801	PNC_SOC007		Social Anxiety: When you had to face (insert feared situation), did you try to avoid it or if you couldn't avoid it, did you feel very distressed when you faced it?	mental and behaviour disorders	SOC007		Encoded Value
+CHOP:0000802	PNC_SOC008		Social Anxiety: Did this bother you more than most people your age?	mental and behaviour disorders	SOC008		Encoded Value
+CHOP:0000803	PNC_SOC009		Social Anxiety: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did your fear of this situation last? (Days)	mental and behaviour disorders	SOC009		Encoded Value
+CHOP:0000804	PNC_SOC010		Social Anxiety: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did your fear of this situation last? (Weeks)	mental and behaviour disorders	SOC010		Encoded Value
+CHOP:0000805	PNC_SOC011		Social Anxiety: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did your fear of this situation last? (Months)	mental and behaviour disorders	SOC011		Encoded Value
+CHOP:0000806	PNC_SOC011a		Social Anxiety: Thinking about all of the time that you were afraid of (insert worst fear), whether or not you actually faced it, how long did your fear of this situation last? (Years)	mental and behaviour disorders	SOC011a		Encoded Value
+CHOP:0000807	PNC_SOC012		Social Anxiety: How much did having this fear of (insert worst fear) upset or bother you?	mental and behaviour disorders	SOC012		Encoded Value
+CHOP:0000808	PNC_SOC013		Social Anxiety: How much did the fear you have told me about cause problems for you at home, at school or work, or with your family or friends?	mental and behaviour disorders	SOC013		Encoded Value
+CHOP:0000809	PNC_SOC014		Social Anxiety: Did you stay home from school or work because of your fear of (insert worst fear)?	mental and behaviour disorders	SOC014		Encoded Value
+CHOP:0000810	PNC_SOC015		Social Anxiety: How many days of school/work did you miss? (lifetime)	mental and behaviour disorders	SOC015		Encoded Value
+CHOP:0000811	PNC_SOC016		Social Anxiety: Did you ever avoid going to social events like birthday parties or other social activities because of your fear of (insert worst fear)?	mental and behaviour disorders	SOC016		Encoded Value
+CHOP:0000812	PNC_SOC017		Social Anxiety: How many times?	mental and behaviour disorders	SOC017		Encoded Value
+CHOP:0000813	PNC_SOC018		Social Anxiety: How old were you the first time you were afraid of (social situation)? (Age)	mental and behaviour disorders	SOC018		Encoded Value
+CHOP:0000814	PNC_SOC018a		Social Anxiety: How old were you the first time you were afraid of (social situation)? (Always)	mental and behaviour disorders	SOC018a		Encoded Value
+CHOP:0000815	PNC_SOC019		Social Anxiety: Are you still afraid of (social situation listed)?	mental and behaviour disorders	SOC019		Encoded Value
+CHOP:0000816	PNC_SOC020		Social Anxiety: How old were you the last time you had this fear?	mental and behaviour disorders	SOC020		Encoded Value
+CHOP:0000817	PNC_SUI001		Suicide: Have you ever thought a lot about death or dying?	mental and behaviour disorders	SUI001		Encoded Value
+CHOP:0000818	PNC_SUI002		Suicide: Have you ever thought about killing yourself?	mental and behaviour disorders	SUI002		Encoded Value
+CHOP:0000819	PNC_SUI003		Suicide: How old were you the first time you thought about (insert endorsed area)? (Age)	mental and behaviour disorders	SUI003		Encoded Value
+CHOP:0000820	PNC_SUI004		Suicide: How old were you the first time you thought about (insert endorsed area)? (Month)	mental and behaviour disorders	SUI004		Encoded Value
+CHOP:0000821	PNC_SUI005		Suicide: How old were you the first time you thought about (insert endorsed area)? (Date Year)	mental and behaviour disorders	SUI005		Encoded Value
+CHOP:0000822	PNC_SUI006		Suicide: How old were you the last time? (Age)	mental and behaviour disorders	SUI006		Encoded Value
+CHOP:0000823	PNC_SUI007		Suicide: How old were you the last time? (Month)	mental and behaviour disorders	SUI007		Encoded Value
+CHOP:0000824	PNC_SUI008		Suicide: How old were you the last time? (Date Year)	mental and behaviour disorders	SUI008		Encoded Value
+CHOP:0000825	PNC_SUI009		Suicide: Are you currently (within the past month) having thoughts about (insert endorsed area)?	mental and behaviour disorders	SUI009		Integer
+CHOP:0000826	PNC_age_at_cnb		Age at CNB test date	age/birthdate	age_at_cnb		Encoded Value
+CHOP:0000827	PNC_cnb_battery_valid		Penn Computerized Neurocognitive Battery Valid Code	survey administration	cnb_battery_valid		Encoded Value
+CHOP:0000828	PNC_PADT_Genus		PADT: Penn Age Differentiation Test Genus	Penn CNB	PADT_Genus		Encoded Value
+CHOP:0000829	PNC_PADT_VALID		PADT: Penn Age Differentiation Test Valid Code, by genus	Penn CNB	PADT_VALID		Integer
+CHOP:0000830	PNC_PADT_A		PADT: Total Correct Responses for All Test Trials, by genus	Penn CNB	PADT_A		Integer
+CHOP:0000831	PNC_PADT_T		PADT: Median Response Time for All Test Trials , by genus 	Penn CNB	PADT_T		Integer
+CHOP:0000832	PNC_PADT_SAME_CR		PADT: Number of Correct Responses to Test Trials with No Age Difference, by genus	Penn CNB	PADT_SAME_CR		Integer
+CHOP:0000833	PNC_PADT_SAME_RTCR		PADT: Median Response Time for Correct Responses for Test Trials with No Age Difference, by genus	Penn CNB	PADT_SAME_RTCR		Integer
+CHOP:0000834	PNC_PADT_PC		PADT: Percent Correct Responses for All Test Trials, by genus	Penn CNB	PADT_PC		Integer
+CHOP:0000835	PNC_PADT_SAME_PC		PADT: Percent Correct Responses to Test Trials with No Age Difference, by genus	Penn CNB	PADT_SAME_PC		Encoded Value
+CHOP:0000836	PNC_PFMT_GENUS		PFMT: Penn Face Memory Test Genus	Penn CNB	PFMT_GENUS		Encoded Value
+CHOP:0000837	PNC_PFMT_VALID		PFMT: Penn Face Memory Test Valid Code	Penn CNB	PFMT_VALID		Integer
+CHOP:0000838	PNC_PFMT_TP		PFMT: Number of Correct Responses to Target Faces (TP)	Penn CNB	PFMT_TP		Integer
+CHOP:0000839	PNC_PFMT_TN		PFMT: Number of Correct Responses to Foil Faces (TN) 	Penn CNB	PFMT_TN		Integer
+CHOP:0000840	PNC_PFMT_FP		PFMT: Number of Incorrect Responses to Foil Faces (FP)	Penn CNB	PFMT_FP		Integer
+CHOP:0000841	PNC_PFMT_FN		PFMT: Number of Incorrect Responses to Target Faces (FN)	Penn CNB	PFMT_FN		Integer
+CHOP:0000842	PNC_PFMT_TPRT		PFMT: Median Response Time for Correct Responses to Target Faces (TP) 	Penn CNB	PFMT_TPRT		Integer
+CHOP:0000843	PNC_PFMT_TNRT		PFMT: Median Response Time for Correct Responses to Foil Faces (TN) 	Penn CNB	PFMT_TNRT		Integer
+CHOP:0000844	PNC_PFMT_FPRT		PFMT: Median Response Time for Incorrect Responses to Foil Faces (FP) 	Penn CNB	PFMT_FPRT		Integer
+CHOP:0000845	PNC_PFMT_FNRT		PFMT: Median Response Time for Incorrect Responses to Target Faces (FN) 	Penn CNB	PFMT_FNRT		Integer
+CHOP:0000846	PNC_PFMT_IFAC_TOT		PFMT: Total Correct Responses for All Test Trials	Penn CNB	PFMT_IFAC_TOT		Integer
+CHOP:0000847	PNC_PFMT_IFAC_RTC		PFMT: Median Response Time for Total Correct Test Trial Responses 	Penn CNB	PFMT_IFAC_RTC		Encoded Value
+CHOP:0000848	PNC_PEIT_GENUS		PEIT: Penn Emotion Identification Test Genus	Penn CNB	PEIT_GENUS		Integer
+CHOP:0000849	PNC_PEIT_VALID		PEIT: Penn Emotion Identification Test Valid Code, by genus	Penn CNB	PEIT_VALID		Integer
+CHOP:0000850	PNC_PEIT_CR		PEIT: Total Correct Responses for All Test Trials, by genus	Penn CNB	PEIT_CR		Integer
+CHOP:0000851	PNC_PEIT_CRT		PEIT: Median Response Time for Total Correct Test Trial Responses, by genus	Penn CNB	PEIT_CRT		Integer
+CHOP:0000852	PNC_PEITANG		PEIT: Number of Correct Responses to Anger Trials, by genus	Penn CNB	PEITANG		Integer
+CHOP:0000853	PNC_PEITFEAR		PEIT: Number of Correct Responses to Fear Trials, by genus	Penn CNB	PEITFEAR		Integer
+CHOP:0000854	PNC_PEITHAP		PEIT: Number of Correct Responses to Happy Trials, by genus	Penn CNB	PEITHAP		Integer
+CHOP:0000855	PNC_PEITNOE		PEIT: Number of Correct Responses to Neutral Trials, by genus	Penn CNB	PEITNOE		Integer
+CHOP:0000856	PNC_PEITSAD		PEIT: Number of Correct Responses to Sad Trials, by genus	Penn CNB	PEITSAD		Integer
+CHOP:0000857	PNC_PEITANGRT		PEIT: Median Response Time for Correct Anger Trial Responses, by genus	Penn CNB	PEITANGRT		Integer
+CHOP:0000858	PNC_PEITFEARRT		PEIT: Median Response Time for Correct Fear Trial Responses, by genus	Penn CNB	PEITFEARRT		Integer
+CHOP:0000859	PNC_PEITHAPRT		PEIT: Median Response Time for Correct Happy Trial Responses, by genus	Penn CNB	PEITHAPRT		Integer
+CHOP:0000860	PNC_PEITNOERT		PEIT: Median Response Time for Correct Neutral Trial Responses, by genus	Penn CNB	PEITNOERT		Integer
+CHOP:0000861	PNC_PEITSADRT		PEIT: Median Response Time for Correct Sad Trial Responses, by genus	Penn CNB	PEITSADRT		Encoded Value
+CHOP:0000862	PNC_PWMT_GENUS		PWMT: Penn Word Memory Test Genus	Penn CNB	PWMT_GENUS		Encoded Value
+CHOP:0000863	PNC_PWMT_VALID		PWMT: Penn Word Memory Test Valid Code	Penn CNB	PWMT_VALID		Integer
+CHOP:0000864	PNC_PWMT_TP		PWMT: Number of Correct Responses to Target Words (TP)	Penn CNB	PWMT_TP		Integer
+CHOP:0000865	PNC_PWMT_TN		PWMT: Number of Correct Responses to Foil Words (TN) 	Penn CNB	PWMT_TN		Integer
+CHOP:0000866	PNC_PWMT_FP		PWMT: Number of Incorrect Responses to Foil Words (FP)	Penn CNB	PWMT_FP		Integer
+CHOP:0000867	PNC_PWMT_FN		PWMT: Number of Incorrect Responses to Target Words (FN)	Penn CNB	PWMT_FN		Integer
+CHOP:0000868	PNC_PWMT_TPRT		PWMT: Median Response Time for Correct Responses to Target Words (TP) 	Penn CNB	PWMT_TPRT		Integer
+CHOP:0000869	PNC_PWMT_TNRT		PWMT: Median Response Time for Correct Responses to Foil Words (TN) 	Penn CNB	PWMT_TNRT		Integer
+CHOP:0000870	PNC_PWMT_FPRT		PWMT: Median Response Time for Incorrect Responses to Foil Words (FP) 	Penn CNB	PWMT_FPRT		Integer
+CHOP:0000871	PNC_PWMT_FNRT		PWMT: Median Response Time for Incorrect Responses to Target Words (FN) 	Penn CNB	PWMT_FNRT		Integer
+CHOP:0000872	PNC_PWMT_KIWRD_TOT		PWMT: Total Correct Responses for All Test Trials	Penn CNB	PWMT_KIWRD_TOT		Integer
+CHOP:0000873	PNC_PWMT_KIWRD_RTC		PWMT: Median Response Time for Total Correct Test Trial Responses 	Penn CNB	PWMT_KIWRD_RTC		Encoded Value
+CHOP:0000874	PNC_PVRT_GENUS		PVRT: Penn Verbal Reasoning Test Genus	Penn CNB	PVRT_GENUS		Encoded Value
+CHOP:0000875	PNC_PVRT_VALID		PVRT: Penn Verbal Reasoning Test Valid Code, by genus	Penn CNB	PVRT_VALID		Integer
+CHOP:0000876	PNC_PVRT_CR		PVRT: Total Correct Responses for All Test Trials, by genus	Penn CNB	PVRT_CR		Integer
+CHOP:0000877	PNC_PVRT_RTCR		PVRT: Median Response Time for Correct Verbal Reasoning Responses, by genus	Penn CNB	PVRT_RTCR		Integer
+CHOP:0000878	PNC_PVRT_RTER		PVRT: Median Response Time for Incorrect Verbal Reasoning Responses, by genus	Penn CNB	PVRT_RTER		Encoded Value
+CHOP:0000879	PNC_PEDT_GENUS		PEDT: Penn Emotion Differentiation Test Genus	Penn CNB	PEDT_GENUS		Encoded Value
+CHOP:0000880	PNC_PEDT_VALID		PEDT: Penn Emotion Differentiation Test Valid Code, by genus	Penn CNB	PEDT_VALID		Integer
+CHOP:0000881	PNC_PEDT_HAP_CR		PEDT: Number of Correct Responses to Happy Trials, by genus	Penn CNB	PEDT_HAP_CR		Integer
+CHOP:0000882	PNC_PEDT_SAD_CR		PEDT: Number of Correct Responses to Sad Trials, by genus	Penn CNB	PEDT_SAD_CR		Integer
+CHOP:0000883	PNC_PEDT_ANG_CR		PEDT: Number of Correct Responses to Anger Trials, by genus	Penn CNB	PEDT_ANG_CR		Integer
+CHOP:0000884	PNC_PEDT_FEAR_CR		PEDT: Number of Correct Responses to Fear Trials, by genus	Penn CNB	PEDT_FEAR_CR		Integer
+CHOP:0000885	PNC_PEDT_HAP_RTCR		PEDT: Median Response Time for Correct Happy Trial Responses, by genus	Penn CNB	PEDT_HAP_RTCR		Integer
+CHOP:0000886	PNC_PEDT_SAD_RTCR		PEDT: Median Response Time for Correct Sad Trial Responses, by genus	Penn CNB	PEDT_SAD_RTCR		Integer
+CHOP:0000887	PNC_PEDT_ANG_RTCR		PEDT: Median Response Time for Correct Anger Trial Responses, by genus	Penn CNB	PEDT_ANG_RTCR		Integer
+CHOP:0000888	PNC_PEDT_FEAR_RTCR		PEDT: Median Response Time for Correct Fear Trial Responses, by genus	Penn CNB	PEDT_FEAR_RTCR		Integer
+CHOP:0000889	PNC_PEDT_SAME_CR		PEDT: Number of Correct Responses to Test Trials with Neutral Difference, by genus	Penn CNB	PEDT_SAME_CR		Integer
+CHOP:0000890	PNC_PEDT_SAME_RTCR		PEDT: Median Response Time for Correct Responses to Test Trials with Neutral Difference, by genus	Penn CNB	PEDT_SAME_RTCR		Integer
+CHOP:0000891	PNC_PEDT_A		PEDT: Total Correct Responses for All Test Trials, by genus	Penn CNB	PEDT_A		Integer
+CHOP:0000892	PNC_PEDT_T		PEDT: Median Response Time for All Test Trials , by genus	Penn CNB	PEDT_T		Integer
+CHOP:0000893	PNC_PEDT_PC		PEDT: Percent of Correct Responses for All Test Trials, by genus	Penn CNB	PEDT_PC		Integer
+CHOP:0000894	PNC_PEDT_HAP_PC		PEDT: Percent of Correct Responses for Happy Trials, by genus	Penn CNB	PEDT_HAP_PC		Integer
+CHOP:0000895	PNC_PEDT_SAD_PC		PEDT: Percent of Correct Responses for Sad Trials, by genus	Penn CNB	PEDT_SAD_PC		Integer
+CHOP:0000896	PNC_PEDT_ANG_PC		PEDT: Percent of Correct Responses for Anger Trials, by genus	Penn CNB	PEDT_ANG_PC		Integer
+CHOP:0000897	PNC_PEDT_FEAR_PC		PEDT: Percent of Correct Responses for Fear Trials, by genus	Penn CNB	PEDT_FEAR_PC		Integer
+CHOP:0000898	PNC_PEDT_SAME_PC		PEDT: Percent Correct Responses to Test Trials with Neutral Difference, by genus	Penn CNB	PEDT_SAME_PC		Encoded Value
+CHOP:0000899	PNC_MP_GENUS		MP: Motor Praxis Genus	Penn CNB	MP_GENUS		Encoded Value
+CHOP:0000900	PNC_MP_VALID		MP: Motor Praxis Valid Code	Penn CNB	MP_VALID		Integer
+CHOP:0000901	PNC_MP_MP2RTCR		MP: Median Response Time for Correct Mouse Click Responses 	Penn CNB	MP_MP2RTCR		Encoded Value
+CHOP:0000902	PNC_PMAT_GENUS		PMAT: Penn Matrix Reasoning Test Genus	Penn CNB	PMAT_GENUS		Encoded Value
+CHOP:0000903	PNC_PMAT_VALID		PMAT: Penn Matrix Reasoning Test Valid Code, by genus	Penn CNB	PMAT_VALID		Integer
+CHOP:0000904	PNC_PMAT_CR		PMAT: Total Correct Responses for All Test Trials, by genus	Penn CNB	PMAT_CR		Integer
+CHOP:0000905	PNC_PMAT_RTCR		PMAT: Median Response Time for Correct Test Trial Responses, by genus	Penn CNB	PMAT_RTCR		Integer
+CHOP:0000906	PNC_PMAT_RTER		PMAT: Median Response Time for Incorrect Test Trial Responses, by genus	Penn CNB	PMAT_RTER		Integer
+CHOP:0000907	PNC_PMAT_PC		PMAT: Percent of Correct Responses for All Test Trials, by genus	Penn CNB	PMAT_PC		Encoded Value
+CHOP:0000908	PNC_TAP_GENUS		TAP: Finger Tapping Test Genus	Penn CNB	TAP_GENUS		Encoded Value
+CHOP:0000909	PNC_TAP_VALID		TAP: Finger Tapping Test Valid Code	Penn CNB	TAP_VALID		String
+CHOP:0000910	PNC_TAP_HAND		TAP: Dominant Hand Selected for TAP Test	Penn CNB	TAP_HAND		Integer
+CHOP:0000911	PNC_TAP_DOM		TAP: Mean of Tap Responses Across Three Dominant Hand Trials	Penn CNB	TAP_DOM		Integer
+CHOP:0000912	PNC_TAP_NON		TAP: Mean of Tap Responses Across Three Non-Dominant Hand Trials	Penn CNB	TAP_NON		Integer
+CHOP:0000913	PNC_TAP_DOMSD		TAP: Standard Deviation of Mean Tap Responses Across Three Dominant Hand Trials	Penn CNB	TAP_DOMSD		Integer
+CHOP:0000914	PNC_TAP_NONSD		TAP: Standard Deviation of Mean Tap Responses Across Three Non-Dominant Hand Trials	Penn CNB	TAP_NONSD		Integer
+CHOP:0000915	PNC_TAP_TOT		TAP: Sum of Mean of Tap Responses for Dominant Hand Trials and Mean of Tap Responses of Non-Dominant Hand Trials	Penn CNB	TAP_TOT		Encoded Value
+CHOP:0000916	PNC_VOLT_GENUS		VOLT: Visual Object Learning Test Genus	Penn CNB	VOLT_GENUS		Encoded Value
+CHOP:0000917	PNC_VOLT_VALID		VOLT: Visual Object Learning Test Valid Code	Penn CNB	VOLT_VALID		Integer
+CHOP:0000918	PNC_VOLT_SVT		VOLT: Total Correct Responses for All Test Trial	Penn CNB	VOLT_SVT		Integer
+CHOP:0000919	PNC_VOLT_SVTCRT		VOLT: Median Response Time for Total Correct Responses 	Penn CNB	VOLT_SVTCRT		Integer
+CHOP:0000920	PNC_VOLT_SVTIRT		VOLT: Median Response Time for Incorrect Responses 	Penn CNB	VOLT_SVTIRT		Integer
+CHOP:0000921	PNC_VOLT_SVTTP		VOLT: Number of Correct Responses to Target Shapes (TP)	Penn CNB	VOLT_SVTTP		Integer
+CHOP:0000922	PNC_VOLT_SVTTN		VOLT: Number of Correct Responses to Foil Shapes (TN) 	Penn CNB	VOLT_SVTTN		Integer
+CHOP:0000923	PNC_VOLT_SVTFP		VOLT: Number of Incorrect Responses to Foil Shapes (FP)	Penn CNB	VOLT_SVTFP		Integer
+CHOP:0000924	PNC_VOLT_SVTFN		VOLT: Number of Incorrect Responses to Target Shapes (FN)	Penn CNB	VOLT_SVTFN		Integer
+CHOP:0000925	PNC_VOLT_SVTTPRT		VOLT: Median Response Time for Correct Responses to Target Shapes (TP) 	Penn CNB	VOLT_SVTTPRT		Integer
+CHOP:0000926	PNC_VOLT_SVTTNRT		VOLT: Median Response Time for Correct Responses to Foil Shapes (TN) 	Penn CNB	VOLT_SVTTNRT		Integer
+CHOP:0000927	PNC_VOLT_SVTFPRT		VOLT: Median Response Time for Incorrect Responses to Foil Shapes (FP) 	Penn CNB	VOLT_SVTFPRT		Integer
+CHOP:0000928	PNC_VOLT_SVTFNRT		VOLT: Median Response Time for Incorrect Responses to Target Shapes (FN) 	Penn CNB	VOLT_SVTFNRT		Encoded Value
+CHOP:0000929	PNC_LNB_GENUS		LNB: Letter N-Back Test Genus	Penn CNB	LNB_GENUS		Encoded Value
+CHOP:0000930	PNC_LNB_VALID		LNB: Letter N-Back Test Valid Code	Penn CNB	LNB_VALID		Integer
+CHOP:0000931	PNC_LNB_TP		LNB: Total Correct Responses to 0-Back, 1-Back, and 2-Back Trials (TP) 	Penn CNB	LNB_TP		Integer
+CHOP:0000932	PNC_LNB_FP		LNB: Total Incorrect Responses to 0-Back, 1-Back and 2-Back Trials (FP)	Penn CNB	LNB_FP		Integer
+CHOP:0000933	PNC_LNB_RTC		LNB: Median Response Time for All Correct Responses to 0-Back, 1-Back, and 2-Back Trials 	Penn CNB	LNB_RTC		Integer
+CHOP:0000934	PNC_LNB_MCR		LNB: Number of Correct Responses to for 1-Back and 2-Back Trials	Penn CNB	LNB_MCR		Integer
+CHOP:0000935	PNC_LNB_MRTC		LNB: Mean of the Median Response Time for Correct Responses for 1-Back (TP) and for 2-Back (TP) Trials 	Penn CNB	LNB_MRTC		Integer
+CHOP:0000936	PNC_LNB_TP0		LNB: Number of Correct Responses to 0-Back Trials (TP)	Penn CNB	LNB_TP0		Integer
+CHOP:0000937	PNC_LNB_FP0		LNB: Number of Incorrect Responses to 0-Back Trials (FP)	Penn CNB	LNB_FP0		Integer
+CHOP:0000938	PNC_LNB_RTC0		LNB: Median Response Time for Correct Responses to 0-Back Trials (TP) 	Penn CNB	LNB_RTC0		Integer
+CHOP:0000939	PNC_LNB_TP1		LNB: Number of Correct Responses to 1-Back Trials (TP)	Penn CNB	LNB_TP1		Integer
+CHOP:0000940	PNC_LNB_FP1		LNB: Number of Incorrect Responses to 1-Back Trials (FP)	Penn CNB	LNB_FP1		Integer
+CHOP:0000941	PNC_LNB_RTC1		LNB: Median Response Time for Correct Responses 1-Back Trials (TP) 	Penn CNB	LNB_RTC1		Integer
+CHOP:0000942	PNC_LNB_TP2		LNB: Number of Correct Responses to 2-Back Trials (TP)	Penn CNB	LNB_TP2		Integer
+CHOP:0000943	PNC_LNB_FP2		LNB: Number of Incorrect Responses to 2-Back Trials (FP)	Penn CNB	LNB_FP2		Integer
+CHOP:0000944	PNC_LNB_RTC2		LNB: Median Response Time for Correct Responses to 2-Back Trials (TP) 	Penn CNB	LNB_RTC2		Encoded Value
+CHOP:0000945	PNC_PCET_GENUS		PCET: Penn Conditional Exclusion Test Genus	Penn CNB	PCET_GENUS		Encoded Value
+CHOP:0000946	PNC_PCET_VALID		PCET: Penn Conditional Exclusion Test Valid Code	Penn CNB	PCET_VALID		Integer
+CHOP:0000947	PNC_PCET_RTCR		PCET: Median Response Time for Correct Responses 	Penn CNB	PCET_RTCR		Integer
+CHOP:0000948	PNC_PCET_RTER		PCET: Median Response Time for Incorrect Responses 	Penn CNB	PCET_RTER		Integer
+CHOP:0000949	PNC_PCET_CAT		PCET: Number of Categories Achieved	Penn CNB	PCET_CAT		Integer
+CHOP:0000950	PNC_PCET_ACC2		PCET: Calculated Accuracy Measure	Penn CNB	PCET_ACC2		Encoded Value
+CHOP:0000951	PNC_PCPT_GENUS		PCPT: Penn Continuous Performance Test Genus	Penn CNB	PCPT_GENUS		Encoded Value
+CHOP:0000952	PNC_PCPT_VALID		PCPT: Penn Continuous Performance Test Valid Code	Penn CNB	PCPT_VALID		Integer
+CHOP:0000953	PNC_PCPT_N_TP		PCPT: Number of Correct Responses to Number Trials (TP)	Penn CNB	PCPT_N_TP		Integer
+CHOP:0000954	PNC_PCPT_N_FP		PCPT: Number of Incorrect Responses to Number Trials (FP)	Penn CNB	PCPT_N_FP		Integer
+CHOP:0000955	PNC_PCPT_N_TPRT		PCPT: Median Response Time for Correct Responses to Number Trials (TP) 	Penn CNB	PCPT_N_TPRT		Integer
+CHOP:0000956	PNC_PCPT_N_FPRT		PCPT: Median Response Time for Incorrect Responses to Number Trials (FP) 	Penn CNB	PCPT_N_FPRT		Integer
+CHOP:0000957	PNC_PCPT_L_TP		PCPT: Number of Correct Responses to Letter Trials (TP)	Penn CNB	PCPT_L_TP		Integer
+CHOP:0000958	PNC_PCPT_L_FP		PCPT: Number of Incorrect Responses to Letter Trials (FP)	Penn CNB	PCPT_L_FP		Integer
+CHOP:0000959	PNC_PCPT_L_TPRT		PCPT: Median Response Time for Correct Responses to Letter Trials (TP) 	Penn CNB	PCPT_L_TPRT		Integer
+CHOP:0000960	PNC_PCPT_L_FPRT		PCPT: Median Response Time for Incorrect Responses to Letter Trials (FP) 	Penn CNB	PCPT_L_FPRT		Integer
+CHOP:0000961	PNC_PCPT_T_FP		PCPT: Total of Incorrect Responses to Number Trials (TP) and Letter Trials (FP)	Penn CNB	PCPT_T_FP		Integer
+CHOP:0000962	PNC_PCPT_T_TP		PCPT: Total of Correct Responses to Number Trials (TP) and Letter Trials (TP)	Penn CNB	PCPT_T_TP		Integer
+CHOP:0000963	PNC_PCPT_T_TPRT		PCPT: Median Response Time for Correct Responses to Number Trials (TP) and Letter Trials (TP) 	Penn CNB	PCPT_T_TPRT		Integer
+CHOP:0000964	PNC_PCPT_T_FPRT		PCPT: Median Response Time for Incorrect Responses to Number Trials (TP) and Letter Trials (TP) 	Penn CNB	PCPT_T_FPRT		Encoded Value
+CHOP:0000965	PNC_PLOT_GENUS		PLOT: Penn Line Orientation Test Genus	Penn CNB	PLOT_GENUS		Encoded Value
+CHOP:0000966	PNC_PLOT_VALID		PLOT: Penn Line Orientation Test Valid Code, by genus	Penn CNB	PLOT_VALID		Integer
+CHOP:0000967	PNC_PLOT_TC		PLOT: Total Correct Responses for All Test Trials, by genus	Penn CNB	PLOT_TC		Integer
+CHOP:0000968	PNC_PLOT_TCRT		PLOT: Median Response Time for Correct Trials, by genus	Penn CNB	PLOT_TCRT		Integer
+CHOP:0000969	PNC_PLOT_OFF		PLOT: Total Positions Off for All Test Trials, by genus	Penn CNB	PLOT_OFF		Integer
+CHOP:0000970	PNC_PLOT_PC		PLOT: Percent Correct Responses for All Test Trials, by genus	Penn CNB	PLOT_PC		Encoded Value
+CHOP:0000971	PNC_WRAT_GENUS		WRAT: Wide Range Assessment Test Genus	Penn CNB	WRAT_GENUS		Encoded Value
+CHOP:0000972	PNC_WRAT_VALID		WRAT: Wide Range Assessment Test Valid Code	Penn CNB	WRAT_VALID		Integer
+CHOP:0000973	PNC_WRAT_CR_RAW		WRAT: Wide Range Assessment Test 4 Total Raw Score	Penn CNB	WRAT_CR_RAW		Integer
+CHOP:0000974	PNC_WRAT_CR_STD		WRAT: Wide Range Assessment Test Total Standard Score	Penn CNB	WRAT_CR_STD		Integer
+CHOP:0000975	PNC_SUB_ALC		Alcohol use endorsed	alcohol use history	SUB_ALC		Integer
+CHOP:0000976	PNC_SUB_COC		Cocaine use endorsed	recreational drug history	SUB_COC		Integer
+CHOP:0000977	PNC_SUB_DOWN		Downers use endorsed	recreational drug history	SUB_DOWN		Integer
+CHOP:0000978	PNC_SUB_INH		Inhalant use endorsed	recreational drug history	SUB_INH		Integer
+CHOP:0000979	PNC_SUB_MAR		Marijuana use endorsed	recreational drug history	SUB_MAR		Integer
+CHOP:0000980	PNC_SUB_OPI		Opiate use endorsed	recreational drug history	SUB_OPI		Integer
+CHOP:0000981	PNC_SUB_OTC		Over the counter substance use endorsed	medication	SUB_OTC		Integer
+CHOP:0000982	PNC_SUB_PSY		Psychedelic use endorsed	recreational drug history	SUB_PSY		Integer
+CHOP:0000983	PNC_SUB_STER		Steroid use endorsed	recreational drug history	SUB_STER		Integer
+CHOP:0000984	PNC_SUB_STIM		Stimulant use endorsed	recreational drug history	SUB_STIM		Integer
+CHOP:0000985	PNC_SUB_TOB		Tobacco use endorsed	tobacco use history	SUB_TOB		Integer
+CHOP:0000986	PNC_SUB_TRAN		Tranquilizer used endorsed	recreational drug history	SUB_TRAN		Integer
+CHOP:0000987	PNC_SUB_TOT		Total number of substances  endorsed	recreational drug history	SUB_TOT		Integer
+CHOP:0000988	PNC_Education		Years of education	education	Education		Integer
+CHOP:0000989	PNC_Mother_Education		Years of education - mother	education	Mother_Education		Integer
+CHOP:0000990	PNC_Father_Education		Years of education - father	education	Father_Education		
+CHOP:0000991	DAC_RECONTACT		Permission to recontact for further research (Y/N)	survey administration	RECONTACT		Yes-No
+CHOP:0000992	DAC_GENOTYPE		Genotype data available(Y/N)	DNA/Genotyping	GENOTYPE		Yes-No
+CHOP:0000993	DAC_WES		Whole exome sequencing data available (Y/N)	WES	WES		Yes-No
+CHOP:0000994	DAC_WGS		Whole genome sequencing data available (Y/N)	WGS	WGS		Yes-No
+CHOP:0000995	DAC_IMAGE_MRI		MRI imaging data available (Y/N)	laboratory measures	IMAGE_MRI		Yes-No
+CHOP:0000996	DAC_IMAGE_PET		PET imaging data available (Y/N)	laboratory measures	IMAGE_PET		Yes-No

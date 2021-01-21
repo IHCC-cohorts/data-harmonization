@@ -18,7 +18,6 @@ def main():
     for cohort, item in data.items():
         short_name = cohort.lower()
         item['id'] = short_name
-        item['name'] = item['cohort_name']
         item['owl'] = '{0}.owl'.format(short_name)
         item['terms'] = '{0}.html'.format(short_name)
         item['tree'] = '{0}-tree.html'.format(short_name)

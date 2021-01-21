@@ -180,7 +180,7 @@ def validate(table, gecko_labels):
                         "cell": loc,
                         "level": "error",
                         "rule": "Invalid parent term",
-                        "instructions": f"make sure that the parent term ({pt}) is a label listed "
+                        "message": f"make sure that the parent term ({pt}) is a label listed "
                         "in the label column of this table",
                     }
                 )
