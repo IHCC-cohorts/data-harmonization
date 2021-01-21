@@ -113,12 +113,10 @@
       "sample_type": []
     },
     "cohort_name": "Center for Applied Genomics, Children's Hospital of Philadelphia",
-    "collected_imaging": {
-      "cat": false,
-      "mri": true,
-      "other": false,
-      "pet": true
-    },
+    "collected_imaging": [
+      "MRI",
+      "PET"
+    ],
     "countries": [
       "USA"
     ],
@@ -232,12 +230,7 @@
       ]
     },
     "cohort_name": "ELSA-Brasil",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "Brazil"
     ],
@@ -349,12 +342,7 @@
       ]
     },
     "cohort_name": "Golestan Cohort Study",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "Iran"
     ],
@@ -438,12 +426,7 @@
       ]
     },
     "cohort_name": "Genomics England / 100,000 Genomes Project",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "England"
     ],
@@ -744,12 +727,7 @@
       ]
     },
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "South Korea"
     ],
@@ -810,6 +788,7 @@
       "polygenic_risk_scores": false
     },
     "cohort_name": "Prostate, Lung, Colorectal and Ovarian Cancer Screening Trial",
+    "collected_imaging": [],
     "countries": [
       "U.S."
     ],
@@ -884,12 +863,7 @@
       "polygenic_risk_scores": false
     },
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "South Africa"
     ],
@@ -941,12 +915,7 @@
       ]
     },
     "cohort_name": "UKCTOCS Longitudinal Women's Cohort (UKLWC)",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "England",
       "Wales",
@@ -1028,12 +997,7 @@
       ]
     },
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "South Africa"
     ],
