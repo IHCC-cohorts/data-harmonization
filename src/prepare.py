@@ -83,12 +83,7 @@ def main():
             "polygenic_risk_scores": False,
         },
         "cohort_name": None,
-        "collected_imaging": {
-            "mri": False,
-            "pet": False,
-            "cat": False,
-            "other": False,
-        },
+        "collected_imaging": [],
         "countries": None,
         "current_enrollment": None,
         "enrollment_period": None,
@@ -154,8 +149,9 @@ def main():
 
             # Imaging
             elif key in imaging:
-                img_key = key.lower()
-                d["collected_imaging"][img_key] = get_bool(val)
+                arr = d["collected_imaging"]
+                arr.append(key)
+                d["collected_imaging"] = arr
 
             # Other
             else:
