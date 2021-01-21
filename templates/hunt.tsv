@@ -1,0 +1,890 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+HUNT:0000001	HUNT70+ study part (NT4Eld)						Added as grouping cat
+HUNT:0000002	QTyp	HUNT70+ study part (NT4Eld)	Questionnaire type	survey administration	23130		field statation, institution, home visit
+HUNT:0000003	MocaTrail	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Alternating Trail Making	MoCA	19602		
+HUNT:0000004	MocaCube	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Cube	MoCA	19603		
+HUNT:0000005	MocaCdtConto	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Clock Contour	MoCA	19604		
+HUNT:0000006	MocaCdtN	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Clock Numbers	MoCA	19605		
+HUNT:0000007	MocaCdtVise	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Clock Hands	MoCA	19606		
+HUNT:0000008	MocaExecSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Executive SubScore	MoCA	19607		
+HUNT:0000009	MocaLion	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Lion	MoCA	19608		
+HUNT:0000010	MocaRhino	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Rhinoceros	MoCA	19609		
+HUNT:0000011	MocaCamel	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Camel	MoCA	19610		
+HUNT:0000012	MocaNamSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Naming SubScore	MoCA	19611		
+HUNT:0000013	MocaFwDigSpa	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Forward Digit Span	MoCA	19612		
+HUNT:0000014	MocaBwDigSpa	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Backwords Digit Span	MoCA	19613		
+HUNT:0000015	MocaDigSpaSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Digit Span SubScore	MoCA	19614		
+HUNT:0000016	MocaLetTap	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Letter Tap	MoCA	19615		
+HUNT:0000017	MocaLetTapSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Letter Tap SubScore	MoCA	19616		
+HUNT:0000018	Moca7Subtr93	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment 7 Subtraction 93	MoCA	19617		
+HUNT:0000019	Moca7Subtr86	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment 7 Subtraction 86	MoCA	19618		
+HUNT:0000020	Moca7Subtr79	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment 7 Subtraction 79	MoCA	19619		
+HUNT:0000021	Moca7Subtr72	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment 7 Subtraction 72	MoCA	19620		
+HUNT:0000022	Moca7Subtr65	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment 7 Subtraction 65	MoCA	19621		
+HUNT:0000023	Moca7SubtrSumS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment 7 Subtraction SubScore	MoCA	19622		
+HUNT:0000024	MocaSent1	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Sentence 1	MoCA	19623		
+HUNT:0000025	MocaSent2	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Sentence 2	MoCA	19624		
+HUNT:0000026	MocaSentSubS	HUNT70+ study part (NT4Eld)	Montreal cognitive Assessment Sentence SubScore	MoCA	19625		
+HUNT:0000027	MocaLetFluenN	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Letter Fluency	MoCA	19626		
+HUNT:0000028	MocaLetFluenSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Letter Fluency SubScore	MoCA	19627		
+HUNT:0000029	MocaAbstTran	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Abstraction Transport	MoCA	19628		
+HUNT:0000030	MocaAbstMea	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Abstraction Measure	MoCA	19629		
+HUNT:0000031	MocaAbstSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment SubScore	MoCA	19630		
+HUNT:0000032	MocaMemFace	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Memory Face	MoCA	19631		
+HUNT:0000033	MocaMemVelvet	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Memory Velvet	MoCA	19632		
+HUNT:0000034	MocaMemChu	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Memory Church	MoCA	19633		
+HUNT:0000035	MocaMemDaisy	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Memory Daisy	MoCA	19634		
+HUNT:0000036	MocaMemRed	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Memory Colour Red	MoCA	19635		
+HUNT:0000037	MocaMemSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Memory SubScore	MoCA	19636		
+HUNT:0000038	MocaDat	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Date	MoCA	19637		
+HUNT:0000039	MocaMo	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Month	MoCA	19638		
+HUNT:0000040	MocaY	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Year	MoCA	19639		
+HUNT:0000041	MocaD	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Day	MoCA	19640		
+HUNT:0000042	MocaPlac	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Place	MoCA	19641		
+HUNT:0000043	MocaCity	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment City	MoCA	19642		
+HUNT:0000044	MocaOrienSubS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Orientation SubScore	MoCA	19643		
+HUNT:0000045	MocaTotS	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Total Score	MoCA	23129		
+HUNT:0000046	MocaTotSComple	HUNT70+ study part (NT4Eld)	Montreal Cognitive Assessment Total Score	MoCA	23128		Sum without cases with missing sub-scores
+HUNT:0000047	CeradMemBut1	HUNT70+ study part (NT4Eld)	CERAD Memory Butter 1	CERAD Battery	19645		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000048	CeradMemArm1	HUNT70+ study part (NT4Eld)	CERAD Memory Arm 1	CERAD Battery	19646		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000049	CeradMemShore1	HUNT70+ study part (NT4Eld)	CERAD Memory Shore 1	CERAD Battery	19647		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000050	CeradMemLet1	HUNT70+ study part (NT4Eld)	CERAD Memory Letter 1	CERAD Battery	19648		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000051	CeradMemQueen1	HUNT70+ study part (NT4Eld)	CERAD Memory Queen 1	CERAD Battery	19649		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000052	CeradMemCabin1	HUNT70+ study part (NT4Eld)	CERAD Memory Cabin1	CERAD Battery	19650		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000053	CeradMemCane1	HUNT70+ study part (NT4Eld)	CERAD Memory Pole 1	CERAD Battery	19651		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000054	CeradMemTick1	HUNT70+ study part (NT4Eld)	CERAD Memory Ticket 1	CERAD Battery	19652		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000055	CeradMemGras1	HUNT70+ study part (NT4Eld)	CERAD Memory Grass 1	CERAD Battery	19653		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000056	CeradMemEng1	HUNT70+ study part (NT4Eld)	CERAD Memory Engine 1	CERAD Battery	19654		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000057	CeradMemNon1	HUNT70+ study part (NT4Eld)	CERAD Memory None 1	CERAD Battery	19655		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000058	CeradMemTick2	HUNT70+ study part (NT4Eld)	CERAD Memory Ticket 2	CERAD Battery	19656		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000059	CeradMemCabin2	HUNT70+ study part (NT4Eld)	CERAD Memory Cabin 2	CERAD Battery	19657		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000060	CeradMemBut2	HUNT70+ study part (NT4Eld)	CERAD Memory Butter 2	CERAD Battery	19658		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000061	CeradMemShore2	HUNT70+ study part (NT4Eld)	CERAD Memory Shore 2	CERAD Battery	19659		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000062	CeradMemEng2	HUNT70+ study part (NT4Eld)	CERAD Memory Engine 2	CERAD Battery	19660		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000063	CeradMemArm2	HUNT70+ study part (NT4Eld)	CERAD Memory Arm 2	CERAD Battery	19661		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000064	CeradMemQueen2	HUNT70+ study part (NT4Eld)	CERAD Memory Queen 2	CERAD Battery	19662		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000065	CeradMemLet2	HUNT70+ study part (NT4Eld)	CERAD Memory Letter 2	CERAD Battery	19663		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000066	CeradMemCane2	HUNT70+ study part (NT4Eld)	CERAD Memory Pole 2	CERAD Battery	19664		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000067	CeradMemGras2	HUNT70+ study part (NT4Eld)	CERAD Memory Grass 2	CERAD Battery	19665		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000068	CeradMemNon2	HUNT70+ study part (NT4Eld)	CERAD Memory None 2	CERAD Battery	19666		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000069	CeradMemQueen3	HUNT70+ study part (NT4Eld)	CERAD Memory Queen 3	CERAD Battery	19667		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000070	CeradMemGras3	HUNT70+ study part (NT4Eld)	CERAD Memory Grass 3	CERAD Battery	19668		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000071	CeradMemArm3	HUNT70+ study part (NT4Eld)	CERAD Memory Arm 3	CERAD Battery	19669		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000072	CeradMemCabin3	HUNT70+ study part (NT4Eld)	CERAD Memory Cabin 3	CERAD Battery	19670		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000073	CeradMemCane3	HUNT70+ study part (NT4Eld)	CERAD Memory Pole 3	CERAD Battery	19671		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000074	CeradMemShore3	HUNT70+ study part (NT4Eld)	CERAD Memory Shore 3	CERAD Battery	19672		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000075	CeradMemBut3	HUNT70+ study part (NT4Eld)	CERAD Memory Butter 3	CERAD Battery	19673		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000076	CeradMemEng3	HUNT70+ study part (NT4Eld)	CERAD Memory Engine 3	CERAD Battery	19674		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000077	CeradMemTick3	HUNT70+ study part (NT4Eld)	CERAD Memory Ticket 3	CERAD Battery	19675		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000078	CeradMemLet3	HUNT70+ study part (NT4Eld)	CERAD Memory Letter 3	CERAD Battery	19676		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000079	CeradMemNon3	HUNT70+ study part (NT4Eld)	CERAD Memory None 3	CERAD Battery	19677		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000080	CogMisSi	CogNotDo|CogCanc	Sight	survey administration	19678		Cause of incomplete/missing MoCA:
+HUNT:0000081	CogMisHear	CogNotDo|CogCanc	Hear	survey administration	19679		Cause of incomplete/missing MoCA:
+HUNT:0000082	CogMisLang	CogNotDo|CogCanc	Language	survey administration	19680		Cause of incomplete/missing MoCA:
+HUNT:0000083	CogMisHandFunc	CogNotDo|CogCanc	Hand Function	survey administration	19681		Cause of incomplete/missing MoCA:
+HUNT:0000084	CogMisOth	CogNotDo|CogCanc	Other	survey administration	19682		Cause of incomplete/missing MoCA:
+HUNT:0000085	CogNotDo	HUNT70+ study part (NT4Eld)	Cognitive test not done due to	survey administration	19683		
+HUNT:0000086	CogCanc	HUNT70+ study part (NT4Eld)	Cognitive test cancelled due to	survey administration	19684		
+HUNT:0000087	DeclMemL5Y	HUNT70+ study part (NT4Eld)	Has your memory become significantly worse in the last five years?	signs and symptoms	19685		Screeing questions of subjective cognitive decline
+HUNT:0000088	DeclOtCogFuncL5Y	HUNT70+ study part (NT4Eld)	Have other cognitive functions (like orientation ability or language) become worse in the last five years?	signs and symptoms	19686		Screeing questions of subjective cognitive decline
+HUNT:0000089	CogFuncWoPeer	HUNT70+ study part (NT4Eld)	Are these features worse than your peers?	perception of health	19687		Screeing questions of subjective cognitive decline
+HUNT:0000090	CogChaWorr	DeclMemL5Y|DeclOtCogFuncL5Y|CogFuncWoPeer	Do these changes worries you?	perception of health	19688		Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000091	CogChaMoN	DeclMemL5Y|DeclOtCogFuncL5Y	How long since your experienced the changes?	signs and symptoms	19689		months. Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000092	CogDeb	DeclMemL5Y|DeclOtCogFuncL5Y	How did it debut?	signs and symptoms	19690		Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000093	CogProgr	DeclMemL5Y|DeclOtCogFuncL5Y	How has it progressed?	signs and symptoms	19691		Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000094	CogWo	DeclMemL5Y|DeclOtCogFuncL5Y	How has the progression been?	signs and symptoms	19692		Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000095	CogDiffADL	DeclMemL5Y|DeclOtCogFuncL5Y	Has this made it harder to carry out any of the daily activities?	quality of life	19693		Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000096	HallSeeHear	DeclMemL5Y|DeclOtCogFuncL5Y	Have you experienced seeing or hearing things that others do not experience?	signs and symptoms	19694		Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000097	OthSayYouSuspi	DeclMemL5Y|DeclOtCogFuncL5Y	Does anyone say that you have become overly suspicious or can imagine things?	signs and symptoms	19695		Answered if YES on at least one of DeclMemL5Y/DeclOtCogFuncL5Y/CogFuncWoPeer
+HUNT:0000098	FamDiagDem	HUNT70+ study part (NT4Eld)	Has anyone in your family had serious memory problems or dementia?	family history of disease	19696		
+HUNT:0000099	DiagDemFam1	FamDiagDem	Dementia First-degree relatives	family history of disease	19697		
+HUNT:0000100	DiagDemFam2	FamDiagDem	Dementia Second-degree relatives	family history of disease	19698		
+HUNT:0000101	DemAsse	HUNT70+ study part (NT4Eld)	Have you ever been assessed for memory problems?	cognitive functioning	19699		Interview on previous dementie assessment
+HUNT:0000102	DemAsseHosp	DemAsse	Hospital	hospitalizations	19700		self-reported location of previous dementia assessment
+HUNT:0000103	DemAsseMunici	DemAsse	Municipal dementia team	physician/practitioner info	19701		self-reported location of previous dementia assessment
+HUNT:0000104	DemAsseGP	DemAsse	General practitioner	physician/practitioner info	19702		self-reported location of previous dementia assessment
+HUNT:0000105	DemAsseDntKn	DemAsse	Do not know	physician/practitioner info	19703		self-reported location of previous dementia assessment
+HUNT:0000106	DemDiag	DemAsse	Do you have any diagnosis regarding your memory problems or a dementia disease?	mental and behaviour disorders	19704		self-reported dementia diagnosis
+HUNT:0000107	DemDiagTyp	DemAsse	Name of diagnosis	mental and behaviour disorders	19705		self-reported dementia diagnosis
+HUNT:0000108	PooAppeL4W	HUNT70+ study part (NT4Eld)	Have you had poor appetite last 4 weeks?	signs and symptoms	19706		
+HUNT:0000109	FoIntaL4W	HUNT70+ study part (NT4Eld)	How will you describe your food intake last 4 weeks?	dietary history	19707		
+HUNT:0000110	ChewFo	HUNT70+ study part (NT4Eld)	Are you able to chew any kind of food	functional limitations	19708		
+HUNT:0000111	PaTootMouL4W	HUNT70+ study part (NT4Eld)	Have you had pain or discomfort in your teeth or mouth?	signs and symptoms	19709		
+HUNT:0000112	UpArmCircNum1	HUNT70+ study part (NT4Eld)	Upper Arm Circumference 1	anthropometry	21798		cm
+HUNT:0000113	UpArmCircNum2	HUNT70+ study part (NT4Eld)	Upper Arm Circumference 2	anthropometry	23856		cm
+HUNT:0000114	PhyTest	HUNT70+ study part (NT4Eld)	Completion of physical test	physiological measurements	19712		
+HUNT:0000115	BalTogNotAbl	HUNT70+ study part (NT4Eld)	Balance Feet together: Not Able	physiological measurements	19713		Short Physical Performance Battery (SPPB)
+HUNT:0000116	BalTogTm	HUNT70+ study part (NT4Eld)	Balance Feet together	physiological measurements	21797		Short Physical Performance Battery (SPPB)
+HUNT:0000117	BalSemiTanNotAbl	HUNT70+ study part (NT4Eld)	Balance Semi Tandem: Not able	physiological measurements	19716		Short Physical Performance Battery (SPPB)
+HUNT:0000118	BalSemiTanTm	HUNT70+ study part (NT4Eld)	Balance Semi Tandem	physiological measurements	21796		Short Physical Performance Battery (SPPB)
+HUNT:0000119	BalTanNotAbl	HUNT70+ study part (NT4Eld)	Balance Tandem: Not able	physiological measurements	19719		Short Physical Performance Battery (SPPB)
+HUNT:0000120	BalTanTm	HUNT70+ study part (NT4Eld)	Balance Tandem	physiological measurements	21795		Short Physical Performance Battery (SPPB)
+HUNT:0000121	BalFlaNotAbl	HUNT70+ study part (NT4Eld)	Balance Flamingo test: Not Able	physiological measurements	19722		Short Physical Performance Battery (SPPB)
+HUNT:0000122	BalFlaOpeTm	HUNT70+ study part (NT4Eld)	Balance Flamingo test eyes open	physiological measurements	21793		Short Physical Performance Battery (SPPB)
+HUNT:0000123	BalFlaCloTm	HUNT70+ study part (NT4Eld)	Balance Flamingo test eyes closed	physiological measurements	21794		Short Physical Performance Battery (SPPB)
+HUNT:0000124	GaitNotAbl	HUNT70+ study part (NT4Eld)	SPPB Gait Not Able	physiological measurements	19727		Short Physical Performance Battery (SPPB)
+HUNT:0000125	GaitAid	HUNT70+ study part (NT4Eld)	Assistive devices during walking test	physiological measurements	19728		Short Physical Performance Battery (SPPB)
+HUNT:0000126	GaitAidOt	HUNT70+ study part (NT4Eld)	Type of other assistive devices	physiological measurements	19729		Short Physical Performance Battery (SPPB)
+HUNT:0000127	GaitTm1	HUNT70+ study part (NT4Eld)	SPPB Gait 1	physiological measurements	21791		Short Physical Performance Battery (SPPB)
+HUNT:0000128	GaitTm2	HUNT70+ study part (NT4Eld)	SPPB Gait 2	physiological measurements	21792		Short Physical Performance Battery (SPPB)
+HUNT:0000129	GaitSpe	HUNT70+ study part (NT4Eld)	Gait speed	physiological measurements	24981		Short Physical Performance Battery (SPPB)
+HUNT:0000130	ChairNotAbl	HUNT70+ study part (NT4Eld)	SPPB Chair test: Not Able	physiological measurements	19734		Short Physical Performance Battery (SPPB)
+HUNT:0000131	ChairTm	HUNT70+ study part (NT4Eld)	SPPB Chair Time	physiological measurements	576		Short Physical Performance Battery (SPPB)
+HUNT:0000132	SppbBalTog	HUNT70+ study part (NT4Eld)	Balance feet together, SPPB subscore	physiological measurements	24276		Short Physical Performance Battery (SPPB)
+HUNT:0000133	SppbBalSemiTan	HUNT70+ study part (NT4Eld)	Balance semi tandem, SPPB subscore	physiological measurements	24275		Short Physical Performance Battery (SPPB)
+HUNT:0000134	SppbBalTan	HUNT70+ study part (NT4Eld)	Balance tandem, SPPB subscore	physiological measurements	24277		Short Physical Performance Battery (SPPB)
+HUNT:0000135	SppbGait	HUNT70+ study part (NT4Eld)	Gait speed, SPPB subscore	physiological measurements	24278		Short Physical Performance Battery (SPPB)
+HUNT:0000136	SppbChair	HUNT70+ study part (NT4Eld)	Chair rise, SPPB subscore	physiological measurements	24279		Short Physical Performance Battery (SPPB)
+HUNT:0000137	SppbTotS	HUNT70+ study part (NT4Eld)	SPPB total score	physiological measurements	24280		Short Physical Performance Battery (SPPB)
+HUNT:0000138	SppbTotSComple	HUNT70+ study part (NT4Eld)	SPPB total score, only complete scores	physiological measurements	24281		Short Physical Performance Battery (SPPB)
+HUNT:0000139	GripStreDomHand	HUNT70+ study part (NT4Eld)	Grip Strength Dominant Hand	physiological measurements	19738		
+HUNT:0000140	GripStreRiNotAbl	HUNT70+ study part (NT4Eld)	Grip Strength Right hand, Not Able	physiological measurements	19739		
+HUNT:0000141	GripStreLeNotAbl	HUNT70+ study part (NT4Eld)	Grip Strength Left hand, Not Able	physiological measurements	19740		
+HUNT:0000142	GripStreRi1	HUNT70+ study part (NT4Eld)	Grip Strength Right hand, 1st trial	physiological measurements	24982		kg
+HUNT:0000143	GripStreRi2	HUNT70+ study part (NT4Eld)	Grip strenght Right hand, 2. trial	physiological measurements	24983		kg
+HUNT:0000144	GripStreRi3	HUNT70+ study part (NT4Eld)	Grip strenght Right hand, 3. trial	physiological measurements	24984		kg
+HUNT:0000145	GripStreLe1	HUNT70+ study part (NT4Eld)	Grip strength Left hand, 1st trial	physiological measurements	25184		kg
+HUNT:0000146	GripStreLe2	HUNT70+ study part (NT4Eld)	Grip strength Left hand, 2nd trial	physiological measurements	25185		kg
+HUNT:0000147	GripStreLe3	HUNT70+ study part (NT4Eld)	Grip strength Left hand, 3rd trial	physiological measurements	25186		kg
+HUNT:0000148	GripStre	HUNT70+ study part (NT4Eld)	Max grip strenght performance	physiological measurements	25194		kg
+HUNT:0000149	CeradButReca	HUNT70+ study part (NT4Eld)	CERAD Butter Recall	CERAD Battery	19753		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000150	CeradTickReca	HUNT70+ study part (NT4Eld)	CERAD Ticket Recall	CERAD Battery	19754		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000151	CeradCabinReca	HUNT70+ study part (NT4Eld)	CERAD Cabin Recall	CERAD Battery	19755		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000152	CeradLetReca	HUNT70+ study part (NT4Eld)	CERAD Letter Recall	CERAD Battery	19756		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000153	CeradArmReca	HUNT70+ study part (NT4Eld)	CERAD Arm Recall	CERAD Battery	19757		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000154	CeradGrasReca	HUNT70+ study part (NT4Eld)	CERAD Grass Recall	CERAD Battery	19758		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000155	CeradCaneReca	HUNT70+ study part (NT4Eld)	CERAD Pole Recall	CERAD Battery	19759		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000156	CeradQueenReca	HUNT70+ study part (NT4Eld)	CERAD Queen Recall	CERAD Battery	19760		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000157	CeradShoreReca	HUNT70+ study part (NT4Eld)	CERAD Shore Recall	CERAD Battery	19761		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000158	CeradEngReca	HUNT70+ study part (NT4Eld)	CERAD Engine Recall	CERAD Battery	19762		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000159	CeradNonReca	HUNT70+ study part (NT4Eld)	CERAD Recall None	CERAD Battery	19763		The Consortium to Establish a Registry for Alzheimer’s Disease Word List task (CERAD-WL). only for those with MoCA score ≥22
+HUNT:0000160	RelaContaMoca	HUNT70+ study part (NT4Eld)	Relative Contact MoCA Score	survey administration	19764		Reason to ask for consent to interview a proxy
+HUNT:0000161	RelaContaCerad	HUNT70+ study part (NT4Eld)	Relative Contact CERAD Score	survey administration	19765		Reason to ask for consent to interview a proxy
+HUNT:0000162	RelaContaCogDecl	HUNT70+ study part (NT4Eld)	Relative Contact Subjective Cognitive Decline	survey administration	19766		Reason to ask for consent to interview a proxy
+HUNT:0000163	RelaContaCons	HUNT70+ study part (NT4Eld)	Relative Contact Consent	survey administration	19767		
+HUNT:0000164	ObsVoic	HUNT70+ study part (NT4Eld)	How is the voice?	signs and symptoms	19830		Revised Oral Assessment Guide – Jönköping (ROAG-J). Standardized instrument to be used by non-dental professionals to observe, assess and document oral health problems in elderly. Source: 1. Eilers et al. 2. Andersson P, Rahm Hallberg I, Renvert S. Inter-rater reliability of an oral assessment guide för elderly patients residing in a rehabilitation ward. Special Care In Dentistry 2002;22(5):181-6.
+HUNT:0000165	ObsSwaFunc	HUNT70+ study part (NT4Eld)	How is the swallowing function?	signs and symptoms	19831		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000166	ObsLip	HUNT70+ study part (NT4Eld)	How does the lips look?	oral health history	19832		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000167	ObsOralMuc	HUNT70+ study part (NT4Eld)	How does the oral mucosal look?	oral health history	19833		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000168	ObsTon	HUNT70+ study part (NT4Eld)	How does the tongue look?	oral health history	19834		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000169	ObsMouFloor	HUNT70+ study part (NT4Eld)	How does the area under the tongue look?	oral health history	19835		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000170	ObsDryMou	HUNT70+ study part (NT4Eld)	How does the toothbrush move on the inside of the cheek?	oral health history	19836		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000171	ObsGum	HUNT70+ study part (NT4Eld)	How does the gum look?	oral health history	19837		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000172	ObsOwnToot	HUNT70+ study part (NT4Eld)	Own teeth?	oral health history	19838		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000173	ObsToot	HUNT70+ study part (NT4Eld)	How does the teeth look?	oral health history	19839		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000174	ObsTootUpJawN	HUNT70+ study part (NT4Eld)	More than 6 teeth in upper jaw?	oral health history	19840		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000175	ObsTootLoJawN	HUNT70+ study part (NT4Eld)	More than 6 teeth in lower jaw?	oral health history	19841		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000176	ObsTootLoo	HUNT70+ study part (NT4Eld)	Are some of the own teeth loose?	oral health history	19842		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000177	ObsRootRema	HUNT70+ study part (NT4Eld)	Do you see any remains of roots?	oral health history	19843		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000178	ObsProst	HUNT70+ study part (NT4Eld)	Full or part prosthetics?	oral health history	19844		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000179	ObsProstJaw	HUNT70+ study part (NT4Eld)	Prosthetics in upper or/and lower jaw	oral health history	19845		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000180	ObsProstLook	HUNT70+ study part (NT4Eld)	How does the prosthetic(s) look?	oral health history	19846		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000181	ObsProstWor	HUNT70+ study part (NT4Eld)	How does the prosthetic(s) function?	oral health history	19847		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000182	ObsProstROAG	HUNT70+ study part (NT4Eld)	ROAG oral assessment - Prosthesis	oral health history	23904		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000183	ObsMou	HUNT70+ study part (NT4Eld)	Mouth observation performed?	oral health history	19848		Revised Oral Assessment Guide – Jönköping (ROAG-J)
+HUNT:0000184	BPSyst1	HUNT70+ study part (NT4Eld)	Systolic blood pressure measurement 1	blood pressure	19849		
+HUNT:0000185	BPSyst2	HUNT70+ study part (NT4Eld)	Systolic blood pressure measurement 2	blood pressure	19850		
+HUNT:0000186	BPSyst3	HUNT70+ study part (NT4Eld)	Systolic blood pressure measurement 3	blood pressure	19851		
+HUNT:0000187	BPDias1	HUNT70+ study part (NT4Eld)	Diastolic blood pressure measurement 1	blood pressure	19852		
+HUNT:0000188	BPDias2	HUNT70+ study part (NT4Eld)	Diastolic blood pressure measurement 2	blood pressure	19853		
+HUNT:0000189	BPDias3	HUNT70+ study part (NT4Eld)	Diastolic blood pressure measurement 3	blood pressure	19854		
+HUNT:0000190	Puls1	HUNT70+ study part (NT4Eld)	Pulse measurement 1	heart rate (HR)	19855		
+HUNT:0000191	Puls2	HUNT70+ study part (NT4Eld)	Pulse measurement 2	heart rate (HR)	19856		
+HUNT:0000192	Puls3	HUNT70+ study part (NT4Eld)	Pulse measurement 3	heart rate (HR)	19857		
+HUNT:0000193	O1	HUNT70+ study part (NT4Eld)	Oxygen measurement 1	circulation and respiration	19858		
+HUNT:0000194	O2	HUNT70+ study part (NT4Eld)	Oxygen measurement 2	circulation and respiration	19859		
+HUNT:0000195	O3	HUNT70+ study part (NT4Eld)	Oxygen measurement 3	circulation and respiration	19860		
+HUNT:0000196	Hei	HUNT70+ study part (NT4Eld)	Height at screening	height	19861		
+HUNT:0000197	Wei	HUNT70+ study part (NT4Eld)	Weight at screening	weight	20269		
+HUNT:0000198	BPMea	HUNT70+ study part (NT4Eld)	Blood pressure measure completed?	survey administration	19863		
+HUNT:0000199	HeiWeiMea	HUNT70+ study part (NT4Eld)	Height/weight measures completed?	survey administration	19864		
+HUNT:0000200	SIBLangNam	HUNT70+ study part (NT4Eld)	Please write your name here	SIB	19871		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000201	SIBOrien	HUNT70+ study part (NT4Eld)	Which month is the current month?	SIB	19872		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000202	SIBLangMo	HUNT70+ study part (NT4Eld)	Tell me all the months in a year	SIB	19873		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000203	SIBMem	HUNT70+ study part (NT4Eld)	"Read the card with the text ""Give me your hand"""	SIB	19874		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000204	SIBAtten	HUNT70+ study part (NT4Eld)	Repeat numbers	SIB	19875		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000205	SIBLangFo	HUNT70+ study part (NT4Eld)	Tell me what you like to eat (for breakfast/lunch/dinner): 1 min	SIB	19876		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000206	SIBLangSpo	HUNT70+ study part (NT4Eld)	"Picture of a spoon: ""What is this?"""	SIB	19877		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000207	SIBSpoDemo	HUNT70+ study part (NT4Eld)	Show me how you'll use the spoon	SIB	19878		Severe Impairment Battery-8 (SIB-8), Nursing home only, instead of MoCA in cases of moderate/severe dementia
+HUNT:0000208	PADLToil	HUNT70+ study part (NT4Eld)	P-ADL Toilet	functional limitations	19879		Physical Self-Maintenance Scale (PSMS)
+HUNT:0000209	PADLEat	HUNT70+ study part (NT4Eld)	P-ADL Eating	functional limitations	19880		Physical Self-Maintenance Scale (PSMS)
+HUNT:0000210	PADLDr	HUNT70+ study part (NT4Eld)	P-ADL Dressing	functional limitations	19881		Physical Self-Maintenance Scale (PSMS)
+HUNT:0000211	PADLPersoCar	HUNT70+ study part (NT4Eld)	P-ADL Personal care	functional limitations	19882		Physical Self-Maintenance Scale (PSMS)
+HUNT:0000212	PADLPhyMov	HUNT70+ study part (NT4Eld)	P-ADL Physical Movement	functional limitations	19883		Physical Self-Maintenance Scale (PSMS)
+HUNT:0000213	PADLBath	HUNT70+ study part (NT4Eld)	P-ADL Bath	functional limitations	19884		Physical Self-Maintenance Scale (PSMS)
+HUNT:0000214	NPINHDel	HUNT70+ study part (NT4Eld)	NPI-NH Delusions	NPI	19885		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000215	NPINHDelF	HUNT70+ study part (NT4Eld)	NPI-NH Delusions, frequency	NPI	19886		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000216	NPINHDelSev	HUNT70+ study part (NT4Eld)	NPI-NH Delusions, severity	NPI	19887		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000217	NPINHDelOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Delusions, disruption	NPI	19888		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000218	NPINHHall	HUNT70+ study part (NT4Eld)	NPI-NH Hallucinations	NPI	19889		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000219	NPINHHallF	HUNT70+ study part (NT4Eld)	NPI-NH Hallucinations, frequency	NPI	19890		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000220	NPINHHallSev	HUNT70+ study part (NT4Eld)	NPI-NH Hallucinations, severity	NPI	19891		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000221	NPINHHallOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Hallucinations, disruption	NPI	19892		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000222	NPINHAgi	HUNT70+ study part (NT4Eld)	NPI-NH Agitation/aggression	NPI	19893		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000223	NPINHAgiF	HUNT70+ study part (NT4Eld)	NPI-NH Agitation/aggression, frequency	NPI	19894		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000224	NPINHAgiSev	HUNT70+ study part (NT4Eld)	NPI-NH Agitation/aggression, severity	NPI	19895		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000225	NPINHAgiOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Agitation/aggression, disruption	NPI	19896		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000226	NPINHDepr	HUNT70+ study part (NT4Eld)	NPI-NH Depression/dysphoria	NPI	19897		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000227	NPINHDeprF	HUNT70+ study part (NT4Eld)	NPI-NH Depression/dysphoria, frequency	NPI	19898		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000228	NPINHDeprSev	HUNT70+ study part (NT4Eld)	NPI-NH Depression/dysphoria, severity	NPI	19899		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000229	NPINHDeprOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Depression/dysphoria, disruption	NPI	19900		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000230	NPINHAnxi	HUNT70+ study part (NT4Eld)	NPI-NH Anxiety	NPI	19901		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000231	NPINHAnxiF	HUNT70+ study part (NT4Eld)	NPI-NH Anxiety, frequency	NPI	19902		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000232	NPINHAnxiSev	HUNT70+ study part (NT4Eld)	NPI-NH Anxiety, severity	NPI	19903		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000233	NPINHAnxiOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Anxiety, disruption	NPI	19904		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000234	NPINHEuph	HUNT70+ study part (NT4Eld)	NPI-NH Elation/euphoria	NPI	19905		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000235	NPINHEuphF	HUNT70+ study part (NT4Eld)	NPI-NH Elation/euphoria, frequency	NPI	19906		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000236	NPINHEuphSev	HUNT70+ study part (NT4Eld)	NPI-NH Elation/euphoria, severity	NPI	19907		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000237	NPINHEuphOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Elation/euphoria, disruption	NPI	19908		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000238	NPINHApat	HUNT70+ study part (NT4Eld)	NPI-NH Apathy/indifference	NPI	19909		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000239	NPINHApatF	HUNT70+ study part (NT4Eld)	NPI-NH Apathy/indifference, frequency	NPI	19910		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000240	NPINHApatSev	HUNT70+ study part (NT4Eld)	NPI-NH Apathy/indifference, severity	NPI	19911		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000241	NPINHApatOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Apathy/indifference, disruption	NPI	19912		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000242	NPINHDisi	HUNT70+ study part (NT4Eld)	NPI-NH Disinhabition	NPI	19913		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000243	NPINHDisiF	HUNT70+ study part (NT4Eld)	NPI-NH Disinhabition, frequency	NPI	19914		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000244	NPINHDisiSev	HUNT70+ study part (NT4Eld)	NPI-NH Disinhabition, severity	NPI	19915		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000245	NPINHDisiOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Disinhabition, disruption	NPI	19916		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000246	NPINHIrri	HUNT70+ study part (NT4Eld)	NPI-NH Irritable/lability	NPI	19917		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000247	NPINHIrriF	HUNT70+ study part (NT4Eld)	NPI-NH Irritable/lability, frequency	NPI	19918		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000248	NPINHIrriSev	HUNT70+ study part (NT4Eld)	NPI-NH Irritable/lability, severity	NPI	19919		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000249	NPINHIrriOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Irritable/lability, disruption	NPI	19920		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000250	NPINHAMB	HUNT70+ study part (NT4Eld)	NPI-NH Aberrant motor behaviour	NPI	19921		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000251	NPINHAMBF	HUNT70+ study part (NT4Eld)	NPI-NH Aberrant motor behaviour, frequency	NPI	19922		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000252	NPINHAMBSev	HUNT70+ study part (NT4Eld)	NPI-NH Aberrant motor behaviour, severity	NPI	19923		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000253	NPINHAMBOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Aberrant motor behaviour, disruption	NPI	19924		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000254	NPINHSle	HUNT70+ study part (NT4Eld)	NPI-NH Sleep and night-time behaviour	NPI	19925		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000255	NPINHSleF	HUNT70+ study part (NT4Eld)	NPI-NH Sleep and night-time behaviour, frequency	NPI	19926		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000256	NPINHSleSev	HUNT70+ study part (NT4Eld)	NPI-NH Sleep and night-time behaviour, severity	NPI	19927		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000257	NPINHSleOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Sleep and night-time behaviour, disruption	NPI	19928		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000258	NPINHAppe	HUNT70+ study part (NT4Eld)	NPI-NH Appetite/eating change	NPI	19929		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000259	NPINHAppeF	HUNT70+ study part (NT4Eld)	NPI-NH Appetite/eating change, frequency	NPI	19930		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000260	NPINHAppeSev	HUNT70+ study part (NT4Eld)	NPI-NH Appetite/eating change, severity	NPI	19931		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000261	NPINHAppeOccDisr	HUNT70+ study part (NT4Eld)	NPI-NH Appetite/eating change, disruption	NPI	19932		Neuropsychiatric Inventory (NPI-NH)
+HUNT:0000262	CDRMem	HUNT70+ study part (NT4Eld)	Clinical dementia rating, memory	CDR	19934		Clinical Dementia Rating Scale (CDR), assessed in Nursing home
+HUNT:0000263	CDROrien	HUNT70+ study part (NT4Eld)	Clinical dementia rating, orientation	CDR	19935		Clinical Dementia Rating Scale (CDR), assessed in Nursing home
+HUNT:0000264	CDRJudg	HUNT70+ study part (NT4Eld)	Clinical dementia rating, judgement	CDR	19936		Clinical Dementia Rating Scale (CDR), assessed in Nursing home
+HUNT:0000265	CDRCommuAct	HUNT70+ study part (NT4Eld)	Clinical dementia rating, community activity	CDR	19937		Clinical Dementia Rating Scale (CDR), assessed in Nursing home
+HUNT:0000266	CDRHomeLeiAct	HUNT70+ study part (NT4Eld)	Clinical dementia rating, home and leisure activity	CDR	19938		Clinical Dementia Rating Scale (CDR), assessed in Nursing home
+HUNT:0000267	CDRSelfCare	HUNT70+ study part (NT4Eld)	Clinical dementia rating, self-care	CDR	19939		Clinical Dementia Rating Scale (CDR), assessed in Nursing home
+HUNT:0000268	CDRscore	HUNT70+ study part (NT4Eld)	Clinical Dementia Rating, institutionalized care	CDR	25195		Total score Clinical Dementia Rating Scale (CDR), assessed in Nursing home
+HUNT:0000269	CogRedMem	HUNT70+ study part (NT4Eld)	Memory reduction	cognitive functioning	19940		In-house designed questions on cognitive function - nursing home only
+HUNT:0000270	CogRedOrien	HUNT70+ study part (NT4Eld)	Reduced orientation skills	cognitive functioning	19941		In-house designed questions on cognitive function - nursing home only
+HUNT:0000271	CogRedOth	HUNT70+ study part (NT4Eld)	Other cognitive reduction	cognitive functioning	19942		In-house designed questions on cognitive function - nursing home only
+HUNT:0000272	CogRedHallSee	HUNT70+ study part (NT4Eld)	Recurring vision hallucinations	cognitive functioning	19943		In-house designed questions on cognitive function - nursing home only
+HUNT:0000273	CogRedFluc	HUNT70+ study part (NT4Eld)	Fluctuating cognition	cognitive functioning	19944		In-house designed questions on cognitive function - nursing home only
+HUNT:0000274	CogRedInhib	HUNT70+ study part (NT4Eld)	Early lack of inhibitions	cognitive functioning	19945		In-house designed questions on cognitive function - nursing home only
+HUNT:0000275	CogRedEmpa	HUNT70+ study part (NT4Eld)	Early loss of empathy/compassion	cognitive functioning	19946		In-house designed questions on cognitive function - nursing home only
+HUNT:0000276	CogRedApat	HUNT70+ study part (NT4Eld)	Early apathy or emotional indifference	cognitive functioning	19947		In-house designed questions on cognitive function - nursing home only
+HUNT:0000277	CogRedSter	HUNT70+ study part (NT4Eld)	Early stereotypical/compulsive behaviour	cognitive functioning	19948		In-house designed questions on cognitive function - nursing home only
+HUNT:0000278	CogRedChaEat	HUNT70+ study part (NT4Eld)	Changed eating pattern	cognitive functioning	19949		In-house designed questions on cognitive function - nursing home only
+HUNT:0000279	CogRedLang	HUNT70+ study part (NT4Eld)	Early language problems	cognitive functioning	19950		In-house designed questions on cognitive function - nursing home only
+HUNT:0000280	CogRedParkSig	HUNT70+ study part (NT4Eld)	Signs of Parkinson's?	cognitive functioning	19951		In-house designed questions on cognitive function - nursing home only
+HUNT:0000281	CogRedDeli	HUNT70+ study part (NT4Eld)	This cognitive reduction occurs only in relation with delirium	cognitive functioning	19952		In-house designed questions on cognitive function - nursing home only
+HUNT:0000282	CogRedApopl	HUNT70+ study part (NT4Eld)	Has he/she had stroke/TIA	cognitive functioning	19953		In-house designed questions on cognitive function - nursing home only
+HUNT:0000283	CogRedFi	HUNT70+ study part (NT4Eld)	What was the first symptom?	cognitive functioning	19954		In-house designed questions on cognitive function - nursing home only
+HUNT:0000284	CogRedFiOth	CogRedFi	[If Other first symptom]: Specify	cognitive functioning	19955		In-house designed questions on cognitive function - nursing home only
+HUNT:0000285	CogRedMoN	HUNT70+ study part (NT4Eld)	How long since the onset of reduced cognition? (Months)	cognitive functioning	19956		In-house designed questions on cognitive function - nursing home only
+HUNT:0000286	DiagCog	HUNT70+ study part (NT4Eld)	Cognitive function - diagnosed by medical doctors	cognitive functioning			No cognitive impairment, aMCI, naMCI, Dementia, other CI, n/a
+HUNT:0000287	DiagDem	HUNT70+ study part (NT4Eld)	Dementia - diagnosed by medical doctors	cognitive functioning			No dementia, Alzheimer, VAD, DLB/PDD, FTD, mixt dem, other dementia, n/a
+HUNT:0000288	Baseline measurements (NT4BLM)						Added as grouping cat
+HUNT:0000289	PartDat	Baseline measurements (NT4BLM)	Participation date	date and time-related information	18454		
+HUNT:0000290	PartAg	Baseline measurements (NT4BLM)	Age at participation	age/birthdate	18455		
+HUNT:0000291	Hei	Baseline measurements (NT4BLM)	Height at screening	height	19213		
+HUNT:0000292	HeiDev	Baseline measurements (NT4BLM)	Deviation height measurement	height	19214		
+HUNT:0000293	Wei	Baseline measurements (NT4BLM)	Weight at screening	weight	19215		
+HUNT:0000294	WeiDev	Baseline measurements (NT4BLM)	Deviation weight measurement	weight	19218		
+HUNT:0000295	Pro	Baseline measurements (NT4BLM)	Protein relative to weight	anthropometry	19219		
+HUNT:0000296	Bfm	Baseline measurements (NT4BLM)	Amount of body fat	anthropometry	19222		
+HUNT:0000297	Slm	Baseline measurements (NT4BLM)	Body weight minus fat mass	weight	19225		
+HUNT:0000298	Ffm	Baseline measurements (NT4BLM)	Amount of fat free mass	weight	19228		
+HUNT:0000299	Smm	Baseline measurements (NT4BLM)	Amount of muscle mass	weight	19231		
+HUNT:0000300	Bmi	Baseline measurements (NT4BLM)	Body mass index	anthropometry	19234		
+HUNT:0000301	Pbf	Baseline measurements (NT4BLM)	Percent body fat	anthropometry	19237		
+HUNT:0000302	Vfl	Baseline measurements (NT4BLM)	Level of visceral fat	anthropometry	19243		
+HUNT:0000303	Vfa	Baseline measurements (NT4BLM)	Area of viscera fat	anthropometry	19244		
+HUNT:0000304	Bmc	Baseline measurements (NT4BLM)	Mineral content bones	anthropometry	19245		
+HUNT:0000305	WaistCirc	Baseline measurements (NT4BLM)	Waist circumference at screening	anthropometry	19248		
+HUNT:0000306	WaistCircDev	Baseline measurements (NT4BLM)	Deviation measurement waist circumference	anthropometry	19249		
+HUNT:0000307	HipCirc	Baseline measurements (NT4BLM)	Hip circumference at screening	anthropometry	19250		
+HUNT:0000308	HipCircDev	Baseline measurements (NT4BLM)	Deviation measurement hip circumference	anthropometry	19251		
+HUNT:0000309	WaistHipR	Baseline measurements (NT4BLM)	Waist/hip ratio	anthropometry	19240		
+HUNT:0000310	GloDev	Baseline measurements (NT4BLM)	Deviation Inbody	anthropometry	19254		
+HUNT:0000311	ArmCircRi	Baseline measurements (NT4BLM)	Measured circumference right arm	anthropometry	19252		
+HUNT:0000312	ArmCircLe	Baseline measurements (NT4BLM)	Measured circumference left arm	anthropometry	19253		
+HUNT:0000313	BioTmLMeal2H	Baseline measurements (NT4BLM)	More than 2 hours since last meal?	date and time-related information	19255		
+HUNT:0000314	BPSyst1	Baseline measurements (NT4BLM)	Systolic blood pressure measurement 1	blood pressure	19256		
+HUNT:0000315	BPSyst2	Baseline measurements (NT4BLM)	Systolic blood pressure measurement 2	blood pressure	19257		
+HUNT:0000316	BPSyst3	Baseline measurements (NT4BLM)	Systolic blood pressure measurement 3	blood pressure	19258		
+HUNT:0000317	BPSystMn23	Baseline measurements (NT4BLM)	Mean systolic blood pressure measurement 2 and 3	blood pressure	559		
+HUNT:0000318	BPDias1	Baseline measurements (NT4BLM)	Diastolic blood pressure measurement 1	blood pressure	19259		
+HUNT:0000319	BPDias2	Baseline measurements (NT4BLM)	Diastolic blood pressure measurement 2	blood pressure	19260		
+HUNT:0000320	BPDias3	Baseline measurements (NT4BLM)	Diastolic blood pressure measurement 3	blood pressure	19261		
+HUNT:0000321	BPDiasMn23	Baseline measurements (NT4BLM)	Mean diastolic blood pressure measurement 2 and 3	blood pressure	560		
+HUNT:0000322	BPMap1	Baseline measurements (NT4BLM)	Mean arterial pressure measurement 1	blood pressure	19262		
+HUNT:0000323	BPMap2	Baseline measurements (NT4BLM)	Mean arterial pressure measurement 2	blood pressure	19263		
+HUNT:0000324	BPMap3	Baseline measurements (NT4BLM)	Mean arterial pressure measurement 3	blood pressure	19264		
+HUNT:0000325	BP1Dev	Baseline measurements (NT4BLM)	Deviation blood pressure measurement 1	blood pressure	19265		
+HUNT:0000326	BP2Dev	Baseline measurements (NT4BLM)	Deviation blood pressure measurement 2	blood pressure	19266		
+HUNT:0000327	BP3Dev	Baseline measurements (NT4BLM)	Deviation blood pressure measurement 3	blood pressure	19267		
+HUNT:0000328	Puls1	Baseline measurements (NT4BLM)	Pulse measurement 1	blood pressure	19268		
+HUNT:0000329	Puls2	Baseline measurements (NT4BLM)	Pulse measurement 2	blood pressure	19269		
+HUNT:0000330	Puls3	Baseline measurements (NT4BLM)	Pulse measurement 3	blood pressure	19270		
+HUNT:0000331	BPArmCirc	Baseline measurements (NT4BLM)	Arm circumference at blood pressure measurement	anthropometry	19271		
+HUNT:0000332	BPCuff	Baseline measurements (NT4BLM)	Cuff size	anthropometry	19272		
+HUNT:0000333	BPMeasTm	Baseline measurements (NT4BLM)	Time of blood pressure measurement	date and time-related information	19273		
+HUNT:0000334	TmLMeal	Baseline measurements (NT4BLM)	Hours since last meal	date and time-related information	19276		
+HUNT:0000335	O1	Baseline measurements (NT4BLM)	Oxygen measurement 1	circulation and respiration	19279		
+HUNT:0000336	O2	Baseline measurements (NT4BLM)	Oxygen measurement 2	circulation and respiration	19280		
+HUNT:0000337	O3	Baseline measurements (NT4BLM)	Oxygen measurement 3	circulation and respiration	19281		
+HUNT:0000338	BPMedLD	Baseline measurements (NT4BLM)	Have you taken blood pressure medication today?	medication	19282		
+HUNT:0000339	BPStr	Baseline measurements (NT4BLM)	Do you usually get stressed by blood pressure measurements?	psychological distress and emotions	19283		
+HUNT:0000340	SeChol	Baseline measurements (NT4BLM)	Cholesterol in serum	blood	19285		
+HUNT:0000341	SeHDLChol	Baseline measurements (NT4BLM)	HDL-cholesterol in serum	blood	19286		
+HUNT:0000342	SeTrig	Baseline measurements (NT4BLM)	Triglyceride in serum	blood	19287		
+HUNT:0000343	BloHbA1cNGSP	Baseline measurements (NT4BLM)	HbA1c	blood	21824		
+HUNT:0000344	BloHbA1cIFCC	Baseline measurements (NT4BLM)	HbA1c	blood	21825		
+HUNT:0000345	SeCrea	Baseline measurements (NT4BLM)	Creatinine in serum	blood	19289		
+HUNT:0000346	GFREstCKD	Baseline measurements (NT4BLM)	Estimated glomerular filtration rate	blood	567		
+HUNT:0000347	SeµCRP	Baseline measurements (NT4BLM)	Micro C-reactive protein in serum	blood	19290		
+HUNT:0000348	SeTSH	Baseline measurements (NT4BLM)	Thyroid-stimulating hormone in serum	blood	19291		
+HUNT:0000349	SeTPOAb	Baseline measurements (NT4BLM)	Thyroid peroxidase Antibody in serum	blood	19292		
+HUNT:0000350	BloHb	Baseline measurements (NT4BLM)	Haemoglobin	blood	19293		
+HUNT:0000351	BloPlate	Baseline measurements (NT4BLM)	Thrombocytes (platelets) count	blood	19294		
+HUNT:0000352	BloWbc	Baseline measurements (NT4BLM)	Leukocytes (white blood cells) count	blood	19295		
+HUNT:0000353	BloNc	Baseline measurements (NT4BLM)	Neutrophils count; absolute value	blood	19296		
+HUNT:0000354	BloNcP	Baseline measurements (NT4BLM)	Neutrophils count; percent	blood	19297		
+HUNT:0000355	BloEc	Baseline measurements (NT4BLM)	Eosinophil count, absolute value	blood	19298		
+HUNT:0000356	BloEcP	Baseline measurements (NT4BLM)	Eosinophil count, percent	blood	19299		
+HUNT:0000357	BloEry	Baseline measurements (NT4BLM)	Red Blood Cells, erythrocytes count	blood	25618		
+HUNT:0000358	BloMCH	Baseline measurements (NT4BLM)	Mean Cell Hemoglobin	blood	25619		
+HUNT:0000359	BloRDWSd	Baseline measurements (NT4BLM)	Red cell Distribution Width - standard deviation	blood	25620		
+HUNT:0000360	BloRDWCV	Baseline measurements (NT4BLM)	Red cell Distribution Width - coefficient of variation	blood	25621		
+HUNT:0000361	BloPDW	Baseline measurements (NT4BLM)	Platelet Distribution Width	blood	25622		
+HUNT:0000362	BloMPV	Baseline measurements (NT4BLM)	Mean Platelet Volume	blood	25623		
+HUNT:0000363	BloNRbc	Baseline measurements (NT4BLM)	Nucleated Red Blood Cells	blood	25624		
+HUNT:0000364	BloNRbcP	Baseline measurements (NT4BLM)	Nucleated Red Blood Cells; percent	blood	25625		
+HUNT:0000365	BloLc	Baseline measurements (NT4BLM)	Lymphocytes count; absolute value	blood	25626		
+HUNT:0000366	BloMc	Baseline measurements (NT4BLM)	Monocytes count; absolute value	blood	25627		
+HUNT:0000367	BloBc	Baseline measurements (NT4BLM)	Basophils count, absolute value	blood	25628		
+HUNT:0000368	BloLcP	Baseline measurements (NT4BLM)	Lymphocytes count; percent	blood	25629		
+HUNT:0000369	BloMcP	Baseline measurements (NT4BLM)	Monocytes count; percent	blood	25630		
+HUNT:0000370	BloBcP	Baseline measurements (NT4BLM)	Basophils count; percent	blood	25631		
+HUNT:0000371	BloIG	Baseline measurements (NT4BLM)	Immature granulocytes count, absolute value	blood	25632		
+HUNT:0000372	BloIGP	Baseline measurements (NT4BLM)	Immature granulocytes count; percent	blood	25633		
+HUNT:0000373	Quastionnaire 1 (NT4BLQ1)						Added as grouping cat
+HUNT:0000374	PartDat	Quastionnaire 1 (NT4BLQ1)	Participation date	date and time-related information	21819		
+HUNT:0000375	PartAg	Quastionnaire 1 (NT4BLQ1)	Age at participation	age/birthdate	21818		
+HUNT:0000376	MaritStat	Quastionnaire 1 (NT4BLQ1)	Marital Status	marital status	23729		
+HUNT:0000377	MuniciEmerDist	Quastionnaire 1 (NT4BLQ1)	Estimated driving time to nearest emergency room		24272		
+HUNT:0000378	Norrisk2	Quastionnaire 1 (NT4BLQ1)	NORRISK 2		568		
+HUNT:0000379	InvMuniciUrb	Quastionnaire 1 (NT4BLQ1)	Municipality urbanity at invitation	location	25172		
+HUNT:0000380	InvMuniciGeo	Quastionnaire 1 (NT4BLQ1)	Municipality geography at invitation	location	25173		
+HUNT:0000381	Healt	Quastionnaire 1 (NT4BLQ1)	How is your health at the moment?	perception of health	18456		
+HUNT:0000382	DisChr	Quastionnaire 1 (NT4BLQ1)	Do you suffer from longstanding (at least 1 year) illness or injury of a physical or psychological nature that impairs your functioning in your daily life? If Yes [longstanding illness that impairs your functioning] Would you describe your impairment as slight, moderate or severe?	functional limitations	18457		
+HUNT:0000383	MotImp	DisChr	- Motor ability impairment	functional limitations	18458		
+HUNT:0000384	VisImp	DisChr	- Vision impairment	functional limitations	18459		
+HUNT:0000385	HearImp	DisChr	- Hearing impairment	functional limitations	18460		
+HUNT:0000386	DisSomImp	DisChr	- Impairment due to physical illness	functional limitations	18461		
+HUNT:0000387	DisPsycImp	DisChr	- Impairment due to mental health problems	functional limitations	18462		
+HUNT:0000388	MSPaChrL4W	Quastionnaire 1 (NT4BLQ1)	How strong physical pain have you had during the last 4 weeks?	signs and symptoms	18463		
+HUNT:0000389	DisLimL4W	Quastionnaire 1 (NT4BLQ1)	To what extent has your physical health or emotional problems limited you in your usual socializing with family or friends during the last 4 weeks?	quality of life	18464		
+HUNT:0000390	FeelCalmL2W	Quastionnaire 1 (NT4BLQ1)	- Confident and calm?	quality of life	18465		In the last two weeks, have you felt:
+HUNT:0000391	FeelOptiL2W	Quastionnaire 1 (NT4BLQ1)	- Happy and optimistic?	quality of life	18466		In the last two weeks, have you felt:
+HUNT:0000392	FeelNervL2W	Quastionnaire 1 (NT4BLQ1)	- Nervous and restless?	quality of life	18467		In the last two weeks, have you felt:
+HUNT:0000393	FeelAnxiL2W	Quastionnaire 1 (NT4BLQ1)	- Troubled by anxiety?	quality of life	18468		In the last two weeks, have you felt:
+HUNT:0000394	FeelIrriL2W	Quastionnaire 1 (NT4BLQ1)	- Irritable?	quality of life	18469		In the last two weeks, have you felt:
+HUNT:0000395	FeelDeprL2W	Quastionnaire 1 (NT4BLQ1)	- Down/depressed?	quality of life	18470		In the last two weeks, have you felt:
+HUNT:0000396	FeelLoneL2W	Quastionnaire 1 (NT4BLQ1)	- Lonely?	quality of life	18471		In the last two weeks, have you felt:
+HUNT:0000397	FeelTenL2W	Quastionnaire 1 (NT4BLQ1)	- Tense?	quality of life	18472		In the last two weeks, have you felt:
+HUNT:0000398	FeelStro	Quastionnaire 1 (NT4BLQ1)	Do you feel, for the most part, strong and fit or tired and worn out?	quality of life	18473		In the last two weeks, have you felt:
+HUNT:0000399	CarAngEv	Quastionnaire 1 (NT4BLQ1)	- Angina	signs and symptoms	18474		Have you had, or do you have any of the following diseases?
+HUNT:0000400	CarInfEv	Quastionnaire 1 (NT4BLQ1)	- Myocardial infarction (heart attack)	cardiovascular diseases	18475		Have you had, or do you have any of the following diseases?
+HUNT:0000401	CarFaiEv	Quastionnaire 1 (NT4BLQ1)	- Heart failure	cardiovascular diseases	18476		Have you had, or do you have any of the following diseases?
+HUNT:0000402	CarAtrFibrEv	Quastionnaire 1 (NT4BLQ1)	- Atrial fibrillation	cardiovascular diseases	18477		Have you had, or do you have any of the following diseases?
+HUNT:0000403	ApoplEv	Quastionnaire 1 (NT4BLQ1)	- Stroke/brain haemorrhage	cardiovascular diseases	18478		Have you had, or do you have any of the following diseases?
+HUNT:0000404	AstEv	Quastionnaire 1 (NT4BLQ1)	- Asthma	respiratory system diseases	18479		Have you had, or do you have any of the following diseases?
+HUNT:0000405	CopdEv	Quastionnaire 1 (NT4BLQ1)	- COPD or emphysema	respiratory system diseases	18480		Have you had, or do you have any of the following diseases?
+HUNT:0000406	DiaEv	Quastionnaire 1 (NT4BLQ1)	- Diabetes	endocrine system diseases	18481		Have you had, or do you have any of the following diseases?
+HUNT:0000407	ThyHypoEv	Quastionnaire 1 (NT4BLQ1)	- Hypothyroidism (too low metabolism)	endocrine system diseases	18482		Have you had, or do you have any of the following diseases?
+HUNT:0000408	ThyHypeEv	Quastionnaire 1 (NT4BLQ1)	- Hyperthyroidism (too high metabolism)	endocrine system diseases	18483		Have you had, or do you have any of the following diseases?
+HUNT:0000409	CaEv	Quastionnaire 1 (NT4BLQ1)	- Cancer	cancer	18484		Have you had, or do you have any of the following diseases?
+HUNT:0000410	MigEv	Quastionnaire 1 (NT4BLQ1)	- Migraine	signs and symptoms	18485		Have you had, or do you have any of the following diseases?
+HUNT:0000411	PsorEv	Quastionnaire 1 (NT4BLQ1)	- Psoriasis	immune system diseases|skin and subcutaneous tissue diseases	18486		Have you had, or do you have any of the following diseases?
+HUNT:0000412	RenDisEv	Quastionnaire 1 (NT4BLQ1)	- Kidney disease	endocrine system diseases	18487		Have you had, or do you have any of the following diseases?
+HUNT:0000413	RhArthEv	Quastionnaire 1 (NT4BLQ1)	- Arthritis (rheumatoid arthritis)	musculoskeletal system diseases|immune system diseases	18488		Have you had, or do you have any of the following diseases?
+HUNT:0000414	SponArthEv	Quastionnaire 1 (NT4BLQ1)	- Bechterew's disease	musculoskeletal system diseases|immune system diseases	18489		Have you had, or do you have any of the following diseases?
+HUNT:0000415	GouEv	Quastionnaire 1 (NT4BLQ1)	- Gout	musculoskeletal system diseases	18490		Have you had, or do you have any of the following diseases?
+HUNT:0000416	MentPrEv	Quastionnaire 1 (NT4BLQ1)	- Mental health problems you sought help for	mental and behaviour disorders	18491		Have you had, or do you have any of the following diseases?
+HUNT:0000417	CarAngAg	CarAngEv	- Angina	cardiovascular diseases	18492		If Yes [Following disease ever]: Age first time?
+HUNT:0000418	CarInfAg	CarInfEv	- Myocardial infarction (heart attack)	cardiovascular diseases	18493		If Yes [Following disease ever]: Age first time?
+HUNT:0000419	CarFaiAg	CarFaiEv	- Heart failure	cardiovascular diseases	18494		If Yes [Following disease ever]: Age first time?
+HUNT:0000420	CarAtrFibrAg	CarAtrFibrEv	- Atrial fibrillation	cardiovascular diseases	18495		If Yes [Following disease ever]: Age first time?
+HUNT:0000421	ApoplAg	ApoplEv	- Stroke/brain haemorrhage	cardiovascular diseases	18496		If Yes [Following disease ever]: Age first time?
+HUNT:0000422	AstAg	AstEv	- Asthma	respiratory system diseases	18497		If Yes [Following disease ever]: Age first time?
+HUNT:0000423	CopdAg	CopdEv	- COPD or emphysema	respiratory system diseases	18498		If Yes [Following disease ever]: Age first time?
+HUNT:0000424	DiaAg	DiaEv	- Diabetes	endocrine system diseases	18499		If Yes [Following disease ever]: Age first time?
+HUNT:0000425	ThyHypoAg	ThyHypoEv	- Hypothyroidism (too low metabolism)	endocrine system diseases	18500		If Yes [Following disease ever]: Age first time?
+HUNT:0000426	ThyHypeAg	ThyHypeEv	- Hyperthyroidism (too high metabolism)	endocrine system diseases	18501		If Yes [Following disease ever]: Age first time?
+HUNT:0000427	CaAg	CaEv	- Cancer	cancer	18502		If Yes [Following disease ever]: Age first time?
+HUNT:0000428	MigAg	MigEv	- Migraine	signs and symptoms	18503		If Yes [Following disease ever]: Age first time?
+HUNT:0000429	PsorAg	PsorEv	- Psoriasis	immune system diseases|skin and subcutaneous tissue diseases	18504		If Yes [Following disease ever]: Age first time?
+HUNT:0000430	RenDisAg	RenDisEv	- Kidney disease	urinary system diseases	18505		If Yes [Following disease ever]: Age first time?
+HUNT:0000431	RhArthAg	RhArthEv	- Arthritis (rheumatoid arthritis)	musculoskeletal system diseases|immune system diseases	18506		If Yes [Following disease ever]: Age first time?
+HUNT:0000432	SponArthAg	SponArthEv	- Bechterew's disease	musculoskeletal system diseases|immune system diseases	18507		If Yes [Following disease ever]: Age first time?
+HUNT:0000433	GouAg	GouEv	- Gout	musculoskeletal system diseases	18508		If Yes [Following disease ever]: Age first time?
+HUNT:0000434	MentPrAg	MentPrEv	- Mental health problems you sought help for	mental and behaviour disorders	18509		If Yes [Following disease ever]: Age first time?
+HUNT:0000435	WheeDysLY	Quastionnaire 1 (NT4BLQ1)	Have you had any kind of attack of wheezing or breathlessness during the last 12 months?	signs and symptoms	18510		
+HUNT:0000436	JoPaMor6WLY	Quastionnaire 1 (NT4BLQ1)	During the past 12 months, have you had pain in your joint that has lasted for more than 6 consecutive weeks?	signs and symptoms	18511		
+HUNT:0000437	HypeGluEv	Quastionnaire 1 (NT4BLQ1)	Has it ever been verified that you had high blood sugar (hyperglycaemia)?	signs and symptoms	18512		
+HUNT:0000438	HypeGluAg	HypeGluEv	Age first time?	signs and symptoms	18513		
+HUNT:0000439	MedPrescCu	Quastionnaire 1 (NT4BLQ1)	Do you currently use any prescription medicines?	medication	18514		
+HUNT:0000440	BPMedCu	MedPrescCu	- Medication for high blood pressure	associated disease(s)	18515		If yes, do you currently use prescription medication?
+HUNT:0000441	CholLoMedCu	MedPrescCu	- Cholesterol lowering medication	associated disease(s)	18516		If yes, do you currently use prescription medication?
+HUNT:0000442	AstCopdMedCu	MedPrescCu	- Medication for asthma or COPD	associated disease(s)	18517		If yes, do you currently use prescription medication?
+HUNT:0000443	AnxiDeprMedCu	MedPrescCu	- Medication for anxiety or depression	associated disease(s)	18518		If yes, do you currently use prescription medication?
+HUNT:0000444	ThyMedCu	MedPrescCu	- Medication for thyroidea	associated disease(s)	18519		If yes, do you currently use prescription medication?
+HUNT:0000445	AlMedCu	MedPrescCu	- Medication for allergy: Tablets or nasal spray	associated disease(s)	18520		If yes, do you currently use prescription medication?
+HUNT:0000446	BPMedAg	BPMedCu	- Medication for high blood pressure	associated disease(s)	18521		If yes, do you use any of these medications: Age first time
+HUNT:0000447	CholLoMedAg	CholLoMedCu	- Cholesterol lowering medication	associated disease(s)	18522		If yes, do you use any of these medications: Age first time
+HUNT:0000448	AstCopdMedAg	AstCopdMedCu	- Medication for asthma or COPD	associated disease(s)	18523		If yes, do you use any of these medications: Age first time
+HUNT:0000449	AnxiDeprMedAg	AnxiDeprMedCu	- Medication for anxiety or depression	associated disease(s)	18524		If yes, do you use any of these medications: Age first time
+HUNT:0000450	ThyMedAg	ThyMedCu	- Medication for thyroidea	associated disease(s)	18525		If yes, do you use any of these medications: Age first time
+HUNT:0000451	AlMedAg	AlMedCu	- Medication for allergy: Tablets or nasal spray	associated disease(s)	18526		If yes, do you use any of these medications: Age first time
+HUNT:0000452	CsInjEv	Quastionnaire 1 (NT4BLQ1)	Have you ever had a cortisone injection?	medication	18527		If yes, do you use any of these medications: Age first time
+HUNT:0000453	CsInjAl	CsInjEv	- Allergy	associated disease(s)	18528		[If yes, had cortisone injection]: Why have you had cortison injection(s)?
+HUNT:0000454	CsInjTend	CsInjEv	- Tendonitis	associated disease(s)	18529		[If yes, had cortisone injection]: Why have you had cortison injection(s)?
+HUNT:0000455	CsInjJoPa	CsInjEv	- Joint pain	associated disease(s)	18530		[If yes, had cortisone injection]: Why have you had cortison injection(s)?
+HUNT:0000456	CsInjOt	CsInjEv	- Other	associated disease(s)	18531		[If yes, had cortisone injection]: Why have you had cortison injection(s)?
+HUNT:0000457	CsInjNL12M	Quastionnaire 1 (NT4BLQ1)	How many cortisone injections have you had in the last 12 months?	administration	18532		
+HUNT:0000458	MedEsophFLM	Quastionnaire 1 (NT4BLQ1)	- Heartburn/ acid regurgitation	medication	18533		How often have you used non-prescription medicine for the following ailments during the last month?
+HUNT:0000459	MedObstFLM	Quastionnaire 1 (NT4BLQ1)	- Constipation	medication	18534		How often have you used non-prescription medicine for the following ailments during the last month?
+HUNT:0000460	MedHaFLM	Quastionnaire 1 (NT4BLQ1)	- Headache	medication	18535		How often have you used non-prescription medicine for the following ailments during the last month?
+HUNT:0000461	MedMSPaFLM	Quastionnaire 1 (NT4BLQ1)	- Pain in muscles/joints	medication	18536		How often have you used non-prescription medicine for the following ailments during the last month?
+HUNT:0000462	HCEmerRoLY	Quastionnaire 1 (NT4BLQ1)	- Emergency room	hospitalizations	18537		Have you during the last 12 months been to:
+HUNT:0000463	HCGPConLY	Quastionnaire 1 (NT4BLQ1)	- The general practitioner	routine clincial visits	18538		Have you during the last 12 months been to:
+HUNT:0000464	HCSpecConLY	Quastionnaire 1 (NT4BLQ1)	- Another specialist outside the hospital	routine clincial visits	18539		Have you during the last 12 months been to:
+HUNT:0000465	HCPsycConLY	Quastionnaire 1 (NT4BLQ1)	- Consultation with a doctor without being admitted to the psychiatric out-patient department	routine clincial visits	18540		Have you during the last 12 months been to:
+HUNT:0000466	HCSomConLY	Quastionnaire 1 (NT4BLQ1)	- Consultation with a doctor without being admitted to a hospital out-patient department (other than psychiatric dept.)	routine clincial visits	18541		Have you during the last 12 months been to:
+HUNT:0000467	HCPsycNurseLY	Quastionnaire 1 (NT4BLQ1)	- Local psychiatric nurse	psychological interventions	18542		Have you during the last 12 months been to:
+HUNT:0000468	HCPhysLY	Quastionnaire 1 (NT4BLQ1)	- Physiotherapist or manual therapist	healthcare information	18543		Have you during the last 12 months been to:
+HUNT:0000469	HCChirLY	Quastionnaire 1 (NT4BLQ1)	- A chiropractor	healthcare information	18544		Have you during the last 12 months been to:
+HUNT:0000470	HCNaprLY	Quastionnaire 1 (NT4BLQ1)	- Naprapathy Chiropractic	healthcare information	18545		Have you during the last 12 months been to:
+HUNT:0000471	HCAcuLY	Quastionnaire 1 (NT4BLQ1)	- Acupuncturist	healthcare information	18546		Have you during the last 12 months been to:
+HUNT:0000472	HCCAMLY	Quastionnaire 1 (NT4BLQ1)	- Homeopath, reflexologist, laying on of hands or other alternative treatment practitioner	healthcare information	18547		Have you during the last 12 months been to:
+HUNT:0000473	HospLY	Quastionnaire 1 (NT4BLQ1)	Have you been admitted to hospital in the last 12 months?	hospitalizations	18548		
+HUNT:0000474	HCDentL2Y	Quastionnaire 1 (NT4BLQ1)	Have you been to the dentist/hygienist in the last 24 months?	oral health history	18549		
+HUNT:0000475	AstFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Asthma	family history of disease	18550		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000476	AlRhinFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Hay fever/nasal allergies	family history of disease	18551		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000477	CopdFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Chronic bronchitis, emphysema or COPD	family history of disease	18552		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000478	AnxiDeprFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Anxiety or depression	family history of disease	18553		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000479	CarInfFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Myocardial infarction (heart attack) before the age of 60	family history of disease	18554		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000480	DiaFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Diabetes	family history of disease	18555		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000481	ApoplFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Stroke or brain haemorrhage before the age of 60	family history of disease	18556		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000482	CaFam1Ev	Quastionnaire 1 (NT4BLQ1)	- Cancer	family history of disease	18557		Do your parents, siblings or children have, or have they ever had, some of the following diseases?
+HUNT:0000483	DiaFam2Ev	Quastionnaire 1 (NT4BLQ1)	Have your parents, siblings, your cousins or either of your grandparents been diagnosed with diabetes (type 1 or type 2)?	family history of disease	18558		
+HUNT:0000484	SmoNev	Quastionnaire 1 (NT4BLQ1)	I have never smoked	tobacco use history	18559		
+HUNT:0000485	SmoOcPre	Quastionnaire 1 (NT4BLQ1)	I have previously smoked occasionally	tobacco use history	18560		
+HUNT:0000486	SmoOcCu	Quastionnaire 1 (NT4BLQ1)	I currently smoke occasionally	tobacco use history	18561		
+HUNT:0000487	SmoDyCu	Quastionnaire 1 (NT4BLQ1)	I currently smoke daily	tobacco use history	18562		
+HUNT:0000488	SmoCigDyN	SmoDyCu	- I usually smoke N cigarettes daily	tobacco use history	18563		If yes, currently daily smoker
+HUNT:0000489	SmoDyAg	SmoDyCu	- I started smoking daily when I was __ years of age	tobacco use history	18564		If yes, currently daily smoker
+HUNT:0000490	SmoDyPre	Quastionnaire 1 (NT4BLQ1)	I have previously smoked daily	tobacco use history	18565		
+HUNT:0000491	SmoDyPreAg	SmoDyPre	- I started smoking when I was __ years of age	tobacco use history	18566		If yes, previously smoked daily
+HUNT:0000492	SmoDyCesAg	SmoDyPre	- I quit smoking daily when I was __ years of age	tobacco use history	18567		If yes, previously smoked daily
+HUNT:0000493	SmoCigPreN	SmoDyPre	- When I smoked, I usually smoked N cigarettes daily	tobacco use history	18568		If yes, previously smoked daily
+HUNT:0000494	SmoStat	Quastionnaire 1 (NT4BLQ1)	Smoking status	tobacco use history	22525		
+HUNT:0000495	SmoPackYrs	Quastionnaire 1 (NT4BLQ1)	Tobacco consumption in pack-years	tobacco use history	5464		
+HUNT:0000496	SnuNev	Quastionnaire 1 (NT4BLQ1)	I have never used snus	tobacco use history	18569		Nordic chewing tobacco/snuff
+HUNT:0000497	SnuOcPre	Quastionnaire 1 (NT4BLQ1)	I have previously used snus occasionally	tobacco use history	18570		Nordic chewing tobacco/snuff
+HUNT:0000498	SnuOcCu	Quastionnaire 1 (NT4BLQ1)	I currently use snus occasionally	tobacco use history	18571		Nordic chewing tobacco/snuff
+HUNT:0000499	SnuDyCu	Quastionnaire 1 (NT4BLQ1)	I currently use snus daily	tobacco use history	18572		Nordic chewing tobacco/snuff
+HUNT:0000500	SnuConsumMy	SnuOcCu	- I usually use N boxes a month	tobacco use history	18573		
+HUNT:0000501	SnuDyAg	SnuOcCu	- I started using snus when I was __ years of age	tobacco use history	18574		
+HUNT:0000502	SnuDyPre	Quastionnaire 1 (NT4BLQ1)	I have previously used snus daily	tobacco use history	18575		
+HUNT:0000503	SnuAg	SnuDyPre	- I started using snus when I was __ years of age	tobacco use history	18576		
+HUNT:0000504	SnuCesAg	SnuDyPre	- I quit using snus daily when I was __ years of age	tobacco use history	18577		
+HUNT:0000505	FoSupplCoLOmeF	Quastionnaire 1 (NT4BLQ1)	- Cod-liver oil or Omega-3 capsules	dietary history	18578		How often do you used one of the following dietary supplements?
+HUNT:0000506	FoSupplCalF	Quastionnaire 1 (NT4BLQ1)	- Calcium	dietary history	18579		How often do you used one of the following dietary supplements?
+HUNT:0000507	FoSupplOtVitF	Quastionnaire 1 (NT4BLQ1)	- Other vitamins and/or minerals	dietary history	18580		How often do you used one of the following dietary supplements?
+HUNT:0000508	FoFruF	Quastionnaire 1 (NT4BLQ1)	- Fruits/berries	dietary history	18581		Think about the last year; how often do you eat the following food groups per week?
+HUNT:0000509	FoVegF	Quastionnaire 1 (NT4BLQ1)	- Vegetables	dietary history	18582		Think about the last year; how often do you eat the following food groups per week?
+HUNT:0000510	FoMeatF	Quastionnaire 1 (NT4BLQ1)	- Red meat (beef, pork, lamb, game)	dietary history	18583		Think about the last year; how often do you eat the following food groups per week?
+HUNT:0000511	FoPouF	Quastionnaire 1 (NT4BLQ1)	- White meat (chicken, turkey)	dietary history	18584		Think about the last year; how often do you eat the following food groups per week?
+HUNT:0000512	FoProcMeatF	Quastionnaire 1 (NT4BLQ1)	- Minced meat, sausages, and the likes	dietary history	18585		Think about the last year; how often do you eat the following food groups per week?
+HUNT:0000513	FoFishLoFatF	Quastionnaire 1 (NT4BLQ1)	- Low-fat fish (e.g. cod, pollock)	dietary history	18586		Think about the last year; how often do you eat the following food groups per week?
+HUNT:0000514	FoFishF	Quastionnaire 1 (NT4BLQ1)	- High-fat fish (e.g. salmon, trout, herring, mackerel, haddock on bread or for dinner)	dietary history	18587		Think about the last year; how often do you eat the following food groups per week?
+HUNT:0000515	DriMilk1Gl	Quastionnaire 1 (NT4BLQ1)	- Whole milk sweet	dietary history	18588		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000516	DriMilk2Gl	Quastionnaire 1 (NT4BLQ1)	- Low-fat milk sweet	dietary history	18589		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000517	DriMilk3Gl	Quastionnaire 1 (NT4BLQ1)	- Whole milk sour	dietary history	18590		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000518	DriMilk4Gl	Quastionnaire 1 (NT4BLQ1)	- Low-fat milk sour	dietary history	18591		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000519	DriLem1Gl	Quastionnaire 1 (NT4BLQ1)	- Soda/squashes with sugar	dietary history	18592		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000520	DriLem2Gl	Quastionnaire 1 (NT4BLQ1)	- Soda/squashes without sugar	dietary history	18593		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000521	DriJuiGl	Quastionnaire 1 (NT4BLQ1)	- Smoothie/fruit juice	dietary history	18594		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000522	DriYogGl	Quastionnaire 1 (NT4BLQ1)	- Yoghurt	dietary history	18595		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000523	DriCof1CupN	Quastionnaire 1 (NT4BLQ1)	- Coffee (black)	dietary history	18596		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000524	DriCof2CupN	Quastionnaire 1 (NT4BLQ1)	- Coffee with milk/sugar	dietary history	18597		How many glasses/cups of the following drinks do you usually drink/eat?
+HUNT:0000525	AlcFLY	Quastionnaire 1 (NT4BLQ1)	About how often during the last 12 months did you drink alcohol? (Do not include low-alcohol beer)	alcohol use history	18598		
+HUNT:0000526	AlcBeL2WN	Quastionnaire 1 (NT4BLQ1)	How many glasses of beer do you usually drink in the course of two weeks? (Do not include low-alcohol beer. Write 0 if you do not drink alcohol)	alcohol use history	18599		
+HUNT:0000527	AlcWiL2WN	Quastionnaire 1 (NT4BLQ1)	How many glasses of wine do you usually drink in the course of two weeks?	alcohol use history	18600		
+HUNT:0000528	AlcLiL2WN	Quastionnaire 1 (NT4BLQ1)	How many glasses of spirits do you usually drink in the course of two weeks?	alcohol use history	18601		
+HUNT:0000529	AlcTotUnitW	Quastionnaire 1 (NT4BLQ1)	Total alcohol units per week	alcohol use history	25687		
+HUNT:0000530	AlcTotGW	Quastionnaire 1 (NT4BLQ1)	Total quantity in gram of pure alcohol per week	alcohol use history	25694		
+HUNT:0000531	AlcMor6GlF	Quastionnaire 1 (NT4BLQ1)	How often do you drink 6 glasses or more of beer, wine or spirits in one sitting?	alcohol use history	18602		
+HUNT:0000532	SleSnoL3M	Quastionnaire 1 (NT4BLQ1)	- Snored loudly (bothersome)	sleep history	18603		How often in the last 3 months have you:
+HUNT:0000533	SleApnoL3M	Quastionnaire 1 (NT4BLQ1)	- Stopped breathing when you were sleeping (Sleep apnoea)	sleep history	18604		How often in the last 3 months have you:
+HUNT:0000534	InsomEvnL3M	Quastionnaire 1 (NT4BLQ1)	- Had difficulty falling asleep at night	sleep history	18605		How often in the last 3 months have you:
+HUNT:0000535	InsomNigL3M	Quastionnaire 1 (NT4BLQ1)	- Woken up repeatedly during the night	sleep history	18606		How often in the last 3 months have you:
+HUNT:0000536	InsomMornL3M	Quastionnaire 1 (NT4BLQ1)	- Woken too early and could not get back to sleep	sleep history	18607		How often in the last 3 months have you:
+HUNT:0000537	SleDL3M	Quastionnaire 1 (NT4BLQ1)	- Difficulty coping during the daytime (socially or professionally) due to sleep problems	sleep history	18608		How often in the last 3 months have you:
+HUNT:0000538	LegRestlL3M	Quastionnaire 1 (NT4BLQ1)	- Felt an uncomfortable or pins and needles feeling in your legs	sleep history	18609		How often in the last 3 months have you:
+HUNT:0000539	NigSleHWDay	Quastionnaire 1 (NT4BLQ1)	- About how many hours of night's sleep do you get on a regular weekday?	sleep history	18610		How often in the last 3 months have you:
+HUNT:0000540	ExeF	Quastionnaire 1 (NT4BLQ1)	How often do you exercise?	physical activity history	18611		
+HUNT:0000541	ExeInt	ExeF	- How hard do you exercise? (average)	physical activity history	18612		
+HUNT:0000542	ExeDu	ExeF	- How long do you exercise each time? (average)	physical activity history	18613		
+HUNT:0000543	ActPasDy	Quastionnaire 1 (NT4BLQ1)	About how many hours do you sit during an average day? (include work hours and leisure time)	physical activity history	18614		
+HUNT:0000544	LeiEntHDy	Quastionnaire 1 (NT4BLQ1)	- Watch TV/videos/other screen-based entertainment	physical activity history	18615		Estimate how much time you spend on screen-based activities every day in your spare time
+HUNT:0000545	LeiVidGamHDy	Quastionnaire 1 (NT4BLQ1)	- Playing games (alone/with others)	physical activity history	18616		Estimate how much time you spend on screen-based activities every day in your spare time
+HUNT:0000546	LeiFrieNwHDy	Quastionnaire 1 (NT4BLQ1)	- Connect with friends or networks	physical activity history	18617		Estimate how much time you spend on screen-based activities every day in your spare time
+HUNT:0000547	LeiKnowlHDy	Quastionnaire 1 (NT4BLQ1)	- Obtaining knowledge/information	physical activity history	18618		Estimate how much time you spend on screen-based activities every day in your spare time
+HUNT:0000548	LeiJobActHDy	Quastionnaire 1 (NT4BLQ1)	- Job-related activities	physical activity history	18619		Estimate how much time you spend on screen-based activities every day in your spare time
+HUNT:0000549	LiveHealt	Quastionnaire 1 (NT4BLQ1)	How important is it for you to live healthy?	quality of life	18620		
+HUNT:0000550	SatLifSty	Quastionnaire 1 (NT4BLQ1)	How satisfied are you with your own lifestyle?	quality of life	18621		
+HUNT:0000551	WeiSat	Quastionnaire 1 (NT4BLQ1)	Are you satisfied with your current weight?	quality of life	18622		
+HUNT:0000552	WeiRed5Y	Quastionnaire 1 (NT4BLQ1)	The past 5 years, how many times have you intentionally tried to lose more than 5 kg body weight?	dietary history	18623		
+HUNT:0000553	WeiRedL6M	Quastionnaire 1 (NT4BLQ1)	The past 6 months, have you involuntarily lost more than 5 kg body weight?	dietary history	18624		
+HUNT:0000554	ChCohMoth	Quastionnaire 1 (NT4BLQ1)	- Mother	family and household structure	18625		Who did you grow up with?
+HUNT:0000555	ChCohStepMoth	Quastionnaire 1 (NT4BLQ1)	- Stepmother	family and household structure	18626		Who did you grow up with?
+HUNT:0000556	ChCohFath	Quastionnaire 1 (NT4BLQ1)	- Father	family and household structure	18627		Who did you grow up with?
+HUNT:0000557	ChCohStepFath	Quastionnaire 1 (NT4BLQ1)	- Stepfather	family and household structure	18628		Who did you grow up with?
+HUNT:0000558	ChCohFosPar	Quastionnaire 1 (NT4BLQ1)	- Foster parents	family and household structure	18629		Who did you grow up with?
+HUNT:0000559	ChCohSib	Quastionnaire 1 (NT4BLQ1)	- Siblings	family and household structure	18630		Who did you grow up with?
+HUNT:0000560	ChCohOtChi	Quastionnaire 1 (NT4BLQ1)	- Other children younger than 18 years old	family and household structure	18631		Who did you grow up with?
+HUNT:0000561	ChCohOtAd	Quastionnaire 1 (NT4BLQ1)	- Other adults	family and household structure	18632		Who did you grow up with?
+HUNT:0000562	ChParDiv	Quastionnaire 1 (NT4BLQ1)	Did your parents get divorced, or leaved each other, when you were a child?	family and household structure	18633		
+HUNT:0000563	ChParDea	Quastionnaire 1 (NT4BLQ1)	Did either of your parents die when you were a child?	family and household structure	18634		
+HUNT:0000564	ChConfl	Quastionnaire 1 (NT4BLQ1)	Was there a lot of arguing, turmoil, conflicts or poor communication in your childhood home?	psychological distress and emotions	18635		
+HUNT:0000565	ChAdSupp	Quastionnaire 1 (NT4BLQ1)	In your childhood, could you seek support from an adult you were confident in?	social environment	18636		
+HUNT:0000566	ChBadMem	Quastionnaire 1 (NT4BLQ1)	Do you struggle with bad memories from the childhood because of loss, betrayal, neglect, violence or abuse?	psychological distress and emotions	18637		
+HUNT:0000567	ChQual	Quastionnaire 1 (NT4BLQ1)	When you think about your childhood, would you describe it as:	psychological distress and emotions	18638		
+HUNT:0000568	Educ	Quastionnaire 1 (NT4BLQ1)	What is your highest level of education?	education	18639		
+HUNT:0000569	Inco	Quastionnaire 1 (NT4BLQ1)	How high was the total gross income of the household last year?	income and possessions	18640		
+HUNT:0000570	CohNo	Quastionnaire 1 (NT4BLQ1)	- No, I live alone	family and household structure	18641		Do you live with someone?
+HUNT:0000571	CohSps	Quastionnaire 1 (NT4BLQ1)	- Yes, spouse/partner	family and household structure	18642		Do you live with someone?
+HUNT:0000572	CohOtMor18Y	Quastionnaire 1 (NT4BLQ1)	- Yes, other persons aged more than 18 years	family and household structure	18643		Do you live with someone?
+HUNT:0000573	CohAdN	Quastionnaire 1 (NT4BLQ1)	- If yes [living together with other adults]: Number of people over 18 years	family and household structure	18644		Do you live with someone?
+HUNT:0000574	CohChiLes18Y	Quastionnaire 1 (NT4BLQ1)	- Yes, children under the age of 18 years	family and household structure	18645		Do you live with someone?
+HUNT:0000575	CohChiN	Quastionnaire 1 (NT4BLQ1)	- If yes [living together with children]: Number of children under 18 yrs	family and household structure	18646		Do you live with someone?
+HUNT:0000576	SatLif	Quastionnaire 1 (NT4BLQ1)	Thinking about your life at the moment, would you say that you by and large are satisfied with life, or are you mostly dissatisfied?	quality of life	18647		
+HUNT:0000577	Questionnaire 2 (NT4BLQ2)						Added as grouping cat
+HUNT:0000578	NwSupp	Questionnaire 2 (NT4BLQ2)	Do you have anyone who could give you help if you needed it?	social environment	18867		
+HUNT:0000579	NwFrieSupp	NwSupp	- Friends	social environment	18868		If yes: Who can give you help?
+HUNT:0000580	NwFamSupp	NwSupp	- Family	social environment	18869		If yes: Who can give you help?
+HUNT:0000581	NwNeiSupp	NwSupp	- Neighbour	social environment	18870		If yes: Who can give you help?
+HUNT:0000582	NwTal	Questionnaire 2 (NT4BLQ2)	Do you have anyone that you can speak to confidentially?	social environment	18871		
+HUNT:0000583	NwFrieTal	NwTal	- Friends	social environment	18872		If yes: With who can you speak confidentially?
+HUNT:0000584	NwFamTal	NwTal	- Family	social environment	18873		If yes: With who can you speak confidentially?
+HUNT:0000585	NwNeiTal	NwTal	- Neighbour	social environment	18874		If yes: With who can you speak confidentially?
+HUNT:0000586	NwUnite	Questionnaire 2 (NT4BLQ2)	I feel a strong sense of community with the people who live here	social environment	18875		
+HUNT:0000587	NwDistru	Questionnaire 2 (NT4BLQ2)	We do not trust each other here	social environment	18876		
+HUNT:0000588	NwWelf	Questionnaire 2 (NT4BLQ2)	People like living here	social environment	18877		
+HUNT:0000589	MealBreWyN	Questionnaire 2 (NT4BLQ2)	- Breakfast	dietary history	18878		How often do you usually eat these meals?
+HUNT:0000590	MealLunWyN	Questionnaire 2 (NT4BLQ2)	- Lunch	dietary history	18879		How often do you usually eat these meals?
+HUNT:0000591	MealDinWyN	Questionnaire 2 (NT4BLQ2)	- Dinner	dietary history	18880		How often do you usually eat these meals?
+HUNT:0000592	MealSupWyN	Questionnaire 2 (NT4BLQ2)	- Supper/evening snack	dietary history	18881		How often do you usually eat these meals?
+HUNT:0000593	MealOtWyN	Questionnaire 2 (NT4BLQ2)	- Other meals	dietary history	18882		How often do you usually eat these meals?
+HUNT:0000594	MealNigWyN	Questionnaire 2 (NT4BLQ2)	- Midnight snack (at 24-06)	dietary history	18883		How often do you usually eat these meals?
+HUNT:0000595	WhiBreadN	Questionnaire 2 (NT4BLQ2)	- White bread	dietary history	18884		How many slices of bread/crispbread do you usually eat?
+HUNT:0000596	SemiWhoGrBreadN	Questionnaire 2 (NT4BLQ2)	- Semi-whole-grain	dietary history	18885		How many slices of bread/crispbread do you usually eat?
+HUNT:0000597	WhoGrBreadN	Questionnaire 2 (NT4BLQ2)	- Multigrain wholemeal	dietary history	18886		How many slices of bread/crispbread do you usually eat?
+HUNT:0000598	ExtraWhoGrBreadN	Questionnaire 2 (NT4BLQ2)	- Extra coarse wholemeal bread	dietary history	18887		How many slices of bread/crispbread do you usually eat?
+HUNT:0000599	HaLY	Questionnaire 2 (NT4BLQ2)	Have you suffered from headache during the last year?	signs and symptoms	18888		
+HUNT:0000600	HaTypLY	Questionnaire 2 (NT4BLQ2)	Type of headache?	signs and symptoms	18889		
+HUNT:0000601	HaFMyLY	HaLY	- About how many days per month do you have a headache?	signs and symptoms	18891		If yes [bothered by headache]:
+HUNT:0000602	HaAttInt	HaLY	- Usual headache intensity?	signs and symptoms	18892		If yes [bothered by headache]:
+HUNT:0000603	HaAttDu	HaLY	- How long does the headache usually last?	signs and symptoms	18893		If yes [bothered by headache]:
+HUNT:0000604	HaAttPuls	HaLY	- Throbbing/thumping pain?	signs and symptoms	18894		If yes [bothered by headache]: Are the headaches usually characterized by or accompanied by:
+HUNT:0000605	HaAttPres	HaLY	- Pressing pain?	signs and symptoms	18895		If yes [bothered by headache]: Are the headaches usually characterized by or accompanied by:
+HUNT:0000606	HaAttUnil	HaLY	- Pain on one side of the head (right or left)?	signs and symptoms	18896		If yes [bothered by headache]: Are the headaches usually characterized by or accompanied by:
+HUNT:0000607	HaAttAggExe	HaLY	- Worsening with physical activity?	signs and symptoms	18897		If yes [bothered by headache]: Are the headaches usually characterized by or accompanied by:
+HUNT:0000608	HaAttNaus	HaLY	- Nausea and/or vomiting?	signs and symptoms	18898		If yes [bothered by headache]: Are the headaches usually characterized by or accompanied by:
+HUNT:0000609	HaAttLigSo	HaLY	- Hypersensitivity to light and/or noise?	signs and symptoms	18899		If yes [bothered by headache]: Are the headaches usually characterized by or accompanied by:
+HUNT:0000610	HaAuVis	HaLY	Before or during onset; visual disturbances (zigzag lines, flickering/flashing light, fogged vision)	signs and symptoms	18900		
+HUNT:0000611	MSPaLY	Questionnaire 2 (NT4BLQ2)	In the last year, have you had pain or stiffness in muscles or joints that has lasted at least 3 consecutive months?	signs and symptoms	18901		
+HUNT:0000612	MSPaJaw	MSPaLY	- Jaw	signs and symptoms	18902		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000613	MSPaNec	MSPaLY	- Neck	signs and symptoms	18903		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000614	MSPaShou	MSPaLY	- Shoulders	signs and symptoms	18904		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000615	MSPaElbo	MSPaLY	- Elbow	signs and symptoms	18905		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000616	MSPaHand	MSPaLY	- Wrists/hands	signs and symptoms	18906		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000617	MSPaChes	MSPaLY	- Chest	signs and symptoms	18907		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000618	MSPaBaUpp	MSPaLY	- Upper back	signs and symptoms	18908		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000619	MSPaLum	MSPaLY	- Lumbar	signs and symptoms	18909		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000620	MSPaHip	MSPaLY	- Hip	signs and symptoms	18910		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000621	MSPaThi	MSPaLY	- Thigh	signs and symptoms	18911		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000622	MSPaKnee	MSPaLY	- Knees	signs and symptoms	18912		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000623	MSPaShin	MSPaLY	- Shin	signs and symptoms	18913		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000624	MSPaAnkl	MSPaLY	- Ankles/feet	signs and symptoms	18914		If Yes, [musculoskeletal pain/stiffness]: Where have you had this pain or stiffness?
+HUNT:0000625	MSPaBil	MSPaLY	If Yes, [musculoskeletal pain/stiffness]: Have you had this pain on both the right and left side of your body?	signs and symptoms	18915		
+HUNT:0000626	MSPaWorLim	Questionnaire 2 (NT4BLQ2)	- At work	signs and symptoms	18916		If Yes, [musculoskeletal pain/stiffness]: Has the pain prevented you from performing daily activity?
+HUNT:0000627	MSPaLeiLim	Questionnaire 2 (NT4BLQ2)	- During leisure time	signs and symptoms	18917		If Yes, [musculoskeletal pain/stiffness]: Has the pain prevented you from performing daily activity?
+HUNT:0000628	CougDy	Questionnaire 2 (NT4BLQ2)	Do you cough daily during periods of the year?	signs and symptoms	18918		
+HUNT:0000629	CougPhle	CougDy	- Do you usually bring up phlegm when coughing?	signs and symptoms	18919		If yes: Cough daily during periods of the year
+HUNT:0000630	CougPhle3MoL2Y	CougDy	- Have you had a cough with phlegm for periods of at least 3 months during each of the last two years?	signs and symptoms	18920		If yes: Cough daily during periods of the year
+HUNT:0000631	AlRhinEv	Questionnaire 2 (NT4BLQ2)	Do you have, or have you had, hay fever/nasal allergies?	immune system diseases	18921		
+HUNT:0000632	AlRhinLY	AlRhinEv	If Yes [hay fever/nasal allergy] Have you had such symptoms in the last 12 months?	immune system diseases	18922		
+HUNT:0000633	NasCong	Questionnaire 2 (NT4BLQ2)	- Nasal congestion	immune system diseases	18923		Have you had any of the following ailments continuous for at least 3 months during the last year?
+HUNT:0000634	NasThroPhle	Questionnaire 2 (NT4BLQ2)	- Nose or throat phlegm	immune system diseases	18924		Have you had any of the following ailments continuous for at least 3 months during the last year?
+HUNT:0000635	FaciPa	Questionnaire 2 (NT4BLQ2)	- Facial pain	immune system diseases	18925		Have you had any of the following ailments continuous for at least 3 months during the last year?
+HUNT:0000636	SmeSensRed	Questionnaire 2 (NT4BLQ2)	- Impaired sense of smell	immune system diseases	18926		Have you had any of the following ailments continuous for at least 3 months during the last year?
+HUNT:0000637	SinuLY	Questionnaire 2 (NT4BLQ2)	Have you had sinusitis last 12 months?	infectious diseases	18927		
+HUNT:0000638	SinuAntiFLY	SinuLY	[If Yes; Have you had sinusitis last 12 months]: How many antibiotics treatments have you taken totally the last 12 months?	infectious diseases	18928		
+HUNT:0000639	TonsSurg	Questionnaire 2 (NT4BLQ2)	Have you removed the tonsils?	surgical interventions	18929		
+HUNT:0000640	TonsSurgAg	TonsSurg	[If Yes; Have you removed the tonsils]: How old were you?	surgical interventions	18930		
+HUNT:0000641	TireCu	Questionnaire 2 (NT4BLQ2)	Do you feel exhausted/tired?	signs and symptoms	18931		
+HUNT:0000642	TireDu	TireCu	- Approximately how long have you felt exhausted/tired?	signs and symptoms	18932		
+HUNT:0000643	TireP	TireCu	- Approximately how much of the time do you feel exhausted/tired?	signs and symptoms	18933		
+HUNT:0000644	DryMouPr	Questionnaire 2 (NT4BLQ2)	Do you have problems with dryness in the mouth?	signs and symptoms	18934		
+HUNT:0000645	DenHealt	Questionnaire 2 (NT4BLQ2)	How would you say your dental health is?	perception of health	18935		
+HUNT:0000646	DentFear	Questionnaire 2 (NT4BLQ2)	Do you feel fear of the dentist?	psychological distress and emotions	18936		
+HUNT:0000647	DenHealtImpo	Questionnaire 2 (NT4BLQ2)	Is good dental health important to you?	perception of health	18937		
+HUNT:0000648	GIPaLY	Questionnaire 2 (NT4BLQ2)	Have you had stomach pain or discomfort in the last 12 months?	signs and symptoms	18938		
+HUNT:0000649	GIPaLocUp	GIPaLY	- Is it localized in the upper stomach?	signs and symptoms	18939		If stomach pain or discomfort in the last 12 months
+HUNT:0000650	GIPaFL3M	GIPaLY	- In the last 3 months, have you had this as often as 1 day a week for at least 3 weeks?	signs and symptoms	18940		If stomach pain or discomfort in the last 12 months
+HUNT:0000651	GIPaDefe	GIPaLY	- Is the pain/discomfort relieved by having a bowel movement?	signs and symptoms	18941		If stomach pain or discomfort in the last 12 months
+HUNT:0000652	GIPaDefeF	GIPaLY	- Is the pain/discomfort related to more frequent or less frequent bowel movements than normal?	signs and symptoms	18942		If stomach pain or discomfort in the last 12 months
+HUNT:0000653	GIPaDefeCha	GIPaLY	- Is the pain/discomfort related to the stool being softer or harder than usual?	signs and symptoms	18943		If stomach pain or discomfort in the last 12 months
+HUNT:0000654	GIPaMeal	GIPaLY	- Do you have this pain/discomfort after eating?	signs and symptoms	18944		If stomach pain or discomfort in the last 12 months
+HUNT:0000655	GINausLY	Questionnaire 2 (NT4BLQ2)	- Nausea	signs and symptoms	18945		To what degree have you had the following problems in the last 12 months?
+HUNT:0000656	GICardiaLY	Questionnaire 2 (NT4BLQ2)	- Heartburn/acid regurgitation	signs and symptoms	18946		To what degree have you had the following problems in the last 12 months?
+HUNT:0000657	GIDiarLY	Questionnaire 2 (NT4BLQ2)	- Diarrhoea	signs and symptoms	18947		To what degree have you had the following problems in the last 12 months?
+HUNT:0000658	GIObstLY	Questionnaire 2 (NT4BLQ2)	- Constipation	signs and symptoms	18948		To what degree have you had the following problems in the last 12 months?
+HUNT:0000659	GIDefeChaLY	Questionnaire 2 (NT4BLQ2)	- Alternating constipation and diarrhoea	signs and symptoms	18949		To what degree have you had the following problems in the last 12 months?
+HUNT:0000660	GIGasLY	Questionnaire 2 (NT4BLQ2)	- Bloating	signs and symptoms	18950		To what degree have you had the following problems in the last 12 months?
+HUNT:0000661	AppenSurg	Questionnaire 2 (NT4BLQ2)	Have you had appendix surgery?	surgical interventions	18951		
+HUNT:0000662	AppenSurgAg	AppenSurg	[If yes, appendix removed]: How old were you?	surgical interventions	18952		
+HUNT:0000663	UrProLY	Questionnaire 2 (NT4BLQ2)	Have you been diagnosed with proteins (proteinuria) in the urine several times over the past year?	signs and symptoms	18953		
+HUNT:0000664	UrProAg	UrProLY	[If yes, proteinuria] How old were you when this was proven the first time?	signs and symptoms	18954		
+HUNT:0000665	UrBloLY	Questionnaire 2 (NT4BLQ2)	Have you been diagnosed with blood in the urine several times over the past year?	signs and symptoms	18955		
+HUNT:0000666	UrInfeEv	Questionnaire 2 (NT4BLQ2)	Have you ever had urinary tract infections (bladder infection/ kidney infection)?	infectious diseases	18956		
+HUNT:0000667	UrInfeFL2Y	UrInfeEv	- About how many times have you had urinary tract infections (bladder infection/ kidney infection) in the last 2 years?	infectious diseases	18957		If yes: Have you ever had urinary tract infections?
+HUNT:0000668	UrInfeLW	UrInfeEv	- Have you had urinary tract infections (bladder infection/ kidney infection) in the last 7 days?	infectious diseases	18958		If yes: Have you ever had urinary tract infections?
+HUNT:0000669	MdDiagRenFai	Questionnaire 2 (NT4BLQ2)	Has a doctor said that you have kidney failure?	urinary system diseases	18959		
+HUNT:0000670	HADSNerv	Questionnaire 2 (NT4BLQ2)	I feel tense or 'wound up'	psychological distress and emotions	18960		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000671	HADSEnjoy	Questionnaire 2 (NT4BLQ2)	I still enjoy the things I used to enjoy	psychological distress and emotions	18961		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000672	HADSCata	Questionnaire 2 (NT4BLQ2)	I get a sort of frightened feeling as if something awful is about to happen	psychological distress and emotions	18962		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000673	HADSLaugh	Questionnaire 2 (NT4BLQ2)	I can laugh and see the funny side of things	psychological distress and emotions	18963		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000674	HADSWorr	Questionnaire 2 (NT4BLQ2)	Worrying thoughts go through my mind	psychological distress and emotions	18964		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000675	HADSHappy	Questionnaire 2 (NT4BLQ2)	I feel cheerful	psychological distress and emotions	18965		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000676	HADSRelax	Questionnaire 2 (NT4BLQ2)	I can sit at ease and feel relaxed	psychological distress and emotions	18966		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000677	HADSSlow	Questionnaire 2 (NT4BLQ2)	I feel as if I'm slowed down	psychological distress and emotions	18967		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000678	HADSRestl1	Questionnaire 2 (NT4BLQ2)	I get a sort of frightened feeling like butterflies in the stomach	psychological distress and emotions	18968		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000679	HADSLook	Questionnaire 2 (NT4BLQ2)	I have lost interest in my appearance	psychological distress and emotions	18969		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000680	HADSRestl2	Questionnaire 2 (NT4BLQ2)	I feel restless as if I have to be on the move	psychological distress and emotions	18970		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000681	HADSOpti	Questionnaire 2 (NT4BLQ2)	I look forward with enjoyment to things	psychological distress and emotions	18971		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000682	HADSPanic	Questionnaire 2 (NT4BLQ2)	I get sudden feelings of panic	psychological distress and emotions	18972		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000683	HADSMedia	Questionnaire 2 (NT4BLQ2)	I can enjoy a good book or radio/TV program	psychological distress and emotions	18973		Hospial Anxiety and Depression Scale (HADS)
+HUNT:0000684	HADSAnxi	Questionnaire 2 (NT4BLQ2)	Total score anxiety HAD	survey administration	20300		
+HUNT:0000685	HADSDepr	Questionnaire 2 (NT4BLQ2)	Total score depression HAD	survey administration	20299		
+HUNT:0000686	HADSTot	Questionnaire 2 (NT4BLQ2)	Total score HAD	survey administration	22511		
+HUNT:0000687	HADSTotExtr	Questionnaire 2 (NT4BLQ2)	Total score HAD extrapolated	survey administration	22512		
+HUNT:0000688	ResilFrie	Questionnaire 2 (NT4BLQ2)	- Making new friends	social environment	18974		Think about the last month and describe yourself, your family and your relationship with your friends
+HUNT:0000689	ResilContaPeop	Questionnaire 2 (NT4BLQ2)	- Get in touch with new people	social environment	18975		Think about the last month and describe yourself, your family and your relationship with your friends
+HUNT:0000690	ResilLaugh	Questionnaire 2 (NT4BLQ2)	- When I am together with others	social environment	18976		Think about the last month and describe yourself, your family and your relationship with your friends
+HUNT:0000691	ResilFamImpo	Questionnaire 2 (NT4BLQ2)	- In my family the understanding of what is important in life	social environment	18977		Think about the last month and describe yourself, your family and your relationship with your friends
+HUNT:0000692	ResilFamRel	Questionnaire 2 (NT4BLQ2)	- My family is characterized by	social environment	18978		Think about the last month and describe yourself, your family and your relationship with your friends
+HUNT:0000693	ResilFamDiff	Questionnaire 2 (NT4BLQ2)	- In difficult times	social environment	18979		Think about the last month and describe yourself, your family and your relationship with your friends
+HUNT:0000694	AlcDri	Questionnaire 2 (NT4BLQ2)	Do you drink alcohol?	alcohol use history	18980		
+HUNT:0000695	AlcRed	AlcDri	- Have you ever felt that you should cut down on your drinking?	alcohol use history	18981		
+HUNT:0000696	AlcCrit	AlcDri	- Have other people ever criticised your use of alcohol?	alcohol use history	18982		
+HUNT:0000697	AlcGuilt	AlcDri	- Have you ever felt bad or guilty because of your use of alcohol?	alcohol use history	18983		
+HUNT:0000698	AlcMorn	AlcDri	- Have you ever had a drink first thing in the morning as a pick-me-up or to calm your nerves or to cure a hangover?	alcohol use history	18984		
+HUNT:0000699	HisDisNo	Questionnaire 2 (NT4BLQ2)	- No	diseases	18985		Been life threatening sick or injured
+HUNT:0000700	HisDisBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	diseases	19166		Been life threatening sick or injured
+HUNT:0000701	HisDisAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	diseases	19167		Been life threatening sick or injured
+HUNT:0000702	HisDisL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	diseases	19168		Been life threatening sick or injured
+HUNT:0000703	HisFamDisNo	Questionnaire 2 (NT4BLQ2)	- No	family history of disease	18986		Has someone in your family been seriously ill or hurt?
+HUNT:0000704	HisFamDisBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	family history of disease	19163		Has someone in your family been seriously ill or hurt?
+HUNT:0000705	HisFamDisAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	family history of disease	19164		Has someone in your family been seriously ill or hurt?
+HUNT:0000706	HisFamDisL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	family history of disease	19165		Has someone in your family been seriously ill or hurt?
+HUNT:0000707	HisRelPrNo	Questionnaire 2 (NT4BLQ2)	- No	social environment	18987		Serious problems in your relationship with partner or spouse
+HUNT:0000708	HisRelPrBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	social environment	19160		Serious problems in your relationship with partner or spouse
+HUNT:0000709	HisRelPrAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	social environment	19161		Serious problems in your relationship with partner or spouse
+HUNT:0000710	HisRelPrL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	social environment	19162		Serious problems in your relationship with partner or spouse
+HUNT:0000711	HisDivNo	Questionnaire 2 (NT4BLQ2)	- No	social environment	18988		Ended relationship with your spouse or long-term partner
+HUNT:0000712	HisDivBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	social environment	19157		Ended relationship with your spouse or long-term partner
+HUNT:0000713	HisDivAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	social environment	19158		Ended relationship with your spouse or long-term partner
+HUNT:0000714	HisDivL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	social environment	19159		Ended relationship with your spouse or long-term partner
+HUNT:0000715	HisFamDeaNo	Questionnaire 2 (NT4BLQ2)	- No	family history of disease	18989		Sudden and unexpected death in family/someone close to you
+HUNT:0000716	HisFamDeaBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	family history of disease	19154		Sudden and unexpected death in family/someone close to you
+HUNT:0000717	HisFamDeaAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	family history of disease	19155		Sudden and unexpected death in family/someone close to you
+HUNT:0000718	HisFamDeaL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	family history of disease	19156		Sudden and unexpected death in family/someone close to you
+HUNT:0000719	HisViolNo	Questionnaire 2 (NT4BLQ2)	- No	psychological distress and emotions|injuries	18990		Been subjected to physical violence (beaten/injured)
+HUNT:0000720	HisViolBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	psychological distress and emotions|injuries	19151		Been subjected to physical violence (beaten/injured)
+HUNT:0000721	HisViolAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	psychological distress and emotions|injuries	19152		Been subjected to physical violence (beaten/injured)
+HUNT:0000722	HisViolL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	psychological distress and emotions|injuries	19153		Been subjected to physical violence (beaten/injured)
+HUNT:0000723	HisMentViolNo	Questionnaire 2 (NT4BLQ2)	- No	psychological distress and emotions	18991		Repeated mental violence from someone close to you (threatened/vilified/ridiculed/demeaned)
+HUNT:0000724	HisMentViolBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	psychological distress and emotions	19148		Repeated mental violence from someone close to you (threatened/vilified/ridiculed/demeaned)
+HUNT:0000725	HisMentViolAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	psychological distress and emotions	19149		Repeated mental violence from someone close to you (threatened/vilified/ridiculed/demeaned)
+HUNT:0000726	HisMentViolL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	psychological distress and emotions	19150		Repeated mental violence from someone close to you (threatened/vilified/ridiculed/demeaned)
+HUNT:0000727	HisSexUnwNo	Questionnaire 2 (NT4BLQ2)	- No	psychological distress and emotions	18992		Been subjected to unwanted sexual acts
+HUNT:0000728	HisSexUnwBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	psychological distress and emotions	19169		Been subjected to unwanted sexual acts
+HUNT:0000729	HisSexUnwAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	psychological distress and emotions	19170		Been subjected to unwanted sexual acts
+HUNT:0000730	HisSexUnwL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	psychological distress and emotions	19171		Been subjected to unwanted sexual acts
+HUNT:0000731	HisBulPhoNo	Questionnaire 2 (NT4BLQ2)	- No	psychological distress and emotions	18993		Been bullied via cell phone or the internet
+HUNT:0000732	HisBulPhoBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	psychological distress and emotions	19172		Been bullied via cell phone or the internet
+HUNT:0000733	HisBulPhoAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	psychological distress and emotions	19173		Been bullied via cell phone or the internet
+HUNT:0000734	HisBulPhoL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	psychological distress and emotions	19174		Been bullied via cell phone or the internet
+HUNT:0000735	HisBulSchoNo	Questionnaire 2 (NT4BLQ2)	- No	psychological distress and emotions	18994		Been bullied/harassed on school/education institution
+HUNT:0000736	HisBulSchoBef18	Questionnaire 2 (NT4BLQ2)	- Yes, before 18 years of age	psychological distress and emotions	19176		Been bullied/harassed on school/education institution
+HUNT:0000737	HisBulSchoAf18	Questionnaire 2 (NT4BLQ2)	- Yes, after 18 years of age	psychological distress and emotions	19177		Been bullied/harassed on school/education institution
+HUNT:0000738	HisBulSchoL12Mo	Questionnaire 2 (NT4BLQ2)	- Yes, the last 12 months	psychological distress and emotions	19178		Been bullied/harassed on school/education institution
+HUNT:0000739	CulExhL6M	Questionnaire 2 (NT4BLQ2)	- A museum/art exhibition	social environment	18995		How many times have you during the past 6 months been to/in:
+HUNT:0000740	CulConceL6M	Questionnaire 2 (NT4BLQ2)	- A concert, theatre or film	social environment	18996		How many times have you during the past 6 months been to/in:
+HUNT:0000741	CulChuL6M	Questionnaire 2 (NT4BLQ2)	- The church/chapel	social environment	18997		How many times have you during the past 6 months been to/in:
+HUNT:0000742	CulSporL6M	Questionnaire 2 (NT4BLQ2)	- A sporting event	social environment	18998		How many times have you during the past 6 months been to/in:
+HUNT:0000743	ActPolitL6M	Questionnaire 2 (NT4BLQ2)	- Political activity/public debate	social environment	18999		How many times in the last 6 months have you participated in:
+HUNT:0000744	ActOrgL6M	Questionnaire 2 (NT4BLQ2)	- An association or club meeting/activity	social environment	19000		How many times in the last 6 months have you participated in:
+HUNT:0000745	ActMusL6M	Questionnaire 2 (NT4BLQ2)	- Music, singing or theatre	social environment	19001		How many times in the last 6 months have you participated in:
+HUNT:0000746	ActChuL6M	Questionnaire 2 (NT4BLQ2)	- Parish work	social environment	19002		How many times in the last 6 months have you participated in:
+HUNT:0000747	ActOutL6M	Questionnaire 2 (NT4BLQ2)	- Outdoor activities	social environment	19003		How many times in the last 6 months have you participated in:
+HUNT:0000748	ActDancL6M	Questionnaire 2 (NT4BLQ2)	- Dance	social environment	19004		How many times in the last 6 months have you participated in:
+HUNT:0000749	ActSporL6M	Questionnaire 2 (NT4BLQ2)	- Sports or exercise	social environment	19005		How many times in the last 6 months have you participated in:
+HUNT:0000750	ReligLifAfDea	Questionnaire 2 (NT4BLQ2)	Do you believe in life after death?	religion	19006		
+HUNT:0000751	ReligGod	Questionnaire 2 (NT4BLQ2)	I seek God's help when I need strength and solace	religion	19007		
+HUNT:0000752	LibidoL4W	Questionnaire 2 (NT4BLQ2)	- To what extent have you been interested in sex?	cognitive and psychological measurements	19008		Think about the last 4 weeks:
+HUNT:0000753	SexActL4W	Questionnaire 2 (NT4BLQ2)	- To what extent were you sexually active? (with or without intercourse)	psychological distress and emotions	19009		Think about the last 4 weeks:
+HUNT:0000754	SexSatL4W	Questionnaire 2 (NT4BLQ2)	- If you have been sexually active, to what extent was sex enjoyable for you?	social environment|psychological distress and emotions	19010		Think about the last 4 weeks:
+HUNT:0000755	VagDryL4W	Questionnaire 2 (NT4BLQ2)	- Have you suffered from vaginal dryness during intercourse?	signs and symptoms	19011		Think about the last 4 weeks:
+HUNT:0000756	PaCoitL4W	Questionnaire 2 (NT4BLQ2)	- Did you have pain during intercourse?	signs and symptoms	19012		Think about the last 4 weeks:
+HUNT:0000757	ErecPrL4W	Questionnaire 2 (NT4BLQ2)	- Have you ever had erection problems?	signs and symptoms	19013		Think about the last 4 weeks:
+HUNT:0000758	SexuOrien	Questionnaire 2 (NT4BLQ2)	What is your sexual orientation?	socio-demographic and economic characteristics	19014		
+HUNT:0000759	UrInc	Questionnaire 2 (NT4BLQ2)	Do you have involuntary loss of urine?	signs and symptoms	19015		
+HUNT:0000760	UrIncF	UrInc	- How often do you have involuntary loss of urine?	signs and symptoms	19016		If involuntary incontinence
+HUNT:0000761	UrIncVol	UrInc	- How much urine do you leak each time?	signs and symptoms	19017		If involuntary incontinence
+HUNT:0000762	UrIncStrWom	UrInc	- Do you leak urine when you cough, sneeze, laugh or lift something heavy?	signs and symptoms	19018		If involuntary incontinence
+HUNT:0000763	UrIncUrgWom	UrInc	- Do you have involuntary loss of urine in connection with sudden and strong urge to void?	signs and symptoms	19019		If involuntary incontinence
+HUNT:0000764	UrIncStrMen	UrInc	- When coughing, sneezing, laughing or lifting something heavy	signs and symptoms	19020		If involuntary incontinence
+HUNT:0000765	UrIncUrgMen	UrInc	- In connection with sudden and strong urge to void	signs and symptoms	19021		If involuntary incontinence
+HUNT:0000766	UrIncEndMen	UrInc	- Drops at the end of, or after, urination	signs and symptoms	19022		If involuntary incontinence
+HUNT:0000767	UrIncAlwMen	UrInc	- Drops all the time, regardless of urination	signs and symptoms	19023		If involuntary incontinence
+HUNT:0000768	UrIncFeel	UrInc	- How do you experience your leakage problem?	signs and symptoms	19024		If involuntary incontinence
+HUNT:0000769	UrIncAg	UrInc	- At what age did your involuntary loss of urine start?	signs and symptoms	19025		If involuntary incontinence
+HUNT:0000770	UrIncMd	UrInc	Have you consulted a doctor because of involuntary loss of urine?	signs and symptoms	19026		
+HUNT:0000771	UrIncTreNon	UrIncMd	- No treatment		19027		
+HUNT:0000772	UrIncTreTrai	UrIncMd	- Pelvic floor exercises	non-pharmacological interventions	19028		
+HUNT:0000773	UrIncTreMed	UrIncMd	- Medicine	medication	19029		
+HUNT:0000774	UrIncTreSurg	UrIncMd	- Surgery	surgical interventions	19030		
+HUNT:0000775	WorReqFas	Questionnaire 2 (NT4BLQ2)	- Does your job require you to work very fast?	occupation	19031		If working or previously worked:
+HUNT:0000776	WorReqHar	Questionnaire 2 (NT4BLQ2)	- Does your job require you to work very hard?	occupation	19032		If working or previously worked:
+HUNT:0000777	WorReqHig	Questionnaire 2 (NT4BLQ2)	- Does your job require a great deal of work effort?	occupation	19033		If working or previously worked:
+HUNT:0000778	WorReqInve	Questionnaire 2 (NT4BLQ2)	- Does your job require creativity?	occupation	19034		If working or previously worked:
+HUNT:0000779	WorCtrlHow	Questionnaire 2 (NT4BLQ2)	- Do you have the possibility to decide for yourself how to carry out your work?	occupation	19035		If working or previously worked:
+HUNT:0000780	WorCtrlWha	Questionnaire 2 (NT4BLQ2)	- Do you have the possibility to decide for yourself what should be done in your work?	occupation	19036		If working or previously worked:
+HUNT:0000781	WorHeav	Questionnaire 2 (NT4BLQ2)	- Is your work so physically demanding that you are often physically worn out after a long day's work?	occupation	19037		If working or previously worked:
+HUNT:0000782	WorSolid	Questionnaire 2 (NT4BLQ2)	- There is a good collegiality at work	occupation	19038		If work or previously worked with others:
+HUNT:0000783	WorSupp	Questionnaire 2 (NT4BLQ2)	- My co-workers are there for me (support me)	occupation	19039		If work or previously worked with others:
+HUNT:0000784	WorWelf	Questionnaire 2 (NT4BLQ2)	- I get along well with my co-workers	occupation	19040		If work or previously worked with others:
+HUNT:0000785	WorVict	Questionnaire 2 (NT4BLQ2)	- Are you bullied/harassed at work?	occupation	19041		If work or previously worked with others:
+HUNT:0000786	MemPr	Questionnaire 2 (NT4BLQ2)	Do you have problems with your memory?	cognitive functioning	19042		
+HUNT:0000787	MemCha	Questionnaire 2 (NT4BLQ2)	Has your memory changed since you were younger?	cognitive functioning	19043		
+HUNT:0000788	MemPrShTm	MemCha	- Remembering things that happened a few minutes ago	cognitive functioning	19044		Do you have trouble:
+HUNT:0000789	MemPrNam	MemCha	- Remembering other peoples names	cognitive functioning	19045		Do you have trouble:
+HUNT:0000790	MemPrDat	MemCha	- Remembering dates	cognitive functioning	19046		Do you have trouble:
+HUNT:0000791	MemPrPlan	MemCha	- Remembering to do something you have planned to do	cognitive functioning	19047		Do you have trouble:
+HUNT:0000792	MemPrMediTm	MemCha	- Remembering things that happened a few days ago	cognitive functioning	19048		Do you have trouble:
+HUNT:0000793	MemPrLonTm	MemCha	- Remembering things that happened years ago	cognitive functioning	19049		Do you have trouble:
+HUNT:0000794	MemPrTal	MemCha	- Following along in a conversation	cognitive functioning	19050		Do you have trouble:
+HUNT:0000795	PregDiffMor1Y	Questionnaire 2 (NT4BLQ2)	Have you ever tried for more than one year to become pregnant?	reproduction	19051		
+HUNT:0000796	PregDiffAg	PregDiffMor1Y	[If Yes: Have you ever tried for more than one year to become pregnant]: How old were you the first time you tried to become pregnant?	reproduction	19052		If tried to become pregnant for more than one year:
+HUNT:0000797	IVFerEv	Questionnaire 2 (NT4BLQ2)	Have you ever received hormone treatment to become pregnant?	reproduction	19053		
+HUNT:0000798	BCPilEv	Questionnaire 2 (NT4BLQ2)	Do you take or have you taken birth control pills?	medication	19054		
+HUNT:0000799	BCPilAg	BCPilEv	- How old were you when you first began taking them?	medication	19055		If ever used birth control pill:
+HUNT:0000800	BCPilDu	BCPilEv	- How many years in total have you taken birth control pills?	medication	19056		If ever used birth control pill:
+HUNT:0000801	BCDerEv	Questionnaire 2 (NT4BLQ2)	Do you use or have you used birth control patch?	medication	19057		
+HUNT:0000802	BCHormOtEv	Questionnaire 2 (NT4BLQ2)	Do you use or have you used contraceptive injections, vaginal ring, IUD or IUS?	medication	19058		
+HUNT:0000803	BCPilEmerEv	Questionnaire 2 (NT4BLQ2)	Have you ever used emergency contraception?	medication	19059		
+HUNT:0000804	BCPilEmerEvFLY	BCPilEmerEv	[If used emergency contraception:] How many times last year?	medication	19060		
+HUNT:0000805	Menop	Questionnaire 2 (NT4BLQ2)	Are you, or have you been in menopause?	reproduction	19061		
+HUNT:0000806	MenopSymEv	Menop	[If in or have been in menopause:] Do you, or did you have, hot flashes due to menopause?	reproduction	19062		
+HUNT:0000807	MenopSymMd	Menop	- Have you been to a doctor because of hot flashes?	reproduction	19063		If hot flashes related to menopause:
+HUNT:0000808	MenopSymCu	Menop	- Do you still have hot flashes?	reproduction	19064		If hot flashes related to menopause:
+HUNT:0000809	EstrSys	Questionnaire 2 (NT4BLQ2)	Have you ever used tablets or patches containing estrogen due to menopause complications?	medication	19065		
+HUNT:0000810	EstrAg	EstrSys	- How old were you when you started?	medication	19066		If ever, used estrogen due to menopause complications:
+HUNT:0000811	EstrAgLTm	EstrSys	- How old are/were you the last time you used it?	medication	19067		If ever, used estrogen due to menopause complications:
+HUNT:0000812	EstrLocCu	Questionnaire 2 (NT4BLQ2)	Do you use vaginal cream or suppository containing estrogen?	medication	19068		
+HUNT:0000813	IncFlatLM	Questionnaire 2 (NT4BLQ2)	Have you had uncontrollable flatulence in the last month?	signs and symptoms	19069		
+HUNT:0000814	IncFecLM	Questionnaire 2 (NT4BLQ2)	Have you leaked stool (fecal incontinence) in the last month?	signs and symptoms	19070		
+HUNT:0000815	IncFecLim	IncFecLM	[If faecal incontinence last month:] Does faecal incontinence affect your daily life?	signs and symptoms	19071		
+HUNT:0000816	DefeDelay	Questionnaire 2 (NT4BLQ2)	Are you able to hold back the stool for 15 minutes after you first feel the urge to evacuate your bowels?	signs and symptoms	19072		
+HUNT:0000817	EatPrSto	Questionnaire 2 (NT4BLQ2)	- When I first begin eating, it is difficult to stop	dietary history|psychological distress and emotions	19073		Your eating habits:
+HUNT:0000818	EatThink	Questionnaire 2 (NT4BLQ2)	- I spend too much time thinking about food	dietary history|psychological distress and emotions	19074		Your eating habits:
+HUNT:0000819	EatCtrl	Questionnaire 2 (NT4BLQ2)	- I feel that food controls my life	dietary history|psychological distress and emotions	19075		Your eating habits:
+HUNT:0000820	EatPiec	Questionnaire 2 (NT4BLQ2)	- When I eat, I cut my food up in small pieces	dietary history	19076		Your eating habits:
+HUNT:0000821	EatSlow	Questionnaire 2 (NT4BLQ2)	- I take longer than others to eat my meals	dietary history	19077		Your eating habits:
+HUNT:0000822	EatThin	Questionnaire 2 (NT4BLQ2)	- Other people think I`m too thin	dietary history|psychological distress and emotions	19078		Your eating habits:
+HUNT:0000823	EatOblig	Questionnaire 2 (NT4BLQ2)	- I feel that others pressure me to eat	dietary history|psychological distress and emotions	19079		Your eating habits:
+HUNT:0000824	EatVom	Questionnaire 2 (NT4BLQ2)	- I vomit after I have eaten	dietary history|psychological distress and emotions	19080		Your eating habits:
+HUNT:0000825	LegUlc	Questionnaire 2 (NT4BLQ2)	Do you have ulcer(s) on your toe, foot or ankle that will not heal?	signs and symptoms	19081		
+HUNT:0000826	LegPaWalk	Questionnaire 2 (NT4BLQ2)	Do you get pain in either leg on walking?	signs and symptoms	19082		
+HUNT:0000827	LegPaFoot	LegPaWalk	- Foot	signs and symptoms	19083		If pain when walking, where is the pain most intense?
+HUNT:0000828	LegPaLeg	LegPaWalk	- Leg	signs and symptoms	19084		If pain when walking, where is the pain most intense?
+HUNT:0000829	LegPaThi	LegPaWalk	- Thigh	signs and symptoms	19085		If pain when walking, where is the pain most intense?
+HUNT:0000830	LegPaHip	LegPaWalk	- Hip	signs and symptoms	19086		If pain when walking, where is the pain most intense?
+HUNT:0000831	LegPaSto	LegPaWalk	- Does the pain go away if you stand still a while?	signs and symptoms	19087		If pain when walking, where is the pain most intense?
+HUNT:0000832	LegPaRest	Questionnaire 2 (NT4BLQ2)	Do you have pain in your legs when you are resting?	signs and symptoms	19088		
+HUNT:0000833	LegPaBed	LegPaRest	- Is the pain worse when you lay in bed?	signs and symptoms	19089		
+HUNT:0000834	LegPaLo	LegPaRest	- Do you have less pain if you have your legs lower, such as over the edge of the bed?	signs and symptoms	19090		
+HUNT:0000835	LegPa2W	LegPaRest	- Have you had pain in your legs continuously for more than 14 days?	signs and symptoms	19091		
+HUNT:0000836	DizPr	Questionnaire 2 (NT4BLQ2)	Are you bothered by dizziness?	signs and symptoms	19092		
+HUNT:0000837	DizPrF	DizPr	- How often are you bothered by dizziness?	signs and symptoms	19093		
+HUNT:0000838	DizTyp	DizPr	- How would you describe your dizziness?	signs and symptoms	19094		
+HUNT:0000839	DizTurHead	DizPr	- When I turn my head	signs and symptoms	19095		
+HUNT:0000840	DizStandUp	DizPr	- When I stand up	signs and symptoms	19096		
+HUNT:0000841	DizSt	DizPr	- When I get strained	signs and symptoms	19097		
+HUNT:0000842	DizAlw	DizPr	- Almost always	signs and symptoms	19098		
+HUNT:0000843	DizOt	DizPr	- Other	signs and symptoms	19099		
+HUNT:0000844	FallPrBal	Questionnaire 2 (NT4BLQ2)	Do you have problems with your balance?	signs and symptoms	19100		
+HUNT:0000845	FallLY	Questionnaire 2 (NT4BLQ2)	Have you fallen in the last year?	signs and symptoms	19101		
+HUNT:0000846	FallFLY	FallLY	- How many times have you fallen?	signs and symptoms	19102		
+HUNT:0000847	FallOut	FallLY	- Have you fallen outdoors?	signs and symptoms	19103		
+HUNT:0000848	FallMdLY	FallLY	- Have you been to a doctor in the last year because of an injury caused by a fall?	signs and symptoms	19104		
+HUNT:0000849	FallWorr	Questionnaire 2 (NT4BLQ2)	Are you worried about falling?	functional limitations	19105		
+HUNT:0000850	LivCond	Questionnaire 2 (NT4BLQ2)	How do you live?	functional limitations	19106		
+HUNT:0000851	ADLWalk	Questionnaire 2 (NT4BLQ2)	- Move around indoors on the same floor	functional limitations	19107		Can you manage, without the help of others, in everyday life to
+HUNT:0000852	ADLToil	Questionnaire 2 (NT4BLQ2)	- Go to the toilet	functional limitations	19108		Can you manage, without the help of others, in everyday life to
+HUNT:0000853	ADLWash	Questionnaire 2 (NT4BLQ2)	- Wash yourself	functional limitations	19109		Can you manage, without the help of others, in everyday life to
+HUNT:0000854	ADLBath	Questionnaire 2 (NT4BLQ2)	- Take a bath or shower	functional limitations	19110		Can you manage, without the help of others, in everyday life to
+HUNT:0000855	ADLDres	Questionnaire 2 (NT4BLQ2)	- Dress and undress yourself	functional limitations	19111		Can you manage, without the help of others, in everyday life to
+HUNT:0000856	ADLBed	Questionnaire 2 (NT4BLQ2)	- Go to bed and get up	functional limitations	19112		Can you manage, without the help of others, in everyday life to
+HUNT:0000857	ADLEat	Questionnaire 2 (NT4BLQ2)	- Eat	functional limitations	19113		Can you manage, without the help of others, in everyday life to
+HUNT:0000858	WalkAid	Questionnaire 2 (NT4BLQ2)	Do you usually use walking aids? (walker, crutches, cane or other)?	functional limitations	19114		
+HUNT:0000859	DrivLic	Questionnaire 2 (NT4BLQ2)	Do you have a driving license?	functional limitations	19115		
+HUNT:0000860	DrivCu	DrivLic	[If yes, having driving license:] Do you still drive a car?	functional limitations	19116		
+HUNT:0000861	ADLCook	Questionnaire 2 (NT4BLQ2)	- Prepare warm meals	functional limitations	19117		Can you, without the help of others, do the following daily tasks?
+HUNT:0000862	ADLDish	Questionnaire 2 (NT4BLQ2)	- Do light housework (e.g. wash dishes)	functional limitations	19118		Can you, without the help of others, do the following daily tasks?
+HUNT:0000863	ADLClean	Questionnaire 2 (NT4BLQ2)	- Do heavier housework  (e.g. wash floor)	functional limitations	19119		Can you, without the help of others, do the following daily tasks?
+HUNT:0000864	ADLLaun	Questionnaire 2 (NT4BLQ2)	- Do the laundry	functional limitations	19120		Can you, without the help of others, do the following daily tasks?
+HUNT:0000865	ADLShop	Questionnaire 2 (NT4BLQ2)	- Do the shopping	functional limitations	19121		Can you, without the help of others, do the following daily tasks?
+HUNT:0000866	ADLPay	Questionnaire 2 (NT4BLQ2)	- Pay bills	functional limitations	19122		Can you, without the help of others, do the following daily tasks?
+HUNT:0000867	ADLTab	Questionnaire 2 (NT4BLQ2)	- Take the medicines	functional limitations	19123		Can you, without the help of others, do the following daily tasks?
+HUNT:0000868	ADLGoOut	Questionnaire 2 (NT4BLQ2)	- Go out	functional limitations	19124		Can you, without the help of others, do the following daily tasks?
+HUNT:0000869	ADLGoBus	Questionnaire 2 (NT4BLQ2)	- Take the bus	functional limitations	19125		Can you, without the help of others, do the following daily tasks?
+HUNT:0000870	AssHCarLY	Questionnaire 2 (NT4BLQ2)	Have you received home care help in the last 12 months?	functional limitations	19126		
+HUNT:0000871	AssHNurLY	Questionnaire 2 (NT4BLQ2)	Have you received home nursing care in the last 12 months?	functional limitations	19127		
+HUNT:0000872	NurHoLY	Questionnaire 2 (NT4BLQ2)	Have you been admitted to a nursing home during the last 12 months?	healthcare information	19128		
+HUNT:0000873	OwnTeethN	Questionnaire 2 (NT4BLQ2)	How many of your own teeth do you still have?	oral health history	19129		
+HUNT:0000874	Dentu	Questionnaire 2 (NT4BLQ2)	Do you have dentures?	oral health history	19130		
+HUNT:0000875	VidGamToMu	Questionnaire 2 (NT4BLQ2)	- I am using too much time on video games	personal beliefs and values	19131		Regarding video games, how much do you agree to the following statements:
+HUNT:0000876	VidGamBadMood	Questionnaire 2 (NT4BLQ2)	- I get in bad mood when I am not able to spend time on video games	psychological distress and emotions	19132		Regarding video games, how much do you agree to the following statements:
+HUNT:0000877	VidGamToMuTmRela	Questionnaire 2 (NT4BLQ2)	- My relatives think that I am using too much time on video games	social environment	19133		Regarding video games, how much do you agree to the following statements:
+HUNT:0000878	NetUseToMuTm	Questionnaire 2 (NT4BLQ2)	- I am using too much time on internet	personal beliefs and values	19134		Regarding internet surfing and chatting (outside of work or studies), how much do you agree to the following statements:
+HUNT:0000879	NetUseBadMood	Questionnaire 2 (NT4BLQ2)	- I get in bad mood when I am not able to spend time on internet	psychological distress and emotions	19135		Regarding internet surfing and chatting (outside of work or studies), how much do you agree to the following statements:
+HUNT:0000880	NetUseToMuTmRela	Questionnaire 2 (NT4BLQ2)	- My relatives think that I am using too much time on internet	social environment	19136		Regarding internet surfing and chatting (outside of work or studies), how much do you agree to the following statements:
+HUNT:0000881	ConcPrWraUp	Questionnaire 2 (NT4BLQ2)	- How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?	psychological distress and emotions	19137		Think about the last 6 months:
+HUNT:0000882	ConcPrOrd	Questionnaire 2 (NT4BLQ2)	- How often do you have difficulty getting things in order when you have to do a task that requires organization?	psychological distress and emotions	19138		Think about the last 6 months:
+HUNT:0000883	ConcPrThou	Questionnaire 2 (NT4BLQ2)	- When you have a task that requires a lot of thought, how often do you avoid or delay getting started?	psychological distress and emotions	19139		Think about the last 6 months:
+HUNT:0000884	ConcPrAppo	Questionnaire 2 (NT4BLQ2)	- How often do you have problems remembering appointments or obligations?	psychological distress and emotions	19140		Think about the last 6 months:
+HUNT:0000885	ConcPrFidg	Questionnaire 2 (NT4BLQ2)	- How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?	psychological distress and emotions	19141		Think about the last 6 months:
+HUNT:0000886	ConcPrOverlyAct	Questionnaire 2 (NT4BLQ2)	- How often do you feel overly active and compelled to do things, like you were driven by a motor?	psychological distress and emotions	19142		Think about the last 6 months:
+HUNT:0000887	NarcEv	Questionnaire 2 (NT4BLQ2)	Have you ever tried hash, marijuana or related drugs?	recreational drug history	19143		
+HUNT:0000888	NarcAg	NarcEv	- How old were you the first time?	recreational drug history	19144		
+HUNT:0000889	DopiEv	Questionnaire 2 (NT4BLQ2)	Have you ever used anabolic steroids or other performance enhancing drugs?	recreational drug history	19145		
