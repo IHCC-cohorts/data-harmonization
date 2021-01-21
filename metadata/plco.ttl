@@ -1,0 +1,9 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/plco.owl> a owl:Ontology ;
+    dc:description "This was a randomized trial of screening for four cancers and also a long-term cohort focused on all-cancer outcomes" ;
+    dcterms:rights "No restrictions" ;
+    dcterms:title "Prostate, Lung, Colorectal and Ovarian Cancer Screening Trial" .
+

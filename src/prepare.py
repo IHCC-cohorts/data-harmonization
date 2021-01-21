@@ -98,7 +98,7 @@ def main():
                 if val.lower() == "true":
                     bool_val = True
                 dt_key = key.lower().replace(" ", "_").replace("/", "_")
-                d["available_datatypes"][dt_key] = bool_val
+                d["available_data_types"][dt_key] = bool_val
             elif key == "Countries":
                 d["countries"] = val.split(", ")
             elif key == "Data Sharing":
