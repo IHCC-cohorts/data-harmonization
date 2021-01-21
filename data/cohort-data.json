@@ -360,6 +360,93 @@
   {
     "available_data_types": {
       "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "Location"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "Generations Study",
+    "countries": [
+      "UK",
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland",
+      "Isle of Man",
+      "Channel Islands"
+    ],
+    "current_enrollment": 113000,
+    "enrollment_period": "2003:2015",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Anthony Swerdlow",
+    "questionnaire_survey_data": {
+      "cognitive_and_psychological_measurements": {
+        "general_variables": [
+          "Psychological distress and emotions"
+        ]
+      },
+      "diseases": [
+        "Cardiovascular diseases",
+        "Congenital and genetic disorders",
+        "Endocrine system diseases",
+        "Injuries",
+        "Reproductive system diseases",
+        "Urinary system diseases",
+        "Visual system diseases"
+      ],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [],
+      "non_pharmacological_interventions": [
+        "Diagnostic interventions",
+        "Psychological interventions",
+        "Radiological interventions",
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Family history of disease",
+        "Reproduction",
+        "Signs and symptoms"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Education",
+        "Ethnicity/race",
+        "Family and household structure",
+        "Marital status",
+        "Occupation"
+      ]
+    },
+    "survey_administration": [
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": 100000,
+    "website": "http://www.breakthroughgenerations.org.uk/home"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
       "environmental_data": true,
       "genomic_data": true,
       "phenotypic_clinical_data": true

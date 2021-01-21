@@ -1,0 +1,9 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/gs.owl> a owl:Ontology ;
+    dc:description "The Generations Study is a long-term prospective cohort study focussed on potential aetiological factors for breast cancer in women.  The participants are volunteers from the UK general population." ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+    dcterms:title "Generations Study" .
+
