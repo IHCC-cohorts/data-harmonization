@@ -128,7 +128,6 @@ def clean_string(string):
 
 def get_categories(categories, gecko):
     """Get the CINECA categories used in a cohort as structured dictionary.
-
     :param categories:
     :param gecko:
     :return:

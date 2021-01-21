@@ -21,7 +21,32 @@ props = {
     "Rights": "http://purl.org/dc/terms/rights",
 }
 
-datatypes = ["Biospecimens", "Environmental Data", "Genomic Data", "Phenotypic/Clinical Data"]
+# Available datatypes
+datatypes = [
+    "Biospecimens",
+    "EHR Data",
+    "Environmental Data",
+    "Genomic Data",
+    "Longitudial Data",
+    "Phenotypic/Clinical Data",
+    "Polygenic Risk Scores"
+]
+
+# Collected imaging
+imaging = ["MRI", "PET", "CAT", "Other"]
+
+
+def get_bool(val):
+    if val.lower() == "true":
+        return True
+    return False
+
+
+def get_int(val):
+    try:
+        return int(val)
+    except:
+        return None
 
 
 def main():
@@ -47,18 +72,30 @@ def main():
 
     # Cohort metadata dictionary
     d = {
+        "active_recruitment": False,
         "available_data_types": {
             "biospecimens": False,
+            "ehr_data": False,
             "environmental_data": False,
             "genomic_data": False,
+            "longitudial_data": False,
             "phenotypic_clinical_data": False,
+            "polygenic_risk_scores": False,
         },
         "cohort_name": None,
+        "collected_imaging": {
+            "mri": False,
+            "pet": False,
+            "cat": False,
+            "other": False,
+        },
         "countries": None,
         "current_enrollment": None,
         "enrollment_period": None,
+        "includes_50_to_60": False,
         "irb_approved_data_sharing": False,
         "pi_lead": None,
+        "recontact_in_place": False,
         "target_enrollment": None,
         "website": None,
     }
@@ -73,6 +110,8 @@ def main():
             val = row[1].strip()
             if not val or key == "Available Datatypes":
                 continue
+
+            # Identifiers
             if key == "Cohort ID":
                 cohort_id = val
                 ontology_iri = f"https://purl.ihccglobal.org/{cohort_id.lower()}.owl"
@@ -82,30 +121,43 @@ def main():
                 gout.add(
                     (URIRef(ontology_iri), URIRef("http://purl.org/dc/terms/title"), Literal(val))
                 )
+
+            # Main metadata
             elif key in props:
                 prop = props[key]
                 gout.add((URIRef(ontology_iri), URIRef(prop), Literal(val)))
-            elif key == "Total Enrollment":
-                d["current_enrollment"] = int(val)
-            elif key == "Target Enrollment":
-                d["target_enrollment"] = int(val)
-            elif key == "Enrollment Start Year":
-                enroll_start = int(val)
-            elif key == "Enrollment End Year":
-                enroll_end = int(val)
-            elif key in datatypes:
-                bool_val = False
-                if val.lower() == "true":
-                    bool_val = True
-                dt_key = key.lower().replace(" ", "_").replace("/", "_")
-                d["available_data_types"][dt_key] = bool_val
             elif key == "Countries":
                 d["countries"] = val.split(", ")
             elif key == "Data Sharing":
-                bool_val = False
-                if val.lower() == "true":
-                    bool_val = True
-                d["irb_approved_data_sharing"] = bool_val
+                d["irb_approved_data_sharing"] = get_bool(val)
+
+            # Enrollment
+            elif key == "Total Enrollment":
+                d["current_enrollment"] = get_int(val)
+            elif key == "Target Enrollment":
+                d["target_enrollment"] = get_int(val)
+            elif key == "Enrollment Start Year":
+                enroll_start = get_int(val)
+            elif key == "Enrollment End Year":
+                enroll_end = get_int(val)
+            elif key == "Actively Recruiting":
+                d["active_recruitment"] = get_bool(val)
+            elif key == "Includes 50-60 y/o":
+                d["includes_50_to_60"] = get_bool(val)
+            elif key == "Can Recontact Participants":
+                d["recontact_in_place"] = get_bool(val)
+
+            # Datatypes
+            elif key in datatypes:
+                dt_key = key.lower().replace(" ", "_").replace("/", "_")
+                d["available_data_types"][dt_key] = get_bool(val)
+
+            # Imaging
+            elif key in imaging:
+                img_key = key.lower()
+                d["collected_imaging"][img_key] = get_bool(val)
+
+            # Other
             else:
                 key_fixed = key.lower().replace(" ", "_").replace("/", "_")
                 if key_fixed not in d:
