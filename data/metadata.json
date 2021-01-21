@@ -11,12 +11,7 @@
           "polygenic_risk_scores": false
         },
         "cohort_name": "Canadian Partnership for Tomorrow's Health",
-        "collected_imaging": {
-            "mri": false,
-            "pet": false,
-            "cat": false,
-            "other": false
-        },
+        "collected_imaging": [],
         "countries": [
             "Canada"
         ],
@@ -144,12 +139,7 @@
             "polygenic_risk_scores": false
         },
         "cohort_name": "Generations Study",
-        "collected_imaging": {
-            "mri": false,
-            "pet": false,
-            "cat": false,
-            "other": false
-        },
+        "collected_imaging": [],
         "countries": [
             "UK",
             "England",
@@ -180,12 +170,7 @@
             "polygenic_risk_scores": false
         },
         "cohort_name": "HUNT 70+, The HUNT Study",
-        "collected_imaging": {
-            "mri": false,
-            "pet": false,
-            "cat": false,
-            "other": false
-        },
+        "collected_imaging": [],
         "countries": [
             "Norway"
         ],

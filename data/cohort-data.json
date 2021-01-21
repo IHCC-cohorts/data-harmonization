@@ -16,12 +16,7 @@
       ]
     },
     "cohort_name": "Canadian Partnership for Tomorrow's Health",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "Canada"
     ],
@@ -509,12 +504,7 @@
       ]
     },
     "cohort_name": "Generations Study",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "UK",
       "England",
@@ -608,12 +598,7 @@
       ]
     },
     "cohort_name": "HUNT 70+, The HUNT Study",
-    "collected_imaging": {
-      "cat": false,
-      "mri": false,
-      "other": false,
-      "pet": false
-    },
+    "collected_imaging": [],
     "countries": [
       "Norway"
     ],
