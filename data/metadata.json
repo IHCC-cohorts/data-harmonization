@@ -17,6 +17,24 @@
         "target_enrollment": 2000000,
         "website": "caglab.org"
     },
+    "ELSABRASIL": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": true,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "ELSA-Brasil",
+        "countries": [
+            "Brazil"
+        ],
+        "current_enrollment": 15105,
+        "enrollment_period": "2008:2010",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Paulo Lotufo; Isabela Besenor; Sandhi Barreto; Bruce Duncan; Maria Ines Schimdt; Jose Mill; Rosane Griep; Conceicao Almeida; Maria Del Carmen Molina; and others.",
+        "target_enrollment": 15105,
+        "website": "www.elsa.org.br"
+    },
     "GCS": {
         "available_data_types": {
             "biospecimens": true,

@@ -445,8 +445,8 @@ CHOP:0000443	PNC_MED803		Do you or did you have any of the following problems? -
 CHOP:0000444	PNC_MED803c		Is it (ear/nose/throat problems) current (within last 6 months)?	diseases of the ear, nose, and/or throat	MED803c		Encoded Value
 CHOP:0000445	PNC_MED804		Do you or did you have any of the following problems? - Gastrointestinal - digestive system, gut (Has Problem?)	digestive system diseases	MED804		Encoded Value
 CHOP:0000446	PNC_MED804c		Is it (gastrointestinal problems) current (within last 6 months)?	digestive system diseases	MED804c		Encoded Value
-CHOP:0000447	PNC_MED805		Do you or did you have any of the following problems? - Genetics Disorder - an illness caused by abnormalities in genes or chromosomes (Has Problem?)	congential and genetic disorders	MED805		Encoded Value
-CHOP:0000448	PNC_MED805c		Is it (genetics disorder) current (within last 6 months)?	congential and genetic disorders	MED805c		Encoded Value
+CHOP:0000447	PNC_MED805		Do you or did you have any of the following problems? - Genetics Disorder - an illness caused by abnormalities in genes or chromosomes (Has Problem?)	congenital and genetic disorders	MED805		Encoded Value
+CHOP:0000448	PNC_MED805c		Is it (genetics disorder) current (within last 6 months)?	congenital and genetic disorders	MED805c		Encoded Value
 CHOP:0000449	PNC_MED806		Do you or did you have any of the following problems? - Hematology - blood disease (Has Problem?)	blood-related disorders	MED806		Encoded Value
 CHOP:0000450	PNC_MED806c		Is it (hematology condition) current (within last 6 months)?	blood-related disorders	MED806c		Encoded Value
 CHOP:0000451	PNC_MED807		Do you or did you have any of the following problems? - Hepatology - liver disease (Has Problem?)	digestive system diseases	MED807		Encoded Value
