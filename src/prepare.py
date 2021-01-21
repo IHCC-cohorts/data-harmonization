@@ -150,7 +150,7 @@ def main():
             # Datatypes
             elif key in datatypes:
                 dt_key = key.lower().replace(" ", "_").replace("/", "_")
-                d["available_datatypes"][dt_key] = get_bool(val)
+                d["available_data_types"][dt_key] = get_bool(val)
 
             # Imaging
             elif key in imaging:

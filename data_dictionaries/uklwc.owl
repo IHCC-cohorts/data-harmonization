@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/uklwc.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/uklwc/releases/2021-01-18/uklwc.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/uklwc/releases/2021-01-20/uklwc.owl"/>
         <dc:description>Bioresource created during the course of the United Kingdom Collaborative Trial of Ovarian Cancer Screening (UKCTOCS)</dc:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>UKCTOCS Longitudinal Women&apos;s Cohort (UKLWC)</terms:title>
