@@ -1,4 +1,22 @@
 {
+    "CHOP": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": true,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Center for Applied Genomics, Children's Hospital of Philadelphia",
+        "countries": [
+            "USA"
+        ],
+        "current_enrollment": 130000,
+        "enrollment_period": "2006:Ongoing",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Hakon Hakonarson",
+        "target_enrollment": 2000000,
+        "website": "caglab.org"
+    },
     "GCS": {
         "available_data_types": {
             "biospecimens": true,
