@@ -1,4 +1,22 @@
 {
+    "CANPATH": {
+        "available_data_types": {
+          "biospecimens": true,
+          "environmental_data": true,
+          "genomic_data": true,
+          "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Canadian Partnership for Tomorrow's Health",
+        "countries": [
+            "Canada"
+        ],
+        "current_enrollment": 330000,
+        "enrollment_period": "2008:Ongoing",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Philip Awadalla",
+        "target_enrollment": null,
+        "website": "https://canpath.ca/"
+    },
     "CHOP": {
         "available_data_types": {
             "biospecimens": true,

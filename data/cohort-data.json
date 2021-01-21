@@ -6,6 +6,93 @@
       "genomic_data": true,
       "phenotypic_clinical_data": true
     },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "Location"
+      ]
+    },
+    "cohort_name": "Canadian Partnership for Tomorrow's Health",
+    "countries": [
+      "Canada"
+    ],
+    "current_enrollment": 330000,
+    "enrollment_period": "2008:Ongoing",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Philip Awadalla",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Immune system diseases",
+        "Mental and behaviour disorders",
+        "Musculoskeletal system diseases",
+        "Nervous system disorders",
+        "Respiratory system diseases",
+        "Skin and subcutaneous tissue diseases"
+      ],
+      "healthcare_information": [
+        "Routine clincial visits"
+      ],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Oral health history",
+        "Physical activity history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [],
+      "non_pharmacological_interventions": [
+        "Diagnostic interventions",
+        "Radiological interventions",
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Family history of disease",
+        "Life stage/time point",
+        "Reproduction"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Perception of health",
+        "Quality of life"
+      ],
+      "physical_environment": [
+        "Exposure to carcinogens"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Education",
+        "Ethnicity/race",
+        "Family and household structure",
+        "Gender",
+        "Income and possessions",
+        "Marital status",
+        "Native language",
+        "Occupation",
+        "Residence"
+      ]
+    },
+    "survey_administration": [
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": null,
+    "website": "https://canpath.ca/"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
     "biosample": {
       "sample_type": []
     },

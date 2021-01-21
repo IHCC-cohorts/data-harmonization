@@ -1,6 +1,7 @@
 {
     "@context": {
         "BFO": "http://purl.obolibrary.org/obo/BFO_",
+        "CANPATH": "https://purl.ihccglobal.org/CANPATH_",
         "CHEBI": "http://purl.obolibrary.org/obo/CHEBI_",
         "CHOP": "https://purl.ihccglobal.org/CHOP_",
         "CL": "http://purl.obolibrary.org/obo/CL_",
