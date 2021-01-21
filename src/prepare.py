@@ -29,7 +29,11 @@ datatypes = [
     "Genomic Data",
     "Longitudial Data",
     "Phenotypic/Clinical Data",
+    "Polygenic Risk Scores"
 ]
+
+# Collected imaging
+imaging = ["MRI", "PET", "CAT", "Other"]
 
 
 def get_bool(val):
@@ -76,8 +80,15 @@ def main():
             "genomic_data": False,
             "longitudial_data": False,
             "phenotypic_clinical_data": False,
+            "polygenic_risk_scores": False,
         },
         "cohort_name": None,
+        "collected_imaging": {
+            "mri": False,
+            "pet": False,
+            "cat": False,
+            "other": False,
+        },
         "countries": None,
         "current_enrollment": None,
         "enrollment_period": None,
@@ -140,6 +151,11 @@ def main():
             elif key in datatypes:
                 dt_key = key.lower().replace(" ", "_").replace("/", "_")
                 d["available_datatypes"][dt_key] = get_bool(val)
+
+            # Imaging
+            elif key in imaging:
+                img_key = key.lower()
+                d["collected_imaging"][img_key] = get_bool(val)
 
             # Other
             else:

@@ -7,9 +7,16 @@
             "environmental_data": true,
             "genomic_data": false,
             "longitudinal_data": false,
-            "phenotypic_clinical_data": true
+            "phenotypic_clinical_data": true,
+            "polygenic_risk_scores": false
         },
         "cohort_name": "Golestan Cohort Study",
+        "collected_imaging": {
+            "mri": false,
+            "pet": false,
+            "cat": false,
+            "other": false
+        },
         "countries": [
             "Iran"
         ],
@@ -30,9 +37,16 @@
             "environmental_data": false,
             "longitudinal_data": true,
             "genomic_data": true,
-            "phenotypic_clinical_data": true
+            "phenotypic_clinical_data": true,
+            "polygenic_risk_scores": false
         },
         "cohort_name": "Genomics England / 100,000 Genomes Project",
+        "collected_imaging": {
+            "mri": false,
+            "pet": false,
+            "cat": false,
+            "other": false
+        },
         "countries": [
             "England"
         ],
@@ -53,9 +67,16 @@
             "environmental_data": true,
             "genomic_data": true,
             "longitudinal_data": true,
-            "phenotypic_clinical_data": true
+            "phenotypic_clinical_data": true,
+            "polygenic_risk_scores": false
         },
         "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
+        "collected_imaging": {
+            "mri": false,
+            "pet": false,
+            "cat": false,
+            "other": false
+        },
         "countries": [
             "South Korea"
         ],
@@ -76,9 +97,16 @@
             "environmental_data": false,
             "genomic_data": false,
             "longitudinal_data": false,
-            "phenotypic_clinical_data": true
+            "phenotypic_clinical_data": true,
+            "polygenic_risk_scores": false
         },
         "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
+        "collected_imaging": {
+            "mri": false,
+            "pet": false,
+            "cat": false,
+            "other": false
+        },
         "countries": [
             "South Africa"
         ],
@@ -99,9 +127,16 @@
             "environmental_data": false,
             "genomic_data": false,
             "longitudinal_data": true,
-            "phenotypic_clinical_data": true
+            "phenotypic_clinical_data": true,
+            "polygenic_risk_scores": false
         },
         "cohort_name": "UKCTOCS Longitudinal Women's Cohort (UKLWC)",
+        "collected_imaging": {
+            "mri": false,
+            "pet": false,
+            "cat": false,
+            "other": false
+        },
         "countries": [
             "England",
             "Wales",
@@ -124,9 +159,16 @@
             "environmental_data": false,
             "genomic_data": true,
             "longitudinal_data": false,
-            "phenotypic_clinical_data": true
+            "phenotypic_clinical_data": true,
+            "polygenic_risk_scores": false
         },
         "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+        "collected_imaging": {
+            "mri": false,
+            "pet": false,
+            "cat": false,
+            "other": false
+        },
         "countries": [
             "South Africa"
         ],
