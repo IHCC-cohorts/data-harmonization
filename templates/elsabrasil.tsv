@@ -2614,12 +2614,12 @@ ELSABRASIL:0002612	compulsion symptoms		Sintoma de compulsoes	mental and behavio
 ELSABRASIL:0002613	common mental disorder score		Escore de transtorno mental comum	mental and behaviour disorders	A_ESCORETOTAL		
 ELSABRASIL:0002614	obessive symptoms		Sintoma de obsessoes	mental and behaviour disorders	A_SINTOBSES		
 ELSABRASIL:0002615	duration of diabetes		Duracao do diabetes	endocrine system diseases	A_ANOSDM		
-ELSABRASIL:0002616	obesity		Obesidade	signs and symptom|anthropometry	A_OBESIDADE		
+ELSABRASIL:0002616	obesity		Obesidade	signs and symptoms|anthropometry	A_OBESIDADE		
 ELSABRASIL:0002617	tibial systolic BP		Pressao sistolica tibial	blood pressure	A_PASTIB		
 ELSABRASIL:0002618	ankle-brachial index		Indice tornozelo braquial	anthropometry	A_RAZAOPAS		
 ELSABRASIL:0002619	peripheral arterial insufficiency		Insuficiencia arterial periferica	signs and symptoms	A_INSUFARTPERIF		
 ELSABRASIL:0002620	postural hypotension		Hipotensio postural	signs and symptoms	A_HIPOTENSAOPOST		
-ELSABRASIL:0002621	abdominal obesity		Obesidade abdominal	signs and symptom|anthropometry	A_OBESIDADEABDOMINAL		
+ELSABRASIL:0002621	abdominal obesity		Obesidade abdominal	signs and symptoms|anthropometry	A_OBESIDADEABDOMINAL		
 ELSABRASIL:0002622	hypertriglyceridemia		Hipertrigliceridemia	signs and symptoms	A_HIPERTRIG		
 ELSABRASIL:0002623	low levels of HDL		Baixos niveis de HDL	signs and symptoms	A_BAIXOHDL		
 ELSABRASIL:0002624	Diabetes mellitus		Diabetes mellitus	endocrine system diseases	A_DM		
