@@ -1,0 +1,794 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+GS:0000001	alcoholic units from beer collected at R1, per wk	Alcohol_v1	alcoholic units from beer collected at R1, per wk	alcohol use history	R1alcoholbeerunits		
+GS:0000002	alcoholic units from beer at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units from beer at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholbeerunits18		
+GS:0000003	alcoholic units from beer at age25-49 collected at R1, per wk	Alcohol_v1	alcoholic units from beer at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholbeerunits25		
+GS:0000004	alcoholic units from beer at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units from beer at age 50+ collected at R1, per wk	alcohol use history	R1alcoholbeerunits50		
+GS:0000005	current regular alcohol consumption at R1	Alcohol_v1	current regular alcohol consumption at R1	alcohol use history	R1alcoholcurrent		
+GS:0000006	number of days having drunk alcohol in the last 7 days at R1	Alcohol_v1	number of days having drunk alcohol in the last 7 days at R1	alcohol use history	R1alcoholdays		
+GS:0000007	ever regular alcohol consumption at R1	Alcohol_v1	ever regular alcohol consumption at R1	alcohol use history	R1alcoholever		
+GS:0000008	glasses of alcohol collected at R1, per wk	Alcohol_v1	glasses of alcohol collected at R1, per wk	alcohol use history	R1alcoholglasses		
+GS:0000009	glasses of alcohol at age 18-24 collected at R1, per wk	Alcohol_v1	glasses of alcohol at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholglasses18		
+GS:0000010	glasses of alcohol at age 25-49 collected at R1, per wk	Alcohol_v1	glasses of alcohol at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholglasses25		
+GS:0000011	glasses of alcohol at age 50+ collected at R1, per wk	Alcohol_v1	glasses of alcohol at age 50+ collected at R1, per wk	alcohol use history	R1alcoholglasses50		
+GS:0000012	alcoholic units from other alcohol collected at R1, per wk	Alcohol_v1	alcoholic units from other alcohol collected at R1, per wk	alcohol use history	R1alcoholotherunits		
+GS:0000013	alcoholic units from other alcohol at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units from other alcohol at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholotherunits18		
+GS:0000014	alcoholic units from other alcohol at age 25-49 collected at R1, per wk	Alcohol_v1	alcoholic units from other alcohol at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholotherunits25		
+GS:0000015	alcoholic units from other alcohol at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units from other alcohol at age 50+ collected at R1, per wk	alcohol use history	R1alcoholotherunits50		
+GS:0000016	alcoholic units from red wine collected at R1, per wk	Alcohol_v1	alcoholic units from red wine collected at R1, per wk	alcohol use history	R1alcoholredunits		
+GS:0000017	alcoholic units from red wine at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units from red wine at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholredunits18		
+GS:0000018	alcoholic units from red wine at age 25-49 collected at R1, per wk	Alcohol_v1	alcoholic units from red wine at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholredunits25		
+GS:0000019	alcoholic units from red wine at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units from red wine at age 50+ collected at R1, per wk	alcohol use history	R1alcoholredunits50		
+GS:0000020	alcoholic units from sherry collected at R1, per wk	Alcohol_v1	alcoholic units from sherry collected at R1, per wk	alcohol use history	R1alcoholsherryunits		
+GS:0000021	alcoholic units from sherry at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units from sherry at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholsherryunits18		
+GS:0000022	alcoholic units from sherry at age 25-49 collected at R1, per wk	Alcohol_v1	alcoholic units from sherry at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholsherryunits25		
+GS:0000023	alcoholic units from sherry at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units from sherry at age 50+ collected at R1, per wk	alcohol use history	R1alcoholsherryunits50		
+GS:0000024	alcoholic units from spirits collected at R1, per wk	Alcohol_v1	alcoholic units from spirits collected at R1, per wk	alcohol use history	R1alcoholspiritunits		
+GS:0000025	alcoholic units from spirits at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units from spirits at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholspiritunits18		
+GS:0000026	alcoholic units from spirits at age 25-49 collected at R1, per wk	Alcohol_v1	alcoholic units from spirits at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholspiritunits25		
+GS:0000027	alcoholic units from spirits at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units from spirits at age 50+ collected at R1, per wk	alcohol use history	R1alcoholspiritunits50		
+GS:0000028	never, current or past drinker at R1	Alcohol_v1	never, current or past drinker at R1	alcohol use history	R1alcoholstatus		
+GS:0000029	alcoholic units collected at R1, per wk	Alcohol_v1	alcoholic units collected at R1, per wk	alcohol use history	R1alcoholunits		
+GS:0000030	alcoholic units at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholunits18		
+GS:0000031	alcoholic units at age 25-49 collected at R1, per wk	Alcohol_v1	alcoholic units at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholunits25		
+GS:0000032	alcoholic units at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units at age 50+ collected at R1, per wk	alcohol use history	R1alcoholunits50		
+GS:0000033	alcoholic units from white wine collected at R1, per wk	Alcohol_v1	alcoholic units from white wine collected at R1, per wk	alcohol use history	R1alcoholwhiteunits		
+GS:0000034	alcoholic units from white wine at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units from white wine at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholwhiteunits18		
+GS:0000035	alcoholic units from white wine at age 25-49 collected at R1, per wk	Alcohol_v1	alcoholic units from white wine at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholwhiteunits25		
+GS:0000036	alcoholic units from white wine at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units from white wine at age 50+ collected at R1, per wk	alcohol use history	R1alcoholwhiteunits50		
+GS:0000037	alcoholic units from wine collected at R1, per wk	Alcohol_v1	alcoholic units from wine collected at R1, per wk	alcohol use history	R1alcoholwineunits		
+GS:0000038	alcoholic units from wine at age 18-24 collected at R1, per wk	Alcohol_v1	alcoholic units from wine at age 18-24 collected at R1, per wk	alcohol use history	R1alcoholwineunits18		
+GS:0000039	alcoholic units from wine at age 25-49 collected at R1, per wk	Alcohol_v1	alcoholic units from wine at age 25-49 collected at R1, per wk	alcohol use history	R1alcoholwineunits25		
+GS:0000040	alcoholic units from wine at age 50+ collected at R1, per wk	Alcohol_v1	alcoholic units from wine at age 50+ collected at R1, per wk	alcohol use history	R1alcoholwineunits50		
+GS:0000041	alcoholic units from beer collected at R2, per wk	Alcohol_v1	alcoholic units from beer collected at R2, per wk	alcohol use history	R2alcoholbeerunits		
+GS:0000042	current regular alcohol consumption at R2	Alcohol_v1	current regular alcohol consumption at R2	alcohol use history	R2alcoholcurrent		
+GS:0000043	number of days having drunk alcohol in the last 7 days at R2	Alcohol_v1	number of days having drunk alcohol in the last 7 days at R2	alcohol use history	R2alcoholdays		
+GS:0000044	ever regular alcohol consumption at R2	Alcohol_v1	ever regular alcohol consumption at R2	alcohol use history	R2alcoholever		
+GS:0000045	glasses of alcohol collected at R2 per wk	Alcohol_v1	glasses of alcohol collected at R2, per wk	alcohol use history	R2alcoholglasses		
+GS:0000046	alcoholic units from other alcohol collected at R2, per wk	Alcohol_v1	alcoholic units from other alcohol collected at R2, per wk	alcohol use history	R2alcoholotherunits		
+GS:0000047	alcoholic units from red wine collected at R2, per wk	Alcohol_v1	alcoholic units from red wine collected at R2, per wk	alcohol use history	R2alcoholredunits		
+GS:0000048	alcoholic units from rose wine collected at R2, per wk	Alcohol_v1	alcoholic units from rose wine collected at R2, per wk	alcohol use history	R2alcoholroseunits		
+GS:0000049	alcoholic units from sherry collected at R2, per wk	Alcohol_v1	alcoholic units from sherry collected at R2, per wk	alcohol use history	R2alcoholsherryunits		
+GS:0000050	alcoholic units from spirits collected at R2, per wk	Alcohol_v1	alcoholic units from spirits collected at R2, per wk	alcohol use history	R2alcoholspiritunits		
+GS:0000051	never, current or past drinker at R2	Alcohol_v1	never, current or past drinker at R2	alcohol use history	R2alcoholstatus		
+GS:0000052	age stopped regular alcohol consumption at R2	Alcohol_v1	age stopped regular alcohol consumption at R2	alcohol use history	R2alcoholstopage		
+GS:0000053	alcoholic units collected at R2, per wk	Alcohol_v1	alcoholic units collected at R2, per wk	alcohol use history	R2alcoholunits		
+GS:0000054	alcoholic units from white wine collected at R2, per wk	Alcohol_v1	alcoholic units from white wine collected at R2, per wk	alcohol use history	R2alcoholwhiteunits		
+GS:0000055	alcoholic units from wine collected at R2, per wk	Alcohol_v1	alcoholic units from wine collected at R2, per wk	alcohol use history	R2alcoholwineunits		
+GS:0000056	alcoholic units from beer collected at R4, per wk	Alcohol_v1	alcoholic units from beer collected at R4, per wk	alcohol use history	R4alcoholbeerunits		
+GS:0000057	current regular alcohol consumption at R4	Alcohol_v1	current regular alcohol consumption at R4	alcohol use history	R4alcoholcurrent		
+GS:0000058	number of days having drunk alcohol in the last 7 days at R4	Alcohol_v1	number of days having drunk alcohol in the last 7 days at R4	alcohol use history	R4alcoholdays		
+GS:0000059	ever regular alcohol consumption at R4	Alcohol_v1	ever regular alcohol consumption at R4	alcohol use history	R4alcoholever		
+GS:0000060	glasses of alcohol collected at R4, per wk	Alcohol_v1	glasses of alcohol collected at R4, per wk	alcohol use history	R4alcoholglasses		
+GS:0000061	alcoholic units from other alcohol collected at R4, per wk	Alcohol_v1	alcoholic units from other alcohol collected at R4, per wk	alcohol use history	R4alcoholotherunits		
+GS:0000062	alcoholic units from red wine collected at R4, per wk	Alcohol_v1	alcoholic units from red wine collected at R4, per wk	alcohol use history	R4alcoholredunits		
+GS:0000063	alcoholic units from rose wine collected at R4, per wk	Alcohol_v1	alcoholic units from rose wine collected at R4, per wk	alcohol use history	R4alcoholroseunits		
+GS:0000064	alcoholic units from sherry collected at R4, per wk	Alcohol_v1	alcoholic units from sherry collected at R4, per wk	alcohol use history	R4alcoholsherryunits		
+GS:0000065	alcoholic units from spirits collected at R4, per wk	Alcohol_v1	alcoholic units from spirits collected at R4, per wk	alcohol use history	R4alcoholspiritunits		
+GS:0000066	never, current or past drinker at R4	Alcohol_v1	never, current or past drinker at R4	alcohol use history	R4alcoholstatus		
+GS:0000067	age stopped regular alcohol consumption reported at R4	Alcohol_v1	age stopped regular alcohol consumption reported at R4	alcohol use history	R4alcoholstopage		
+GS:0000068	alcoholic units at R4 age, per wk	Alcohol_v1	alcoholic units at R4 age, per wk	alcohol use history	R4alcoholunits		
+GS:0000069	alcoholic units from white wine collected at R4, per wk	Alcohol_v1	alcoholic units from white wine collected at R4, per wk	alcohol use history	R4alcoholwhiteunits		
+GS:0000070	alcoholic units from wine collected at R4, per wk	Alcohol_v1	alcoholic units from wine collected at R4, per wk	alcohol use history	R4alcoholwineunits		
+GS:0000071	alcoholic units from beer at age 18-24, per wk	Alcohol_v1	alcoholic units from beer at age 18-24, per wk	alcohol use history	alcoholbeerunits18		
+GS:0000072	alcoholic units from beer at age25-49, per wk	Alcohol_v1	alcoholic units from beer at age 25-49, per wk	alcohol use history	alcoholbeerunits25		
+GS:0000073	alcoholic units from beer at age 50+, per wk	Alcohol_v1	alcoholic units from beer at age 50+, per wk	alcohol use history	alcoholbeerunits50		
+GS:0000074	glasses of alcohol at age 18-24, per wk	Alcohol_v1	glasses of alcohol at age 18-24, per wk	alcohol use history	alcoholglasses18		
+GS:0000075	glasses of alcohol at age 25-49, per wk	Alcohol_v1	glasses of alcohol at age 25-49, per wk	alcohol use history	alcoholglasses25		
+GS:0000076	glasses of alcohol at age 50+, per wk	Alcohol_v1	glasses of alcohol at age 50+, per wk	alcohol use history	alcoholglasses50		
+GS:0000077	alcoholic units from other alcohol at age 18-24, per wk	Alcohol_v1	alcoholic units from other alcohol at age 18-24, per wk	alcohol use history	alcoholotherunits18		
+GS:0000078	alcoholic units from other alcohol at age 25-49, per wk	Alcohol_v1	alcoholic units from other alcohol at age 25-49, per wk	alcohol use history	alcoholotherunits25		
+GS:0000079	alcoholic units from other alcohol at age 50+, per wk	Alcohol_v1	alcoholic units from other alcohol at age 50+, per wk	alcohol use history	alcoholotherunits50		
+GS:0000080	alcoholic units from red wine at age 18-24, per wk	Alcohol_v1	alcoholic units from red wine at age 18-24, per wk	alcohol use history	alcoholredunits18		
+GS:0000081	alcoholic units from red wine at age 25-49, per wk	Alcohol_v1	alcoholic units from red wine at age 25-49, per wk	alcohol use history	alcoholredunits25		
+GS:0000082	alcoholic units from red wine at age 50+, per wk	Alcohol_v1	alcoholic units from red wine at age 50+, per wk	alcohol use history	alcoholredunits50		
+GS:0000083	alcoholic units from sherry at age 18-24, per wk	Alcohol_v1	alcoholic units from sherry at age 18-24, per wk	alcohol use history	alcoholsherryunits18		
+GS:0000084	alcoholic units from sherry at age 25-49, per wk	Alcohol_v1	alcoholic units from sherry at age 25-49, per wk	alcohol use history	alcoholsherryunits25		
+GS:0000085	alcoholic units from sherry at age 50+, per wk	Alcohol_v1	alcoholic units from sherry at age 50+, per wk	alcohol use history	alcoholsherryunits50		
+GS:0000086	alcoholic units from spirits at age 18-24, per wk	Alcohol_v1	alcoholic units from spirits at age 18-24, per wk	alcohol use history	alcoholspiritunits18		
+GS:0000087	alcoholic units from spirits at age 25-49, per wk	Alcohol_v1	alcoholic units from spirits at age 25-49, per wk	alcohol use history	alcoholspiritunits25		
+GS:0000088	alcoholic units from spirits at age 50+, per wk	Alcohol_v1	alcoholic units from spirits at age 50+, per wk	alcohol use history	alcoholspiritunits50		
+GS:0000089	age started regular alcohol consumption	Alcohol_v1	age started regular alcohol consumption	alcohol use history	alcoholstartage		
+GS:0000090	age stopped regular alcohol consumption	Alcohol_v1	age stopped regular alcohol consumption	alcohol use history	alcoholstopage		
+GS:0000091	alcoholic units at age 18-24, per wk	Alcohol_v1	alcoholic units at age 18-24, per wk	alcohol use history	alcoholunits18		
+GS:0000092	alcoholic units at age 25-49, per wk	Alcohol_v1	alcoholic units at age 25-49, per wk	alcohol use history	alcoholunits25		
+GS:0000093	alcoholic units at age 50+, per wk	Alcohol_v1	alcoholic units at age 50+, per wk	alcohol use history	alcoholunits50		
+GS:0000094	alcoholic units from white wine at age 18-24, per wk	Alcohol_v1	alcoholic units from white wine at age 18-24, per wk	alcohol use history	alcoholwhiteunits18		
+GS:0000095	alcoholic units from white wine at age 25-49, per wk	Alcohol_v1	alcoholic units from white wine at age 25-49, per wk	alcohol use history	alcoholwhiteunits25		
+GS:0000096	alcoholic units from white wine at age 50+, per wk	Alcohol_v1	alcoholic units from white wine at age 50+, per wk	alcohol use history	alcoholwhiteunits50		
+GS:0000097	alcoholic units from wine at age 18-24, per wk	Alcohol_v1	alcoholic units from wine at age 18-24, per wk	alcohol use history	alcoholwineunits18		
+GS:0000098	alcoholic units from wine at age 25-49, per wk	Alcohol_v1	alcoholic units from wine at age 25-49, per wk	alcohol use history	alcoholwineunits25		
+GS:0000099	alcoholic units from wine at age 50+, per wk	Alcohol_v1	alcoholic units from wine at age 50+, per wk	alcohol use history	alcoholwineunits50		
+GS:0000100	Grouped type of night shift work	NightWorkEpisodes_v1	Grouped type of night shift work	occupation	NWcollapsejobtype		
+GS:0000101	Mean days per week of night shift during episode	NightWorkEpisodes_v1	Mean days per week of night shift during episode	occupation	NWdays		
+GS:0000102	Duration of night shift during episode (years)	NightWorkEpisodes_v1	Duration of night shift during episode (years)	occupation	NWdurationyears		
+GS:0000103	Year ended episode of night shift work	NightWorkEpisodes_v1	Year ended episodes of night shift year	occupation	NWendyear		
+GS:0000104	Mean hours per day of night shift during episode	NightWorkEpisodes_v1	Mean hours per day of night shift during episode	occupation	NWhours		
+GS:0000105	Mean hours per week of night shift during episode	NightWorkEpisodes_v1	Mean hours per week of night shift during episode	occupation	NWhoursweek		
+GS:0000106	Year started episode of night shift work	NightWorkEpisodes_v1	Year started episode of night shift work	occupation	NWstartyear		
+GS:0000107	R2 Moderate and light physical activity at home (MET hours/week)	PhysMET_v1	R2 Moderate and light physical activity in active jobs at home (e.g. gardening, decorating, washing car, etc.) (MET hours/week)	physical activity history	PhysMETLtHome		
+GS:0000108	All moderate and light physical activity household work (MET hours/week)	PhysMET_v1	All moderate and light physical activity doing active housework and manual labour (MET hours/week)	physical activity history	PhysMetHouseTot		
+GS:0000109	Moderate and light physical activity cycling (MET hours/week)	PhysMET_v1	Moderate and light physical activity cycling (including to and from work and for pleasure) (MET hours/week)	physical activity history	PhysMetLtCycl		
+GS:0000110	Moderate and light physical activity dancing (MET hours/week)	PhysMET_v1	Moderate and light physical activity dancing (MET hours/week)	physical activity history	PhysMetLtDanc		
+GS:0000111	Moderate and light physical activity doing active housework (MET hours/week)	PhysMET_v1	Moderate and light physical activity doing active housework (e.g. hoovering, scrubbing floors, bed making, hanging out washing, etc) (MET hours/week)	physical activity history	PhysMetLtHouse		
+GS:0000112	Moderate and light physical activity In non-paid manual labour (MET hours/week)	PhysMET_v1	Moderate and light physical activity in non-paid manual labour (e.g. gardening, decorating, washing car, etc.) (MET hours/week)	physical activity history	PhysMetLtManual		
+GS:0000113	Moderate and light physical activity walking (MET hours/week)	PhysMET_v1	Moderate and light physical activity walking (including walking to and from work, walking to the shops, walking for pleasure, etc) (MET hours/week)	physical activity history	PhysMetLtWalk		
+GS:0000114	Moderate or light exercise at work (MET hours/week)	PhysMET_v1	Moderate or light exercise at work (MET hours/week)	physical activity history	PhysMetLtWork		
+GS:0000115	All recreational physical activity (MET hours/week)	PhysMET_v1	All recreational physical activity (MET hours/week)	physical activity history	PhysMetRecTot		
+GS:0000116	Other strenous physical activity (MET hours/week)	PhysMET_v1	Strenous other activities that get you out of breath and make you sweat considerably (MET hours/week)	physical activity history	PhysMetStrOther		
+GS:0000117	Sports strenous physical activity (MET hours/week)	PhysMET_v1	Sport or training sufficient to get you out of breath and make you sweat considerably (e.g. netball, jogging, exercise class, tennis, football, swimming) (MET hours/week)	physical activity history	PhysMetStrSport		
+GS:0000118	Work strenous physical activity (MET hours/week)	PhysMET_v1	Activities at work that get you out of breath and make you sweat considerably (e.g. lifting, climbing ladders, building work) (MET hours/week)	physical activity history	PhysMetStrWork		
+GS:0000119	Total physical activity (MET hours/week)	PhysMET_v1	Total physical activity (MET hours/week)	physical activity history	PhysMetTotal		
+GS:0000120	All work related physical activity (MET hours/week)	PhysMET_v1	All work related physical activity (MET hours/week)	physical activity history	PhysMetWorkTot		
+GS:0000121	R2 All moderate and light physical activity household work (MET hours/week)	PhysMET_v1	R2 All moderate and light physical activity doing active household work (MET hours/week)	physical activity history	R2PhysMETHouseTot		
+GS:0000122	R2 Moderate and light physical activity cycling (MET hours/week)	PhysMET_v1	R2 Moderate and light physical activity cycling (including to and from work and for pleasure) (MET hours/week)	physical activity history	R2PhysMETLtCycl		
+GS:0000123	R2 Moderate and light physical activity home jobs (MET hours/week)	PhysMET_v1	R2 Moderate and light physical activity doing active jobs at home (MET hours/week)	physical activity history	R2PhysMETLtHome		
+GS:0000124	R2 Moderate and light physical activity doing active housework (MET hours/week)	PhysMET_v1	R2 Moderate and light physical activity doing active housework (e.g. hoovering, bed making, hanging out washing, etc) (MET hours/week)	physical activity history	R2PhysMETLtHouse		
+GS:0000125	R2 Moderate and light physical activity at other (MET hours/week)	PhysMET_v1	R2 Moderate and light physical activity other (e.g. non-strenuous recreations) (MET hours/week)	physical activity history	R2PhysMETLtOther		
+GS:0000126	R2 Moderate and light physical activity walking (MET hours/week)	PhysMET_v1	R2 Moderate and light physical activity walking (including walking to and from work, walking to the shops, walking for pleasure, etc) (MET hours/week)	physical activity history	R2PhysMETLtWalk		
+GS:0000127	R2 Moderate and light physical activity at work (MET hours/week)	PhysMET_v1	R2 Moderate and light physical activity at work (MET hours/week)	physical activity history	R2PhysMETLtWork		
+GS:0000128	R2 All recreational physical activity (MET hours/week)	PhysMET_v1	R2 All recreational physical activity (MET hours/week)	physical activity history	R2PhysMETRecTot		
+GS:0000129	R2 Other strenous physical activity (MET hours/week)	PhysMET_v1	R2 Strenous other activities that get you out of breath and make you sweat considerably (MET hours/week)	physical activity history	R2PhysMETStrOther		
+GS:0000130	R2 Sports strenous physical activity (MET hours/week)	PhysMET_v1	R2 Sport or training sufficient to get you out of breath and make you sweat considerably (e.g. jogging, exercise machine, tennis, swimming) (MET hours/week)	physical activity history	R2PhysMETStrSport		
+GS:0000131	R2 Work strenous physical activity (MET hours/week)	PhysMET_v1	R2 Activities at work that get you out of breath and make you sweat considerably (e.g. lifting, climbing ladders, building work) (MET hours/week)	physical activity history	R2PhysMETStrWork		
+GS:0000132	R2 Total physical activity (MET hours/week)	PhysMET_v1	R2 Total physical activity (MET hours/week)	physical activity history	R2PhysMETTotal		
+GS:0000133	R2 All work related physical activity (MET hours/week)	PhysMET_v1	R2 All work related physical activity (MET hours/week)	physical activity history	R2PhysMETWorkTot		
+GS:0000134	R4 Moderate and light physical activity cycling (MET hours/week)	PhysMET_v1	R4 Moderate and light physical activity cycling (including to and from work and for pleasure) (MET hours/week)	physical activity history	R4PhysMETLtCycl		
+GS:0000135	R4 Moderate and light physical activity walking (MET hours/week)	PhysMET_v1	R4 Moderate and light physical activity walking (including walking to and from work, walking to the shops, walking for pleasure, etc) (MET hours/week)	physical activity history	R4PhysMETLtWalk		
+GS:0000136	R4 Other strenous physical activity (MET hours/week)	PhysMET_v1	R4 Strenous other activities that get you out of breath and make you sweat considerably (MET hours/week)	physical activity history	R4PhysMETStrOther		
+GS:0000137	R4 Sports strenous physical activity (MET hours/week)	PhysMET_v1	R4 Sport or training sufficient to get you out of breath and make you sweat considerably (e.g. jogging, exercise machine, tennis, swimming) (MET hours/week)	physical activity history	R4PhysMETStrSport		
+GS:0000138	R4 Work strenous physical activity (MET hours/week)	PhysMET_v1	R4 Activities at work that get you out of breath and make you sweat considerably (e.g. lifting, climbing ladders, building work) (MET hours/week)	physical activity history	R4PhysMETStrWork		
+GS:0000139	age first night job	Q102nightwork	age first night job	occupation	nightw1age		
+GS:0000140	start year first night job	Q102nightwork	start year first night job	occupation	nightw1start		
+GS:0000141	age last night job	Q102nightwork	age last night job	occupation	nightwLage		
+GS:0000142	end year of last night job	Q102nightwork	end year of last night job	occupation	nightwLend		
+GS:0000143	ever done night work in care	Q102nightwork	ever done night work in care	occupation	nightwcare		
+GS:0000144	number of night jobs	Q102nightwork	number of night jobs	occupation	nightwcnt		
+GS:0000145	ever done night work in elementary job	Q102nightwork	ever done night work in elementary job	occupation	nightwelem		
+GS:0000146	irregular night work	Q102nightwork	irregular night work	occupation	nightwirreg		
+GS:0000147	Type of night work	Q102nightwork	Type of night work	occupation	nightwjobtype		
+GS:0000148	maximum hours per week reported across all jobs	Q102nightwork	maximum hours per week reported across all jobs	occupation	nightwmaxhrsperwk		
+GS:0000149	maximum total hours per job reported across all jobs	Q102nightwork	maximum total hours per job reported across all jobs	occupation	nightwmaxtothrs		
+GS:0000150	mean days per week	Q102nightwork	mean days per week	occupation	nightwmeandaysperwk		
+GS:0000151	mean hours per week	Q102nightwork	mean hours per week	occupation	nightwmeanhrsperwk		
+GS:0000152	ever done night work as a nurse	Q102nightwork	ever done night work as a nurse	occupation	nightwnurse		
+GS:0000153	total hrs worked over all reported years of all jobs	Q102nightwork	total hrs worked over all reported years of all jobs	occupation	nightwtothrs		
+GS:0000154	total hrs worked over all reported years of all jobs (irreg)	Q102nightwork	total hrs worked over all reported years of all jobs (irreg)	occupation	nightwtothrsirreg		
+GS:0000155	reported duration of nightwork, years	Q102nightwork	reported duration of nightwork, years	occupation	nightwtotyrs		
+GS:0000156	reported duration of nightwork (yrs) not limited to previous 10yrs	Q102nightwork	reported duration of nightwork (yrs) not limited to previous 10yrs	occupation	nightwtotyrs_10		
+GS:0000157	reported duration of nightwork, years (irreg)	Q102nightwork	reported duration of nightwork, years (irreg)	occupation	nightwtotyrsirreg		
+GS:0000158	R2: frequency of cereal intake in past months	Q11diet	R2: frequency of cereal intake in past months	dietary history	R2dietcerealc		
+GS:0000159	R2: frequency of cooked veg intake in past months	Q11diet	R2: frequency of cooked veg intake in past months	dietary history	R2dietcookedvegc		
+GS:0000160	R2: frequency of dried fruit intake in past months	Q11diet	R2: frequency of dried fruit intake in past months	dietary history	R2dietdriedfruitc		
+GS:0000161	R2: frequency of fresh fruit intake in past months	Q11diet	R2: frequency of fresh fruit intake in past months	dietary history	R2dietfreshfruitc		
+GS:0000162	R2: frequency of grapefruit intake in past months	Q11diet	R2: frequency of grapefruit intake in past months	dietary history	R2dietgrapefruitc		
+GS:0000163	R2: frequency of grapefruit juice intake in past months	Q11diet	R2: frequency of grapefruit juice intake in past months	dietary history	R2dietgrapefruitjuicec		
+GS:0000164	R2: frequency of oily fish intake in past months	Q11diet	R2: frequency of oily fish intake in past months	dietary history	R2dietoilyfishc		
+GS:0000165	R2: frequency of salad and vegetable intake in past months	Q11diet	R2: frequency of salad and vegetable intake in past months	dietary history	R2dietsaladvegc		
+GS:0000166	R2: frequency of salmon intake in past months	Q11diet	R2: frequency of salmon intake in past months	dietary history	R2dietsalmonc		
+GS:0000167	R2: frequency of tuna intake in past months	Q11diet	R2: frequency of tuna intake in past months	dietary history	R2diettunac		
+GS:0000168	Most often uses butter for frying	Q11diet	Most often uses butter for frying	dietary history	dietbutter		
+GS:0000169	dairy eating status at entry	Q11diet	dairy eating status at entry	dietary history	dietdairy		
+GS:0000170	number of days eating dairy in past week	Q11diet	number of days eating dairy in past week	dietary history	dietdairydays		
+GS:0000171	never eaten dairy at study entry	Q11diet	never eaten dairy at study entry	dietary history	dietdairynever		
+GS:0000172	Age at which stopped eating dairy	Q11diet	Age at which stopped eating dairy	dietary history	dietdairystopage		
+GS:0000173	egg eating status at entry	Q11diet	egg eating status at entry	dietary history	dietegg		
+GS:0000174	number of days eating egg in past week	Q11diet	number of days eating egg in past week	dietary history	dieteggdays		
+GS:0000175	never eaten egg at study entry	Q11diet	never eaten egg at study entry	dietary history	dieteggnever		
+GS:0000176	Age at which stopped eating eggs	Q11diet	Age at which stopped eating eggs	dietary history	dieteggstopage		
+GS:0000177	fish eating status at entry	Q11diet	fish eating status at entry	dietary history	dietfish		
+GS:0000178	number of days eating fish in past week	Q11diet	number of days eating fish in past week	dietary history	dietfishdays		
+GS:0000179	never eaten fish at study entry	Q11diet	never eaten fish at study entry	dietary history	dietfishnever		
+GS:0000180	Age at which stopped eating fish	Q11diet	Age at which stopped eating fish	dietary history	dietfishstopage		
+GS:0000181	number of fruit servings/day	Q11diet	number of fruit servings/day	dietary history	dietfruitserv		
+GS:0000182	Does not use fat for frying	Q11diet	Does not use fat for frying	dietary history	dietfrynone		
+GS:0000183	Most often uses other fat for frying	Q11diet	Most often uses other fat for frying	dietary history	dietfryother		
+GS:0000184	Most often uses lard for frying	Q11diet	Most often uses lard for frying	dietary history	dietlard		
+GS:0000185	Most often uses margarine for frying	Q11diet	Most often uses margarine for frying	dietary history	dietmarg		
+GS:0000186	meat eating status at entry	Q11diet	meat eating status at entry	dietary history	dietmeat		
+GS:0000187	number of days eating meat in past week	Q11diet	number of days eating meat in past week	dietary history	dietmeatdays		
+GS:0000188	never eaten meat at study entry	Q11diet	never eaten meat at study entry	dietary history	dietmeatnever		
+GS:0000189	Age at which stopped eating meat	Q11diet	Age at which stopped eating meat	dietary history	dietmeatstopage		
+GS:0000190	type of oil used for frying grilling roasting	Q11diet	type of oil used for frying grilling roasting	dietary history	dietoil		
+GS:0000191	Most often uses olive oil for frying	Q11diet	Most often uses olive oil for frying	dietary history	dietolive		
+GS:0000192	soya eating status at entry	Q11diet	soya eating status at entry	dietary history	dietsoya		
+GS:0000193	number of days eating soya in past week	Q11diet	number of days eating soya in past week	dietary history	dietsoyadays		
+GS:0000194	never eaten soya at study entry	Q11diet	never eaten soya at study entry	dietary history	dietsoyanever		
+GS:0000195	Age at which stopped eating soya	Q11diet	Age at which stopped eating soya	dietary history	dietsoyastopage		
+GS:0000196	Most often uses sunflower oil for frying	Q11diet	Most often uses sunflower oil for frying	dietary history	dietsunflower		
+GS:0000197	Most often uses vegetable fat for frying	Q11diet	Most often uses vegetable fat for frying	dietary history	dietvegfat		
+GS:0000198	Most often uses vegetable oil for frying	Q11diet	Most often uses vegetable oil for frying	dietary history	dietvegoil		
+GS:0000199	number of veg servings/day	Q11diet	number of veg servings/day	dietary history	dietvegserv		
+GS:0000200	R2 total light exercise, hrs/day	Q12physexercise	R2 total light exercise, hrs/day	physical activity history	R2physaclthrsdaytot		
+GS:0000201	R2 total light exercise, hrs/wk	Q12physexercise	R2 total light exercise, hrs/wk	physical activity history	R2physaclthrswktot		
+GS:0000202	R2 total strenuous exercise, hrs/day	Q12physexercise	R2 total strenuous exercise, hrs/day	physical activity history	R2physacstrenhrsdaytot		
+GS:0000203	R2 total strenuous exercise, hrs/wk	Q12physexercise	R2 total strenuous exercise, hrs/wk	physical activity history	R2physacstrenhrswktot		
+GS:0000204	R2 miles running or jogging, per week	Q12physexercise	R2 miles running or jogging, per week	physical activity history	R2physmiles		
+GS:0000205	R2 Physical activity at work in past 12 months	Q12physexercise	R2 Physical activity at work in past 12 months	physical activity history	R2physworkact		
+GS:0000206	R2 Location of work in past 12 months	Q12physexercise	R2 Location of work in past 12 months	physical activity history	R2physworkinout		
+GS:0000207	childhood exercise outside school hours, days/wk	Q12physexercise	childhood exercise outside school hours, days/wk	physical activity history	physacchilddays		
+GS:0000208	childhood exercise outside school hours, hrs/wk	Q12physexercise	childhood exercise outside school hours, hrs/wk	physical activity history	physacchildtime		
+GS:0000209	light exercise at age 18, days/wk	Q12physexercise	light exercise at age 18, days/wk	physical activity history	physaclt18days		
+GS:0000210	light exercise at age 18, hrs/wk	Q12physexercise	light exercise at age 18, hrs/wk	physical activity history	physaclt18time		
+GS:0000211	light exercise at age 30, days/wk	Q12physexercise	light exercise at age 30, days/wk	physical activity history	physaclt30days		
+GS:0000212	light exercise at age 30, hrs/wk	Q12physexercise	light exercise at age 30, hrs/wk	physical activity history	physaclt30time		
+GS:0000213	light exercise at age 50, days/wk	Q12physexercise	light exercise at age 50, days/wk	physical activity history	physaclt50days		
+GS:0000214	light exercise at age 50, hrs/wk	Q12physexercise	light exercise at age 50, hrs/wk	physical activity history	physaclt50time		
+GS:0000215	total current light exercise, hrs/day	Q12physexercise	total current light exercise, hrs/day	physical activity history	physacltnowhrsdaytot		
+GS:0000216	total current light exercise, hrs/wk	Q12physexercise	total current light exercise, hrs/wk	physical activity history	physacltnowhrswktot		
+GS:0000217	strenuous exercise at age 18, days/wk	Q12physexercise	strenuous exercise at age 18, days/wk	physical activity history	physacstren18days		
+GS:0000218	strenuous exercise at age 18, hrs/wk	Q12physexercise	strenuous exercise at age 18, hrs/wk	physical activity history	physacstren18time		
+GS:0000219	strenuous exercise at age 30, days/wk	Q12physexercise	strenuous exercise at age 30, days/wk	physical activity history	physacstren30days		
+GS:0000220	strenuous exercise at age 30, hrs/wk	Q12physexercise	strenuous exercise at age 30, hrs/wk	physical activity history	physacstren30time		
+GS:0000221	strenuous exercise at age 50, days/wk	Q12physexercise	strenuous exercise at age 50, days/wk	physical activity history	physacstren50days		
+GS:0000222	strenuous exercise at age 50, hrs/wk	Q12physexercise	strenuous exercise at age 50, hrs/wk	physical activity history	physacstren50time		
+GS:0000223	total current strenuous exercise, hrs/day	Q12physexercise	total current strenuous exercise, hrs/day	physical activity history	physacstrennowhrsdaytot		
+GS:0000224	total current strenuous exercise, hrs/wk	Q12physexercise	total current strenuous exercise, hrs/wk	physical activity history	physacstrennowhrswktot		
+GS:0000225	light+strenuous exercise at age 18, hrs/wk	Q12physexercise	light+strenuous exercise at age 18, hrs/wk	physical activity history	physactot18time		
+GS:0000226	light+strenuous exercise at age 30, hrs/wk	Q12physexercise	light+strenuous exercise at age 30, hrs/wk	physical activity history	physactot30time		
+GS:0000227	light+strenuous exercise at age 50, hrs/wk	Q12physexercise	light+strenuous exercise at age 50, hrs/wk	physical activity history	physactot50time		
+GS:0000228	Regularly used deodorant only	Q13Deodorant	Regularly used deodorant only	lifestyle and behaviours	deo		
+GS:0000229	First age used any of the deodorant products	Q13Deodorant	First age used any of the deodorant products	lifestyle and behaviours	deo1age		
+GS:0000230	Age last used any of the deodorant products	Q13Deodorant	Age last used any of the deodorant products	lifestyle and behaviours	deoLage		
+GS:0000231	Regularly used antiperspirant deodorant	Q13Deodorant	Regularly used antiperspirant deodorant	lifestyle and behaviours	deoapd		
+GS:0000232	Regularly used antiperspirant only	Q13Deodorant	Regularly used antiperspirant only	lifestyle and behaviours	deoapo		
+GS:0000233	Number of types of deodorant used	Q13Deodorant	Number of types of deodorant used	lifestyle and behaviours	deocountall		
+GS:0000234	Ever used any of the deodorant products	Q13Deodorant	Ever used any of the deodorant products	lifestyle and behaviours	deoever		
+GS:0000235	Number of deodorant episodes reported with an error from age	Q13Deodorant	Number of deodorant episodes reported with an error from age	lifestyle and behaviours	deofromageer_N		
+GS:0000236	Number of deodorant episodes reported with an unknown from age	Q13Deodorant	Number of deodorant episodes reported with an unknown from age	lifestyle and behaviours	deofromagenk_N		
+GS:0000237	Known age last used any of the deodorant products for those with deoLage>=999	Q13Deodorant	Known age last used any of the deodorant products for those with deoLage>=999	lifestyle and behaviours	deoknownLage		
+GS:0000238	Total years of deodorant use, all episodes summed	Q13Deodorant	Total years of deodorant use, all episodes summed	lifestyle and behaviours	deolength_N		
+GS:0000239	Maximum deodorant episode length	Q13Deodorant	Maximum deodorant episode length	lifestyle and behaviours	deolengthmax		
+GS:0000240	Never, former or current user of any of the deodorant products	Q13Deodorant	Never, former or current user of any of the deodorant products	lifestyle and behaviours	deostatus		
+GS:0000241	Regularly used talc products	Q13Deodorant	Regularly used talc products	lifestyle and behaviours	deotalc		
+GS:0000242	Number of deodorant episodes reported with an error to age	Q13Deodorant	Number of deodorant episodes reported with an error to age	lifestyle and behaviours	deotoageer_N		
+GS:0000243	Number of deodorant episodes reported with an unknown to age	Q13Deodorant	Number of deodorant episodes reported with an unknown to age	lifestyle and behaviours	deotoagenk_N		
+GS:0000244	Natural handedness	Q13lifestyle	Natural handedness	lifestyle and behaviours	R2handedness		
+GS:0000245	stress in last 5 yrs: frequency	Q13lifestyle	stress in last 5 yrs: frequency	psychological distress and emotions	stress		
+GS:0000246	stress in last 5 yrs: death of husband/partner	Q13lifestyle	stress in last 5 yrs: death of husband/partner	psychological distress and emotions	stress1		
+GS:0000247	stress in last 5 yrs: personal illness/injury	Q13lifestyle	stress in last 5 yrs: personal illness/injury	psychological distress and emotions	stress2		
+GS:0000248	stress in last 5 yrs: death of child/parent/relative	Q13lifestyle	stress in last 5 yrs: death of child/parent/relative	psychological distress and emotions	stress3		
+GS:0000249	stress in last 5 yrs: loss of job	Q13lifestyle	stress in last 5 yrs: loss of job	psychological distress and emotions	stress4		
+GS:0000250	stress in last 5 yrs: divorce/separation	Q13lifestyle	stress in last 5 yrs: divorce/separation	psychological distress and emotions	stress5		
+GS:0000251	stress in last 5 yrs: other stressful life event	Q13lifestyle	stress in last 5 yrs: other stressful life event	psychological distress and emotions	stress6		
+GS:0000252	stress in last 5 yrs: death of close friend	Q13lifestyle	stress in last 5 yrs: death of close friend	psychological distress and emotions	stress7		
+GS:0000253	any of stress1-stress7	Q13lifestyle	any of stress1-stress7	psychological distress and emotions	stressany		
+GS:0000254	Number of stressful life events	Q13lifestyle	Number of stressful life events	psychological distress and emotions	stresscount		
+GS:0000255	darkness of room slept in age 20	Q13sleep	darkness of room slept in age 20	sleep history	sleepdark20		
+GS:0000256	darkness of room sleep in now	Q13sleep	darkness of room sleep in now	sleep history	sleepdarknow		
+GS:0000257	indicator for non peak sleep. (bed <=2am, wake>=1am)	Q13sleep	indicator for non peak sleep. (bed <=2am, wake>=1am)	sleep history	sleepnonpeak		
+GS:0000258	time usually goes to sleep	Q13sleep	time usually goes to sleep	sleep history	sleeptime		
+GS:0000259	Hour goes to sleep in 24hr clock	Q13sleep	Hour goes to sleep in 24hr clock	sleep history	sleeptimehr		
+GS:0000260	Minutes past the hour usually goes to sleep	Q13sleep	Minutes past the hour usually goes to sleep	sleep history	sleeptimemin		
+GS:0000261	reported total hours sleep	Q13sleep	reported total hours sleep	sleep history	sleeptotal		
+GS:0000262	calculated total hours sleep from sleeptime and sleepwake	Q13sleep	calculated total hours sleep from sleeptime and sleepwake	sleep history	sleeptotalcalc		
+GS:0000263	calculated total time slept in hours	Q13sleep	calculated total time slept in hours	sleep history	sleeptotalcalchrs		
+GS:0000264	reported time slept in hours	Q13sleep	reported time slept in hours	sleep history	sleeptotalhrs		
+GS:0000265	time usually wakes up	Q13sleep	time usually wakes up	sleep history	sleepwake		
+GS:0000266	Number of times/night wakes and puts lights on/goes into bright room at age 20	Q13sleep	Number of times/night wakes and puts lights on/goes into bright room at age 20	sleep history	sleepwakecount20		
+GS:0000267	Number of times/night wakes and puts lights on/goes into bright room, NOW	Q13sleep	Number of times/night wakes and puts lights on/goes into bright room, NOW	sleep history	sleepwakecountnow		
+GS:0000268	Hour wakes up in 24hr clock	Q13sleep	Hour wakes up in 24hr clock	sleep history	sleepwakehr		
+GS:0000269	Minutes past the hour usually wakes up	Q13sleep	Minutes past the hour usually wakes up	sleep history	sleepwakemin		
+GS:0000270	Reported number of full brothers, at entry, at entry	Q14Famhistcancer	Reported number of full brothers, at entry, at entry	family and household structure	FamNbrother		
+GS:0000271	Reported number of children, gender unknown, at entry	Q14Famhistcancer	Reported number of children, gender unknown, at entry	family and household structure	FamNchildnk		
+GS:0000272	Reported number of daughters, at entry	Q14Famhistcancer	Reported number of daughters, at entry	family and household structure	FamNdaughter		
+GS:0000273	Reported number of half brothers, at entry	Q14Famhistcancer	Reported number of half brothers, at entry	family and household structure	FamNhalfbrother		
+GS:0000274	Reported number of half-sisters, at entry	Q14Famhistcancer	Reported number of half-sisters, at entry	family and household structure	FamNhalfsister		
+GS:0000275	Reported number of siblings, gender unknown, at entry	Q14Famhistcancer	Reported number of siblings, gender unknown, at entry	family and household structure	FamNsibnk		
+GS:0000276	Reported number of full sisters, at entry	Q14Famhistcancer	Reported number of full sisters, at entry	family and household structure	FamNsister		
+GS:0000277	Reported number of sons, at entry	Q14Famhistcancer	Reported number of sons, at entry	family and household structure	FamNson		
+GS:0000278	Father deceased, at entry, at entry	Q14Famhistcancer	Father deceased, at entry, at entry	family and household structure	Famdaddead		
+GS:0000279	Having a first-degree relative with breast cancer, at entry	Q14Famhistcancer	breast cancer reported in first-degree relatives, at entry	family history of disease	fambrca		
+GS:0000280	Number of first-degree relatives with breast cancer, at entry	Q14Famhistcancer	Number of first-degree relatives with breast cancer, at entry	family history of disease	fambrcaN		
+GS:0000281	Diagnosis of breast cancer in full brother, at entry	Q14Famhistcancer	Number of brothers with breast cancer, at entry	family history of disease	fambrcabrotherN		
+GS:0000282	first diagnosis date of breast cancer in full brother, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in full brother, at entry	family history of disease	fambrcabrotherdate		
+GS:0000283	first diagnosis date of breast cancer in child, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in child, at entry	family history of disease	fambrcachilddate		
+GS:0000284	Diagnosis of breast cancer in child of unknow gender, at entry	Q14Famhistcancer	Number of children nk gender with breast cancer, at entry	family history of disease	fambrcachildnkN		
+GS:0000285	first diagnosis date of breast cancer in child of unknown gender, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in child of unknown gender, at entry	family history of disease	fambrcachildnkdate		
+GS:0000286	Diagnosis of breast cancer in father, at entry	Q14Famhistcancer	Diagnosis of breast cancer in father, at entry	family history of disease	fambrcadad		
+GS:0000287	First date of breast cancer in father, at entry	Q14Famhistcancer	First date of breast cancer in father, at entry	family history of disease	fambrcadaddate		
+GS:0000288	Diagnosis of breast cancer in daughter, at entry	Q14Famhistcancer	Number of daughters with breast cancer, at entry	family history of disease	fambrcadaughterN		
+GS:0000289	first diagnosis date of breast cancer in daughter, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in daughter, at entry	family history of disease	fambrcadaughterdate		
+GS:0000290	Diagnosis of breast cancer in half brother, at entry	Q14Famhistcancer	Number of half brothers with breast cancer, at entry	family history of disease	fambrcahalfbrotherN		
+GS:0000291	first diagnosis date of breast cancer in half brother, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in half brother, at entry	family history of disease	fambrcahalfbrotherdate		
+GS:0000292	Diagnosis of breast cancer in half sister, at entry	Q14Famhistcancer	Number ofhalf sisters with breast cancer, at entry	family history of disease	fambrcahalfsisterN		
+GS:0000293	first diagnosis date of breast cancer in half sister, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in half sister, at entry	family history of disease	fambrcahalfsisterdate		
+GS:0000294	Diagnosis of breast cancer in mother, at entry	Q14Famhistcancer	Diagnosis of breast cancer in mother, at entry	family history of disease	fambrcamum		
+GS:0000295	First date of breast cancer in mother, at entry	Q14Famhistcancer	First date of breast cancer in mother, at entry	family history of disease	fambrcamumdate		
+GS:0000296	first diagnosis date date of breast cancer in full sibling, at entry	Q14Famhistcancer	first diagnosis date date of breast cancer in full sibling, at entry	family history of disease	fambrcasibdate		
+GS:0000297	Diagnosis of breast cancer in sib of unknown gender, at entry	Q14Famhistcancer	Number of sibs nk gender with breast cancer, at entry	family history of disease	fambrcasibnkN		
+GS:0000298	first diagnosis date of breast cancer in sib of unknown gender, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in sib of unknown gender, at entry	family history of disease	fambrcasibnkdate		
+GS:0000299	Diagnosis of breast cancer in full sister, at entry	Q14Famhistcancer	Number of sisters with breast cancer, at entry	family history of disease	fambrcasisterN		
+GS:0000300	first diagnosis date of breast cancer in full sister, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in full sister, at entry	family history of disease	fambrcasisterdate		
+GS:0000301	Diagnosis of breast cancer in son, at entry	Q14Famhistcancer	Number of sons with breast cancer, at entry	family history of disease	fambrcasonN		
+GS:0000302	first diagnosis date of breast cancer in son, at entry, at entry	Q14Famhistcancer	first diagnosis date of breast cancer in son, at entry, at entry	family history of disease	fambrcasondate		
+GS:0000303	Cancer reported in first-degree relatives, at entry	Q14Famhistcancer	Cancer reported in first-degree relatives, at entry	family history of disease	famca		
+GS:0000304	Number of first-degree relatives with cancer, at entry	Q14Famhistcancer	Number of first-degree relatives with cancer, at entry	family history of disease	famcaN		
+GS:0000305	Diagnosis of cancer in full brother, at entry	Q14Famhistcancer	Number of brothers with cancer, at entry	family history of disease	famcabrotherN		
+GS:0000306	first diagnosis date of cancer in full brother, at entry	Q14Famhistcancer	first diagnosis date of cancer in full brother, at entry	family history of disease	famcabrotherdate		
+GS:0000307	Diagnosis of cancer in child, at entry	Q14Famhistcancer	Number of children with cancer, at entry	family history of disease	famcachildN		
+GS:0000308	first diagnosis date of cancer in child, at entry	Q14Famhistcancer	first diagnosis date of cancer in child, at entry	family history of disease	famcachilddate		
+GS:0000309	Diagnosis of cancer in child of unknow gender, at entry	Q14Famhistcancer	Number of children nk gender with cancer, at entry	family history of disease	famcachildnkN		
+GS:0000310	first diagnosis date of cancer in child of unknown gender, at entry	Q14Famhistcancer	first diagnosis date of cancer in child of unknown gender, at entry	family history of disease	famcachildnkdate		
+GS:0000311	Diagnosis of cancer in father, at entry	Q14Famhistcancer	Diagnosis of cancer in father, at entry	family history of disease	famcadad		
+GS:0000312	First date of diagnosis of cancer in father, at entry	Q14Famhistcancer	First date of diagnosis of cancer in father, at entry	family history of disease	famcadaddate		
+GS:0000313	Diagnosis of cancer in daughter, at entry	Q14Famhistcancer	Number of daughters with cancer, at entry	family history of disease	famcadaughterN		
+GS:0000314	first diagnosis date of cancer in daughter, at entry	Q14Famhistcancer	first diagnosis date of cancer in daughter, at entry	family history of disease	famcadaughterdate		
+GS:0000315	Diagnosis of cancer in half brother, at entry	Q14Famhistcancer	Number of half brothers with cancer, at entry	family history of disease	famcahalfbrotherN		
+GS:0000316	first diagnosis date of cancer in half brother, at entry	Q14Famhistcancer	first diagnosis date of cancer in half brother, at entry	family history of disease	famcahalfbrotherdate		
+GS:0000317	Diagnosis of cancer in half sister, at entry	Q14Famhistcancer	Number of half sisters with cancer, at entry	family history of disease	famcahalfsisterN		
+GS:0000318	first diagnosis date of cancer in half sister, at entry	Q14Famhistcancer	first diagnosis date of cancer in half sister, at entry	family history of disease	famcahalfsisterdate		
+GS:0000319	Diagnosis of cancer in mother, at entry	Q14Famhistcancer	Diagnosis of cancer in mother, at entry	family history of disease	famcamum		
+GS:0000320	First date of diagnosis of cancer in mother, at entry	Q14Famhistcancer	First date of diagnosis of cancer in mother, at entry	family history of disease	famcamumdate		
+GS:0000321	Diagnosis of cancer in sib of unknown gender, at entry	Q14Famhistcancer	Number of sibs nk gender with cancer, at entry	family history of disease	famcasibnkN		
+GS:0000322	first diagnosis date of cancer in sib of unknown gender, at entry	Q14Famhistcancer	first diagnosis date of cancer in sib of unknown gender, at entry	family history of disease	famcasibnkdate		
+GS:0000323	Diagnosis of cancer in full sister, at entry	Q14Famhistcancer	Number of sisters with cancer, at entry	family history of disease	famcasisterN		
+GS:0000324	first diagnosis date of cancer in full sister, at entry	Q14Famhistcancer	first diagnosis date of cancer in full sister, at entry	family history of disease	famcasisterdate		
+GS:0000325	Diagnosis of cancer in son, at entry	Q14Famhistcancer	Number of sons with cancer, at entry	family history of disease	famcasonN		
+GS:0000326	first diagnosis date of cancer in son, at entry	Q14Famhistcancer	first diagnosis date of cancer in son, at entry	family history of disease	famcasondate		
+GS:0000327	Having a first-degree relative with colorectal cancer, at entry	Q14Famhistcancer	Colorectal cancer reported in first-degree relatives, at entry	family history of disease	famcolorec		
+GS:0000328	Number of first-degree relatives with colorectal cancer, at entry	Q14Famhistcancer	Number of first-degree relatives with colorectal cancer, at entry	family history of disease	famcolorecN		
+GS:0000329	Diagnosis of colorectal cancer in full brother, at entry	Q14Famhistcancer	Number of brothers with colorectal cancer, at entry	family history of disease	famcolorecbrotherN		
+GS:0000330	first diagnosis date of colorectal cancer in full brother, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in full brother, at entry	family history of disease	famcolorecbrotherdate		
+GS:0000331	Diagnosis of colorectal cancer in child, at entry	Q14Famhistcancer	Number of children with colorectal cancer, at entry	family history of disease	famcolorecchildN		
+GS:0000332	first diagnosis date of colorectal cancer in child, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in child, at entry	family history of disease	famcolorecchilddate		
+GS:0000333	Diagnosis of colorectal cancer in child of unknow gender, at entry	Q14Famhistcancer	Number of children nk gender with colorectal cancer, at entry	family history of disease	famcolorecchildnkN		
+GS:0000334	first diagnosis date of colorectal cancer in child of unknown gender, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in child of unknown gender, at entry	family history of disease	famcolorecchildnkdate		
+GS:0000335	Diagnosis of colorectal cancer in father, at entry	Q14Famhistcancer	Diagnosis of colorectal cancer in father, at entry	family history of disease	famcolorecdad		
+GS:0000336	First diagnosis date of colorectal cancer in father, at entry	Q14Famhistcancer	First diagnosis date of colorectal cancer in father, at entry	family history of disease	famcolorecdaddate		
+GS:0000337	Diagnosis of colorectal cancer in daughter, at entry	Q14Famhistcancer	Number of daughters with colorectal cancer, at entry	family history of disease	famcolorecdaughterN		
+GS:0000338	first diagnosis date of colorectal cancer in daughter, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in daughter, at entry	family history of disease	famcolorecdaughterdate		
+GS:0000339	Diagnosis of colorectal cancer in half brother, at entry	Q14Famhistcancer	Number of half-brothers with colorectal cancer, at entry	family history of disease	famcolorechalfbrotherN		
+GS:0000340	first diagnosis date of colorectal cancer in half brother, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in half brother, at entry	family history of disease	famcolorechalfbrotherdate		
+GS:0000341	Diagnosis of colorectal cancer in half sister, at entry	Q14Famhistcancer	Number of half-sisters with colorectal cancer, at entry	family history of disease	famcolorechalfsisterN		
+GS:0000342	first diagnosis date of colorectal cancer in half sister, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in half sister, at entry	family history of disease	famcolorechalfsisterdate		
+GS:0000343	Diagnosis of colorectal cancer in mother, at entry	Q14Famhistcancer	Diagnosis of colorectal cancer in mother, at entry	family history of disease	famcolorecmum		
+GS:0000344	First diagnosis date of colorectal cancer in mother, at entry	Q14Famhistcancer	First diagnosis date of colorectal cancer in mother, at entry	family history of disease	famcolorecmumdate		
+GS:0000345	first diagnosis date of colorectal cancer in full sibling, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in full sibling, at entry	family history of disease	famcolorecsibdate		
+GS:0000346	Diagnosis of colorectal cancer in sib of unknown gender, at entry	Q14Famhistcancer	Number of sibs nk gender with colorectal cancer, at entry	family history of disease	famcolorecsibnkN		
+GS:0000347	first diagnosis date of colorectal cancer in sib of unknown gender, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in sib of unknown gender, at entry	family history of disease	famcolorecsibnkdate		
+GS:0000348	Diagnosis of colorectal cancer in full sister, at entry	Q14Famhistcancer	Number of sisters with colorectal cancer, at entry	family history of disease	famcolorecsisterN		
+GS:0000349	first diagnosis date of colorectal cancer in full sister, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in full sister, at entry	family history of disease	famcolorecsisterdate		
+GS:0000350	Diagnosis of colorectal cancer in son, at entry	Q14Famhistcancer	Number of sons with colorectal cancer, at entry	family history of disease	famcolorecsonN		
+GS:0000351	first diagnosis date of colorectal cancer in son, at entry	Q14Famhistcancer	first diagnosis date of colorectal cancer in son, at entry	family history of disease	famcolorecsondate		
+GS:0000352	Date of death of father, at entry	Q14Famhistcancer	Date of death of father, at entry	family history of disease	famdaddod		
+GS:0000353	Mother deceased, at entry, at entry	Q14Famhistcancer	Mother deceased, at entry, at entry	family history of disease	fammumdead		
+GS:0000354	Date of death of mother, at entry, at entry	Q14Famhistcancer	Date of death of mother, at entry, at entry	family history of disease	fammumdod		
+GS:0000355	brovarian cancer reported in first-degree relatives, at entry	Q14Famhistcancer	brovarian cancer reported in first-degree relatives, at entry	family history of disease	famovca		
+GS:0000356	Number of first-degree relatives with ovarian cancer, at entry	Q14Famhistcancer	Number of first-degree relatives with ovarian cancer, at entry	family history of disease	famovcaN		
+GS:0000357	Diagnosis of ovarian cancer in child of unknown gender (error!), at entry	Q14Famhistcancer	Number of children nk gender with ovarian cancer (error!), at entry	family history of disease	famovcachildnkN		
+GS:0000358	Diagnosis of ovarian cancer in daughter, at entry	Q14Famhistcancer	Number of daughters with ovarian cancer, at entry	family history of disease	famovcadaughterN		
+GS:0000359	first diagnosis date of ovarian cancer in daughter, at entry	Q14Famhistcancer	first diagnosis date of ovarian cancer in daughter, at entry	family history of disease	famovcadaughterdate		
+GS:0000360	Diagnosis of ovarian cancer in half sister, at entry	Q14Famhistcancer	Number of half-sisters with ovarian cancer, at entry	family history of disease	famovcahalfsisterN		
+GS:0000361	first diagnosis date of ovarian cancer in half sister, at entry	Q14Famhistcancer	first diagnosis date of ovarian cancer in half sister, at entry	family history of disease	famovcahalfsisterdate		
+GS:0000362	Diagnosis of ovarian cancer in mother, at entry	Q14Famhistcancer	Diagnosis of ovarian cancer in mother, at entry	family history of disease	famovcamum		
+GS:0000363	First diagnosis date of ovarian cancer in mother, at entry	Q14Famhistcancer	First diagnosis date of ovarian cancer in mother, at entry	family history of disease	famovcamumdate		
+GS:0000364	Diagnosis of ovarian cancer in sib of unknown gender (error!), at entry	Q14Famhistcancer	Number of sibs nk gender with ovarian cancer (error!), at entry	family history of disease	famovcasibnkN		
+GS:0000365	first diagnosis date of ovarian cancer in sib of unknown gender, at entry	Q14Famhistcancer	first diagnosis date of ovarian cancer in sib of unknown gender, at entry	family history of disease	famovcasibnkdate		
+GS:0000366	Diagnosis of ovarian cancer in full sister, at entry	Q14Famhistcancer	Number of sisters with ovarian cancer, at entry	family history of disease	famovcasisterN		
+GS:0000367	first diagnosis date of ovarian cancer in full sister, at entry	Q14Famhistcancer	first diagnosis date of ovarian cancer in full sister, at entry	family history of disease	famovcasisterdate		
+GS:0000368	prostate cancer reported in first-degree relatives, at entry	Q14Famhistcancer	prostate cancer reported in first-degree relatives, at entry	family history of disease	famprostate		
+GS:0000369	Number of first-degree relatives with prostate cancer, at entry	Q14Famhistcancer	Number of first-degree relatives with prostate cancer, at entry	family history of disease	famprostateN		
+GS:0000370	Diagnosis of prostate cancer in full brother, at entry	Q14Famhistcancer	Number of brothers with prostate cancer, at entry	family history of disease	famprostatebrotherN		
+GS:0000371	first diagnosis date of prostate cancer in full brother, at entry	Q14Famhistcancer	first diagnosis date of prostate cancer in full brother, at entry	family history of disease	famprostatebrotherdate		
+GS:0000372	Diagnosis of prostate cancer in child of unknown gender (error!), at entry	Q14Famhistcancer	Number of children nk gender with prostate cancer (error!), at entry	family history of disease	famprostatechildnkN		
+GS:0000373	Diagnosis of prostate cancer in father, at entry	Q14Famhistcancer	Diagnosis of prostate cancer in dad, at entry	family history of disease	famprostatedad		
+GS:0000374	First date of prostate cancer in father, at entry	Q14Famhistcancer	First date of prostate cancer in father, at entry	family history of disease	famprostatedaddate		
+GS:0000375	Diagnosis of prostate cancer in half brother, at entry	Q14Famhistcancer	Number of half-brothers with prostate cancer, at entry	family history of disease	famprostatehalfbrotherN		
+GS:0000376	first diagnosis date of prostate cancer in half brother, at entry	Q14Famhistcancer	first diagnosis date of prostate cancer in half brother, at entry	family history of disease	famprostatehalfbrotherdate		
+GS:0000377	Diagnosis of prostate cancer in sib of unknown gender (error!), at entry	Q14Famhistcancer	Number of sibs nk gender with prostate cancer (error!), at entry	family history of disease	famprostatesibnkN		
+GS:0000378	Diagnosis of prostate cancer in son, at entry	Q14Famhistcancer	Number of sons with prostate cancer, at entry	family history of disease	famprostatesonN		
+GS:0000379	first diagnosis date of prostate cancer in son, at entry	Q14Famhistcancer	first diagnosis date of prostate cancer in son, at entry	family history of disease	famprostatesondate		
+GS:0000380	Father's height in cm	Q14Parentheight	Father's height in cm	height	pheightdadcm		
+GS:0000381	Mother's height in cm	Q14Parentheight	Mother's height in cm	height	pheightmumcm		
+GS:0000382	Marital status at R2	Q1demogr	Marital status at R2	marital status	R2maritalstatus		
+GS:0000383	Age at completion questionnaire	Q1demogr	Age at completion questionnaire	age/birthdate	ageatcompl		
+GS:0000384	Age at entry to study	Q1demogr	Age at entry to study	age/birthdate	ageatentry		
+GS:0000385	Age at receipt questionnaire	Q1demogr	Age at receipt questionnaire	age/birthdate	ageatreceipt		
+GS:0000386	Blood provided yes/no	Q1demogr	Blood provided yes/no	blood	blood		
+GS:0000387	Days lag bloodtaken-blood received	Q1demogr	Days lag bloodtaken-blood received	date and time-related information	bloodlag		
+GS:0000388	Version of round 1 questionnaire	Q1demogr	Version of round 1 questionnaire	survey administration	cb_dtid		
+GS:0000389	Clotted blood sample	Q1demogr	Clotted blood sample	survey administration	clottedsample		
+GS:0000390	Date questionnaire completed	Q1demogr	Date questionnaire completed	date and time-related information	compldate		
+GS:0000391	Date blood pack received	Q1demogr	Date blood pack received	date and time-related information	datebloodpackrec		
+GS:0000392	Date blood taken	Q1demogr	Date blood taken	date and time-related information	datebloodtaken		
+GS:0000393	date of birth from dobtable	Q1demogr	date of birth from dobtable	age/birthdate	dob		
+GS:0000394	age left education	Q1demogr	age left education	education	educage		
+GS:0000395	Date entry to study	Q1demogr	Date entry to study	date and time-related information	entrydate		
+GS:0000396	Ethnicity from full scan	Q1demogr	Ethnicity from full scan	ethnicity/race	ethnew		
+GS:0000397	Marital status at entry to study	Q1demogr	Marital status at entry to study	marital status	maritalstatus		
+GS:0000398	Occupational status	Q1demogr	Occupational status	occupation	occup		
+GS:0000399	Age at Round2 (age at entry equivalent)	Q1demogr	Age at Round2 (age at entry equivalent)	age/birthdate	r2age		
+GS:0000400	Date receipt questionnaire	Q1demogr	Date receipt questionnaire	date and time-related information	receiptdate		
+GS:0000401	Region of residence at study entry	Q1demogr	Region of residence at study entry	location	region		
+GS:0000402	Acorn-based SES at study entry	Q1demogr	Acorn-based SES at study entry	socio-demographic and economic characteristics	ses		
+GS:0000403	medical or physical abnormalities when born	Q2birth	medical or physical abnormalities when born	congenital and genetic disorders	birthabnormal		
+GS:0000404	delivered by caesarean	Q2birth	delivered by caesarean	reproduction	birthcaes		
+GS:0000405	birth order, from reported number pregnancies before self	Q2birth	birth order, from reported number pregnancies before self	family and household structure	birthorderpregs		
+GS:0000406	birth order, calculated from number of older sibs	Q2birth	birth order, calculated from number of older sibs	family and household structure	birthordersibs		
+GS:0000407	nursed in incubator or special care baby unit	Q2birth	nursed in incubator or special care baby unit	reproduction	birthscbu		
+GS:0000408	birthweight in grams, self report or mum	Q2birth	birthweight in grams, self report or mum	reproduction	birthweight		
+GS:0000409	Birthweight, relative measure	Q2birth	Birthweight, relative measure	reproduction	birthweightrel		
+GS:0000410	mother had complications during pregancy	Q2birth	mother had complications during pregancy	family history of disease	gestcomp		
+GS:0000411	Fathers age at birth of participant	Q2birth	Fathers age at birth of participant	reproduction	gestdadage		
+GS:0000412	mum pre-eclampsia or eclampsia, self report or mum	Q2birth	mum pre-eclampsia or eclampsia, self report or mum	family history of disease	gesteclamp		
+GS:0000413	Mothers age at birth of participant	Q2birth	Mothers age at birth of participant	reproduction	gestmumage		
+GS:0000414	gestation period in weeks,self report or mum	Q2birth	gestation period in weeks,self report or mum	reproduction	gestwks		
+GS:0000415	BMI at Round 2 (wtR2&htnow)	Q3bodysize	BMI at Round 2 (wtR2&htnow)	anthropometry	R2bodysizebmi		
+GS:0000416	BMI at Round 2 (currently pregnant)	Q3bodysize	BMI at Round 2 (currently pregnant)	anthropometry	R2bodysizebmi_preg		
+GS:0000417	Hip circumference at Round 2, cm	Q3bodysize	Hip circumference at Round 2, cm	anthropometry	R2bodysizehip		
+GS:0000418	Hip circumference at Round 2, cm (currently pregnant)	Q3bodysize	Hip circumference at Round 2, cm (currently pregnant)	anthropometry	R2bodysizehip_preg		
+GS:0000419	When hip size was measured at R2	Q3bodysize	When hip size was measured at R2	date and time-related information	R2bodysizehipwhen		
+GS:0000420	Waist circumference at Round 2, cm	Q3bodysize	Waist circumference at Round 2, cm	anthropometry	R2bodysizewaist		
+GS:0000421	Waist circumference at Round 2, cm (currently pregnant)	Q3bodysize	Waist circumference at Round 2, cm (currently pregnant)	anthropometry	R2bodysizewaist_preg		
+GS:0000422	When waist size was measured at R2	Q3bodysize	When waist size was measured at R2	date and time-related information	R2bodysizewaistwhen		
+GS:0000423	When weight was measured at R2	Q3bodysize	When weight was measured at R2	date and time-related information	R2bodysizeweightwhen		
+GS:0000424	Waist-to-hip ratio at Round 2	Q3bodysize	Waist-to-hip ratio at Round 2	anthropometry	R2bodysizewhr		
+GS:0000425	Waist-to-hip ratio category at Round 2	Q3bodysize	Waist-to-hip ratio category at Round 2	anthropometry	R2bodysizewhrcat		
+GS:0000426	Weight at R2 questionnaire	Q3bodysize	Weight at R2 questionnaire	weight	R2bodysizewt		
+GS:0000427	Weight at R2 questionnaire (currently pregnant)	Q3bodysize	Weight at R2 questionnaire (currently pregnant)	weight	R2bodysizewt_preg		
+GS:0000428	arm span in cm	Q3bodysize	arm span in cm	anthropometry	bodysizearmspan		
+GS:0000429	bmi at age 20 (wt20&ht20)	Q3bodysize	bmi at age 20 (wt20&ht20)	anthropometry	bodysizebmi20		
+GS:0000430	bmi at age 40 (wt40&htnow)	Q3bodysize	bmi at age 40 (wt40&htnow)	anthropometry	bodysizebmi40		
+GS:0000431	bmi at age 60 (wt40&htnow)	Q3bodysize	bmi at age 60 (wt40&htnow)	anthropometry	bodysizebmi60		
+GS:0000432	greatest bmi	Q3bodysize	greatest bmi	anthropometry	bodysizebmigreat		
+GS:0000433	lowest bmi	Q3bodysize	lowest bmi	anthropometry	bodysizebmilow		
+GS:0000434	bmi at entry	Q3bodysize	bmi at entry (wtnow&htnow)	anthropometry	bodysizebminow		
+GS:0000435	bmi at entry (currently pregnant)	Q3bodysize	bmi at entry (wtnow&htnow) (currently pregnant)	anthropometry	bodysizebminow_preg		
+GS:0000436	Height at age 11 compared with peers	Q3bodysize	Height at age 11 compared with peers	height	bodysizeheight11		
+GS:0000437	Height at age 7 compared with peers	Q3bodysize	Height at age 7 compared with peers	height	bodysizeheight7		
+GS:0000438	age stopped growing	Q3bodysize	age stopped growing	height	bodysizeheightage		
+GS:0000439	hip circumference, cm	Q3bodysize	hip circumference, cm	anthropometry	bodysizehip		
+GS:0000440	hip circumference, cm (currently pregnant)	Q3bodysize	hip circumference, cm (currently pregnant)	anthropometry	bodysizehip_preg		
+GS:0000441	when was hip measured?	Q3bodysize	when was hip measured?	date and time-related information	bodysizehipwhen		
+GS:0000442	best height variable	Q3bodysize	best height variable	height	bodysizeht		
+GS:0000443	height at age 20, cm	Q3bodysize	height at age 20, cm	height	bodysizeht20		
+GS:0000444	current height, cm	Q3bodysize	current height, cm	height	bodysizehtnow		
+GS:0000445	age that bodysizeht refers to	Q3bodysize	age that bodysizeht refers to	date and time-related information	bodysizehtwhen		
+GS:0000446	waist circumference, cm	Q3bodysize	waist circumference, cm	anthropometry	bodysizewaist		
+GS:0000447	waist circumference, cm (currently pregnant)	Q3bodysize	waist circumference, cm (currently pregnant)	anthropometry	bodysizewaist_preg		
+GS:0000448	when was waist measured	Q3bodysize	when was waist measured	date and time-related information	bodysizewaistwhen		
+GS:0000449	Weight at age 11 compared with peers	Q3bodysize	Weight at age 11 compared with peers	weight	bodysizeweight11		
+GS:0000450	Weight at age 7 compared with peers	Q3bodysize	Weight at age 7 compared with peers	weight	bodysizeweight7		
+GS:0000451	when was weight measured?	Q3bodysize	when was weight measured?	date and time-related information	bodysizeweightnowwhen		
+GS:0000452	waist to hip ratio	Q3bodysize	waist to hip ratio	anthropometry	bodysizewhr		
+GS:0000453	waist to hip ratio category	Q3bodysize	waist to hip ratio category	anthropometry	bodysizewhrcat		
+GS:0000454	Weight at age 20, kg	Q3bodysize	Weight at age 20, kg	weight	bodysizewt20		
+GS:0000455	Weight at age 40, kg	Q3bodysize	Weight at age 40, kg	weight	bodysizewt40		
+GS:0000456	Weight at age 60, kg	Q3bodysize	Weight at age 60, kg	weight	bodysizewt60		
+GS:0000457	greatest weight, kg	Q3bodysize	greatest weight, kg	weight	bodysizewtgreat		
+GS:0000458	age at greatest weight	Q3bodysize	age at greatest weight	weight	bodysizewtgreatage		
+GS:0000459	lowest weight since age 18, kg	Q3bodysize	lowest weight since age 18, kg	weight	bodysizewtlow		
+GS:0000460	age at lowest weight	Q3bodysize	age at lowest weight	weight	bodysizewtlowage		
+GS:0000461	current weight, kg	Q3bodysize	current weight, kg	weight	bodysizewtnow		
+GS:0000462	current weight, kg (currently pregnant)	Q3bodysize	current weight, kg (currently pregnant)	weight	bodysizewtnow_preg		
+GS:0000463	breast cup size at R2	Q3breastsize	breast cup size at R2	anthropometry	R2breastsize		
+GS:0000464	breast size in inches at R2	Q3breastsize	breast size in inches at R2	anthropometry	R2breastsizein		
+GS:0000465	age developed breasts	Q3breastsize	age developed breasts	reproduction	breastage		
+GS:0000466	breast size at 20	Q3breastsize	breast size at 20	anthropometry	breastsize20		
+GS:0000467	change in breast cup size from R1 to R2	Q3breastsize	change in breast cup size from R1 to R2	anthropometry	breastsizechange		
+GS:0000468	breasts are different sizes	Q3breastsize	breasts are different sizes	anthropometry	breastsizediff		
+GS:0000469	magnitude of difference in breast size	Q3breastsize	magnitude of difference in breast size	anthropometry	breastsizediffmag		
+GS:0000470	breast size at time filled in Qnaire	Q3breastsize	breast size at time filled in Qnaire	anthropometry	breastsizenow		
+GS:0000471	Unilateral oophorectomy, 1st ovary	Q4OperationsOvaryUterus	Unilateral oophorectomy, 1st ovary	surgical interventions	op_1stovary		
+GS:0000472	Unilateral oophorectomy age, 1st ovary	Q4OperationsOvaryUterus	Unilateral oophorectomy age, 1st ovary	surgical interventions	op_1stovaryage		
+GS:0000473	Unilateral oophorectomy side, 1st ovary	Q4OperationsOvaryUterus	Unilateral oophorectomy side, 1st ovary	surgical interventions	op_1stovaryside		
+GS:0000474	Unilateral oophorectomy, 2nd ovary	Q4OperationsOvaryUterus	Unilateral oophorectomy, 2nd ovary	surgical interventions	op_2ndovary		
+GS:0000475	Unilateral oophorectomy age, 2nd ovary	Q4OperationsOvaryUterus	Unilateral oophorectomy age, 2nd ovary	surgical interventions	op_2ndovaryage		
+GS:0000476	Unilateral oophorectomy side, 2nd ovary	Q4OperationsOvaryUterus	Unilateral oophorectomy side, 2nd ovary	surgical interventions	op_2ndovaryside		
+GS:0000477	Bilateral oophorectomy	Q4OperationsOvaryUterus	Bilateral oophorectomy	surgical interventions	op_bothovaries		
+GS:0000478	Bilateral oophorectomy, age	Q4OperationsOvaryUterus	Bilateral oophorectomy, age	surgical interventions	op_bothovariesage		
+GS:0000479	Hysterectomy	Q4OperationsOvaryUterus	Hysterectomy	surgical interventions	op_hysterectomy		
+GS:0000480	Hysterectomy, age	Q4OperationsOvaryUterus	Hysterectomy, age	surgical interventions	op_hysterectomyage		
+GS:0000481	Number of other types of surgery to ovaries and uterus	Q4OperationsOvaryUterus	Number of other types of surgery to ovaries and uterus	surgical interventions	op_otherN		
+GS:0000482	Partial oophorectomy, 1st surgery	Q4OperationsOvaryUterus	Partial oophorectomy, 1st surgery	surgical interventions	op_partovary1		
+GS:0000483	Partial oophorectomy, 2nd surgery	Q4OperationsOvaryUterus	Partial oophorectomy, 2nd surgery	surgical interventions	op_partovary2		
+GS:0000484	Partial oophorectomy age, 1st surgery	Q4OperationsOvaryUterus	Partial oophorectomy age, 1st surgery	surgical interventions	op_partovaryage1		
+GS:0000485	Partial oophorectomy age, 2nd surgery	Q4OperationsOvaryUterus	Partial oophorectomy age, 2nd surgery	surgical interventions	op_partovaryage2		
+GS:0000486	Partial oophorectomy side, 1st surgery	Q4OperationsOvaryUterus	Partial oophorectomy side, 1st surgery	surgical interventions	op_partovaryside1		
+GS:0000487	Partial oophorectomy side, 2nd surgery	Q4OperationsOvaryUterus	Partial oophorectomy side, 2nd surgery	surgical interventions	op_partovaryside2		
+GS:0000488	Have you ever been diagnosed by a doctor with endometriosis	Q4OtherDiseasesOvaryUterus	Have you ever been diagnosed by a doctor with endometriosis	reproductive system diseases	endometriosisdx		
+GS:0000489	Have you ever been diagnosed by a doctor with fibroids of the uterus	Q4OtherDiseasesOvaryUterus	Have you ever been diagnosed by a doctor with fibroids of the uterus	reproductive system diseases	fibroidsdx		
+GS:0000490	Have you ever been diagnosed by a doctor with polycystic ovaries	Q4OtherDiseasesOvaryUterus	Have you ever been diagnosed by a doctor with polycystic ovaries	reproductive system diseases	polycysticovariesdx		
+GS:0000491	Breast discomfort before periods, age 20	Q4cyclepattern	Breast discomfort before periods, age 20	signs and symptoms	cycdisc20		
+GS:0000492	Breast discomfort before periods, age 40	Q4cyclepattern	Breast discomfort before periods, age 40	signs and symptoms	cycdisc40		
+GS:0000493	Breast discomfort before periods, at entry	Q4cyclepattern	Breast discomfort before periods, at entry	signs and symptoms	cycdiscnow		
+GS:0000494	Average number of days of flow, age 20	Q4cyclepattern	Average number of days of flow, age 20	reproduction	cycflow20		
+GS:0000495	Average number of days of flow, age 40	Q4cyclepattern	Average number of days of flow, age 40	reproduction	cycflow40		
+GS:0000496	Average number of days of flow, at entry	Q4cyclepattern	Average number of days of flow, at entry	reproduction	cycflownow		
+GS:0000497	Cycle length at age 20, days	Q4cyclepattern	Cycle length at age 20, days	reproduction	cyclen20		
+GS:0000498	Cycle length at age 40, days	Q4cyclepattern	Cycle length at age 40, days	reproduction	cyclen40		
+GS:0000499	Cycle length at entry, days	Q4cyclepattern	Cycle length at entry, days	reproduction	cyclennow		
+GS:0000500	age at menarche	Q4cyclepattern	age at menarche	reproduction	menarcheage		
+GS:0000501	Ever had menarche	Q4cyclepattern	Ever had menarche	reproduction	menarcheever		
+GS:0000502	age at cycles becoming regular	Q4cyclepattern	age at cycles becoming regular	reproduction	menregage		
+GS:0000503	age at cycles becoming regular naturally	Q4cyclepattern	age at cycles becoming regular naturally	reproduction	menregage_nat		
+GS:0000504	Estimated menopausal age, age 50 rule	Q4menstrualcycles	Estimated menopausal age, age 50 rule	reproduction	menoage_est		
+GS:0000505	Estimated menopausal group, age 50 rule	Q4menstrualcycles	Estimated menopausal group, age 50 rule	reproduction	menocat_est		
+GS:0000506	Estimated menopausal group, age 50 rule, at baseline	Q4menstrualcycles	Estimated menopausal group, age 50 rule, at baseline	reproduction	menocat_estr1		
+GS:0000507	Estimated date became postmenopausal, age 50 rule	Q4menstrualcycles	Estimated date became postmenopausal, age 50 rule	reproduction	menodate_est		
+GS:0000508	Date first known or assumed postmenopausal,age 55 rule	Q4menstrualcycles	Date first known or assumed postmenopausal,age 55 rule	reproduction	menopostdate		
+GS:0000509	Date last known or assumed premenopausal, age 46 rule	Q4menstrualcycles	Date last known or assumed premenopausal, age 46 rule	reproduction	menopredate		
+GS:0000510	Source of menopausal information	Q4menstrualcycles	Source of menopausal information	survey administration	menosource		
+GS:0000511	breast feeding at first pregnancy	Q5pregdetails	breast feeding at first pregnancy	reproduction	preg1bf		
+GS:0000512	Gender of 1st pregnancy	Q5pregdetails	Gender of 1st pregnancy	reproduction	preg1birthsex		
+GS:0000513	bmi at start of first pregnancy	Q5pregdetails	bmi at start of first pregnancy	anthropometry	preg1bmi		
+GS:0000514	boy at first pregnancy	Q5pregdetails	boy at first pregnancy	reproduction	preg1boy		
+GS:0000515	girl at first pregnancy	Q5pregdetails	girl at first pregnancy	reproduction	preg1girl		
+GS:0000516	had hormones to stop milk flow yes/no following first pregnancy	Q5pregdetails	had hormones to stop milk flow yes/no following first pregnancy	medication	preg1horm		
+GS:0000517	pre-eclampsia at first pregnancy	Q5pregdetails	pre-eclampsia at first pregnancy	reproduction|signs and symptoms	preg1pclsia		
+GS:0000518	Weight at start of first pregnancy, only stones reported, not lbs	Q5pregdetails	only stones reported, not lbs	weight	preg1stoneonly		
+GS:0000519	Outcome of 1st pregnancy	Q5pregdetails	Outcome of 1st pregnancy	reproduction	preg1type		
+GS:0000520	vomiting at first pregnancy	Q5pregdetails	vomiting at first pregnancy	signs and symptoms	preg1vom		
+GS:0000521	Weight at start of first pregnancy, kgs	Q5pregdetails	Weight at start of first pregnancy, kgs	weight	preg1wt		
+GS:0000522	breast feeding at last pregnancy	Q5pregdetails	breast feeding at last pregnancy	reproduction	pregLbf		
+GS:0000523	Gender of last pregnancy	Q5pregdetails	Gender of last pregnancy	reproduction	pregLbirthsex		
+GS:0000524	bmi at start of last pregnancy	Q5pregdetails	bmi at start of last pregnancy	anthropometry	pregLbmi		
+GS:0000525	boy at last pregnancy	Q5pregdetails	boy at last pregnancy	reproduction	pregLboy		
+GS:0000526	girl at last pregnancy	Q5pregdetails	girl at last pregnancy	reproduction	pregLgirl		
+GS:0000527	pre-eclampsia at last pregnancy	Q5pregdetails	pre-eclampsia at last pregnancy	reproduction|signs and symptoms	pregLpclsia		
+GS:0000528	vomiting at last pregnancy	Q5pregdetails	vomiting at last pregnancy	signs and symptoms	pregLvom		
+GS:0000529	Weight at start of last pregnancy, kgs	Q5pregdetails	Weight at start of last pregnancy, kgs	weight	pregLwt		
+GS:0000530	ever having breastfed	Q5pregdetails	ever having breastfed	reproduction	pregbf		
+GS:0000531	age at first pregnancy with breast feeding	Q5pregdetails	age at first pregnancy with breast feeding	reproduction	pregbf1age		
+GS:0000532	age at last pregnancy with breast feeding	Q5pregdetails	age at last pregnancy with breast feeding	reproduction	pregbfLage		
+GS:0000533	number of pregnancies with breast feeding	Q5pregdetails	number of pregnancies with breast feeding	reproduction	pregbfcnt		
+GS:0000534	Which breast was used for breastfeeding	Q5pregdetails	Which breast was used for breastfeeding	reproduction	pregbfside		
+GS:0000535	total number of weeks breastfed (all children)	Q5pregdetails	total number of weeks breastfed (all children)	reproduction	pregbfwks		
+GS:0000536	ever had parous birth with twins	Q5pregdetails	ever had parous birth with twins	reproduction	pregbirthtwin		
+GS:0000537	number of parous pregnancies with boy	Q5pregdetails	number of parous pregnancies with boy	reproduction	pregboycnt		
+GS:0000538	number of parous pregnancies with girl	Q5pregdetails	number of parous pregnancies with girl	reproduction	preggirlcnt		
+GS:0000539	ever had hormones to stop milk flow yes/no following any pregnancy	Q5pregdetails	ever had hormones to stop milk flow yes/no following any pregnancy	medication	preghorm		
+GS:0000540	number of pregnancies with hormones to stop milk flow	Q5pregdetails	number of pregnancies with hormones to stop milk flow	medication	preghormcnt		
+GS:0000541	Total reportedweeks of pregnancy, regardless of outcome	Q5pregdetails	Total reportedweeks of pregnancy, regardless of outcome	reproduction	preglength		
+GS:0000542	ever had livebirth of twins	Q5pregdetails	ever had livebirth of twins	reproduction	preglivetwin		
+GS:0000543	number of livebirths of twins	Q5pregdetails	number of livebirths of twins	reproduction	preglivetwincnt		
+GS:0000544	ever had pregnancy with pre-eclampsia	Q5pregdetails	ever had pregnancy with pre-eclampsia	reproduction|signs and symptoms	pregpclsia		
+GS:0000545	age at first pregnancy with preeclampsia	Q5pregdetails	age at first pregnancy with preeclampsia	reproduction|signs and symptoms	pregpclsia1age		
+GS:0000546	age at last pregnancy with preeclampsia	Q5pregdetails	age at last pregnancy with preeclampsia	reproduction|signs and symptoms	pregpclsiaLage		
+GS:0000547	number of pregnancies with pre-eclampsia	Q5pregdetails	number of pregnancies with pre-eclampsia	reproduction|signs and symptoms	pregpclsiacnt		
+GS:0000548	Ever had pregnancy with triplets or higher order	Q5pregdetails	Ever had pregnancy with triplets or higher order	reproduction	pregtriplet		
+GS:0000549	ever had pregnancy with twins	Q5pregdetails	ever had pregnancy with twins	reproduction	pregtwin		
+GS:0000550	number of pregnancies with twins	Q5pregdetails	number of pregnancies with twins	reproduction	pregtwincnt		
+GS:0000551	ever had any pregnancy with vomiting	Q5pregdetails	ever had any pregnancy with vomiting	signs and symptoms	pregvom		
+GS:0000552	age at first pregnancy with vomiting	Q5pregdetails	age at first pregnancy with vomiting	signs and symptoms	pregvom1age		
+GS:0000553	age at last pregnancy with vomiting	Q5pregdetails	age at last pregnancy with vomiting	signs and symptoms	pregvomLage		
+GS:0000554	number of pregnancies with vomiting	Q5pregdetails	number of pregnancies with vomiting	signs and symptoms	pregvomcnt		
+GS:0000555	birthweight in grams of first live birth	Q5pregsummary	birthweight in grams of first live birth	reproduction	bwt1		
+GS:0000556	birthweight in grams of tenth live birth	Q5pregsummary	birthweight in grams of tenth live birth	reproduction	bwt10		
+GS:0000557	birthweight in grams of eleventh live birth	Q5pregsummary	birthweight in grams of eleventh live birth	reproduction	bwt11		
+GS:0000558	birthweight in grams of second live birth	Q5pregsummary	birthweight in grams of second live birth	reproduction	bwt2		
+GS:0000559	birthweight in grams of third live birth	Q5pregsummary	birthweight in grams of third live birth	reproduction	bwt3		
+GS:0000560	birthweight in grams of fourth live birth	Q5pregsummary	birthweight in grams of fourth live birth	reproduction	bwt4		
+GS:0000561	birthweight in grams of fifth live birth	Q5pregsummary	birthweight in grams of fifth live birth	reproduction	bwt5		
+GS:0000562	birthweight in grams of sixth live birth	Q5pregsummary	birthweight in grams of sixth live birth	reproduction	bwt6		
+GS:0000563	birthweight in grams of seventh live birth	Q5pregsummary	birthweight in grams of seventh live birth	reproduction	bwt7		
+GS:0000564	birthweight in grams of eighth live birth	Q5pregsummary	birthweight in grams of eighth live birth	reproduction	bwt8		
+GS:0000565	birthweight in grams of ninth live birth	Q5pregsummary	birthweight in grams of ninth live birth	reproduction	bwt9		
+GS:0000566	gestation in weeks of first live birth	Q5pregsummary	gestation in weeks of first live birth	reproduction	gest1		
+GS:0000567	gestation in weeks of tenth live birth	Q5pregsummary	gestation in weeks of tenth live birth	reproduction	gest10		
+GS:0000568	gestation in weeks of eleventh live birth	Q5pregsummary	gestation in weeks of eleventh live birth	reproduction	gest11		
+GS:0000569	gestation in weeks of second live birth	Q5pregsummary	gestation in weeks of second live birth	reproduction	gest2		
+GS:0000570	gestation in weeks of third live birth	Q5pregsummary	gestation in weeks of third live birth	reproduction	gest3		
+GS:0000571	gestation in weeks of fourth live birth	Q5pregsummary	gestation in weeks of fourth live birth	reproduction	gest4		
+GS:0000572	gestation in weeks of fifth live birth	Q5pregsummary	gestation in weeks of fifth live birth	reproduction	gest5		
+GS:0000573	gestation in weeks of sixth live birth	Q5pregsummary	gestation in weeks of sixth live birth	reproduction	gest6		
+GS:0000574	gestation in weeks of seventh live birth	Q5pregsummary	gestation in weeks of seventh live birth	reproduction	gest7		
+GS:0000575	gestation in weeks ofeighth live birth	Q5pregsummary	gestation in weeks ofeighth live birth	reproduction	gest8		
+GS:0000576	gestation in weeks of ninth live birth	Q5pregsummary	gestation in weeks of ninth live birth	reproduction	gest9		
+GS:0000577	Age at first pregnancy	Q5pregsummary	Age at first pregnancy	reproduction	preg1age		
+GS:0000578	age at first parous birth	Q5pregsummary	age at first parous birth	reproduction	preg1birthage		
+GS:0000579	date first parous birth	Q5pregsummary	date first parous birth	reproduction	preg1birthdate		
+GS:0000580	date first pregnancy	Q5pregsummary	date first pregnancy	reproduction	preg1date		
+GS:0000581	Age at last pregnancy	Q5pregsummary	Age at last pregnancy	reproduction	pregLage		
+GS:0000582	age at last parous birth	Q5pregsummary	age at last parous birth	reproduction	pregLbirthage		
+GS:0000583	date last parous birth	Q5pregsummary	date last parous birth	reproduction	pregLbirthdate		
+GS:0000584	days since last parous birth	Q5pregsummary	days since last parous birth	reproduction	pregLbirthtime		
+GS:0000585	had hormones to stop milk flow yes/no following last	Q5pregsummary	had hormones to stop milk flow yes/no following last	medication	pregLhorm		
+GS:0000586	days since last pregnancy ended	Q5pregsummary	days since last pregnancy ended	reproduction	pregLtime		
+GS:0000587	average interval between parous births, days	Q5pregsummary	average interval between parous births, days	reproduction	pregbirthavint		
+GS:0000588	interval first and last parous birth, days	Q5pregsummary	interval first and last parous birth, days	reproduction	pregbirthint		
+GS:0000589	gravida: total number of pregnancies	Q5pregsummary	gravida: total number of pregnancies	reproduction	pregcnt		
+GS:0000590	number of pregnancies lasting 37+ wks	Q5pregsummary	number of pregnancies lasting 37+ wks	reproduction	pregfulltermcnt		
+GS:0000591	number of pregnancies <37 wks	Q5pregsummary	number of pregnancies <37 wks	reproduction	pregnonfulltermcnt		
+GS:0000592	number of non-parous pregnancies	Q5pregsummary	number of non-parous pregnancies	reproduction	pregnonparitycnt		
+GS:0000593	number of pregnancies with outcome not known	Q5pregsummary	number of pregnancies with outcome not known	reproduction	pregoutcomenk		
+GS:0000594	number of parous pregnancies	Q5pregsummary	number of parous pregnancies	reproduction	pregparitycnt		
+GS:0000595	number of pregnancies unknown whether parous (missing outcome and gestational le	Q5pregsummary	number of pregnancies unknown whether parous (missing outcome and gestational length)	reproduction	pregparitynkcnt		
+GS:0000596	Ever parous (>0 live/stillbirth, 26+ wks)	Q5pregsummary	Ever parous (>0 live/stillbirth, 26+ wks)	reproduction	pregparous		
+GS:0000597	number of pregnancies unknown whether fullterm (37+wks)	Q5pregsummary	number of pregnancies unknown whether fullterm (37+wks)	reproduction	pregtermnkcnt		
+GS:0000598	Ever used hrt by recruitment date	Q6HRT	Ever used hrt by recruitment date	medication	hrtever		
+GS:0000599	HRT preparation (most) used during current or last continuous period of use (not	Q6HRT	HRT preparation (most) used during current or last continuous period of use (not truncated to age_t)	medication	hrtprep		
+GS:0000600	Hormone type (for internal use)	Q6HRT	Hormone type (for internal use)	medication	hrttype		
+GS:0000601	Age first used HRT	Q6HRT_v1old	Age first used HRT	medication	hrt1age_v1old		
+GS:0000602	Age first used other sex hormones	Q6OtherSexHormones	Age first used other sex hormones	medication	otherhormones1age		
+GS:0000603	Age last used other sex hormones	Q6OtherSexHormones	Age last used other sex hormones	medication	otherhormonesLage		
+GS:0000604	Number of other hormone episodes reported	Q6OtherSexHormones	Number of other hormone episodes reported	medication	otherhormonescountall		
+GS:0000605	Ever used other hormones	Q6OtherSexHormones	Ever used other hormones	medication	otherhormonesever		
+GS:0000606	Minimum years of other sex hormone use	Q6OtherSexHormones	Minimum years of other sex hormone use	medication	otherhormoneslength		
+GS:0000607	OH status	Q6OtherSexHormones	OH status	medication	otherhormonesstatus		
+GS:0000608	Source of other hormone status	Q6OtherSexHormones	Source of other hormone status	medication	otherhormonesstatussource		
+GS:0000609	years since stopped using OH	Q6OtherSexHormones	years since stopped using OH	medication	otherhormonesstopyears		
+GS:0000610	Age first used hormonal contraception	Q6hc	Age first used hormonal contraception	medication	hc1age		
+GS:0000611	Age last used hormonal contraception	Q6hc	Age last used hormonal contraception	medication	hcLage		
+GS:0000612	Number of hormonal contraception episodes reported	Q6hc	Number of hormonal contraception episodes reported	medication	hccountall		
+GS:0000613	Ever used other hormonal contraception	Q6hc	Ever used other hormonal contraception	medication	hcever		
+GS:0000614	Minimum years of hormonal contraception use	Q6hc	Minimum years of hormonal contraception use	medication	hclength		
+GS:0000615	HC status	Q6hc	HC status	medication	hcstatus		
+GS:0000616	years since stopped using HC	Q6hc	years since stopped using HC	medication	hcstopyears		
+GS:0000617	Ever used OC by recruitment date	Q6oc	Ever used OC by recruitment date	medication	ocever		
+GS:0000618	OC preparation (most) used during current or last continuous period of use (not	Q6oc	OC preparation (most) used during current or last continuous period of use (not truncated to age_t)	medication	ocprep		
+GS:0000619	Any drug treatment for breast cancer 1	Q7BrcaTreatment	Any drug treatment for breast cancer 1	medication	brcact		
+GS:0000620	Tamoxifen treatment for breast cancer 1	Q7BrcaTreatment	Tamoxifen treatment for breast cancer 1	medication	brcacttamox		
+GS:0000621	Had radiotherapy treatment for breast cancer 1	Q7BrcaTreatment	Had radiotherapy treatment for breast cancer 1	radiological interventions	brcart		
+GS:0000622	Had surgery treatment for breast cancer 1	Q7BrcaTreatment	Had surgery treatment for breast cancer 1	surgical interventions	brcasurg		
+GS:0000623	Type of breast cancer surgery	Q7BrcaTreatment	Type of breast cancer surgery	surgical interventions	brcasurgtype		
+GS:0000624	bilateral mastectomy before study entry	Q7OtherBreastSurgery	bilateral mastectomy before study entry	surgical interventions	brbilat		
+GS:0000625	Other breast surgery	Q7OtherBreastSurgery	Other breast surgery	surgical interventions	brsurg		
+GS:0000626	number of diagnoses of benign breast disease	Q7brbendisease	number of diagnoses of benign breast disease	diseases	brbenN		
+GS:0000627	past diagnosis of benign breast disease	Q7brbendisease	past diagnosis of benign breast disease	diseases	brbendis		
+GS:0000628	first known age of diagnosis of benign breast disease	Q7brbendisease	first known age of diagnosis of benign breast disease	diseases	brbendisage		
+GS:0000629	age of 1st diagnosis of benign breast disease	Q7brbendisease	age of 1st diagnosis of benign breast disease	diseases	brbendisage1		
+GS:0000630	First age at mammogram as at baseline	Q7mammogram	First age at mammogram as at baseline	diagnostic interventions	R1mam1age		
+GS:0000631	Age at first abnormal mammogram, as at baseline	Q7mammogram	Age at first abnormal mammogram, as at baseline	diagnostic interventions	R1mamabnormage		
+GS:0000632	Ever abnormal mammogram, as at baseline	Q7mammogram	Ever abnormal mammogram, as at baseline	diagnostic interventions	R1mamabnormever		
+GS:0000633	Ever had a mammogram, as at baseline	Q7mammogram	Ever had a mammogram, as at baseline	diagnostic interventions	R1mamever		
+GS:0000634	Had mammogram in last 3 years, as at baseline	Q7mammogram	Had mammogram in last 3 years, as at baseline	diagnostic interventions	R1mamrec3yr		
+GS:0000635	Most recent age at mammogram as at baseline	Q7mammogram	Most recent age at mammogram as at baseline	diagnostic interventions	R1mamrecage		
+GS:0000636	Was most recent mammogram for screening, as at baseline	Q7mammogram	Was most recent mammogram for screening, as at baseline	diagnostic interventions	R1mamrecscreen		
+GS:0000637	Most recent year at mammogram as at baseline	Q7mammogram	Most recent year at mammogram as at baseline	diagnostic interventions	R1mamrecyr		
+GS:0000638	Number of times had mammogram, as at baseline	Q7mammogram	Number of times had mammogram, as at baseline	diagnostic interventions	R1mamtotal		
+GS:0000639	Had eating disorder, lost weight, BMI<17.5	Q8EatingDis	Had eating disorder, lost weight, BMI<17.5	psychological distress and emotions	eatingdislowbmi		
+GS:0000640	Age at onset of eating disorder if lost weight etc (see eatingdislowbmi definiti	Q8EatingDis	Age at onset of eating disorder if lost weight etc (see eatingdislowbmi definition)	psychological distress and emotions	eatingdislowbmi_age		
+GS:0000641	Lowest BMI due to an eatingdisorder	Q8EatingDis	Lowest BMI due to an eatingdisorder	psychological distress and emotions	eatingdislowestBMI		
+GS:0000642	How long lost periods for, months	Q8EatingDis	How long lost periods for, months	psychological distress and emotions	eatingdisnoperiods		
+GS:0000643	Had an eating disorder	Q8EatingDis	Had an eating disorder	psychological distress and emotions	eatingdisorder		
+GS:0000644	Weight before onset of eating disorder	Q8EatingDis	Weight before onset of eating disorder	weight	eatingdiswtbefore		
+GS:0000645	Weight after gain due to eating disorder	Q8EatingDis	Weight after gain due to eating disorder	weight	eatingdiswtgain		
+GS:0000646	Weight after loss due to eating disorder	Q8EatingDis	Weight after loss due to eating disorder	weight	eatingdiswtlost		
+GS:0000647	Age saw doctor for eating disorder	Q8EatingDis - missing	Age saw doctor for eating disorder	psychological interventions	eatingdisdrage		
+GS:0000648	Had an eating disorder, lost weight subdivided into further groups	Q8EatingDis - missing	Had an eating disorder, lost weight subdivided into further groups	psychological distress and emotions	eatingdisgroup		
+GS:0000649	Age first lost periods due to eating disorder	Q8EatingDis - missing	Age first lost periods due to eating disorder	signs and symptoms	eatingdispage		
+GS:0000650	type of eating disorder	Q8EatingDis - missing	type of eating disorder	psychological distress and emotions	eatingdistext		
+GS:0000651	Whether weight changed due to eating disorder, gained weight, lost weight, staye	Q8EatingDis - missing	Whether weight changed due to eating disorder, gained weight, lost weight, stayed same	weight	eatingdiswtchange		
+GS:0000652	First known age regularly used aspirin	Q8analgesics	First known age regularly used aspirin	medication	asp1age		
+GS:0000653	Last known age of regular aspirin use	Q8analgesics	Last known age of regular aspirin use	medication	aspLage		
+GS:0000654	Ever used aspirin regularly	Q8analgesics	Ever used aspirin regularly	medication	aspever		
+GS:0000655	Have you taken aspirin (products) in the last 7 days	Q8analgesics	Have you taken aspirin (products) in the last 7 days	medication	asplastwk		
+GS:0000656	Number of days taken aspirin in the last 7 days	Q8analgesics	Number of days taken aspirin in the last 7 days	medication	asplastwkdays		
+GS:0000657	Total length of known regular aspirin use	Q8analgesics	Total length of known regular aspirin use	medication	asplength		
+GS:0000658	current status for regular aspirin use	Q8analgesics	current status for regular aspirin use	medication	aspstatus		
+GS:0000659	years since stopped using aspirin regularly	Q8analgesics	years since stopped using aspirin regularly	medication	aspstopyears		
+GS:0000660	First known age regularly used ibuprofen	Q8analgesics	First known age regularly used ibuprofen	medication	ibu1age		
+GS:0000661	Last known age of regular ibuprofen use	Q8analgesics	Last known age of regular ibuprofen use	medication	ibuLage		
+GS:0000662	Ever used ibuprofen regularly	Q8analgesics	Ever used ibuprofen regularly	medication	ibuever		
+GS:0000663	Have you taken ibuprofen (products) in the last 7 days	Q8analgesics	Have you taken ibuprofen (products) in the last 7 days	medication	ibulastwk		
+GS:0000664	Number of days taken ibuprofen in the last 7 days	Q8analgesics	Number of days taken ibuprofen in the last 7 days	medication	ibulastwkdays		
+GS:0000665	Total length of known regular ibuprofen use	Q8analgesics	Total length of known regular ibuprofen use	medication	ibulength		
+GS:0000666	current status for regular ibuprofen use	Q8analgesics	current status for regular ibuprofen use	medication	ibustatus		
+GS:0000667	years since stopped using ibuprofen regularly	Q8analgesics	years since stopped using ibuprofen regularly	medication	ibustopyears		
+GS:0000668	First known age regularly used painkillers	Q8analgesics	First known age regularly used painkillers	medication	paink1age		
+GS:0000669	Last known age of regular painkillers use	Q8analgesics	Last known age of regular painkillers use	medication	painkLage		
+GS:0000670	Ever used painkillers regularly	Q8analgesics	Ever used painkillers regularly	medication	painkever		
+GS:0000671	Have you taken painkillers (products) in the last 7 days	Q8analgesics	Have you taken painkillers (products) in the last 7 days	medication	painklastwk		
+GS:0000672	Number of days taken painkillers in the last 7 days	Q8analgesics	Number of days taken painkillers in the last 7 days	medication	painklastwkdays		
+GS:0000673	Total length of known regular painkillers use	Q8analgesics	Total length of known regular painkillers use	medication	painklength		
+GS:0000674	current status for regular painkillers use	Q8analgesics	current status for regular painkillers use	medication	painkstatus		
+GS:0000675	years since stopped using painkillers regularly	Q8analgesics	years since stopped using painkillers regularly	medication	painkstopyears		
+GS:0000676	Ever taken calcium supplements	Q8drugssupplements	Ever taken calcium supplements	dietary history	suppcalcium		
+GS:0000677	Codliver in last 7 days	Q8drugssupplements	Codliver in last 7 days	dietary history	suppcodliver		
+GS:0000678	Ever taken folic acid supplements	Q8drugssupplements	Ever taken folic acid supplements	dietary history	suppfolic		
+GS:0000679	Ever taken melatonin supplements	Q8drugssupplements	Ever taken melatonin supplements	dietary history	suppmelatonin		
+GS:0000680	Multivitamin supplement in the last 7 days	Q8drugssupplements	Multivitamin supplement in the last 7 days	dietary history	suppmultivit		
+GS:0000681	Other vitamin supplement in the last 7 days	Q8drugssupplements	Other vitamin supplement in the last 7 days	dietary history	suppothervit		
+GS:0000682	Ever taken vitamin D supplements	Q8drugssupplements	Ever taken vitamin D supplements	dietary history	suppvitd		
+GS:0000683	Total number of years of vitamin D supplement use	Q8drugssupplements	Total number of years of vitamin D supplement use	dietary history	suppvitdyrs		
+GS:0000684	Any vitamin supplement in the last 7 days	Q8drugssupplements	Any vitamin supplement in the last 7 days	dietary history	suppvitlastwk		
+GS:0000685	Ever had an eating disorder	Q8EatingDis	Ever had an eating disorder	psychological distress and emotions	eatingdisever		
+GS:0000686	Youngest age at onset of eating disorder	Q8EatingDis	Youngest age at onset of eating disorder	psychological distress and emotions	eatingdisfromage		
+GS:0000687	Registered as blind or partially sighted	Q8seriousillness	Registered as blind or partially sighted	visual system diseases	illnessblind		
+GS:0000688	Previous diagnosis of diabetes	Q8seriousillness	Previous diagnosis of diabetes	endocrine system diseases	illnessdiabetes		
+GS:0000689	Age at diagnosis of diabetes	Q8seriousillness	Age at diagnosis of diabetes	endocrine system diseases	illnessdiabetesage		
+GS:0000690	Insulin-treated diabetes	Q8seriousillness	Insulin-treated diabetes	endocrine system diseases	illnessdiabetesinsulin		
+GS:0000691	Previous diagnosis of gallstones	Q8seriousillness	Previous diagnosis of gallstones	urinary system diseases	illnessgallst		
+GS:0000692	Ever had cholestectomy	Q8seriousillness	Ever had cholestectomy	surgical interventions	illnessgallsurg		
+GS:0000693	Ever broken your hip	Q8seriousillness	Ever broken your hip	injuries	illnesship		
+GS:0000694	Previous diagnosis of thyroid disease/problems	Q8seriousillness	Previous diagnosis of thyroid disease/problems	endocrine system diseases	illnessthyroid		
+GS:0000695	ever smoked cigarettes, at R1	Smoking_v1	ever smoked cigarettes, at R1	tobacco use history	R1smoking		
+GS:0000696	current cigarettes smoked per day, assessed at R1	Smoking_v1	current cigarettes smoked per day, at R1	tobacco use history	R1smokingcigs		
+GS:0000697	cumulative cigarettes smoked up to R1	Smoking_v1	cumulative cigarettes smoked up to R1	tobacco use history	R1smokingcigscum		
+GS:0000698	current cigarette smoking status, at R1	Smoking_v1	current cigarette smoking status, at R1	tobacco use history	R1smokingcurr		
+GS:0000699	was cigarette smoke inhaled, at R1	Smoking_v1	was cigarette smoke inhaled, at R1	tobacco use history	R1smokinginhale		
+GS:0000700	pack years of smoking, at R1	Smoking_v1	pack years of smoking, at R1	tobacco use history	R1smokingpackyears		
+GS:0000701	smoked during first pregnancy, at R1	Smoking_v1	smoked during first pregnancy, at R1	tobacco use history	R1smokingpregnancy		
+GS:0000702	smoking status, at R1	Smoking_v1	smoking status, at R1	tobacco use history	R1smokingstatus		
+GS:0000703	years since stopped smoking, at R1	Smoking_v1	years since stopped smoking, at R1	tobacco use history	R1smokingstopyears		
+GS:0000704	ever temporarily stop smoking and restart, at R1	Smoking_v1	ever temporarily stop smoking and restart, at R1	tobacco use history	R1smokingtempstop		
+GS:0000705	years of smoking, at R1	Smoking_v1	years of smoking, at R1	tobacco use history	R1smokingyears		
+GS:0000706	ever smoked cigarettes, at R2	Smoking_v1	ever smoked cigarettes, at R2	tobacco use history	R2smoking		
+GS:0000707	current cigarettes smoked per day, at R2	Smoking_v1	current cigarettes smoked per day, at R2	tobacco use history	R2smokingcigs		
+GS:0000708	cumulative cigarettes smoked up to R2	Smoking_v1	cumulative cigarettes smoked up to R2	tobacco use history	R2smokingcigscum		
+GS:0000709	current cigarette smoking status at R2	Smoking_v1	current cigarette smoking status at R2	tobacco use history	R2smokingcurr		
+GS:0000710	pack years of smoking, at R2	Smoking_v1	pack years of smoking, at R2	tobacco use history	R2smokingpackyears		
+GS:0000711	smoking status, at R2	Smoking_v1	smoking status, at R2	tobacco use history	R2smokingstatus		
+GS:0000712	age stopped smoking, at R2	Smoking_v1	age stopped smoking, at R2	tobacco use history	R2smokingstopage		
+GS:0000713	years since stopped smoking, at R2	Smoking_v1	years since stopped smoking, at R2	tobacco use history	R2smokingstopyears		
+GS:0000714	years of smoking, at R2	Smoking_v1	years of smoking, at R2	tobacco use history	R2smokingyears		
+GS:0000715	ever smoked cigarettes, at R4	Smoking_v1	ever smoked cigarettes, at R4	tobacco use history	R4smoking		
+GS:0000716	current cigarettes smoked per day, at R4	Smoking_v1	current cigarettes smoked per day, at R4	tobacco use history	R4smokingcigs		
+GS:0000717	cumulative cigarettes smoked up to R4	Smoking_v1	cumulative cigarettes smoked up to R4	tobacco use history	R4smokingcigscum		
+GS:0000718	current cigarette smoking status, at R4	Smoking_v1	current cigarette smoking status at R4	tobacco use history	R4smokingcurr		
+GS:0000719	pack years of smoking, at R4	Smoking_v1	pack years of smoking, at R4	tobacco use history	R4smokingpackyears		
+GS:0000720	smoking status, at R4	Smoking_v1	smoking status, at R4	tobacco use history	R4smokingstatus		
+GS:0000721	age stopped smoking, at R4	Smoking_v1	age stopped smoking, at R4	tobacco use history	R4smokingstopage		
+GS:0000722	years since stopped smoking, at R4	Smoking_v1	years since stopped smoking, at R4	tobacco use history	R4smokingstopyears		
+GS:0000723	ever ecigarette or vape user, at R4	Smoking_v1	ever ecigarette or vape user, at R4	tobacco use history	R4smokingvape		
+GS:0000724	current ecigarette or vape user, at R4	Smoking_v1	current ecigarette or vape user, at R4	tobacco use history	R4smokingvapecurr		
+GS:0000725	age started smoking ecigarettes or vape, at R4	Smoking_v1	age started smoking ecigarettes or vape, at R4	tobacco use history	R4smokingvapestartage		
+GS:0000726	age stopped smoking ecigarettes or vape, at R4	Smoking_v1	age stopped smoking ecigarettes or vape, at R4	tobacco use history	R4smokingvapestopage		
+GS:0000727	years of smoking, at R4	Smoking_v1	years of smoking, at R4	tobacco use history	R4smokingyears		
+GS:0000728	ever smoked cigarettes, at age 55	Smoking_v1	ever smoked cigarettes, at age 55	tobacco use history	smoking_55		
+GS:0000729	cumulative number of cigarettes smoked between ages 16 and 24	Smoking_v1	cumulative number of cigarettes smoked between ages 16 and 24	tobacco use history	smokingcigs16		
+GS:0000730	cumulative number of cigarettes smoked between ages 25 and 49	Smoking_v1	cumulative number of cigarettes smoked between ages 25 and 49	tobacco use history	smokingcigs25		
+GS:0000731	cumulative number of cigarettes smoked aged 50 plus	Smoking_v1	cumulative number of cigarettes smoked aged 50 plus	tobacco use history	smokingcigs50		
+GS:0000732	cumulative cigarettes smoked up to age 55	Smoking_v1	cumulative cigarettes smoked up to age 55	tobacco use history	smokingcigscum_t		
+GS:0000733	current cigarette smoking status, at age 55	Smoking_v1	current cigarette smoking status, at age 55	tobacco use history	smokingcurr_55		
+GS:0000734	age started smoking, updated to latest questionnaire round	Smoking_v1	age started smoking, updated to latest questionnaire round	tobacco use history	smokingstartage		
+GS:0000735	smoking status, at age 55	Smoking_v1	smoking status, at age 55	tobacco use history	smokingstatus_55		
+GS:0000736	age stopped smoking, updated to latest questionnaire round	Smoking_v1	age stopped smoking, updated to latest questionnaire round	tobacco use history	smokingstopage		
+GS:0000737	Age at which exposure is evaluated up to	indexsubj	Age at which exposure is evaluated up to	survey administration	age_t		
+GS:0000738	studyid	indexsubj	studyid	unique identifiers	studyid		
+GS:0000739	Menopausal status at R1	menopause_v1	Menopausal status at R1	reproduction	R1menopause		
+GS:0000740	Menopausal status at R2	menopause_v1	Menopausal status at R2	reproduction	R2menopause		
+GS:0000741	Menopausal status at R3	menopause_v1	Menopausal status at R3	reproduction	R3menopause		
+GS:0000742	Menopausal status at R4	menopause_v1	Menopausal status at R4	reproduction	R4menopause		
+GS:0000743	Age at menopause (R1-R4)	menopause_v1	Age at menopause (R1-R4)	reproduction	meno_age		
+GS:0000744	Age at menopause, including assumed (R1-R4)	menopause_v1	Age at menopause, including assumed (R1-R4)	reproduction	meno_age_est		
+GS:0000745	Lower estimate age at menopause (R1-R4)	menopause_v1	Lower estimate age at menopause (R1-R4)	reproduction	meno_age_l		
+GS:0000746	Upper estimate age at menopause (R1-R4)	menopause_v1	Upper estimate age at menopause (R1-R4)	reproduction	meno_age_u		
+GS:0000747	Menopause (R1-R4) assumption as at meno_last_qage	menopause_v1	Menopause (R1-R4) assumption	reproduction	meno_assumption		
+GS:0000748	Estimated date at menopause (R1-R4)	menopause_v1	Estimated date at menopause (R1-R4)	reproduction	meno_date_est		
+GS:0000749	First age at questionnaire reported postmenopausal	menopause_v1	First age at questionnaire reported postmenopausal	reproduction	meno_first_qage_post		
+GS:0000750	Last age at questionnaire reported premenopausal	menopause_v1	Last age at questionnaire reported premenopausal	reproduction	meno_last_qage_pre		
+GS:0000751	Reason for menopause (R1-R4), detailed	menopause_v1	Reason for menopause (R1-R4), detailed	reproduction	meno_reason		
+GS:0000752	Reason for menopause (R1-R4), 4 cats	menopause_v1	Reason for menopause (R1-R4), 4 cats	reproduction	meno_reason_cat		
+GS:0000753	having hot flushes before/around menopause	menopause_v1	having hot flushes before/around menopause, from earliest postmenopausal round	signs and symptoms	menohotflush		
+GS:0000754	years periods were irregular before menopause	menopause_v1	years periods were irregular before menopause, from earliest postmenopausal round	reproduction	menoirregyrs		
+GS:0000755	Period regularity before menopause, from earliest postmenopausal round	menopause_v1	Period regularity before menopause, from earliest postmenopausal round	reproduction	menoregbefore		
+GS:0000756	Alcohol_v1						Added as grouping cat
+GS:0000757	NightWorkEpisodes_v1						Added as grouping cat
+GS:0000758	PhysMET_v1						Added as grouping cat
+GS:0000759	Q102nightwork						Added as grouping cat
+GS:0000760	Q11diet						Added as grouping cat
+GS:0000761	Q12physexercise						Added as grouping cat
+GS:0000762	Q13Deodorant						Added as grouping cat
+GS:0000763	Q13lifestyle						Added as grouping cat
+GS:0000764	Q13sleep						Added as grouping cat
+GS:0000765	Q14Famhistcancer						Added as grouping cat
+GS:0000766	Q14Parentheight						Added as grouping cat
+GS:0000767	Q1demogr						Added as grouping cat
+GS:0000768	Q2birth						Added as grouping cat
+GS:0000769	Q3bodysize						Added as grouping cat
+GS:0000770	Q3breastsize						Added as grouping cat
+GS:0000771	Q4OperationsOvaryUterus						Added as grouping cat
+GS:0000772	Q4OtherDiseasesOvaryUterus						Added as grouping cat
+GS:0000773	Q4cyclepattern						Added as grouping cat
+GS:0000774	Q4menstrualcycles						Added as grouping cat
+GS:0000775	Q5pregdetails						Added as grouping cat
+GS:0000776	Q5pregsummary						Added as grouping cat
+GS:0000777	Q6HRT						Added as grouping cat
+GS:0000778	Q6HRT_v1old						Added as grouping cat
+GS:0000779	Q6OtherSexHormones						Added as grouping cat
+GS:0000780	Q6hc						Added as grouping cat
+GS:0000781	Q6oc						Added as grouping cat
+GS:0000782	Q7BrcaTreatment						Added as grouping cat
+GS:0000783	Q7OtherBreastSurgery						Added as grouping cat
+GS:0000784	Q7brbendisease						Added as grouping cat
+GS:0000785	Q7mammogram						Added as grouping cat
+GS:0000786	Q8EatingDis						Added as grouping cat
+GS:0000787	Q8EatingDis - missing						Added as grouping cat
+GS:0000788	Q8analgesics						Added as grouping cat
+GS:0000789	Q8drugssupplements						Added as grouping cat
+GS:0000790	Q8seriousillness						Added as grouping cat
+GS:0000791	Smoking_v1						Added as grouping cat
+GS:0000792	indexsubj						Added as grouping cat
+GS:0000793	menopause_v1						Added as grouping cat

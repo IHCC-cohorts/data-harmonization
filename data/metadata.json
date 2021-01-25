@@ -71,6 +71,30 @@
         "target_enrollment": 500000,
         "website": "https://www.genomicsengland.co.uk/"
     },
+    "GS": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": false,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Generations Study",
+        "countries": [
+            "UK",
+            "England",
+            "Scotland",
+            "Wales",
+            "Northern Ireland",
+            "Isle of Man",
+            "Channel Islands"
+        ],
+        "current_enrollment": 113000,
+        "enrollment_period": "2003:2015",
+        "irb_approved_data_sharing": true,
+        "pi_lead": "Anthony Swerdlow",
+        "target_enrollment": 100000,
+        "website": "http://www.breakthroughgenerations.org.uk/home"
+    },
     "KOGES": {
         "available_data_types": {
             "biospecimens": true,

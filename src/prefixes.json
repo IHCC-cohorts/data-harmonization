@@ -12,6 +12,7 @@
         "GE": "https://purl.ihccglobal.org/GE_",
         "GECKO": "http://purl.obolibrary.org/obo/GECKO_",
         "GO": "http://purl.obolibrary.org/obo/GO_",
+        "GS": "https://purl.ihccglobal.org/GS_",
         "HP": "http://purl.obolibrary.org/obo/HP_",
         "IAO": "http://purl.obolibrary.org/obo/IAO_",
         "IHCC": "https://purl.ihccglobal.org/",
