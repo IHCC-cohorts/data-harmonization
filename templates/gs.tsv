@@ -378,8 +378,8 @@ GS:0000376	first diagnosis date of prostate cancer in half brother, at entry	Q14
 GS:0000377	Diagnosis of prostate cancer in sib of unknown gender (error!), at entry	Q14Famhistcancer	Number of sibs nk gender with prostate cancer (error!), at entry	family history of disease	famprostatesibnkN		
 GS:0000378	Diagnosis of prostate cancer in son, at entry	Q14Famhistcancer	Number of sons with prostate cancer, at entry	family history of disease	famprostatesonN		
 GS:0000379	first diagnosis date of prostate cancer in son, at entry	Q14Famhistcancer	first diagnosis date of prostate cancer in son, at entry	family history of disease	famprostatesondate		
-GS:0000380	Father's height in cm	Q14Parentheight	Father's height in cm		pheightdadcm		
-GS:0000381	Mother's height in cm	Q14Parentheight	Mother's height in cm		pheightmumcm		
+GS:0000380	Father's height in cm	Q14Parentheight	Father's height in cm	height	pheightdadcm		
+GS:0000381	Mother's height in cm	Q14Parentheight	Mother's height in cm	height	pheightmumcm		
 GS:0000382	Marital status at R2	Q1demogr	Marital status at R2	marital status	R2maritalstatus		
 GS:0000383	Age at completion questionnaire	Q1demogr	Age at completion questionnaire	age/birthdate	ageatcompl		
 GS:0000384	Age at entry to study	Q1demogr	Age at entry to study	age/birthdate	ageatentry		
@@ -402,17 +402,17 @@ GS:0000400	Date receipt questionnaire	Q1demogr	Date receipt questionnaire	date a
 GS:0000401	Region of residence at study entry	Q1demogr	Region of residence at study entry	location	region		
 GS:0000402	Acorn-based SES at study entry	Q1demogr	Acorn-based SES at study entry	socio-demographic and economic characteristics	ses		
 GS:0000403	medical or physical abnormalities when born	Q2birth	medical or physical abnormalities when born	congenital and genetic disorders	birthabnormal		
-GS:0000404	delivered by caesarean	Q2birth	delivered by caesarean		birthcaes		
+GS:0000404	delivered by caesarean	Q2birth	delivered by caesarean	reproduction	birthcaes		
 GS:0000405	birth order, from reported number pregnancies before self	Q2birth	birth order, from reported number pregnancies before self	family and household structure	birthorderpregs		
 GS:0000406	birth order, calculated from number of older sibs	Q2birth	birth order, calculated from number of older sibs	family and household structure	birthordersibs		
-GS:0000407	nursed in incubator or special care baby unit	Q2birth	nursed in incubator or special care baby unit		birthscbu		
-GS:0000408	birthweight in grams, self report or mum	Q2birth	birthweight in grams, self report or mum		birthweight		
-GS:0000409	Birthweight, relative measure	Q2birth	Birthweight, relative measure		birthweightrel		
+GS:0000407	nursed in incubator or special care baby unit	Q2birth	nursed in incubator or special care baby unit	reproduction	birthscbu		
+GS:0000408	birthweight in grams, self report or mum	Q2birth	birthweight in grams, self report or mum	reproduction	birthweight		
+GS:0000409	Birthweight, relative measure	Q2birth	Birthweight, relative measure	reproduction	birthweightrel		
 GS:0000410	mother had complications during pregancy	Q2birth	mother had complications during pregancy	family history of disease	gestcomp		
-GS:0000411	Fathers age at birth of participant	Q2birth	Fathers age at birth of participant		gestdadage		
+GS:0000411	Fathers age at birth of participant	Q2birth	Fathers age at birth of participant	reproduction	gestdadage		
 GS:0000412	mum pre-eclampsia or eclampsia, self report or mum	Q2birth	mum pre-eclampsia or eclampsia, self report or mum	family history of disease	gesteclamp		
-GS:0000413	Mothers age at birth of participant	Q2birth	Mothers age at birth of participant		gestmumage		
-GS:0000414	gestation period in weeks,self report or mum	Q2birth	gestation period in weeks,self report or mum		gestwks		
+GS:0000413	Mothers age at birth of participant	Q2birth	Mothers age at birth of participant	reproduction	gestmumage		
+GS:0000414	gestation period in weeks,self report or mum	Q2birth	gestation period in weeks,self report or mum	reproduction	gestwks		
 GS:0000415	BMI at Round 2 (wtR2&htnow)	Q3bodysize	BMI at Round 2 (wtR2&htnow)	anthropometry	R2bodysizebmi		
 GS:0000416	BMI at Round 2 (currently pregnant)	Q3bodysize	BMI at Round 2 (currently pregnant)	anthropometry	R2bodysizebmi_preg		
 GS:0000417	Hip circumference at Round 2, cm	Q3bodysize	Hip circumference at Round 2, cm	anthropometry	R2bodysizehip		
@@ -443,7 +443,7 @@ GS:0000441	when was hip measured?	Q3bodysize	when was hip measured?	date and tim
 GS:0000442	best height variable	Q3bodysize	best height variable	height	bodysizeht		
 GS:0000443	height at age 20, cm	Q3bodysize	height at age 20, cm	height	bodysizeht20		
 GS:0000444	current height, cm	Q3bodysize	current height, cm	height	bodysizehtnow		
-GS:0000445	age that bodysizeht refers to	Q3bodysize	age that bodysizeht refers to	survey administration	bodysizehtwhen		
+GS:0000445	age that bodysizeht refers to	Q3bodysize	age that bodysizeht refers to	date and time-related information	bodysizehtwhen		
 GS:0000446	waist circumference, cm	Q3bodysize	waist circumference, cm	anthropometry	bodysizewaist		
 GS:0000447	waist circumference, cm (currently pregnant)	Q3bodysize	waist circumference, cm (currently pregnant)	anthropometry	bodysizewaist_preg		
 GS:0000448	when was waist measured	Q3bodysize	when was waist measured	date and time-related information	bodysizewaistwhen		
@@ -515,7 +515,7 @@ GS:0000513	bmi at start of first pregnancy	Q5pregdetails	bmi at start of first p
 GS:0000514	boy at first pregnancy	Q5pregdetails	boy at first pregnancy	reproduction	preg1boy		
 GS:0000515	girl at first pregnancy	Q5pregdetails	girl at first pregnancy	reproduction	preg1girl		
 GS:0000516	had hormones to stop milk flow yes/no following first pregnancy	Q5pregdetails	had hormones to stop milk flow yes/no following first pregnancy	medication	preg1horm		
-GS:0000517	pre-eclampsia at first pregnancy	Q5pregdetails	pre-eclampsia at first pregnancy	cardiovascular diseases	preg1pclsia		
+GS:0000517	pre-eclampsia at first pregnancy	Q5pregdetails	pre-eclampsia at first pregnancy	reproduction|signs and symptoms	preg1pclsia		
 GS:0000518	Weight at start of first pregnancy, only stones reported, not lbs	Q5pregdetails	only stones reported, not lbs	weight	preg1stoneonly		
 GS:0000519	Outcome of 1st pregnancy	Q5pregdetails	Outcome of 1st pregnancy	reproduction	preg1type		
 GS:0000520	vomiting at first pregnancy	Q5pregdetails	vomiting at first pregnancy	signs and symptoms	preg1vom		
@@ -525,7 +525,7 @@ GS:0000523	Gender of last pregnancy	Q5pregdetails	Gender of last pregnancy	repro
 GS:0000524	bmi at start of last pregnancy	Q5pregdetails	bmi at start of last pregnancy	anthropometry	pregLbmi		
 GS:0000525	boy at last pregnancy	Q5pregdetails	boy at last pregnancy	reproduction	pregLboy		
 GS:0000526	girl at last pregnancy	Q5pregdetails	girl at last pregnancy	reproduction	pregLgirl		
-GS:0000527	pre-eclampsia at last pregnancy	Q5pregdetails	pre-eclampsia at last pregnancy	cardiovascular diseases	pregLpclsia		
+GS:0000527	pre-eclampsia at last pregnancy	Q5pregdetails	pre-eclampsia at last pregnancy	reproduction|signs and symptoms	pregLpclsia		
 GS:0000528	vomiting at last pregnancy	Q5pregdetails	vomiting at last pregnancy	signs and symptoms	pregLvom		
 GS:0000529	Weight at start of last pregnancy, kgs	Q5pregdetails	Weight at start of last pregnancy, kgs	weight	pregLwt		
 GS:0000530	ever having breastfed	Q5pregdetails	ever having breastfed	reproduction	pregbf		
@@ -542,10 +542,10 @@ GS:0000540	number of pregnancies with hormones to stop milk flow	Q5pregdetails	n
 GS:0000541	Total reportedweeks of pregnancy, regardless of outcome	Q5pregdetails	Total reportedweeks of pregnancy, regardless of outcome	reproduction	preglength		
 GS:0000542	ever had livebirth of twins	Q5pregdetails	ever had livebirth of twins	reproduction	preglivetwin		
 GS:0000543	number of livebirths of twins	Q5pregdetails	number of livebirths of twins	reproduction	preglivetwincnt		
-GS:0000544	ever had pregnancy with pre-eclampsia	Q5pregdetails	ever had pregnancy with pre-eclampsia	cardiovascular diseases	pregpclsia		
-GS:0000545	age at first pregnancy with preeclampsia	Q5pregdetails	age at first pregnancy with preeclampsia	cardiovascular diseases	pregpclsia1age		
-GS:0000546	age at last pregnancy with preeclampsia	Q5pregdetails	age at last pregnancy with preeclampsia	cardiovascular diseases	pregpclsiaLage		
-GS:0000547	number of pregnancies with pre-eclampsia	Q5pregdetails	number of pregnancies with pre-eclampsia	cardiovascular diseases	pregpclsiacnt		
+GS:0000544	ever had pregnancy with pre-eclampsia	Q5pregdetails	ever had pregnancy with pre-eclampsia	reproduction|signs and symptoms	pregpclsia		
+GS:0000545	age at first pregnancy with preeclampsia	Q5pregdetails	age at first pregnancy with preeclampsia	reproduction|signs and symptoms	pregpclsia1age		
+GS:0000546	age at last pregnancy with preeclampsia	Q5pregdetails	age at last pregnancy with preeclampsia	reproduction|signs and symptoms	pregpclsiaLage		
+GS:0000547	number of pregnancies with pre-eclampsia	Q5pregdetails	number of pregnancies with pre-eclampsia	reproduction|signs and symptoms	pregpclsiacnt		
 GS:0000548	Ever had pregnancy with triplets or higher order	Q5pregdetails	Ever had pregnancy with triplets or higher order	reproduction	pregtriplet		
 GS:0000549	ever had pregnancy with twins	Q5pregdetails	ever had pregnancy with twins	reproduction	pregtwin		
 GS:0000550	number of pregnancies with twins	Q5pregdetails	number of pregnancies with twins	reproduction	pregtwincnt		
@@ -624,10 +624,10 @@ GS:0000622	Had surgery treatment for breast cancer 1	Q7BrcaTreatment	Had surgery
 GS:0000623	Type of breast cancer surgery	Q7BrcaTreatment	Type of breast cancer surgery	surgical interventions	brcasurgtype		
 GS:0000624	bilateral mastectomy before study entry	Q7OtherBreastSurgery	bilateral mastectomy before study entry	surgical interventions	brbilat		
 GS:0000625	Other breast surgery	Q7OtherBreastSurgery	Other breast surgery	surgical interventions	brsurg		
-GS:0000626	number of diagnoses of benign breast disease	Q7brbendisease	number of diagnoses of benign breast disease	reproductive system diseases	brbenN		
-GS:0000627	past diagnosis of benign breast disease	Q7brbendisease	past diagnosis of benign breast disease	reproductive system diseases	brbendis		
-GS:0000628	first known age of diagnosis of benign breast disease	Q7brbendisease	first known age of diagnosis of benign breast disease	reproductive system diseases	brbendisage		
-GS:0000629	age of 1st diagnosis of benign breast disease	Q7brbendisease	age of 1st diagnosis of benign breast disease	reproductive system diseases	brbendisage1		
+GS:0000626	number of diagnoses of benign breast disease	Q7brbendisease	number of diagnoses of benign breast disease	diseases	brbenN		
+GS:0000627	past diagnosis of benign breast disease	Q7brbendisease	past diagnosis of benign breast disease	diseases	brbendis		
+GS:0000628	first known age of diagnosis of benign breast disease	Q7brbendisease	first known age of diagnosis of benign breast disease	diseases	brbendisage		
+GS:0000629	age of 1st diagnosis of benign breast disease	Q7brbendisease	age of 1st diagnosis of benign breast disease	diseases	brbendisage1		
 GS:0000630	First age at mammogram as at baseline	Q7mammogram	First age at mammogram as at baseline	diagnostic interventions	R1mam1age		
 GS:0000631	Age at first abnormal mammogram, as at baseline	Q7mammogram	Age at first abnormal mammogram, as at baseline	diagnostic interventions	R1mamabnormage		
 GS:0000632	Ever abnormal mammogram, as at baseline	Q7mammogram	Ever abnormal mammogram, as at baseline	diagnostic interventions	R1mamabnormever		
