@@ -1,0 +1,72 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "IHCC Metadata",
+
+	"properties": {
+		"available_data_types": {
+			"type": "object",
+			"properties": {
+				"biospecimens": {
+					"type": "boolean"
+				},
+				"environmental_data": {
+					"type": "boolean"
+				},
+				"genomic_data": {
+					"type": "boolean"
+				},
+				"phenotypic_clinical_data": {
+					"type": "boolean"
+				}
+			},
+			"required": [
+				"biospecimens",
+				"environmental_data",
+				"genomic_data",
+				"phenotypic_clinical_data"
+			]
+		},
+		"cohort_name": {
+			"type": "string"
+		},
+		"countries": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"current_enrollment": {
+			"type": "number"
+		},
+		"enrollment_period": {
+			"type": "string",
+			"pattern": "^([0-9]{4}|Ongoing):([0-9]{4}|Ongoing)$"
+		},
+		"irb_approved_data_sharing": {
+			"type": "boolean"
+		},
+		"pi_lead": {
+			"type": "string"
+		},
+		"target_enrollment": {
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"website": {
+			"type": "string"
+		}
+	},
+	"required": [
+		"available_data_types",
+		"cohort_name",
+		"countries",
+		"current_enrollment",
+		"enrollment_period",
+		"irb_approved_data_sharing",
+		"pi_lead",
+		"target_enrollment",
+		"website"
+	]
+}
