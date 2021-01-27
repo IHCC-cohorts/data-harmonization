@@ -12,8 +12,8 @@
 # 2. [Open Google Sheet](./src/workflow.py?action=open)
 # 3. [Run automated mapping for new data dictionary](automated_mapping)
 # 4. [Share Google Sheet with submitter](./src/workflow.py?action=share)
-# 5. [Run automated validation](automated_validation)
-# 6. [Prepare data dictionary for build](prepare_build)
+# 5. [Prepare data dictionary for build](prepare_build)
+# 6. [Run automated validation](automated_validation)
 # 7. [Build data dictionary](all)
 # 8. [View results](build/)
 # 9. [Add data dictionary to Version Control](finalize)
@@ -308,7 +308,7 @@ build/gecko_labels.tsv: build/gecko.owl | build/robot.jar
 	--export $@
 
 # We always get the latest changes before running validation
-build/cogs-problems.tsv: src/validate.py build/terminology.tsv build/gecko_labels.tsv
+build/cogs-problems.tsv: src/validate.py src/metadata-schema.json data/metadata.json build/terminology.tsv build/gecko_labels.tsv
 	python3 $^ $@
 
 .PHONY: automated_validation
