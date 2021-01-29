@@ -1,40 +1,51 @@
-#!/usr/bin/env bash
+#!/bin/sh
+#
+# Given an URL path, return an HTTP 301 to GitHub or a 404.
+# Can also be called as a CGI script, which expects a PATH_INFO.
 
-#set -e
+PATH_INFO=${PATH_INFO=$1}
+GITHUB="https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization"
+LOCATION=""
 
-VERSION_IRI=$1
-DATE=$(echo "$VERSION_IRI" |grep -Eo '[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}' )
-DATA_DICT=$(echo $VERSION_IRI | sed 's:.*/::')
-DATA_DICT_PATH="data_dictionaries/$DATA_DICT"
+# Determine PURL type: latest or versioned.
+LATEST=$(expr "${PATH_INFO}" : '^/[[:alpha:]]\+.owl$')
+VERSIONED=$(expr "${PATH_INFO}" : '^/[[:alpha:]]\+/releases/[[:digit:]]\+-[[:digit:]]\+-[[:digit:]]\+/[[:alpha:]]\+.owl$')
 
-if git rev-parse --git-dir > /dev/null 2>&1; then
-  git checkout master --quiet
-  git pull --quiet
-  COMMIT_IDS=$(git log --follow -- "$DATA_DICT_PATH" | grep commit | sed 's/^commit //')
-  for COMMIT_ID in $COMMIT_IDS
-    do
-      if git checkout "$COMMIT_ID" "$DATA_DICT_PATH" --quiet &> /dev/null; then
-        # If we can find the version iri in the file, return the corresponding raw gh URL
-        if grep -q "$VERSION_IRI" "$DATA_DICT_PATH"; then
-          echo "https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/$COMMIT_ID/data_dictionaries/$DATA_DICT";
-          exit 0
-        else
-          DATE_COMMIT=$(git show -s --format='%ci' "$COMMIT_ID" --quiet)
-          # if the date of the commit is newer than the data of the IRI, stop searching - this is highly unlikely to happen
-          if [[ "$DATE" > "$DATE_COMMIT" ]] ;
-          then
-              echo "No version found"
-              exit 1
-          fi
-        fi
-      else
-          echo "No version found (last commit checked did not have the file)"
-          exit 1
-      fi
+# echo ${LATEST} ${VERSIONED} ${PATH_INFO}
+
+# Get the version date for a commit and a file as an integer, e.g. 20210101
+date() {
+   git show $1:data_dictionaries/${2} \
+   | grep -m1 "owl:versionIRI rdf:resource=" \
+   | sed 's/.*\([0-9][0-9][0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9]\).*/\1\2\3/'
+}
+
+if [ ${LATEST} -gt 0 ]; then
+    FILE="$(echo ${PATH_INFO} | sed s:/::)"
+    if [ -f "data_dictionaries/${FILE}" ]; then
+        LOCATION="${GITHUB}/master/data_dictionaries/${FILE}"
+    fi
+elif [ ${VERSIONED} -gt 0 ]; then
+    DATE=$(echo "${PATH_INFO}" | cut -d'/' -f4 | sed 's/-//g')
+    FILE=$(echo "${PATH_INFO}" | cut -d'/' -f5)
+    COMMIT_IDS=$(git log --follow -- "data_dictionaries/${FILE}" | grep commit | sed 's/^commit //')
+    for COMMIT_ID in $COMMIT_IDS
+        do
+            DATE2="$(date ${COMMIT_ID} ${FILE})"
+            if [ "${DATE2}" -eq "${DATE}" ]; then
+                LOCATION="${GITHUB}/${COMMIT_ID}/data_dictionaries/${FILE}"
+                break
+            elif [ "${DATE2}" -lt "${DATE}" ]; then
+                break
+            fi
     done
-else
-  echo "Not a git repo, aborting"
-  exit 1
 fi
-echo "No version found (unknown error)"
-exit 1
+
+if [ "${LOCATION}" ]; then
+    echo "Status: 301 Moved Permanently"
+    echo "Location: ${LOCATION}"
+else
+    echo "Status: 404 Not Found"
+fi
+
+echo "Content-Type: text/html"
