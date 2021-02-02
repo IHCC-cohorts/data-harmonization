@@ -9,10 +9,9 @@ DICTS="../data_dictionaries"
 LOCATION=""
 
 # Determine PURL type: latest or versioned.
+TERM=$(expr "${PATH_INFO}" : '^[[:alpha:]]\+_[[:digit:]]\+$')
 LATEST=$(expr "${PATH_INFO}" : '^[[:alpha:]]\+.owl$')
 VERSIONED=$(expr "${PATH_INFO}" : '^[[:alpha:]]\+/releases/[[:digit:]]\+-[[:digit:]]\+-[[:digit:]]\+/[[:alpha:]]\+.owl$')
-
-# echo ${LATEST} ${VERSIONED} ${PATH_INFO}
 
 # Get the version date for a commit and a file as an integer, e.g. 20210101
 date() {
@@ -21,7 +20,13 @@ date() {
    | sed 's/.*\([0-9][0-9][0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9]\).*/\1\2\3/'
 }
 
-if [ ${LATEST} -gt 0 ]; then
+if [ ${TERM} -gt 0 ]; then
+    ONTOLOGY=$(echo "${PATH_INFO}" | cut -d'_' -f1 | tr '[:upper:]' '[:lower:]')
+    FILE="${DICTS}/${ONTOLOGY}.owl"
+    if [ -f "${DICTS}/${FILE}" ]; then
+        LOCATION="https://registry.ihccglobal.app/ontologies/${ONTOLOGY}/terms?iri=https%3A%2F%2Fpurl.ihccglobal.org%2F${PATH_INFO}"
+    fi
+elif [ ${LATEST} -gt 0 ]; then
     FILE="${PATH_INFO}"
     if [ -f "${DICTS}/${FILE}" ]; then
         LOCATION="${GITHUB}/master/data_dictionaries/${FILE}"
