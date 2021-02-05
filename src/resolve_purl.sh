@@ -5,24 +5,34 @@
 
 PATH_INFO=${QUERY_STRING=$1}
 GITHUB="https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization"
-DICTS="../data_dictionaries"
+ROOT="/opt/data-harmonization"
+DICTS="data_dictionaries"
 LOCATION=""
 
-# Determine PURL type: latest or versioned.
+# We need to run `git` commands from the repository root.
+if [ -d "${ROOT}" ]; then
+    cd "${ROOT}"
+else
+    cd ..
+fi
+
+# Determine PURL type: term, latest, or versioned.
 TERM=$(expr "${PATH_INFO}" : '^[[:alpha:]]\+_[[:digit:]]\+$')
 LATEST=$(expr "${PATH_INFO}" : '^[[:alpha:]]\+.owl$')
 VERSIONED=$(expr "${PATH_INFO}" : '^[[:alpha:]]\+/releases/[[:digit:]]\+-[[:digit:]]\+-[[:digit:]]\+/[[:alpha:]]\+.owl$')
 
 # Get the version date for a commit and a file as an integer, e.g. 20210101
 date() {
-   git show "$1:${DICTS}/${2}" \
-   | grep -m1 "owl:versionIRI rdf:resource=" \
-   | sed 's/.*\([0-9][0-9][0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9]\).*/\1\2\3/'
+    COMMIT_ID=$1
+    FILE=$2
+    git show "${COMMIT_ID}:${DICTS}/${FILE}" \
+    | grep -m1 "owl:versionIRI rdf:resource=" \
+    | sed 's/.*\([0-9][0-9][0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9]\).*/\1\2\3/'
 }
 
 if [ ${TERM} -gt 0 ]; then
     ONTOLOGY=$(echo "${PATH_INFO}" | cut -d'_' -f1 | tr '[:upper:]' '[:lower:]')
-    FILE="${DICTS}/${ONTOLOGY}.owl"
+    FILE="${ONTOLOGY}.owl"
     if [ -f "${DICTS}/${FILE}" ]; then
         LOCATION="https://registry.ihccglobal.app/ontologies/${ONTOLOGY}/terms?iri=https%3A%2F%2Fpurl.ihccglobal.org%2F${PATH_INFO}"
     fi
@@ -39,7 +49,7 @@ elif [ ${VERSIONED} -gt 0 ]; then
         do
             DATE2="$(date ${COMMIT_ID} ${FILE})"
             if [ "${DATE2}" -eq "${DATE}" ]; then
-                LOCATION="${GITHUB}/${COMMIT_ID}/data_dictionaries/${FILE}"
+                LOCATION="${GITHUB}/${COMMIT_ID}/${DICTS}/${FILE}"
                 break
             elif [ "${DATE2}" -lt "${DATE}" ]; then
                 break
