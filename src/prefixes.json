@@ -1,6 +1,7 @@
 {
     "@context": {
         "BFO": "http://purl.obolibrary.org/obo/BFO_",
+        "CANPATH": "https://purl.ihccglobal.org/CANPATH_",
         "CHEBI": "http://purl.obolibrary.org/obo/CHEBI_",
         "CHOP": "https://purl.ihccglobal.org/CHOP_",
         "CL": "http://purl.obolibrary.org/obo/CL_",
@@ -14,6 +15,7 @@
         "GO": "http://purl.obolibrary.org/obo/GO_",
         "GS": "https://purl.ihccglobal.org/GS_",
         "HP": "http://purl.obolibrary.org/obo/HP_",
+        "HUNT": "https://purl.ihccglobal.org/HUNT_",
         "IAO": "http://purl.obolibrary.org/obo/IAO_",
         "IHCC": "https://purl.ihccglobal.org/",
         "KOGES": "https://purl.ihccglobal.org/KOGES_",

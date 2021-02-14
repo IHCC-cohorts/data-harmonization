@@ -1,0 +1,10 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/canpath.owl> a owl:Ontology ;
+    dc:description "To help researchers better understand the causes of chronic diseases like cancer, heart disease and diabetes, and to develop new ways to prevent and treat them." ;
+    dcterms:license "" ;
+    dcterms:rights "" ;
+    dcterms:title "Canadian Partnership for Tomorrow's Health (CanPath)" .
+
