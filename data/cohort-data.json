@@ -1,10 +1,14 @@
 [
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": true,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": false,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "basic_cohort_attributes": {
       "population_data": [
@@ -12,11 +16,13 @@
       ]
     },
     "cohort_name": "Canadian Partnership for Tomorrow's Health",
+    "collected_imaging": [],
     "countries": [
       "Canada"
     ],
     "current_enrollment": 330000,
     "enrollment_period": "2008:Ongoing",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": true,
     "pi_lead": "Philip Awadalla",
     "questionnaire_survey_data": {
@@ -79,6 +85,7 @@
         "Residence"
       ]
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -87,21 +94,30 @@
     "website": "https://canpath.ca/"
   },
   {
+    "active_recruitment": true,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": true,
       "environmental_data": true,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": true
     },
     "biosample": {
       "sample_type": []
     },
     "cohort_name": "Center for Applied Genomics, Children's Hospital of Philadelphia",
+    "collected_imaging": [
+      "MRI",
+      "PET"
+    ],
     "countries": [
       "USA"
     ],
     "current_enrollment": 130000,
     "enrollment_period": "2006:Ongoing",
+    "includes_50_to_60": true,
     "irb_approved_data_sharing": true,
     "laboratory_measures": {
       "genomics": [
@@ -174,6 +190,7 @@
         "Gender"
       ]
     },
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -182,11 +199,15 @@
     "website": "caglab.org"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": true,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "basic_cohort_attributes": {
       "general_variables": [
@@ -204,11 +225,13 @@
       ]
     },
     "cohort_name": "ELSA-Brasil",
+    "collected_imaging": [],
     "countries": [
       "Brazil"
     ],
     "current_enrollment": 15105,
     "enrollment_period": "2008:2010",
+    "includes_50_to_60": true,
     "irb_approved_data_sharing": true,
     "pi_lead": "Paulo Lotufo; Isabela Besenor; Sandhi Barreto; Bruce Duncan; Maria Ines Schimdt; Jose Mill; Rosane Griep; Conceicao Almeida; Maria Del Carmen Molina; and others.",
     "questionnaire_survey_data": {
@@ -282,6 +305,7 @@
         "Religion"
       ]
     },
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -290,11 +314,15 @@
     "website": "www.elsa.org.br"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": true,
       "genomic_data": false,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": false,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "basic_cohort_attributes": {
       "demographic_data": [],
@@ -309,11 +337,13 @@
       ]
     },
     "cohort_name": "Golestan Cohort Study",
+    "collected_imaging": [],
     "countries": [
       "Iran"
     ],
     "current_enrollment": 50000,
     "enrollment_period": "2004:2008",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": true,
     "laboratory_measures": [],
     "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
@@ -363,6 +393,7 @@
         "Residence"
       ]
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -371,11 +402,15 @@
     "website": "https://dceg2.cancer.gov/gemshare/"
   },
   {
+    "active_recruitment": true,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": true,
       "environmental_data": false,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "basic_cohort_attributes": {
       "general_variables": [
@@ -386,11 +421,13 @@
       ]
     },
     "cohort_name": "Genomics England / 100,000 Genomes Project",
+    "collected_imaging": [],
     "countries": [
       "England"
     ],
     "current_enrollment": 100000,
     "enrollment_period": "2013:2018",
+    "includes_50_to_60": true,
     "irb_approved_data_sharing": true,
     "laboratory_measures": [],
     "pi_lead": "Mark Caulfield",
@@ -437,6 +474,7 @@
         "Residence"
       ]
     },
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -445,11 +483,15 @@
     "website": "https://www.genomicsengland.co.uk/"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": true,
       "environmental_data": false,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "basic_cohort_attributes": {
       "population_data": [
@@ -462,6 +504,7 @@
       ]
     },
     "cohort_name": "Generations Study",
+    "collected_imaging": [],
     "countries": [
       "UK",
       "England",
@@ -473,6 +516,7 @@
     ],
     "current_enrollment": 113000,
     "enrollment_period": "2003:2015",
+    "includes_50_to_60": true,
     "irb_approved_data_sharing": true,
     "pi_lead": "Anthony Swerdlow",
     "questionnaire_survey_data": {
@@ -524,6 +568,7 @@
         "Occupation"
       ]
     },
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -532,11 +577,15 @@
     "website": "http://www.breakthroughgenerations.org.uk/home"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": true,
       "environmental_data": true,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "basic_cohort_attributes": {
       "population_data": [
@@ -549,11 +598,13 @@
       ]
     },
     "cohort_name": "HUNT 70+, The HUNT Study",
+    "collected_imaging": [],
     "countries": [
       "Norway"
     ],
     "current_enrollment": 11681,
     "enrollment_period": "2017:2019",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": false,
     "pi_lead": "H\u00e5vard Skjellegrind, Geir Selb\u00e6k",
     "questionnaire_survey_data": {
@@ -636,6 +687,7 @@
         "Religion"
       ]
     },
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information"
     ],
@@ -643,11 +695,15 @@
     "website": "https://www.ntnu.edu/hunt"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": true,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "biosample": {
       "sample_type": [
@@ -656,11 +712,13 @@
       ]
     },
     "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
+    "collected_imaging": [],
     "countries": [
       "South Korea"
     ],
     "current_enrollment": 235000,
     "enrollment_period": "2001:2013",
+    "includes_50_to_60": true,
     "irb_approved_data_sharing": true,
     "pi_lead": "Hyun Young Park",
     "questionnaire_survey_data": {
@@ -699,22 +757,29 @@
         "Family and household structure"
       ]
     },
+    "recontact_in_place": true,
     "target_enrollment": null,
     "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": true,
       "environmental_data": true,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "cohort_name": "Prostate, Lung, Colorectal and Ovarian Cancer Screening Trial",
+    "collected_imaging": [],
     "countries": [
       "U.S."
     ],
     "current_enrollment": 155000,
     "enrollment_period": "1993:2001",
+    "includes_50_to_60": true,
     "irb_approved_data_sharing": true,
     "pi_lead": "Neal Freedman, Paul Pinsky",
     "questionnaire_survey_data": {
@@ -763,6 +828,7 @@
         "Religion"
       ]
     },
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -771,18 +837,24 @@
     "website": "cdas.cancer.gov/plco/"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": false,
       "genomic_data": false,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": false,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
+    "collected_imaging": [],
     "countries": [
       "South Africa"
     ],
     "current_enrollment": 350000,
     "enrollment_period": "1993:Ongoing",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": true,
     "laboratory_measures": [],
     "pi_lead": "Kobus Herbst",
@@ -803,6 +875,7 @@
         "Residence"
       ]
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
@@ -811,11 +884,15 @@
     "website": "http://saprin.mrc.ac.za/"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": true,
       "environmental_data": false,
       "genomic_data": false,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": true,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "biosample": {
       "sample_type": [
@@ -823,6 +900,7 @@
       ]
     },
     "cohort_name": "UKCTOCS Longitudinal Women's Cohort (UKLWC)",
+    "collected_imaging": [],
     "countries": [
       "England",
       "Wales",
@@ -830,6 +908,7 @@
     ],
     "current_enrollment": 202638,
     "enrollment_period": "2001:2005",
+    "includes_50_to_60": true,
     "irb_approved_data_sharing": false,
     "pi_lead": "Prof. Usha Menon",
     "questionnaire_survey_data": {
@@ -876,6 +955,7 @@
         "Occupation"
       ]
     },
+    "recontact_in_place": true,
     "survey_administration": [
       "Date and time-related information"
     ],
@@ -883,11 +963,15 @@
     "website": "http://uklwc.mrcctu.ucl.ac.uk/"
   },
   {
+    "active_recruitment": false,
     "available_data_types": {
       "biospecimens": true,
+      "ehr_data": false,
       "environmental_data": false,
       "genomic_data": true,
-      "phenotypic_clinical_data": true
+      "longitudinal_data": false,
+      "phenotypic_clinical_data": true,
+      "polygenic_risk_scores": false
     },
     "biosample": {
       "sample_type": [
@@ -898,11 +982,13 @@
       ]
     },
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
+    "collected_imaging": [],
     "countries": [
       "South Africa"
     ],
     "current_enrollment": 130000,
     "enrollment_period": "2000:Ongoing",
+    "includes_50_to_60": false,
     "irb_approved_data_sharing": true,
     "laboratory_measures": [],
     "pi_lead": "Willem Hankom",
@@ -937,6 +1023,7 @@
         ]
       }
     },
+    "recontact_in_place": false,
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"

@@ -59,10 +59,12 @@ def main():
         row["Data Sharing"] = data_sharing
         rows.append(row)
 
-    writer = csv.DictWriter(args.csv, lineterminator="\n", fieldnames=csv_headers)
+    writer = csv.DictWriter(
+        args.csv, lineterminator="\n", fieldnames=csv_headers, extrasaction="ignore"
+    )
     writer.writeheader()
     writer.writerows(rows)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
