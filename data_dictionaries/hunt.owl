@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/hunt.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/hunt/releases/2021-01-21/hunt.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/hunt/releases/2021-03-08/hunt.owl"/>
         <dc:description>Older adults &gt;70 years were enrolled as part of the 4th wave of the HUNT study. They were assessed for cognitive function and diagnosed healty, mci or dementia with subtypes.</dc:description>
         <terms:license>https://www.ntnu.edu/documents/140075/1268289603/Guidelines+for+publication+of+research+results+using+HUNT-data.pdf/deef6dd7-09a0-1f50-4a0d-716bde1d2f80?t=1599730098121</terms:license>
         <terms:rights>HUNT, NTNU. Aging and Health.</terms:rights>
@@ -3178,16 +3178,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000166">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the lips look?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsLip</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19832</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000166"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3196,16 +3189,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000167">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the oral mucosal look?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsOralMuc</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19833</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000167"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3214,16 +3200,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000168">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the tongue look?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsTon</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19834</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000168"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3232,16 +3211,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000169">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the area under the tongue look?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsMouFloor</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19835</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000169"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3250,16 +3222,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000170">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the toothbrush move on the inside of the cheek?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsDryMou</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19836</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000170"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3268,16 +3233,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000171">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the gum look?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsGum</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19837</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000171"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3286,16 +3244,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000172">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Own teeth?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsOwnToot</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19838</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000172"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3304,16 +3255,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000173">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the teeth look?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsToot</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19839</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000173"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3322,16 +3266,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000174">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More than 6 teeth in upper jaw?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsTootUpJawN</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19840</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000174"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3340,16 +3277,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000175">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">More than 6 teeth in lower jaw?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsTootLoJawN</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19841</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000175"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3358,16 +3288,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000176">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are some of the own teeth loose?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsTootLoo</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19842</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000176"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3376,16 +3299,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000177">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do you see any remains of roots?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsRootRema</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19843</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000177"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3394,16 +3310,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000178">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full or part prosthetics?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsProst</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19844</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000178"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3412,16 +3321,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000179">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prosthetics in upper or/and lower jaw</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsProstJaw</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19845</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000179"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3430,16 +3332,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000180">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the prosthetic(s) look?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsProstLook</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19846</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000180"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3448,16 +3343,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000181">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How does the prosthetic(s) function?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsProstWor</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19847</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000181"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3466,16 +3354,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000182">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROAG oral assessment - Prosthesis</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsProstROAG</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23904</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000182"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -3484,16 +3365,9 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/HUNT_0000183">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/HUNT_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth observation performed?</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ObsMou</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19848</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/HUNT_0000183"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000122</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral health history</rdfs:label>
-    </owl:Axiom>
     
 
 
