@@ -1,10 +1,12 @@
 import csv
 import json
+import jsonschema
 import logging
 import sys
 
 from argparse import ArgumentParser
 from rdflib import Graph, Literal, OWL, RDF, URIRef
+from urllib.parse import urlparse
 
 
 # Prepare the newly added cohort for building by doing the following:
@@ -22,6 +24,14 @@ props = {
 }
 
 datatypes = ["Biospecimens", "Environmental Data", "Genomic Data", "Phenotypic/Clinical Data"]
+
+
+def check_url(url):
+    try:
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
+    except:
+        return False
 
 
 def main():
@@ -83,6 +93,10 @@ def main():
                     (URIRef(ontology_iri), URIRef("http://purl.org/dc/terms/title"), Literal(val))
                 )
             elif key in props:
+                if key == "License":
+                    # Make sure we are using a URL
+                    if not check_url(val):
+                        raise Exception(f"License ({val}) is not a valid URL")
                 prop = props[key]
                 gout.add((URIRef(ontology_iri), URIRef(prop), Literal(val)))
             elif key == "Total Enrollment":
@@ -106,6 +120,9 @@ def main():
                 if val.lower() == "true":
                     bool_val = True
                 d["irb_approved_data_sharing"] = bool_val
+            elif key == "Website":
+                if not check_url(val):
+                    raise Exception(f"Website ({val}) is not a valid URL")
             else:
                 key_fixed = key.lower().replace(" ", "_").replace("/", "_")
                 if key_fixed not in d:

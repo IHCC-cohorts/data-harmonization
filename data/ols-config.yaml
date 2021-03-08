@@ -33,6 +33,15 @@ ontologies:
   preferredPrefix: GE
   title: Genomics England Main Programme Data
 - base_uri:
+  - https://purl.ihccglobal.org/GS_
+  description: "The Generations Study is a long-term prospective cohort study focussed\
+    \ on potential aetiological factors for breast cancer in women.\_ The participants\
+    \ are volunteers from the UK general population."
+  id: gs
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/gs.owl
+  preferredPrefix: GS
+  title: Generations Study
+- base_uri:
   - https://purl.ihccglobal.org/HUNT_
   description: Older adults >70 years were enrolled as part of the 4th wave of the
     HUNT study. They were assessed for cognitive function and diagnosed healty, mci

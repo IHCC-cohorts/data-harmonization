@@ -1,5 +1,7 @@
 import collections
 import csv
+import json
+import jsonschema
 import logging
 import os
 import re
@@ -36,7 +38,7 @@ def idx_to_a1(row, col):
     return label
 
 
-def validate(table, gecko_labels):
+def validate_terminology(table, gecko_labels):
     """Validate an IHCC mapping table."""
     basename = os.path.splitext(os.path.basename(table))[0].capitalize()
     problems = []
@@ -189,7 +191,9 @@ def validate(table, gecko_labels):
 
 def main():
     p = ArgumentParser()
-    p.add_argument("table")
+    p.add_argument("schema")
+    p.add_argument("metadata")
+    p.add_argument("terminology")
     p.add_argument("labels")
     p.add_argument("output")
     args = p.parse_args()
@@ -202,15 +206,22 @@ def main():
         for row in reader:
             gecko_labels.append(row[0])
 
-    table = args.table
-    lines, problems = validate(table, gecko_labels)
+    with open(args.metadata, "r") as f:
+        metadata = json.loads(f.read())
+    with open(args.schema, "r") as f:
+        schema = json.loads(f.read())
+    for itm in metadata:
+        jsonschema.validate(instance=itm, schema=schema)
+
+    term_table = args.terminology
+    lines, problems = validate_terminology(term_table, gecko_labels)
 
     if lines:
         # Fix any leading or trailing whitespace
         lines = [{k: v.strip() for k, v in x.items()} for x in lines]
 
         # Write lines with trimmed whitespace
-        with open(table, "w") as f:
+        with open(term_table, "w") as f:
             writer = csv.DictWriter(
                 f,
                 delimiter="\t",
