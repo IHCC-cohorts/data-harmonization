@@ -450,6 +450,117 @@
       "genomic_data": true,
       "phenotypic_clinical_data": true
     },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "Location"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "HUNT 70+, The HUNT Study",
+    "countries": [
+      "Norway"
+    ],
+    "current_enrollment": 11681,
+    "enrollment_period": "2017:2019",
+    "irb_approved_data_sharing": false,
+    "pi_lead": "H\u00e5vard Skjellegrind, Geir Selb\u00e6k",
+    "questionnaire_survey_data": {
+      "cognitive_and_psychological_measurements": {
+        "cognitive_functioning": [
+          "Cdr",
+          "Cerad battery",
+          "Moca",
+          "Npi",
+          "Sib"
+        ],
+        "general_variables": [
+          "Psychological distress and emotions"
+        ]
+      },
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Immune system diseases",
+        "Infectious diseases",
+        "Injuries",
+        "Mental and behaviour disorders",
+        "Musculoskeletal system diseases",
+        "Respiratory system diseases",
+        "Skin and subcutaneous tissue diseases",
+        "Urinary system diseases"
+      ],
+      "healthcare_information": [
+        "Hospitalizations",
+        "Physician/practitioner info",
+        "Routine clincial visits"
+      ],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Oral health history",
+        "Physical activity history",
+        "Recreational drug history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [
+        "Administration",
+        "Associated disease(s)"
+      ],
+      "non_pharmacological_interventions": [
+        "Psychological interventions",
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Family history of disease",
+        "Personal beliefs and values",
+        "Reproduction",
+        "Signs and symptoms",
+        "Social environment"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Functional limitations",
+        "Perception of health",
+        "Quality of life"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ],
+        "circulation_and_respiration": [
+          "Blood pressure",
+          "Heart rate (hr)"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Education",
+        "Family and household structure",
+        "Income and possessions",
+        "Marital status",
+        "Occupation",
+        "Religion"
+      ]
+    },
+    "survey_administration": [
+      "Date and time-related information"
+    ],
+    "target_enrollment": null,
+    "website": "https://www.ntnu.edu/hunt"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
     "biosample": {
       "sample_type": [
         "Blood",

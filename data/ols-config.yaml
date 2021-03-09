@@ -42,6 +42,15 @@ ontologies:
   preferredPrefix: GS
   title: Generations Study
 - base_uri:
+  - https://purl.ihccglobal.org/HUNT_
+  description: Older adults >70 years were enrolled as part of the 4th wave of the
+    HUNT study. They were assessed for cognitive function and diagnosed healty, mci
+    or dementia with subtypes.
+  id: hunt
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/hunt.owl
+  preferredPrefix: HUNT
+  title: HUNT 70+, The HUNT Study
+- base_uri:
   - https://purl.ihccglobal.org/KOGES_
   description: The core variables collected in the Korean Genome and Epidemiology
     Study.

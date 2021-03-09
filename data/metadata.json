@@ -95,6 +95,24 @@
         "target_enrollment": 100000,
         "website": "http://www.breakthroughgenerations.org.uk/home"
     },
+    "HUNT": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": true,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "HUNT 70+, The HUNT Study",
+        "countries": [
+            "Norway"
+        ],
+        "current_enrollment": 11681,
+        "enrollment_period": "2017:2019",
+        "irb_approved_data_sharing": false,
+        "pi_lead": "H\u00e5vard Skjellegrind, Geir Selb\u00e6k",
+        "target_enrollment": null,
+        "website": "https://www.ntnu.edu/hunt"
+    },
     "KOGES": {
         "available_data_types": {
             "biospecimens": true,
