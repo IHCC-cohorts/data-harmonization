@@ -15,8 +15,19 @@
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/canpath.owl">
         <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/canpath/releases/2021-01-07/canpath.owl"/>
         <dc:description>To help researchers better understand the causes of chronic diseases like cancer, heart disease and diabetes, and to develop new ways to prevent and treat them.</dc:description>
-        <terms:license></terms:license>
-        <terms:rights></terms:rights>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:rights>You are free to:
+
+Share — copy and redistribute the material in any medium or format
+
+Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+Under the following terms:
+
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</terms:rights>
         <terms:title>Canadian Partnership for Tomorrow&apos;s Health (CanPath)</terms:title>
     </owl:Ontology>
     
