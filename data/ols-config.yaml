@@ -1,6 +1,15 @@
 '@context': null
 ontologies:
 - base_uri:
+  - https://purl.ihccglobal.org/CANPATH_
+  description: To help researchers better understand the causes of chronic diseases
+    like cancer, heart disease and diabetes, and to develop new ways to prevent and
+    treat them.
+  id: canpath
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/canpath.owl
+  preferredPrefix: CANPATH
+  title: Canadian Partnership for Tomorrow's Health
+- base_uri:
   - https://purl.ihccglobal.org/CHOP_
   description: Data elements collected by CHOP to develop the Philadelphia Neurodevelopmental
     Cohort (PNC) plus data developed with the University of Pennsylvania on Alzheimer's

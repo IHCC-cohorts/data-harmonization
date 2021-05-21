@@ -1,0 +1,1052 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+CANPATH:0000001	Regional cohort ID		Identification number of the regional cohort.	unique identifiers	ADM_STUDY_ID		
+CANPATH:0000002	Forward Sortation Area (FSA)		Forward sortation area of the participant's residence at questionnaire completion.	residence	ADM_FSA		
+CANPATH:0000003	Regional cohort dataset name		Name of the regional cohort dataset.	location	ADM_STUDY_DATASET		
+CANPATH:0000004	Questionnaire version		Version of the questionnaire administered to the participant.	survey administration	ADM_QX_VERSION		
+CANPATH:0000005	Questionnaire administration language		Language of the questionnaire administered to the participant.	survey administration	ADM_QX_LANGUAGE		
+CANPATH:0000006	Questionnaire administration format		Format of the questionnaire administered to the participant.	survey administration	ADM_QX_FORMAT		
+CANPATH:0000007	Date of questionnaire completion		Date on which the questionnaire is completed (yyyy-MM-dd).	date and time-related information	ADM_QX_COMPLETION		
+CANPATH:0000008	Gender		Gender of the participant.	gender	SDC_GENDER		
+CANPATH:0000009	Age		Participant's age at questionnaire completion, calculated from birth date and date of questionnaire completion.	age/birthdate	SDC_AGE_CALC		
+CANPATH:0000010	Number of biological brothers		Number of biological (one or two common parents) brothers of the participant.	family and household structure	SDC_BROTHERS_NB		
+CANPATH:0000011	Number of biological sisters		Number of biological (one or two common parents) sisters of the participant.	family and household structure	SDC_SISTERS_NB		
+CANPATH:0000012	Number of biological siblings		Number of biological (one or two common parents) siblings of the participant.	family and household structure	SDC_SIB_NB		
+CANPATH:0000013	Number of biological siblings - categorical		Number of biological (one or two common parents) siblings of the participant.	family and household structure	SDC_SIB_NB_CAT		
+CANPATH:0000014	Number of siblings older than participant		Number of biological (one or two common parents) siblings older than the participant.	family and household structure	SDC_SIB_OLDER_NB		
+CANPATH:0000015	Number of siblings older than participant - categorical		Number of biological (one or two common parents) siblings older than the participant.	family and household structure	SDC_SIB_OLDER_NB_CAT		
+CANPATH:0000016	Child of a multiple birth		Indicator of whether the participant was a child of a multiple birth	family and household structure	SDC_MULTIPLE_BIRTH		
+CANPATH:0000017	Adopted		Indicator of whether the participant was adopted.		SDC_ADOPTED_CHILD		Is this socio-demographic? Is it something we want to add to GECKO?
+CANPATH:0000018	Marital status		Participant's current marital status.	marital status	SDC_MARITAL_STATUS		
+CANPATH:0000019	Highest level of education completed		Highest level of education completed by the participant.	education	SDC_EDU_LEVEL		
+CANPATH:0000020	Age highest level education completed		Age at which the participant completed the highest level of education.	education|life stage/time point	SDC_EDU_LEVEL_AGE		
+CANPATH:0000021	Household income before taxes		Average annual income, before taxes, of the participant's entire household including salaries, pensions, and allowances.	income and possessions	SDC_INCOME		
+CANPATH:0000022	Number of individuals supported by income		"Number of individuals supported by the average annual income of the participant's entire household, including children, parents and other persons living outside the participant's home.  
+
+
+
+Minimum value of 1 considering the participant is supported by his household income."	income and possessions	SDC_INCOME_IND_NB		
+CANPATH:0000023	Number of individuals supported by income - categorical		"Number of individuals supported by the average annual income of the participant's entire household, including children, parents and other persons living outside the participant's home.  
+
+
+
+Minimum value of 1 considering the participant is supported by his household income."	income and possessions	SDC_INCOME_IND_NB_CAT		
+CANPATH:0000024	Number of adults in the household		Number of adults (age 18 or older) currently living in the same household including the participant.	family and household structure	SDC_HOUSEHOLD_ADULTS_NB		
+CANPATH:0000025	Number of adults in the household - categorical		Number of adults (age 18 or older) currently living in the same household including the participant.	family and household structure	SDC_HOUSEHOLD_ADULTS_NB_CAT		
+CANPATH:0000026	Number of children in the household		Number of children (under 18 years of age) currently living in the participant's household.	family and household structure	SDC_HOUSEHOLD_CHILDREN_NB		
+CANPATH:0000027	Number of children in the household - categorical		Number of children (under 18 years of age) currently living in the participant's household.	family and household structure	SDC_HOUSEHOLD_CHILDREN_NB_CAT		
+CANPATH:0000028	Perception of health		Participant's general perception of his/her health.	perception of health	HS_GEN_HEALTH		
+CANPATH:0000029	Ever had routine medical check-up		Indicator of whether the participant has ever had a routine medical check-up undertaken by a doctor or a nurse.	routine clincial visits	HS_ROUTINE_VISIT_EVER		
+CANPATH:0000030	Last routine medical check-up		Last time the participant had a routine medical check-up undertaken by a doctor or a nurse, if the participant has ever had a routine medical check-up.	routine clincial visits	HS_ROUTINE_VISIT_LAST		
+CANPATH:0000031	Ever had dental professional visit		Indicator of whether the participant has ever had a dental professional visit.	oral health history	HS_DENTAL_VISIT_EVER		
+CANPATH:0000032	Last visit with dental professional		Last time the participant saw a dental professional, including a dentist or hygienist, if the participant has ever had dental professional visit.	oral health history	HS_DENTAL_VISIT_LAST		
+CANPATH:0000033	Ever had fecal occult blood test		Indicator of whether the participant has ever had a fecal occult blood test (FOBT).	diagnostic interventions	HS_FOBT_EVER		
+CANPATH:0000034	Last fecal occult blood test		Last time the participant had a fecal occult blood test (FOBT), if the participant has ever had a fecal occult blood test (FOBT).	diagnostic interventions	HS_FOBT_LAST		
+CANPATH:0000035	Ever had colonoscopy		Indicator of whether the participant has ever had a colonoscopy.	diagnostic interventions	HS_COL_EVER		
+CANPATH:0000036	Last colonoscopy		Last time the participant had a colonoscopy, if the participant has ever had a colonoscopy.	diagnostic interventions	HS_COL_LAST		
+CANPATH:0000037	Ever had sigmoidoscopy		Indicator of whether the participant has ever had a sigmoidoscopy.	diagnostic interventions	HS_SIG_EVER		
+CANPATH:0000038	Last sigmoidoscopy		Last time the participant had a sigmoidoscopy, if the participant has ever had a sigmoidoscopy.	diagnostic interventions	HS_SIG_LAST		
+CANPATH:0000039	Ever had sigmoidoscopy or colonoscopy		Indicator of whether the participant has ever had a sigmoidoscopy or a colonoscopy.	diagnostic interventions	HS_SIG_COL_EVER		
+CANPATH:0000040	Last sigmoidoscopy or colonoscopy		Indicator of whether the participant has ever had a sigmoidoscopy or a colonoscopy, if the participant has ever had a sigmoidoscopy or colonoscopy.	diagnostic interventions	HS_SIG_COL_LAST		
+CANPATH:0000041	Ever had polyp removed from colon		Indicator of whether the participant has ever had a polyp removed from colon.	surgical interventions	HS_POLYP_EVER		
+CANPATH:0000042	Ever had PSA blood test		Indicator of whether the male participant has ever had a PSA blood test for prostate cancer screening.	diagnostic interventions	HS_PSA_EVER		
+CANPATH:0000043	Last PSA blood test		Last time the male participant had a PSA blood test for prostate cancer screening, if the male participant has ever had a PSA blood test.	diagnostic interventions	HS_PSA_LAST		
+CANPATH:0000044	Number of children fathered		Number of children (live birth only) a male participant has fathered.	reproduction	MH_CHILDREN_FATHERED		
+CANPATH:0000045	Number of children fathered - categorical		Number of children (live birth only) a male participant has fathered.	reproduction	MH_CHILDREN_FATHERED_CAT		
+CANPATH:0000046	Age at menarche		Age of the female participant at menarche.	reproduction|life stage/time point	WH_MENSTRUATION_AGE		
+CANPATH:0000047	Ever used hormonal contraceptives		Indicator of whether the female participant has ever used hormonal contraceptives.	reproduction	WH_CONTRACEPTIVES_EVER		
+CANPATH:0000048	Age started using hormonal contraceptives		Age of the female participant when she started using hormonal contraceptives.	reproduction|life stage/time point	WH_CONTRACEPTIVES_AGE		
+CANPATH:0000049	Duration of use of hormonal contraceptives		Total duration (in months) of hormonal contraceptives use during the lifetime of the female participant.	reproduction	WH_CONTRACEPTIVES_DURATION		
+CANPATH:0000050	Gravidity		Total number of times a female participant has been pregnant.	reproduction	WH_GRAVIDITY		
+CANPATH:0000051	Gravidity - categorical		Total number of times a female participant has been pregnant.	reproduction	WH_GRAVIDITY_CAT		
+CANPATH:0000052	Age at first pregnancy		Age of female participant when she first became pregnant.	reproduction|life stage/time point	WH_PREG_FIRST_AGE		
+CANPATH:0000053	Currently pregnant		Indicator of whether the female participant is currently pregnant.	reproduction	WH_PREG_CUR		
+CANPATH:0000054	Number of weeks current pregnancy		Total number of weeks of the female participant's current pregnancy.	reproduction	WH_PREG_CUR_WK		
+CANPATH:0000055	Number of pregnancies of at least 20 weeks		Total number of the female participant's pregnancies that lasted at least 20 weeks.	reproduction	WH_PREG_20WK		
+CANPATH:0000056	Number of live births mothered		Total number of live births the female participant has had.	reproduction	WH_LIVE_BIRTHS		
+CANPATH:0000057	Number of live births mothered - categorical		Total number of live births the female participant has had.	reproduction	WH_LIVE_BIRTHS_CAT		
+CANPATH:0000058	Age at last pregnancy		Age of the female participant when she last became pregnant.	reproduction|life stage/time point	WH_PREG_LAST_AGE		
+CANPATH:0000059	Duration of breastfeeding		Total duration (in months) of breastfeeding during the lifetime of the female participant, including all different children breastfed.	reproduction	WH_BREASTFEEDING_DURATION		
+CANPATH:0000060	Ever received hormone fertility treatment		Indicator of whether the female participant has ever received hormone fertility treatment during her life.	reproduction	WH_HFT_EVER		
+CANPATH:0000061	Occurrence of menopause		Occurrence of menopause at any point during the life of the female participant.	reproduction	WH_MENOPAUSE_EVER		
+CANPATH:0000062	Menopause reason		Reason for menopause onset (natural or induced).	reproduction	WH_MENOPAUSE_REASON		
+CANPATH:0000063	Age at menopause		Age of the female participant at menopause.	reproduction|life stage/time point	WH_MENOPAUSE_AGE		
+CANPATH:0000064	Ever used hormone replacement therapy		Indicator of whether the female participant has ever used hormone replacement therapy.	medication	WH_HRT_EVER		
+CANPATH:0000065	Age started using hormone replacement therapy		Age of the female participant when she started using hormone replacement therapy.	life stage/time point|medication	WH_HRT_AGE		
+CANPATH:0000066	Duration of use of hormone replacement therapy		Total duration (in months) of hormone replacement therapy use during the lifetime of the female participant.	medication	WH_HRT_DURATION		
+CANPATH:0000067	Occurrence of hysterectomy		Occurrence of hysterectomy at any point during the life of the female participant.	surgical interventions	WH_HYSTERECTOMY_EVER		
+CANPATH:0000068	Hysterectomy onset		Age of the female participant at hysterectomy.	surgical interventions	WH_HYSTERECTOMY_AGE		
+CANPATH:0000069	Occurrence of oophorectomy		Occurrence of oophorectomy at any point during the life of the female participant.	surgical interventions	WH_OOPHORECTOMY_EVER		
+CANPATH:0000070	Number of ovaries removed		Number of ovaries removed during the life of the female participant.	surgical interventions	WH_OVARIES_REMOVED_NB		
+CANPATH:0000071	Bilateral oophorectomy		Indicator of whether the ovaries were removed at the same time.	surgical interventions	WH_BI_OOPHORECTOMY		
+CANPATH:0000072	Age at last oophorectomy		Age of the female participant at last oophorectomy.	surgical interventions|life stage/time point	WH_OVARIES_LAST_AGE		
+CANPATH:0000073	Ever had mammography		Indicator of whether the female participant has ever had a mammography.	diagnostic interventions	HS_MMG_EVER		
+CANPATH:0000074	Last mammography		Last time the female participant had a mammography, if the female participant has ever had a mammography.	diagnostic interventions	HS_MMG_LAST		
+CANPATH:0000075	Ever had Pap test		Indicator of whether the female participant has ever had a Pap test (Pap smear).	diagnostic interventions	HS_PAP_EVER		
+CANPATH:0000076	Last Pap test		Last time the participant had a Pap test or a smear test, if the female participant has ever had a Pap test (Pap smear).	diagnostic interventions	HS_PAP_LAST		
+CANPATH:0000077	Lifetime occurrence of high blood pressure, excluding during pregnancy		Occurrence of high blood pressure or hypertension at any point during the life of the participant, excluding during pregnancy.	cardiovascular diseases	DIS_HBP_EVER		
+CANPATH:0000078	Age at first diagnosis of high blood pressure, excluding during pregnancy		Age of the participant at first diagnosis of high blood pressure or hypertension, excluding during pregnancy.	cardiovascular diseases|life stage/time point	DIS_HBP_AGE		
+CANPATH:0000079	Currently under treatment for high blood pressure		Indicator of whether the participant is currently under treatment for high blood pressure or hypertension, excluding during pregnancy.	cardiovascular diseases	DIS_HBP_TX		
+CANPATH:0000080	Lifetime occurrence of myocardial infarction		Occurrence of myocardial infarction at any point during the life of the participant.	cardiovascular diseases	DIS_MI_EVER		
+CANPATH:0000081	Age at first diagnosis of myocardial infarction		Age of the participant at first diagnosis of myocardial infarction.	cardiovascular diseases|life stage/time point	DIS_MI_AGE		
+CANPATH:0000082	Currently under treatment for myocardial infarction		Indicator of whether the participant is currently under treatment for myocardial infarction.	cardiovascular diseases	DIS_MI_TX		
+CANPATH:0000083	Lifetime occurrence of stroke		Occurrence of stroke at any point during the life of the participant.	cardiovascular diseases	DIS_STROKE_EVER		
+CANPATH:0000084	Age at first diagnosis of stroke		Age of the participant at first diagnosis of stroke.	cardiovascular diseases|life stage/time point	DIS_STROKE_AGE		
+CANPATH:0000085	Currently under treatment for stroke		Indicator of whether the participant is currently under treatment for stroke.	cardiovascular diseases	DIS_STROKE_TX		
+CANPATH:0000086	Lifetime occurrence of asthma		Occurrence of asthma at any point during the life of the participant.	respiratory system diseases	DIS_ASTHMA_EVER		
+CANPATH:0000087	Age at first diagnosis of asthma		Age of the participant at first diagnosis of asthma.	respiratory system diseases|life stage/time point	DIS_ASTHMA_AGE		
+CANPATH:0000088	Currently under treatment for asthma		Indicator of whether the participant is currently under treatment for asthma.	respiratory system diseases	DIS_ASTHMA_TX		
+CANPATH:0000089	Lifetime occurrence of emphysema		Occurrence of emphysema at any point during the life of the participant.	respiratory system diseases	DIS_EMPHYSEMA_EVER		
+CANPATH:0000090	Age at first diagnosis of emphysema		Age of the participant at first diagnosis of emphysema.	respiratory system diseases|life stage/time point	DIS_EMPHYSEMA_AGE		
+CANPATH:0000091	Currently under treatment for emphysema		Indicator of whether the participant is currently under treatment for emphysema.	respiratory system diseases	DIS_EMPHYSEMA_TX		
+CANPATH:0000092	Lifetime occurrence of chronic bronchitis		Occurrence of chronic bronchitis at any point during the life of the participant.	respiratory system diseases	DIS_CB_EVER		
+CANPATH:0000093	Age at first diagnosis of chronic bronchitis		Age of the participant at first diagnosis of chronic bronchitis.	respiratory system diseases|life stage/time point	DIS_CB_AGE		
+CANPATH:0000094	Currently under treatment for chronic bronchitis		Indicator of whether the participant is currently under treatment for chronic bronchitis.	respiratory system diseases	DIS_CB_TX		
+CANPATH:0000095	Lifetime occurrence of chronic obstructive pulmonary disease		Occurrence of chronic obstructive pulmonary disease at any point during the life of the participant.	respiratory system diseases	DIS_COPD_EVER		
+CANPATH:0000096	Age at first diagnosis of chronic obstructive pulmonary disease		Age of the participant at first diagnosis of chronic obstructive pulmonary disease.	respiratory system diseases|life stage/time point	DIS_COPD_AGE		
+CANPATH:0000097	Currently under treatment for chronic obstructive pulmonary disease		Indicator of whether the participant is currently under treatment for chronic obstructive pulmonary disease.	respiratory system diseases	DIS_COPD_TX		
+CANPATH:0000098	Lifetime occurrence of major depression		Occurrence of major depression at any point during the life of the participant.	mental and behaviour disorders	DIS_DEP_EVER		
+CANPATH:0000099	Age at first diagnosis of major depression onset		Age of the participant at first diagnosis of major depression.	mental and behaviour disorders|life stage/time point	DIS_DEP_AGE		
+CANPATH:0000100	Lifetime occurrence of diabetes		Occurrence of diabetes at any point during the life of the participant.	endocrine system diseases	DIS_DIAB_EVER		
+CANPATH:0000101	Lifetime diabetes type		Type of diabetes diagnosed  (type 1 or type 2 or gestational diabetes - female only).	endocrine system diseases	DIS_DIAB_TYPE		
+CANPATH:0000102	Age at first diagnosis of diabetes		Age of the participant at first diagnosis of diabetes.	endocrine system diseases|life stage/time point	DIS_DIAB_AGE		
+CANPATH:0000103	Currently under treatment for diabetes		Indicator of whether the participant is currently under treatment for diabetes.	endocrine system diseases	DIS_DIAB_TX		
+CANPATH:0000104	Lifetime occurrence of liver cirrhosis		Occurrence of liver cirrhosis at any point during the life of the participant.	endocrine system diseases	DIS_LC_EVER		
+CANPATH:0000105	Age at first diagnosis of liver cirrhosis		Age of the participant at first diagnosis of liver cirrhosis.	endocrine system diseases|life stage/time point	DIS_LC_AGE		
+CANPATH:0000106	Lifetime occurrence of chronic hepatitis		Occurrence of chronic hepatitis at any point during the life of the participant.	endocrine system diseases	DIS_CH_EVER		
+CANPATH:0000107	Age at first diagnosis of chronic hepatitis		Age of the participant at first diagnosis of chronic hepatitis.	endocrine system diseases|life stage/time point	DIS_CH_AGE		
+CANPATH:0000108	Lifetime occurrence of Crohn's disease		Occurrence of Crohn's disease at any point during the life of the participant.	endocrine system diseases	DIS_CROHN_EVER		
+CANPATH:0000109	Age at first diagnosis of Crohn's disease		Age of the participant at first diagnosis of Crohn's disease.	endocrine system diseases|life stage/time point	DIS_CROHN_AGE		
+CANPATH:0000110	Lifetime occurrence of ulcerative colitis		Occurrence of ulcerative colitis at any point during the life of the participant.	endocrine system diseases	DIS_UC_EVER		
+CANPATH:0000111	Age at first diagnosis of ulcerative colitis		Age of the participant at first diagnosis of ulcerative colitis.	endocrine system diseases|life stage/time point	DIS_UC_AGE		
+CANPATH:0000112	Lifetime occurrence of irritable bowel syndrome		Occurrence of irritable bowel syndrome at any point during the life of the participant.	endocrine system diseases	DIS_IBS_EVER		
+CANPATH:0000113	Age at first diagnosis of irritable bowel syndrome		Age of the participant at first diagnosis of irritable bowel syndrome.	endocrine system diseases|life stage/time point	DIS_IBS_AGE		
+CANPATH:0000114	Lifetime occurrence of eczema		Occurrence of eczema at any point during the life of the participant.	skin and subcutaneous tissue diseases	DIS_ECZEMA_EVER		
+CANPATH:0000115	Age at first diagnosis of eczema		Age of the participant at first diagnosis of eczema.	skin and subcutaneous tissue diseases|life stage/time point	DIS_ECZEMA_AGE		
+CANPATH:0000116	Lifetime occurrence of systemic lupus erythematosus		Occurrence of systemic lupus erythematosus at any point during the life of the participant.	immune system diseases	DIS_SLE_EVER		
+CANPATH:0000117	Age at first diagnosis of systemic lupus erythematosus		Age of the participant at first diagnosis of systemic lupus erythematosus.	immune system diseases|life stage/time point	DIS_SLE_AGE		
+CANPATH:0000118	Lifetime occurrence of psoriasis		Occurrence of psoriasis at any point during the life of the participant.	skin and subcutaneous tissue diseases	DIS_PS_EVER		
+CANPATH:0000119	Age at first diagnosis of psoriasis		Age of the participant at first diagnosis of psoriasis	skin and subcutaneous tissue diseases|life stage/time point	DIS_PS_AGE		
+CANPATH:0000120	Lifetime occurrence of multiple sclerosis		Occurrence of multiple sclerosis at any point during the life of the participant.	nervous system disorders	DIS_MS_EVER		
+CANPATH:0000121	Age at first diagnosis of multiple sclerosis		Age of the participant at first diagnosis of multiple sclerosis.	nervous system disorders|life stage/time point	DIS_MS_AGE		
+CANPATH:0000122	Lifetime occurrence of osteoporosis		Occurrence of osteoporosis at any point during the life of the participant.	musculoskeletal system diseases	DIS_OP_EVER		
+CANPATH:0000123	Age at first diagnosis of osteoporosis		Age of the participant at first diagnosis of osteoporosis.	musculoskeletal system diseases|life stage/time point	DIS_OP_AGE		
+CANPATH:0000124	Lifetime occurrence of arthritis		Occurrence of arthritis at any point during the life of the participant.	musculoskeletal system diseases	DIS_ARTHRITIS_EVER		
+CANPATH:0000125	Age at first diagnosis of arthritis		Age of the participant at first diagnosis of arthritis.	musculoskeletal system diseases|life stage/time point	DIS_ARTHRITIS_AGE		
+CANPATH:0000126	Arthritis type (rheumatoid arthritis, osteoarthritis, other type of arthritis)		Type of arthritis diagnosed (rheumatoid arthritis or osteoarthritis or other type of arthritis). The participant could specify what other type of arthritis in an open text variable.	musculoskeletal system diseases	DIS_ARTHRITIS_TYPE1		
+CANPATH:0000127	Arthritis type (rheumatoid arthritis, osteoarthritis, other type of arthritis)		Type of arthritis diagnosed (rheumatoid arthritis or osteoarthritis or other type of arthritis). The participant could specify what other type of arthritis in an open text variable.	musculoskeletal system diseases	DIS_ARTHRITIS_TYPE2		
+CANPATH:0000128	Arthritis type (rheumatoid arthritis, osteoarthritis, other type of arthritis)		Type of arthritis diagnosed (rheumatoid arthritis or osteoarthritis or other type of arthritis). The participant could specify what other type of arthritis in an open text variable.	musculoskeletal system diseases	DIS_ARTHRITIS_TYPE3		
+CANPATH:0000129	Lifetime occurrence of arthritis, other specify		Name of other type of arthritis diagnosed. The following arthritis type were collected (rheumatoid arthritis, osteoarthritis and other type). The participant could specify what other type of arthritis in an open variable.	musculoskeletal system diseases	DIS_ARTHRITIS_TYPE_OTSP		
+CANPATH:0000130	Lifetime occurrence of cancer		Occurrence of cancer at any point during the life of the participant.	cancer	DIS_CANCER_EVER		
+CANPATH:0000131	Cancer 1: Type		Type of cancer diagnosed.	cancer	DIS_CANCER1		
+CANPATH:0000132	Cancer 1: Type, other specify		Name of other type of cancer diagnosed.	cancer	DIS_CANCER1_OTSP		
+CANPATH:0000133	Cancer 1: Age at first diagnosis		Age of the participant at cancer first diagnosis.	cancer|life stage/time point	DIS_CANCER1_AGE		
+CANPATH:0000134	Cancer 1: Ever treated		Indicator of whether the participant ever received a treatment for the cancer diagnosed.	cancer	DIS_CANCER1_TX		
+CANPATH:0000135	Cancer 1: Ever treated with chemotherapy		Indicator of whether the participant ever received chemotherapy for the cancer diagnosed.	medication	DIS_CANCER1_TX_CHEMO		
+CANPATH:0000136	Cancer 1: Ever treated with radiation		Indicator of whether the participant ever received radiation treatment for the cancer diagnosed.	radiological interventions	DIS_CANCER1_TX_RAD		
+CANPATH:0000137	Cancer 1: Ever treated with surgery		Indicator of whether the participant ever had a surgery for the cancer diagnosed.	surgical interventions	DIS_CANCER1_TX_SURG		
+CANPATH:0000138	Cancer 1: Ever treated with other treatment		Indicator of whether the participant ever received other treatments for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER1_TX_OTHER		
+CANPATH:0000139	Cancer 1: Ever treated with other treatment, other specify		Name of the other treatment received for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER1_TX_OTSP		
+CANPATH:0000140	Cancer 2: Type		Type of cancer diagnosed.	cancer	DIS_CANCER2		
+CANPATH:0000141	Cancer 2: Type, other specify		Name of other type of cancer diagnosed.	cancer	DIS_CANCER2_OTSP		
+CANPATH:0000142	Cancer 2: Age at first diagnosis		Age of the participant at cancer first diagnosis.	cancer|life stage/time point	DIS_CANCER2_AGE		
+CANPATH:0000143	Cancer 2: Ever treated		Indicator of whether the participant ever received a treatment for the cancer diagnosed.	cancer	DIS_CANCER2_TX		
+CANPATH:0000144	Cancer 2: Ever treated with chemotherapy		Indicator of whether the participant ever received chemotherapy for the cancer diagnosed.	medication	DIS_CANCER2_TX_CHEMO		
+CANPATH:0000145	Cancer 2: Ever treated with radiation		Indicator of whether the participant ever received radiation treatment for the cancer diagnosed.	radiological interventions	DIS_CANCER2_TX_RAD		
+CANPATH:0000146	Cancer 2: Ever treated with surgery		Indicator of whether the participant ever had a surgery for the cancer diagnosed.	surgical interventions	DIS_CANCER2_TX_SURG		
+CANPATH:0000147	Cancer 2: Ever treated with other treatment		Indicator of whether the participant ever received other treatments for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER2_TX_OTHER		
+CANPATH:0000148	Cancer 2: Ever treated with other treatment, other specify		Name of the other treatment received for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER2_TX_OTSP		
+CANPATH:0000149	Cancer 3: Type		Type of cancer diagnosed.	cancer	DIS_CANCER3		
+CANPATH:0000150	Cancer 3: Type, other specify		Name of other type of cancer diagnosed.	cancer	DIS_CANCER3_OTSP		
+CANPATH:0000151	Cancer 3: Age at first diagnosis		Age of the participant at cancer first diagnosis.	cancer|life stage/time point	DIS_CANCER3_AGE		
+CANPATH:0000152	Cancer 3: Ever treated		Indicator of whether the participant ever received a treatment for the cancer diagnosed.	cancer	DIS_CANCER3_TX		
+CANPATH:0000153	Cancer 3: Ever treated with chemotherapy		Indicator of whether the participant ever received chemotherapy for the cancer diagnosed.	medication	DIS_CANCER3_TX_CHEMO		
+CANPATH:0000154	Cancer 3: Ever treated with radiation		Indicator of whether the participant ever received radiation treatment for the cancer diagnosed.	radiological interventions	DIS_CANCER3_TX_RAD		
+CANPATH:0000155	Cancer 3: Ever treated with surgery		Indicator of whether the participant ever had a surgery for the cancer diagnosed.	surgical interventions	DIS_CANCER3_TX_SURG		
+CANPATH:0000156	Cancer 3: Ever treated with other treatment		Indicator of whether the participant ever received other treatments for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER3_TX_OTHER		
+CANPATH:0000157	Cancer 3: Ever treated with other treatment, other specify		Name of the other treatment received for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER3_TX_OTSP		
+CANPATH:0000158	Cancer 4: Type		Type of cancer diagnosed.	cancer	DIS_CANCER4		
+CANPATH:0000159	Cancer 4: Type, other specify		Name of other type of cancer diagnosed.	cancer	DIS_CANCER4_OTSP		
+CANPATH:0000160	Cancer 4: Age at first diagnosis		Age of the participant at cancer first diagnosis.	cancer|life stage/time point	DIS_CANCER4_AGE		
+CANPATH:0000161	Cancer 4: Ever treated		Indicator of whether the participant ever received a treatment for the cancer diagnosed.	cancer	DIS_CANCER4_TX		
+CANPATH:0000162	Cancer 4: Ever treated with chemotherapy		Indicator of whether the participant ever received chemotherapy for the cancer diagnosed.	medication	DIS_CANCER4_TX_CHEMO		
+CANPATH:0000163	Cancer 4: Ever treated with radiation		Indicator of whether the participant ever received radiation treatment for the cancer diagnosed.	radiological interventions	DIS_CANCER4_TX_RAD		
+CANPATH:0000164	Cancer 4: Ever treated with surgery		Indicator of whether the participant ever had a surgery for the cancer diagnosed.	surgical interventions	DIS_CANCER4_TX_SURG		
+CANPATH:0000165	Cancer 4: Ever treated with other treatment		Indicator of whether the participant ever received other treatments for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER4_TX_OTHER		
+CANPATH:0000166	Cancer 4: Ever treated with other treatment, other specify		Name of the other treatment received for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER4_TX_OTSP		
+CANPATH:0000167	Cancer 5: Type		Type of cancer diagnosed.	cancer	DIS_CANCER5		
+CANPATH:0000168	Cancer 5: Type, other specify		Name of other type of cancer diagnosed.	cancer	DIS_CANCER5_OTSP		
+CANPATH:0000169	Cancer 5: Age at first diagnosis		Age of the participant at cancer first diagnosis.	cancer|life stage/time point	DIS_CANCER5_AGE		
+CANPATH:0000170	Cancer 5: Ever treated		Indicator of whether the participant ever received a treatment for the cancer diagnosed.	cancer	DIS_CANCER5_TX		
+CANPATH:0000171	Cancer 5: Ever treated with chemotherapy		Indicator of whether the participant ever received chemotherapy for the cancer diagnosed.	medication	DIS_CANCER5_TX_CHEMO		
+CANPATH:0000172	Cancer 5: Ever treated with radiation		Indicator of whether the participant ever received radiation treatment for the cancer diagnosed.	radiological interventions	DIS_CANCER5_TX_RAD		
+CANPATH:0000173	Cancer 5: Ever treated with surgery		Indicator of whether the participant ever had a surgery for the cancer diagnosed.	surgical interventions	DIS_CANCER5_TX_SURG		
+CANPATH:0000174	Cancer 5: Ever treated with other treatment		Indicator of whether the participant ever received other treatments for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER5_TX_OTHER		
+CANPATH:0000175	Cancer 5: Ever treated with other treatment, other specify		Name of the other treatment received for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER5_TX_OTSP		
+CANPATH:0000176	Cancer 6: Type		Type of cancer diagnosed.	cancer	DIS_CANCER6		
+CANPATH:0000177	Cancer 6: Type, other specify		Name of other type of cancer diagnosed.	cancer	DIS_CANCER6_OTSP		
+CANPATH:0000178	Cancer 6: Age at first diagnosis		Age of the participant at cancer first diagnosis.	cancer|life stage/time point	DIS_CANCER6_AGE		
+CANPATH:0000179	Cancer 6: Ever treated		Indicator of whether the participant ever received a treatment for the cancer diagnosed.	cancer	DIS_CANCER6_TX		
+CANPATH:0000180	Cancer 6: Ever treated with chemotherapy		Indicator of whether the participant ever received chemotherapy for the cancer diagnosed.	medication	DIS_CANCER6_TX_CHEMO		
+CANPATH:0000181	Cancer 6: Ever treated with radiation		Indicator of whether the participant ever received radiation treatment for the cancer diagnosed.	radiological interventions	DIS_CANCER6_TX_RAD		
+CANPATH:0000182	Cancer 6: Ever treated with surgery		Indicator of whether the participant ever had a surgery for the cancer diagnosed.	surgical interventions	DIS_CANCER6_TX_SURG		
+CANPATH:0000183	Cancer 6: Ever treated with other treatment		Indicator of whether the participant ever received other treatments for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER6_TX_OTHER		
+CANPATH:0000184	Cancer 6: Ever treated with other treatment, other specify		Name of the other treatment received for the cancer diagnosed.	non-pharmacological interventions	DIS_CANCER6_TX_OTSP		
+CANPATH:0000185	Family history of high blood pressure		Occurrence of high blood pressure at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_HBP_FAM_EVER		
+CANPATH:0000186	Family history of myocardial infarction		Occurrence of myocardial infarction at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_MI_FAM_EVER		
+CANPATH:0000187	Family history of stroke		Occurrence of stroke at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_STROKE_FAM_EVER		
+CANPATH:0000188	Family history of asthma		Occurrence of asthma at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_ASTHMA_FAM_EVER		
+CANPATH:0000189	Family history of emphysema		Occurrence of emphysema at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_EMPHYSEMA_FAM_EVER		
+CANPATH:0000190	Family history of chronic bronchitis		Occurrence of chronic bronchitis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_CB_FAM_EVER		
+CANPATH:0000191	Family history of chronic obstructive pulmonary disease		Occurrence of chronic obstructive pulmonary disease at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_COPD_FAM_EVER		
+CANPATH:0000192	Family history of major depression		Occurrence of major depression at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_DEP_FAM_EVER		
+CANPATH:0000193	Family history of diabetes		Occurrence of diabetes at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_DIAB_FAM_EVER		
+CANPATH:0000194	Family history of liver cirrhosis		Occurrence of liver cirrhosis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_LC_FAM_EVER		
+CANPATH:0000195	Family history of chronic hepatitis		Occurrence of chronic hepatitis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_CH_FAM_EVER		
+CANPATH:0000196	Family history of Crohn's disease		Occurrence of Crohn's disease at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_CROHN_FAM_EVER		
+CANPATH:0000197	Family history of ulcerative colitis		Occurrence of ulcerative colitis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_UC_FAM_EVER		
+CANPATH:0000198	Family history of irritable bowel syndrome		Occurrence of irritable bowel syndrome at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_IBS_FAM_EVER		
+CANPATH:0000199	Family history of eczema		Occurrence of eczema at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_ECZEMA_FAM_EVER		
+CANPATH:0000200	Family history of systemic lupus erythematosus		Occurrence of systemic lupus erythematosus at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_SLE_FAM_EVER		
+CANPATH:0000201	Family history of psoriasis		Occurrence of psoriasis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_PS_FAM_EVER		
+CANPATH:0000202	Family history of multiple sclerosis		Occurrence of multiple sclerosis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_MS_FAM_EVER		
+CANPATH:0000203	Family history of osteoporosis		Occurrence of osteoporosis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_OP_FAM_EVER		
+CANPATH:0000204	Family history of arthritis		Occurrence of arthritis at any point during the life of the participant's relatives (father, mother, siblings and children).	family history of disease	DIS_ARTHRITIS_FAM_EVER		
+CANPATH:0000205	Lifetime occurrence of high blood pressure in father		Occurrence of high blood pressure at any point during the life of the participant's biological father.	family history of disease	DIS_HBP_F_EVER		
+CANPATH:0000206	Lifetime occurrence of myocardial infarction in father		Occurrence of myocardial infarction at any point during the life of the participant's biological father.	family history of disease	DIS_MI_F_EVER		
+CANPATH:0000207	Lifetime occurrence of stroke  in father		Occurrence of stroke at any point during the life of the participant's biological father.	family history of disease	DIS_STROKE_F_EVER		
+CANPATH:0000208	Lifetime occurrence of asthma in father		Occurrence of asthma at any point during the life of the participant's biological father.	family history of disease	DIS_ASTHMA_F_EVER		
+CANPATH:0000209	Lifetime occurrence of emphysema in father		Occurrence of emphysema at any point during the life of the participant's biological father.	family history of disease	DIS_EMPHYSEMA_F_EVER		
+CANPATH:0000210	Lifetime occurrence of chronic bronchitis in father		Occurrence of chronic bronchitis at any point during the life of the participant's biological father.	family history of disease	DIS_CB_F_EVER		
+CANPATH:0000211	Lifetime occurrence of  chronic obstructive pulmonary disease in father		Occurrence of chronic obstructive pulmonary disease at any point during the life of the participant's biological father.	family history of disease	DIS_COPD_F_EVER		
+CANPATH:0000212	Lifetime occurrence of major depression in father		Occurrence of major depression at any point during the life of the participant's biological father.	family history of disease	DIS_DEP_F_EVER		
+CANPATH:0000213	Lifetime occurrence of diabetes in father		Occurrence of diabetes at any point during the life of the participant's biological father.	family history of disease	DIS_DIAB_F_EVER		
+CANPATH:0000214	Lifetime occurrence of liver cirrhosis in father		Occurrence of liver cirrhosis at any point during the life of the participant's biological father.	family history of disease	DIS_LC_F_EVER		
+CANPATH:0000215	Lifetime occurrence of father chronic hepatitis		Occurrence of chronic hepatitis  at any point during the life of the participant's biological father.	family history of disease	DIS_CH_F_EVER		
+CANPATH:0000216	Lifetime occurrence of Crohn's disease in father		Occurrence of Crohn's disease at any point during the life of the participant's biological father.	family history of disease	DIS_CROHN_F_EVER		
+CANPATH:0000217	Lifetime occurrence of ulcerative colitis in father		Occurrence of ulcerative colitis at any point during the life of the participant's biological father.	family history of disease	DIS_UC_F_EVER		
+CANPATH:0000218	Lifetime occurrence of irritable bowel syndrome in father		Occurrence of irritable bowel syndrome at any point during the life of the participant's biological father.	family history of disease	DIS_IBS_F_EVER		
+CANPATH:0000219	Lifetime occurrence of eczema in father		Occurrence of eczema at any point during the life of the participant's biological father.	family history of disease	DIS_ECZEMA_F_EVER		
+CANPATH:0000220	Lifetime occurrence of systemic lupus erythematosus in father		Occurrence of systemic lupus erythematosus at any point during the life of the participant's biological father.	family history of disease	DIS_SLE_F_EVER		
+CANPATH:0000221	Lifetime occurrence of psoriasis in father		Occurrence of psoriasis at any point during the life of the participant's biological father.	family history of disease	DIS_PS_F_EVER		
+CANPATH:0000222	Lifetime occurrence of multiple sclerosis in father		Occurrence of multiple sclerosis at any point during the life of the participant's biological father.	family history of disease	DIS_MS_F_EVER		
+CANPATH:0000223	Lifetime occurrence of osteoporosis in father		Occurrence of osteoporosis at any point during the life of the participant's biological father.	family history of disease	DIS_OP_F_EVER		
+CANPATH:0000224	Lifetime occurrence of arthritis in father		Occurrence of arthritis at any point during the life of the participant's biological father.	family history of disease	DIS_ARTHRITIS_F_EVER		
+CANPATH:0000225	Lifetime occurrence of high blood pressure in mother		Occurrence of high blood pressure at any point during the life of the participant's biological mother.	family history of disease	DIS_HBP_M_EVER		
+CANPATH:0000226	Lifetime occurrence of myocardial infarction in mother		Occurrence of myocardial infarction at any point during the life of the participant's biological mother.	family history of disease	DIS_MI_M_EVER		
+CANPATH:0000227	Lifetime occurrence of stroke  in mother		Occurrence of stroke at any point during the life of the participant's biological mother.	family history of disease	DIS_STROKE_M_EVER		
+CANPATH:0000228	Lifetime occurrence of asthma in mother		Occurrence of asthma at any point during the life of the participant's biological mother.	family history of disease	DIS_ASTHMA_M_EVER		
+CANPATH:0000229	Lifetime occurrence of emphysema in mother		Occurrence of emphysema at any point during the life of the participant's biological mother.	family history of disease	DIS_EMPHYSEMA_M_EVER		
+CANPATH:0000230	Lifetime occurrence of chronic bronchitis in mother		Occurrence of chronic bronchitis at any point during the life of the participant's biological mother.	family history of disease	DIS_CB_M_EVER		
+CANPATH:0000231	Lifetime occurrence of  chronic obstructive pulmonary disease in mother		Occurrence of chronic obstructive pulmonary disease at any point during the life of the participant's biological mother.	family history of disease	DIS_COPD_M_EVER		
+CANPATH:0000232	Lifetime occurrence of major depression in mother		Occurrence of major depression at any point during the life of the participant's biological mother.	family history of disease	DIS_DEP_M_EVER		
+CANPATH:0000233	Lifetime occurrence of diabetes in mother		Occurrence of diabetes at any point during the life of the participant's biological mother.	family history of disease	DIS_DIAB_M_EVER		
+CANPATH:0000234	Lifetime occurrence of liver cirrhosis in mother		Occurrence of liver cirrhosis at any point during the life of the participant's biological mother.	family history of disease	DIS_LC_M_EVER		
+CANPATH:0000235	Lifetime occurrence of mother chronic hepatitis		Occurrence of chronic hepatitis  at any point during the life of the participant's biological mother.	family history of disease	DIS_CH_M_EVER		
+CANPATH:0000236	Lifetime occurrence of Crohn's disease in mother		Occurrence of Crohn's disease at any point during the life of the participant's biological mother.	family history of disease	DIS_CROHN_M_EVER		
+CANPATH:0000237	Lifetime occurrence of ulcerative colitis in mother		Occurrence of ulcerative colitis at any point during the life of the participant's biological mother.	family history of disease	DIS_UC_M_EVER		
+CANPATH:0000238	Lifetime occurrence of irritable bowel syndrome in mother		Occurrence of irritable bowel syndrome at any point during the life of the participant's biological mother.	family history of disease	DIS_IBS_M_EVER		
+CANPATH:0000239	Lifetime occurrence of eczema in mother		Occurrence of eczema at any point during the life of the participant's biological mother.	family history of disease	DIS_ECZEMA_M_EVER		
+CANPATH:0000240	Lifetime occurrence of systemic lupus erythematosus in mother		Occurrence of systemic lupus erythematosus at any point during the life of the participant's biological mother.	family history of disease	DIS_SLE_M_EVER		
+CANPATH:0000241	Lifetime occurrence of psoriasis in mother		Occurrence of psoriasis at any point during the life of the participant's biological mother.	family history of disease	DIS_PS_M_EVER		
+CANPATH:0000242	Lifetime occurrence of multiple sclerosis in mother		Occurrence of multiple sclerosis at any point during the life of the participant's biological mother.	family history of disease	DIS_MS_M_EVER		
+CANPATH:0000243	Lifetime occurrence of osteoporosis in mother		Occurrence of osteoporosis at any point during the life of the participant's biological mother.	family history of disease	DIS_OP_M_EVER		
+CANPATH:0000244	Lifetime occurrence of arthritis in mother		Occurrence of arthritis at any point during the life of the participant's biological mother.	family history of disease	DIS_ARTHRITIS_M_EVER		
+CANPATH:0000245	Lifetime occurrence of high blood pressure in siblings		Occurrence of high blood pressure at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_HBP_SIB_EVER		
+CANPATH:0000246	Number of siblings with high blood pressure		Total number of participant's biological siblings (one or two common parents) with high blood pressure.	family history of disease	DIS_HBP_SIB_NUM		
+CANPATH:0000247	Lifetime occurrence of myocardial infarction in siblings		Occurrence of myocardial infarction at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_MI_SIB_EVER		
+CANPATH:0000248	Number of siblings with myocardial infarction		Total number of participant's biological siblings (one or two common parents) with myocardial infarction.	family history of disease	DIS_MI_SIB_NUM		
+CANPATH:0000249	Lifetime occurrence of stroke in siblings		Occurrence of stroke at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_STROKE_SIB_EVER		
+CANPATH:0000250	Number of siblings with stroke		Total number of participant's biological siblings (one or two common parents) with stroke.	family history of disease	DIS_STROKE_SIB_NUM		
+CANPATH:0000251	Lifetime occurrence of asthma in siblings		Occurrence of asthma at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_ASTHMA_SIB_EVER		
+CANPATH:0000252	Number of siblings with asthma		Total number of participant's biological siblings (one or two common parents) with asthma.	family history of disease	DIS_ASTHMA_SIB_NUM		
+CANPATH:0000253	Lifetime occurrence of emphysema in siblings		Occurrence of emphysema at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_EMPHYSEMA_SIB_EVER		
+CANPATH:0000254	Number of siblings with emphysema		Total number of participant's biological siblings (one or two common parents) with emphysema.	family history of disease	DIS_EMPHYSEMA_SIB_NUM		
+CANPATH:0000255	Lifetime occurrence of chronic bronchitis in siblings		Occurrence of chronic bronchitis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_CB_SIB_EVER		
+CANPATH:0000256	Number of siblings with chronic bronchitis		Total number of participant's biological siblings (one or two common parents) with chronic bronchitis.	family history of disease	DIS_CB_SIB_NUM		
+CANPATH:0000257	Lifetime occurrence of chronic obstructive pulmonary disease in siblings		Occurrence of chronic obstructive pulmonary disease at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_COPD_SIB_EVER		
+CANPATH:0000258	Number of siblings with chronic obstructive pulmonary disease		Total number of participant's biological siblings (one or two common parents) with chronic obstructive pulmonary disease.	family history of disease	DIS_COPD_SIB_NUM		
+CANPATH:0000259	Lifetime occurrence of major depression in siblings		Occurrence of major depression at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_DEP_SIB_EVER		
+CANPATH:0000260	Number of siblings with major depression		Total number of participant's biological siblings (one or two common parents) with major depression.	family history of disease	DIS_DEP_SIB_NUM		
+CANPATH:0000261	Lifetime occurrence of diabetes in siblings		Occurrence of diabetes at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_DIAB_SIB_EVER		
+CANPATH:0000262	Number of siblings with diabetes		Total number of participant's biological siblings (one or two common parents) with diabetes.	family history of disease	DIS_DIAB_SIB_NUM		
+CANPATH:0000263	Lifetime occurrence of liver cirrhosis in siblings		Occurrence of liver cirrhosis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_LC_SIB_EVER		
+CANPATH:0000264	Number of siblings with liver cirrhosis		Total number of participant's biological siblings (one or two common parents) with liver cirrhosis.	family history of disease	DIS_LC_SIB_NUM		
+CANPATH:0000265	Lifetime occurrence of chronic hepatitis in siblings		Occurrence of chronic hepatitis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_CH_SIB_EVER		
+CANPATH:0000266	Number of siblings with chronic hepatitis		Total number of participant's biological siblings (one or two common parents) with chronic hepatitis.	family history of disease	DIS_CH_SIB_NUM		
+CANPATH:0000267	Lifetime occurrence of Crohn's disease in siblings		Occurrence of Crohn's disease at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_CROHN_SIB_EVER		
+CANPATH:0000268	Number of siblings with Crohn's disease		Total number of participant's biological siblings (one or two common parents) with Crohn's disease.	family history of disease	DIS_CROHN_SIB_NUM		
+CANPATH:0000269	Lifetime occurrence of ulcerative colitis in siblings		Occurrence of ulcerative colitis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_UC_SIB_EVER		
+CANPATH:0000270	Number of siblings with ulcerative colitis		Total number of participant's biological siblings (one or two common parents) with ulcerative colitis.	family history of disease	DIS_UC_SIB_NUM		
+CANPATH:0000271	Lifetime occurrence of irritable bowel syndrome in siblings		Occurrence of irritable bowel syndrome at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_IBS_SIB_EVER		
+CANPATH:0000272	Number of siblings with irritable bowel syndrome		Total number of participant's biological siblings (one or two common parents) with irritable bowel syndrome.	family history of disease	DIS_IBS_SIB_NUM		
+CANPATH:0000273	Lifetime occurrence of eczema in siblings		Occurrence of eczema at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_ECZEMA_SIB_EVER		
+CANPATH:0000274	Number of siblings with eczema		Total number of participant's biological siblings (one or two common parents) with eczema.	family history of disease	DIS_ECZEMA_SIB_NUM		
+CANPATH:0000275	Lifetime occurrence of systemic lupus erythematosus in siblings		Occurrence of systemic lupus erythematosus at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_SLE_SIB_EVER		
+CANPATH:0000276	Number of siblings with systemic lupus erythematosus		Total number of participant's biological siblings (one or two common parents) with systemic lupus erythematosus.	family history of disease	DIS_SLE_SIB_NUM		
+CANPATH:0000277	Lifetime occurrence of psoriasis in siblings		Occurrence of psoriasis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_PS_SIB_EVER		
+CANPATH:0000278	Number of siblings with psoriasis		Total number of participant's biological siblings (one or two common parents) with psoriasis.	family history of disease	DIS_PS_SIB_NUM		
+CANPATH:0000279	Lifetime occurrence of multiple sclerosis in siblings		Occurrence of multiple sclerosis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_MS_SIB_EVER		
+CANPATH:0000280	Number of siblings with multiple sclerosis		Total number of participant's biological siblings (one or two common parents) with multiple sclerosis.	family history of disease	DIS_MS_SIB_NUM		
+CANPATH:0000281	Lifetime occurrence of osteoporosis in siblings		Occurrence of osteoporosis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_OP_SIB_EVER		
+CANPATH:0000282	Number of siblings with osteoporosis		Total number of participant's biological siblings (one or two common parents) with osteoporosis.	family history of disease	DIS_OP_SIB_NUM		
+CANPATH:0000283	Lifetime occurrence of arthritis in siblings		Occurrence of arthritis at any point during the life of the participant's biological siblings (one or two common parents).	family history of disease	DIS_ARTHRITIS_SIB_EVER		
+CANPATH:0000284	Number of siblings with arthritis		Total number of participant's biological siblings (one or two common parents) with arthritis.	family history of disease	DIS_ARTHRITIS_SIB_NUM		
+CANPATH:0000285	Lifetime occurrence of high blood pressure in children		Occurrence of high blood pressure at any point during the life of the participant's biological children.	family history of disease	DIS_HBP_CHILD_EVER		
+CANPATH:0000286	Number of children with high blood pressure		Total number of participant's biological children with high blood pressure.	family history of disease	DIS_HBP_CHILD_NUM		
+CANPATH:0000287	Lifetime occurrence of myocardial infarction in children		Occurrence of myocardial infarction at any point during the life of the participant's biological children.	family history of disease	DIS_MI_CHILD_EVER		
+CANPATH:0000288	Number of children with myocardial infarction		Total number of participant's biological children with myocardial infarction.	family history of disease	DIS_MI_CHILD_NUM		
+CANPATH:0000289	Lifetime occurrence of stroke in children		Occurrence of stroke at any point during the life of the participant's biological children.	family history of disease	DIS_STROKE_CHILD_EVER		
+CANPATH:0000290	Number of children with stroke		Total number of participant's biological children with stroke.	family history of disease	DIS_STROKE_CHILD_NUM		
+CANPATH:0000291	Lifetime occurrence of asthma in children		Occurrence of asthma at any point during the life of the participant's biological children.	family history of disease	DIS_ASTHMA_CHILD_EVER		
+CANPATH:0000292	Number of children with asthma		Total number of participant's biological children with asthma.	family history of disease	DIS_ASTHMA_CHILD_NUM		
+CANPATH:0000293	Lifetime occurrence of emphysema in children		Occurrence of emphysema at any point during the life of the participant's biological children.	family history of disease	DIS_EMPHYSEMA_CHILD_EVER		
+CANPATH:0000294	Number of children with emphysema		Total number of participant's biological children with emphysema.	family history of disease	DIS_EMPHYSEMA_CHILD_NUM		
+CANPATH:0000295	Lifetime occurrence of chronic bronchitis in children		Occurrence of chronic bronchitis at any point during the life of the participant's biological children.	family history of disease	DIS_CB_CHILD_EVER		
+CANPATH:0000296	Number of children with chronic bronchitis		Total number of participant's biological children with chronic bronchitis.	family history of disease	DIS_CB_CHILD_NUM		
+CANPATH:0000297	Lifetime occurrence of chronic obstructive pulmonary disease in children		Occurrence of chronic obstructive pulmonary disease at any point during the life of the participant's biological children.	family history of disease	DIS_COPD_CHILD_EVER		
+CANPATH:0000298	Number of children with chronic obstructive pulmonary disease		Total number of participant's biological children with chronic obstructive pulmonary disease.	family history of disease	DIS_COPD_CHILD_NUM		
+CANPATH:0000299	Lifetime occurrence of major depression in children		Occurrence of major depression at any point during the life of the participant's biological children.	family history of disease	DIS_DEP_CHILD_EVER		
+CANPATH:0000300	Number of children with major depression		Total number of participant's biological children with major depression.	family history of disease	DIS_DEP_CHILD_NUM		
+CANPATH:0000301	Lifetime occurrence of diabetes in children		Occurrence of diabetes at any point during the life of the participant's biological children.	family history of disease	DIS_DIAB_CHILD_EVER		
+CANPATH:0000302	Number of children with diabetes		Total number of participant's biological children with diabetes.	family history of disease	DIS_DIAB_CHILD_NUM		
+CANPATH:0000303	Lifetime occurrence of liver cirrhosis in children		Occurrence of liver cirrhosis at any point during the life of the participant's biological children.	family history of disease	DIS_LC_CHILD_EVER		
+CANPATH:0000304	Number of children with liver cirrhosis		Total number of participant's biological children with liver cirrhosis.	family history of disease	DIS_LC_CHILD_NUM		
+CANPATH:0000305	Lifetime occurrence of chronic hepatitis in children		Occurrence of chronic hepatitis at any point during the life of the participant's biological children.	family history of disease	DIS_CH_CHILD_EVER		
+CANPATH:0000306	Number of children with chronic hepatitis		Total number of participant's biological children with chronic hepatitis.	family history of disease	DIS_CH_CHILD_NUM		
+CANPATH:0000307	Lifetime occurrence of Crohn's disease in children		Occurrence of Crohn's disease at any point during the life of the participant's biological children.	family history of disease	DIS_CROHN_CHILD_EVER		
+CANPATH:0000308	Number of children with Crohn's disease		Total number of participant's biological children with Crohn's disease.	family history of disease	DIS_CROHN_CHILD_NUM		
+CANPATH:0000309	Lifetime occurrence of ulcerative colitis in children		Occurrence of ulcerative colitis at any point during the life of the participant's biological children.	family history of disease	DIS_UC_CHILD_EVER		
+CANPATH:0000310	Number of children with ulcerative colitis		Total number of participant's biological children with ulcerative colitis.	family history of disease	DIS_UC_CHILD_NUM		
+CANPATH:0000311	Lifetime occurrence of irritable bowel syndrome in children		Occurrence of irritable bowel syndrome at any point during the life of the participant's biological children.	family history of disease	DIS_IBS_CHILD_EVER		
+CANPATH:0000312	Number of children with irritable bowel syndrome		Total number of participant's biological children with irritable bowel syndrome.	family history of disease	DIS_IBS_CHILD_NUM		
+CANPATH:0000313	Lifetime occurrence of eczema in children		Occurrence of eczema at any point during the life of the participant's biological children.	family history of disease	DIS_ECZEMA_CHILD_EVER		
+CANPATH:0000314	Number of children with eczema		Total number of participant's biological children with eczema.	family history of disease	DIS_ECZEMA_CHILD_NUM		
+CANPATH:0000315	Lifetime occurrence of systemic lupus erythematosus in children		Occurrence of systemic lupus erythematosus at any point during the life of the participant's biological children.	family history of disease	DIS_SLE_CHILD_EVER		
+CANPATH:0000316	Number of children with systemic lupus erythematosus		Total number of participant's biological children with systemic lupus erythematosus.	family history of disease	DIS_SLE_CHILD_NUM		
+CANPATH:0000317	Lifetime occurrence of psoriasis in children		Occurrence of psoriasis at any point during the life of the participant's biological children.	family history of disease	DIS_PS_CHILD_EVER		
+CANPATH:0000318	Number of children with psoriasis		Total number of participant's biological children with psoriasis.	family history of disease	DIS_PS_CHILD_NUM		
+CANPATH:0000319	Lifetime occurrence of multiple sclerosis in children		Occurrence of multiple sclerosis at any point during the life of the participant's biological children.	family history of disease	DIS_MS_CHILD_EVER		
+CANPATH:0000320	Number of children with multiple sclerosis		Total number of participant's biological children with multiple sclerosis.	family history of disease	DIS_MS_CHILD_NUM		
+CANPATH:0000321	Lifetime occurrence of osteoporosis in children		Occurrence of osteoporosis at any point during the life of the participant's biological children.	family history of disease	DIS_OP_CHILD_EVER		
+CANPATH:0000322	Number of children with osteoporosis		Total number of participant's biological children with osteoporosis.	family history of disease	DIS_OP_CHILD_NUM		
+CANPATH:0000323	Lifetime occurrence of arthritis in children		Occurrence of arthritis at any point during the life of the participant's biological children.	family history of disease	DIS_ARTHRITIS_CHILD_EVER		
+CANPATH:0000324	Number of children with arthritis		Total number of participant's biological children with arthritis.	family history of disease	DIS_ARTHRITIS_CHILD_NUM		
+CANPATH:0000325	Lifetime occurrence of cancer in family		Occurrence of cancer amongst participant's biological family members (mother, father, siblings and children).	family history of disease	DIS_CANCER_FAM_EVER		
+CANPATH:0000326	Lifetime occurrence of cancer in father		Occurrence of cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_EVER		
+CANPATH:0000327	Lifetime occurrence of cancer in mother		Occurrence of cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_EVER		
+CANPATH:0000328	Lifetime occurrence of cancer in siblings		Occurrence of cancer at any point during the life of the participant's biological siblings.	family history of disease	DIS_CANCER_SIB_EVER		
+CANPATH:0000329	Lifetime occurrence of cancer in children		Occurrence of cancer at any point during the life of the participant's biological children.	family history of disease	DIS_CANCER_CHILD_EVER		
+CANPATH:0000330	Father breast cancer		Occurrence of breast cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_BREAST		
+CANPATH:0000331	Father colon cancer		Occurrence of colon cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_COLON		
+CANPATH:0000332	Father lung cancer		Occurrence of lung and bronchus cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_LUNG		
+CANPATH:0000333	Father liver cancer		Occurrence of liver cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_LIVER		
+CANPATH:0000334	Father prostate cancer		Occurrence of prostate cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_PROSTATE		
+CANPATH:0000335	Father pancreatic cancer		Occurrence of pancreatic cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_PANCREAS		
+CANPATH:0000336	Father stomach cancer		Occurrence of stomach cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_STOMACH		
+CANPATH:0000337	Father esophageal cancer		Occurrence of esophageal cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_ESOPHAGUS		
+CANPATH:0000338	Father laryngeal cancer		Occurrence of laryngeal cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_LARYNX		
+CANPATH:0000339	Father tracheal cancer		Occurrence of tracheal cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_TRACHEA		
+CANPATH:0000340	Father rectal cancer		Occurrence of rectal cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_RECTUM		
+CANPATH:0000341	Father skin cancer		Occurrence of skin cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_SKIN		
+CANPATH:0000342	Father kidney cancer		Occurrence of kidney cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_KIDNEY		
+CANPATH:0000343	Father bladder cancer		Occurrence of bladder cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_BLADDER		
+CANPATH:0000344	Father brain cancer		Occurrence of brain cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_BRAIN		
+CANPATH:0000345	Father thyroid cancer		Occurrence of thyroid cancer at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_THYROID		
+CANPATH:0000346	Father non-Hodgkin's lymphoma		Occurrence of non-Hodgkin's lymphoma at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_NHL		
+CANPATH:0000347	Father lymphoma		Occurrence of lymphoma  at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_LYMPHOMA		
+CANPATH:0000348	Father leukemia		Occurrence of leukemia at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_LEUKEMIA		
+CANPATH:0000349	Father other cancer		Occurrence of other cancer than those listed at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_OTHER		
+CANPATH:0000350	Father cancer, other specify		Name of other type of cancer than those listed occurring at any point during the life of the participant's biological father.	family history of disease	DIS_CANCER_F_OTSP		
+CANPATH:0000351	Mother breast cancer		Occurrence of breast cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_BREAST		
+CANPATH:0000352	Mother colon cancer		Occurrence of colon cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_COLON		
+CANPATH:0000353	Mother lung cancer		Occurrence of lung and bronchus cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_LUNG		
+CANPATH:0000354	Mother liver cancer		Occurrence of liver cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_LIVER		
+CANPATH:0000355	Mother ovarian cancer		Occurrence of ovarian cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_OVARY		
+CANPATH:0000356	Mother pancreatic cancer		Occurrence of pancreatic cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_PANCREAS		
+CANPATH:0000357	Mother stomach cancer		Occurrence of stomach cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_STOMACH		
+CANPATH:0000358	Mother esophageal cancer		Occurrence of esophageal cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_ESOPHAGUS		
+CANPATH:0000359	Mother laryngeal cancer		Occurrence of laryngeal cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_LARYNX		
+CANPATH:0000360	Mother tracheal cancer		Occurrence of tracheal cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_TRACHEA		
+CANPATH:0000361	Mother rectal cancer		Occurrence of rectal cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_RECTUM		
+CANPATH:0000362	Mother skin cancer		Occurrence of skin cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_SKIN		
+CANPATH:0000363	Mother cervical cancer		Occurrence of cervical cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_CERVIX		
+CANPATH:0000364	Mother uterine cancer		Occurrence of uterine cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_UTERUS		
+CANPATH:0000365	Mother kidney cancer		Occurrence of kidney cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_KIDNEY		
+CANPATH:0000366	Mother bladder cancer		Occurrence of bladder cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_BLADDER		
+CANPATH:0000367	Mother brain cancer		Occurrence of brain cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_BRAIN		
+CANPATH:0000368	Mother thyroid cancer		Occurrence of thyroid cancer at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_THYROID		
+CANPATH:0000369	Mother non-Hodgkin's lymphoma		Occurrence of non-Hodgkin's lymphoma at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_NHL		
+CANPATH:0000370	Mother lymphoma		Occurrence of lymphoma  at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_LYMPHOMA		
+CANPATH:0000371	Mother leukemia		Occurrence of leukemia at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_LEUKEMIA		
+CANPATH:0000372	Mother other cancer		Occurrence of other cancer than those listed at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_OTHER		
+CANPATH:0000373	Mother cancer, other specify		Name of other type of cancer than those listed occurring at any point during the life of the participant's biological mother.	family history of disease	DIS_CANCER_M_OTSP		
+CANPATH:0000374	Siblings breast cancer		Occurrence of breast cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_BREAST		
+CANPATH:0000375	Number of siblings with breast cancer		Total number of participant's biological siblings (one or two common parents) that have ever had breast cancer.	family history of disease	DIS_CANCER_SIB_BREAST_NUM		
+CANPATH:0000376	Siblings colon cancer		Occurrence of colon cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_COLON		
+CANPATH:0000377	Number of siblings with colon cancer		Total number of participant's biological siblings (one or two common parents) that have ever had colon cancer.	family history of disease	DIS_CANCER_SIB_COLON_NUM		
+CANPATH:0000378	Siblings lung cancer		Occurrence of lung and bronchus cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_LUNG		
+CANPATH:0000379	Number of siblings with lung cancer		Total number of participant's biological siblings (one or two common parents) that have ever had lung and bronchus cancer.	family history of disease	DIS_CANCER_SIB_LUNG_NUM		
+CANPATH:0000380	Siblings liver cancer		Occurrence of liver cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_LIVER		
+CANPATH:0000381	Number of siblings with liver cancer		Total number of participant's biological siblings (one or two common parents) that have ever had liver cancer.	family history of disease	DIS_CANCER_SIB_LIVER_NUM		
+CANPATH:0000382	Siblings prostate cancer		Occurrence of prostate cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_PROSTATE		
+CANPATH:0000383	Number of siblings with prostate cancer		Total number of participant's biological siblings (one or two common parents) that have ever had prostate cancer.	family history of disease	DIS_CANCER_SIB_PROSTATE_NUM		
+CANPATH:0000384	Siblings ovarian cancer		Occurrence of ovarian cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_OVARY		
+CANPATH:0000385	Number of siblings with ovarian cancer		Total number of participant's biological siblings (one or two common parents) that have ever had ovarian cancer.	family history of disease	DIS_CANCER_SIB_OVARY_NUM		
+CANPATH:0000386	Siblings pancreatic cancer		Occurrence of pancreatic cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_PANCREAS		
+CANPATH:0000387	Number of siblings with pancreatic cancer		Total number of participant's biological siblings (one or two common parents) that have ever had pancreatic cancer.	family history of disease	DIS_CANCER_SIB_PANCREAS_NUM		
+CANPATH:0000388	Siblings stomach cancer		Occurrence of stomach cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_STOMACH		
+CANPATH:0000389	Number of siblings with stomach cancer		Total number of participant's biological siblings (one or two common parents) that have ever had stomach cancer.	family history of disease	DIS_CANCER_SIB_STOMACH_NUM		
+CANPATH:0000390	Siblings esophageal cancer		Occurrence of esophageal cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_ESOPHAGUS		
+CANPATH:0000391	Number of siblings with esophageal cancer		Total number of participant's biological siblings (one or two common parents) that have ever had esophageal cancer.	family history of disease	DIS_CANCER_SIB_ESOPHAGUS_NUM		
+CANPATH:0000392	Siblings laryngeal cancer		Occurrence of laryngeal cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_LARYNX		
+CANPATH:0000393	Number of siblings with laryngeal cancer		Total number of participant's biological siblings (one or two common parents) that have ever had laryngeal cancer.	family history of disease	DIS_CANCER_SIB_LARYNX_NUM		
+CANPATH:0000394	Siblings tracheal cancer		Occurrence of tracheal cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_TRACHEA		
+CANPATH:0000395	Number of siblings with tracheal cancer		Total number of participant's biological siblings (one or two common parents) that have ever had tracheal cancer.	family history of disease	DIS_CANCER_SIB_TRACHEA_NUM		
+CANPATH:0000396	Siblings rectal cancer		Occurrence of rectal cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_RECTUM		
+CANPATH:0000397	Number of siblings with rectal cancer		Total number of participant's biological siblings (one or two common parents) that have ever had rectal cancer.	family history of disease	DIS_CANCER_SIB_RECTUM_NUM		
+CANPATH:0000398	Siblings skin cancer		Occurrence of skin cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_SKIN		
+CANPATH:0000399	Number of siblings with skin cancer		Total number of participant's biological siblings (one or two common parents) that have ever had skin cancer.	family history of disease	DIS_CANCER_SIB_SKIN_NUM		
+CANPATH:0000400	Siblings cervical cancer		Occurrence of cervical cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_CERVIX		
+CANPATH:0000401	Number of siblings with cervical cancer		Total number of participant's biological siblings (one or two common parents) that have ever had cervical cancer.	family history of disease	DIS_CANCER_SIB_CERVIX_NUM		
+CANPATH:0000402	Siblings uterine cancer		Occurrence of uterine cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_UTERUS		
+CANPATH:0000403	Number of siblings with uterine cancer		Total number of participant's biological siblings (one or two common parents) that have ever had uterine cancer.	family history of disease	DIS_CANCER_SIB_UTERUS_NUM		
+CANPATH:0000404	Siblings kidney cancer		Occurrence of kidney cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_KIDNEY		
+CANPATH:0000405	Number of siblings with kidney cancer		Total number of participant's biological siblings (one or two common parents) that have ever had kidney cancer.	family history of disease	DIS_CANCER_SIB_KIDNEY_NUM		
+CANPATH:0000406	Siblings bladder cancer		Occurrence of bladder cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_BLADDER		
+CANPATH:0000407	Number of siblings with bladder cancer		Total number of participant's biological siblings (one or two common parents) that have ever had bladder cancer.	family history of disease	DIS_CANCER_SIB_BLADDER_NUM		
+CANPATH:0000408	Siblings brain cancer		Occurrence of brain cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_BRAIN		
+CANPATH:0000409	Number of siblings with brain cancer		Total number of participant's biological siblings (one or two common parents) that have ever had brain cancer.	family history of disease	DIS_CANCER_SIB_BRAIN_NUM		
+CANPATH:0000410	Siblings thyroid cancer		Occurrence of thyroid cancer at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_THYROID		
+CANPATH:0000411	Number of siblings with thyroid cancer		Total number of participant's biological siblings (one or two common parents) that have ever had thyroid cancer.	family history of disease	DIS_CANCER_SIB_THYROID_NUM		
+CANPATH:0000412	Siblings non-Hodgkin's lymphoma		Occurrence of non-Hodgkin's lymphoma at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_NHL		
+CANPATH:0000413	Number of siblings with non-Hodgkin's lymphoma		Total number of participant's biological siblings (one or two common parents) that have ever had non-Hodgkin's lymphoma.	family history of disease	DIS_CANCER_SIB_NHL_NUM		
+CANPATH:0000414	Siblings lymphoma		Occurrence of lymphoma at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_LYMPHOMA		
+CANPATH:0000415	Number of siblings with lymphoma		Total number of participant's biological siblings (one or two common parents) that have ever had lymphoma.	family history of disease	DIS_CANCER_SIB_LYMPHOMA_NUM		
+CANPATH:0000416	Siblings leukemia		Occurrence of leukemia at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_LEUKEMIA		
+CANPATH:0000417	Number of siblings with leukemia		Total number of participant's biological siblings (one or two common parents) that have ever had leukemia.	family history of disease	DIS_CANCER_SIB_LEUKEMIA_NUM		
+CANPATH:0000418	Siblings other cancer		Occurrence of other cancer than those listed at any point during the life of the biological siblings (one or two common parents) of the participant.	family history of disease	DIS_CANCER_SIB_OTHER		
+CANPATH:0000419	Number of siblings with other cancer		Total number of participant's biological siblings (one or two common parents) that have ever had other cancer than those listed.	family history of disease	DIS_CANCER_SIB_OTHER_NUM		
+CANPATH:0000420	Siblings cancer, other specify		Name of other type of cancer than those listed occurring at any point during the life of participant's biological siblings (one or two common parents).	family history of disease	DIS_CANCER_SIB_OTSP		
+CANPATH:0000421	Children breast cancer		Occurrence of breast cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_BREAST		
+CANPATH:0000422	Number of children with breast cancer		Total number of participant's biological children that have ever had breast cancer.	family history of disease	DIS_CANCER_CHILD_BREAST_NUM		
+CANPATH:0000423	Children colon cancer		Occurrence of colon cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_COLON		
+CANPATH:0000424	Number of children with colon cancer		Total number of participant's biological children that have ever had colon cancer.	family history of disease	DIS_CANCER_CHILD_COLON_NUM		
+CANPATH:0000425	Children lung cancer		Occurrence of lung and bronchus cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_LUNG		
+CANPATH:0000426	Number of children with lung cancer		Total number of participant's biological children that have ever had lung and bronchus cancer.	family history of disease	DIS_CANCER_CHILD_LUNG_NUM		
+CANPATH:0000427	Children liver cancer		Occurrence of liver cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_LIVER		
+CANPATH:0000428	Number of children with liver cancer		Total number of participant's biological children that have ever had liver cancer.	family history of disease	DIS_CANCER_CHILD_LIVER_NUM		
+CANPATH:0000429	Children prostate cancer		Occurrence of prostate cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_PROSTATE		
+CANPATH:0000430	Number of children with prostate cancer		Total number of participant's biological children that have ever had prostate cancer.	family history of disease	DIS_CANCER_CHILD_PROSTATE_NUM		
+CANPATH:0000431	Children ovarian cancer		Occurrence of ovarian cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_OVARY		
+CANPATH:0000432	Number of children with ovarian cancer		Total number of participant's biological children that have ever had ovarian cancer.	family history of disease	DIS_CANCER_CHILD_OVARY_NUM		
+CANPATH:0000433	Children pancreatic cancer		Occurrence of pancreatic cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_PANCREAS		
+CANPATH:0000434	Number of children with pancreatic cancer		Total number of participant's biological children that have ever had pancreatic cancer.	family history of disease	DIS_CANCER_CHILD_PANCREAS_NUM		
+CANPATH:0000435	Children stomach cancer		Occurrence of stomach cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_STOMACH		
+CANPATH:0000436	Number of children with stomach cancer		Total number of participant's biological children that have ever had stomach cancer.	family history of disease	DIS_CANCER_CHILD_STOMACH_NUM		
+CANPATH:0000437	Children esophageal cancer		Occurrence of esophageal cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_ESOPHAGUS		
+CANPATH:0000438	Number of children with esophageal cancer		Total number of participant's biological children that have ever had esophageal cancer.	family history of disease	DIS_CANCER_CHILD_ESOPHAGUS_NUM		
+CANPATH:0000439	Children laryngeal cancer		Occurrence of laryngeal cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_LARYNX		
+CANPATH:0000440	Number of children with laryngeal cancer		Total number of participant's biological children that have ever had laryngeal cancer.	family history of disease	DIS_CANCER_CHILD_LARYNX_NUM		
+CANPATH:0000441	Children tracheal cancer		Occurrence of tracheal cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_TRACHEA		
+CANPATH:0000442	Number of children with tracheal cancer		Total number of participant's biological children that have ever had tracheal cancer.	family history of disease	DIS_CANCER_CHILD_TRACHEA_NUM		
+CANPATH:0000443	Children rectal cancer		Occurrence of rectal cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_RECTUM		
+CANPATH:0000444	Number of children with rectal cancer		Total number of participant's biological children that have ever had rectal cancer.	family history of disease	DIS_CANCER_CHILD_RECTUM_NUM		
+CANPATH:0000445	Children skin cancer		Occurrence of skin cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_SKIN		
+CANPATH:0000446	Number of children with skin cancer		Total number of participant's biological children that have ever had skin cancer.	family history of disease	DIS_CANCER_CHILD_SKIN_NUM		
+CANPATH:0000447	Children cervical cancer		Occurrence of cervical cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_CERVIX		
+CANPATH:0000448	Number of children with cervical cancer		Total number of participant's biological children that have ever had cervical cancer.	family history of disease	DIS_CANCER_CHILD_CERVIX_NUM		
+CANPATH:0000449	Children uterine cancer		Occurrence of uterine cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_UTERUS		
+CANPATH:0000450	Number of children with uterine cancer		Total number of participant's biological children that have ever had uterine cancer.	family history of disease	DIS_CANCER_CHILD_UTERUS_NUM		
+CANPATH:0000451	Children kidney cancer		Occurrence of kidney cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_KIDNEY		
+CANPATH:0000452	Number of children with kidney cancer		Total number of participant's biological children that have ever had kidney cancer.	family history of disease	DIS_CANCER_CHILD_KIDNEY_NUM		
+CANPATH:0000453	Children bladder cancer		Occurrence of bladder cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_BLADDER		
+CANPATH:0000454	Number of children with bladder cancer		Total number of participant's biological children that have ever had bladder cancer.	family history of disease	DIS_CANCER_CHILD_BLADDER_NUM		
+CANPATH:0000455	Children brain cancer		Occurrence of brain cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_BRAIN		
+CANPATH:0000456	Number of children with brain cancer		Total number of participant's biological children that have ever had brain cancer.	family history of disease	DIS_CANCER_CHILD_BRAIN_NUM		
+CANPATH:0000457	Children thyroid cancer		Occurrence of thyroid cancer at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_THYROID		
+CANPATH:0000458	Number of children with thyroid cancer		Total number of participant's biological children that have ever had thyroid cancer.	family history of disease	DIS_CANCER_CHILD_THYROID_NUM		
+CANPATH:0000459	Children non-Hodgkin's lymphoma		Occurrence of non-Hodgkin's lymphoma at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_NHL		
+CANPATH:0000460	Number of children with non-Hodgkin's lymphoma		Total number of participant's biological children that have ever had non-Hodgkin's lymphoma.	family history of disease	DIS_CANCER_CHILD_NHL_NUM		
+CANPATH:0000461	Children lymphoma		Occurrence of lymphoma at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_LYMPHOMA		
+CANPATH:0000462	Number of children with lymphoma		Total number of participant's biological children that have ever had lymphoma.	family history of disease	DIS_CANCER_CHILD_LYMPHOMA_NUM		
+CANPATH:0000463	Children leukemia		Occurrence of leukemia at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_LEUKEMIA		
+CANPATH:0000464	Number of children with leukemia		Total number of participant's biological children that have ever had leukemia.	family history of disease	DIS_CANCER_CHILD_LEUKEMIA_NUM		
+CANPATH:0000465	Children other cancer		Occurrence of other cancer than those listed at any point during the life of the biological children of the participant.	family history of disease	DIS_CANCER_CHILD_OTHER		
+CANPATH:0000466	Number of children with other cancer		Total number of participant's biological children that have ever had other cancer than those listed.	family history of disease	DIS_CANCER_CHILD_OTHER_NUM		
+CANPATH:0000467	Children cancer, other specify		Name of other type of cancer than those listed occurring at any point during the life of participant's biological children.	family history of disease	DIS_CANCER_CHILD_OTSP		
+CANPATH:0000468	Number of minutes usually slept		Number of minutes per day the participant usually sleeps, including naps.	sleep history	SLE_TIME		
+CANPATH:0000469	Number of minutes usually slept - categorical		Number of minutes per day the participant usually sleeps, including naps.	sleep history	SLE_TIME_CAT		
+CANPATH:0000470	Frequency trouble to sleep		Frequency of sleeping troubles (trouble going to sleep or staying asleep).	sleep history	SLE_TROUBLE_FREQ		
+CANPATH:0000471	Exposure to light at night		Average quantity of light entering the room of the participant when he/she is sleeping.	sleep history	SLE_LIGHT_EXP		
+CANPATH:0000472	Current use of artificial tanning equipment		Indicator of the frequency at which the participant used artificial tanning equipment, for any reasons, in the past 12 months.	lifestyle and behaviours	UVE_TANNING_CUR		
+CANPATH:0000473	Skin reaction to the sun		Reaction of the participant's skin when he is exposed to the sun during summer months, in the middle of the day for one hour, without any sun protection.	exposure to carcinogens	UVE_SKIN_REACTION		
+CANPATH:0000474	Time spent in the sun on typical weekdays		Time per day the participant typically spends in the sun between 11 am and 4 pm on weekdays, during summer months.	lifestyle and behaviours	UVE_TIME_WKDAY		
+CANPATH:0000475	Time spent in the sun on typical weekend days		Time per day the participant typically spends in the sun between 11 am and 4 pm on weekend days, during summer months	lifestyle and behaviours	UVE_TIME_WKEND		
+CANPATH:0000476	Use of sun protection		Indicator of the frequency at which the participant uses sun protection during summer months when exposed to the sun for a minimum of 30 minutes.	lifestyle and behaviours	UVE_PROTECTION		
+CANPATH:0000477	Natural hair color		Natural hair color of the participant.		UVE_HAIR		
+CANPATH:0000478	Natural eye colour		Natural eye color of the participant.		UVE_EYE		
+CANPATH:0000479	Quantity of vegetables consumed		Total number of vegetable servings (about 1/2 cup or 125mL) consumed in a typical day.	dietary history	NUT_VEG_QTY		
+CANPATH:0000480	Quantity of vegetables consumed - categorical		Total number of vegetable servings (about 1/2 cup or 125mL) consumed in a typical day.	dietary history	NUT_VEG_QTY_CAT		
+CANPATH:0000481	Quantity of fruits consumed		Total number of fruit servings (about 1/2 cup) consumed in a typical day.	dietary history	NUT_FRUITS_QTY		
+CANPATH:0000482	Quantity of fruits consumed - categorical		Total number of fruit servings (about 1/2 cup) consumed in a typical day.	dietary history	NUT_FRUITS_QTY_CAT		
+CANPATH:0000483	Quantity of 100 percent fruit-vegetable juice consumed		Total number of 100 percent fruit or vegetable juice servings  (125 mL or 1/2 cup) consumed in a typical day.	dietary history	NUT_JUICE_QTY		
+CANPATH:0000484	Quantity of 100 percent fruit-vegetable juice consumed - categorical		Total number of 100 percent fruit or vegetable juice servings  (125 mL or 1/2 cup) consumed in a typical day.	dietary history	NUT_JUICE_QTY_CAT		
+CANPATH:0000485	Ever alcohol consumption		Indicator of whether the participant has ever consumed alcohol.	alcohol use history	ALC_EVER		
+CANPATH:0000486	Current use of alcohol		Frequency of alcohol consumption during the past 12 months.	alcohol use history	ALC_CUR_FREQ		
+CANPATH:0000487	Current quantity of red wine consumed on weekdays		In a typical week during the past 12 months, number of glasses of red wine (one glass of 142 mL or 5 ounces) consumed by the participant on weekdays (Sunday to Thursday).	alcohol use history	ALC_RED_WINE_WKDAY		
+CANPATH:0000488	Current quantity of red wine consumed on weekend days		In a typical week during the past 12 months, number of glasses of red wine (one glass of 142 mL or 5 ounces) consumed by the participant on weekend days (Friday to Saturday).	alcohol use history	ALC_RED_WINE_WKEND		
+CANPATH:0000489	Current quantity of red wine consumed per week		Average number of glasses of red wine (one glass of 142 mL or 5 ounces) consumed by the participant during a typical week.	alcohol use history	ALC_RED_WINE_WEEK		
+CANPATH:0000490	Current quantity of red wine consumed per week - categorical		Average number of glasses of red wine (one glass of 142 mL or 5 ounces) consumed by the participant during a typical week.	alcohol use history	ALC_RED_WINE_WEEK_CAT		
+CANPATH:0000491	Current quantity of white wine consumed on weekdays		In a typical week during the past 12 months, number of glasses of white wine (one glass of 142 mL or 5 ounces) consumed by the participant on weekdays (Sunday to Thursday).	alcohol use history	ALC_WHITE_WINE_WKDAY		
+CANPATH:0000492	Current quantity of white wine consumed on weekend days		In a typical week during the past 12 months, number of glasses of white wine (one glass of 142 mL or 5 ounces) consumed by the participant on weekend days (Friday to Saturday).	alcohol use history	ALC_WHITE_WINE_WKEND		
+CANPATH:0000493	Current quantity of white wine consumed per week		Average number of glasses of white wine (one glass of 142 mL or 5 ounces) consumed by the participant during a typical week.	alcohol use history	ALC_WHITE_WINE_WEEK		
+CANPATH:0000494	Current quantity of white wine consumed per week - categorical		Average number of glasses of white wine (one glass of 142 mL or 5 ounces) consumed by the participant during a typical week.	alcohol use history	ALC_WHITE_WINE_WEEK_CAT		
+CANPATH:0000495	Current quantity of beer consumed on weekdays		In a typical week during the past 12 months, number of beers (one bottle, can or glass of 341 ml or 12 ounces) consumed by the participant on weekdays (Sunday to Thursday).	alcohol use history	ALC_BEER_WKDAY		
+CANPATH:0000496	Current quantity of beer consumed on weekend days		In a typical week during the past 12 months, number of beers (one bottle, can or glass of 341 ml or 12 ounces) consumed by the participant on weekend days (Friday to Saturday).	alcohol use history	ALC_BEER_WKEND		
+CANPATH:0000497	Current quantity of beer consumed per week		Average number of beers (one bottle, can or glass of 341 ml or 12 ounces) consumed by the participant during a typical week.	alcohol use history	ALC_BEER_WEEK		
+CANPATH:0000498	Current quantity of beer consumed per week - categorical		Average number of beers (one bottle, can or glass of 341 ml or 12 ounces) consumed by the participant during a typical week.	alcohol use history	ALC_BEER_WEEK_CAT		
+CANPATH:0000499	Current quantity of liquor or spirits consumed on weekdays		In a typical week during the past 12 months, number of drinks of liquor/spirit (one straight or mixed drink with 1 and 1/2 ounces of liquor) consumed by the participant on weekdays (Sunday to Thursday).	alcohol use history	ALC_LIQUOR_WKDAY		
+CANPATH:0000500	Current quantity of liquor or spirits consumed on weekend days		In a typical week during the past 12 months, number of drinks of liquor/spirit (one straight or mixed drink with 1 and 1/2 ounces of liquor) consumed by the participant on weekend days (Friday to Saturday).	alcohol use history	ALC_LIQUOR_WKEND		
+CANPATH:0000501	Current quantity of liquor consumed per week		Average number of drinks of liquor/spirits (one straight or mixed drink with 1 and 1/2 ounces of liquor) consumed by the participant during a typical week.	alcohol use history	ALC_LIQUOR_WEEK		
+CANPATH:0000502	Current quantity of liquor consumed per week - categorical		Average number of drinks of liquor/spirits (one straight or mixed drink with 1 and 1/2 ounces of liquor) consumed by the participant during a typical week.	alcohol use history	ALC_LIQUOR_WEEK_CAT		
+CANPATH:0000503	Current quantity of other kind of alcohol consumed on weekdays		In a typical week during the past 12 months, number of drinks of other kinds of alcohol (not beer, liquor/spirit or wine) consumed by the participant on weekdays (Sunday to Thursday).	alcohol use history	ALC_OTHER_WKDAY		
+CANPATH:0000504	Current quantity of other kind of alcohol consumed on weekend days		In a typical week during the past 12 months, number of drinks of other kinds of alcohol (not beer, liquor/spirit or wine) consumed by the participant on weekend days (Friday to Saturday).	alcohol use history	ALC_OTHER_WKEND		
+CANPATH:0000505	Current quantity of other drink consumed		Average number of drinks of other kinds of alcohol (not beer, liquor/spirit or wine) consumed by the participant during a typical week.	alcohol use history	ALC_OTHER_WEEK		
+CANPATH:0000506	Current quantity of other drink consumed - categorical		Average number of drinks of other kinds of alcohol (not beer, liquor/spirit or wine) consumed by the participant during a typical week.	alcohol use history	ALC_OTHER_WEEK_CAT		
+CANPATH:0000507	Alcohol mostly drank on weekend days		Indicator of whether the participant currently consumes alcohol mostly on weekend (or non working) days.	alcohol use history	ALC_WKEND		
+CANPATH:0000508	Frequency of binge drinking - Male		Frequency of binge drinking for a male participant (5 drinks or more at the same occasion) in the past 12 months.	alcohol use history	ALC_BINGE_FREQ_MALE		
+CANPATH:0000509	Frequency of binge drinking - Female		Frequency of binge drinking for a female participant (4 drinks or more at the same occasion) in the past 12 months.	alcohol use history	ALC_BINGE_FREQ_FEMALE		
+CANPATH:0000510	Current alcohol consumption compared to heaviest intake		Current consumption of alcohol compared to the heaviest period of alcohol consumption.	alcohol use history	ALC_HEAVIEST_INTAKE		
+CANPATH:0000511	Cigarettes smoking status		Indicator of participant cigarettes smoking status. A participant is considered a past smoker if he does not smoke currently but has ever smoked 100 cigarettes or more during his lifetime.	tobacco use history	SMK_CIG_STATUS		
+CANPATH:0000512	Ever smoked 100 cigarettes or more		Indicator of whether the participant has ever smoked at least 100 cigarettes during his lifetime.	tobacco use history	SMK_CIG_EVER		
+CANPATH:0000513	Ever smoked a whole cigarette		Indicator of whether the participant has ever smoked a whole cigarette, if he hasn't smoked more than 100 cigarettes during his lifetime.	tobacco use history	SMK_CIG_WHOLE_EVER		
+CANPATH:0000514	Age smoked a whole cigarette		Age of the participant when he first smoked a whole cigarette, if he hasn't smoked more than 100 cigarettes during his lifetime.	tobacco use history|life stage/time point	SMK_CIG_WHOLE_ONSET		
+CANPATH:0000515	Current cigarette smoker frequency		"Frequency of participant's current cigarettes consumption, if he has smoked more than 100 cigarettes during his lifetime.
+
+
+
+''Daily'' was defined as at least one cigarette every day for the past 30 days, ''Occasionally'' as at least one cigarette in the past 30 days, but not every day, and ''No'' as no cigarettes at all in the past 30 days."	tobacco use history	SMK_CIG_CUR_FREQ		
+CANPATH:0000516	Age first started smoking daily - current daily smokers		Age at which the participant first started smoking cigarettes daily (current daily smokers).	tobacco use history|life stage/time point	SMK_CIG_DAILY_CUR_ONSET		
+CANPATH:0000517	Number of cigarettes smoked per day - current daily smokers		Number of cigarettes smoked per day (current daily smokers)	tobacco use history	SMK_CIG_DAILY_CUR_QTY		
+CANPATH:0000518	Number of cigarettes smoked per day if 26 or more - current daily smokers		Number of cigarettes smoked per day if 26 or more (current daily smokers)	tobacco use history	SMK_CIG_DAILY_CUR_QTY_26		
+CANPATH:0000519	Duration daily cigarettes smoking - current daily smokers		Number of years the participant smoked cigarettes daily (current daily smokers).	tobacco use history	SMK_CIG_DAILY_CUR_DUR		
+CANPATH:0000520	Number of cigarettes smoked over time - current daily smokers		Number of cigarettes smoked per day during the total number of years the participant smoked daily (current daily smokers).	tobacco use history	SMK_CIG_DAILY_AVG_QTY		
+CANPATH:0000521	Number of cigarettes smoked over time, if 26 or more - current daily smokers		Number of cigarettes smoked per day during the total number of years the participant smoked daily, if 26 or more (current daily smokers).	tobacco use history	SMK_CIG_DAILY_AVG_QTY_26		
+CANPATH:0000522	One cigarette smoked frequency - current occasional smokers		Indicator of the frequency at which the participant has smoked at least one cigarette in the last 30 days (current occasional smokers).	tobacco use history	SMK_CIG_OCC_CUR_FREQ		
+CANPATH:0000523	Ever smoked cigarettes daily - current non-daily smokers		Indicator of whether the participant has ever smoked daily (current non-daily smokers)	tobacco use history	SMK_CIG_FORMER_DAILY		
+CANPATH:0000524	Age started smoking cigarettes daily - former daily smokers		Age at which the participant started smoking cigarettes daily (former daily smokers)	tobacco use history|life stage/time point	SMK_CIG_FORMER_DAILY_ONSET		
+CANPATH:0000525	Number of cigarettes smoked per day - former daily smokers		Number of cigarettes smoked per day during the period the participant smoked daily (former daily smokers).	tobacco use history	SMK_CIG_FORMER_DAILY_QTY		
+CANPATH:0000526	Number of cigarettes smoked per day, if 26 or more - former daily smokers		Number of cigarettes smoked per day during the period the participant smoked daily, if more than 26 cigarettes (former daily smokers).	tobacco use history	SMK_CIG_FORMER_DAILY_QTY_26		
+CANPATH:0000527	Duration of daily cigarettes smoking - former daily smokers		Number of years the participant smoked daily (former daily smokers)	tobacco use history	SMK_CIG_FORMER_DAILY_DUR		
+CANPATH:0000528	Period since last smoked cigarettes daily - former daily smokers		Indicator of the period since the participant stopped smoking daily (former daily smokers).	tobacco use history	SMK_CIG_FORMER_DAILY_CESSATION		
+CANPATH:0000529	Age last smoked cigarettes on most days - current non-smokers		Age at which the participant last smoked cigarettes on most days (current non smokers).	tobacco use history|life stage/time point	SMK_CIG_LAST_AGE		
+CANPATH:0000530	Number of cigarettes smoked per day - current occasional smokers		Number of cigarettes smoked on a typical smoking day, over the past 30 days (current occasional smokers)	tobacco use history	SMK_CIG_OCC_CUR_QTY		
+CANPATH:0000531	Number of cigarettes smoked per day, heaviest quantity - current daily or former daily smokers		During heaviest cigarette smoking period, number of cigarettes smoked per day (current daily or former daily smokers)	tobacco use history	SMK_CIG_HEAVIEST_QTY		
+CANPATH:0000532	Number of cigarettes smoked per day, heaviest quantity, if 26 or more - current daily or former daily smokers		During heaviest cigarettes smoking period, number of cigarettes smoked per day, if more than 26 cigarettes (current daily or former daily smokers)	tobacco use history	SMK_CIG_HEAVIEST_QTY_26		
+CANPATH:0000533	Duration heaviest cigarettes consumption - current daily and former daily smokers		Duration of heaviest cigarettes smoking period (current daily or former daily smokers)	tobacco use history	SMK_CIG_HEAVIEST_DUR		
+CANPATH:0000534	Ever smoked cigars		Indicator of whether the participant has ever smoked cigars on a regular basis for at least 6 months.	tobacco use history	SMK_CIGAR_EVER		
+CANPATH:0000535	Ever smoked small cigars		Indicator of whether the participant has ever smoked small cigars on a regular basis for at least 6 months.	tobacco use history	SMK_SMALL_CIGAR_EVER		
+CANPATH:0000536	Ever smoked pipes		Indicator of whether the participant has ever smoked pipes on a regular basis for at least 6 months.	tobacco use history	SMK_PIPE_EVER		
+CANPATH:0000537	Ever used chewing tobacco or snuff		Indicator of whether the participant has ever used chewing tobacco or snuff on a regular basis for at least 6 months.	tobacco use history	SMK_SNUFF_EVER		
+CANPATH:0000538	Ever used nicotine patches		Indicator of whether the participant has ever used nicotine patches on a regular basis for at least 6 months.	tobacco use history	SMK_PATCH_EVER		
+CANPATH:0000539	Ever used nicotine gum		Indicator of whether the participant has ever used nicotine gum on a regular basis for at least 6 months.	tobacco use history	SMK_GUM_EVER		
+CANPATH:0000540	Ever used betel nut		Indicator of whether the participant has ever used betel nut on a regular basis for at least 6 months.	tobacco use history	SMK_BETEL_EVER		
+CANPATH:0000541	Ever used paan		Indicator of whether the participant has ever used paan on a regular basis for at least 6 months.	tobacco use history	SMK_PAAN_EVER		
+CANPATH:0000542	Ever smoked sheesha		Indicator of whether the participant has ever smoked sheesha on a regular basis for at least 6 months.	tobacco use history	SMK_SHEESHA_EVER		
+CANPATH:0000543	Ever used other type of tobacco or nicotine products		Indicator of whether the participant has ever used other types of tobacco or nicotine products than those listed on regular basis for at least 6 months.	tobacco use history	SMK_OTHER_TOB_EVER		
+CANPATH:0000544	Other types of tobacco or nicotine products ever used, specify		Name of the other types of tobacco or nicotine products ever used on a regular basis for at least 6 months.	tobacco use history	SMK_OTHER_TOB_EVER_OTSP		
+CANPATH:0000545	Currently smokes cigars		Indicator of whether the participant currently smokes cigars.	tobacco use history	SMK_CIGAR_CUR		
+CANPATH:0000546	Currently smokes small cigars		Indicator of whether the participant currently smokes small cigars.	tobacco use history	SMK_SMALL_CIGAR_CUR		
+CANPATH:0000547	Currently smokes pipes		Indicator of whether the participant currently smokes pipes.	tobacco use history	SMK_PIPE_CUR		
+CANPATH:0000548	Currently uses chewing tobacco or snuff		Indicator of whether the participant currently uses chewing tobacco or snuff.	tobacco use history	SMK_SNUFF_CUR		
+CANPATH:0000549	Currently uses nicotine patches		Indicator of whether the participant currently uses nicotine patches.	tobacco use history	SMK_PATCH_CUR		
+CANPATH:0000550	Currently uses nicotine gum		Indicator of whether the participant currently uses nicotine gum.	tobacco use history	SMK_GUM_CUR		
+CANPATH:0000551	Currently uses betel nut		Indicator of whether the participant currently uses betel nut.	tobacco use history	SMK_BETEL_CUR		
+CANPATH:0000552	Currently uses paan		Indicator of whether the participant currently uses paan.	tobacco use history	SMK_PAAN_CUR		
+CANPATH:0000553	Currently smokes sheesha		Indicator of whether the participant currently smokes sheesha.	tobacco use history	SMK_SHEESHA_CUR		
+CANPATH:0000554	Currently uses other types of tobacco or nicotine products		Indicator of whether the participant currently uses other types of tobacco or nicotine products than those listed.	tobacco use history	SMK_OTHER_TOB_CUR		
+CANPATH:0000555	Other types of tobacco or nicotine products currently used, specify		Name of the other types of tobacco or nicotine products currently used.	tobacco use history	SMK_OTHER_TOB_CUR_OTSP		
+CANPATH:0000556	Duration of passive smoking exposure during childhood		Total duration of passive smoking exposure inside participant's home during childhood.	tobacco use history	PSE_CHILDHOOD_DURATION		
+CANPATH:0000557	Duration of passive smoking exposure during adulthood at home		Total duration of passive smoking exposure inside participant's home during adulthood.	tobacco use history	PSE_ADULT_HOME_DURATION		
+CANPATH:0000558	Duration of passive smoking exposure during adulthood at work		Total duration of passive smoking exposure during adulthood at work.	tobacco use history	PSE_ADULT_WRK_DURATION		
+CANPATH:0000559	Frequency of usual passive smoking exposure at home		Indicator of the frequency at which the participant is usually exposed to other people's tobacco smoke at home.	tobacco use history	PSE_HOME_FREQ		
+CANPATH:0000560	Frequency of usual passive smoking exposure during leisure activities		Indicator of the frequency at which the participant is usually exposed to other people's tobacco smoke during leisure activities outside home.	tobacco use history	PSE_LEISURE_FREQ		
+CANPATH:0000561	Frequency of usual passive smoking exposure at work		Indicator of the frequency at which the participant is usually exposed to other people's tobacco smoke at work.	tobacco use history	PSE_WRK_FREQ		
+CANPATH:0000562	IPAQ version		Version of the IPAQ (short or long form) administered to the participant.	survey administration	PA_IPAQ_VERSION		
+CANPATH:0000563	Frequency of vigorous activities		Frequency of at least 10 minutes of vigorous activities in the last 7 days (IPAQ short form).	physical activity history	PA_VIG_FREQ		
+CANPATH:0000564	Average time of vigorous activities		Average time per day spent doing vigorous activities in the last 7 days (IPAQ short form).	physical activity history	PA_VIG_TIME		
+CANPATH:0000565	Frequency of moderate activities		Frequency of at least 10 minutes of moderate activities in the last 7 days (IPAQ short form).	physical activity history	PA_MOD_FREQ		
+CANPATH:0000566	Average time of moderate activities		Average time per day spent doing moderate activities in the last 7 days (IPAQ short form).	physical activity history	PA_MOD_TIME		
+CANPATH:0000567	Frequency of walking		Frequency of at least 10 minutes of walking activities in the last 7 days (IPAQ short form).	physical activity history	PA_WALK_FREQ		
+CANPATH:0000568	Average time of walking		Average time per day spent doing walking activities in the last 7 days (IPAQ short form).	physical activity history	PA_WALK_TIME		
+CANPATH:0000569	Total vigorous activities MET-minutes/week		"Quantitative indicator of the vigorous intensity activities in metabolic equivalent (MET)-minutes/week (IPAQ short form).
+
+
+
+Vigorous MET-minutes/week = 8.0 * vigorous-intensity activity minutes * vigorous-intensity activity days"	physical activity history	PA_TOTAL_VIG_SHORT		
+CANPATH:0000570	Total moderate activities MET-minutes/week		"Quantitative indicator of the moderate intensity activities in metabolic equivalent (MET)-minutes/week (IPAQ short form).
+
+
+
+Moderate MET-minutes/week = 4.0 * moderate-intensity activity minutes * moderate-intensity activity days"	physical activity history	PA_TOTAL_MOD_SHORT		
+CANPATH:0000571	Total walking MET-minutes/week		"Quantitative indicator of the walking activities in metabolic equivalent (MET)-minutes/week (IPAQ short form). 
+
+
+
+Walking MET-minutes/week = 3.3 * walking minutes * walking days"	physical activity history	PA_TOTAL_WALK_SHORT		
+CANPATH:0000572	Total physical activity MET-minutes/week		"Quantitative indicator of global physical activity in metabolic equivalent (MET)-minutes per week (IPAQ short form).
+
+
+
+Total physical activity MET-minutes/week = sum of Walking + Moderate + Vigorous MET-minutes/week scores"	physical activity history	PA_TOTAL_SHORT		
+CANPATH:0000573	Total physical activity level		Categorical indicator of the participant's level of physical activity (IPAQ short form)	physical activity history	PA_LEVEL_SHORT		
+CANPATH:0000574	Current job or unpaid work outside home		Indicator of the participant currently having a job or doing any unpaid work outside home (IPAQ long form).	physical activity history	PA_JOB_UNPAID_WRK		
+CANPATH:0000575	Frequency of vigorous activity at work		Frequency of at least 10 minutes of vigorous activity at work in the last 7 days (IPAQ long form).	physical activity history	PA_WRK_VIG_FREQ		
+CANPATH:0000576	Average time of vigorous activity at work		Average time of vigorous activity at work per day in the last 7 days (IPAQ long form).	physical activity history	PA_WRK_VIG_TIME		
+CANPATH:0000577	Vigorous MET-minutes/week at work		"Quantitative indicator of vigorous activity at work in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Vigorous MET-minutes/week at work= 8.0 * vigorous-intensity activity  minutes * vigorous-intensity activity days"	physical activity history	PA_WRK_VIG		
+CANPATH:0000578	Frequency of moderate activity at work		Frequency of at least 10 minutes of moderate activity at work in the last 7 days (IPAQ long form).	physical activity history	PA_WRK_MOD_FREQ		
+CANPATH:0000579	Average duration of moderate activity at work		Average time of moderate physical activity at work per day in the last 7 days (IPAQ long form).	physical activity history	PA_WRK_MOD_TIME		
+CANPATH:0000580	Moderate MET-minutes/week at work		"Quantitative indicator of moderate activity at work in metabolic equivalent (MET)-minutes per week (IPAQ lonf form).
+
+
+
+Moderate MET-minutes/week at work=  4.0 * moderate-intensity activity minutes * moderate-intensity activity days"	physical activity history	PA_WRK_MOD		
+CANPATH:0000581	Frequency of walking at work		Frequency of at least 10 minutes of walking at work in the last 7 days (IPAQ long form).	physical activity history	PA_WRK_WALK_FREQ		
+CANPATH:0000582	Average time of walking at work		Average time of walking at work per day in the last 7 days (IPAQ long form).	physical activity history	PA_WRK_WALK_TIME		
+CANPATH:0000583	Walking MET-minutes/week at work		"Quantitative indicator of walking at work in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Walking MET-minutes/week at work = 3.3 * walking minutes * walking days"	physical activity history	PA_WRK_WALK		
+CANPATH:0000584	Total work MET-minutes/week		"Quantitative indicator of total physical activity at work in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Total MET-minutes/week at work = sum of Walking + Moderate + Vigorous MET-minutes/week scores at work"	physical activity history	PA_TOTAL_WRK		
+CANPATH:0000585	Frequency of traveling in a motor vehicule		Frequency of traveling in a motor vehicule in the last 7 days (IPAQ long form).	physical activity history	PA_MOTOR_VEHICLE_FREQ		
+CANPATH:0000586	Average time of traveling in a motor vehicule		Average time of traveling in a motor vehicule per day in the last 7 days (IPAQ long form).	physical activity history	PA_MOTOR_VEHICLE_TIME		
+CANPATH:0000587	Frequency of cycling for transport		Frequency of at least 10 minutes of cycling as a mean of transportation in the last 7 days (IPAQ long form).	physical activity history	PA_CYCLING_FREQ		
+CANPATH:0000588	Average time of cycling for transport		Average time of cycling as a mean of transportation per day in the last 7 days (IPAQ long form).	physical activity history	PA_CYCLING_TIME		
+CANPATH:0000589	Cycling MET-minutes/week for transport		"Quantitative indicator of cycling for transport in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Cycle MET-minutes/week for transport = 6.0 * cycling minutes * cycle days"	physical activity history	PA_CYCLING		
+CANPATH:0000590	Frequency of walking for transport		Frequency of at least 10 minutes of walking as a mean of transportation in the last 7 days (IPAQ long form).	physical activity history	PA_TRANS_WALK_FREQ		
+CANPATH:0000591	Average time of walking for transport		Average time of walking as a mean of transportation per day in the last 7 days (IPAQ long form).	physical activity history	PA_TRANS_WALK_TIME		
+CANPATH:0000592	Walking MET-minutes/week for transport		"Quantitative indicator of walking for transport in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Walking MET-minutes/week for transport = 3.3 * walking minutes * walking days"	physical activity history	PA_TRANS_WALK		
+CANPATH:0000593	Total transport MET-minutes/week		"Quantitative indicator of total physical activity as a mean of transportation in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Total MET-minutes/week for transport = sum of Walking + Cycling MET-minutes/week scores for transport"	physical activity history	PA_TOTAL_TRANS		
+CANPATH:0000594	Frequency of vigorous activity doing garden or yard chores		Frequency of at least 10 minutes of vigorous activity doing garden or yard chores in the last 7 days (IPAQ long form).	physical activity history	PA_GARDEN_VIG_FREQ		
+CANPATH:0000595	Average time of vigorous activity doing garden or yard chores		Average time of vigorous activity doing garden or yard chores per day in the last 7 days (IPAQ long form).	physical activity history	PA_GARDEN_VIG_TIME		
+CANPATH:0000596	Vigorous MET-minutes/week yard chores		"Quantitative indicator of vigorous activity doing garden or yard chores in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Vigorous MET-minutes/week yard chores = 5.5 * vigorous-intensity activity minutes * vigorous-intensity activity days"	physical activity history	PA_GARDEN_VIG		
+CANPATH:0000597	Frequency of moderate activity doing garden or yard chores		Frequency of at least 10 minutes of moderate activity doing garden or yard chores in the last 7 days (IPAQ long form).	physical activity history	PA_GARDEN_MOD_FREQ		
+CANPATH:0000598	Average time of moderate activity doing garden or yard chores		Average time of moderate activity doing garden or yard chores on average per day in the last 7 days (IPAQ long form).	physical activity history	PA_GARDEN_MOD_TIME		
+CANPATH:0000599	Moderate MET-minutes/week yard chores		"Quantitative indicator of moderate activity doing garden or yard chores in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Moderate MET-minutes/week yard chores =  4.0 * moderate-intensity activity minutes * moderate-intensity activity days"	physical activity history	PA_GARDEN_MOD		
+CANPATH:0000600	Frequency of moderate activity doing inside chores		Frequency of at least 10 minutes of moderate activity doing inside chores in the last 7 days (IPAQ long form).	physical activity history	PA_INSIDE_MOD_FREQ		
+CANPATH:0000601	Average time of moderate activity doing inside chores		Average time of moderate activity doing inside chores on average per day in the last 7 days (IPAQ long form).	physical activity history	PA_INSIDE_MOD_TIME		
+CANPATH:0000602	Moderate MET-minutes/week inside chores		"Quantitative indicator of moderate activity doing inside chores in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Moderate  MET-minutes/week inside chores = 3.0* moderate-intensity activity minutes * moderate-intensity activity days"	physical activity history	PA_INSIDE_MOD		
+CANPATH:0000603	Total domestic and garden MET-minutes/week		"Quantitative indicator of total physical activity for domestic and garden chores in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Total MET-minutes/week garden and domestic = sum of Vigorous yard + Moderate yard + Moderate inside chores MET-minutes/week scores"	physical activity history	PA_TOTAL_DOMESTIC_GARDEN		
+CANPATH:0000604	Frequency of walking for leisure		Frequency of at least 10 minutes of walking for leisure in the last 7 days  (IPAQ long form).	physical activity history	PA_LEISURE_WALK_FREQ		
+CANPATH:0000605	Average time of walking for leisure		Average time of walking for leisure per day in the last 7 days (IPAQ long form)	physical activity history	PA_LEISURE_WALK_TIME		
+CANPATH:0000606	Walking MET-minutes/week for leisure		"Quantitative indicator of walking  for leisure in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Walking MET-minutes/week for leisure = 3.3 * walking minutes * walking days"	physical activity history	PA_LEISURE_WALK		
+CANPATH:0000607	Frequency of vigorous activity for leisure		Frequency of at least 10 minutes of vigorous activity for leisure, in the last 7 days (IPAQ long form).	physical activity history	PA_LEISURE_VIG_FREQ		
+CANPATH:0000608	Average time of vigorous activity for leisure		Average time of vigorous activity for leisure per day, in the last 7 days (IPAQ long form).	physical activity history	PA_LEISURE_VIG_TIME		
+CANPATH:0000609	Vigorous MET-minutes/week for leisure		"Quantitative indicator of vigorous activity for leisure in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Vigorous  MET-minutes/week leisure = 8.0 * vigorous-intensity activity minutes * vigorous-intensity activity days"	physical activity history	PA_LEISURE_VIG		
+CANPATH:0000610	Frequency of moderate activity for leisure		Frequency of at least 10 minutes of moderate activity for leisure in the last 7 days (IPAQ long form).	physical activity history	PA_LEISURE_MOD_FREQ		
+CANPATH:0000611	Average time of moderate activity for leisure		Average time of moderate activity for leisure per day in the last 7 days (IPAQ long form).	physical activity history	PA_LEISURE_MOD_TIME		
+CANPATH:0000612	Moderate MET-minutes/week for leisure		"Quantitative indicator of moderate activity for leisure in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Moderate MET-minutes/week leisure = 4.0 * moderate-intensity activity minutes * moderate-intensity  activity days"	physical activity history	PA_LEISURE_MOD		
+CANPATH:0000613	Total leisure MET-minutes/week		"Quantitative indicator of total physical activity for leisure in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Total MET-minutes/week for leisure = sum of Walking  + Moderate + Vigorous MET-minutes/week scores in leisure"	physical activity history	PA_TOTAL_LEISURE		
+CANPATH:0000614	Total vigorous activities MET-minutes/week		"Quantitative indicator of the vigorous activities in metabolic equivalent (MET)-minutes/week (IPAQ long form).
+
+
+
+Total Vigorous MET-minutes/week = Vigorous MET-minutes/week (at Work + in Leisure)"	physical activity history	PA_TOTAL_VIG_LONG		
+CANPATH:0000615	Total moderate activities MET-minutes/week		"Quantitative indicator of the moderate intensity activities in metabolic equivalent (MET)-minutes/week (IPAQ long form).
+
+
+
+Total Moderate MET-minutes/week = Moderate MET-minutes/week (at Work + Yard chores + inside chores + in Leisure time) + Cycling Met-minutes/week for Transport + Vigorous Yard chores MET-minutes/week"	physical activity history	PA_TOTAL_MOD_LONG		
+CANPATH:0000616	Total walking MET-minutes/week		"Quantitative indicator of the walking activities in metabolic equivalent (MET)-minutes/week (IPAQ long form).
+
+
+
+Total Walking MET-minutes/week = Walking MET-minutes/week (at Work + for Transport + in Leisure)"	physical activity history	PA_TOTAL_WALK_LONG		
+CANPATH:0000617	Total physical activity MET-minutes/week		"Quantitative indicator of global physical activity in metabolic equivalent (MET)-minutes per week (IPAQ long form).
+
+
+
+Total physical activity MET-minutes/week = sum of Walking + Moderate + Vigorous MET-minutes/week scores"	physical activity history	PA_TOTAL_LONG		
+CANPATH:0000618	Total physical activity level		Categorical indicator of the participant's level of physical activity (IPAQ long form).	physical activity history	PA_LEVEL_LONG		
+CANPATH:0000619	Average sitting time on week day		Average time spent sitting per week day in the last 7 days (IPAQ long form and short form).	physical activity history	PA_SIT_TIME_WKDAY		
+CANPATH:0000620	Average sitting time on weekend day		Average time spent sitting per weekend day in the last 7 days (IPAQ  long form and short form).	physical activity history	PA_SIT_TIME_WKEND		
+CANPATH:0000621	Total sitting time per week		Total sitting time on average per week (IPAQ long form and short form).	physical activity history	PA_TOTAL_SIT_TIME		
+CANPATH:0000622	Average sitting time per day		Average time spent sitting per day (IPAQ long form and short form).	physical activity history	PA_SIT_AVG_TIME_DAY		
+CANPATH:0000623	Participant's ethnic background is Aboriginal (e.g. First Nations, Metis, Inuit).		Participant's ethnic background - Aboriginal	ethnicity/race	SDC_EB_ABORIGINAL		
+CANPATH:0000624	Participant's ethnic background is Arab (e.g. Egypt, Iraq, Jordan, Lebanon).		Participant's ethnic background - Arab	ethnicity/race	SDC_EB_ARAB		
+CANPATH:0000625	Participant's ethnic background is Black (African or Caribean descent).		Participant's ethnic background - Black	ethnicity/race	SDC_EB_BLACK		
+CANPATH:0000626	Participant's ethnic background is East Asian (e.g. China, Japan, Korea, Taiwan).		Participant's ethnic background - East Asian	ethnicity/race	SDC_EB_E_ASIAN		
+CANPATH:0000627	Participant's ethnic background is Filipino.		Participant's ethnic background - Filipino	ethnicity/race	SDC_EB_FILIPINO		
+CANPATH:0000628	Participant's ethnic background is Jewish.		Participant's ethnic background - Jewish	ethnicity/race	SDC_EB_JEWISH		
+CANPATH:0000629	Participant's ethnic background is Latin American/Hispanic).		Participant's ethnic background - Latin American/Hispanic	ethnicity/race	SDC_EB_LATIN		
+CANPATH:0000630	Participant's ethnic background is South Asian (e.g. India, Sri Lanka, Pakistan, Bangladesh).		Participant's ethnic background - South Asian	ethnicity/race	SDC_EB_S_ASIAN		
+CANPATH:0000631	Participant's ethnic background is Southeast Asian (e.g. Malaysia, Indonesia, Viet Nam).		Participant's ethnic background - Southeast Asian	ethnicity/race	SDC_EB_SE_ASIAN		
+CANPATH:0000632	Participant's ethnic background is West Asian (e.g. Turkey, Iran, Afghanistan).		Participant's ethnic background - West Asian	ethnicity/race	SDC_EB_W_ASIAN		
+CANPATH:0000633	Participant's ethnic background is White (European descent).		Participant's ethnic background - White	ethnicity/race	SDC_EB_WHITE		
+CANPATH:0000634	Participant has another ethnic background.		Participant's ethnic background - Other	ethnicity/race	SDC_EB_OTHER		
+CANPATH:0000635	Biological mother's ethnic background  is Aboriginal (e.g. First Nations, Metis, Inuit).		Mother's ethnic background  - Aboriginal	ethnicity/race	SDC_EB_ABORIGINAL_M		
+CANPATH:0000636	Biological mother's ethnic background  is Arab (e.g. Egypt, Iraq, Jordan, Lebanon).		Mother's ethnic background  - Arab	ethnicity/race	SDC_EB_ARAB_M		
+CANPATH:0000637	Biological mother's ethnic background  is Black (African or Caribean descent).		Mother's ethnic background  - Black	ethnicity/race	SDC_EB_BLACK_M		
+CANPATH:0000638	Biological mother's ethnic background  is East Asian (e.g. China, Japan, Korea, Taiwan).		Mother's ethnic background - East Asian	ethnicity/race	SDC_EB_E_ASIAN_M		
+CANPATH:0000639	Biological mother's ethnic background  is Filipino.		Mother's ethnic background - Filipino	ethnicity/race	SDC_EB_FILIPINO_M		
+CANPATH:0000640	Biological mother's ethnic background  is Jewish.		Mother's ethnic background - Jewish	ethnicity/race	SDC_EB_JEWISH_M		
+CANPATH:0000641	Biological mother's ethnic background  is Latin American/Hispanic).		Mother's ethnic background - Latin American/Hispanic	ethnicity/race	SDC_EB_LATIN_M		
+CANPATH:0000642	Biological mother's ethnic background  is South Asian (e.g. India, Sri Lanka, Pakistan, Bangladesh).		Mother's ethnic background - South Asian	ethnicity/race	SDC_EB_S_ASIAN_M		
+CANPATH:0000643	Biological mother's ethnic background  is Southeast Asian (e.g. Malaysia, Indonesia, Viet Nam).		Mother's ethnic background - Southeast Asian	ethnicity/race	SDC_EB_SE_ASIAN_M		
+CANPATH:0000644	Biological mother's ethnic background  is West Asian (e.g. Turkey, Iran, Afghanistan).		Mother's ethnic background - West Asian	ethnicity/race	SDC_EB_W_ASIAN_M		
+CANPATH:0000645	Biological mother's ethnic background  is White (European descent).		Mother's ethnic background - White	ethnicity/race	SDC_EB_WHITE_M		
+CANPATH:0000646	Biological mother has another ethnic background.		Mother's ethnic background - Other	ethnicity/race	SDC_EB_OTHER_M		
+CANPATH:0000647	Biological father's ethnic background  is Aboriginal (e.g. First Nations, Metis, Inuit).		Father's ethnic background - Aboriginal	ethnicity/race	SDC_EB_ABORIGINAL_F		
+CANPATH:0000648	Biological father's ethnic background  is Arab (e.g. Egypt, Iraq, Jordan, Lebanon).		Father's ethnic background - Arab	ethnicity/race	SDC_EB_ARAB_F		
+CANPATH:0000649	Biological father's ethnic background  is Black (African or Caribean descent).		Father's ethnic background - Black	ethnicity/race	SDC_EB_BLACK_F		
+CANPATH:0000650	Biological father's ethnic background  is East Asian (e.g. China, Japan, Korea, Taiwan).		Father's ethnic background - East Asian	ethnicity/race	SDC_EB_E_ASIAN_F		
+CANPATH:0000651	Biological father's ethnic background  is Filipino.		Father's ethnic background  - Filipino	ethnicity/race	SDC_EB_FILIPINO_F		
+CANPATH:0000652	Biological father's ethnic background  is Jewish.		Father's ethnic background - Jewish	ethnicity/race	SDC_EB_JEWISH_F		
+CANPATH:0000653	Biological father's ethnic background  is Latin American/Hispanic).		Father's ethnic background - Latin American/Hispanic	ethnicity/race	SDC_EB_LATIN_F		
+CANPATH:0000654	Biological father's ethnic background  is South Asian (e.g. India, Sri Lanka, Pakistan, Bangladesh).		Father's ethnic background - South Asian	ethnicity/race	SDC_EB_S_ASIAN_F		
+CANPATH:0000655	Biological father's ethnic background  is Southeast Asian (e.g. Malaysia, Indonesia, Viet Nam).		Father's ethnic background - Southeast Asian	ethnicity/race	SDC_EB_SE_ASIAN_F		
+CANPATH:0000656	Biological father's ethnic background  is West Asian (e.g. Turkey, Iran, Afghanistan).		Father's ethnic background - West Asian	ethnicity/race	SDC_EB_W_ASIAN_F		
+CANPATH:0000657	Biological father's ethnic background  is White (European descent).		Father's ethnic background - White	ethnicity/race	SDC_EB_WHITE_F		
+CANPATH:0000658	Biological mother has another ethnic background.		Father's ethnic background - Other	ethnicity/race	SDC_EB_OTHER_F		
+CANPATH:0000659	Participant's country of birth		Country where the participant was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY		
+CANPATH:0000660	Participant's country of birth, other specify		Name of other country where the participant was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_OTSP		
+CANPATH:0000661	Mother's country of birth		Country where the participant's biological mother was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_M		
+CANPATH:0000662	Mother's country of birth, other specify		Name of other country where the participant's biological mother was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_M_OTSP		
+CANPATH:0000663	Father's country of birth		Country where the participant's biological father was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_F		
+CANPATH:0000664	Father's country of birth, other specify		Name of other country where the participant's biological father was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_F_OTSP		
+CANPATH:0000665	Maternal grandmother's country of birth		Country where the participant's biological maternal grandmother was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_MM		
+CANPATH:0000666	Maternal grandmother's country of birth, other specify		Name of other country where the participant's biological maternal grandmother was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_MM_OTSP		
+CANPATH:0000667	Maternal grandfather's country of birth		Country where the participant's biological maternal grandfather was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_MF		
+CANPATH:0000668	Maternal grandfather's country of birth, other specify		Name of other country where the participant's biological maternal grandfather was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_MF_OTSP		
+CANPATH:0000669	Paternal grandmother's country of birth		Country where the participant's biological paternal grandmother was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_FM		
+CANPATH:0000670	Paternal grandmother's country of birth, other specify		Name of other country where the participant's biological paternal grandmother was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_FM_OTSP		
+CANPATH:0000671	Paternal grandfather's country of birth		Country where the participant's biological paternal grandfather was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_FF		
+CANPATH:0000672	Paternal grandfather's country of birth, other specify		Name of other country where the participant's biological paternal grandfather was born.	socio-demographic and economic characteristics	SDC_BIRTH_COUNTRY_FF_OTSP		
+CANPATH:0000673	Age of arrival in Canada		Age of the participant when he first came to live in Canada.	life stage/time point	SDC_ARRIVAL_AGE		
+CANPATH:0000674	Language first learned - English		Indicator of whether English is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_ENGLISH		
+CANPATH:0000675	Language first learned - French		Indicator of whether French is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_FRENCH		
+CANPATH:0000676	Language first learned - Arabic		Indicator of whether Arabic is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_ARABIC		
+CANPATH:0000677	Language first learned - Aboriginal language(s)		Indicator of whether Aboriginal is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_ABORIGINAL		
+CANPATH:0000678	Language first learned - Bengali		Indicator of whether Bengali is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_BENGALI		
+CANPATH:0000679	Language first learned - Cantonese		Indicator of whether Cantonese is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_CANTONESE		
+CANPATH:0000680	Language first learned - Danish		Indicator of whether Danish is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_DANISH		
+CANPATH:0000681	Language first learned - Dutch		Indicator of whether Dutch is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_DUTCH		
+CANPATH:0000682	Language first learned - Farsi/Persian		Indicator of whether Farsi/Persian is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_FARSI_PERSIAN		
+CANPATH:0000683	Language first learned - Tagalog/Filipino		Indicator of whether Tagalog/Filipino is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_TAGALOG_FILIPINO		
+CANPATH:0000684	Language first learned - Finnish		Indicator of whether Finnish is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_FINNISH		
+CANPATH:0000685	Language first learned - Gaelic		Indicator of whether Gaelic is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_GAELIC		
+CANPATH:0000686	Language first learned - German		Indicator of whether German is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_GERMAN		
+CANPATH:0000687	Language first learned - Greek		Indicator of whether Greek is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_GREEK		
+CANPATH:0000688	Language first learned - Hindi		Indicator of whether Hindi is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_HINDI		
+CANPATH:0000689	Language first learned - Hungarian		Indicator of whether Hungarian is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_HUNGARIAN		
+CANPATH:0000690	Language first learned - Icelandic		Indicator of whether Icelandic is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_ICELANDIC		
+CANPATH:0000691	Language first learned - Italian		Indicator of whether Italian is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_ITALIAN		
+CANPATH:0000692	Language first learned - Korean		Indicator of whether Korean is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_KOREAN		
+CANPATH:0000693	Language first learned - Mandarin		Indicator of whether Mandarin is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_MANDARIN		
+CANPATH:0000694	Language first learned - Norwegian		Indicator of whether Norwegian is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_NORWEGIAN		
+CANPATH:0000695	Language first learned - Polish		Indicator of whether Polish is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_POLISH		
+CANPATH:0000696	Language first learned - Portuguese		Indicator of whether Portugese is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_PORTUGESE		
+CANPATH:0000697	Language first learned - Punjabi		Indicator of whether Punjabi is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_PUNJABI		
+CANPATH:0000698	Language first learned - Russian		Indicator of whether Russian is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_RUSSIAN		
+CANPATH:0000699	Language first learned - Spanish		Indicator of whether Spanish is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_SPANISH		
+CANPATH:0000700	Language first learned - Swedish		Indicator of whether Swedish is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_SWEDISH		
+CANPATH:0000701	Language first learned - Tamil		Indicator of whether Tamil is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_TAMIL		
+CANPATH:0000702	Language first learned - Ukrainian		Indicator of whether Ukrainian is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_UKRAINIAN		
+CANPATH:0000703	Language first learned - Urdu		Indicator of whether Urdu is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_URDU		
+CANPATH:0000704	Language first learned - Vietnamese		Indicator of whether Vietnamese is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_VIETNAMESE		
+CANPATH:0000705	Language first learned - Welsh		Indicator of whether Welsh is the participant's first language learned at home and he/she still understands it.	native language	SDC_LANG_WELSH		
+CANPATH:0000706	Language first learned - Other		Indicator of whether the participant's first learned at home an other language than those listed and he/she still understands it.	native language	SDC_LANG_OTHER		
+CANPATH:0000707	Language first learned, Other specify		Name of other language(s) first learned at home that the participant still understands.	native language	SDC_LANG_OTSP		
+CANPATH:0000708	Full-time employed		"Indicator of whether the participant is currently employed full-time (paid employment or self-employed). 
+
+
+
+Full time means 30 hours or more per week."	occupation	WRK_FULL_TIME		
+CANPATH:0000709	Part-time employed		"Indicator of whether the participant is currently employed part-time (paid employment or self-employed). 
+
+
+
+Part time means less than 30 hours per week."	occupation	WRK_PART_TIME		
+CANPATH:0000710	Retired		Indicator of whether the participant is currently retired.	occupation	WRK_RETIREMENT		
+CANPATH:0000711	Looking after home/family		Indicator of whether the participant is currently looking after a home and/or a family.	occupation	WRK_HOME_FAMILY		
+CANPATH:0000712	Unable to work		Indicator of whether the participant is currently unable to work because of sickness or disability.	occupation	WRK_UNABLE		
+CANPATH:0000713	Unemployed		Indicator of whether the participant is currently unemployed.	occupation	WRK_UNEMPLOYED		
+CANPATH:0000714	Doing unpaid work		Indicator of whether the participant is currently doing unpaid or voluntary work.	occupation	WRK_UNPAID		
+CANPATH:0000715	Student		Indicator of whether the participant is currently a student.	occupation	WRK_STUDENT		
+CANPATH:0000716	Employment status		Indicator of whether the participant currently has paid employment or is self-employed (including full-time and part time status).	socio-demographic and economic characteristics	WRK_EMPLOYMENT		
+CANPATH:0000717	Current type of industry - categorical		Type of industry in which the participant currently works - specified categories.	occupation	WRK_IND_TYPE_CUR_CAT		
+CANPATH:0000718	Current type of industry, other specify		Name of other type of industry in which the participant currently works.	occupation	WRK_IND_TYPE_CUR_CAT_OTSP		
+CANPATH:0000719	Current type of industry - open text		Type of industry in which the participant currently works - open text.	occupation	WRK_IND_TYPE_CUR_OPEN		
+CANPATH:0000720	Current type of job - categorical		Participant's current job type - specified categories.	occupation	WRK_JOB_TYPE_CUR_CAT		
+CANPATH:0000721	Current type of job, other specify		Name of other participant's current job type.	occupation	WRK_JOB_TYPE_CUR_CAT_OTSP		
+CANPATH:0000722	Current job title - open text		Participant's current job title - open text.	occupation	WRK_JOB_TITLE_CUR_OPEN		
+CANPATH:0000723	Age started current job		Age at which the participant started working at his current job.	occupation|life stage/time point	WRK_JOB_AGE_CUR		
+CANPATH:0000724	Current working schedule		Working schedule of the participant at his current job.	occupation	WRK_SCHEDULE_CUR_CAT		
+CANPATH:0000725	Current working schedule, other specify		Other working schedule of the participant at his current job.	occupation	WRK_SCHEDULE_CUR_OTSP		
+CANPATH:0000726	Current occupation held for longest duration		Indicator of whether the current job of the participant is the one he held the longest.	occupation	WRK_JOB_CUR_LONGEST		
+CANPATH:0000727	Type of industry for occupation of longest duration - categorical		Type of industry in which the participant worked for the longest duration - specified categories.	occupation	WRK_IND_TYPE_LONGEST_CAT		
+CANPATH:0000728	Type of industry for occupation of longest duration - open text		Type of industry in which the participant worked for the longest duration - open text.	occupation	WRK_IND_TYPE_LONGEST_OPEN		
+CANPATH:0000729	Type of job held for longest duration - categorical		Participant's type of job held for longest period of time - specified categories.	occupation	WRK_JOB_TYPE_LONGEST_CAT		
+CANPATH:0000730	Type of job held for longest duration, other specify		Name of other participant's type of job held for longest period of time.	occupation	WRK_JOB_TYPE_LONGEST_CAT_OTSP		
+CANPATH:0000731	Job title for occupation of longest duration - open text		Participant's type of job held for longest period of time - open text.	occupation	WRK_JOB_TITLE_LONGEST_OPEN		
+CANPATH:0000732	Working schedule for occupation held longest time		Working schedule of the participant at his job held for longest duration.	occupation	WRK_SCHEDULE_LONGEST_CAT		
+CANPATH:0000733	Working schedule for occupation held longest time, other specify		Other working schedule of the participant at his job held for longest duration.	occupation	WRK_SCHEDULE_LONGEST_OTSP		
+CANPATH:0000734	Age started job of longest duration		Age at which the participant started working at the job held for longest duration.	occupation|life stage/time point	WRK_JOB_LONGEST_AGE_START		
+CANPATH:0000735	Age stopped job of longest duration		Age at which the participant stopped working at the job held for longest duration.	occupation|life stage/time point	WRK_JOB_LONGEST_AGE_STOP		
+CANPATH:0000736	Handedness		Dominant use or manifestations of one side of the body versus the other.		PM_HANDEDNESS		
+CANPATH:0000737	Able to stand		Indicator of whether the participant is able to stand.	quality of life	PM_ABLE_STAND		
+CANPATH:0000738	Average standing height - self reported		Average of the two vertical measurements or distance from the foot to the head of the participant when he/she is standing. Measure taken and reported by the participant.	height	PM_STAND_HEIGHT_SR_AVG		
+CANPATH:0000739	Average weight - self-reported		Average of the two weight measurements. Measure taken and reported by the participant.	weight	PM_WEIGHT_SR_AVG		
+CANPATH:0000740	Average hip circumference - self-reported		Average of the two hip circumference measurements. Measure taken and reported by the participant.	anthropometry	PM_HIP_SR_AVG		
+CANPATH:0000741	Average waist circumference - self-reported		Average of the two waist circumference measurements. Measure taken and reported by the participant.	anthropometry	PM_WAIST_SR_AVG		
+CANPATH:0000742	Waist to hip ratio - self-reported		Ratio calculated using waist and hip circumference measurements. Measure taken and reported by the participant.	anthropometry	PM_WAIST_HIP_RATIO_SR		
+CANPATH:0000743	Body mass index - self-reported		"Weight (in kg) divided by height (in m) squared.
+
+Body mass index = (Weight) / (Standing height * 0.01)^2
+
+Measure taken and reported by the participant."	anthropometry	PM_BMI_SR		
+CANPATH:0000744	Drug identification number (DIN) - medication 1		Drug identification number (DIN) of medication 1	medication	MD_DIN_1		
+CANPATH:0000745	Name - medication 1		Name of medication 1	medication	MD_MED_1		
+CANPATH:0000746	Drug code from the Drug Product Database (DPD) - medication 1		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 1	medication	MD_DRUG_CODE_1		
+CANPATH:0000747	Brand name of medication from the Drug Product Database (DPD) - medication 1		Brand name of medication 1 provided by Health Canada	medication	MD_BRAND_1		
+CANPATH:0000748	Anatomical Therapeutic Chemical (ATC) code (match) - medication 1		Anatomical Therapeutic Chemical (ATC) code of medication 1 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_1		
+CANPATH:0000749	Anatomical Therapeutic Chemical (ATC) code - medication 1		Anatomical Therapeutic Chemical (ATC) code of medication 1	medication	MD_ATC_CODE_1		
+CANPATH:0000750	Chemical substance, 5th level of ATC classification - medication 1		Chemical substance of medication 1, 5th level of the ATC classification system	medication	MD_ATC_1		
+CANPATH:0000751	Drug identification number (DIN) - medication 2		Drug identification number (DIN) of medication 2	medication	MD_DIN_2		
+CANPATH:0000752	Name - medication 2		Name of medication 2	medication	MD_MED_2		
+CANPATH:0000753	Drug code from the Drug Product Database (DPD) - medication 2		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 2	medication	MD_DRUG_CODE_2		
+CANPATH:0000754	Brand name of medication from the Drug Product Database (DPD) - medication 2		Brand name of medication 2 provided by Health Canada	medication	MD_BRAND_2		
+CANPATH:0000755	Anatomical Therapeutic Chemical (ATC) code (match) - medication 2		Anatomical Therapeutic Chemical (ATC) code of medication 2 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_2		
+CANPATH:0000756	Anatomical Therapeutic Chemical (ATC) code - medication 2		Anatomical Therapeutic Chemical (ATC) code of medication 2	medication	MD_ATC_CODE_2		
+CANPATH:0000757	Chemical substance, 5th level of ATC classification - medication 2		Chemical substance of medication 2, 5th level of the ATC classification system	medication	MD_ATC_2		
+CANPATH:0000758	Drug identification number (DIN) - medication 3		Drug identification number (DIN) of medication 3	medication	MD_DIN_3		
+CANPATH:0000759	Name - medication 3		Name of medication 3	medication	MD_MED_3		
+CANPATH:0000760	Drug code from the Drug Product Database (DPD) - medication 3		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 3	medication	MD_DRUG_CODE_3		
+CANPATH:0000761	Brand name of medication from the Drug Product Database (DPD) - medication 3		Brand name of medication 3 provided by Health Canada	medication	MD_BRAND_3		
+CANPATH:0000762	Anatomical Therapeutic Chemical (ATC) code (match) - medication 3		Anatomical Therapeutic Chemical (ATC) code of medication 3 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_3		
+CANPATH:0000763	Anatomical Therapeutic Chemical (ATC) code - medication 3		Anatomical Therapeutic Chemical (ATC) code of medication 3	medication	MD_ATC_CODE_3		
+CANPATH:0000764	Chemical substance, 5th level of ATC classification - medication 3		Chemical substance of medication 3, 5th level of the ATC classification system	medication	MD_ATC_3		
+CANPATH:0000765	Drug identification number (DIN) - medication 4		Drug identification number (DIN) of medication 4	medication	MD_DIN_4		
+CANPATH:0000766	Name - medication 4		Name of medication 4	medication	MD_MED_4		
+CANPATH:0000767	Drug code from the Drug Product Database (DPD) - medication 4		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 4	medication	MD_DRUG_CODE_4		
+CANPATH:0000768	Brand name of medication from the Drug Product Database (DPD) - medication 4		Brand name of medication 4 provided by Health Canada	medication	MD_BRAND_4		
+CANPATH:0000769	Anatomical Therapeutic Chemical (ATC) code (match) - medication 4		Anatomical Therapeutic Chemical (ATC) code of medication 4 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_4		
+CANPATH:0000770	Anatomical Therapeutic Chemical (ATC) code - medication 4		Anatomical Therapeutic Chemical (ATC) code of medication 4	medication	MD_ATC_CODE_4		
+CANPATH:0000771	Chemical substance, 5th level of ATC classification - medication 4		Chemical substance of medication 4, 5th level of the ATC classification system	medication	MD_ATC_4		
+CANPATH:0000772	Drug identification number (DIN) - medication 5		Drug identification number (DIN) of medication 5	medication	MD_DIN_5		
+CANPATH:0000773	Name - medication 5		Name of medication 5	medication	MD_MED_5		
+CANPATH:0000774	Drug code from the Drug Product Database (DPD) - medication 5		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 5	medication	MD_DRUG_CODE_5		
+CANPATH:0000775	Brand name of medication from the Drug Product Database (DPD) - medication 5		Brand name of medication 5 provided by Health Canada	medication	MD_BRAND_5		
+CANPATH:0000776	Anatomical Therapeutic Chemical (ATC) code (match) - medication 5		Anatomical Therapeutic Chemical (ATC) code of medication 5 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_5		
+CANPATH:0000777	Anatomical Therapeutic Chemical (ATC) code - medication 5		Anatomical Therapeutic Chemical (ATC) code of medication 5	medication	MD_ATC_CODE_5		
+CANPATH:0000778	Chemical substance, 5th level of ATC classification - medication 5		Chemical substance of medication 5, 5th level of the ATC classification system	medication	MD_ATC_5		
+CANPATH:0000779	Drug identification number (DIN) - medication 6		Drug identification number (DIN) of medication 6	medication	MD_DIN_6		
+CANPATH:0000780	Name - medication 6		Name of medication 6	medication	MD_MED_6		
+CANPATH:0000781	Drug code from the Drug Product Database (DPD) - medication 6		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 6	medication	MD_DRUG_CODE_6		
+CANPATH:0000782	Brand name of medication from the Drug Product Database (DPD) - medication 6		Brand name of medication 6 provided by Health Canada	medication	MD_BRAND_6		
+CANPATH:0000783	Anatomical Therapeutic Chemical (ATC) code (match) - medication 6		Anatomical Therapeutic Chemical (ATC) code of medication 6 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_6		
+CANPATH:0000784	Anatomical Therapeutic Chemical (ATC) code - medication 6		Anatomical Therapeutic Chemical (ATC) code of medication 6	medication	MD_ATC_CODE_6		
+CANPATH:0000785	Chemical substance, 5th level of ATC classification - medication 6		Chemical substance of medication 6, 5th level of the ATC classification system	medication	MD_ATC_6		
+CANPATH:0000786	Drug identification number (DIN) - medication 7		Drug identification number (DIN) of medication 7	medication	MD_DIN_7		
+CANPATH:0000787	Name - medication 7		Name of medication 7	medication	MD_MED_7		
+CANPATH:0000788	Drug code from the Drug Product Database (DPD) - medication 7		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 7	medication	MD_DRUG_CODE_7		
+CANPATH:0000789	Brand name of medication from the Drug Product Database (DPD) - medication 7		Brand name of medication 7 provided by Health Canada	medication	MD_BRAND_7		
+CANPATH:0000790	Anatomical Therapeutic Chemical (ATC) code (match) - medication 7		Anatomical Therapeutic Chemical (ATC) code of medication 7 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_7		
+CANPATH:0000791	Anatomical Therapeutic Chemical (ATC) code - medication 7		Anatomical Therapeutic Chemical (ATC) code of medication 7	medication	MD_ATC_CODE_7		
+CANPATH:0000792	Chemical substance, 5th level of ATC classification - medication 7		Chemical substance of medication 7, 5th level of the ATC classification system	medication	MD_ATC_7		
+CANPATH:0000793	Drug identification number (DIN) - medication 8		Drug identification number (DIN) of medication 8	medication	MD_DIN_8		
+CANPATH:0000794	Name - medication 8		Name of medication 8	medication	MD_MED_8		
+CANPATH:0000795	Drug code from the Drug Product Database (DPD) - medication 8		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 8	medication	MD_DRUG_CODE_8		
+CANPATH:0000796	Brand name of medication from the Drug Product Database (DPD) - medication 8		Brand name of medication 8 provided by Health Canada	medication	MD_BRAND_8		
+CANPATH:0000797	Anatomical Therapeutic Chemical (ATC) code (match) - medication 8		Anatomical Therapeutic Chemical (ATC) code of medication 8 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_8		
+CANPATH:0000798	Anatomical Therapeutic Chemical (ATC) code - medication 8		Anatomical Therapeutic Chemical (ATC) code of medication 8	medication	MD_ATC_CODE_8		
+CANPATH:0000799	Chemical substance, 5th level of ATC classification - medication 8		Chemical substance of medication 8, 5th level of the ATC classification system	medication	MD_ATC_8		
+CANPATH:0000800	Drug identification number (DIN) - medication 9		Drug identification number (DIN) of medication 9	medication	MD_DIN_9		
+CANPATH:0000801	Name - medication 9		Name of medication 9	medication	MD_MED_9		
+CANPATH:0000802	Drug code from the Drug Product Database (DPD) - medication 9		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 9	medication	MD_DRUG_CODE_9		
+CANPATH:0000803	Brand name of medication from the Drug Product Database (DPD) - medication 9		Brand name of medication 9 provided by Health Canada	medication	MD_BRAND_9		
+CANPATH:0000804	Anatomical Therapeutic Chemical (ATC) code (match) - medication 9		Anatomical Therapeutic Chemical (ATC) code of medication 9 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_9		
+CANPATH:0000805	Anatomical Therapeutic Chemical (ATC) code - medication 9		Anatomical Therapeutic Chemical (ATC) code of medication 9	medication	MD_ATC_CODE_9		
+CANPATH:0000806	Chemical substance, 5th level of ATC classification - medication 9		Chemical substance of medication 9, 5th level of the ATC classification system	medication	MD_ATC_9		
+CANPATH:0000807	Drug identification number (DIN) - medication 10		Drug identification number (DIN) of medication 10	medication	MD_DIN_10		
+CANPATH:0000808	Name - medication 10		Name of medication 10	medication	MD_MED_10		
+CANPATH:0000809	Drug code from the Drug Product Database (DPD) - medication 10		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 10	medication	MD_DRUG_CODE_10		
+CANPATH:0000810	Brand name of medication from the Drug Product Database (DPD) - medication 10		Brand name of medication 10 provided by Health Canada	medication	MD_BRAND_10		
+CANPATH:0000811	Anatomical Therapeutic Chemical (ATC) code (match) - medication 10		Anatomical Therapeutic Chemical (ATC) code of medication 10 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_10		
+CANPATH:0000812	Anatomical Therapeutic Chemical (ATC) code - medication 10		Anatomical Therapeutic Chemical (ATC) code of medication 10	medication	MD_ATC_CODE_10		
+CANPATH:0000813	Chemical substance, 5th level of ATC classification - medication 10		Chemical substance of medication 10, 5th level of the ATC classification system	medication	MD_ATC_10		
+CANPATH:0000814	Drug identification number (DIN) - medication 11		Drug identification number (DIN) of medication 11	medication	MD_DIN_11		
+CANPATH:0000815	Name - medication 11		Name of medication 11	medication	MD_MED_11		
+CANPATH:0000816	Drug code from the Drug Product Database (DPD) - medication 11		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 11	medication	MD_DRUG_CODE_11		
+CANPATH:0000817	Brand name of medication from the Drug Product Database (DPD) - medication 11		Brand name of medication 11 provided by Health Canada	medication	MD_BRAND_11		
+CANPATH:0000818	Anatomical Therapeutic Chemical (ATC) code (match) - medication 11		Anatomical Therapeutic Chemical (ATC) code of medication 11 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_11		
+CANPATH:0000819	Anatomical Therapeutic Chemical (ATC) code - medication 11		Anatomical Therapeutic Chemical (ATC) code of medication 11	medication	MD_ATC_CODE_11		
+CANPATH:0000820	Chemical substance, 5th level of ATC classification - medication 11		Chemical substance of medication 11, 5th level of the ATC classification system	medication	MD_ATC_11		
+CANPATH:0000821	Drug identification number (DIN) - medication 12		Drug identification number (DIN) of medication 12	medication	MD_DIN_12		
+CANPATH:0000822	Name - medication 12		Name of medication 12	medication	MD_MED_12		
+CANPATH:0000823	Drug code from the Drug Product Database (DPD) - medication 12		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 12	medication	MD_DRUG_CODE_12		
+CANPATH:0000824	Brand name of medication from the Drug Product Database (DPD) - medication 12		Brand name of medication 12 provided by Health Canada	medication	MD_BRAND_12		
+CANPATH:0000825	Anatomical Therapeutic Chemical (ATC) code (match) - medication 12		Anatomical Therapeutic Chemical (ATC) code of medication 12 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_12		
+CANPATH:0000826	Anatomical Therapeutic Chemical (ATC) code - medication 12		Anatomical Therapeutic Chemical (ATC) code of medication 12	medication	MD_ATC_CODE_12		
+CANPATH:0000827	Chemical substance, 5th level of ATC classification - medication 12		Chemical substance of medication 12, 5th level of the ATC classification system	medication	MD_ATC_12		
+CANPATH:0000828	Drug identification number (DIN) - medication 13		Drug identification number (DIN) of medication 13	medication	MD_DIN_13		
+CANPATH:0000829	Name - medication 13		Name of medication 13	medication	MD_MED_13		
+CANPATH:0000830	Drug code from the Drug Product Database (DPD) - medication 13		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 13	medication	MD_DRUG_CODE_13		
+CANPATH:0000831	Brand name of medication from the Drug Product Database (DPD) - medication 13		Brand name of medication 13 provided by Health Canada	medication	MD_BRAND_13		
+CANPATH:0000832	Anatomical Therapeutic Chemical (ATC) code (match) - medication 13		Anatomical Therapeutic Chemical (ATC) code of medication 13 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_13		
+CANPATH:0000833	Anatomical Therapeutic Chemical (ATC) code - medication 13		Anatomical Therapeutic Chemical (ATC) code of medication 13	medication	MD_ATC_CODE_13		
+CANPATH:0000834	Chemical substance, 5th level of ATC classification - medication 13		Chemical substance of medication 13, 5th level of the ATC classification system	medication	MD_ATC_13		
+CANPATH:0000835	Drug identification number (DIN) - medication 14		Drug identification number (DIN) of medication 14	medication	MD_DIN_14		
+CANPATH:0000836	Name - medication 14		Name of medication 14	medication	MD_MED_14		
+CANPATH:0000837	Drug code from the Drug Product Database (DPD) - medication 14		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 14	medication	MD_DRUG_CODE_14		
+CANPATH:0000838	Brand name of medication from the Drug Product Database (DPD) - medication 14		Brand name of medication 14 provided by Health Canada	medication	MD_BRAND_14		
+CANPATH:0000839	Anatomical Therapeutic Chemical (ATC) code (match) - medication 14		Anatomical Therapeutic Chemical (ATC) code of medication 14 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_14		
+CANPATH:0000840	Anatomical Therapeutic Chemical (ATC) code - medication 14		Anatomical Therapeutic Chemical (ATC) code of medication 14	medication	MD_ATC_CODE_14		
+CANPATH:0000841	Chemical substance, 5th level of ATC classification - medication 14		Chemical substance of medication 14, 5th level of the ATC classification system	medication	MD_ATC_14		
+CANPATH:0000842	Drug identification number (DIN) - medication 15		Drug identification number (DIN) of medication 15	medication	MD_DIN_15		
+CANPATH:0000843	Name - medication 15		Name of medication 15	medication	MD_MED_15		
+CANPATH:0000844	Drug code from the Drug Product Database (DPD) - medication 15		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 15	medication	MD_DRUG_CODE_15		
+CANPATH:0000845	Brand name of medication from the Drug Product Database (DPD) - medication 15		Brand name of medication 15 provided by Health Canada	medication	MD_BRAND_15		
+CANPATH:0000846	Anatomical Therapeutic Chemical (ATC) code (match) - medication 15		Anatomical Therapeutic Chemical (ATC) code of medication 15 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_15		
+CANPATH:0000847	Anatomical Therapeutic Chemical (ATC) code - medication 15		Anatomical Therapeutic Chemical (ATC) code of medication 15	medication	MD_ATC_CODE_15		
+CANPATH:0000848	Chemical substance, 5th level of ATC classification - medication 15		Chemical substance of medication 15, 5th level of the ATC classification system	medication	MD_ATC_15		
+CANPATH:0000849	Drug identification number (DIN) - medication 16		Drug identification number (DIN) of medication 16	medication	MD_DIN_16		
+CANPATH:0000850	Name - medication 16		Name of medication 16	medication	MD_MED_16		
+CANPATH:0000851	Drug code from the Drug Product Database (DPD) - medication 16		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 16	medication	MD_DRUG_CODE_16		
+CANPATH:0000852	Brand name of medication from the Drug Product Database (DPD) - medication 16		Brand name of medication 16 provided by Health Canada	medication	MD_BRAND_16		
+CANPATH:0000853	Anatomical Therapeutic Chemical (ATC) code (match) - medication 16		Anatomical Therapeutic Chemical (ATC) code of medication 16 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_16		
+CANPATH:0000854	Anatomical Therapeutic Chemical (ATC) code - medication 16		Anatomical Therapeutic Chemical (ATC) code of medication 16	medication	MD_ATC_CODE_16		
+CANPATH:0000855	Chemical substance, 5th level of ATC classification - medication 16		Chemical substance of medication 16, 5th level of the ATC classification system	medication	MD_ATC_16		
+CANPATH:0000856	Drug identification number (DIN) - medication 17		Drug identification number (DIN) of medication 17	medication	MD_DIN_17		
+CANPATH:0000857	Name - medication 17		Name of medication 17	medication	MD_MED_17		
+CANPATH:0000858	Drug code from the Drug Product Database (DPD) - medication 17		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 17	medication	MD_DRUG_CODE_17		
+CANPATH:0000859	Brand name of medication from the Drug Product Database (DPD) - medication 17		Brand name of medication 17 provided by Health Canada	medication	MD_BRAND_17		
+CANPATH:0000860	Anatomical Therapeutic Chemical (ATC) code (match) - medication 17		Anatomical Therapeutic Chemical (ATC) code of medication 17 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_17		
+CANPATH:0000861	Anatomical Therapeutic Chemical (ATC) code - medication 17		Anatomical Therapeutic Chemical (ATC) code of medication 17	medication	MD_ATC_CODE_17		
+CANPATH:0000862	Chemical substance, 5th level of ATC classification - medication 17		Chemical substance of medication 17, 5th level of the ATC classification system	medication	MD_ATC_17		
+CANPATH:0000863	Drug identification number (DIN) - medication 18		Drug identification number (DIN) of medication 18	medication	MD_DIN_18		
+CANPATH:0000864	Name - medication 18		Name of medication 18	medication	MD_MED_18		
+CANPATH:0000865	Drug code from the Drug Product Database (DPD) - medication 18		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 18	medication	MD_DRUG_CODE_18		
+CANPATH:0000866	Brand name of medication from the Drug Product Database (DPD) - medication 18		Brand name of medication 18 provided by Health Canada	medication	MD_BRAND_18		
+CANPATH:0000867	Anatomical Therapeutic Chemical (ATC) code (match) - medication 18		Anatomical Therapeutic Chemical (ATC) code of medication 18 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_18		
+CANPATH:0000868	Anatomical Therapeutic Chemical (ATC) code - medication 18		Anatomical Therapeutic Chemical (ATC) code of medication 18	medication	MD_ATC_CODE_18		
+CANPATH:0000869	Chemical substance, 5th level of ATC classification - medication 18		Chemical substance of medication 18, 5th level of the ATC classification system	medication	MD_ATC_18		
+CANPATH:0000870	Drug identification number (DIN) - medication 19		Drug identification number (DIN) of medication 19	medication	MD_DIN_19		
+CANPATH:0000871	Name - medication 19		Name of medication 19	medication	MD_MED_19		
+CANPATH:0000872	Drug code from the Drug Product Database (DPD) - medication 19		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 19	medication	MD_DRUG_CODE_19		
+CANPATH:0000873	Brand name of medication from the Drug Product Database (DPD) - medication 19		Brand name of medication 19 provided by Health Canada	medication	MD_BRAND_19		
+CANPATH:0000874	Anatomical Therapeutic Chemical (ATC) code (match) - medication 19		Anatomical Therapeutic Chemical (ATC) code of medication 19 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_19		
+CANPATH:0000875	Anatomical Therapeutic Chemical (ATC) code - medication 19		Anatomical Therapeutic Chemical (ATC) code of medication 19	medication	MD_ATC_CODE_19		
+CANPATH:0000876	Chemical substance, 5th level of ATC classification - medication 19		Chemical substance of medication 19, 5th level of the ATC classification system	medication	MD_ATC_19		
+CANPATH:0000877	Drug identification number (DIN) - medication 20		Drug identification number (DIN) of medication 20	medication	MD_DIN_20		
+CANPATH:0000878	Name - medication 20		Name of medication 20	medication	MD_MED_20		
+CANPATH:0000879	Drug code from the Drug Product Database (DPD) - medication 20		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 20	medication	MD_DRUG_CODE_20		
+CANPATH:0000880	Brand name of medication from the Drug Product Database (DPD) - medication 20		Brand name of medication 20 provided by Health Canada	medication	MD_BRAND_20		
+CANPATH:0000881	Anatomical Therapeutic Chemical (ATC) code (match) - medication 20		Anatomical Therapeutic Chemical (ATC) code of medication 20 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_20		
+CANPATH:0000882	Anatomical Therapeutic Chemical (ATC) code - medication 20		Anatomical Therapeutic Chemical (ATC) code of medication 20	medication	MD_ATC_CODE_20		
+CANPATH:0000883	Chemical substance, 5th level of ATC classification - medication 20		Chemical substance of medication 20, 5th level of the ATC classification system	medication	MD_ATC_20		
+CANPATH:0000884	Drug identification number (DIN) - medication 21		Drug identification number (DIN) of medication 21	medication	MD_DIN_21		
+CANPATH:0000885	Name - medication 21		Name of medication 21	medication	MD_MED_21		
+CANPATH:0000886	Drug code from the Drug Product Database (DPD) - medication 21		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 21	medication	MD_DRUG_CODE_21		
+CANPATH:0000887	Brand name of medication from the Drug Product Database (DPD) - medication 21		Brand name of medication 21 provided by Health Canada	medication	MD_BRAND_21		
+CANPATH:0000888	Anatomical Therapeutic Chemical (ATC) code (match) - medication 21		Anatomical Therapeutic Chemical (ATC) code of medication 21 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_21		
+CANPATH:0000889	Anatomical Therapeutic Chemical (ATC) code - medication 21		Anatomical Therapeutic Chemical (ATC) code of medication 21	medication	MD_ATC_CODE_21		
+CANPATH:0000890	Chemical substance, 5th level of ATC classification - medication 21		Chemical substance of medication 21, 5th level of the ATC classification system	medication	MD_ATC_21		
+CANPATH:0000891	Drug identification number (DIN) - medication 22		Drug identification number (DIN) of medication 22	medication	MD_DIN_22		
+CANPATH:0000892	Name - medication 22		Name of medication 22	medication	MD_MED_22		
+CANPATH:0000893	Drug code from the Drug Product Database (DPD) - medication 22		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 22	medication	MD_DRUG_CODE_22		
+CANPATH:0000894	Brand name of medication from the Drug Product Database (DPD) - medication 22		Brand name of medication 22 provided by Health Canada	medication	MD_BRAND_22		
+CANPATH:0000895	Anatomical Therapeutic Chemical (ATC) code (match) - medication 22		Anatomical Therapeutic Chemical (ATC) code of medication 22 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_22		
+CANPATH:0000896	Anatomical Therapeutic Chemical (ATC) code - medication 22		Anatomical Therapeutic Chemical (ATC) code of medication 22	medication	MD_ATC_CODE_22		
+CANPATH:0000897	Chemical substance, 5th level of ATC classification - medication 22		Chemical substance of medication 22, 5th level of the ATC classification system	medication	MD_ATC_22		
+CANPATH:0000898	Drug identification number (DIN) - medication 23		Drug identification number (DIN) of medication 23	medication	MD_DIN_23		
+CANPATH:0000899	Name - medication 23		Name of medication 23	medication	MD_MED_23		
+CANPATH:0000900	Drug code from the Drug Product Database (DPD) - medication 23		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 23	medication	MD_DRUG_CODE_23		
+CANPATH:0000901	Brand name of medication from the Drug Product Database (DPD) - medication 23		Brand name of medication 23 provided by Health Canada	medication	MD_BRAND_23		
+CANPATH:0000902	Anatomical Therapeutic Chemical (ATC) code (match) - medication 23		Anatomical Therapeutic Chemical (ATC) code of medication 23 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_23		
+CANPATH:0000903	Anatomical Therapeutic Chemical (ATC) code - medication 23		Anatomical Therapeutic Chemical (ATC) code of medication 23	medication	MD_ATC_CODE_23		
+CANPATH:0000904	Chemical substance, 5th level of ATC classification - medication 23		Chemical substance of medication 23, 5th level of the ATC classification system	medication	MD_ATC_23		
+CANPATH:0000905	Drug identification number (DIN) - medication 24		Drug identification number (DIN) of medication 24	medication	MD_DIN_24		
+CANPATH:0000906	Name - medication 24		Name of medication 24	medication	MD_MED_24		
+CANPATH:0000907	Drug code from the Drug Product Database (DPD) - medication 24		Drug code from the Drug Product Database (DPD) provided by Health Canada for medication 24	medication	MD_DRUG_CODE_24		
+CANPATH:0000908	Brand name of medication from the Drug Product Database (DPD) - medication 24		Brand name of medication 24 provided by Health Canada	medication	MD_BRAND_24		
+CANPATH:0000909	Anatomical Therapeutic Chemical (ATC) code (match) - medication 24		Anatomical Therapeutic Chemical (ATC) code of medication 24 when DIN or medication name missing or incorrect	medication	MD_ATC_MATCH_24		
+CANPATH:0000910	Anatomical Therapeutic Chemical (ATC) code - medication 24		Anatomical Therapeutic Chemical (ATC) code of medication 24	medication	MD_ATC_CODE_24		
+CANPATH:0000911	Chemical substance, 5th level of ATC classification - medication 24		Chemical substance of medication 24, 5th level of the ATC classification system	medication	MD_ATC_24		
+CANPATH:0000912	Anatomical main group, 1st level of ATC classification - medication 1		Anatomical main group of medication 1, 1st level of ATC classification system	medication	MD_ATC_1_L1		
+CANPATH:0000913	Anatomical main group, 1st level of ATC classification - medication 2		Anatomical main group of medication 2, 1st level of ATC classification system	medication	MD_ATC_2_L1		
+CANPATH:0000914	Anatomical main group, 1st level of ATC classification - medication 3		Anatomical main group of medication 3, 1st level of ATC classification system	medication	MD_ATC_3_L1		
+CANPATH:0000915	Anatomical main group, 1st level of ATC classification - medication 4		Anatomical main group of medication 4, 1st level of ATC classification system	medication	MD_ATC_4_L1		
+CANPATH:0000916	Anatomical main group, 1st level of ATC classification - medication 5		Anatomical main group of medication 5, 1st level of ATC classification system	medication	MD_ATC_5_L1		
+CANPATH:0000917	Anatomical main group, 1st level of ATC classification - medication 6		Anatomical main group of medication 6, 1st level of ATC classification system	medication	MD_ATC_6_L1		
+CANPATH:0000918	Anatomical main group, 1st level of ATC classification - medication 7		Anatomical main group of medication 7, 1st level of ATC classification system	medication	MD_ATC_7_L1		
+CANPATH:0000919	Anatomical main group, 1st level of ATC classification - medication 8		Anatomical main group of medication 8, 1st level of ATC classification system	medication	MD_ATC_8_L1		
+CANPATH:0000920	Anatomical main group, 1st level of ATC classification - medication 9		Anatomical main group of medication 9, 1st level of ATC classification system	medication	MD_ATC_9_L1		
+CANPATH:0000921	Anatomical main group, 1st level of ATC classification - medication 10		Anatomical main group of medication 10, 1st level of ATC classification system	medication	MD_ATC_10_L1		
+CANPATH:0000922	Anatomical main group, 1st level of ATC classification - medication 11		Anatomical main group of medication 11, 1st level of ATC classification system	medication	MD_ATC_11_L1		
+CANPATH:0000923	Anatomical main group, 1st level of ATC classification - medication 12		Anatomical main group of medication 12, 1st level of ATC classification system	medication	MD_ATC_12_L1		
+CANPATH:0000924	Anatomical main group, 1st level of ATC classification - medication 13		Anatomical main group of medication 13, 1st level of ATC classification system	medication	MD_ATC_13_L1		
+CANPATH:0000925	Anatomical main group, 1st level of ATC classification - medication 14		Anatomical main group of medication 14, 1st level of ATC classification system	medication	MD_ATC_14_L1		
+CANPATH:0000926	Anatomical main group, 1st level of ATC classification - medication 15		Anatomical main group of medication 15, 1st level of ATC classification system	medication	MD_ATC_15_L1		
+CANPATH:0000927	Anatomical main group, 1st level of ATC classification - medication 16		Anatomical main group of medication 16, 1st level of ATC classification system	medication	MD_ATC_16_L1		
+CANPATH:0000928	Anatomical main group, 1st level of ATC classification - medication 17		Anatomical main group of medication 17, 1st level of ATC classification system	medication	MD_ATC_17_L1		
+CANPATH:0000929	Anatomical main group, 1st level of ATC classification - medication 18		Anatomical main group of medication 18, 1st level of ATC classification system	medication	MD_ATC_18_L1		
+CANPATH:0000930	Anatomical main group, 1st level of ATC classification - medication 19		Anatomical main group of medication 19, 1st level of ATC classification system	medication	MD_ATC_19_L1		
+CANPATH:0000931	Anatomical main group, 1st level of ATC classification - medication 20		Anatomical main group of medication 20, 1st level of ATC classification system	medication	MD_ATC_20_L1		
+CANPATH:0000932	Anatomical main group, 1st level of ATC classification - medication 21		Anatomical main group of medication 21, 1st level of ATC classification system	medication	MD_ATC_21_L1		
+CANPATH:0000933	Anatomical main group, 1st level of ATC classification - medication 22		Anatomical main group of medication 22, 1st level of ATC classification system	medication	MD_ATC_22_L1		
+CANPATH:0000934	Anatomical main group, 1st level of ATC classification - medication 23		Anatomical main group of medication 23, 1st level of ATC classification system	medication	MD_ATC_23_L1		
+CANPATH:0000935	Anatomical main group, 1st level of ATC classification - medication 24		Anatomical main group of medication 24, 1st level of ATC classification system	medication	MD_ATC_24_L1		

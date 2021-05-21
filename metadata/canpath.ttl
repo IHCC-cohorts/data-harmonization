@@ -1,0 +1,21 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/canpath.owl> a owl:Ontology ;
+    dc:description "To help researchers better understand the causes of chronic diseases like cancer, heart disease and diabetes, and to develop new ways to prevent and treat them." ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:rights """You are free to:
+
+Share — copy and redistribute the material in any medium or format
+
+Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+Under the following terms:
+
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.""" ;
+    dcterms:title "Canadian Partnership for Tomorrow's Health (CanPath)" .
+
