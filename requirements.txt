@@ -7,3 +7,4 @@ ontodev-cogs
 pyyaml
 scikit-learn
 numpy
+jsonschema
