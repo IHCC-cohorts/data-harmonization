@@ -3,8 +3,10 @@ pandas
 rdflib
 xlsx2csv
 requests
-ontodev-cogs
 pyyaml
 scikit-learn
 numpy
 jsonschema
+openpyxl
+git+https://github.com/ontodev/cogs.git@small-fixes
+

@@ -132,7 +132,8 @@ def main():
         cogs.init(
             f"IHCC Data Harmonization: {cohort_id}",
             user=args["admin_google_id"],
-            role="writer"
+            role="writer",
+            credentials="credentials.json"
         )
         cogs.add(instructions, title="Instructions")
         cogs.add(metadata, title="Metadata")

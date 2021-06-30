@@ -157,8 +157,8 @@ build/%-tree.html: build/%.owl | build/robot-tree.jar
 	--input $< \
 	--tree $@
 
-build/%.html: build/%.owl build/%.tsv | src/prefixes.json build/robot.jar
-	$(ROBOT) validate \
+build/%.html: build/%.owl build/%.tsv | src/prefixes.json build/robot-validate.jar
+	java -jar build/robot-validate.jar validate \
 	--input $< \
 	--table $(word 2,$^) \
 	--skip-row 2 \
@@ -202,7 +202,7 @@ build/member_cohorts.csv: src/convert_metadata.py data/metadata.json
 ### COGS Set Up & Tasks
 
 # The branch name should be the namespace for the new cohort
-BRANCH := $(shell git branch --show-current)
+BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 
 init-cogs: .cogs
 
@@ -233,6 +233,9 @@ build/robot.jar: | build
 
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
+
+build/robot-validate.jar: | build
+	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/106/artifact/bin/robot.jar
 
 build/intermediate/properties.owl: templates/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@
