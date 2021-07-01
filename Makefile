@@ -26,6 +26,7 @@
 # * [Update only data dictionaries](owl)
 # * [Run all mappings (quality control)](all_mapping_suggest)
 # * [Clean build directory](clean)
+# [](./src/tree.sh)
 
 ### Configuration
 #
@@ -71,7 +72,7 @@ OLS_CONFIG = data/ols-config.yaml
 ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
 
 # HTML tree browser and table for each cohort
-TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
+DBS := build/gecko.db $(foreach C,$(COHORTS),build/$(C).db)
 TABLES := $(foreach C,$(COHORTS),build/$(C).html)
 
 
@@ -82,7 +83,7 @@ clean:
 	rm -rf build
 
 .PHONY: all
-all: $(TREES) $(TABLES)
+all: $(DBS) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
 all: build/member_cohorts.csv
@@ -94,7 +95,7 @@ all: $(OLS_CONFIG)
 .PHONY: update
 update: clean all
 
-build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(ONTS) $(TREES) $(TABLES)
+build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(DBS) $(TABLES)
 	python3 $^ $@
 
 .PHONY: finalize
@@ -152,20 +153,27 @@ build/intermediate/%-xrefs.tsv: src/create_xref_template.py build/%.tsv build/in
 
 ### Trees and Tables
 
-build/%-tree.html: build/%.owl | build/robot-tree.jar
-	java -jar build/robot-tree.jar tree \
-	--input $< \
-	--tree $@
+build/prefixes.sql: src/convert_prefixes.py src/prefixes.json | build
+	python3 $^ $@
 
-build/%.html: build/%.owl build/%.tsv | src/prefixes.json build/robot-validate.jar
-	java -jar build/robot-validate.jar validate \
-	--input $< \
-	--table $(word 2,$^) \
-	--skip-row 2 \
-	--format HTML \
-	--standalone true \
-	--write-all true \
-	--output-dir build/
+build/%.db: build/prefixes.sql build/%.owl | build/rdftab
+	rm -rf $@
+	sqlite3 $@ < $<
+	./build/rdftab $@ < $(word 2,$^)
+
+UC = $(shell echo '$*' | tr '[:lower:]' '[:upper:]')
+PREDICATES := CURIE label rdfs:subClassOf definition oboInOwl:hasDbXref IHCC:internal-id
+
+build/%.html: build/%.db
+	python3 -m gizmos.export \
+	-d $< \
+	-f html \
+	$(foreach P,$(PREDICATES),-p $(P)) \
+	-V CURIE \
+	-w "stanza LIKE '$(call UC,$(basename $(notdir $@))):%'" | \
+	sed 's/rdfs:subClassOf/parent/g' | \
+	sed 's/oboInOwl:hasDbXref/GECKO category/g' | \
+	sed 's/IHCC:internal-id/internal ID/g' > $@
 
 
 ### JSON Data for Real Browser
@@ -234,8 +242,16 @@ build/robot.jar: | build
 build/robot-tree.jar: | build
 	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
 
-build/robot-validate.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/106/artifact/bin/robot.jar
+UNAME := $(shell uname)
+ifeq ($(UNAME), Darwin)
+	RDFTAB_URL := https://github.com/ontodev/rdftab.rs/releases/download/v0.1.1/rdftab-x86_64-apple-darwin
+else
+	RDFTAB_URL := https://github.com/ontodev/rdftab.rs/releases/download/v0.1.1/rdftab-x86_64-unknown-linux-musl
+endif
+
+build/rdftab: | build
+	curl -L -o $@ $(RDFTAB_URL)
+	chmod +x $@
 
 build/intermediate/properties.owl: templates/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@

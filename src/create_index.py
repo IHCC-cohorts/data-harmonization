@@ -20,7 +20,7 @@ def main():
         item['id'] = short_name
         item['owl'] = '{0}.owl'.format(short_name)
         item['terms'] = '{0}.html'.format(short_name)
-        item['tree'] = '{0}-tree.html'.format(short_name)
+        item['tree'] = '../src/tree.sh?db={0}'.format(short_name)
         items.append(item)
 
     html = t.render(items=items)
