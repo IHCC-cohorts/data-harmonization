@@ -180,14 +180,8 @@ build/%.html: build/%.db
 
 # Top-level cohort data
 
-build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.json
-	java -jar build/robot-tree.jar \
-	--prefixes src/prefixes.json \
-	remove --input $< \
-	--term GECKO:0000019 \
-	tree \
-	--format json \
-	--tree $@
+build/gecko_structure.json: src/get_gecko_structure.py build/gecko.db
+	python3 $^ > $@
 
 data/cohort-data.json: src/generate_cohort_json.py data/metadata.json build/gecko_structure.json $(TEMPLATES)
 	python3 $(filter-out $(TEMPLATES),$^) $@
@@ -238,9 +232,6 @@ build build/intermediate build/browser build/browser/cohorts data_dictionaries:
 
 build/robot.jar: | build
 	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
-
-build/robot-tree.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
 
 UNAME := $(shell uname)
 ifeq ($(UNAME), Darwin)
