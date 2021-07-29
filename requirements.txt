@@ -9,3 +9,4 @@ numpy
 jsonschema
 openpyxl
 ontodev-cogs==0.3.2
+ontodev-gizmos==0.2.0
