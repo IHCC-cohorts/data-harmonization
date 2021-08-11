@@ -38,6 +38,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "oboInOwl": "http://www.geneontology.org/formats/oboInOwl#",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "dc": "http://purl.org/dc/terms/"
     }
 }
