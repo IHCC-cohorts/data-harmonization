@@ -1,4 +1,4 @@
-zooma_annotate: "http://193.62.55.169:8009/zooma/v2/api/services/annotate?propertyValue="
+zooma_annotate: "http://192.168.0.199:8009/zooma/v2/api/services/annotate?propertyValue="
 oxo_mapping: "https://mapping.ihccglobal.app/api/mappings?fromId="
 ols_term: "https://registry.ihccglobal.app/api/terms?iri="
 ols_oboid: "https://registry.ihccglobal.app/api/terms?obo_id="
