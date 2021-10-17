@@ -26,6 +26,7 @@
 # * [Update only data dictionaries](owl)
 # * [Run all mappings (quality control)](all_mapping_suggest)
 # * [Clean build directory](clean)
+# [](./src/tree.sh)
 
 ### Configuration
 #
@@ -71,7 +72,7 @@ OLS_CONFIG = data/ols-config.yaml
 ONTS := $(foreach C,$(COHORTS),build/$(C).owl)
 
 # HTML tree browser and table for each cohort
-TREES := build/gecko-tree.html  $(foreach C,$(COHORTS),build/$(C)-tree.html)
+DBS := build/gecko.db $(foreach C,$(COHORTS),build/$(C).db)
 TABLES := $(foreach C,$(COHORTS),build/$(C).html)
 
 
@@ -82,7 +83,7 @@ clean:
 	rm -rf build
 
 .PHONY: all
-all: $(TREES) $(TABLES)
+all: $(DBS) $(TABLES)
 all: build/index.html
 all: data/cohort-data.json
 all: build/member_cohorts.csv
@@ -94,7 +95,7 @@ all: $(OLS_CONFIG)
 .PHONY: update
 update: clean all
 
-build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(ONTS) $(TREES) $(TABLES)
+build/index.html: src/create_index.py src/index.html.jinja2 data/metadata.json | $(DBS) $(TABLES)
 	python3 $^ $@
 
 .PHONY: finalize
@@ -152,34 +153,35 @@ build/intermediate/%-xrefs.tsv: src/create_xref_template.py build/%.tsv build/in
 
 ### Trees and Tables
 
-build/%-tree.html: build/%.owl | build/robot-tree.jar
-	java -jar build/robot-tree.jar tree \
-	--input $< \
-	--tree $@
+build/prefixes.sql: src/convert_prefixes.py src/prefixes.json | build
+	python3 $^ $@
 
-build/%.html: build/%.owl build/%.tsv | src/prefixes.json build/robot.jar
-	$(ROBOT) validate \
-	--input $< \
-	--table $(word 2,$^) \
-	--skip-row 2 \
-	--format HTML \
-	--standalone true \
-	--write-all true \
-	--output-dir build/
+build/%.db: build/prefixes.sql build/%.owl | build/rdftab
+	rm -rf $@
+	sqlite3 $@ < $<
+	./build/rdftab $@ < $(word 2,$^)
+
+UC = $(shell echo '$*' | tr '[:lower:]' '[:upper:]')
+PREDICATES := CURIE label rdfs:subClassOf definition oboInOwl:hasDbXref IHCC:internal-id
+
+build/%.html: build/%.db
+	python3 -m gizmos.export \
+	-d $< \
+	-f html \
+	$(foreach P,$(PREDICATES),-p $(P)) \
+	-V CURIE \
+	-w "stanza LIKE '$(call UC,$(basename $(notdir $@))):%'" | \
+	sed 's/rdfs:subClassOf/parent/g' | \
+	sed 's/oboInOwl:hasDbXref/GECKO category/g' | \
+	sed 's/IHCC:internal-id/internal ID/g' > $@
 
 
 ### JSON Data for Real Browser
 
 # Top-level cohort data
 
-build/gecko_structure.json: build/gecko.owl | build/robot-tree.jar src/prefixes.json
-	java -jar build/robot-tree.jar \
-	--prefixes src/prefixes.json \
-	remove --input $< \
-	--term GECKO:0000019 \
-	tree \
-	--format json \
-	--tree $@
+build/gecko_structure.json: src/get_gecko_structure.py build/gecko.db
+	python3 $^ > $@
 
 data/cohort-data.json: src/generate_cohort_json.py data/metadata.json build/gecko_structure.json $(TEMPLATES)
 	python3 $(filter-out $(TEMPLATES),$^) $@
@@ -202,7 +204,7 @@ build/member_cohorts.csv: src/convert_metadata.py data/metadata.json
 ### COGS Set Up & Tasks
 
 # The branch name should be the namespace for the new cohort
-BRANCH := $(shell git branch --show-current)
+BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 
 init-cogs: .cogs
 
@@ -231,8 +233,16 @@ build build/intermediate build/browser build/browser/cohorts data_dictionaries:
 build/robot.jar: | build
 	curl -Lk -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/master/lastSuccessfulBuild/artifact/bin/robot.jar
 
-build/robot-tree.jar: | build
-	curl -L -o $@ https://build.obolibrary.io/job/ontodev/job/robot/job/tree-view/lastSuccessfulBuild/artifact/bin/robot.jar
+UNAME := $(shell uname)
+ifeq ($(UNAME), Darwin)
+	RDFTAB_URL := https://github.com/ontodev/rdftab.rs/releases/download/v0.1.1/rdftab-x86_64-apple-darwin
+else
+	RDFTAB_URL := https://github.com/ontodev/rdftab.rs/releases/download/v0.1.1/rdftab-x86_64-unknown-linux-musl
+endif
+
+build/rdftab: | build
+	curl -L -o $@ $(RDFTAB_URL)
+	chmod +x $@
 
 build/intermediate/properties.owl: templates/properties.tsv | build/intermediate build/robot.jar
 	$(ROBOT) template --template $< --output $@

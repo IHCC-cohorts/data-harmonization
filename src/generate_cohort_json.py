@@ -23,7 +23,7 @@ def main():
     output_file = args.output
 
     metadata = json.loads(metadata_file.read())
-    gecko = json.loads(args.gecko.read())[1]
+    gecko = json.loads(args.gecko.read())
     gecko_hierarchy = build_hierarchy(gecko)
 
     all_data = []
