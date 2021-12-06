@@ -1,6 +1,13 @@
 '@context': null
 ontologies:
 - base_uri:
+  - https://purl.ihccglobal.org/MAELSTROM_
+  description: Information classification developed by Maelstrom Research.
+  id: maelstrom
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/maelstrom.owl
+  preferredPrefix: MAELSTROM
+  title: Maelstrom Area Of Information
+- base_uri:
   - https://purl.ihccglobal.org/CANPATH_
   description: To help researchers better understand the causes of chronic diseases
     like cancer, heart disease and diabetes, and to develop new ways to prevent and
