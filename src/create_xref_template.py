@@ -19,7 +19,6 @@ def main():
     # make a map of index label to ID
     label_to_id = {}
     reader = csv.reader(mapping_index, delimiter='\t')
-    # Skip header and template rows
     next(reader)
     for row in reader:
         if not row:
@@ -49,18 +48,15 @@ def main():
     writer.writerow(['ID', 'A database_cross_reference', '>A label'])
 
     # Read in the mapping template to get Xrefs
-    reader = csv.reader(mapping_template, delimiter='\t')
-    next(reader)
-    next(reader)
+    reader = csv.DictReader(mapping_template, delimiter='\t')
     for row in reader:
-        if len(row) < 3:
-            # No GECKO mapping
+        if not row["GECKO Category"]:
             continue
 
         # Get the CURIE for the subject
-        curie = row[0].strip()
+        curie = row["ID"].strip()
         # And the GECKO label (maybe more than one)
-        gecko_labels = row[4].strip()
+        gecko_labels = row["GECKO Category"].strip()
         if gecko_labels == '':
             continue
         iris_labels = {}
