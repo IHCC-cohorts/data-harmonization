@@ -119,7 +119,7 @@ update-maelstrom-template: src/convert/maelstrom.py data/maelstrom.yml templates
 
 # Maelstrom has different headers than other templates
 build/maelstrom.tsv: templates/maelstrom.tsv
-	sed -E '2s/^/ID	AL rdfs:label@en	AL definition@fr	SC %	AL alternative term@fr	AL definition@fr	A internal ID#	is-required;#/' $< | tr '#' '\n' > $@
+	sed -E '2s/^/ID	AL rdfs:label@en	AL definition@en	SC %	AL label@fr	AL definition@fr	A internal ID#	is-required;#/' $< | tr '#' '\n' > $@
 
 ### Cohort OWL Files
 

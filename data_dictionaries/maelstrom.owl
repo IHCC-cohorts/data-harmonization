@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/maelstrom.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/maelstrom/releases/2021-12-16/maelstrom.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/maelstrom/releases/2022-01-06/maelstrom.owl"/>
         <dc:description xml:lang="fr">Classification des informations développée par Maelstrom Research</dc:description>
         <dc:description xml:lang="en">Information classification developed by Maelstrom Research</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -211,20 +211,12 @@ The licensor cannot revoke these freedoms as long as you follow the license term
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000000 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000000">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about current age (e.g. age of participant) or birthdate.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about current age (e.g. age of participant) or birthdate.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’âge actuel (ex. âge du participant) ou de la date de naissance.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Âge/date de naissance</obo:IAO_0000118>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Age/birthdate</rdfs:label>
+        <rdfs:label xml:lang="fr">Âge/date de naissance</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age</purl:internal-id>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000011</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age/birthdate</rdfs:label>
-    </owl:Axiom>
     
 
 
@@ -232,12 +224,12 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000001">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about sex (e.g. biological characteristics) or gender identity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about sex (e.g. biological characteristics) or gender identity.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du sexe (ex. caractéristiques biologiques) ou de l’identité de genre.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Sexe/genre</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000060</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Sex/gender</rdfs:label>
+        <rdfs:label xml:lang="fr">Sexe/genre</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -259,10 +251,10 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000002">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the fact of being a twin or born from a multiple birth (e.g. zygosity – identical or not).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the fact of being a twin or born from a multiple birth (e.g. zygosity – identical or not).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du fait d’être un jumeau ou d’être né d’une naissance multiple (ex. zygosité – identique ou non).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Jumeau</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Jumeau</rdfs:label>
         <rdfs:label xml:lang="en">Twin</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twin</purl:internal-id>
     </owl:Class>
@@ -279,11 +271,11 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000003">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current relationship status (e.g. married, divorced, single, living with a partner).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current relationship status (e.g. married, divorced, single, living with a partner).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des relations matrimoniales passées et actuelles (ex. marié, divorcé, célibataire, vivant avec un conjoint).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">État matrimonial</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:EUPATH_0000374</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Marital/partner status</rdfs:label>
+        <rdfs:label xml:lang="fr">État matrimonial</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marital_status</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -299,13 +291,13 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000004">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current family and household structure (e.g. number of individuals living with the participant, number of siblings).
+        <obo:IAO_0000115 xml:lang="en">Information about past and current family and household structure (e.g. number of individuals living with the participant, number of siblings).
 Also see Dom. 16 &quot;Social environment and relationships&quot;, under &apos;Social network&apos;.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la structure familiale et domestique passée et actuelle (ex. nombre de personnes qui vivent avec le participant, nombre de frères et sœurs).
 Voir aussi Dom. 16 « Environnement et relations sociales », sous &apos;Réseau social&apos;.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Structure familiale et domestique</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000066</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Family and household structure</rdfs:label>
+        <rdfs:label xml:lang="fr">Structure familiale et domestique</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family_hh_struct</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -321,13 +313,13 @@ Voir aussi Dom. 16 « Environnement et relations sociales », sous &apos;Réseau
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000005">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about education (e.g. highest level of education achieved, years of schooling completed).
+        <obo:IAO_0000115 xml:lang="en">Information about education (e.g. highest level of education achieved, years of schooling completed).
 Also see Dom. 15 &quot;Preschool, school and professional life&quot;, under &apos;School life&apos; for information about school environment.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la scolarité (ex. niveau le plus élévé de scolarité atteint, nombre d’années de scolarité complétées).
 Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle », sous &apos;Vie scolaire&apos; pour des informations en lien avec l’environnement scolaire.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Éducation</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000065</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Education</rdfs:label>
+        <rdfs:label xml:lang="fr">Éducation</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -343,11 +335,11 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000006">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current locations where an individual dwells (e.g. address, region, country, homelessness).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current locations where an individual dwells (e.g. address, region, country, homelessness).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des endroits passés et actuels dans lesquels l’individu a vécu (ex. adresse, région, pays, sans domicile fixe).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Résidence</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000064</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Residence</rdfs:label>
+        <rdfs:label xml:lang="fr">Résidence</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residence</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -363,11 +355,11 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000007">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about birthplace (e.g. country of birth).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about birthplace (e.g. country of birth).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du lieu de naissance (ex. pays de naissance).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Lieu de naissance</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000063</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Birthplace</rdfs:label>
+        <rdfs:label xml:lang="fr">Lieu de naissance</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birth_place</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -383,11 +375,11 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000008">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about citizenship and immigrant status (e.g. landed immigrant, Canadian citizen, number of years living in a given country).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about citizenship and immigrant status (e.g. landed immigrant, Canadian citizen, number of years living in a given country).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la citoyenneté et du statut d’immigrant (ex. immigrant reçu, citoyen Canadien, nombre d’années résidant dans un pays donné).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Citoyenneté et statut d’immigration</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Citizenship and immigrant status</rdfs:label>
+        <rdfs:label xml:lang="fr">Citoyenneté et statut d’immigration</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citizenship</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -403,11 +395,11 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000009">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about ethnicity (e.g. Italian, Chinese, Japanese), race (e.g. Caucasian, Black, Asian) and religion (e.g. Christian, Muslim, Buddhist).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about ethnicity (e.g. Italian, Chinese, Japanese), race (e.g. Caucasian, Black, Asian) and religion (e.g. Christian, Muslim, Buddhist).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’ethnicité (ex. Italien, Chinois, Japonais), de la race (ex. Caucasien, Noir, Asiatique) et de la religion (ex. chrétien, musulman, bouddhiste).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Ethnicité, race et religion</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000061</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Ethnicity, race and religion</rdfs:label>
+        <rdfs:label xml:lang="fr">Ethnicité, race et religion</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethnic_race_religion</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -423,11 +415,11 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000010">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about linguistic background and knowledge (e.g. French, English mother tongue, knowledge of Spanish).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about linguistic background and knowledge (e.g. French, English mother tongue, knowledge of Spanish).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des origines et connaissances linguistiques (ex. français, langue maternelle anglais, connaissance de l’espagnol).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Langue</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000136</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Language</rdfs:label>
+        <rdfs:label xml:lang="fr">Langue</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Language</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -443,12 +435,12 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000011">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current labour force participation and retirement (e.g. employment status, sector of employment, participation in the military, years worked, start of retirement).
+        <obo:IAO_0000115 xml:lang="en">Information about past and current labour force participation and retirement (e.g. employment status, sector of employment, participation in the military, years worked, start of retirement).
 Also see Dom. 15 &quot;Preschool, school and professional life&quot;, under &apos;Professional life&apos; for information about job environment.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la participation passée et actuelle au marché du travail et de la retraite (ex. statut d’emploi, secteur d’emploi, participation dans les Forces Armées, nombre d’années de travail, début de la retraite).
 Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle», sous &apos;Vie professionnelle&apos; pour des informations en lien avec l’environnement de travail.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Emploi et retraite</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:EUPATH_0000359</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Emploi et retraite</rdfs:label>
         <rdfs:label xml:lang="en">Labour force and retirement</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Labour_retirement</purl:internal-id>
     </owl:Class>
@@ -465,11 +457,11 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle», sous &apo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000012">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current income, possessions, and benefits from work (e.g. income before tax, health insurance coverage, home ownership).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current income, possessions, and benefits from work (e.g. income before tax, health insurance coverage, home ownership).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du revenu passé et actuel, des biens et des avantages sociaux reliés au travail (ex. revenu avant impôt, assurance santé, propriétaire d’un logement).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Revenu, possessions et avantages sociaux</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:OMRSE_00000501</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Income, possessions, and benefits</rdfs:label>
+        <rdfs:label xml:lang="fr">Revenu, possessions et avantages sociaux</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Income</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -485,10 +477,10 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle», sous &apo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000013">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000000"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other socio-demographic and economic characteristics (e.g. being adopted).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other socio-demographic and economic characteristics (e.g. being adopted).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres caractéristiques socio-démographiques et économiques (ex. avoir été adopté).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres caractéristiques socio-démographiques et économiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres caractéristiques socio-démographiques et économiques</rdfs:label>
         <rdfs:label xml:lang="en">Other socio-demographic and economic characteristics</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_sociodemogr_chars</purl:internal-id>
     </owl:Class>
@@ -504,11 +496,10 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle», sous &apo
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000015 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000015">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the consumption of tobacco in any form (e.g. quantity and frequency of smoking, chewing or sniffing) and associated behaviours.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the consumption of tobacco in any form (e.g. quantity and frequency of smoking, chewing or sniffing) and associated behaviours.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la consommation des produits du tabac sous toutes ses formes (ex. quantité et fréquence de consommation de produits du tabac fumés, mâchés ou inhalés) et autres comportements associés.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Tabagisme</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000068</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Tabagisme</rdfs:label>
         <rdfs:label xml:lang="en">Tobacco</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobacco</purl:internal-id>
     </owl:Class>
@@ -525,11 +516,11 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle», sous &apo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000016">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the consumption of alcoholic beverages (e.g. frequency, quantity and type of alcohol consumed) and associated behaviours.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the consumption of alcoholic beverages (e.g. frequency, quantity and type of alcohol consumed) and associated behaviours.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la consommation de boissons alcoolisées (ex. fréquence, quantité et type d’alcool consommé) et autres comportements associés.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Alcool</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000069</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Alcohol</rdfs:label>
+        <rdfs:label xml:lang="fr">Alcool</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alcohol</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -545,10 +536,10 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle», sous &apo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000017">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the consumption and abuse of drugs in any form (e.g. cannabis, morphine, quantity and frequency of smoking, swallowing, sniffing, injecting) and associated behaviours.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the consumption and abuse of drugs in any form (e.g. cannabis, morphine, quantity and frequency of smoking, swallowing, sniffing, injecting) and associated behaviours.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la consommation et de l’abus de drogues sous toutes les formes (ex. cannabis, morphine, quantité et fréquence fumées, avalées, inhalées, et/ou injectées) et autres comportements associés.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Drogues</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000103</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Drogues</rdfs:label>
         <rdfs:label xml:lang="en">Drugs</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drugs</purl:internal-id>
     </owl:Class>
@@ -565,13 +556,13 @@ Voir aussi Dom. 15 « Vie préscolaire, scolaire et professionnelle», sous &apo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000018">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the consumption of food (e.g. type, quantity and frequency of food intake) and associated behaviours. 
+        <obo:IAO_0000115 xml:lang="en">Information about the consumption of food (e.g. type, quantity and frequency of food intake) and associated behaviours. 
 Also see Dom. 7 &quot;Medication and supplements&quot;, under &apos;Medication and supplement intake&apos; for information about the consumption of vitamins and supplements.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la consommation de nourriture (ex. type, quantité et fréquence de la consommation alimentaire) et autres comportements associés.
 Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et suppléments&apos; pour des informations en lien avec la consommation de vitamines et suppléments.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Nutrition</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000072</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Nutrition</rdfs:label>
+        <rdfs:label xml:lang="fr">Nutrition</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -587,10 +578,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000019">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the mother nursing an infant at the breast or the child being breastfed (e.g. duration and frequency of breastfeeding).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the mother nursing an infant at the breast or the child being breastfed (e.g. duration and frequency of breastfeeding).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la mère nourrissant un enfant au sein ou de l’enfant étant allaité (ex. durée et fréquence de l’allaitement).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Allaitement</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Allaitement</rdfs:label>
         <rdfs:label xml:lang="en">Breastfeeding</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breastfeeding</purl:internal-id>
     </owl:Class>
@@ -607,10 +598,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000020">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the type, frequency and intensity of physical activity such as exercises and sports (e.g. jogging, playing hockey), daily activities (e.g. household chores, walking the dog) or sedentarity (e.g. lounging on the couch).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the type, frequency and intensity of physical activity such as exercises and sports (e.g. jogging, playing hockey), daily activities (e.g. household chores, walking the dog) or sedentarity (e.g. lounging on the couch).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du type, de la fréquence et de l’intensité de l’activité physique tels que les exercises et les sports (ex. jogging, hockey), les activités quotidiennes (ex. corvées ménagères, promener le chien) ou la sédentarité (ex. se prélasser sur le canapé).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Activité physique</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000104</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Activité physique</rdfs:label>
         <rdfs:label xml:lang="en">Physical activity</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phys_act</purl:internal-id>
     </owl:Class>
@@ -627,10 +618,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000021">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about means of transportation used and associated behaviours (e.g. wearing a seat belt, driving to work).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about means of transportation used and associated behaviours (e.g. wearing a seat belt, driving to work).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des moyens de transport utilisés et autres comportements associés (ex. porter une ceinture de sécurité, conduire pour se rendre au travail).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Transport</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Transport</rdfs:label>
         <rdfs:label xml:lang="en">Transportation</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transportation</purl:internal-id>
     </owl:Class>
@@ -647,10 +638,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000022">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about personal hygiene, including oral hygiene (e.g. how often teeth are brushed).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about personal hygiene, including oral hygiene (e.g. how often teeth are brushed).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’hygiène personnelle, incluant l’hygiène buccale (ex. fréquence du brossage des dents).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Hygiène personnelle</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Hygiène personnelle</rdfs:label>
         <rdfs:label xml:lang="en">Personal hygiene</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pers_hygiene</purl:internal-id>
     </owl:Class>
@@ -667,11 +658,11 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000023">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the type, frequency and intensity of sleep behaviours (e.g. hours of sleep, quality of sleep).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the type, frequency and intensity of sleep behaviours (e.g. hours of sleep, quality of sleep).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du type, de la fréquence et de l’intensité des comportements liés au sommeil (ex. nombre d’heures de sommeil, qualité du sommeil).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Sommeil</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000071</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Sleep</rdfs:label>
+        <rdfs:label xml:lang="fr">Sommeil</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sleep</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -687,10 +678,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000024">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the type and frequency of sexual behaviours (e.g. number of partners, frequency of intercourse) and sexual orientation (e.g. homosexuality).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the type and frequency of sexual behaviours (e.g. number of partners, frequency of intercourse) and sexual orientation (e.g. homosexuality).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du type et de la fréquence des comportements sexuels (ex. nombre de partenaires, fréquence des relations sexuelles) et orientation sexuelle (ex. homosexualité).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Orientations et comportements sexuels</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Orientations et comportements sexuels</rdfs:label>
         <rdfs:label xml:lang="en">Sexual behaviours and orientation</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex_behav</purl:internal-id>
     </owl:Class>
@@ -707,10 +698,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000025">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the type, frequency and intensity of leisure activities other than physical activity (e.g. reading, travelling, socializing).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the type, frequency and intensity of leisure activities other than physical activity (e.g. reading, travelling, socializing).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du type, de la fréquence et de l’intensité des activités de loisir autre que l’activité physique (ex. lire, voyager, socialiser).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Activités de loisir</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Activités de loisir</rdfs:label>
         <rdfs:label xml:lang="en">Leisure activities</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leisure_act</purl:internal-id>
     </owl:Class>
@@ -727,10 +718,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000026">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the use of electronic devices and associated technologies (e.g. computer, phone, Internet).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the use of electronic devices and associated technologies (e.g. computer, phone, Internet).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’utilisation des appareils électroniques et des technologies associées (ex. ordinateur, téléphone, Internet).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Appareils technologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Appareils technologiques</rdfs:label>
         <rdfs:label xml:lang="en">Technological devices</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tech_devices</purl:internal-id>
     </owl:Class>
@@ -747,10 +738,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000027">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the type, frequency and consequences of misbehaviour and related legal problems (e.g. number of speeding tickets, shoplifting).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the type, frequency and consequences of misbehaviour and related legal problems (e.g. number of speeding tickets, shoplifting).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du type, de la fréquence et des conséquences de la mauvaise conduite et des problèmes judiciaires associés (ex. nombre de contraventions pour excès de vitesse, vol à l&apos;étalage).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Mauvaise conduite et criminalité</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Mauvaise conduite et criminalité</rdfs:label>
         <rdfs:label xml:lang="en">Misbehaviour and criminality</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Misbehav_crim</purl:internal-id>
     </owl:Class>
@@ -767,10 +758,10 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000028">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000015"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other (e.g. use of tanning bed) or unspecified lifestyle and behaviours that falls into several categories (e.g. use of tobacco and alcohol).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other (e.g. use of tanning bed) or unspecified lifestyle and behaviours that falls into several categories (e.g. use of tobacco and alcohol).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres habitudes de vie et comportements (ex. utilisation du lit de bronzage) et habitudes de vie et comportements liés à plusieurs catégories à la fois (ex. tabagisme et consommation d’alcool).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations en lien avec les habitudes de vie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000067</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations en lien avec les habitudes de vie</rdfs:label>
         <rdfs:label xml:lang="en">Other and unspecified lifestyle information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_lifestyle</purl:internal-id>
     </owl:Class>
@@ -786,12 +777,11 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000030 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000030">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000030"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about puberty, menstruation, menopause, andropause and related events (e.g. age at first menstruation, age menses stopped).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about puberty, menstruation, menopause, andropause and related events (e.g. age at first menstruation, age menses stopped).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la puberté, des menstruations, de la ménopause, de l’andropause et des évènements associés (ex. âge des premières menstruations, âge de la ménopause).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Puberté, menstruation, ménopause et andropause</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Puberty, menstruation, menopause and andropause</rdfs:label>
+        <rdfs:label xml:lang="fr">Puberté, menstruation, ménopause et andropause</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Menstr_menop_andropause</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -807,11 +797,11 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000031">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000030"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about contraception and family planning (e.g. methods of contraception used, child spacing).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about contraception and family planning (e.g. methods of contraception used, child spacing).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la contraception et du planning familial (ex. méthodes de contraception utilisées, espacement des naissances).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Contraception</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Contraception</rdfs:label>
+        <rdfs:label xml:lang="fr">Contraception</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contraception</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -827,12 +817,12 @@ Voir aussi Dom. 7 « Médicaments et suppléments », sous &apos;Médicaments et
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000032">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000030"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about pregnancy, gravidity, labour, delivery and postpartum including information about any outcomes (e.g. gestational age, expecting/giving birth to twins, parity).
+        <obo:IAO_0000115 xml:lang="en">Information about pregnancy, gravidity, labour, delivery and postpartum including information about any outcomes (e.g. gestational age, expecting/giving birth to twins, parity).
 Also see Dom. 5 &quot;Diseases (ICD-10)&quot;, under &apos;Certain conditions originating in the perinatal period (P00-P96)&apos; for information about birth outcomes.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la grossesse, de la gravidité, de l’accouchement et de la période postpartum incluant les informations relatives aux résultats de la grossesse (ex. âge gestationnel, attendre/donner naissance à des jumeaux, parité).
 Voir aussi Dom. 5 « Maladies (CIM-10) », sous &apos;Certaines affections dont l’origine se situe dans la période périnatale (P00-P96)&apos; pour des informations en lien avec les résultats de la grossesse.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Grossesse, accouchement et naissance</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Grossesse, accouchement et naissance</rdfs:label>
         <rdfs:label xml:lang="en">Pregnancy, delivery and birth</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pregnancy_delivery</purl:internal-id>
     </owl:Class>
@@ -849,11 +839,11 @@ Voir aussi Dom. 5 « Maladies (CIM-10) », sous &apos;Certaines affections dont 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000033">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000030"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about females&apos; and males&apos; fertility and sexual health (e.g. infertility problems, assisted reproduction).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about females&apos; and males&apos; fertility and sexual health (e.g. infertility problems, assisted reproduction).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la fertilité et de la santé sexuelle des femmes et des hommes (ex. problèmes d’infertilité, reproduction assistée).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Fertilité et santé sexuelle</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Fertility and sexual health</rdfs:label>
+        <rdfs:label xml:lang="fr">Fertilité et santé sexuelle</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reprod_sexual_problems</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -869,10 +859,10 @@ Voir aussi Dom. 5 « Maladies (CIM-10) », sous &apos;Certaines affections dont 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000034">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000030"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other reproductive health issues.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other reproductive health issues.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres enjeux liés à la santé reproductive.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations en lien avec la santé reproductive</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations en lien avec la santé reproductive</rdfs:label>
         <rdfs:label xml:lang="en">Other reproductive health-related information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_reproductive</purl:internal-id>
     </owl:Class>
@@ -888,11 +878,10 @@ Voir aussi Dom. 5 « Maladies (CIM-10) », sous &apos;Certaines affections dont 
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000036 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000036">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000036"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the perception of health (e.g. rating of own health compared to others). It refers to the subjective rating of general health considering physical and mental aspects.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the perception of health (e.g. rating of own health compared to others). It refers to the subjective rating of general health considering physical and mental aspects.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la perception de la santé (ex. évaluation de sa santé en comparaison avec la santé des autres). Cela refère à l’évaluation subjective de la santé générale, considérant les aspects physiques et mentaux de la santé.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Perception de la santé</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000126</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Perception de la santé</rdfs:label>
         <rdfs:label xml:lang="en">Perception of health</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perc_health</purl:internal-id>
     </owl:Class>
@@ -909,11 +898,11 @@ Voir aussi Dom. 5 « Maladies (CIM-10) », sous &apos;Certaines affections dont 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000037">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000036"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current quality of life, well-being and life satisfaction (e.g. subjective well-being, assessment of life enjoyment as a whole, happiness).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current quality of life, well-being and life satisfaction (e.g. subjective well-being, assessment of life enjoyment as a whole, happiness).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la qualité de vie passée et actuelle, du bien-être et de la satisfaction face à la vie (ex. bien-être subjectif, évaluation de la capacité à profiter de la vie, bonheur).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Qualité de vie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000127</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Quality of life</rdfs:label>
+        <rdfs:label xml:lang="fr">Qualité de vie</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qual_life</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -929,12 +918,12 @@ Voir aussi Dom. 5 « Maladies (CIM-10) », sous &apos;Certaines affections dont 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000038">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000036"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about child development (e.g. motor, social, emotional and language development). 
+        <obo:IAO_0000115 xml:lang="en">Information about child development (e.g. motor, social, emotional and language development). 
 Also see Dom. 13 &quot;Cognition, personality and psychological measures and assessments&quot;, under &apos;Cognitive functioning&apos;.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du dévéloppement de l’enfant (ex. développement moteur, social, émotionnel et langagier).
 Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations psychologiques », sous &apos;Fonctionnement cognitif&apos;.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Développement au cours de la vie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Développement au cours de la vie</rdfs:label>
         <rdfs:label xml:lang="en">Life course development</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life_dev</purl:internal-id>
     </owl:Class>
@@ -951,13 +940,13 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000039">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000036"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about functional activities that involve caring for and moving the body (e.g. walking, bathing, dressing, toileting, eating; i.e. activities of daily living (ADL)) and instrumental activities of daily living (IADL) that people can get help with (e.g. cooking, driving, using the telephone or computer, shopping, handling finances, managing medication). 
+        <obo:IAO_0000115 xml:lang="en">Information about functional activities that involve caring for and moving the body (e.g. walking, bathing, dressing, toileting, eating; i.e. activities of daily living (ADL)) and instrumental activities of daily living (IADL) that people can get help with (e.g. cooking, driving, using the telephone or computer, shopping, handling finances, managing medication). 
 Also see the &apos;Use of assistive devices&apos; subdomain.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des activités fonctionnelles impliquant de prendre soin de son corps et bouger (ex. marcher, se laver, s’habiller, faire sa toilette, manger, i.e. activités de la vie quotidienne (AVQ)) et les activités instrumentales de la vie quotidienne (AIVQ) pour lesquelles les individus peuvent obtenir de l’aide (ex. cuisiner, conduire, utiliser un téléphone ou un ordinateur, faire les courses, gérer un budget, prendre des médicaments).
 Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Limitations fonctionnelles</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000128</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Functional limitations</rdfs:label>
+        <rdfs:label xml:lang="fr">Limitations fonctionnelles</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Act_daily_living</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -973,11 +962,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000040">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000036"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the use of assistive devices to enhance and increase independence in performing activities of daily living (e.g. glasses, hearing aids, crutches).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the use of assistive devices to enhance and increase independence in performing activities of daily living (e.g. glasses, hearing aids, crutches).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’utilisation de dispositifs d’aide afin d’améliorer et d’augmenter l’indépendance dans l’accomplissement des activités de vie quotidienne (ex. lunettes, appareils auditifs, béquilles).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Utilisation de dispositifs d’aide</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000129</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Use of assistive devices</rdfs:label>
+        <rdfs:label xml:lang="fr">Utilisation de dispositifs d’aide</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use_devices</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -993,10 +982,10 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000041">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000036"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other health status and functional limitation-related information.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other health status and functional limitation-related information.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres états de santé ou associées aux limitations fonctionnelles.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations en lien avec la perception de la santé, la qualité de vie et les limitations fonctionnelles</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000117</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations en lien avec la perception de la santé, la qualité de vie et les limitations fonctionnelles</rdfs:label>
         <rdfs:label xml:lang="en">Other perception of health, quality of life and functional limitation-related information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</purl:internal-id>
     </owl:Class>
@@ -1012,12 +1001,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000043 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000043">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current infectious and parasitic diseases generally recognized as communicable or transmissible (e.g. HIV/Aids, Malaria, Tuberculosis).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current infectious and parasitic diseases generally recognized as communicable or transmissible (e.g. HIV/Aids, Malaria, Tuberculosis).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies infectieuses et parasitaires passées et actuelles, généralement reconnues comme contagieuses ou transmissibles (ex. VIH/SIDA, paludisme, tuberculose).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Certaines maladies infectieuses et parasitaires (A00-B99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005550</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Certain infectious and parasitic diseases (A00-B99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Certaines maladies infectieuses et parasitaires (A00-B99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1033,11 +1021,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000044">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current tumours (e.g. benign and malignant neoplasms, in situ neoplasms).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current tumours (e.g. benign and malignant neoplasms, in situ neoplasms).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de tumeurs passées ou actuelles (ex. tumeurs bénignes et malignes, tumeurs in situ).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Tumeurs (C00-D48)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004992</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Neoplasms (C00-D48)</rdfs:label>
+        <rdfs:label xml:lang="fr">Tumeurs (C00-D48)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neoplasms</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1053,11 +1041,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000045">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (e.g. nutritional anaemias, coagulation defects).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (e.g. nutritional anaemias, coagulation defects).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies du sang et des organes hématopoïétiques passées et actuelles et de certains troubles du système immunitaire (ex. anémies nutritionnelles, anomalies de la coagulation).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies du sang et des organes hématopoïétiques et certaines troubles du système immunitaire (D50-D89)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005570</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies du sang et des organes hématopoïétiques et certaines troubles du système immunitaire (D50-D89)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood_immune_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1073,11 +1061,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000046">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current endocrine, nutritional and metabolic diseases (e.g. diabetes, thyroid and metabolic disorders, malnutrition).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current endocrine, nutritional and metabolic diseases (e.g. diabetes, thyroid and metabolic disorders, malnutrition).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies endocriniennes, nutritionnelles et métaboliques passées et actuelles (ex. diabète, troubles thyroïdiens et métaboliques, malnutrition).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies endocriniennes, nutritionnelles et métaboliques (E00-E90)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005151</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Endocrine, nutritional and metabolic diseases (E00-E90)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies endocriniennes, nutritionnelles et métaboliques (E00-E90)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endocrine_metabolic_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1093,11 +1081,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000047">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current mental and behavioural disorders (e.g. dementia, schizophrenia, chronic PTSD, mood affective disorders, mental disorders from substance abuse).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current mental and behavioural disorders (e.g. dementia, schizophrenia, chronic PTSD, mood affective disorders, mental disorders from substance abuse).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de troubles mentaux et du comportement passés et actuels (ex. démence, schizophrénie, syndrome chronique d’État de Stress Post-Traumatique SSPT, troubles de l’humeur (affectifs), troubles mentaux liés à la toxicomanie).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Troubles mentaux et du comportement (F00-F99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005084</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Mental and behavioural disorders (F00-F99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Troubles mentaux et du comportement (F00-F99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mental_behav_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1113,11 +1101,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000048">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the nervous system (e.g. Parkinson, Alzheimer, Huntington, inflammatory diseases of the central nervous system).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the nervous system (e.g. Parkinson, Alzheimer, Huntington, inflammatory diseases of the central nervous system).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies du système nerveux passées et actuelles (ex. Parkinson, Alzheimer, Huntington, maladies inflammatoires du système nerveux central).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies du système nerveux (G00-G99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005071</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the nervous system (G00-G99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies du système nerveux (G00-G99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nervous_sys_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1133,11 +1121,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000049">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the eye and adnexa (e.g. glaucoma, conjunctivitis, cataracts, strabismus, low vision).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the eye and adnexa (e.g. glaucoma, conjunctivitis, cataracts, strabismus, low vision).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies de l’œil et de ses annexes passées et actuelles (ex. glaucome, conjonctivite, cataractes, strabisme, baisse de la vision).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies de l’oeil et de ses annexes (H00-H59)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the eye and adnexa (H00-H59)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies de l’oeil et de ses annexes (H00-H59)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eye_adnexa_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1153,11 +1141,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000050">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the ear and mastoid process (e.g. otitis, mastoiditis, labyrinthitis, unspecified hearing loss).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the ear and mastoid process (e.g. otitis, mastoiditis, labyrinthitis, unspecified hearing loss).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies de l’oreille et de l’apophyse mastoïde passées et actuelles (ex. otite, mastoïdite, labyrinthite, perte auditive non spécifiée).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies de l’oreille et de l’apophyse mastoïde (H60-H95)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0024623</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the ear and mastoid process (H60-H95)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies de l’oreille et de l’apophyse mastoïde (H60-H95)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ear_mastoid_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1173,11 +1161,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000051">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the circulatory system (e.g. hypertension, ischaemic heart diseases, cerebrovascular diseases).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the circulatory system (e.g. hypertension, ischaemic heart diseases, cerebrovascular diseases).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies de l’appareil circulatoire passées et actuelles (ex. hypertension, maladies cardiaques ischémiques, maladies cérébrovasculaires).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies de l’appareil circulatoire (I00-I99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the circulatory system (I00-I99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies de l’appareil circulatoire (I00-I99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circulatory_sys_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1193,11 +1181,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000052">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the respiratory system (e.g. asthma, bronchitis, emphysema, chronic obstructive pulmonary disease (COPD), pneumonia, influenza, nasopharyngitis, rhinopharyngitis - &quot;common cold&quot;).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the respiratory system (e.g. asthma, bronchitis, emphysema, chronic obstructive pulmonary disease (COPD), pneumonia, influenza, nasopharyngitis, rhinopharyngitis - &quot;common cold&quot;).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies de l’appareil respiratoire passées et actuelles (ex. asthme, bronchite, emphysème, maladie pulmonaire obstructive chronique MPOC, pneumonie, influenza, nasopharyngite, rhinopharyngite – « rhume »).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies de l’appareil respiratoire (J00-J99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0005087</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the respiratory system (J00-J99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies de l’appareil respiratoire (J00-J99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Respiratory_sys_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1213,11 +1201,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000053">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the digestive system (e.g. Crohn&apos;s disease, hepatitis, irritable bowel disease, cirrhosis, colitis).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the digestive system (e.g. Crohn&apos;s disease, hepatitis, irritable bowel disease, cirrhosis, colitis).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies de l’appareil digestif passées et actuelles (ex. maladie de Crohn, hépatite, syndrome du côlon irritable, cirrhose, colite).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies de l’appareil digestif (K00-K93)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0004335</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the digestive system (K00-K93)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies de l’appareil digestif (K00-K93)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digestive_sys_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1233,11 +1221,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000054">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the skin and subcutaneous tissue (e.g. dermatitis, eczema, urticaria, erythema).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the skin and subcutaneous tissue (e.g. dermatitis, eczema, urticaria, erythema).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies de la peau et du tissu cellulaire sous-cutané passées et actuelles (ex. dermatite, eczéma, urticaire, erythème).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies de la peau et du tissu cellulaire sous-cutané (L00-L99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002051</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the skin and subcutaneous tissue (L00-L99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies de la peau et du tissu cellulaire sous-cutané (L00-L99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skin_subcutaneous_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1253,11 +1241,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000055">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the musculoskeletal system and connective tissue (e.g. arthritis, arthrosis, lupus, low back pain).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the musculoskeletal system and connective tissue (e.g. arthritis, arthrosis, lupus, low back pain).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies du système ostéo-articulaire, des muscles et du tissu conjonctif passées et actuelles (ex. arthrite, arthrose, lupus, douleurs au bas du dos).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies du système ostéo-articulaire, des muscles et du tissu conjonctif (M00-M99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the musculoskeletal system and connective tissue (M00-M99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies du système ostéo-articulaire, des muscles et du tissu conjonctif (M00-M99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Musculoskeletal_sys_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1273,11 +1261,11 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000056">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases of the genitourinary system (e.g. renal failure, cystitis, UTI, prostate inflammation, mastitis, endometriosis).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases of the genitourinary system (e.g. renal failure, cystitis, UTI, prostate inflammation, mastitis, endometriosis).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies de l’appareil génito-urinaire passées et actuelles (ex. insuffisance rénale, cystite, infection du tractus urinaire ITU, inflammation de la prostate, mastite, endométriose).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies de l’appareil génito-urinaire (N00-N99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002118</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases of the genitourinary system (N00-N99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies de l’appareil génito-urinaire (N00-N99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genitourinary_sys_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1293,12 +1281,12 @@ Voir aussi le sous domaine &apos;Utilisation de dispositifs d’aide&apos;.</obo
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000057">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about conditions related to or aggravated by pregnancy, childbirth, or by puerperium (maternal causes or obstetric causes) (e.g. eclampsia, placenta praevia). Newborn information is excluded here.
+        <obo:IAO_0000115 xml:lang="en">Information about conditions related to or aggravated by pregnancy, childbirth, or by puerperium (maternal causes or obstetric causes) (e.g. eclampsia, placenta praevia). Newborn information is excluded here.
 Also see Dom. 3 &quot;Birth, pregnancy and reproductive health history&quot;, under &apos;Pregnancy, delivery, and birth&apos; for information about pregnancy and delivery.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des conditions reliées à ou aggravées par la grossesse, l’accouchement, ou la puerpéralité (causes maternelles ou obstétriques) (ex. éclampsie, placenta praevia). Les informations sur les nouveau-nés ne sont pas incluses ici.
 Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductive », sous &apos;Grossesse, accouchement et naissance&apos; pour des informations en lien avec la grossesse et l’accouchement.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Grossesse, accouchement et puerpéralité (O00-O9A)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Grossesse, accouchement et puerpéralité (O00-O9A)</rdfs:label>
         <rdfs:label xml:lang="en">Pregnancy, childbirth and the puerperium (O00-O9A)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pregnancy_childbirth</purl:internal-id>
     </owl:Class>
@@ -1315,13 +1303,13 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000058">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about effects of complications of pregnancy, labour and delivery on the fetus and newborn, including birth traumas, disorders and infections specific to the perinatal period (e.g. birth injury, respiratory distress of newborn). Maternal information is excluded here.
+        <obo:IAO_0000115 xml:lang="en">Information about effects of complications of pregnancy, labour and delivery on the fetus and newborn, including birth traumas, disorders and infections specific to the perinatal period (e.g. birth injury, respiratory distress of newborn). Maternal information is excluded here.
 Also see Dom. 3 &quot;Birth, pregnancy and reproductive health history&quot;, under &apos;Pregnancy, delivery, and birth&apos; for information about birth.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des effets de complications de la grossesse et de l’accouchement sur le fœtus et le nouveau-né incluant les traumatismes de naissance, les troubles et infections spécifiques à la période périnatale (ex. blessure reliée à la naissance, détresse respiratoire du nouveau-né). Les informations sur la mère ne sont pas incluses ici.
 Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductive », sous &apos;Grossesse, accouchement et naissance&apos; pour des informations en lien avec la naissance.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Certaines affections dont l’origine se situe dans la période périnatale (P00-P96)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Certain conditions originating in the perinatal period (P00-P96)</rdfs:label>
+        <rdfs:label xml:lang="fr">Certaines affections dont l’origine se situe dans la période périnatale (P00-P96)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perinatal_cond</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1337,11 +1325,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000059">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about congenital malformations, deformations and chromosomal abnormalities (e.g. cleft lip and palate, spina bifida, aortic septal defect).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about congenital malformations, deformations and chromosomal abnormalities (e.g. cleft lip and palate, spina bifida, aortic septal defect).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de malformations congénitales, déformations et anomalies chromosomiques (ex. fente labiale et palatine, spina bifida, malformation du septum aortique).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Malformations congénitales, déformations et anomalies chromosomiques (Q00-Q99)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000140</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)</rdfs:label>
+        <rdfs:label xml:lang="fr">Malformations congénitales, déformations et anomalies chromosomiques (Q00-Q99)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cong_malform_chrom_abnor</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1357,11 +1345,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000060">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current injury, poisoning and certain other consequences of external causes (e.g. burns, fractures, cuts, corrosions, poisoning, allergies).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current injury, poisoning and certain other consequences of external causes (e.g. burns, fractures, cuts, corrosions, poisoning, allergies).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de lésions traumatiques, empoisonnements et certaines autres conséquences de causes externes passées et actuelles (ex. brûlures, fractures, coupures, empoisonnements, allergies).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Lésions traumatiques, empoisonnements et certaines autres conséquences de causes externes (S00-T98)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0021178</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Injury, poisoning and certain other consequences of external causes (S00-T98)</rdfs:label>
+        <rdfs:label xml:lang="fr">Lésions traumatiques, empoisonnements et certaines autres conséquences de causes externes (S00-T98)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injury_poisoning</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1377,10 +1365,10 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000061">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current external causes of morbidity and mortality (e.g. traffic injuries, falls, explosion, intentional self-harm).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current external causes of morbidity and mortality (e.g. traffic injuries, falls, explosion, intentional self-harm).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de causes externes de morbidité et de mortalité passées et actuelles (ex. blessures reliées à la circulation, chutes, explosions, blessures auto-infligées).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Causes externes de morbidité et de mortalité (V01-Y98)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Causes externes de morbidité et de mortalité (V01-Y98)</rdfs:label>
         <rdfs:label xml:lang="en">External causes of morbidity and mortality (V01-Y98)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morbidity_mortality_ext</purl:internal-id>
     </owl:Class>
@@ -1397,11 +1385,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000062">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000043"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current diseases without specification of exact disease (e.g. number of chronic diseases, unspecified diseases) or combination of diseases falling into different categories (e.g. Alzheimer or dementia, developmental disability).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current diseases without specification of exact disease (e.g. number of chronic diseases, unspecified diseases) or combination of diseases falling into different categories (e.g. Alzheimer or dementia, developmental disability).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de maladies passées et actuelles sans spécification exacte (ex. nombre de maladies chroniques, maladies non-spécifiées) ou une combinaison de maladies appartenant à différentes catégories (ex. Alzheimer ou démence, trouble du dévéloppement).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Maladies sans spécification précise ou en lien avec de multiples catégories</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0000001</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Diseases without precise specification or falling into multiple categories</rdfs:label>
+        <rdfs:label xml:lang="fr">Maladies sans spécification précise ou en lien avec de multiples catégories</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_dis</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1416,12 +1404,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000064 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000064">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs involving the circulatory and respiratory systems (e.g. tachycardia, epistaxis, cough, wheezing).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs involving the circulatory and respiratory systems (e.g. tachycardia, epistaxis, cough, wheezing).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels impliquant les appareils circulatoire et respiratoire (ex. tachycardie, épistaxis, toux, respiration sifflante).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes relatifs aux appareils circulatoire et respiratoire (R00-R09)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms and signs involving the circulatory and respiratory systems (R00-R09)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes relatifs aux appareils circulatoire et respiratoire (R00-R09)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circulatory_respiratory_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1437,11 +1424,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000065">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs involving the digestive system and abdomen (e.g. nausea, vomiting, heartburn, bloating).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs involving the digestive system and abdomen (e.g. nausea, vomiting, heartburn, bloating).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels impliquant l’appareil digestif et l’abdomen (ex. nausée, vomissement, brûlure d’estomac, ballonnement).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes relatifs à l’appareil digestif et à l’abdomen (R10-R19)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms and signs involving the digestive system and abdomen (R10-R19)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes relatifs à l’appareil digestif et à l’abdomen (R10-R19)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digestive_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1457,11 +1444,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000066">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs involving the skin and subcutaneous tissue (e.g. local swellings, masses, lumps, cyanosis, flushing, desquamation).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs involving the skin and subcutaneous tissue (e.g. local swellings, masses, lumps, cyanosis, flushing, desquamation).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels impliquant la peau et le tissu cellulaire sous-cutané (ex. oedèmes, masses, cyanose, rougeurs, desquamation).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes relatifs à la peau et aux tissus cellulaires sous-cutanés (R20-R23)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms and signs involving the skin and subcutaneous tissue (R20-R23)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes relatifs à la peau et aux tissus cellulaires sous-cutanés (R20-R23)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skin_subcut_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1477,11 +1464,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000067">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs involving the nervous and musculoskeletal systems (e.g. tremor, abnormal reflexes, cramps, spasms).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs involving the nervous and musculoskeletal systems (e.g. tremor, abnormal reflexes, cramps, spasms).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels impliquant les appareils nerveux et musculo-squelettique (ex. tremblements, réflexes anormaux, crampes, spasmes).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes relatifs aux appareils nerveux et ostéo-musculaires (R25-R29)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms and signs involving nervous and musculoskeletal systems (R25-R29)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes relatifs aux appareils nerveux et ostéo-musculaires (R25-R29)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nervous_musculoskeletal_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1497,11 +1484,11 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000068">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs involving the urinary system (e.g. dysuria, retention of urine).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs involving the urinary system (e.g. dysuria, retention of urine).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels impliquant l’appareil urinaire (ex. dysurie, rétention d’urine).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes relatifs à l’appareil urinaire (R30-R39)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms and signs involving the urinary system (R30-R39)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes relatifs à l’appareil urinaire (R30-R39)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urinary_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1517,13 +1504,13 @@ Voir aussi Dom. 3 « Naissance, grossesse et antécédents de santé reproductiv
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000069">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs involving cognition, perception, emotional state and behaviour (e.g. somnolence, dizziness, hallucinations, nervousness, hostility). 
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs involving cognition, perception, emotional state and behaviour (e.g. somnolence, dizziness, hallucinations, nervousness, hostility). 
 Also see Dom. 13 &quot;Cognition, personality and psychological measures and assessments&quot; for symptoms that might be part of cognitive, personality or psychological scales.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels impliquant la cognition, la perception, l’état émotionnel et le comportement (ex. somnolence, étourdissements, hallucinations, nervosité, hostilité).
 Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations psychologiques » pour les symptômes qui pourraient impliquer les échelles cognitives, de personnalité ou psychologiques.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes relatifs à la connaissance, la perception, l’humeur et le comportement (R40-R46)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes relatifs à la connaissance, la perception, l’humeur et le comportement (R40-R46)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive_perc_emotional_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1539,11 +1526,11 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000070">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs involving speech and voice (e.g. aphasia, dysphonia, hypernasality).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs involving speech and voice (e.g. aphasia, dysphonia, hypernasality).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels impliquant le langage et la voix (ex. aphasie, dysphonie, hypernasalité).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes relatifs au langage et à la voix (R47-R49)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms and signs involving speech and voice (R47-R49)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes relatifs au langage et à la voix (R47-R49)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speech_voice_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1559,11 +1546,11 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000071">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current general symptoms and signs (e.g. fever, headache, malaise and fatigue, lethargy, senility, pain).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current general symptoms and signs (e.g. fever, headache, malaise and fatigue, lethargy, senility, pain).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes généraux passés et actuels (ex. fièvre, maux de tête, malaise et fatigue, léthargie, sénilité, douleur).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes et signes généraux (R50-R69)</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">General symptoms and signs (R50-R69)</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes et signes généraux (R50-R69)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1579,11 +1566,11 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000072">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000064"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current symptoms and signs related to multiple categories of symptoms and signs (e.g. number of symptoms, unspecified symptoms).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current symptoms and signs related to multiple categories of symptoms and signs (e.g. number of symptoms, unspecified symptoms).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de symptômes et signes passés et actuels en lien avec de multiples catégories (ex. nombre de symptômes, symptômes non spécifiés).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Symptômes en lien avec de multiples catégories</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Symptoms related to multiple categories</rdfs:label>
+        <rdfs:label xml:lang="fr">Symptômes en lien avec de multiples catégories</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_sympt</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1598,12 +1585,11 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000074 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000074">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000074"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about any drugs or medications that treat, prevent or alleviate symptoms of a disease (e.g. Advil, chemotherapy, vitamin C, Ginseng, nicotine patches, vaccination).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about any drugs or medications that treat, prevent or alleviate symptoms of a disease (e.g. Advil, chemotherapy, vitamin C, Ginseng, nicotine patches, vaccination).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de tous médicaments ou suppléments qui traitent, préviennent ou soulagent les symptômes d’une maladie (ex. Advil, chimiothérapie, vitamine C, Ginseng, timbres de nicotine, vaccination).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Médicaments et suppléments</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000094</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Medication and supplement intake</rdfs:label>
+        <rdfs:label xml:lang="fr">Médicaments et suppléments</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medication_suppl</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1619,11 +1605,11 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000075">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000074"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the context of medication use (e.g. time, frequency and quantity of medication taken, absorption route and adherence).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the context of medication use (e.g. time, frequency and quantity of medication taken, absorption route and adherence).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du contexte de la prise de médicaments (ex. moment, fréquence et quantité des médicaments pris, voie d’absorption et observance).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Posologie et protocole d’administration</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDRO:0000024</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDRO:0010022</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Posologie et protocole d’administration</rdfs:label>
         <rdfs:label xml:lang="en">Posology and protocol of administration</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Posology_protocol</purl:internal-id>
     </owl:Class>
@@ -1646,10 +1632,10 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000076">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000074"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other pharmacological interventions not mentioned above or unspecified pharmacological interventions (e.g. sunscreen).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other pharmacological interventions not mentioned above or unspecified pharmacological interventions (e.g. sunscreen).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres interventions pharmacologiques non mentionnées ci-dessus ou d’interventions pharmacologiques non spécifiées (ex. application de crème solaire).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres interventions pharmacologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000093</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres interventions pharmacologiques</rdfs:label>
         <rdfs:label xml:lang="en">Other and unspecified pharmacological interventions</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_pharmacological_inter</purl:internal-id>
     </owl:Class>
@@ -1665,11 +1651,10 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000078 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000078">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000078"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about diagnostic, preventive or therapeutic surgical interventions (e.g. biopsy, removal of gall bladder).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about diagnostic, preventive or therapeutic surgical interventions (e.g. biopsy, removal of gall bladder).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’interventions chirurgicales diagnostiques, préventives ou thérapeutiques (ex. biopsie, ablation de la vésicule biliaire).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Interventions chirurgicales</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000092</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Interventions chirurgicales</rdfs:label>
         <rdfs:label xml:lang="en">Surgical interventions</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surgical_inter</purl:internal-id>
     </owl:Class>
@@ -1686,10 +1671,10 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000079">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000078"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about diagnostic, preventive or therapeutic radiological interventions (e.g. x-rays, radiation treatment for cancer).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about diagnostic, preventive or therapeutic radiological interventions (e.g. x-rays, radiation treatment for cancer).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’interventions radiologiques diagnostiques, préventives ou thérapeutiques (ex. rayons X, traitement de radiothérapie contre le cancer).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Interventions radiologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000124</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Interventions radiologiques</rdfs:label>
         <rdfs:label xml:lang="en">Radiological interventions</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiological_inter</purl:internal-id>
     </owl:Class>
@@ -1706,10 +1691,10 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000080">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000078"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about preventive or therapeutic physical therapy interventions (e.g. physiotherapy, exercises).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about preventive or therapeutic physical therapy interventions (e.g. physiotherapy, exercises).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’interventions de thérapie physique préventives ou thérapeutiques (ex. physiothérapie, exercices physiques).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Interventions de thérapie physique</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000125</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Interventions de thérapie physique</rdfs:label>
         <rdfs:label xml:lang="en">Physical therapy interventions</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical_inter</purl:internal-id>
     </owl:Class>
@@ -1726,11 +1711,11 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000081">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000078"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about preventive or therapeutic cognitive, psychological and sensory interventions (e.g. psychotherapy, aromatherapy, memory exercises).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about preventive or therapeutic cognitive, psychological and sensory interventions (e.g. psychotherapy, aromatherapy, memory exercises).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’interventions cognitives, psychologiques et sensorielles préventives ou thérapeutiques (ex. psychothérapie, aromathérapie, exercices de mémoire).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Interventions cognitives, psychologiques et sensorielles</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000123</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Cognitive, psychological and sensory interventions</rdfs:label>
+        <rdfs:label xml:lang="fr">Interventions cognitives, psychologiques et sensorielles</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive_psycho_sensory_inter</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1746,13 +1731,13 @@ Voir aussi Dom. 13 « Cognition, personnalité et autres mesures et évaluations
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000082">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000078"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about preventive or therapeutic educational and health promotion interventions (e.g. smoking cessation programs, prevention of infectious disease programs).
+        <obo:IAO_0000115 xml:lang="en">Information about preventive or therapeutic educational and health promotion interventions (e.g. smoking cessation programs, prevention of infectious disease programs).
 Also see Dom. 9 &quot;Health and community care services utilization&quot;, under &apos;Community and social care&apos; for information about utilization of organized community services.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’interventions éducatives et de promotion de la santé préventives ou thérapeutiques (ex. programmes de cessation du tabagisme, programmes de prévention des maladies infectieuses).
 Voir aussi Dom. 9 « Utilisation des services de santé et communautaires », sous &apos;Soins communautaires et sociaux&apos; pour des informations en lien avec l&apos;utilisation des services communautaires organisés.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Interventions éducatives et de promotion de la santé</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000091</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Educational and health promotion interventions</rdfs:label>
+        <rdfs:label xml:lang="fr">Interventions éducatives et de promotion de la santé</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Educational_inter</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1768,12 +1753,12 @@ Voir aussi Dom. 9 « Utilisation des services de santé et communautaires », so
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000083">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000078"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about laboratory biosample analyses for diagnostic purposes (e.g. prostate-specific antigen (PSA) test, cholesterol test).
+        <obo:IAO_0000115 xml:lang="en">Information about laboratory biosample analyses for diagnostic purposes (e.g. prostate-specific antigen (PSA) test, cholesterol test).
 Also see Dom. 12 &quot;Laboratory measures&quot; for results of laboratory analyses.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’analyses d’échantillons biologiques en laboratoire à des fins de diagnostic (ex. test de l’antigène prostatique spécifique (APS), test de cholestérol).
 Voir aussi Dom. 12 « Mesures de laboratoire » pour les résultats des analyses de laboratoire.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Interventions de diagnostics en laboratoire</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000133</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Interventions de diagnostics en laboratoire</rdfs:label>
         <rdfs:label xml:lang="en">Laboratory diagnosis interventions</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biosample_analyses</purl:internal-id>
     </owl:Class>
@@ -1790,10 +1775,10 @@ Voir aussi Dom. 12 « Mesures de laboratoire » pour les résultats des analyses
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000084">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000078"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other non-pharmacological interventions not mentioned above (e.g. dental exam) or unspecified non-pharmacological interventions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other non-pharmacological interventions not mentioned above (e.g. dental exam) or unspecified non-pharmacological interventions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres interventions non-pharmacologiques non mentionnées ci-dessus (ex. examen dentaire) ou d’interventions non-pharmacologiques non spécifiées.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations en lien avec les interventions non-pharmacologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000091</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations en lien avec les interventions non-pharmacologiques</rdfs:label>
         <rdfs:label xml:lang="en">Other and unspecified non-pharmacological interventions</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_non_pharmacological_inter</purl:internal-id>
     </owl:Class>
@@ -1809,11 +1794,10 @@ Voir aussi Dom. 12 « Mesures de laboratoire » pour les résultats des analyses
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000086 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000086">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000086"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current visits to a general practitioner (e.g. family doctor), dentist or specialist (e.g. pediatric doctor, psychologist).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current visits to a general practitioner (e.g. family doctor), dentist or specialist (e.g. pediatric doctor, psychologist).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de visites passées et actuelles chez un médecin généraliste (ex. médecin de famille), un dentiste ou un spécialiste (ex. pédiatre, psychologue).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Consultations de professionnels de la santé</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:EUPATH_0000305</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Consultations de professionnels de la santé</rdfs:label>
         <rdfs:label xml:lang="en">Visits to health professionals</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit_health_prof</purl:internal-id>
     </owl:Class>
@@ -1830,10 +1814,10 @@ Voir aussi Dom. 12 « Mesures de laboratoire » pour les résultats des analyses
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000087">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000086"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current hospitalizations (e.g. number of days hospitalized, year of hospitalization).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current hospitalizations (e.g. number of days hospitalized, year of hospitalization).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’hospitalisations passées et actuelles (ex. nombre de jours hospitalisé, année de l’hospitalisation).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Hospitalisations</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:EUPATH_0000308</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Hospitalisations</rdfs:label>
         <rdfs:label xml:lang="en">Hospitalizations</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospitalizations</purl:internal-id>
     </owl:Class>
@@ -1850,15 +1834,15 @@ Voir aussi Dom. 12 « Mesures de laboratoire » pour les résultats des analyses
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000088">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000086"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current use of community and social care (e.g. meal delivery, nurse visiting at home, social services, support group). Only formal care is included here.
+        <obo:IAO_0000115 xml:lang="en">Information about past and current use of community and social care (e.g. meal delivery, nurse visiting at home, social services, support group). Only formal care is included here.
 Also see Dom. 8 &quot;Non-pharmacological intervention&quot;, under &apos;Educational and health promotion interventions&apos; for information about preventive or therapeutic programs.
 Also see Dom. 16 &quot;Social environment and relationships&quot;, under &apos;Social support&apos; for information about care given by family members.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’utilisation passée et actuelle des soins communautaires et sociaux (ex. popote roulante, visite d&apos;une infirmière à domicile, services sociaux, groupes de soutien). Seuls les soins formels sont inclus ici.
 Voir aussi Dom. 8 «Interventions non-pharmacologiques», sous &apos;Interventions éducatives et de promotion de la santé&apos; pour des informations en lien avec les programmes préventifs ou thérapeutiques.
 Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien social&apos; pour des informations en lien avec les soins donnés par des membres de la famille.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Soins communautaires et sociaux</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:EUPATH_0000451</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Community and social care</rdfs:label>
+        <rdfs:label xml:lang="fr">Soins communautaires et sociaux</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Community_care</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1874,10 +1858,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000089">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000086"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about past and current use of other health and community care institutions or services (e.g. group home, shelter, information from Internet).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about past and current use of other health and community care institutions or services (e.g. group home, shelter, information from Internet).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’utilisation passée et actuelle d’autres institutions ou services de santé et de soins communautaires (ex. foyer d’accueil, refuge, informations provenant d’Internet).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres soins de santé et communautaires</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:EUPATH_0000451</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres soins de santé et communautaires</rdfs:label>
         <rdfs:label xml:lang="en">Other health and community care</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_health_and_community_care</purl:internal-id>
     </owl:Class>
@@ -1893,11 +1877,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000091 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000091">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000091"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the vital status (e.g. alive, deceased, age at death).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the vital status (e.g. alive, deceased, age at death).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du statut vital (ex. vivant, décédé, âge au décès).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Statut vital</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000116</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Statut vital</rdfs:label>
         <rdfs:label xml:lang="en">Vital status</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life_status</purl:internal-id>
     </owl:Class>
@@ -1914,10 +1897,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000092">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000091"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the cause of death (e.g. pneumonia, suicide).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the cause of death (e.g. pneumonia, suicide).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la cause du décès (ex. pneumonie, suicide).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Cause du décès</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:EUPATH_0000147</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Cause du décès</rdfs:label>
         <rdfs:label xml:lang="en">Cause of death</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cause_death</purl:internal-id>
     </owl:Class>
@@ -1935,9 +1918,9 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000093">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000091"/>
         <obo:IAO_0000115 xml:lang="fr">Autres informations en lien avec la fin de vie ou le décès (ex. préférences à propos des soins de fin de vie, funérailles).</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="fr">Other information related to end of life or death (e.g. preferences with end of life care, funeral).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations en lien avec la fin de vie ou le décès</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Other information related to end of life or death (e.g. preferences with end of life care, funeral).</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000116</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations en lien avec la fin de vie ou le décès</rdfs:label>
         <rdfs:label xml:lang="en">Other end of life or death-related information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_death</purl:internal-id>
     </owl:Class>
@@ -1953,11 +1936,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000095 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000095">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about physical characteristics (e.g. natural eye and hair colour, hand, foot and eye dominance).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about physical characteristics (e.g. natural eye and hair colour, hand, foot and eye dominance).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des caractéristiques physiques (ex. couleur naturelle des yeux et des cheveux, dominance manuelle, podale et occulaire).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Caractéristiques physiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Caractéristiques physiques</rdfs:label>
         <rdfs:label xml:lang="en">Physical characteristics</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical_characteristics</purl:internal-id>
     </owl:Class>
@@ -1974,11 +1956,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000096">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about anthropometry (e.g. height, birth weight). It can include measured and self-reported values.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about anthropometry (e.g. height, birth weight). It can include measured and self-reported values.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’anthopométrie (ex. taille, poids à la naissance). Peut inclure des valeurs mesurées et auto-rapportées.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Anthropométrie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000021</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Anthropometry</rdfs:label>
+        <rdfs:label xml:lang="fr">Anthropométrie</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropo_measures</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -1994,11 +1976,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000097">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about circulation and respiration (e.g. blood pressure, spirometry).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about circulation and respiration (e.g. blood pressure, spirometry).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la circulation et de la respiration (ex. pression sanguine, spirométrie).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Circulation et respiration</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000001</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Circulation and respiration</rdfs:label>
+        <rdfs:label xml:lang="fr">Circulation et respiration</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circulation_respiration</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2014,11 +1996,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000098">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about muscles, bones, movement and mobility (e.g. hand grip strength, timed 10-meter walk test, osteodensitometry).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about muscles, bones, movement and mobility (e.g. hand grip strength, timed 10-meter walk test, osteodensitometry).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des muscles, des os, du mouvement et de la mobilité (ex. force de préhension de la main, test de 10 mètres de marche chronométré, ostéodensitométrie).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Muscles, squelette et mobilité</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Muscles, skeleton and mobility</rdfs:label>
+        <rdfs:label xml:lang="fr">Muscles, squelette et mobilité</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muscles_skeleton_mobility</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2034,11 +2016,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000099">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about sensory functions (e.g. eye exam, Snellen eye chart, hearing test) and pain (e.g. dolorimetry).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about sensory functions (e.g. eye exam, Snellen eye chart, hearing test) and pain (e.g. dolorimetry).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des fonctions sensorielles (ex. examen de la vue, examen des yeux en utilisant l’échelle de Snellen, test auditif) et de la douleur (ex. dolorimétrie).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Système sensoriel et douleur</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Sensory and pain</rdfs:label>
+        <rdfs:label xml:lang="fr">Système sensoriel et douleur</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensory_pain</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2054,11 +2036,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000100">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the central (brain and spinal cord) and peripheral (nerves) nervous system (e.g. electrical impulse detection (EEG, EMG)).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the central (brain and spinal cord) and peripheral (nerves) nervous system (e.g. electrical impulse detection (EEG, EMG)).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du système nerveux central (cerveau et moëlle épinière) et périphérique (nerfs) (ex. détection de l’impulsion électrique (EEG, EMG)).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Cerveau et nerfs</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Brain and nerves</rdfs:label>
+        <rdfs:label xml:lang="fr">Cerveau et nerfs</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brain_nerves</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2074,10 +2056,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000101">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about skin and subcutaneous tissue (e.g. skinfold caliper).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about skin and subcutaneous tissue (e.g. skinfold caliper).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la peau et des tissus sous-cutanés (ex. mesure du pli cutané).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Peau et tissus sous-cutanés</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Peau et tissus sous-cutanés</rdfs:label>
         <rdfs:label xml:lang="en">Skin and subcutaneous tissue</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skin_subcutaneous</purl:internal-id>
     </owl:Class>
@@ -2094,10 +2076,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000102">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about speech and voice (e.g. pitch intensity profile).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about speech and voice (e.g. pitch intensity profile).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’élocution et de la voix (ex. profil de l’intensité et de la hauteur de la voix).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Langage et voix</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Langage et voix</rdfs:label>
         <rdfs:label xml:lang="en">Speech and voice</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speech_voice</purl:internal-id>
     </owl:Class>
@@ -2114,11 +2096,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000103">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about digestion (e.g. motility test).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about digestion (e.g. motility test).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la digestion (ex. test de motilité).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Digestion</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Digestion</rdfs:label>
+        <rdfs:label xml:lang="fr">Digestion</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digestion</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2134,11 +2116,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000104">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about reproductive functions (e.g. number of eggs by ultrasound).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about reproductive functions (e.g. number of eggs by ultrasound).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des fonctions reproductives (ex. nombre d’ovules mesuré par ultrasons).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Reproduction</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000114</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Reproduction</rdfs:label>
+        <rdfs:label xml:lang="fr">Reproduction</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reproduction</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2154,10 +2136,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000105">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000095"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other physical measures (e.g. Apgar, Actiwatch measurements (activity, sleep, wake and light exposure)).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other physical measures (e.g. Apgar, Actiwatch measurements (activity, sleep, wake and light exposure)).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres mesures physiques (ex. Apgar, Actiwatch (activité, sommeil, temps d’éveil et exposition à la lumière)).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres mesures et évaluations physiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000000</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres mesures et évaluations physiques</rdfs:label>
         <rdfs:label xml:lang="en">Other physical measures and assessments</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_phys_measures</purl:internal-id>
     </owl:Class>
@@ -2173,12 +2155,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000107 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000107">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about blood characteristics (e.g. complete blood count, platelets, hematocrit).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about blood characteristics (e.g. complete blood count, platelets, hematocrit).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des caractéristiques du sang (ex. formule sanguine complète, plaquettes, hématocrite).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Hématologie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Hematology</rdfs:label>
+        <rdfs:label xml:lang="fr">Hématologie</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematology</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2194,11 +2175,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000108">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about chemical components (e.g. cholesterol, glucose, lipids, hormones).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about chemical components (e.g. cholesterol, glucose, lipids, hormones).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des composants chimiques (ex. cholestérol, glucose, lipides, hormones).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Biochimie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Biochemistry</rdfs:label>
+        <rdfs:label xml:lang="fr">Biochimie</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2214,10 +2195,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000109">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about microscopic organisms (e.g. bacteria, fungi or parasites).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about microscopic organisms (e.g. bacteria, fungi or parasites).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des organismes microscopiques (ex. bactéries, champignons ou parasites).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Microbiologie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0001624</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Microbiologie</rdfs:label>
         <rdfs:label xml:lang="en">Microbiology</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microbiology</purl:internal-id>
     </owl:Class>
@@ -2234,10 +2215,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000110">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about viral infections, either observed directly by viral antigen detection (e.g. RSV, HSV) or through an antibody (e.g. HIV, Anti-HBc).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about viral infections, either observed directly by viral antigen detection (e.g. RSV, HSV) or through an antibody (e.g. HIV, Anti-HBc).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des infections virales, soit observées directement par la détection des antigènes viraux (ex. VRS, VHS), ou par un anticorps (ex. VIH, anti-HBc).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Virologie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Virologie</rdfs:label>
         <rdfs:label xml:lang="en">Virology</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virology</purl:internal-id>
     </owl:Class>
@@ -2254,10 +2235,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000111">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about antibodies (e.g. IgE, IgA).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about antibodies (e.g. IgE, IgA).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des anticorps (ex. IgE, IgA).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Immunologie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Immunologie</rdfs:label>
         <rdfs:label xml:lang="en">Immunology</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunology</purl:internal-id>
     </owl:Class>
@@ -2274,10 +2255,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000112">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about toxic components (e.g. amphetamines, cocaine, lead).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about toxic components (e.g. amphetamines, cocaine, lead).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des composants toxiques (ex. amphétamines, cocaïne, plomb).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Toxicologie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Toxicologie</rdfs:label>
         <rdfs:label xml:lang="en">Toxicology</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology</purl:internal-id>
     </owl:Class>
@@ -2294,10 +2275,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000113">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about microscopic anatomy of cells and tissues (e.g. Papanicolaou test, biopsy analysis).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about microscopic anatomy of cells and tissues (e.g. Papanicolaou test, biopsy analysis).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’anatomie microscopique des cellules et des tissus (ex. test de Papanicolaou, analyse de biopsies).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Histologie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Histologie</rdfs:label>
         <rdfs:label xml:lang="en">Histology</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histology</purl:internal-id>
     </owl:Class>
@@ -2314,11 +2295,11 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000114">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about genes (e.g. anti-dsDNA, anti-nuclear antibody test) including genetics, epigenetics and proteomics.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about genes (e.g. anti-dsDNA, anti-nuclear antibody test) including genetics, epigenetics and proteomics.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des gènes (ex. anti-ADNdb, test d’anticorps antinucléaire) incluant la génétique, l’épigénétique et la protéomique.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Génomique</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000032</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Genomics</rdfs:label>
+        <rdfs:label xml:lang="fr">Génomique</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2334,10 +2315,10 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000115">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000107"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other laboratory measures.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other laboratory measures.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres mesures de laboratoire.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres mesures de laboratoire</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000027</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres mesures de laboratoire</rdfs:label>
         <rdfs:label xml:lang="en">Other laboratory measures</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_lab_measures</purl:internal-id>
     </owl:Class>
@@ -2353,14 +2334,13 @@ Voir aussi Dom. 16 «Environnement et relations sociales », sous &apos;Soutien 
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000117 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000117">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000117"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about test-based measurement of a person&apos;s ability to remember, solve problems, work/respond quickly or their level of knowledge and verbal abilities. 
+        <obo:IAO_0000115 xml:lang="en">Information about test-based measurement of a person&apos;s ability to remember, solve problems, work/respond quickly or their level of knowledge and verbal abilities. 
 Also see Dom. 6 &quot;Symptoms and signs (ICD-10)&quot;, under &apos;cognition, perception, emotional state and behaviour (R40-R46)&apos;, for information about memory problems not involving measurement (symptoms).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de mesures basées sur des tests évaluant la capacité d’une personne à se rappeler, résoudre des problèmes,  travailler/répondre rapidement ou son niveau de connaissances et ses aptitudes verbales.
 Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et signes rélatifs à la connaissance, la perception, l’humeur et le comportement (R40-R46)&apos;, pour des informations en lien aux problèmes de mémoire n’impliquant pas de mesures (symptômes).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Fonctionnement cognitif</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000119</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Cognitive functioning</rdfs:label>
+        <rdfs:label xml:lang="fr">Fonctionnement cognitif</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive_functioning</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2376,11 +2356,11 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000118">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000117"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about patterns of thoughts, feelings, and behaviours including traits (e.g. neuroticism, openness, extraversion, conscientiousness, agreeableness) and personality action constructs (e.g. locus of control, self-efficacy, optimism).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about patterns of thoughts, feelings, and behaviours including traits (e.g. neuroticism, openness, extraversion, conscientiousness, agreeableness) and personality action constructs (e.g. locus of control, self-efficacy, optimism).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des modes de pensée, des sentiments et des comportements y compris les traits de personalité (ex. névrose, ouverture, extraversion, conscience, agréabilité) et les construits de la personnalité basés sur l’action (ex. locus de contrôle, auto-efficacité, optimisme).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Personnalité</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000120</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Personality</rdfs:label>
+        <rdfs:label xml:lang="fr">Personnalité</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personality</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2396,10 +2376,10 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000119">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000117"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about mood collected by questionnaires (e.g. depression, anxiety) rather than diagnosis (contrast to F00-F99).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about mood collected by questionnaires (e.g. depression, anxiety) rather than diagnosis (contrast to F00-F99).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’humeur recueillies par questionnaires (ex. dépression, anxiété) plutôt qu’un diagnostic (par opposition au F00-F99).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Détresse psychologique et émotions</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000121</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Détresse psychologique et émotions</rdfs:label>
         <rdfs:label xml:lang="en">Psychological distress and emotions</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychological_emotional_distress</purl:internal-id>
     </owl:Class>
@@ -2416,10 +2396,10 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000120">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000117"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other psychological measures.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other psychological measures.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres mesures psychologiques.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres mesures et évaluations psychologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000118</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres mesures et évaluations psychologiques</rdfs:label>
         <rdfs:label xml:lang="en">Other psychological measures and assessments</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_psycholog_measures</purl:internal-id>
     </owl:Class>
@@ -2435,12 +2415,11 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000122 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000122">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000122"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about major (e.g. child abuse, war, death of a friend) and minor (e.g. home renovation) life events.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about major (e.g. child abuse, war, death of a friend) and minor (e.g. home renovation) life events.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des événements de vie majeurs (ex. maltraitance infantile, guerre, mort d’un ami) et mineurs (ex. travaux de rénovation).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Événements de vie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000116</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Life events</rdfs:label>
+        <rdfs:label xml:lang="fr">Événements de vie</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life_events</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2456,11 +2435,11 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000123">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000122"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about life plans (e.g. future wedding plans, plan to attend university).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about life plans (e.g. future wedding plans, plan to attend university).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des plans de vie (ex. plans de mariage, intention d&apos;aller à l&apos;université).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Plans de vie</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000116</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Life plans</rdfs:label>
+        <rdfs:label xml:lang="fr">Plans de vie</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life_plans</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2476,11 +2455,11 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000124">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000122"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about concepts that an individual hold to be true or important, which determine attitudes and opinions (e.g. social views, faith, sense of right and wrong).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about concepts that an individual hold to be true or important, which determine attitudes and opinions (e.g. social views, faith, sense of right and wrong).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des concepts qu’un individu considère comme vrais ou importants, qui déterminent les attitudes et les opinions (ex. opinions sociales, foi, sens du bien et du mal).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Croyances et valeurs</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:MF_0000041</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Beliefs and values</rdfs:label>
+        <rdfs:label xml:lang="fr">Croyances et valeurs</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beliefs_values</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2496,10 +2475,10 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000125">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000122"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other events, plans and personal beliefs.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other events, plans and personal beliefs.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres événements, plans et croyances personnelles.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations en lien avec les événements de vie, plans et croyances</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000116</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations en lien avec les événements de vie, plans et croyances</rdfs:label>
         <rdfs:label xml:lang="en">Other life events, plans and beliefs</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_life_events</purl:internal-id>
     </owl:Class>
@@ -2515,14 +2494,13 @@ Voir aussi Dom. 6 « Symptômes et signes (CIM-10) », sous &apos;Symptômes et 
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000127 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000127">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000127"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the care and daycare environment (e.g. frequency of daycare attendance, person taking care of the child during the day, satisfaction with the care received).
+        <obo:IAO_0000115 xml:lang="en">Information about the care and daycare environment (e.g. frequency of daycare attendance, person taking care of the child during the day, satisfaction with the care received).
 Also see Dom. 16 &quot;Social environment and relationships&quot;, under &apos;Parenting and familial environment&apos; for information about parenting style and behaviours.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’environnement préscolaire et de garde (ex. fréquence de la présence à la garderie, personne prenant soin de l’enfant durant la journée, satisfaction avec les soins reçus).
 Voir aussi Dom. 16 « Environnement et relations sociales », sous &apos;Rôle parental et environnement familial&apos; pour des informations en lien avec le style et les comportements parentaux.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Vie préscolaire</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Preschool life</rdfs:label>
+        <rdfs:label xml:lang="fr">Vie préscolaire</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preschool</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2538,13 +2516,13 @@ Voir aussi Dom. 16 « Environnement et relations sociales », sous &apos;Rôle p
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000128">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000127"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the school environment (e.g. participation in school activities, favourite subject, performance, number of days missing school, services and support offered by the school). 
+        <obo:IAO_0000115 xml:lang="en">Information about the school environment (e.g. participation in school activities, favourite subject, performance, number of days missing school, services and support offered by the school). 
 Also see Dom. 1 &quot;Socio-demographic and economic characteristics&quot;, under &apos;Education&apos; for information about the level of education achieved.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’environnement scolaire (ex. participation aux activités scolaires, matière favorite, performance, nombre de jours d’absentéisme, services et soutien offerts par l&apos;école).
 Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques », sous &apos;Éducation&apos; pour des informations en lien avec le niveau d’éducation atteint.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Vie scolaire</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">School life</rdfs:label>
+        <rdfs:label xml:lang="fr">Vie scolaire</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">School</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2560,12 +2538,12 @@ Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques »,
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000129">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000127"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the job environment (e.g. responsibilities at work, satisfaction with current employment, reasons for reduction in work performance).
+        <obo:IAO_0000115 xml:lang="en">Information about the job environment (e.g. responsibilities at work, satisfaction with current employment, reasons for reduction in work performance).
 Also see Dom. 1 &quot;Socio-demographic and economic characteristics&quot;, under &apos;Labour force and retirement&apos; for information about employment status.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations sur l’environnement professionnel (ex. responsabilités au travail, satisfaction par rapport à l’emploi actuel, raisons de la réduction de la performance au travail).
 Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques », sous &apos;Emploi et retraite&apos; pour des informations en lien avec l’emploi.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Vie professionnelle</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Vie professionnelle</rdfs:label>
         <rdfs:label xml:lang="en">Work life</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Work</purl:internal-id>
     </owl:Class>
@@ -2583,9 +2561,9 @@ Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques »,
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000130">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000127"/>
         <obo:IAO_0000115 xml:lang="fr">Autres informations en lien avec la vie préscolaire, scolaire et professionnelle.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="fr">Information about other preschool, school or work life-related information.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations en lien avec la vie préscolaire, scolaire et professionnelle</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">Information about other preschool, school or work life-related information.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations en lien avec la vie préscolaire, scolaire et professionnelle</rdfs:label>
         <rdfs:label xml:lang="en">Other preschool, school or work life-related information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_school_work</purl:internal-id>
     </owl:Class>
@@ -2601,13 +2579,12 @@ Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques »,
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000132 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000132">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000132"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the composition of personal relationships (e.g. number of friends, number of years since friends were made).
+        <obo:IAO_0000115 xml:lang="en">Information about the composition of personal relationships (e.g. number of friends, number of years since friends were made).
 Also see Dom. 1 &quot;Socio-demographic and economic characteristics&quot;, under &apos;Family and household structure&apos;.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la composition des relations personnelles (ex. nombre d’amis, nombre d’années depuis le début de l’amitié).
 Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques », sous &apos;Structure familiale et domestique&apos;.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Réseau social</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Réseau social</rdfs:label>
         <rdfs:label xml:lang="en">Social network</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soc_network</purl:internal-id>
     </owl:Class>
@@ -2624,10 +2601,10 @@ Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques »,
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000133">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000132"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about social involvement and interaction with others (e.g. volunteering, making donations, participating in recreational and religious activities).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about social involvement and interaction with others (e.g. volunteering, making donations, participating in recreational and religious activities).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’implication sociale et de l’intéraction avec les autres (ex. faire du bénévolat, faire des dons, participer à des activités récréatives et religieuses).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Participation sociale</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Participation sociale</rdfs:label>
         <rdfs:label xml:lang="en">Social participation</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soc_participation</purl:internal-id>
     </owl:Class>
@@ -2644,11 +2621,11 @@ Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques »,
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000134">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000132"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about actual or perceived social support. Support can be emotional (e.g. having friends, family members to talk to or to ask for help), or instrumental (e.g. access to information, financial and practical help). The support can be given or received and is based on a personal relationship.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about actual or perceived social support. Support can be emotional (e.g. having friends, family members to talk to or to ask for help), or instrumental (e.g. access to information, financial and practical help). The support can be given or received and is based on a personal relationship.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du soutien social réel ou perçu. Le soutien peut être émotionnel (ex. avoir des amis, des membres de la famille à qui parler ou demander de l’aide), ou instrumental (ex. accès à l’information, aide financière et pratique). Le soutien peut être donné ou reçu et est basé sur une relation interpersonnelle.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Soutien social</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Social support</rdfs:label>
+        <rdfs:label xml:lang="fr">Soutien social</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soc_support</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2664,13 +2641,13 @@ Voir aussi Dom. 1 « Caractéristiques socio-démographiques et économiques »,
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000135">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000132"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about parenting style and behaviours, the parent-child attachment and the home atmosphere (e.g. reading to your child, rules and discipline).
+        <obo:IAO_0000115 xml:lang="en">Information about parenting style and behaviours, the parent-child attachment and the home atmosphere (e.g. reading to your child, rules and discipline).
 Also see Dom. 15 &quot;Preschool, school and professional life&quot;, under &apos;Preschool life&apos; for information about child care and daycare environment.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du style et des comportements parentaux, de l’attachement parent-enfant et de l’ambiance au domicile familial (ex. faire la lecture à votre enfant, règles et discipline).
 Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &apos;Vie préscolaire&apos; pour des informations en lien avec l’environnement préscolaire et de garde.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Rôle parental et environnement familial</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Parenting and familial environment</rdfs:label>
+        <rdfs:label xml:lang="fr">Rôle parental et environnement familial</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parenting</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2686,10 +2663,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000136">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000132"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other social environment characteristics (e.g. pets one can talk to).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other social environment characteristics (e.g. pets one can talk to).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres caractéristiques de l’environnement social (ex. animaux de compagnie).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres caractéristiques de l’environnement social</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres caractéristiques de l’environnement social</rdfs:label>
         <rdfs:label xml:lang="en">Other social environment characteristics</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_soc_characteristics</purl:internal-id>
     </owl:Class>
@@ -2705,11 +2682,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000138 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000138">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000138"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about characteristics of the house an individual lives in (e.g. year the house was built, heat source).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about characteristics of the house an individual lives in (e.g. year the house was built, heat source).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des caractéristiques du logement dans lequel l’individu vit (ex. année de construction de la maison, source de chauffage).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Caractéristiques du logement</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Caractéristiques du logement</rdfs:label>
         <rdfs:label xml:lang="en">Housing characteristics</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Housing</purl:internal-id>
     </owl:Class>
@@ -2726,11 +2702,11 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000139">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000138"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about characteristics of the physical environment outside the home and workplace (e.g. residential density, proximity to parks, available transportation).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about characteristics of the physical environment outside the home and workplace (e.g. residential density, proximity to parks, available transportation).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des caractéristiques de l’environnement physique en dehors du domicile et du lieu de travail (ex. densité résidentielle, proximité des parcs, moyens de transport disponibles).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Caractéristiques de l’environnement construit ou du quartier</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Built environment/neighbourhood characteristics</rdfs:label>
+        <rdfs:label xml:lang="fr">Caractéristiques de l’environnement construit ou du quartier</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neighborhood</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2746,10 +2722,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000140">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000138"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about physical characteristics of the workplace (e.g. address, building characteristics, ventilation, work inside/outside a building).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about physical characteristics of the workplace (e.g. address, building characteristics, ventilation, work inside/outside a building).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des caractéristiques physiques du lieu de travail (ex. adresse, caractéristiques de l’immeuble, ventilation, travail à l’intérieur/extérieur d’un bâtiment).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Caractéristiques du lieu de travail</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Caractéristiques du lieu de travail</rdfs:label>
         <rdfs:label xml:lang="en">Workplace characteristics</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workplace</purl:internal-id>
     </owl:Class>
@@ -2766,10 +2742,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000141">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000138"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about exposure to radiation (e.g. UV exposure, mobile phone use, frequency of air travel).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about exposure to radiation (e.g. UV exposure, mobile phone use, frequency of air travel).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’exposition aux radiations (ex. exposition aux UV, utilisation du cellulaire, fréquence de voyage en avion).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Exposition aux radiations</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Exposition aux radiations</rdfs:label>
         <rdfs:label xml:lang="en">Radiation exposure</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation_exp</purl:internal-id>
     </owl:Class>
@@ -2786,11 +2762,11 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000142">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000138"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about exposure to chemicals by air, food or water (e.g. cigarette and wood smoke, solvents, pesticides, level of chemical pollutant in the air).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about exposure to chemicals by air, food or water (e.g. cigarette and wood smoke, solvents, pesticides, level of chemical pollutant in the air).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’exposition aux produits chimiques dans l’air, la nourriture ou l’eau (ex. fumée de cigarette et de feux de bois, solvants, pesticides, niveau de polluants chimiques dans l’air).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Exposition aux produits chimiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Chemical exposure</rdfs:label>
+        <rdfs:label xml:lang="fr">Exposition aux produits chimiques</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical_exp</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2806,11 +2782,11 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000143">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000138"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about exposure to biohazards (e.g. farm animals, chickenpox virus, ticks transmitting Lyme disease).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about exposure to biohazards (e.g. farm animals, chickenpox virus, ticks transmitting Lyme disease).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’exposition aux dangers biologiques (ex. animaux de ferme, virus de la varicelle, tiques transmettant la maladie de Lyme).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Exposition aux dangers biologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Biological exposure</rdfs:label>
+        <rdfs:label xml:lang="fr">Exposition aux dangers biologiques</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_exp</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2826,10 +2802,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000144">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000138"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other physical environment characteristics.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other physical environment characteristics.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres caractéristiques de l’environnement physique.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres caractéristiques de l’environnement physique</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres caractéristiques de l’environnement physique</rdfs:label>
         <rdfs:label xml:lang="en">Other physical environment characteristics</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_environment</purl:internal-id>
     </owl:Class>
@@ -2845,11 +2821,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
     <!-- https://purl.ihccglobal.org/MAELSTROM_0000146 -->
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000146">
-        <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000146"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the administrative identification of an individual (e.g. sampling identifier, name of interviewer).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the administrative identification of an individual (e.g. sampling identifier, name of interviewer).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de l’identification administrative d’un individu (ex. identifiant de l’échantillon, nom de l’intervieweur).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Identifiants</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000055</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Identifiants</rdfs:label>
         <rdfs:label xml:lang="en">Identifiers</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifiers</purl:internal-id>
     </owl:Class>
@@ -2866,11 +2841,11 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000147">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000146"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about date and time of questionnaire completion and physical and cognitive measure or biosample collection.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about date and time of questionnaire completion and physical and cognitive measure or biosample collection.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet de la date et de l’heure auxquelles le questionnaire est complété, la mesure physique ou cognitive est prise ou l’échantillons biologique est collecté.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Informations associées à la date et à l’heure</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STATO:0000093</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Date and time-related information</rdfs:label>
+        <rdfs:label xml:lang="fr">Informations associées à la date et à l’heure</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date_time_related_info</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2886,10 +2861,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000148">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000146"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the questionnaire and/or the interview (e.g. language, version, section of the questionnaire, number of individuals present at interview, questionnaire administration method).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the questionnaire and/or the interview (e.g. language, version, section of the questionnaire, number of individuals present at interview, questionnaire administration method).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet du questionnaire et/ou de l’entrevue (ex. langue, version, section du questionnaire, nombre d’individus présents au moment de l’entrevue, méthode d’administration du questionnaire).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Informations associées au questionnaire ou à l’entrevue</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Informations associées au questionnaire ou à l’entrevue</rdfs:label>
         <rdfs:label xml:lang="en">Questionnaire and interview-related information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Questionnaire_interview_related_info</purl:internal-id>
     </owl:Class>
@@ -2906,10 +2881,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000149">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000146"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about the physical and cognitive measure and biosample collection (e.g. contextual information about the participant during assessment, biobanking information (number of samples collected, circumstances of specimen analysis), SOP-related information).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about the physical and cognitive measure and biosample collection (e.g. contextual information about the participant during assessment, biobanking information (number of samples collected, circumstances of specimen analysis), SOP-related information).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des mesures physiques et cognitives et de la collecte des échantillons biologiques (ex. informations contextuelles sur le participant lors de l’évaluation, informations sur la biobanque (nombre d’échantillons collectés, circonstances de l’analyse du spécimen), informations liées aux procédures standardisées).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Informations associées aux mesures physiques et cognitives et aux échantillons biologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Informations associées aux mesures physiques et cognitives et aux échantillons biologiques</rdfs:label>
         <rdfs:label xml:lang="en">Physical and cognitive measure and biosample-related information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical_measure_biosamp_related_info</purl:internal-id>
     </owl:Class>
@@ -2926,11 +2901,11 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000150">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000146"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about characteristics of the data and sample collection center (e.g. center identification number, number of steps to entrance, area where building is located).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about characteristics of the data and sample collection center (e.g. center identification number, number of steps to entrance, area where building is located).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet des caractéristiques du centre de collecte de données et des échantillons biologiques (ex. numéro d’identification du centre, nombre de marches à l’entrée, zone où se situe l’immeuble).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Informations associées au centre de collecte de données et d’échantillons biologiques</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">Data and sample collection center-related information</rdfs:label>
+        <rdfs:label xml:lang="fr">Informations associées au centre de collecte de données et d’échantillons biologiques</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data_sample_center</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
@@ -2946,10 +2921,10 @@ Voir aussi Dom. 15 « Vie préscolaire, soclaire et professionnelle », sous &ap
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/MAELSTROM_0000151">
         <rdfs:subClassOf rdf:resource="https://purl.ihccglobal.org/MAELSTROM_0000146"/>
-        <obo:IAO_0000115 xml:lang="fr">Information about other administrative data (e.g. indicator of participant&apos;s withdrawal, reason for withdrawal).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Information about other administrative data (e.g. indicator of participant&apos;s withdrawal, reason for withdrawal).</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="fr">Informations au sujet d’autres données administratives (ex. indicateur de retrait du participant, raison du retrait).</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="fr">Autres informations administratives</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000052</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="fr">Autres informations administratives</rdfs:label>
         <rdfs:label xml:lang="en">Other administrative information</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other_admin_info</purl:internal-id>
     </owl:Class>

@@ -17,7 +17,10 @@ NUM_ID = 0
 def parse_item(item, parent):
     global NUM_ID
     curie = "MAELSTROM:" + str(NUM_ID).zfill(7)
-    CHILD_PARENTS[curie] = parent
+    if parent != curie:
+        CHILD_PARENTS[curie] = parent
+    else:
+        CHILD_PARENTS[curie] = ""
     LABELS[curie] = item["title"]["en"]
     FR_SYNONYMS[curie] = item["title"]["fr"]
     DEFINITIONS[curie] = item["description"]["en"]
@@ -56,7 +59,7 @@ def main():
         NUM_ID += 1
 
     with open(args.template, "w") as f:
-        writer = csv.writer(f, delimiter="\t")
+        writer = csv.writer(f, delimiter="\t", lineterminator="\n")
         writer.writerow(
             [
                 "ID",
