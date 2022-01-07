@@ -103,6 +103,24 @@ finalize: src/finalize.py build/metadata.tsv
 	python3 $^
 
 
+### MAELSTROM Tasks
+
+.PHONY: refresh-maelstrom
+refresh-maelstrom:
+	rm data/maelstrom.yml
+	make data/maelstrom.yml
+
+data/maelstrom.yml:
+	curl -Lk https://raw.githubusercontent.com/maelstrom-research/maelstrom-taxonomies/master/AreaOfInformation.yml > $@
+
+.PHONY: update-maelstrom-template
+update-maelstrom-template: src/convert/maelstrom.py data/maelstrom.yml templates/maelstrom.tsv
+	python3 $^
+
+# Maelstrom has different headers than other templates
+build/maelstrom.tsv: templates/maelstrom.tsv
+	sed -E '2s/^/ID	AL rdfs:label@en	AL definition@en	SC %	AL label@fr	AL definition@fr	A internal ID#	is-required;#/' $< | tr '#' '\n' > $@
+
 ### Cohort OWL Files
 
 # Run `make owl` to generate all cohort OWL files

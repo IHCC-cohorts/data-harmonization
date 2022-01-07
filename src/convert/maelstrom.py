@@ -1,66 +1,93 @@
 import csv
 import yaml
 
-from argparse import ArgumentParser, FileType
+from argparse import ArgumentParser
 
-child_parents = {}
-labels = {}
-fr_synonyms = {}
-definitions = {}
-fr_definitions = {}
+CHILD_PARENTS = {}
+LABELS = {}
+FR_SYNONYMS = {}
+DEFINITIONS = {}
+FR_DEFINITIONS = {}
+INTERNAL_IDS = {}
+MAPPINGS = {}
+
+NUM_ID = 0
 
 
 def parse_item(item, parent):
-    iri = 'MAELSTROM:' + item['name']
-    title_en = item['title']['en']
-    title_fr = item['title']['fr']
-    description_en = item['description']['en']
-    description_fr = item['description']['fr']
-
-    child_parents[iri] = parent
-    labels[iri] = title_en
-    fr_synonyms[iri] = title_fr
-    definitions[iri] = description_en
-    fr_definitions[iri] = description_fr
+    global NUM_ID
+    curie = "MAELSTROM:" + str(NUM_ID).zfill(7)
+    if parent != curie:
+        CHILD_PARENTS[curie] = parent
+    else:
+        CHILD_PARENTS[curie] = ""
+    LABELS[curie] = item["title"]["en"]
+    FR_SYNONYMS[curie] = item["title"]["fr"]
+    DEFINITIONS[curie] = item["description"]["en"]
+    FR_DEFINITIONS[curie] = item["description"]["fr"]
+    INTERNAL_IDS[curie] = item["name"]
 
     # TODO - these are currently all empty
     # attrs = item['attributes']
     # keywords = item['keywords']
 
-    children = item['terms']
+    children = item["terms"]
     for c in children:
-        parse_item(c, iri)
+        parse_item(c, curie)
+        NUM_ID += 1
 
 
 def main():
+    global NUM_ID
     p = ArgumentParser()
-    p.add_argument('input', type=FileType('r'))
-    p.add_argument('output', type=FileType('w'))
+    p.add_argument("input", help="Maelstrom YAML file")
+    p.add_argument("template", help="Maelstrom template")
     args = p.parse_args()
 
-    input_file = args.input
-    output_file = args.output
+    with open(args.template, "r") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        next(reader)
+        for row in reader:
+            MAPPINGS[row["Internal ID"]] = row["GECKO Category"]
 
-    # Skip header line
-    next(input_file)
-    maelstrom = yaml.safe_load(input_file)
-    input_file.close()
+    with open(args.input, "r") as f:
+        next(f)
+        maelstrom = yaml.safe_load(f)
 
-    for item in maelstrom['vocabularies']:
-        parse_item(item, '')
+    for item in maelstrom["vocabularies"]:
+        parse_item(item, "")
+        NUM_ID += 1
 
-    writer = csv.writer(output_file, delimiter='\t')
-    writer.writerow(['ID', 'Label', 'Definition', 'Parent', 'French Synonym', 'French Definition'])
-    writer.writerow(['ID', 'LABEL', 'AL definition@en', 'SC %', 'AL alternative term@fr', 'AL definition@fr'])
-    writer.writerow(['', '', '', '', '', ''])
-    for iri, parent in child_parents.items():
-        label = labels[iri]
-        definition = definitions[iri]
-        alt_term = fr_synonyms[iri]
-        fr_definition = fr_definitions[iri]
-        writer.writerow([iri, label, definition, parent, alt_term, fr_definition])
-    output_file.close()
+    with open(args.template, "w") as f:
+        writer = csv.writer(f, delimiter="\t", lineterminator="\n")
+        writer.writerow(
+            [
+                "ID",
+                "Label",
+                "Definition",
+                "Parent",
+                "French Synonym",
+                "French Definition",
+                "Internal ID",
+                "GECKO Category",
+            ]
+        )
+        for curie, parent in CHILD_PARENTS.items():
+            internal_id = INTERNAL_IDS[curie]
+            mapping = MAPPINGS.get(internal_id)
+            writer.writerow(
+                [
+                    curie,
+                    LABELS[curie],
+                    DEFINITIONS[curie],
+                    parent,
+                    FR_SYNONYMS[curie],
+                    FR_DEFINITIONS[curie],
+                    internal_id,
+                    mapping,
+                ]
+            )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
