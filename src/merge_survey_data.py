@@ -120,6 +120,7 @@ def main():
             cohort_map[cohort['cohort_name']] = cohort
 
     json.dump(list(cohort_map.values()), open("../data/cohort-data-all.json", "w"), indent=2)
+    print("Total number of cohorts: " + str(len(cohort_map)))
 
 
 def add_field(cohort, field_name, field):
