@@ -443,7 +443,7 @@
     "website": "https://www.genomicsengland.co.uk/",
     "pi_lead": "Mark Caulfield",
     "countries": [
-      "England"
+      "UK"
     ],
     "irb_approved_data_sharing": "Yes",
     "enrollment_period": "2013:2018",
@@ -510,12 +510,7 @@
     "website": "http://www.breakthroughgenerations.org.uk/home",
     "pi_lead": "Richard Houlston",
     "countries": [
-      "England",
-      "Scotland",
-      "Wales",
-      "Northern Ireland",
-      "Isle of Man",
-      "Channel Islands"
+      "UK"
     ],
     "irb_approved_data_sharing": "Yes",
     "enrollment_period": "2003:2015",
@@ -940,9 +935,7 @@
     "website": "https://www.ctu.mrc.ac.uk/studies/all-studies/u/uklwc/",
     "pi_lead": "Professor Usha Menon",
     "countries": [
-      "England",
-      "Wales",
-      "Northern Ireland"
+      "UK"
     ],
     "irb_approved_data_sharing": "Yes (76-100%)",
     "current_enrollment": 202638,
@@ -1180,10 +1173,7 @@
     "website": "http://epic.iarc.fr/",
     "pi_lead": "David Hughes",
     "countries": [
-      "England",
-      "Scotland",
-      "Wales",
-      "Northern Ireland",
+      "UK",
       "Italy",
       "France",
       "Germany",
@@ -1354,10 +1344,7 @@
     "website": "http://www.genesandhealth.org/",
     "pi_lead": "David van Heel",
     "countries": [
-      "England",
-      "Scotland",
-      "Wales",
-      "Northern Ireland"
+      "UK"
     ],
     "irb_approved_data_sharing": "Yes (76-100%)",
     "enrollment_period": "2015:-",
