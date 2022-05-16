@@ -1135,8 +1135,8 @@
     ],
     "irb_approved_data_sharing": "Yes (76-100%)",
     "enrollment_period": "2013:-",
-    "current_enrollment": 32,
-    "target_enrollment": 60,
+    "current_enrollment": 32000,
+    "target_enrollment": 60000,
     "type_of_cohort": {
       "case_control": "No",
       "cross_sectional": "No",
@@ -1307,7 +1307,7 @@
     ],
     "irb_approved_data_sharing": "Yes (26-50%)",
     "enrollment_period": "2008:-",
-    "current_enrollment": 10,
+    "current_enrollment": 10000000,
     "type_of_cohort": {
       "case_control": "No",
       "cross_sectional": "Yes",
@@ -2348,7 +2348,6 @@
     "irb_approved_data_sharing": "Yes (1-25%)",
     "enrollment_period": "1985:-",
     "current_enrollment": 125000,
-    "target_enrollment": 5000,
     "type_of_cohort": {
       "case_control": "No",
       "cross_sectional": "No",
