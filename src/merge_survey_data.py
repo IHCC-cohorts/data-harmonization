@@ -32,11 +32,11 @@ def main():
 
         type_of_cohort = {}
         cohort['type_of_cohort'] = type_of_cohort
-        add_percentage_field(type_of_cohort, 'case_control', row['Case-control'])
-        add_percentage_field(type_of_cohort, 'cross_sectional', row['Cross-sectional'])
-        add_percentage_field(type_of_cohort, 'longitudinal', row['Longitudinal'])
-        add_percentage_field(type_of_cohort, 'health_records', row['Health records'])
-        add_percentage_field(type_of_cohort, 'other', row['Other'][0])
+        add_boolean_filed(type_of_cohort, 'case_control', row['Case-control'])
+        add_boolean_filed(type_of_cohort, 'cross_sectional', row['Cross-sectional'])
+        add_boolean_filed(type_of_cohort, 'longitudinal', row['Longitudinal'])
+        add_boolean_filed(type_of_cohort, 'health_records', row['Health records'])
+        add_boolean_filed(type_of_cohort, 'other', row['Other'][0])
 
         cohort_ancestry = {}
         cohort['cohort_ancestry'] = cohort_ancestry
@@ -55,7 +55,7 @@ def main():
         add_percentage_field(available_data_types, 'genomic_data_wes', row['Genomic Data - WES'])
         add_percentage_field(available_data_types, 'genomic_data_array', row['Genomic Data - Genotype Array'])
         add_percentage_field(available_data_types, 'genomic_data_other', row['Genomic Data - Other'])
-        add_percentage_field(available_data_types, 'demographic_data', row['Demographic data'])
+        add_boolean_filed(available_data_types, 'demographic_data', row['Demographic data'])
         add_percentage_field(available_data_types, 'imaging_data', row['Imaging Data'])
         add_percentage_field(available_data_types, 'participants_address_or_geocode_data', row["Participants' Address or Geocode Data"])
         add_percentage_field(available_data_types, 'electronic_health_record_data', row['Electronic Health Record Data'])
@@ -129,6 +129,18 @@ def add_field(cohort, field_name, field):
         cohort[field_name] = field
 
 
+def add_boolean_filed(cohort, field_name, field):
+    if not pd.isna(field):
+        field = clean_field(field)
+
+    if 'yes' in field.lower():
+        cohort[field_name] = field
+    elif 'no' in field.lower():
+        cohort[field_name] = field
+    else:
+        cohort[field_name] = 'Unknown'
+
+
 def add_integer_field(cohort, field_name, field):
     if not pd.isna(field):
         field = clean_field(field)
@@ -164,7 +176,7 @@ def add_array_field(cohort, field_name, fields):
 def clean_field(field):
     field = field.strip()
     field = re.sub(r' +', ' ', field)
-    field = "unknown" if field == "Don't know" else field
+    field = "Unknown" if field == "Don't know" else field
     return field
 
 
@@ -186,11 +198,13 @@ def clean_integers(number_field):
 def clean_percentage_field(field):
     percentage = re.findall(r'\d+-\d+%', field)
     if percentage:
-        field = 'Yes' + ' (' + percentage[0] + ')'
+        field = percentage[0]
     elif 'yes' in field.lower():
-        field = 'Yes'
+        field = '% Unknown'
+    elif '% unknown' in field.lower():
+        field = '% Unknown'
     elif 'no' in field.lower():
-        field = 'No'
+        field = '0%'
     return field
 
 
