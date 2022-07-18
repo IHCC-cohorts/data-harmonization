@@ -25,7 +25,7 @@
       "european_or_white": "51-75%",
       "hispanic_latino_or_spanish": "1-25%",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "51-75%",
@@ -244,7 +244,7 @@
       "european_or_white": "26-50%",
       "hispanic_latino_or_spanish": "0%",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -368,7 +368,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "76-100%",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -465,7 +465,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -553,7 +553,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -652,7 +652,7 @@
       "european_or_white": "76-100%",
       "hispanic_latino_or_spanish": "1-25%",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -784,7 +784,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -866,7 +866,7 @@
       "european_or_white": "76-100%",
       "hispanic_latino_or_spanish": "1-25%",
       "middle_eastern_or_north_african": "0%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -957,7 +957,7 @@
       "european_or_white": "0%",
       "hispanic_latino_or_spanish": "0%",
       "middle_eastern_or_north_african": "0%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "26-50%",
@@ -1111,7 +1111,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -1199,7 +1199,7 @@
       "european_or_white": "0%",
       "hispanic_latino_or_spanish": "0%",
       "middle_eastern_or_north_african": "0%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -1372,7 +1372,7 @@
       "european_or_white": "1-25%",
       "hispanic_latino_or_spanish": "76-100%",
       "middle_eastern_or_north_african": "0%",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -1413,7 +1413,7 @@
       "european_or_white": "51-75%",
       "hispanic_latino_or_spanish": "1-25%",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "0%",
@@ -1535,7 +1535,7 @@
       "european_or_white": "76-100%",
       "hispanic_latino_or_spanish": "0%",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "26-50%",
@@ -1699,7 +1699,7 @@
       "european_or_white": "1-25%",
       "hispanic_latino_or_spanish": "76-100%",
       "middle_eastern_or_north_african": "0%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -1987,7 +1987,7 @@
       "european_or_white": "0%",
       "hispanic_latino_or_spanish": "0%",
       "middle_eastern_or_north_african": "0%",
-      "other": "% Unknown"
+      "other": "0%"
     },
     "available_data_types": {
       "biospecimens": "1-25%",
@@ -2112,7 +2112,7 @@
       "european_or_white": "0%",
       "hispanic_latino_or_spanish": "0%",
       "middle_eastern_or_north_african": "0%",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "51-75%",
@@ -2154,7 +2154,7 @@
       "european_or_white": "51-75%",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -2194,7 +2194,7 @@
       "european_or_white": "76-100%",
       "hispanic_latino_or_spanish": "1-25%",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "% Unknown"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "76-100%",
@@ -2276,7 +2276,7 @@
       "european_or_white": "76-100%",
       "hispanic_latino_or_spanish": "1-25%",
       "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "26-50%",
@@ -2316,7 +2316,7 @@
       "european_or_white": "1-25%",
       "hispanic_latino_or_spanish": "1-25%",
       "middle_eastern_or_north_african": "0%",
-      "other": "0%"
+      "other": "1-25%"
     },
     "available_data_types": {
       "biospecimens": "26-50%",
@@ -2438,7 +2438,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2477,7 +2477,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2516,7 +2516,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2554,7 +2554,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2594,7 +2594,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2633,7 +2633,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2673,7 +2673,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2712,7 +2712,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2752,7 +2752,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2790,7 +2790,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2830,7 +2830,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2867,7 +2867,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2906,7 +2906,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2946,7 +2946,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -2985,7 +2985,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3025,7 +3025,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3064,7 +3064,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3103,7 +3103,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3142,7 +3142,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3181,7 +3181,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3220,7 +3220,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3259,7 +3259,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3297,7 +3297,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3336,7 +3336,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3375,7 +3375,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3413,7 +3413,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3453,7 +3453,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
@@ -3492,7 +3492,7 @@
       "european_or_white": "% Unknown",
       "hispanic_latino_or_spanish": "% Unknown",
       "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
+      "other": "% Unknown"
     },
     "available_data_types": {
       "biospecimens": "% Unknown",

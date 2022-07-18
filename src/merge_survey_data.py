@@ -45,7 +45,7 @@ def main():
         add_percentage_field(cohort_ancestry, 'european_or_white', row['European or White'])
         add_percentage_field(cohort_ancestry, 'hispanic_latino_or_spanish', row['Hispanic, Latino, or Spanish'])
         add_percentage_field(cohort_ancestry, 'middle_eastern_or_north_african', row['Middle Eastern or North African'])
-        add_percentage_field(cohort_ancestry, 'other', row['Other'][0])
+        add_percentage_field(cohort_ancestry, 'other', row['Other'][1])
 
         available_data_types = {}
         cohort['available_data_types'] = available_data_types
