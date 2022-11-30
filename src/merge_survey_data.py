@@ -210,3 +210,4 @@ def clean_percentage_field(field):
 
 if __name__ == '__main__':
     main()
+    print("Finished merging. Please copy data from 'cohort-data-all.json' to 'cohort-data.json'")

@@ -8,6 +8,6 @@ scikit-learn
 numpy
 jsonschema
 openpyxl
-ontodev-cogs==0.3.2
+ontodev-cogs==0.3.3
 ontodev-gizmos==0.3.1
 urlp
