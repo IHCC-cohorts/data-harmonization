@@ -7,6 +7,7 @@ The input is a ROBOT template with the usual IHCC data dictionary. This dictiona
 Suggested mappings, which are added the 'Suggested Mappings' column of the template.
 author: Nico Matentzoglu for Knocean Inc., 15 September 2020
 """
+import sys
 
 import pandas as pd
 from argparse import ArgumentParser
@@ -14,7 +15,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import SGDClassifier
 from sklearn.preprocessing import MinMaxScaler
 
-from lib import ihcc_purl_prefix, obo_purl, load_ihcc_config
+from lib import ihcc_purl_prefix, obo_purl, load_ihcc_config, clean_terms, remove_hierarchy_terms, DictionaryMappingHelper
+
 
 parser = ArgumentParser()
 # parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
@@ -30,6 +32,7 @@ parser.add_argument("-c", "--config", dest="config_file", help="Config file", me
 parser.add_argument(
     "-g", "--gecko", dest="gecko_labels_file", help="File containing GECKO labels", metavar="FILE"
 )
+parser.add_argument("-p", "--preprocess", dest="preprocess", help="preprocess and clean labels", metavar="FILE")
 parser.add_argument(
     "-o",
     "--output",
@@ -81,7 +84,17 @@ tfidf_vect = TfidfVectorizer(ngram_range=(1, 2), min_df=2).fit(training_data["X"
 X_tfidf = tfidf_vect.transform(training_data["X"])
 
 # Building a TFIDF matrix for the template data
-X_template_tfidf = tfidf_vect.transform(template_data["Label"])
+print(template_data.head(5))
+if args.preprocess == "WORD_BOUNDARY":
+    X_template_tfidf = tfidf_vect.transform(clean_terms(template_data["Label"]))
+elif args.preprocess == "HIERARCHY":
+    X_template_tfidf = tfidf_vect.transform(remove_hierarchy_terms(template_data["Label"]))
+elif args.preprocess == "DEFINITION":
+    template['Definition'].fillna(template['Label'], inplace=True)
+    definition_mapper = DictionaryMappingHelper(template)
+    X_template_tfidf = tfidf_vect.transform(definition_mapper.get_mappings(template_data["Label"]))
+else:
+    X_template_tfidf = tfidf_vect.transform(template_data["Label"])
 
 # Training the model
 clf_lr = SGDClassifier(loss="log").fit(X_tfidf, training_data["y"])
@@ -107,6 +120,7 @@ m = m[m["confidence"] > min_match_probability]
 # Merging GECKO labels back in
 df_out = pd.merge(m, gecko_labels, how="left", left_on=["match"], right_on=["from"])
 df_out.rename({"label": "match_label"}, axis=1, inplace=True)
+df_out = df_out.fillna('-')
 df_out["match"] = [
     str(item).replace(obo_purl, "").replace(ihcc_purl_prefix, "").replace("_", ":")
     for item in df_out["match"]
@@ -114,8 +128,8 @@ df_out["match"] = [
 del df_out["from"]
 
 if len(df_out) > 0:
-    print("NLP matching successful. First two results:")
-    print(df_out[["term", "match", "confidence"]].head(2))
+    print("NLP matching successful. First twenty results:")
+    print(df_out[["term", "match", "confidence"]].head(20))
 else:
     print("WARNING: NLP matching did not yield any results at all")
 

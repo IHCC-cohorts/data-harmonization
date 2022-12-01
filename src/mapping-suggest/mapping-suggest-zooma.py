@@ -12,11 +12,12 @@ from argparse import ArgumentParser
 
 import pandas as pd
 
-from lib import load_ihcc_config, map_term
+from lib import load_ihcc_config, map_term, clean_term, remove_hierarchy_term, DictionaryMappingHelper
 
 parser = ArgumentParser()
 parser.add_argument("-c", "--config", dest="config_file", help="Config file", metavar="FILE")
 parser.add_argument("-t", "--template", dest="tsv_path", help="Template file", metavar="FILE")
+parser.add_argument("-p", "--preprocess", dest="preprocess", help="preprocess and clean labels", metavar="FILE")
 parser.add_argument("-o", "--output", dest="tsv_out_path", help="Output file", metavar="FILE")
 args = parser.parse_args()
 
@@ -33,15 +34,34 @@ print("Zooma config: %s" % str(config))
 
 # Loading data
 tsv = pd.read_csv(args.tsv_path, sep="\t")
-tsv_terms = tsv["Label"].values[2:]
+tsv_terms = tsv["Label"].values[0:]
 
 # Generating matches
 matches = []
 
 for term in tsv_terms:
     if isinstance(term, str):
-        # print("Matching " + term)
-        matches.extend(map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map))
+        if args.preprocess == "WORD_BOUNDARY":
+            zooma_matching_term_list = map_term(clean_term(term), zooma_annotate, ols_term, ols_oboid, confidence_map)
+            for matching_term in zooma_matching_term_list:
+                matching_term[0] = term
+            matches.extend(zooma_matching_term_list)
+        if args.preprocess == "HIERARCHY":
+            zooma_matching_term_list = map_term(remove_hierarchy_term(term), zooma_annotate, ols_term, ols_oboid, confidence_map)
+            for matching_term in zooma_matching_term_list:
+                matching_term[0] = term
+            matches.extend(zooma_matching_term_list)
+        if args.preprocess == "DEFINITION":
+            tsv['Definition'].fillna(tsv['Label'], inplace=True)
+            definition_mapper = DictionaryMappingHelper(tsv)
+
+            zooma_matching_term_list = map_term(definition_mapper.get_mapping(term), zooma_annotate, ols_term, ols_oboid, confidence_map)
+            for matching_term in zooma_matching_term_list:
+                matching_term[0] = term
+            matches.extend(zooma_matching_term_list)
+        else:
+            zooma_matching_term_list = map_term(term, zooma_annotate, ols_term, ols_oboid, confidence_map)
+            matches.extend(zooma_matching_term_list)
     else:
         print("ERROR term '%s' does not seem to be a string!" % term)
 
@@ -54,8 +74,8 @@ if "zooma_confidence_mappings" in config:
 df["confidence"] = df["confidence"].replace(zooma_confidence_map)
 
 if len(df) > 0:
-    print("Zooma matching successful. First two results:")
-    print(df[["term", "match", "confidence"]].head(2))
+    print("Zooma matching successful. First twenty results:")
+    print(df[["term", "match", "confidence"]].head(20))
 else:
     print("WARNING: Zooma matching did not yield any results at all")
 

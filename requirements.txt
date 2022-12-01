@@ -11,3 +11,4 @@ openpyxl
 ontodev-cogs==0.3.3
 ontodev-gizmos==0.3.1
 urlp
+wordninja

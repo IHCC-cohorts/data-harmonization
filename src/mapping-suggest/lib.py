@@ -6,6 +6,8 @@ Library of functions for the IHCC data dictionary mapping pipeline
 """
 
 import os
+
+import numpy as np
 import yaml
 import json
 import re
@@ -13,12 +15,45 @@ from datetime import datetime
 import pandas as pd
 import urllib.request
 import urllib.parse
+import wordninja
 from sklearn.metrics import f1_score
 from sklearn.metrics import accuracy_score
+from difflib import get_close_matches, SequenceMatcher
 
 
 obo_purl = "http://purl.obolibrary.org/obo/"
 ihcc_purl_prefix = "https://purl.ihccglobal.org/"
+
+
+def remove_special(term):
+    return term.replace('_', ' ').replace('.', ' ')
+
+
+def guess_word_boundary(term):
+    return ' '.join(wordninja.split(term))
+
+
+def clean_term(term):
+    return guess_word_boundary(remove_special(term))
+
+
+def clean_terms(terms):
+    return [clean_term(term) for term in terms]
+
+
+def get_last_term_in_hierarchy(term: str):
+    term_parts = term.split(".")
+    return term_parts[len(term_parts) - 1]
+
+
+def remove_hierarchy_term(term):
+    child_term = get_last_term_in_hierarchy(term)
+    # print("Transform from: " + term + " to: " + child_term)
+    return child_term
+
+
+def remove_hierarchy_terms(terms):
+    return [remove_hierarchy_term(term) for term in terms]
 
 
 def generate_zooma_dataset(df):
@@ -264,3 +299,20 @@ class FailedWebServiceCallError(Error):
 
 class QCError(Error):
     pass
+
+
+class DictionaryMappingHelper:
+
+    def __init__(self, dataframe):
+        self.mapping_dictionary = {}
+        self.build_mapping_dictionary(dataframe)
+
+    def build_mapping_dictionary(self, dataframe):
+        for index, row in dataframe.iterrows():
+            self.mapping_dictionary[row['Label']] = row['Definition'] if row['Definition'] != np.NAN else ' '
+
+    def get_mapping(self, term):
+        return self.mapping_dictionary[term]
+
+    def get_mappings(self, terms):
+        return [self.get_mapping(term) for term in terms]

@@ -48,7 +48,7 @@ if len(duplicated) > 0:
 ID_COLUMN = "Term ID"
 GECKO_COLUMN = "GECKO Category"
 SUGGESTED_COLUMN = "Suggested Categories"
-CERTAIN_MAPPING = 0.97
+CERTAIN_MAPPING = 0.65
 df_mappings = df[[ID_COLUMN, GECKO_COLUMN]].copy()
 df_suggestions = df[[ID_COLUMN, SUGGESTED_COLUMN]].copy()
 

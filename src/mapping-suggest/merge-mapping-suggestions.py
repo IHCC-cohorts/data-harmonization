@@ -38,6 +38,8 @@ TEMPLATE_COLUMNS = [
 
 print(args.mapping_suggestion_files)
 df = pd.concat([pd.read_csv(f, sep="\t") for f in args.mapping_suggestion_files])
+print("Mapping suggestions files concat:")
+print(df.head(20))
 
 template = pd.read_csv(args.template_file, sep="\t")
 if "Suggested Categories" in template.columns:
@@ -76,8 +78,8 @@ for col in TEMPLATE_COLUMNS:
         dfx[col] = ""
 
 if len(dfx) > 0:
-    print("Merging suggestions successful. First two results:")
-    print(dfx[TEMPLATE_COLUMNS].head(2))
+    print("Merging suggestions successful. First twenty results:")
+    print(dfx[TEMPLATE_COLUMNS].head(20))
 else:
     raise QCError("Merging the suggestions failed: empty result.")
 
