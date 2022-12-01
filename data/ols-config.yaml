@@ -1,13 +1,6 @@
 '@context': null
 ontologies:
 - base_uri:
-  - https://purl.ihccglobal.org/MAELSTROM_
-  description: Information classification developed by Maelstrom Research.
-  id: maelstrom
-  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/maelstrom.owl
-  preferredPrefix: MAELSTROM
-  title: Maelstrom Area Of Information
-- base_uri:
   - https://purl.ihccglobal.org/CANPATH_
   description: To help researchers better understand the causes of chronic diseases
     like cancer, heart disease and diabetes, and to develop new ways to prevent and
@@ -15,7 +8,7 @@ ontologies:
   id: canpath
   ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/canpath.owl
   preferredPrefix: CANPATH
-  title: Canadian Partnership for Tomorrow's Health
+  title: Canadian Partnership for Tomorrow's Health (CanPath)
 - base_uri:
   - https://purl.ihccglobal.org/CHOP_
   description: Data elements collected by CHOP to develop the Philadelphia Neurodevelopmental
@@ -25,6 +18,15 @@ ontologies:
   ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/chop.owl
   preferredPrefix: CHOP
   title: Center for Applied Genomics, Children's Hospital of Philadelphia
+- base_uri:
+  - https://purl.ihccglobal.org/EB_
+  description: This is the first version of estonian biobank data dictinary - it includes
+    answerset data from time of recruitment and one separate database which aggregates
+    ICD10 codes from sources.
+  id: eb
+  ontology_purl: https://raw.githubusercontent.com/IHCC-cohorts/data-harmonization/master/data_dictionaries/eb.owl
+  preferredPrefix: EB
+  title: Estonian Biobank
 - base_uri:
   - https://purl.ihccglobal.org/ELSABRASIL_
   description: A cohort of Brazilian public servants from 6 large cities that aim

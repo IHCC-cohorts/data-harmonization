@@ -1,0 +1,8 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.ihccglobal.org/eb.owl> a owl:Ontology ;
+    dc:description "This is the first version of estonian biobank data dictinary - it includes answerset data from time of recruitment and one separate database which aggregates ICD10 codes from sources." ;
+    dcterms:title "Estonian Biobank" .
+

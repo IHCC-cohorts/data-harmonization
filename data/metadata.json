@@ -1,10 +1,10 @@
 {
     "CANPATH": {
         "available_data_types": {
-          "biospecimens": true,
-          "environmental_data": true,
-          "genomic_data": true,
-          "phenotypic_clinical_data": true
+            "biospecimens": true,
+            "environmental_data": true,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
         },
         "cohort_name": "Canadian Partnership for Tomorrow's Health",
         "countries": [
@@ -34,6 +34,24 @@
         "pi_lead": "Hakon Hakonarson",
         "target_enrollment": 2000000,
         "website": "caglab.org"
+    },
+    "EB": {
+        "available_data_types": {
+            "biospecimens": true,
+            "environmental_data": false,
+            "genomic_data": true,
+            "phenotypic_clinical_data": true
+        },
+        "cohort_name": "Estonian Biobank",
+        "countries": [
+            "Estonia"
+        ],
+        "current_enrollment": 200000,
+        "enrollment_period": "2002:2021",
+        "irb_approved_data_sharing": false,
+        "pi_lead": "Kristi Lall",
+        "target_enrollment": null,
+        "website": null
     },
     "ELSABRASIL": {
         "available_data_types": {
