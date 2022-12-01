@@ -221,6 +221,95 @@
     }
   },
   {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "Estonian Biobank",
+    "countries": [
+      "Estonia"
+    ],
+    "current_enrollment": 200000,
+    "enrollment_period": "2002:2021",
+    "irb_approved_data_sharing": false,
+    "laboratory_measures": {
+      "genomics": [
+        "Dna/genotyping"
+      ]
+    },
+    "pi_lead": "Kristi Lall",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Immune system diseases",
+        "Respiratory system diseases",
+        "Skin and subcutaneous tissue diseases",
+        "Visual system diseases"
+      ],
+      "healthcare_information": [],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Recreational drug history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [
+        "Administration",
+        "Associated disease(s)",
+        "Drug response(s)"
+      ],
+      "non_pharmacological_interventions": [
+        "Radiological interventions",
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Family history of disease",
+        "Reproduction",
+        "Signs and symptoms"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Perception of health"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ],
+        "circulation_and_respiration": [
+          "Blood pressure",
+          "Heart rate (hr)"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Birthplace",
+        "Education",
+        "Family and household structure",
+        "Native language",
+        "Occupation",
+        "Residence"
+      ]
+    },
+    "survey_administration": [
+      "Consent/accessibility",
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": null,
+    "website": null
+  },
+  {
     "cohort_name": "ELSA-Brasil",
     "description": "Non-profit member with commercial/for-profit partner or industry agreement",
     "dictionary_harmonized": "Yes",
@@ -2620,46 +2709,6 @@
     "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1980:ongoing",
     "target_enrollment": 100000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Estonian Genome Project",
-    "website": "https://genomics.ut.ee/en",
-    "pi_lead": "Andres Metspalu",
-    "countries": [
-      "Estonia"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2002:2018",
-    "current_enrollment": 200000,
-    "target_enrollment": 200000,
     "type_of_cohort": {
       "case_control": "Unknown",
       "cross_sectional": "Unknown",

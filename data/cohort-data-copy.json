@@ -184,6 +184,95 @@
   {
     "available_data_types": {
       "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "Estonian Biobank",
+    "countries": [
+      "Estonia"
+    ],
+    "current_enrollment": 200000,
+    "enrollment_period": "2002:2021",
+    "irb_approved_data_sharing": false,
+    "laboratory_measures": {
+      "genomics": [
+        "Dna/genotyping"
+      ]
+    },
+    "pi_lead": "Kristi Lall",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Immune system diseases",
+        "Respiratory system diseases",
+        "Skin and subcutaneous tissue diseases",
+        "Visual system diseases"
+      ],
+      "healthcare_information": [],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Recreational drug history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [
+        "Administration",
+        "Associated disease(s)",
+        "Drug response(s)"
+      ],
+      "non_pharmacological_interventions": [
+        "Radiological interventions",
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Family history of disease",
+        "Reproduction",
+        "Signs and symptoms"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Perception of health"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ],
+        "circulation_and_respiration": [
+          "Blood pressure",
+          "Heart rate (hr)"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Birthplace",
+        "Education",
+        "Family and household structure",
+        "Native language",
+        "Occupation",
+        "Residence"
+      ]
+    },
+    "survey_administration": [
+      "Consent/accessibility",
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": null,
+    "website": null
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
       "environmental_data": true,
       "genomic_data": true,
       "phenotypic_clinical_data": true
