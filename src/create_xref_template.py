@@ -57,7 +57,7 @@ def main():
             continue
 
         # Get the CURIE for the subject
-        curie = row["ID"].strip()
+        curie = row["Term ID"].strip()
         # And the GECKO label (maybe more than one)
         gecko_labels = row["GECKO Category"].strip()
         if gecko_labels == "":
