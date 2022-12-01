@@ -34,7 +34,7 @@ print("Zooma config: %s" % str(config))
 
 # Loading data
 tsv = pd.read_csv(args.tsv_path, sep="\t")
-tsv_terms = tsv["Label"].values[2:]
+tsv_terms = tsv["Label"].values[0:]
 
 # Generating matches
 matches = []
