@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://purl.ihccglobal.org/chop.owl#"
      xml:base="https://purl.ihccglobal.org/chop.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/chop.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/chop/releases/2021-01-20/chop.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/chop/releases/2022-12-01/chop.owl"/>
         <dc:description>Data elements collected by CHOP to develop the Philadelphia Neurodevelopmental Cohort (PNC) plus data developed with the University of Pennsylvania on Alzheimer&apos;s susceptibility</dc:description>
         <terms:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</terms:license>
         <terms:rights>This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms: 
@@ -36,14 +35,6 @@ SA: Adaptations must be shared under the same terms</terms:rights>
     
 
 
-    <!-- dc:source -->
-
-    <owl:AnnotationProperty rdf:about="dc:source">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
@@ -56,6 +47,14 @@ SA: Adaptations must be shared under the same terms</terms:rights>
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -9409,9 +9408,16 @@ SA: Adaptations must be shared under the same terms</terms:rights>
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CHOP_0000447">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do you or did you have any of the following problems? - Genetics Disorder - an illness caused by abnormalities in genes or chromosomes (Has Problem?)</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000140</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNC_MED805</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MED805</purl:internal-id>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CHOP_0000447"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000140</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital and genetic disorders</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -9419,9 +9425,16 @@ SA: Adaptations must be shared under the same terms</terms:rights>
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CHOP_0000448">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is it (genetics disorder) current (within last 6 months)?</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000140</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PNC_MED805c</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MED805c</purl:internal-id>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CHOP_0000448"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GECKO:0000140</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congenital and genetic disorders</rdfs:label>
+    </owl:Axiom>
     
 
 

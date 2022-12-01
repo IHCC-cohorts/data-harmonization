@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://purl.ihccglobal.org/gcs.owl#"
      xml:base="https://purl.ihccglobal.org/gcs.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/gcs.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gcs/releases/2021-01-20/gcs.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gcs/releases/2022-12-01/gcs.owl"/>
         <dc:description>The data dictionary of items collected by the GCS.</dc:description>
         <terms:title>Golestan Cohort Study (GCS)</terms:title>
         <prov:wasDerivedFrom rdf:resource="https://drive.google.com/file/d/1ZLw-D6AZFKrBjTNsc4wzlthYq4w4KmOJ/view"/>
@@ -33,14 +32,6 @@
     
 
 
-    <!-- dc:source -->
-
-    <owl:AnnotationProperty rdf:about="dc:source">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
@@ -53,6 +44,14 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
     </owl:AnnotationProperty>
     
 

@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://purl.ihccglobal.org/elsabrasil.owl#"
      xml:base="https://purl.ihccglobal.org/elsabrasil.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/elsabrasil.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/elsabrasil/releases/2021-01-20/elsabrasil.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/elsabrasil/releases/2022-12-01/elsabrasil.owl"/>
         <dc:description>A cohort of Brazilian public servants from 6 large cities that aim to investigate chronic disorders and their determinants.</dc:description>
         <terms:license>N/A</terms:license>
         <terms:title>ELSA-Brasil</terms:title>
@@ -32,14 +31,6 @@
     
 
 
-    <!-- dc:source -->
-
-    <owl:AnnotationProperty rdf:about="dc:source">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
@@ -52,6 +43,14 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -44798,6 +44797,7 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/ELSABRASIL_0002616">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obesidade</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obesity</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A_OBESIDADE</purl:internal-id>
     </owl:Class>
@@ -44806,6 +44806,12 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000021</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometry</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/ELSABRASIL_0002616"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signs and symptoms</rdfs:label>
     </owl:Axiom>
     
 
@@ -44883,6 +44889,7 @@
     <owl:Class rdf:about="https://purl.ihccglobal.org/ELSABRASIL_0002621">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obesidade abdominal</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abdominal obesity</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A_OBESIDADEABDOMINAL</purl:internal-id>
     </owl:Class>
@@ -44891,6 +44898,12 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMO:0000021</owl:annotatedTarget>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropometry</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/ELSABRASIL_0002621"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS:0000020</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signs and symptoms</rdfs:label>
     </owl:Axiom>
     
 

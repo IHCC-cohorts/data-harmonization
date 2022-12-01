@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://purl.ihccglobal.org/gs.owl#"
      xml:base="https://purl.ihccglobal.org/gs.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/gs.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gs/releases/2021-01-25/gs.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/gs/releases/2022-12-01/gs.owl"/>
         <dc:description>The Generations Study is a long-term prospective cohort study focussed on potential aetiological factors for breast cancer in women.  The participants are volunteers from the UK general population.</dc:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Generations Study</terms:title>
@@ -32,14 +31,6 @@
     
 
 
-    <!-- dc:source -->
-
-    <owl:AnnotationProperty rdf:about="dc:source">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
@@ -52,6 +43,14 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
     </owl:AnnotationProperty>
     
 

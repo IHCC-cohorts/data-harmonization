@@ -1,0 +1,505 @@
+Term ID	Label	Parent Term	Definition	GECKO Category	Internal ID	Suggested Categories	Comment
+EB:0000001	Person.skood	Person	SKOOD, unique identifier for each individual	unique identifiers			
+EB:0000002	Person.gender	Person	Gender 1[Male]; 2[Female]	family and household structure			
+EB:0000003	Person.birthDate	Person	Birthdate	age/birthdate			
+EB:0000004	Person.birthYear	Person	Year of birth	age/birthdate			
+EB:0000005	Person.agreementDate	Person	Agreement date	date and time-related information			
+EB:0000006	Person.ageToday	Person	Age at present	age/birthdate			
+EB:0000007	Person.ageAtAgreement	Person	Age at the agreement date	date and time-related information			
+EB:0000008	Person.ageGroupAtAgreement	Person	1[below 29]; 2[30-49]; 3[50-69]; 4[70+]	date and time-related information			
+EB:0000009	Person.deathDate	Person	Date of death				
+EB:0000010	Person.deathYear	Person	Year of death				
+EB:0000011	PersonPortrait.lastBmi	PersonPortrait	Last BMI value	weight			Person's last measurements, smoking status and place of residence
+EB:0000012	PersonPortrait.lastWeight	PersonPortrait	Last weight value	weight			Person's last measurements, smoking status and place of residence
+EB:0000013	PersonPortrait.lastHeight	PersonPortrait	Last height value	height			Person's last measurements, smoking status and place of residence
+EB:0000014	PersonPortrait.bmiDate	PersonPortrait	The date of last weight, height and BMI measurement	weight			Person's last measurements, smoking status and place of residence
+EB:0000015	PersonPortrait.bmiSource	PersonPortrait	Last bmi value source e.g. via recruitment questionaire, via health system 1[Answerset]; 2[Population Register]; 3[E-Health]; 5[Estonian Health Insurance Fund]; 6[North Estonia Medical Centre]	weight			Person's last measurements, smoking status and place of residence
+EB:0000016	PersonPortrait.lastSmokingStatus	PersonPortrait	Last smoking status 1[Never]; 2[Former]; 3[Current]; 4[Unknown]	tobacco use history			Person's last measurements, smoking status and place of residence
+EB:0000017	PersonPortrait.smokingDate	PersonPortrait	Date of last smoking report	tobacco use history			Person's last measurements, smoking status and place of residence
+EB:0000018	PersonPortrait.smokingSource	PersonPortrait	Last smoking status source, e.g. via recruitment questionaire, via health system 1[Answerset]; 2[Population Register]; 3[E-Health]; 5[Estonian Health Insurance Fund]; 6[North Estonia Medical Centre]	tobacco use history			Person's last measurements, smoking status and place of residence
+EB:0000019	PersonPortrait.lastAlcoholStatus	PersonPortrait	Last status of alcohol consumption 1[Never]; 2[Former]; 3[Current]; 4[Unknown]	alcohol use history			Person's last measurements, smoking status and place of residence
+EB:0000020	PersonPortrait.lastAlcoholStyle	PersonPortrait	Alcohol consumption habits 1[Never consumed alcohol]; 2[Former consumer of alcohol]; 30[Consumes alcohol: amount unknown]; 31[Low alcohol consumption (up to 1 unit per week for women / up to 2 units per week for men)]; 32[Moderate alcohol consumption (up to 1 unit per day for women / up to 2 units per day for men)]	alcohol use history			Person's last measurements, smoking status and place of residence
+EB:0000021	PersonPortrait.alcoholUnitPerDay	PersonPortrait	Daily alcohol consumption during the last year (1 unit = 10 g of pure alcohol)	alcohol use history			Person's last measurements, smoking status and place of residence
+EB:0000022	PersonPortrait.alcoholDate	PersonPortrait	Date of last report of alcohol consumption	alcohol use history			Person's last measurements, smoking status and place of residence
+EB:0000023	PersonPortrait.nationality	PersonPortrait	Nationality What is your nationality? 1[Estonian]; 2[Russian]; 3[Ukrainian]; 4[Belarusian]; 5[Finnish]				Person's last measurements, smoking status and place of residence
+EB:0000024	PersonPortrait.lastEducation	PersonPortrait	Last education The International Standard Classification of Education (ISCED) 0[Primary education (pre - school education) or without primary education]; 1[Primary education]; 2[Basic education]; 3[Vocational education on the basis of basic education]; 4[General secondary education or vocational secondary education (incl. Secondary vocational or technical education based on basic education)]	education			Person's last measurements, smoking status and place of residence
+EB:0000025	PersonPortrait.educationDate	PersonPortrait	The date of the last education	education			Person's last measurements, smoking status and place of residence
+EB:0000026	PersonPortrait.educationSource	PersonPortrait	Last education source 1[Answerset]; 2[Population Register]; 3[E-Health]; 5[Estonian Health Insurance Fund]; 6[North Estonia Medical Centre]	education			Person's last measurements, smoking status and place of residence
+EB:0000027	PersonPortrait.residencyCountry	PersonPortrait	Country of residence EST[Estonia]; FIN[Finland]; XXX[Other country]	residence			Person's last measurements, smoking status and place of residence
+EB:0000028	PersonPortrait.residencyRegion	PersonPortrait	County of residence	residence			Person's last measurements, smoking status and place of residence
+EB:0000029	PersonPortrait.residencyCity	PersonPortrait	City of residence	residence			Person's last measurements, smoking status and place of residence
+EB:0000030	PersonPortrait.settlementRegionType	PersonPortrait	Settlement region type L[City-type settlement unit]; V[Town-type settlement unit]; M[Rural-type settlement unit]	residence			Person's last measurements, smoking status and place of residence
+EB:0000031	DiagnosisConsolidated.icd10	DiagnosisConsolidated		diseases			
+EB:0000032	DiagnosisConsolidated.earliestDate	DiagnosisConsolidated		healthcare information			
+EB:0000033	DiagnosisConsolidated.latestDate	DiagnosisConsolidated		healthcare information			
+EB:0000034	Sample.vkood	Sample	Sample ID for genotyping - some individuals are genotyped several times, so one individual can have multiple VCODES	DNA/Genotyping			
+EB:0000035	Sample.visitNumber	Sample		survey administration			
+EB:0000036	InformedConsent.icType	InformedConsent		consent/accessibility			
+EB:0000037	InformedConsent.icDate	InformedConsent		consent/accessibility			
+EB:0000038	InformedConsent.validTo	InformedConsent		consent/accessibility			
+EB:0000039	InformedConsent.feedbackType	InformedConsent	1[Yes, he/she wants to]; 2[No, he/she does not want to]	consent/accessibility			
+EB:0000040	InformedConsent.acceptedTime	InformedConsent		consent/accessibility			
+EB:0000041	Answerset.answersetAgreementDate	Answerset	Answerset agreement date	date and time-related information			
+EB:0000042	Answerset.answersetStartedDate	Answerset		date and time-related information			
+EB:0000043	Answerset.answersetFinishedDate	Answerset		date and time-related information			
+EB:0000044	Answerset.isFirst	Answerset	First answerset	date and time-related information			
+EB:0000045	Answerset.isLast	Answerset	Last answerset	date and time-related information			
+EB:0000046	Answerset.visitNumber	Answerset	answerset/visit number	date and time-related information			
+EB:0000047	Answerset.ageAtAgreement	Answerset	age of answerset agreement date	date and time-related information			
+EB:0000048	Answerset.ageGroupAtAgreement	Answerset	1[18-19]; 2[20-24]; 3[25-29]; 4[30-34]; 5[35-39]	date and time-related information			
+EB:0000049	Answerset.questionnaireType	Answerset	1[First survey]; 2[Repeated survey]	survey administration			
+EB:0000050	Answerset.questionnaireForm	Answerset		survey administration			
+EB:0000051	Answerset.questionnaireLanguage	Answerset	et[Estonian]; ru[Russian]	survey administration			
+EB:0000052	Answerset.questionnaireStatus	Answerset	1[Unfinished]; 2[Finished]	survey administration			
+EB:0000053	Answerset.agreementSigningTime	Answerset		date and time-related information			
+EB:0000054	Answerset.participationInResearchOther	Answerset		survey administration			
+EB:0000055	Nationality.nationality	Nationality	Nationality What is your nationality? 1[Estonian]; 2[Russian]; 3[Ukrainian]; 4[Belarusian]; 5[Finnish]				
+EB:0000056	Nationality.nationalityOther	Nationality					
+EB:0000057	Nationality.motherTongue	Nationality	Mother tongue What is your mother tongue? 1[Estonian]; 2[Russian]; 3[Ukrainian]; 4[Belarusian]; 5[Finnish]	native language			
+EB:0000058	Nationality.motherTongueOther	Nationality		native language			
+EB:0000059	Education.isStudying	Education	Are you studying somewhere? 1[No]; 2[In grade]; 3[In primary classes]; 4[In high school]; 5[In vocational educational institution]	education			
+EB:0000060	Education.highestEducationLevel	Education	Higest level of education What is your highest level of education? 1[I don't have elementary education]; 2[Have completed elementary education]; 3[Have graduated from junior-high]; 4[Have graduated from high school]; 5[Have completed community college education]	education			
+EB:0000061	Education.generalEducation	Education	1[I don't have elementary education]; 2[Have completed elementary education]; 3[Have graduated from junior-high]; 4[Have graduated from high school]; 5[Have completed community college education]	education			
+EB:0000062	Work.hasWorked3Months	Work	Have you ever earned your living for more than three month?	occupation			
+EB:0000063	Work.isWorking	Work	Do you have a job right now?	occupation			
+EB:0000064	Work.currentOccupation	Work	What is your professional status right now? 1[Legislators, senior officials and managers]; 11[Legislators and senior officials]; 111[Legislators]; 1110[Legislators]; 112[Senior goverment officials]	occupation			
+EB:0000065	Work.currentOccupationType	Work	1[Legislators, senior officials and managers]; 11[Legislators and senior officials]; 111[Legislators]; 1110[Legislators]; 112[Senior goverment officials]	occupation			
+EB:0000066	Work.hoursPerWeek	Work	How many hours in week do you usually work?	occupation			
+EB:0000067	Work.currentOccupationStartingYear	Work	When did you start working on your current job?	occupation			
+EB:0000068	Work.physActivityCurrentOccupation	Work	How much physical effort does your current job take? How much physical effort does your current job take? 1[Most of the time I am sitting]; 2[Most of the time I am standing up or walking, no special physical effort]; 3[Most of the time I am standing up and walking, which requires special physical effort]; 4[My work requires special physical effort]	physical activity history			
+EB:0000069	Work.isMainOccupation	Work	Has your current professional status been your main professional status (the occupation you have kept the longest)?	occupation			
+EB:0000070	Work.mainOccupation	Work	Which has been your main professional status (the occupation you have kept the longest)? 1[Legislators, senior officials and managers]; 11[Legislators and senior officials]; 111[Legislators]; 1110[Legislators]; 112[Senior goverment officials]	occupation			
+EB:0000071	Work.mainOccupationType	Work	1[Legislators, senior officials and managers]; 11[Legislators and senior officials]; 111[Legislators]; 1110[Legislators]; 112[Senior goverment officials]	occupation			
+EB:0000072	Work.mainOccupationStartingYear	Work		occupation			
+EB:0000073	Work.mainOccupationEndingYear	Work		occupation			
+EB:0000074	Work.yearsInMainOccupation	Work	How many years did you keep your main professional status?	occupation			
+EB:0000075	Work.physicalActivityMainOccupation	Work	How would you describe the amount of the physical effort in your main professional status? How would you describe the amount of the physical effort in your main professional status? 1[Most of the time I am sitting]; 2[Most of the time I am standing up or walking, no special physical effort]; 3[Most of the time I am standing up and walking, which requires special physical effort]; 4[My work requires special physical effort]	physical activity history			
+EB:0000076	Work.hoursPerWeekMainOccupation	Work	How many hours in a week did you usually work?	occupation			
+EB:0000077	Work.reasonForNotWorking	Work	What is the reason your are not working? I`m ... 1[Old-age pensioner]; 2[Disability pensioner]; 3[Pupil or student]; 4[Member of the armed forces]; 5[Home-maker]	occupation			
+EB:0000078	SeveralReasonsForNotWorking.unemployed	Work	1[Old-age pensioner]; 2[Disability pensioner]; 3[Pupil or student]; 4[Member of the armed forces]; 5[Home-maker]	occupation			
+EB:0000079	PhysicalActivities.doesPhysicalExercise	PhysicalActivities	Have you done or are doing physical exercise (Sunday sports)?	physical activity history			
+EB:0000080	PhysicalActivities.hasDoneProfessionalSport	PhysicalActivities	Have you been active in professional sport in ages 18-40? 1[No]; 2[I have]; 3[I am]	physical activity history			
+EB:0000081	PhysicalActivities.hasDoneProfessionalSportV1	PhysicalActivities	Have you been active in professional sport in ages 25-40?	physical activity history			
+EB:0000082	PhysicalActivities.hoursPerWeekPhysicalExercises	PhysicalActivities		physical activity history			
+EB:0000083	PhysicalActivities.hoursPerDayPhyscalActivities	PhysicalActivities		physical activity history			
+EB:0000084	PhysicalExercise.code	PhysicalActivities	What are the main types ( max 3) of physical exercise you experience? 1[Bicycling]; 1009[Mountain bike]; 1010[Bicycling, < 10 mph, leisure, to work or for pleasure]; 2[Heavy athletics, trainers/exerciser]; 2010[Bicyling, stationary]	physical activity history			
+EB:0000085	PhysicalExercise.practicesNow	PhysicalActivities	Do you still practice it?	physical activity history			
+EB:0000086	PhysicalExercise.lastTrainingTime	PhysicalActivities	How many times a week do you practice it? 1[Today]; 2[Yesterday]; 3[Several days ago]	physical activity history			
+EB:0000087	PhysicalExercise.timesPerWeek	PhysicalActivities	How many times a week do you practice it?	physical activity history			
+EB:0000088	PhysicalExercise.lengthOfPractice	PhysicalActivities	How long do you usually practice it?	physical activity history			
+EB:0000089	PhysicalExercise.lengthOfPracticeMinutes	PhysicalActivities		physical activity history			
+EB:0000090	PhysicalExercise.yearsOfPractice	PhysicalActivities	How many years have you been practicing it?	physical activity history			
+EB:0000091	ProfessionalSportPast.code	PhysicalActivities	Which have been the main (max 3) physical exercises you have been doing? 1[Bicycling]; 1009[Mountain bike]; 1010[Bicycling, < 10 mph, leisure, to work or for pleasure]; 2[Heavy athletics, trainers/exerciser]; 2010[Bicyling, stationary]	physical activity history			
+EB:0000092	ProfessionalSportPast.yearsOfPractice	PhysicalActivities	For how many years have you been practicing it?	physical activity history			
+EB:0000093	ProfessionalSport.code	PhysicalActivities	What are the main types ( max 3) of physical exercise you experience? 1[Bicycling]; 1009[Mountain bike]; 1010[Bicycling, < 10 mph, leisure, to work or for pleasure]; 2[Heavy athletics, trainers/exerciser]; 2010[Bicyling, stationary]	physical activity history			
+EB:0000094	ProfessionalSport.timesPerWeek	PhysicalActivities	How many times a week do you practice it?	physical activity history			
+EB:0000095	ProfessionalSport.lengthOfPractice	PhysicalActivities	How long do you usually practice it?	physical activity history			
+EB:0000096	ProfessionalSport.lengthOfPracticeMinutes	PhysicalActivities		physical activity history			
+EB:0000097	ProfessionalSport.yearsOfPractice	PhysicalActivities	How many years have you been practicing it?	physical activity history			
+EB:0000098	ProfessionalSport.lastTrainingTime	PhysicalActivities	1[Today]; 2[Yesterday]; 3[Several days ago]	physical activity history			
+EB:0000099	SpareTimeActivities.speedwalkingPerWeek	PhysicalActivities	Speed walking	physical activity history			
+EB:0000100	SpareTimeActivities.moderateWalkingPerWeek	PhysicalActivities	Moderate speed walking	physical activity history			
+EB:0000101	SpareTimeActivities.slowWalkingPerWeek	PhysicalActivities	Slow walking	physical activity history			
+EB:0000102	SpareTimeActivities.makingFoodPerWeek	PhysicalActivities	Making food	lifestyle and behaviours			
+EB:0000103	SpareTimeActivities.shoppingPerWeek	PhysicalActivities	Shopping	lifestyle and behaviours			
+EB:0000104	SpareTimeActivities.cleaningPerWeek	PhysicalActivities	Cleaning	lifestyle and behaviours			
+EB:0000105	SpareTimeActivities.laundryPerWeek	PhysicalActivities	Doing laundry and ironing	lifestyle and behaviours			
+EB:0000106	SpareTimeActivities.childcarePerWeek	PhysicalActivities	Taking care of kids	lifestyle and behaviours			
+EB:0000107	SpareTimeActivities.elderlyCarePerWeek	PhysicalActivities	Taking care of the elderly or the disabled persons	lifestyle and behaviours			
+EB:0000108	SpareTimeActivities.gardeningPerWeek	PhysicalActivities	Gardening or cleaning snow	physical activity history			
+EB:0000109	SpareTimeActivities.householdRepairPerWeek	PhysicalActivities	Household repairworks	lifestyle and behaviours			
+EB:0000110	SpareTimeActivities.physicalExercisePerWeek	PhysicalActivities	Physical exercise	physical activity history			
+EB:0000111	SpareTimeActivities.watchingTvPerWeek	PhysicalActivities	Watching TV and movies	lifestyle and behaviours			
+EB:0000112	SpareTimeActivities.readingPerWeek	PhysicalActivities	Reading	lifestyle and behaviours			
+EB:0000113	SpareTimeActivities.totalHours	PhysicalActivities		lifestyle and behaviours			
+EB:0000114	EatingHabits.coffeePerDay	EatingHabits	How many cups of coffee do you usually drink in a day?	dietary history			
+EB:0000115	EatingHabits.teaPerDay	EatingHabits	How many cups of tea do you usually drink in a day?	dietary history			
+EB:0000116	EatingHabits.breadPerDay	EatingHabits	How many slices of black bread do you usually eat in a day?	dietary history			
+EB:0000117	EatingHabits.whiteBreadPerDay	EatingHabits	How many slices of white bread do you usually eat in a day?	dietary history			
+EB:0000118	EatingHabits.eatingHabit	EatingHabits	Taking into account your nutritional habits, are you a person who eats: 7[All kinds of food]; 6[All kinds of food, except for example red meat]; 5[All kinds of food, except for example fish]; 8[All kinds of food, except fresh milk and fresh cream]; 4[Some fish in addition to vegetarian food ]	dietary history			
+EB:0000119	EatingHabits.addsSalt	EatingHabits	Do you usually add some salt to the foodstuff after preparation? 1[Always]; 2[Often]; 3[Sometimes]; 4[Rarely]; 5[Never]	dietary history			
+EB:0000120	EatingHabits.eatingPreferences1	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000121	EatingHabits.eatingPreferences2	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000122	EatingHabits.eatingPreferences3	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000123	EatingHabits.eatingPreferences4	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000124	EatingHabits.eatingPreferences5	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000125	EatingHabits.eatingPreferences6	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000126	EatingHabits.eatingPreferences7	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000127	EatingHabits.eatingPreferences8	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000128	EatingHabits.eatingPreferences9	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000129	EatingHabits.eatingPreferences10	EatingHabits	1[Absolutely disagree]; 2[Generally disagree]; 3[Rather disagree]; 4[Neutral]; 5[Rather agree]	dietary history			
+EB:0000130	EatingHabitsLastWeek.foods	EatingHabits	1[Potatoes]; 2[Rice, pasta]; 3[Porrage, mysli, flakes]; 4[Milk products]; 5[Fish]	dietary history			
+EB:0000131	EatingHabitsLastWeek.numberOfTimes	EatingHabits	1[Did not eat any]; 2[On 1-2 days]; 3[On 3-5 days]; 4[On 6-7 days]	dietary history			
+EB:0000132	EatingHabitsLastWeek.numberOfTimesPrecise	EatingHabits	1[Never]; 2[1 day]; 3[2 days]; 4[3 days]; 5[4 days]	dietary history			
+EB:0000133	Smoking.hasSmoked	Smoking	Have you ever been smoking (more than just one time experience)?	tobacco use history			
+EB:0000134	Smoking.hasSmokedRegularly	Smoking		tobacco use history			
+EB:0000135	Smoking.smokingRegularlyAge	Smoking	How old were you when you started to smoke regularly?	tobacco use history			
+EB:0000136	Smoking.yearsSmokedRegularly	Smoking		tobacco use history			
+EB:0000137	Smoking.hasSmokedLast12Months	Smoking	Have you been smoking in the last 12 month?	tobacco use history			
+EB:0000138	Smoking.yearsSmokedLikeLast12Months	Smoking	For how many years have you been consuming tobacco products in such a way?	tobacco use history			
+EB:0000139	Smoking.smokingLastYearCharacteristic	Smoking	Have you been consuming the same amount of tobacco products during all the whole period of being a smoker?	tobacco use history			
+EB:0000140	Smoking.smokingLastYearCharacteristicV1	Smoking		tobacco use history			
+EB:0000141	Smoking.yearLastSmoked	Smoking	When did you last smoke a cigarette?	tobacco use history			
+EB:0000142	Smoking.monthLastSmoked	Smoking		tobacco use history			
+EB:0000143	Smoking.yearCurrentAmount	Smoking		tobacco use history			
+EB:0000144	Smoking.monthCurrentAmount	Smoking		tobacco use history			
+EB:0000145	Smoking.yearsSmokedLikeUsually	Smoking	For how many years did you consume this amount of tobacco products?	tobacco use history			
+EB:0000146	Smoking.majorSmokingPeriodStartingYear	Smoking		tobacco use history			
+EB:0000147	Smoking.majorSmokingPeriodStartingMonth	Smoking		tobacco use history			
+EB:0000148	Smoking.hasUsedChewingTobacco	Smoking	1[Yes]; 2[No]	tobacco use history			
+EB:0000149	Smoking.hoursPerDayInSmokyRoom	Smoking	How many hours in a day do you spend in a room, where someone smokes?	tobacco use history			
+EB:0000150	Smoking.smokeUnitLast12Months	Smoking		tobacco use history			
+EB:0000151	Smoking.smokeUnitUsually	Smoking		tobacco use history			
+EB:0000152	Smoking.smokeUnitLastMonth	Smoking		tobacco use history			
+EB:0000153	Smoking.smokeUnitYearBeforeQuitting	Smoking		tobacco use history			
+EB:0000154	Smoking.smokeUnitbeforeCurrentAmount	Smoking		tobacco use history			
+EB:0000155	Smoking.smokeUnitPackYears	Smoking		tobacco use history			
+EB:0000156	Smoking.smokingStatus	Smoking	1[Never]; 2[Former]; 3[Current]; 4[Unknown]	tobacco use history			
+EB:0000157	Smoking.yearsSmokedTotal	Smoking		tobacco use history			
+EB:0000158	TobaccoLast12Months.smokeProd	Smoking	tobacco product 1[Filtered cigarettes]; 2[Non-filtered cigarettes]; 3[Cigars]; 4[Pipes]; 5[E-cigarettes]	tobacco use history			
+EB:0000159	TobaccoLast12Months.perDay	Smoking	Times a day	tobacco use history			
+EB:0000160	TobaccoLast12Months.perWeek	Smoking	Times a week	tobacco use history			
+EB:0000161	TobaccoLast12Months.perMonth	Smoking	Times a month	tobacco use history			
+EB:0000162	TobaccoUsually.smokeProd	Smoking	tobacco product 1[Filtered cigarettes]; 2[Non-filtered cigarettes]; 3[Cigars]; 4[Pipes]; 5[E-cigarettes]	tobacco use history			
+EB:0000163	TobaccoUsually.perDay	Smoking	Times a day	tobacco use history			
+EB:0000164	TobaccoUsually.perWeek	Smoking	Times a week	tobacco use history			
+EB:0000165	TobaccoUsually.perMonth	Smoking	Times a month	tobacco use history			
+EB:0000166	TobaccoLastMonth.smokeProd	Smoking	tobacco product 1[Filtered cigarettes]; 2[Non-filtered cigarettes]; 3[Cigars]; 4[Pipes]; 5[E-cigarettes]	tobacco use history			
+EB:0000167	TobaccoLastMonth.perDay	Smoking	Times a day	tobacco use history			
+EB:0000168	TobaccoLastMonth.perWeek	Smoking	Times a week	tobacco use history			
+EB:0000169	TobaccoLastMonth.perMonth	Smoking	Times a month	tobacco use history			
+EB:0000170	TobaccoYearBeforeQuitting.smokeProd	Smoking	tobacco product 1[Filtered cigarettes]; 2[Non-filtered cigarettes]; 3[Cigars]; 4[Pipes]; 5[E-cigarettes]	tobacco use history			
+EB:0000171	TobaccoYearBeforeQuitting.perDay	Smoking	Times a day	tobacco use history			
+EB:0000172	TobaccoYearBeforeQuitting.perWeek	Smoking	Times a week	tobacco use history			
+EB:0000173	TobaccoYearBeforeQuitting.perMonth	Smoking	Times a month	tobacco use history			
+EB:0000174	TobaccoBeforeCurrentAmount.smokeProd	Smoking	tobacco product 1[Filtered cigarettes]; 2[Non-filtered cigarettes]; 3[Cigars]; 4[Pipes]; 5[E-cigarettes]	tobacco use history			
+EB:0000175	TobaccoBeforeCurrentAmount.perDay	Smoking	Times a day	tobacco use history			
+EB:0000176	TobaccoBeforeCurrentAmount.perWeek	Smoking	Times a week	tobacco use history			
+EB:0000177	TobaccoBeforeCurrentAmount.perMonth	Smoking	Times a month	tobacco use history			
+EB:0000178	Alcohol.alcoholConsumptionStatus	Alcohol	1[Never]; 2[Former]; 3[Current]; 4[Unknown]	alcohol use history			
+EB:0000179	Alcohol.alcoholConsumptionStyle	Alcohol	1[Never consumed alcohol]; 2[Former consumer of alcohol]; 30[Consumes alcohol: amount unknown]; 31[Low alcohol consumption (up to 1 unit per week for women / up to 2 units per week for men)]; 32[Moderate alcohol consumption (up to 1 unit per day for women / up to 2 units per day for men)]	alcohol use history			
+EB:0000180	Alcohol.hasUsedAlcohol	Alcohol	Have you ever consumed any alcoholic drinks, such as beer, wine, liquor, vodka for more than just getting the taste?	alcohol use history			
+EB:0000181	Alcohol.ageOfFirstConsumption	Alcohol	How old were you when you first drank half a litre of beer, 100 ml of wine, 40 ml of liqueur at 20% vol or 40 ml of any type of fortified alcohol?	alcohol use history			
+EB:0000182	Alcohol.frequencyOfConsumption	Alcohol	How often do you usually consume alcoholic drinks? 1[4 or more time a week]; 2[2-3 times a week]; 7[Once a week]; 3[2-4 times a month]; 4[Once a month]	alcohol use history			
+EB:0000183	Alcohol.alcoholConsumptionLastYear	Alcohol	Have you consumed any alcoholic drinks in the last 12 months?	alcohol use history			
+EB:0000184	Alcohol.alcoholUnitPerDayLastYear	Alcohol		alcohol use history			
+EB:0000185	Alcohol.yearsUsedAlcoholLikeLastYear	Alcohol		alcohol use history			
+EB:0000186	Alcohol.alcoholUseLastYearCharacteristic	Alcohol	Have you consumed alcohol in the abovementioned way all the time you have been consuming alcohol?	alcohol use history			
+EB:0000187	Alcohol.alcoholUnitPerDayUsually	Alcohol		alcohol use history			
+EB:0000188	Alcohol.yearsUsedAlcoholLikeUsually	Alcohol	For how many years have you behaved in the abovementioned way?	alcohol use history			
+EB:0000189	Alcohol.yearsAlcoholUsedTotal	Alcohol		alcohol use history			
+EB:0000190	Alcohol.otherDrugs	Alcohol	In addition to alcohol and tobacco, have you used any other drugs?	alcohol use history			
+EB:0000191	AlcoholUseFrequencyLastYear.drinks	Alcohol	alcohol product 1[Beer (0.5 l)]; 2[Wine (100 ml)]; 3[Fortified wine, vermouth and liqueur (alcohol at 20% vol)]; 4[Fortified alcoholic drinks (40 ml)]	alcohol use history			
+EB:0000192	AlcoholUseFrequencyLastYear.perDay	Alcohol	Times a day	alcohol use history			
+EB:0000193	AlcoholUseFrequencyLastYear.perWeek	Alcohol	Times a week	alcohol use history			
+EB:0000194	AlcoholUseFrequencyLastYear.perMonth	Alcohol	Times a month	alcohol use history			
+EB:0000195	AlcoholUseFrequencyLastYear.perYear	Alcohol	Times a year	alcohol use history			
+EB:0000196	AlcoholUseFrequencyUsually.drinks	Alcohol	alcohol product 1[Beer (0.5 l)]; 2[Wine (100 ml)]; 3[Fortified wine, vermouth and liqueur (alcohol at 20% vol)]; 4[Fortified alcoholic drinks (40 ml)]	alcohol use history			
+EB:0000197	AlcoholUseFrequencyUsually.perDay	Alcohol	Times a day	alcohol use history			
+EB:0000198	AlcoholUseFrequencyUsually.perWeek	Alcohol	Times a week	alcohol use history			
+EB:0000199	AlcoholUseFrequencyUsually.perMonth	Alcohol	Times a month	alcohol use history			
+EB:0000200	AlcoholUseFrequencyUsually.perYear	Alcohol	Times a year	alcohol use history			
+EB:0000201	AlcoholUseFrequencyLastMonth.drinks	Alcohol	alcohol product 1[Beer (0.5 l)]; 2[Wine (100 ml)]; 3[Fortified wine, vermouth and liqueur (alcohol at 20% vol)]; 4[Fortified alcoholic drinks (40 ml)]	alcohol use history			
+EB:0000202	AlcoholUseFrequencyLastMonth.perDay	Alcohol	Times a day	alcohol use history			
+EB:0000203	AlcoholUseFrequencyLastMonth.perWeek	Alcohol	Times a week	alcohol use history			
+EB:0000204	AlcoholUseFrequencyLastMonth.perMonth	Alcohol	Times a month	alcohol use history			
+EB:0000205	AlcoholUseFrequencyLastMonth.perYear	Alcohol	Times a year	alcohol use history			
+EB:0000206	OtherDrugs.hasUsedOtherDrugs	OtherDrugs		medication			
+EB:0000207	OtherDrugs.usingOtherDrugs	OtherDrugs	1[Yes]; 2[No]; 3[Doesn't want to answer]	medication			
+EB:0000208	OtherDrugs.otherDrugs	OtherDrugs		medication			
+EB:0000209	Narcotics.psychoactiveDrugs	OtherDrugs	"1[Stimulants]; 10[amphetamines]; 11[et:""speed""]; 12[et:""kiirus""]; 2[Cocaine]"	recreational drug history			
+EB:0000210	Narcotics.usedRegularity	OtherDrugs	1[Regularly]; 2[Few times]; 3[Once]; 4[Doesn't want to specify]	recreational drug history			
+EB:0000211	Sleep.workInShiftsLast3Months	Sleep	Have you worked in any kind of shift-work schedule the last 3 months?	sleep history			
+EB:0000212	SleepWorkdays.bedTime	Sleep	On work days, or on the evening before: What time do you go to bed (24 hour scale, 23.00 instead of 11.00 p.m)?	sleep history			
+EB:0000213	SleepWorkdays.preparingForSleepTime	Sleep	What time do you start to prepare going to sleep (for example switch off the lights in bedroom)?	sleep history			
+EB:0000214	SleepWorkdays.minutesToFallAsleep	Sleep	How many minutes it takes until you fall asleep?	sleep history			
+EB:0000215	SleepWorkdays.wakeupTime	Sleep	What time do you wake up?	sleep history			
+EB:0000216	SleepWorkdays.wakeupAlarm	Sleep	Do you wake up before alarmclock or with the alarmclock rings? 1[Before the alarm]; 2[With the alarm]	sleep history			
+EB:0000217	SleepWorkdays.minutesToGetUp	Sleep	After how many minutes do you finally wake up?	sleep history			
+EB:0000218	SleepWorkdays.timeSpentInDaylight	Sleep	On average, how long per day, do you spend outside exposed to daylight ?	sleep history			
+EB:0000219	SleepDaysOff.bedTime	Sleep	On free days, or on the evening before: What time do you go to bed?	sleep history			
+EB:0000220	SleepDaysOff.preparingForSleepTime	Sleep	What time do you start to prepare going to sleep (for example switch off the lights in bedroom)?	sleep history			
+EB:0000221	SleepDaysOff.minutesToFallAsleep	Sleep	How many minutes it takes until you fall asleep?	sleep history			
+EB:0000222	SleepDaysOff.wakeupTime	Sleep	What time do you wake up?	sleep history			
+EB:0000223	SleepDaysOff.wakeupAlarm	Sleep	Do you wake up before alarmclock or with the alarmclock rings? 1[Before the alarm]; 2[With the alarm]	sleep history			
+EB:0000224	SleepDaysOff.minutesToGetUp	Sleep	After how many minutes do you finally wake up?	sleep history			
+EB:0000225	SleepDaysOff.timeSpentInDaylight	Sleep	On average, how long per day, do you spend outside exposed to daylight?	sleep history			
+EB:0000226	FemaleHealth.menstruationsStarted	FemaleHealth	Have your menstruations started?	reproduction			
+EB:0000227	FemaleHealth.menstruationStartingAge	FemaleHealth	How old were you at the time your menstruations started?	reproduction			
+EB:0000228	FemaleHealth.menstruationStartingAgeV1	FemaleHealth	Have your menstruations started? 1[Age in full years]; 2[Do not know]; 3[Has not yet begun]	reproduction			
+EB:0000229	FemaleHealth.lengthOfMenstrualCycle	FemaleHealth	Approximately how long is your menstrual cycle? 1[I don't know]; 2[I did not have any menstrual cycles]; 3[Irregular]; 4[20 days or a little less]; 5[21-24 days]	reproduction			
+EB:0000230	FemaleHealth.lengthOfMenstrualCycleAge25to35	FemaleHealth	Approximately how long was your menstrual cycle when you were between 25 and 35 years old? 1[I don't know]; 2[I did not have any menstrual cycles]; 3[Irregular]; 4[20 days or a little less]; 5[21-24 days]	reproduction			
+EB:0000231	FemaleHealth.howLongUntilMensCycleRegularity	FemaleHealth	How quickly after the first menstruation did your menstrual cycles become regular? 1[Right after the first menstruation or within 6 month after it]; 2[In a year]; 3[In 2 years]; 4[In 3 years]; 5[In 4 years]	reproduction			
+EB:0000232	FemaleHealth.hasMenstruationsNow	FemaleHealth	Are you having menstrual cycles now?	reproduction			
+EB:0000233	FemaleHealth.lastMenstruationDate	FemaleHealth		reproduction			
+EB:0000234	FemaleHealth.avgCycleLength	FemaleHealth		reproduction			
+EB:0000235	FemaleHealth.ageMenstruationsStopped	FemaleHealth	How old were you, when you had your last menstrual cycle?	reproduction			
+EB:0000236	FemaleHealth.menstruationsStopReason	FemaleHealth	For what reason did your menstrual cycle end? 1[Menopause]; 2[I am pregnant at the moment]; 3[Other reason]	reproduction			
+EB:0000237	FemaleHealth.menstruationsStopReasonOther	FemaleHealth	What was the other reason? 1[Birth control pills, contraceptive methods]; 2[Gynecological operation]; 3[Medications]; 4[Low body weight]; 5[Professional sport activity]	reproduction			
+EB:0000238	FemaleHealth.vaginalDischargesLastYear	FemaleHealth	In the last 12 months, have you had any menstruation like vaginal discharges?	reproduction			
+EB:0000239	FemaleHealth.vaginalDischargesCountLastYear	FemaleHealth	How many times have you had vaginal discharges? 1[1 to 3]; 2[4 to 5]; 3[6 to 9]; 4[10 or even more]	reproduction			
+EB:0000240	FemaleHealth.numOfMenstrualCyclesLastYear	FemaleHealth	How many menstrual cycles have you had during the last 12 month? 1[1 to 3]; 2[4 to 5]; 3[6 to 9]; 4[10 or even more]; 5[I don't know]	reproduction			
+EB:0000241	FemaleHealth.hasBeenPregnant	FemaleHealth	Have you ever got pregnant?	reproduction			
+EB:0000242	FemaleHealth.numOfPregnancies	FemaleHealth	How many times have you got pregnant?	reproduction			
+EB:0000243	FemaleHealth.numOfLiveBirths	FemaleHealth	How many of the pregnancies ended with:Normal delivery	reproduction			
+EB:0000244	FemaleHealth.numOfMiscarriages	FemaleHealth	Unintentional miscarriage	reproduction			
+EB:0000245	FemaleHealth.numOfAbortions	FemaleHealth	Malicious termination of pregnancy	reproduction			
+EB:0000246	FemaleHealth.numOfOuteruterinePregnancies	FemaleHealth	Outer uterine pregnancy	reproduction			
+EB:0000247	FemaleHealth.numOfStillbirths	FemaleHealth	Stillborn child	reproduction			
+EB:0000248	FemaleHealth.ageAtFirstPregnancy	FemaleHealth	How old were you when you got pregnant for the first time?	reproduction			
+EB:0000249	FemaleHealth.ageAtLastPregnancy	FemaleHealth	How old were you when you got pregnant for the last time?	reproduction			
+EB:0000250	FemaleHealth.hasHadInVitroFertilisation	FemaleHealth	Have you had artificial insemination (IVF)?	reproduction			
+EB:0000251	FemaleHealth.numOfInVitroFertilisations	FemaleHealth	How many times have you had artificial insemination?	reproduction			
+EB:0000252	FemaleHealth.numOfLiveBirthsFromIvf	FemaleHealth	How many of them have ended with normal delivery?	reproduction			
+EB:0000253	FemaleHealth.hasUsedHormonalContraceptives	FemaleHealth	Have you ever used any hormonal contraceptive methods, birth control pills for example?	reproduction			
+EB:0000254	FemaleHealth.hormonalContraceptiveStartingAge	FemaleHealth	How old were you when you started taking birth control pills?	reproduction			
+EB:0000255	FemaleHealth.hormonalContraceptivesPauses	FemaleHealth	Have you sometimes stopped taking the birth control pills or not? 1[No]; 2[I didn't take them for 6 months]; 3[I didn't take them for 6 to 12 months]; 4[I didn't take them for 1 to 2 years]; 5[I didn't take them for over 2 years]	reproduction			
+EB:0000256	FemaleHealth.isUsingHormonalContraceptives	FemaleHealth	Are you taking the birth control pills now?	reproduction			
+EB:0000257	FemaleHealth.hormonalContraceptiveStoppingAge	FemaleHealth	How old were you when you stopped taking the birth control pills?	reproduction			
+EB:0000258	FemaleHealth.hasUsedHormonalMedDueToMenopause	FemaleHealth	Have you used any hormone preparations to relieve the side effects of menopause?	reproduction			
+EB:0000259	FemaleHealth.hormonalMedMenopauseStartAge	FemaleHealth	How old were you when you started taking the hormone preparations?	reproduction			
+EB:0000260	FemaleHealth.hormonalMedMenopausePauses	FemaleHealth	Have you stopped taking the hormone preparations for a while? 1[No]; 2[I didn't take them for 6 months]; 3[I didn't take them for 6 to 12 months]; 4[I didn't take them for 1 to 2 years]; 5[I didn't take them for over 2 years]	reproduction			
+EB:0000261	FemaleHealth.isUsingHormonalMedDueToMenopause	FemaleHealth	Do you take hormone preparations even now?	reproduction			
+EB:0000262	FemaleHealth.hormonalMedMenopauseStopAge	FemaleHealth	How old were you when you stopped taking the hormone preparations?	reproduction			
+EB:0000263	FemaleHealth.totalNumOfPregnancies	FemaleHealth		reproduction			
+EB:0000264	HormonalContraceptiveUsed.code	FemaleHealth		reproduction			
+EB:0000265	HormonalContraceptiveUsedV1.code	FemaleHealth		reproduction			
+EB:0000266	HormonalMedicationMenopause.code	FemaleHealth		reproduction			
+EB:0000267	HormonalMedicationMenopauseV1.code	FemaleHealth		reproduction			
+EB:0000268	MotherHealth.menopauseStatus	MotherHealth	1[She has a natural menopause]; 2[She has menopause for another reason]; 3[She is not menopause yet]; 4[I don't know]	reproduction			
+EB:0000269	MotherHealth.ageAtMenopauseStarted	MotherHealth		reproduction			
+EB:0000270	Health.movement	Health	Physical exercise 1[Walking around is not a problem for me]; 2[Walking around is a problem for me]; 3[I am sick in bed]	physical activity history			
+EB:0000271	Health.selfcare	Health	Taking care of oneself 1[Taking care of myself is not a problem for me]; 2[Washing myself or dressing up is complicated]; 3[I can't manage on my own with washing and dressing up]	lifestyle and behaviours			
+EB:0000272	Health.commonActivities	Health	Everyday activities ( job, studies, household works, family and spare time events, for example) 1[I can manage with all of my everyday activities]; 2[My everyday activities is a bit complicated for me]; 3[I can't manage with my everyday activities]	lifestyle and behaviours			
+EB:0000273	Health.painDiscomfort	Health	Pain/discomfort 1[I don't feel any pain or eperience any discomfort]; 2[I feel some pain and experience some discomfort]; 3[I feel a lot of pain and experience lots of discomfort]	signs and symptoms			
+EB:0000274	Health.anxietyDepression	Health	Anxiety/depression 1[I don't experience any anxiety or depression]; 2[I experience some anxiety and depression]; 3[I experience lots of anxiety and depression]	signs and symptoms			
+EB:0000275	ObjectiveInformation.height	ObjectiveInformation		height			
+EB:0000276	ObjectiveInformation.weight	ObjectiveInformation		weight			
+EB:0000277	ObjectiveInformation.bmi	ObjectiveInformation		anthropometry			
+EB:0000278	ObjectiveInformation.waist	ObjectiveInformation		anthropometry			
+EB:0000279	ObjectiveInformation.hip	ObjectiveInformation		anthropometry			
+EB:0000280	ObjectiveInformation.whr	ObjectiveInformation	Waist hip ratio	anthropometry			
+EB:0000281	ObjectiveInformation.naturalHairColor	ObjectiveInformation	1[Blond]; 2[Brown]; 3[Black]; 4[Red]; 5[Albino]				
+EB:0000282	ObjectiveInformation.naturalHairColorOther	ObjectiveInformation					
+EB:0000283	ObjectiveInformation.eyeColor	ObjectiveInformation	1[Gray]; 2[Blue]; 3[Brown]; 4[Green]; 5[Albino]				
+EB:0000284	ObjectiveInformation.eyeColorOther	ObjectiveInformation					
+EB:0000285	ObjectiveInformation.dominatingHand	ObjectiveInformation	1[Left-handed]; 2[Right-handed]; 3[Both-handed]				
+EB:0000286	ObjectiveInformation.bloodPressureSystolic	ObjectiveInformation		blood pressure			
+EB:0000287	ObjectiveInformation.bloodPressureDiastolic	ObjectiveInformation		blood pressure			
+EB:0000288	ObjectiveInformation.bloodPressureSystolic2	ObjectiveInformation		blood pressure			
+EB:0000289	ObjectiveInformation.bloodPressureDiastolic2	ObjectiveInformation		blood pressure			
+EB:0000290	ObjectiveInformation.bloodPressureSystolic3	ObjectiveInformation		blood pressure			
+EB:0000291	ObjectiveInformation.bloodPressureDiastolic3	ObjectiveInformation		blood pressure			
+EB:0000292	ObjectiveInformation.bloodPressureMeasuring	ObjectiveInformation	1[Automatically]; 2[Mechanically]	blood pressure			
+EB:0000293	ObjectiveInformation.pulse	ObjectiveInformation		heart rate (HR)			
+EB:0000294	ObjectiveInformation.isPulseRegular	ObjectiveInformation	1[Yes]; 2[No]	heart rate (HR)			
+EB:0000295	ObjectiveInformation.pulse1	ObjectiveInformation		heart rate (HR)			
+EB:0000296	ObjectiveInformation.pulseRadial1	ObjectiveInformation		heart rate (HR)			
+EB:0000297	ObjectiveInformation.pulse2	ObjectiveInformation		heart rate (HR)			
+EB:0000298	ObjectiveInformation.pulseRadial2	ObjectiveInformation		heart rate (HR)			
+EB:0000299	ObjectiveInformation.pulse3	ObjectiveInformation		heart rate (HR)			
+EB:0000300	ObjectiveInformation.pulseRadial3	ObjectiveInformation		heart rate (HR)			
+EB:0000301	ObjectiveInformation.deviceNumber	ObjectiveInformation					
+EB:0000302	ObjectiveInformation.bloodPressureTime	ObjectiveInformation		blood pressure			
+EB:0000303	ObjectiveInformation.armCircumference	ObjectiveInformation		anthropometry			
+EB:0000304	ObjectiveInformation.cuffSize	ObjectiveInformation	1[S (17-21,9 cm)]; 2[M (22-31,9 cm)]; 3[L (32-42 cm)]				
+EB:0000305	ObjectiveInformation.roomTemperature	ObjectiveInformation					
+EB:0000306	ObjectiveInformation.hadDrinkIn4Hours	ObjectiveInformation		dietary history			
+EB:0000307	ObjectiveInformation.lastMeal	ObjectiveInformation	0[<1]; 2[1-2]; 4[2-3]; 6[3-4]; 1[4-6]	dietary history			
+EB:0000308	ObjectiveInformation.lastMealTime	ObjectiveInformation		dietary history			
+EB:0000309	ObjectiveInformation.heightMeasurement	ObjectiveInformation		height			
+EB:0000310	ObjectiveInformation.weightMeasurement	ObjectiveInformation		weight			
+EB:0000311	ObjectiveInformation.waistHipMeasurement	ObjectiveInformation		anthropometry			
+EB:0000312	ObjectiveInformation.ekgPerformed	ObjectiveInformation	1[Yes]; 2[No]; 3[Don't know]	circulation and respiration			
+EB:0000313	ObjectiveInformation.ekgFindingsNormal	ObjectiveInformation	1[Yes]; 2[No]; 3[Don't know]	circulation and respiration			
+EB:0000314	ObjectiveInformation.ekgPerformedCurrentVisit	ObjectiveInformation		circulation and respiration			
+EB:0000315	ObjectiveInformation.automaticResultNormal	ObjectiveInformation					
+EB:0000316	ObjectiveInformation.handGripStrengthMeasured	ObjectiveInformation		physiological measurements			
+EB:0000317	ObjectiveInformation.leftHandGrip1	ObjectiveInformation		physiological measurements			
+EB:0000318	ObjectiveInformation.rightHandGrip1	ObjectiveInformation		physiological measurements			
+EB:0000319	ObjectiveInformation.leftHandGrip2	ObjectiveInformation		physiological measurements			
+EB:0000320	ObjectiveInformation.leftHandGrip3	ObjectiveInformation		physiological measurements			
+EB:0000321	ObjectiveInformation.rightHandGrip2	ObjectiveInformation		physiological measurements			
+EB:0000322	ObjectiveInformation.rightHandGrip3	ObjectiveInformation		physiological measurements			
+EB:0000323	ObjectiveInformation.spirometryDone	ObjectiveInformation		physiological measurements			
+EB:0000324	ObjectiveInformation.usedMedicationsTroubleBreathing	ObjectiveInformation		associated disease(s)			
+EB:0000325	ObjectiveInformation.asthmaHindranceLastMonth	ObjectiveInformation	1[Always]; 2[Often]; 3[Sometimes]; 4[Rarely]; 5[Never]	respiratory system diseases			
+EB:0000326	ObjectiveInformation.asthmaTroubleBreathingLastMonth	ObjectiveInformation	1[More than once a day]; 2[Once a day]; 3[3 to 6 times a week]; 4[Once or twice a week]; 5[Has not been]	respiratory system diseases			
+EB:0000327	ObjectiveInformation.asthmaNightLastMonth	ObjectiveInformation	1[4 or more nights a week]; 2[2 to 3 nights a week]; 3[Once a week]; 4[Once or twice]; 5[Has not been]	respiratory system diseases			
+EB:0000328	ObjectiveInformation.asthmaMedicationLastMonth	ObjectiveInformation	1[3 or more times a day]; 2[1 or 2 times a day]; 3[2 or 3 times a week]; 4[Once a week or less]; 5[Has not been]	respiratory system diseases			
+EB:0000329	ObjectiveInformation.asthmaUnderControlLastMonth	ObjectiveInformation	1[He was out of control at all]; 2[Poor control]; 3[Somewhat under control]; 4[Well controlled]; 5[Fully controlled]	respiratory system diseases			
+EB:0000330	ObjectiveInformation.asthmaControlQuestionsAnswered	ObjectiveInformation		respiratory system diseases			
+EB:0000331	MedicationsForTroubledBreathing.code	MedicationsForTroubledBreathing		associated disease(s)			
+EB:0000332	MedicationsForTroubledBreathing.medicineLastTaken	MedicationsForTroubledBreathing		associated disease(s)			
+EB:0000333	Diseases.hasHadNoDiseases	DiseasesDiagnosed	Are you absolutely sure that you have not been diagnosed with any diseases?	diseases			
+EB:0000334	DiseasesDiagnosed.code	DiseasesDiagnosed		diseases			
+EB:0000335	DiseasesDiagnosed.hasThisDiseaseNow	DiseasesDiagnosed		diseases			
+EB:0000336	DiseasesDiagnosed.dateOfDiagnose	DiseasesDiagnosed		diseases			
+EB:0000337	DiseasesDiagnosed.reliabilityOfDiagnose	DiseasesDiagnosed	1[Verified 1 (confirmed by GP or specialty physician, results of clinical investigations available)]; 2[Verified 2 (confirmed by GP or specialty physician, results of clinical investigations not available)]; 3[Likely (partial clinical findings or results of investigations present)]; 5[Possible (the diagnoses reported by the gene donor)]	diseases			
+EB:0000338	MedicationsUsedForDisease.code	MedicationsUsedForDisease		associated disease(s)			
+EB:0000339	MedicationsUsedForDisease.drugPackageAndAtcCode	MedicationsUsedForDisease		associated disease(s)			
+EB:0000340	MedicationPackagesUsedForDisease.code	MedicationsUsedForDisease		associated disease(s)			
+EB:0000341	ConcurrentDiagnoses.code	DiseasesDiagnosed		diseases			
+EB:0000342	Tumors.dateOfDiagnose	DiseasesDiagnosed		cancer			
+EB:0000343	Tumors.hasBeenCured	DiseasesDiagnosed		cancer			
+EB:0000344	Tumors.surgicalCure	DiseasesDiagnosed	1[Radical intervention]; 2[Palliative intervention]; 3[Unknown]	surgical interventions			
+EB:0000345	Tumors.radiotherapyCure	DiseasesDiagnosed	4[Radical intervention]; 5[Palliative intervention]; 6[Unknown]	radiological interventions			
+EB:0000346	Tumors.medicamentalCure	DiseasesDiagnosed	7[Chemotherapy]; 8[Hormone therapy]	medication			
+EB:0000347	Tumors.hormoneTreatmentCure	DiseasesDiagnosed		medication			
+EB:0000348	Tumors.chemotherapyCure	DiseasesDiagnosed		medication			
+EB:0000349	Tumors.otherCure	DiseasesDiagnosed	9[Other treatment]; 10[Didn't get any specific treatment]; 11[The data about the treatment are not able to be accessed]	cancer			
+EB:0000350	RespiratoryDiseases.diagnosingDoctor	DiseasesDiagnosed	1[Specialist]; 2[General practitioner]				
+EB:0000351	RespiratoryDiseases.spirographyPerformed	DiseasesDiagnosed	1[Yes, spirographic results are available]; 2[Yes, there are no spirographic results]; 3[No]	circulation and respiration			
+EB:0000352	RespiratoryDiseases.spirographyFvc	DiseasesDiagnosed		circulation and respiration			
+EB:0000353	RespiratoryDiseases.spirographyFev1	DiseasesDiagnosed		circulation and respiration			
+EB:0000354	RespiratoryDiseases.spirographyFev1Fvc	DiseasesDiagnosed		circulation and respiration			
+EB:0000355	RespiratoryDiseases.spirographyDate	DiseasesDiagnosed		circulation and respiration			
+EB:0000356	RespiratoryDiseases.regularlyVisitsDoctor	DiseasesDiagnosed					
+EB:0000357	RespiratoryDiseases.lastNameOfDoctor	DiseasesDiagnosed					
+EB:0000358	RespiratoryDiseasesMedications.code	DiseasesDiagnosed		associated disease(s)			
+EB:0000359	Ostheoporosis.boneUsDensitrometryPerformed	DiseasesDiagnosed		physiological measurements			
+EB:0000360	Ostheoporosis.boneUsDensitrometryTSector	DiseasesDiagnosed		physiological measurements			
+EB:0000361	Ostheoporosis.boneDxaDensitrometryPerformed	DiseasesDiagnosed		physiological measurements			
+EB:0000362	Ostheoporosis.boneDxaDensitrometryTScore	DiseasesDiagnosed		physiological measurements			
+EB:0000363	Diabetes.dateDiabetesDiagnosed	DiseasesDiagnosed		endocrine system diseases			
+EB:0000364	Diabetes.glycohemoglobinRate	DiseasesDiagnosed		physiological measurements			
+EB:0000365	Diabetes.glycohemoglobinDate	DiseasesDiagnosed		physiological measurements			
+EB:0000366	Diabetes.insulinOverallAmount	DiseasesDiagnosed					
+EB:0000367	Diabetes.numOfInjectionsPerDay	DiseasesDiagnosed		administration			
+EB:0000368	Diabetes.relativesHadType2Diabetes	DiseasesDiagnosed	1[Yes]; 2[No]; 3[Don't know]	family history of disease			
+EB:0000369	Diabetes.numOfRelativesWithType2Diabetes	DiseasesDiagnosed		family history of disease			
+EB:0000370	DiabetesComplications.code	DiseasesDiagnosed		endocrine system diseases			
+EB:0000371	DiabetesComplications.reliabilityOfDiagnose	DiseasesDiagnosed	1[Verified 1 (confirmed by GP or specialty physician, results of clinical investigations available)]; 2[Verified 2 (confirmed by GP or specialty physician, results of clinical investigations not available)]; 3[Likely (partial clinical findings or results of investigations present)]; 5[Possible (the diagnoses reported by the gene donor)]	endocrine system diseases			
+EB:0000372	DiabetesMedications.code	DiseasesDiagnosed		associated disease(s)			
+EB:0000373	DiabetesProcedures.code	DiseasesDiagnosed	1[Dialyses]; 2[Kidney transplatation]; 3[Amputation of extremities]; 4[Laser therapy for eyes]; 5[The blood cholesterol rate has been over 7.8 mmol/l] 1[Dialyses]; 2[Kidney transplatation]; 3[Amputation of extremities]; 4[Laser therapy for eyes]; 5[The blood cholesterol rate has been over 7.8 mmol/l]	non-pharmacological interventions			
+EB:0000374	VisualDecadence.leftEyeDioptry	DiseasesDiagnosed		visual system diseases			
+EB:0000375	VisualDecadence.rightEyeDioptry	DiseasesDiagnosed		visual system diseases			
+EB:0000376	VisualDecadence.leftEyeVisus	DiseasesDiagnosed		visual system diseases			
+EB:0000377	VisualDecadence.rightEyeVisus	DiseasesDiagnosed		visual system diseases			
+EB:0000378	Hypertension.donorInHypertensionReserach	DiseasesDiagnosed		cardiovascular diseases			
+EB:0000379	Hypertension.dateHypertensionDiagnosed	DiseasesDiagnosed		date and time-related information			
+EB:0000380	Hypertension.bloodPressureSysBeforeTherapy	DiseasesDiagnosed		blood pressure			
+EB:0000381	Hypertension.bloodPressureDiaBeforeTherapy	DiseasesDiagnosed		blood pressure			
+EB:0000382	Hypertension.bloodPressureBeforeTherapyDate	DiseasesDiagnosed		blood pressure			
+EB:0000383	Hypertension.medicationTherapyStartedWith	DiseasesDiagnosed		associated disease(s)			
+EB:0000384	Hypertension.hypertensionGroup	DiseasesDiagnosed					
+EB:0000385	Hypertension.otherMedicationDuringTherapy	DiseasesDiagnosed		associated disease(s)			
+EB:0000386	Hypertension.hypertensionDiagnose	DiseasesDiagnosed		cardiovascular diseases			
+EB:0000387	Hypertension.aceInhibitorSensitivity	DiseasesDiagnosed		drug response(s)			
+EB:0000388	Hypertension.bAdrenoblockerSensitivity	DiseasesDiagnosed		drug response(s)			
+EB:0000389	Hypertension.caAntagonistSensitivity	DiseasesDiagnosed		drug response(s)			
+EB:0000390	Hypertension.diureticSensitivity	DiseasesDiagnosed		drug response(s)			
+EB:0000391	HypertensionFirstMedication.bloodPressureSysFirstMedication	DiseasesDiagnosed		blood pressure			
+EB:0000392	HypertensionFirstMedication.bloodPressureDiaFirstMedication	DiseasesDiagnosed		blood pressure			
+EB:0000393	HypertensionFirstMedication.bloodPressureFirstMedicationDate	DiseasesDiagnosed		administration			
+EB:0000394	HypertensionFirstMedication.firstMedicationDose	DiseasesDiagnosed		administration			
+EB:0000395	HypertensionFirstMedication.firstMedicationHadSideEffects	DiseasesDiagnosed		drug response(s)			
+EB:0000396	FirstMedicationSideEffects.code	DiseasesDiagnosed		drug response(s)			
+EB:0000397	HypertensionSubstituteMedication.wasFirstMedicationSubstituted	DiseasesDiagnosed		associated disease(s)			
+EB:0000398	HypertensionSubstituteMedication.firstMedicationSubstitute	DiseasesDiagnosed		associated disease(s)			
+EB:0000399	HypertensionSubstituteMedication.bloodPressureSysSubMedication	DiseasesDiagnosed		associated disease(s)			
+EB:0000400	HypertensionSubstituteMedication.bloodPressureDiaSubMedication	DiseasesDiagnosed		associated disease(s)			
+EB:0000401	HypertensionSubstituteMedication.bloodPressureSubMedicationDate	DiseasesDiagnosed		associated disease(s)			
+EB:0000402	HypertensionSubstituteMedication.susbstituteMedicationDose	DiseasesDiagnosed		associated disease(s)			
+EB:0000403	HypertensionSubstituteMedication.subMedicationHadSideEffects	DiseasesDiagnosed		drug response(s)			
+EB:0000404	SubstituteMedicationSideEffects.code	DiseasesDiagnosed		drug response(s)			
+EB:0000405	AdditionalMedication1.additionalMedication1Added	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000406	AdditionalMedication1.additionalMedication	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000407	AdditionalMedication1.systolicBloodPressureDiuretic	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000408	AdditionalMedication1.diastolicBloodPressureDiuretic	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000409	AdditionalMedication1.dateMeasuredDiuretic	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000410	AdditionalMedication1.firstMedicationDose	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000411	AdditionalMedication1.doseDiuretic	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000412	AdditionalMedication1.systolicBloodPressureOther	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000413	AdditionalMedication1.diastolicBloodPressureOther	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000414	AdditionalMedication1.dateMeasuredOther	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000415	AdditionalMedication1.doseOther	DiseasesDiagnosed	additional medication for blood pressure	associated disease(s)			
+EB:0000416	SaltUsage.lowSaltBeforeHtDiagnose	DiseasesDiagnosed	1[Always]; 2[Often]; 3[Sometimes]; 4[Rarely]; 5[Never]	dietary history			
+EB:0000417	SaltUsage.lowSaltAfterHtDiagnose	DiseasesDiagnosed	1[Always]; 2[Often]; 3[Sometimes]; 4[Rarely]; 5[Never]	dietary history			
+EB:0000418	SaltUsage.addsSaltBeforeHtDiagnose	DiseasesDiagnosed	1[Always]; 2[Often]; 3[Sometimes]; 4[Rarely]; 5[Never]	dietary history			
+EB:0000419	SaltUsage.addsSaltAfterHtDiagnose	DiseasesDiagnosed	1[Always]; 2[Often]; 3[Sometimes]; 4[Rarely]; 5[Never]	dietary history			
+EB:0000420	PsaMeasurements.psaLevelMeasured	DiseasesDiagnosed		physiological measurements			
+EB:0000421	PsaMeasurements.lastPsaLevel	DiseasesDiagnosed		physiological measurements			
+EB:0000422	PsaMeasurements.datePsaLastMeasured	DiseasesDiagnosed		physiological measurements			
+EB:0000423	CardiovascularDiseasesAdditional.echocardiogramPerformed	DiseasesDiagnosed	Have you ever had the echocardiogram performed?	circulation and respiration			
+EB:0000424	CardiovascularDiseasesAdditional.dateEchocardiogramPerformed	DiseasesDiagnosed	The date of the last echocardiogram performed				
+EB:0000425	CardiovascularDiseasesAdditional.dateOfLastEcg	DiseasesDiagnosed	The date of the last echocardiogram performed				
+EB:0000426	CardiovascularDiseasesAdditional.ejectionFractionPercent	DiseasesDiagnosed	Ejection fraction. EF%	circulation and respiration			
+EB:0000427	CardiovascularDiseasesAdditional.leftVentricleHypertrophyPresent	DiseasesDiagnosed	Does left ventricular hypertrophy occur?	circulation and respiration			
+EB:0000428	CardiovascularDiseasesAdditional.cholesterolLevelMeasured	DiseasesDiagnosed	Have you been measured the level of the cholesterol?	blood			
+EB:0000429	CardiovascularDiseasesAdditional.lastCholesterolLevelMeasured	DiseasesDiagnosed	The level of the cholesterol (mmol/l) most recently measured	blood			
+EB:0000430	CardiovascularDiseasesAdditional.lastCholesterolLevelMeasureDate	DiseasesDiagnosed	The date when the level of the cholesterol was most recently measured	blood			
+EB:0000431	CardiovascularDiseasesAdditional.lastCholesterolValueOrigin	DiseasesDiagnosed	1[The value is measured by the data collector]; 2[The value is derived from medical records]; 3[The value is based on donors statement]	blood			
+EB:0000432	CardiovascularDiseasesAdditional.lastHdlCholesterolLevel	DiseasesDiagnosed	The level of the HDL-cholesterol most recently measured	blood			
+EB:0000433	CardiovascularDiseasesAdditional.lastHdlCholesterolLevelDate	DiseasesDiagnosed	Date of the measurement	blood			
+EB:0000434	CardiovascularDiseasesAdditional.lastHdlCholesterolValueOrigin	DiseasesDiagnosed	1[The value is measured by the data collector]; 2[The value is derived from medical records]; 3[The value is based on donors statement]	blood			
+EB:0000435	CardiovascularDiseasesAdditional.lastLdlCholesterolLevel	DiseasesDiagnosed	The level of the LDL-cholesterol most recently measured	blood			
+EB:0000436	CardiovascularDiseasesAdditional.lastLdlCholesterolLevelDate	DiseasesDiagnosed	Date of the measurement	blood			
+EB:0000437	CardiovascularDiseasesAdditional.lastLdlCholesterolValueOrigin	DiseasesDiagnosed	1[The value is measured by the data collector]; 2[The value is derived from medical records]; 3[The value is based on donors statement]	blood			
+EB:0000438	CardiovascularDiseasesAdditional.lastTriglyceridesLevel	DiseasesDiagnosed	The level of the triglycerides most recently measured	blood			
+EB:0000439	CardiovascularDiseasesAdditional.lastTriglyceridesLevelDate	DiseasesDiagnosed	Date of the measurement	blood			
+EB:0000440	CardiovascularDiseasesAdditional.lastTriglyceridesValueOrigin	DiseasesDiagnosed	1[The value is measured by the data collector]; 2[The value is derived from medical records]; 3[The value is based on donors statement]	blood			
+EB:0000441	CardiovascularDiseasesAdditional.bloodsugarLevelMeasured	DiseasesDiagnosed	Have you been measured the level of bloodsugar?	blood			
+EB:0000442	CardiovascularDiseasesAdditional.lastEmptyStomachBloodsugarLevel	DiseasesDiagnosed	The level of the bloodsugar of the empty stomach (having not eaten 12 hours before performing the measurement) most recently measured	blood			
+EB:0000443	CardiovascularDiseasesAdditional.lastEmptyStomachBloodsugarDate	DiseasesDiagnosed	Date of the measurement	blood			
+EB:0000444	CardiovascularDiseasesAdditional.lastEmptyBloodsugarValueOrigin	DiseasesDiagnosed	1[The value is measured by the data collector]; 2[The value is derived from medical records]; 3[The value is based on donors statement]	blood			
+EB:0000445	CardiovascularDiseasesAdditional.lastRegularBloodsugarLevel	DiseasesDiagnosed	The level of the bloodsugar (mmol/l) measured in regular eating conditions (having not eaten 2 hours before the measurement)	blood			
+EB:0000446	CardiovascularDiseasesAdditional.lastRegularBloodsugarLevelDate	DiseasesDiagnosed	Date of the measurement	blood			
+EB:0000447	CardiovascularDiseasesAdditional.lastRegularBloodsugarValueOrigin	DiseasesDiagnosed	1[The value is measured by the data collector]; 2[The value is derived from medical records]; 3[The value is based on donors statement]	blood			
+EB:0000448	CardiovascularDiseasesAdditional.creatinineLevelMeasured	DiseasesDiagnosed	Have you been measured the level of creatinine?				
+EB:0000449	CardiovascularDiseasesAdditional.lastCreatinineLevel	DiseasesDiagnosed	The level of the creatinine most recently measured				
+EB:0000450	CardiovascularDiseasesAdditional.lastCreatinineLevelDate	DiseasesDiagnosed	Date of the measurement				
+EB:0000451	CardiovascularDiseasesAdditional.lastCreatinineValueOrigin	DiseasesDiagnosed	1[The value is measured by the data collector]; 2[The value is derived from medical records]; 3[The value is based on donors statement]				
+EB:0000452	Psoriasis.donorInPsoriasisResearch	DiseasesDiagnosed					
+EB:0000453	Psoriasis.psoriasisType	DiseasesDiagnosed	1[Type 1a (<20a)]; 2[Type 1b (21-39a)]; 3[Type 2 (>40a)]	skin and subcutaneous tissue diseases			
+EB:0000454	Psoriasis.psoriasisSeverity	DiseasesDiagnosed	1[Severe]; 2[Moderate]; 3[Mild]	skin and subcutaneous tissue diseases			
+EB:0000455	Psoriasis.hasPsoriaticArthritis	DiseasesDiagnosed		skin and subcutaneous tissue diseases			
+EB:0000456	Psoriasis.timesHospitalisedDueToPsoriasis	DiseasesDiagnosed	1[Never]; 2[Once]; 3[2 to 5 times]; 4[6 to 10 times]; 5[More 10 times]	skin and subcutaneous tissue diseases			
+EB:0000457	Psoriasis.hasHadPhototherapy	DiseasesDiagnosed	1[Never]; 2[Less 5 times]; 3[5 to 10 times]; 4[More 10 times]	non-pharmacological interventions			
+EB:0000458	PsoriaticArthritisType.psorArt	DiseasesDiagnosed	1[Oligoarticular]; 2[Rheumatoid (rheumatoid-like)]; 3[Spondylitis]; 4[Distal]; 5[Mutilating]	skin and subcutaneous tissue diseases			
+EB:0000459	PsoriaticArthritisType.occurrences	DiseasesDiagnosed	1[Yes]; 2[No]; 3[Don't know]	skin and subcutaneous tissue diseases			
+EB:0000460	PsoriaticArthritisType.isMainType	DiseasesDiagnosed		skin and subcutaneous tissue diseases			
+EB:0000461	HypertensionOtherMedication.otherMedication	DiseasesDiagnosed		associated disease(s)			
+EB:0000462	AdditionalQuestions.healthState	AdditionalQuestions	1[Very good]; 2[Good]; 3[Normal]; 4[Bad]; 5[Very bad]	perception of health			
+EB:0000463	AdditionalQuestions.isPremature	AdditionalQuestions	1[Born on time]; 2[Premature baby]; 4[Overdue baby]; 3[I don't know]	questionnaire/survey data			
+EB:0000464	RegularMedications.code	RegularMedications		medication			
+EB:0000465	SideEffectMedications.code	RegularMedications		medication			
+EB:0000466	SideEffectSymptoms.code	RegularMedications		medication			
+EB:0000467	SymptomsLastMonth.code	RegularMedications		signs and symptoms			
+EB:0000468	SurgicalOperationsPerformed.code	SurgicalOperationsPerformed		surgical interventions			
+EB:0000469	DonorBirthMethods.code	DonorBirthMethods	1[Vaginal delivery]; 1.1[est: Peaseis-sünnitus]; 1.2[est: Vaagnaotsseis-sünnitus]; 1.3[Don't know]; 2[Forceps delivery]	reproduction			
+EB:0000470	Immunomodule.coldFrequency	Immunomodule	1[never once]; 2[1-2 times a year]; 3[3-4 times a year]; 4[once or more a month]	immune system diseases			
+EB:0000471	Immunomodule.coldLast	Immunomodule	1[Currently]; 2[1 week ago]; 3[2 week ago]; 4[3-4 week ago]; 5[Several months ago]	immune system diseases			
+EB:0000472	Immunomodule.antibacterialTreatment	Immunomodule	1[Currently]; 2[1 week ago]; 3[2 week ago]; 4[3-4 week ago]; 5[Several months ago]	immune system diseases			
+EB:0000473	Immunomodule.chronicDisease	Immunomodule		immune system diseases			
+EB:0000474	ChronicDisease.code	Immunomodule		diseases			
+EB:0000475	PlaceOfBirth.country	PlaceOfBirth	EST[Estonia]; XXX[Other]	birthplace			
+EB:0000476	PlaceOfBirth.ehakCounty	PlaceOfBirth	370000000[Harju maakond]; 371120000[Aegviidu vald, viimati kasut EHAK 2017v2]; 371121088[Aegviidu alev, viimati kasut EHAK 2017v2]; 371410000[Anija vald]; 371411046[Aavere küla]	birthplace			
+EB:0000477	Person			questionnaire/survey data			
+EB:0000478	PersonPortrait		Person's last measurements, smoking status and place of residence - no single parent term I think	questionnaire/survey data			
+EB:0000479	DiagnosisConsolidated		All ICD10 info from all registries aggregated, one line per person	healthcare information			
+EB:0000480	Sample			survey administration			
+EB:0000481	InformedConsent			consent/accessibility			
+EB:0000482	Answerset			survey administration			
+EB:0000483	Nationality			residence			
+EB:0000484	Education			education			
+EB:0000485	Work			occupation			
+EB:0000486	PhysicalActivities			physical activity history			
+EB:0000487	EatingHabits			dietary history			
+EB:0000488	Smoking			tobacco use history			
+EB:0000489	Alcohol			alcohol use history			
+EB:0000490	OtherDrugs			medication			
+EB:0000491	Sleep			sleep history			
+EB:0000492	FemaleHealth			reproduction			
+EB:0000493	MotherHealth			reproduction			
+EB:0000494	Health			perception of health			
+EB:0000495	ObjectiveInformation			questionnaire/survey data			
+EB:0000496	MedicationsForTroubledBreathing			medication			
+EB:0000497	DiseasesDiagnosed			diseases			
+EB:0000498	MedicationsUsedForDisease			associated disease(s)			
+EB:0000499	AdditionalQuestions			questionnaire/survey data			
+EB:0000500	RegularMedications			medication			
+EB:0000501	SurgicalOperationsPerformed			surgical interventions			
+EB:0000502	DonorBirthMethods						
+EB:0000503	Immunomodule						
+EB:0000504	PlaceOfBirth			birthplace			

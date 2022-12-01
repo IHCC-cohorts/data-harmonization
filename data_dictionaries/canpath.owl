@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://purl.ihccglobal.org/canpath.owl#"
      xml:base="https://purl.ihccglobal.org/canpath.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dc1="dc:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.ihccglobal.org/canpath.owl">
-        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/canpath/releases/2021-01-07/canpath.owl"/>
+        <owl:versionIRI rdf:resource="https://purl.ihccglobal.org/canpath/releases/2022-12-01/canpath.owl"/>
         <dc:description>To help researchers better understand the causes of chronic diseases like cancer, heart disease and diabetes, and to develop new ways to prevent and treat them.</dc:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:rights>You are free to:
@@ -44,14 +43,6 @@ No additional restrictions — You may not apply legal terms or technological me
     
 
 
-    <!-- dc:source -->
-
-    <owl:AnnotationProperty rdf:about="dc:source">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
@@ -64,6 +55,14 @@ No additional restrictions — You may not apply legal terms or technological me
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -2454,15 +2453,15 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000122">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurrence of osteoporosis at any point during the life of the participant.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifetime occurrence of osteoporosis</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_OP_EVER</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000122"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2471,7 +2470,7 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000123">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age of the participant at first diagnosis of osteoporosis.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at first diagnosis of osteoporosis</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_OP_AGE</purl:internal-id>
@@ -2479,8 +2478,8 @@ Minimum value of 1 considering the participant is supported by his household inc
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000123"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000123"/>
@@ -2495,15 +2494,15 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000124">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occurrence of arthritis at any point during the life of the participant.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifetime occurrence of arthritis</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_ARTHRITIS_EVER</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000124"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2512,7 +2511,7 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000125">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age of the participant at first diagnosis of arthritis.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000105</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age at first diagnosis of arthritis</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_ARTHRITIS_AGE</purl:internal-id>
@@ -2520,8 +2519,8 @@ Minimum value of 1 considering the participant is supported by his household inc
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000125"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000125"/>
@@ -2536,15 +2535,15 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000126">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of arthritis diagnosed (rheumatoid arthritis or osteoarthritis or other type of arthritis). The participant could specify what other type of arthritis in an open text variable.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthritis type (rheumatoid arthritis, osteoarthritis, other type of arthritis)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_ARTHRITIS_TYPE1</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000126"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2553,15 +2552,15 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000127">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of arthritis diagnosed (rheumatoid arthritis or osteoarthritis or other type of arthritis). The participant could specify what other type of arthritis in an open text variable.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthritis type (rheumatoid arthritis, osteoarthritis, other type of arthritis)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_ARTHRITIS_TYPE2</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000127"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2570,15 +2569,15 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000128">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of arthritis diagnosed (rheumatoid arthritis or osteoarthritis or other type of arthritis). The participant could specify what other type of arthritis in an open text variable.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthritis type (rheumatoid arthritis, osteoarthritis, other type of arthritis)</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_ARTHRITIS_TYPE3</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000128"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     
 
@@ -2587,15 +2586,15 @@ Minimum value of 1 considering the participant is supported by his household inc
 
     <owl:Class rdf:about="https://purl.ihccglobal.org/CANPATH_0000129">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of other type of arthritis diagnosed. The following arthritis type were collected (rheumatoid arthritis, osteoarthritis and other type). The participant could specify what other type of arthritis in an open variable.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lifetime occurrence of arthritis, other specify</rdfs:label>
         <purl:internal-id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIS_ARTHRITIS_TYPE_OTSP</purl:internal-id>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://purl.ihccglobal.org/CANPATH_0000129"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0003900</owl:annotatedTarget>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connective tissue diseases</rdfs:label>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONDO:0002081</owl:annotatedTarget>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal system diseases</rdfs:label>
     </owl:Axiom>
     
 

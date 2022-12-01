@@ -1,45 +1,24 @@
 [
   {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "Location"
+      ]
+    },
     "cohort_name": "Canadian Partnership for Tomorrow's Health",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "Yes",
-    "website": "https://canpath.ca/",
-    "pi_lead": "Philip Awadalla",
     "countries": [
       "Canada"
     ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2007:-",
-    "current_enrollment": 333000,
-    "target_enrollment": 350000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "Yes",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "51-75%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "51-75%",
-      "genomic_data": "26-50%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "1-25%",
-      "demographic_data": "Yes",
-      "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    },
+    "current_enrollment": 330000,
+    "enrollment_period": "2008:Ongoing",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Philip Awadalla",
     "questionnaire_survey_data": {
       "diseases": [
         "Cancer",
@@ -103,52 +82,35 @@
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
-    ]
+    ],
+    "target_enrollment": null,
+    "website": "https://canpath.ca/"
   },
   {
-    "cohort_name": "Center for Applied Genomics, Children's Hospital of Philadelphia",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "Yes",
-    "website": "https://caglab.org/",
-    "pi_lead": "John Connolly",
-    "countries": [
-      "USA",
-      "Mexico",
-      "Brazil",
-      "Europe"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2006:-",
-    "current_enrollment": 130000,
-    "target_enrollment": 1000000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "26-50%",
-      "european_or_white": "26-50%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
-    },
     "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "26-50%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "1-25%",
-      "demographic_data": "Yes",
-      "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
     },
+    "biosample": {
+      "sample_type": []
+    },
+    "cohort_name": "Center for Applied Genomics, Children's Hospital of Philadelphia",
+    "countries": [
+      "USA"
+    ],
+    "current_enrollment": 130000,
+    "enrollment_period": "2006:Ongoing",
+    "irb_approved_data_sharing": true,
+    "laboratory_measures": {
+      "genomics": [
+        "Dna/genotyping",
+        "Wes",
+        "Wgs"
+      ]
+    },
+    "pi_lead": "Hakon Hakonarson",
     "questionnaire_survey_data": {
       "cognitive_and_psychological_measurements": {
         "cognitive_functioning": [
@@ -216,49 +178,128 @@
       "Date and time-related information",
       "Unique identifiers"
     ],
-    "biosample": {
-      "sample_type": []
-    }
+    "target_enrollment": 2000000,
+    "website": "caglab.org"
   },
   {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "Estonian Biobank",
+    "countries": [
+      "Estonia"
+    ],
+    "current_enrollment": 200000,
+    "enrollment_period": "2002:2021",
+    "irb_approved_data_sharing": false,
+    "laboratory_measures": {
+      "genomics": [
+        "Dna/genotyping"
+      ]
+    },
+    "pi_lead": "Kristi Lall",
+    "questionnaire_survey_data": {
+      "diseases": [
+        "Cancer",
+        "Cardiovascular diseases",
+        "Endocrine system diseases",
+        "Immune system diseases",
+        "Respiratory system diseases",
+        "Skin and subcutaneous tissue diseases",
+        "Visual system diseases"
+      ],
+      "healthcare_information": [],
+      "lifestyle_and_behaviours": [
+        "Alcohol use history",
+        "Dietary history",
+        "Physical activity history",
+        "Recreational drug history",
+        "Sleep history",
+        "Tobacco use history"
+      ],
+      "medication": [
+        "Administration",
+        "Associated disease(s)",
+        "Drug response(s)"
+      ],
+      "non_pharmacological_interventions": [
+        "Radiological interventions",
+        "Surgical interventions"
+      ],
+      "other_questionnaire_survey_data": [
+        "Family history of disease",
+        "Reproduction",
+        "Signs and symptoms"
+      ],
+      "perception_of_health_and_quality_of_life": [
+        "Perception of health"
+      ],
+      "physiological_measurements": {
+        "anthropometry": [
+          "Height",
+          "Weight"
+        ],
+        "circulation_and_respiration": [
+          "Blood pressure",
+          "Heart rate (hr)"
+        ]
+      },
+      "socio_demographic_and_economic_characteristics": [
+        "Age/birthdate",
+        "Birthplace",
+        "Education",
+        "Family and household structure",
+        "Native language",
+        "Occupation",
+        "Residence"
+      ]
+    },
+    "survey_administration": [
+      "Consent/accessibility",
+      "Date and time-related information",
+      "Unique identifiers"
+    ],
+    "target_enrollment": null,
+    "website": null
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "Study design"
+      ],
+      "population_data": [
+        "Location"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood",
+        "Other biosample type",
+        "Urine"
+      ]
+    },
     "cohort_name": "ELSA-Brasil",
-    "description": "Non-profit member with commercial/for-profit partner or industry agreement",
-    "dictionary_harmonized": "Yes",
-    "website": "http://www.elsa.org.br/oelsabrasil.html",
-    "pi_lead": "Paulo Lotufo",
     "countries": [
       "Brazil"
     ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 13800,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "26-50%",
-      "european_or_white": "26-50%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "26-50%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "1-25%",
-      "phenotypic_clinical_data": "76-100%"
-    },
+    "current_enrollment": 15105,
+    "enrollment_period": "2008:2010",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Paulo Lotufo; Isabela Besenor; Sandhi Barreto; Bruce Duncan; Maria Ines Schimdt; Jose Mill; Rosane Griep; Conceicao Almeida; Maria Del Carmen Molina; and others.",
     "questionnaire_survey_data": {
       "cognitive_and_psychological_measurements": {
         "cognitive_functioning": [],
@@ -334,55 +375,37 @@
       "Date and time-related information",
       "Unique identifiers"
     ],
+    "target_enrollment": 15105,
+    "website": "www.elsa.org.br"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": false,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "demographic_data": [],
+      "population_data": [
+        "Location"
+      ]
+    },
     "biosample": {
       "sample_type": [
         "Blood",
-        "Other biosample type",
-        "Urine"
+        "Other biosample type"
       ]
-    }
-  },
-  {
+    },
     "cohort_name": "Golestan Cohort Study",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "Yes",
-    "website": "https://dceg2.cancer.gov/gemshare/studies/GCS/",
-    "pi_lead": "Reza Malekzadeh",
     "countries": [
       "Iran"
     ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2014:-",
     "current_enrollment": 50000,
-    "target_enrollment": 500000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "76-100%",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    },
+    "enrollment_period": "2004:2008",
+    "irb_approved_data_sharing": true,
+    "laboratory_measures": [],
+    "pi_lead": "Reza Malekzadeh, Christian Abnet, Paolo Boffetta, Paul Brennan, Farin Kamangar, Arash Etemadi",
     "questionnaire_survey_data": {
       "diseases": [
         "Cancer",
@@ -433,53 +456,33 @@
       "Date and time-related information",
       "Unique identifiers"
     ],
-    "biosample": {
-      "sample_type": [
-        "Blood",
-        "Other biosample type"
-      ]
-    }
+    "target_enrollment": null,
+    "website": "https://dceg2.cancer.gov/gemshare/"
   },
   {
-    "cohort_name": "Genomics England / 100,000 Genomes Project",
-    "dictionary_harmonized": "Yes",
-    "website": "https://www.genomicsengland.co.uk/",
-    "pi_lead": "Mark Caulfield",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2013:2018",
-    "current_enrollment": 100000,
-    "target_enrollment": 500000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
     "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
     },
+    "basic_cohort_attributes": {
+      "general_variables": [
+        "Aims and objectives"
+      ],
+      "population_data": [
+        "Location"
+      ]
+    },
+    "cohort_name": "Genomics England / 100,000 Genomes Project",
+    "countries": [
+      "England"
+    ],
+    "current_enrollment": 100000,
+    "enrollment_period": "2013:2018",
+    "irb_approved_data_sharing": true,
+    "laboratory_measures": [],
+    "pi_lead": "Mark Caulfield",
     "questionnaire_survey_data": {
       "diseases": [
         "Cancer",
@@ -526,48 +529,41 @@
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
-    ]
+    ],
+    "target_enrollment": 500000,
+    "website": "https://www.genomicsengland.co.uk/"
   },
   {
-    "cohort_name": "Generations Study",
-    "dictionary_harmonized": "Yes",
-    "website": "http://www.breakthroughgenerations.org.uk/home",
-    "pi_lead": "Richard Houlston",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2003:2015",
-    "current_enrollment": 113000,
-    "target_enrollment": 113000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
     "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
     },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "Location"
+      ]
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "Generations Study",
+    "countries": [
+      "UK",
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland",
+      "Isle of Man",
+      "Channel Islands"
+    ],
+    "current_enrollment": 113000,
+    "enrollment_period": "2003:2015",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Anthony Swerdlow",
     "questionnaire_survey_data": {
       "cognitive_and_psychological_measurements": {
         "general_variables": [
@@ -620,53 +616,34 @@
       "Date and time-related information",
       "Unique identifiers"
     ],
+    "target_enrollment": 100000,
+    "website": "http://www.breakthroughgenerations.org.uk/home"
+  },
+  {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "basic_cohort_attributes": {
+      "population_data": [
+        "Location"
+      ]
+    },
     "biosample": {
       "sample_type": [
         "Blood"
       ]
-    }
-  },
-  {
+    },
     "cohort_name": "HUNT 70+, The HUNT Study",
-    "description": "Non-profit member with commercial/for-profit partner or industry agreement",
-    "dictionary_harmonized": "Yes",
-    "website": "http://www.ntnu.edu/hunt",
-    "pi_lead": "Steinar Krokstad",
     "countries": [
       "Norway"
     ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "1984:-",
-    "current_enrollment": 250000,
-    "target_enrollment": 250000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "Yes",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "51-75%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    },
+    "current_enrollment": 11681,
+    "enrollment_period": "2017:2019",
+    "irb_approved_data_sharing": false,
+    "pi_lead": "H\u00e5vard Skjellegrind, Geir Selb\u00e6k",
     "questionnaire_survey_data": {
       "cognitive_and_psychological_measurements": {
         "cognitive_functioning": [
@@ -750,55 +727,30 @@
     "survey_administration": [
       "Date and time-related information"
     ],
-    "biosample": {
-      "sample_type": [
-        "Blood"
-      ]
-    }
+    "target_enrollment": null,
+    "website": "https://www.ntnu.edu/hunt"
   },
   {
-    "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
-    "dictionary_harmonized": "Yes",
-    "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1",
-    "pi_lead": "Dr Lee",
-    "countries": [
-      "South Korea",
-      "Vietnam",
-      "Cambodia",
-      "Japan",
-      "China"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2001:2013",
-    "current_enrollment": 235000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
     "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
     },
+    "biosample": {
+      "sample_type": [
+        "Blood",
+        "Urine"
+      ]
+    },
+    "cohort_name": "Korean Genome and Epidemiology Study (KoGES)",
+    "countries": [
+      "South Korea"
+    ],
+    "current_enrollment": 235000,
+    "enrollment_period": "2001:2013",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Hyun Young Park",
     "questionnaire_survey_data": {
       "diseases": [
         "Digestive system diseases",
@@ -835,52 +787,24 @@
         "Family and household structure"
       ]
     },
-    "biosample": {
-      "sample_type": [
-        "Blood",
-        "Urine"
-      ]
-    }
+    "target_enrollment": null,
+    "website": "http://www.cdc.go.kr/contents.es?mid=a50401010100#1"
   },
   {
-    "cohort_name": "Prostate, Lung, Colorectal and Ovarian Cancer Screening Trial",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "Yes",
-    "website": "https://biometry.nci.nih.gov/cdas/studies/plco/",
-    "pi_lead": "Paul Pinsky",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 154000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "1-25%"
-    },
     "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "26-50%",
-      "participants_address_or_geocode_data": "51-75%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
+      "biospecimens": true,
+      "environmental_data": true,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
     },
+    "cohort_name": "Prostate, Lung, Colorectal and Ovarian Cancer Screening Trial",
+    "countries": [
+      "U.S."
+    ],
+    "current_enrollment": 155000,
+    "enrollment_period": "1993:2001",
+    "irb_approved_data_sharing": true,
+    "pi_lead": "Neal Freedman, Paul Pinsky",
     "questionnaire_survey_data": {
       "diseases": [
         "Cancer",
@@ -930,48 +854,26 @@
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
-    ]
+    ],
+    "target_enrollment": null,
+    "website": "cdas.cancer.gov/plco/"
   },
   {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": false,
+      "phenotypic_clinical_data": true
+    },
     "cohort_name": "SAPRIN (South African Population Research Infrastructure Network)",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "Yes",
-    "website": "http://saprin.mrc.ac.za/",
-    "pi_lead": "Kobus Herbst",
     "countries": [
       "South Africa"
     ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 375000,
-    "target_enrollment": 700000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "0%",
-      "black_african_american_or_african": "76-100%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "26-50%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "26-50%"
-    },
+    "current_enrollment": 350000,
+    "enrollment_period": "1993:Ongoing",
+    "irb_approved_data_sharing": true,
+    "laboratory_measures": [],
+    "pi_lead": "Kobus Herbst",
     "questionnaire_survey_data": {
       "diseases": [
         "Endocrine system diseases"
@@ -992,47 +894,32 @@
     "survey_administration": [
       "Date and time-related information",
       "Unique identifiers"
-    ]
+    ],
+    "target_enrollment": 700000,
+    "website": "http://saprin.mrc.ac.za/"
   },
   {
-    "cohort_name": "UKCTOCS Longitudinal Women's Cohort (UKLWC)",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "Yes",
-    "website": "https://directory.biobankinguk.org/Profile/Biobank/GBR-1-123",
-    "pi_lead": "Usha Menon",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 202638,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "0%"
-    },
     "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "0%"
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": false,
+      "phenotypic_clinical_data": true
     },
+    "biosample": {
+      "sample_type": [
+        "Blood"
+      ]
+    },
+    "cohort_name": "UKCTOCS Longitudinal Women's Cohort (UKLWC)",
+    "countries": [
+      "England",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "current_enrollment": 202638,
+    "enrollment_period": "2001:2005",
+    "irb_approved_data_sharing": false,
+    "pi_lead": "Usha Menon",
     "questionnaire_survey_data": {
       "diseases": [
         "Cancer",
@@ -1080,52 +967,33 @@
     "survey_administration": [
       "Date and time-related information"
     ],
-    "biosample": {
-      "sample_type": [
-        "Blood"
-      ]
-    }
+    "target_enrollment": 200000,
+    "website": "http://uklwc.mrcctu.ucl.ac.uk/"
   },
   {
+    "available_data_types": {
+      "biospecimens": true,
+      "environmental_data": false,
+      "genomic_data": true,
+      "phenotypic_clinical_data": true
+    },
+    "biosample": {
+      "sample_type": [
+        "Blood",
+        "Other biosample type",
+        "Saliva",
+        "Urine"
+      ]
+    },
     "cohort_name": "Africa Health Research Institute (AHRI) Population Cohort",
-    "dictionary_harmonized": "Yes",
-    "website": "https://www.ahri.org",
-    "pi_lead": "Willem Hankom",
     "countries": [
       "South Africa"
     ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2000:-",
     "current_enrollment": 130000,
-    "target_enrollment": 130000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    },
+    "enrollment_period": "2000:Ongoing",
+    "irb_approved_data_sharing": true,
+    "laboratory_measures": [],
+    "pi_lead": "Willem Hankom",
     "questionnaire_survey_data": {
       "diseases": [
         "Cancer",
@@ -1161,2351 +1029,7 @@
       "Date and time-related information",
       "Unique identifiers"
     ],
-    "biosample": {
-      "sample_type": [
-        "Blood",
-        "Other biosample type",
-        "Saliva",
-        "Urine"
-      ]
-    }
-  },
-  {
-    "cohort_name": "AWI-Gen, University of the Witwatersrand, Johannesburg",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.wits.ac.za/research/sbimb/research/awi-gen/",
-    "pi_lead": "Michele Ramsay",
-    "countries": [
-      "South Africa",
-      "Kenya",
-      "Ghana",
-      "Burkina Faso"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2012:-",
-    "current_enrollment": 12500,
-    "target_enrollment": 15000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "Yes",
-      "longitudinal": "No",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "0%",
-      "black_african_american_or_african": "76-100%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Qatar Biobank Cohort",
-    "description": "For-profit member with academic/non-profit partner or academic agreement",
-    "dictionary_harmonized": "No",
-    "website": "https://www.qatarbiobank.org.qa",
-    "pi_lead": "Nahla Afifi",
-    "countries": [
-      "Qatar"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2013:-",
-    "current_enrollment": 32000,
-    "target_enrollment": 60000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "1-25%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "76-100%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "51-75%",
-      "genomic_data_wgs": "51-75%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "51-75%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "26-50%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "51-75%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "European Investigation of Cancer and Nutrition (EPIC)",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://epic.iarc.fr/",
-    "pi_lead": "David Hughes",
-    "countries": [
-      "UK",
-      "Italy",
-      "France",
-      "Germany",
-      "Norway",
-      "Netherlands",
-      "Denmark",
-      "Spain",
-      "Greece",
-      "Sweden"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 521468,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "51-75%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "51-75%",
-      "genomic_data_other": "1-25%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Personalized Genes and Environment Study/NIEHS",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.niehs.nih.gov/research/clinical/studies/pegs/index.cfm",
-    "pi_lead": "Alison Motsinger-Reif",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2002:-",
-    "current_enrollment": 19000,
-    "target_enrollment": 25000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "Yes",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "26-50%",
-      "european_or_white": "51-75%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "1-25%",
-      "genomic_data": "26-50%",
-      "genomic_data_wgs": "51-75%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "0%",
-      "genomic_data_other": "51-75%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "51-75%",
-      "electronic_health_record_data": "51-75%",
-      "phenotypic_clinical_data": "51-75%"
-    }
-  },
-  {
-    "cohort_name": "National Autonomous University of Mexico",
-    "description": "Non-profit member with commercial/for-profit partner or industry agreement",
-    "dictionary_harmonized": "No",
-    "website": "https://www.ctsu.ox.ac.uk/research/prospective-blood-based-study-of-150-000-individuals-in-mexico",
-    "pi_lead": "JESUS ALEGRE DIAZ",
-    "countries": [
-      "Mexico"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 160000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "1-25%",
-      "hispanic_latino_or_spanish": "76-100%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "76-100%",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "0%"
-    }
-  },
-  {
-    "cohort_name": "23andMe",
-    "description": "For-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://research.23andme.com/",
-    "pi_lead": "Matthew McIntyre",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "26-50%",
-    "enrollment_period": "2008:-",
-    "current_enrollment": 10000000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "Yes",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "51-75%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "0%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "1-25%",
-      "phenotypic_clinical_data": "1-25%"
-    }
-  },
-  {
-    "cohort_name": "Genes & Health",
-    "description": "Non-profit member with commercial/for-profit partner or industry agreement",
-    "dictionary_harmonized": "No",
-    "website": "http://www.genesandhealth.org/",
-    "pi_lead": "David van Heel",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2015:-",
-    "current_enrollment": 50000,
-    "target_enrollment": 100000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "1-25%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "76-100%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "0%",
-      "demographic_data": "No",
-      "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "1-25%"
-    }
-  },
-  {
-    "cohort_name": "VHM&PP",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.i-med.ac.at/msig/vhmpp.html",
-    "pi_lead": "Hanno Ulmer",
-    "countries": [
-      "Austria"
-    ],
-    "irb_approved_data_sharing": "0%",
-    "current_enrollment": 180000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "0%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "0%",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "No",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "0%"
-    }
-  },
-  {
-    "cohort_name": "CONSTANCES",
-    "description": "Non-profit member with commercial/for-profit partner or industry agreement",
-    "dictionary_harmonized": "No",
-    "website": "http://www.constances.fr/index_EN.php",
-    "pi_lead": "Marcel Goldberg",
-    "countries": [
-      "France"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 220000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "26-50%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Taiwan Biobank",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.twbiobank.org.tw/new_web/",
-    "pi_lead": "Chung-ke CHang",
-    "countries": [
-      "Taiwan"
-    ],
-    "irb_approved_data_sharing": "0%",
-    "enrollment_period": "2012:-",
-    "current_enrollment": 157047,
-    "target_enrollment": 200000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "Yes",
-      "longitudinal": "No",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "1-25%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "45 and Up Study",
-    "description": "Non-profit member with commercial/for-profit partner or industry agreement",
-    "dictionary_harmonized": "No",
-    "website": "https://www.saxinstitute.org.au/our-work/45-up-study/",
-    "pi_lead": "Martin Mcnamara",
-    "countries": [
-      "Australia"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 267000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "51-75%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "1-25%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "0%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "1-25%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "China Kadoorie Biobank",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://www.ckbiobank.org/site/",
-    "pi_lead": "Zhengming Chen",
-    "countries": [
-      "China"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 512000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "MAUCO",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.mauco.org/",
-    "pi_lead": "Catterina Ferreccio",
-    "countries": [
-      "Chile"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2014:-",
-    "current_enrollment": 9500,
-    "target_enrollment": 10000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "0%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "1-25%",
-      "hispanic_latino_or_spanish": "76-100%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Tohoku University, Tohoku Medical Megabank Organization",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://www.megabank.tohoku.ac.jp/english/",
-    "pi_lead": "Masayuki Yamamoto",
-    "countries": [
-      "Japan"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 150000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "51-75%",
-      "electronic_health_record_data": "26-50%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Civil Service Hospital, Minbhawan  Kathmandu Nepal",
-    "description": "For-profit member with academic/non-profit partner or academic agreement",
-    "dictionary_harmonized": "No",
-    "website": "https://www.civilservicehospital.org/",
-    "pi_lead": "Rupesh Mishra",
-    "countries": [
-      "Nepal"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2021:-",
-    "current_enrollment": 54,
-    "target_enrollment": 200,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "The Malaysian Cohort",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://www.ukm.my/mycohort/ms/",
-    "pi_lead": "A Rahman A Jamal",
-    "countries": [
-      "Malaysia"
-    ],
-    "irb_approved_data_sharing": "0%",
-    "enrollment_period": "2007:-",
-    "current_enrollment": 120000,
-    "target_enrollment": 20000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Japan Public Health Center-based Prospective Study (JPHC Study)",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://epi.ncc.go.jp/en/jphc/",
-    "pi_lead": "Norie Sawada",
-    "countries": [
-      "Japan"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 100000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "26-50%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "26-50%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "0%"
-    }
-  },
-  {
-    "cohort_name": "Shanghai Men and Women's Health Studies",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://swhs-smhs.app.vumc.org/",
-    "pi_lead": "Wei Zheng",
-    "countries": [
-      "Shanghai"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 136000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "26-50%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "26-50%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "26-50%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Iganga Mayuge HDSS, Makerere University Centre for Health and Population Research (MUCHAP)",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://muchap.mak.ac.ug/",
-    "pi_lead": "Dan Kajungu",
-    "countries": [
-      "Uganda"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2005:-",
-    "current_enrollment": 90000,
-    "target_enrollment": 120000,
-    "type_of_cohort": {
-      "case_control": "Yes",
-      "cross_sectional": "Yes",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "0%",
-      "black_african_american_or_african": "76-100%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "1-25%",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "26-50%",
-      "phenotypic_clinical_data": "0%"
-    }
-  },
-  {
-    "cohort_name": "KEMRI-Wellcome",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "www.kemri-wellcome.org/",
-    "pi_lead": "Philip Bejon",
-    "countries": [
-      "Kenya"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2001:-",
-    "current_enrollment": 290000,
-    "target_enrollment": 290000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "No",
-      "health_records": "No",
-      "other": "Yes"
-    },
-    "cohort_ancestry": {
-      "asian": "0%",
-      "black_african_american_or_african": "76-100%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "1-25%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "1-25%",
-      "phenotypic_clinical_data": "1-25%"
-    }
-  },
-  {
-    "cohort_name": "Coronagenes/University of Edinburgh",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.ed.ac.uk/coronagenes/about/coronagenes-study",
-    "pi_lead": "Albert Tenesa",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2020:-",
-    "current_enrollment": 15000,
-    "target_enrollment": 100000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "Yes",
-      "longitudinal": "No",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "0%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "UK Blood Donor Cohorts",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://www.intervalstudy.org.uk/",
-    "pi_lead": "Adam Butterworth",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2012:-",
-    "current_enrollment": 100000,
-    "target_enrollment": 300000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "1-25%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "0%"
-    }
-  },
-  {
-    "cohort_name": "National Biobank of Korea",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://www.nih.go.kr/NIH/eng/contents/NihEngContentView.jsp?cid=65660&menuIds=HOME004-MNU2210-MNU2327-MNU2346",
-    "pi_lead": "Jae-Pil Jeon",
-    "countries": [
-      "Korea"
-    ],
-    "irb_approved_data_sharing": "26-50%",
-    "enrollment_period": "2008:-",
-    "current_enrollment": 990000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "No",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "76-100%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "0%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "51-75%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "1-25%",
-      "phenotypic_clinical_data": "1-25%"
-    }
-  },
-  {
-    "cohort_name": "Generation Victoria (GenV)",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://genv.org.au//",
-    "pi_lead": "Melissa Wake",
-    "countries": [
-      "Australia"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2021:-",
-    "current_enrollment": 25000,
-    "target_enrollment": 200000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "26-50%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "51-75%",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Danish National Biobank",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "http://www.biobankdenmark.dk/",
-    "pi_lead": "Lasse Boding",
-    "countries": [
-      "Denmark"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 4000000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "No",
-      "health_records": "No",
-      "other": "Yes"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "0%",
-      "demographic_data": "No",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "26-50%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Sequence Bio",
-    "description": "For-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.sequencebio.com/",
-    "pi_lead": "Richard A. Leach, Ph.D.",
-    "countries": [
-      "Canada"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2019:-",
-    "current_enrollment": 5000,
-    "target_enrollment": 300000,
-    "type_of_cohort": {
-      "case_control": "Yes",
-      "cross_sectional": "Yes",
-      "longitudinal": "Yes",
-      "health_records": "Yes",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Nurses' Health Study, Nurses' Health Study II",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "www.nurseshealthstudy.org",
-    "pi_lead": "Heather Eliassen",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 121700,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "26-50%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "0%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Multiethnic Cohort Study",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://www.uhcancercenter.org/mec",
-    "pi_lead": "Loic Le Marchand",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "current_enrollment": 215000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "26-50%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "1-25%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "1-25%"
-    },
-    "available_data_types": {
-      "biospecimens": "26-50%",
-      "genomic_data": "26-50%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "1-25%",
-      "genomic_data_array": "26-50%",
-      "genomic_data_other": "0%",
-      "demographic_data": "Yes",
-      "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "1-25%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Northern Sweden Health and Disease ",
-    "description": "Other",
-    "dictionary_harmonized": "No",
-    "website": "https://www.umu.se/en/biobank-research-unit/research/northern-sweden-health-and-disease-study-vip-monica-and-the-mammography-screening-project/",
-    "pi_lead": "Beatrice Melin",
-    "countries": [
-      "Sweden"
-    ],
-    "irb_approved_data_sharing": "1-25%",
-    "enrollment_period": "1985:-",
-    "current_enrollment": 125000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "0%",
-      "black_african_american_or_african": "0%",
-      "european_or_white": "76-100%",
-      "hispanic_latino_or_spanish": "0%",
-      "middle_eastern_or_north_african": "0%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "1-25%",
-      "genomic_data_wgs": "1-25%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "1-25%",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "51-75%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "All of Us / NIH",
-    "description": "Non-profit member only",
-    "dictionary_harmonized": "No",
-    "website": "https://allofus.nih.gov/",
-    "pi_lead": "Geoffrey GInsburg",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "76-100%",
-    "enrollment_period": "2017:-",
-    "current_enrollment": 330000,
-    "target_enrollment": 1000000,
-    "type_of_cohort": {
-      "case_control": "No",
-      "cross_sectional": "No",
-      "longitudinal": "Yes",
-      "health_records": "No",
-      "other": "No"
-    },
-    "cohort_ancestry": {
-      "asian": "1-25%",
-      "black_african_american_or_african": "1-25%",
-      "european_or_white": "26-50%",
-      "hispanic_latino_or_spanish": "1-25%",
-      "middle_eastern_or_north_african": "1-25%",
-      "other": "0%"
-    },
-    "available_data_types": {
-      "biospecimens": "76-100%",
-      "genomic_data": "76-100%",
-      "genomic_data_wgs": "76-100%",
-      "genomic_data_wes": "0%",
-      "genomic_data_array": "76-100%",
-      "genomic_data_other": "76-100%",
-      "demographic_data": "Yes",
-      "imaging_data": "0%",
-      "participants_address_or_geocode_data": "76-100%",
-      "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "76-100%"
-    }
-  },
-  {
-    "cohort_name": "Biobank Japan",
-    "website": "https://biobankjp.org/english/index.html",
-    "pi_lead": "Yoshinori Murakami",
-    "countries": [
-      "Japan"
-    ],
-    "enrollment_period": "2003:2018",
-    "current_enrollment": 270000,
-    "target_enrollment": 270000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "BioVU Vanderbilt",
-    "website": "https://victr.vumc.org/biovu-description/",
-    "pi_lead": "Dan Roden",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2007:-",
-    "current_enrollment": 244000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "California Teachers Study (CTS)",
-    "website": "https://www.calteachersstudy.org/",
-    "pi_lead": "Jim Lacey, Elena Martinez",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1995:1996",
-    "current_enrollment": 133477,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Cancer Prevention Study II Nutrition Cohort",
-    "website": "https://www.cancer.org/research/we-conduct-cancer-research/behavioral-and-epidemiology-research-group/cancer-prevention-study-2.html#:~:text=The%20Cancer%20Prevention%20Study%20II,of%20Columbia%2C%20and%20Puerto%20Rico.",
-    "pi_lead": "Alpa Patel",
-    "countries": [
-      "USA"
-    ],
-    "enrollment_period": "1992:1993",
-    "current_enrollment": 184194,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "China PEACE (Patient-centered Evaluative Assessment of Cardiac Events) Million Persons Project",
-    "website": "https://pubmed.ncbi.nlm.nih.gov/26729395/",
-    "pi_lead": "Linxin Jiang",
-    "countries": [
-      "China"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2014:-",
-    "current_enrollment": 2000000,
-    "target_enrollment": 4000000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Environmental influences on Child Health Outcomes (ECHO) Cohort",
-    "website": "http://www.echochildren.org/",
-    "pi_lead": "Matt Gillman",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1980:ongoing",
-    "target_enrollment": 100000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Estonian Genome Project",
-    "website": "https://genomics.ut.ee/en",
-    "pi_lead": "Andres Metspalu",
-    "countries": [
-      "Estonia"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2002:2018",
-    "current_enrollment": 200000,
-    "target_enrollment": 200000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Finnish Maternity Cohort Serum Bank",
-    "website": "http://esis.fi/description/",
-    "pi_lead": "Helj\u00e4-Marja Surcel",
-    "countries": [
-      "Finland"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1983:2016",
-    "current_enrollment": 950000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "0%"
-    }
-  },
-  {
-    "cohort_name": "Geisinger Cohort - MyCode Community Health Initiative",
-    "website": "https://www.geisinger.org/mycode",
-    "pi_lead": "Natasha Strande",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2007:-",
-    "current_enrollment": 252160,
-    "target_enrollment": 250000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "German National Cohort (NAKO)",
-    "website": "http://nako.de/",
-    "pi_lead": "Annette Peters",
-    "countries": [
-      "Germany"
-    ],
-    "enrollment_period": "2014:2019",
-    "current_enrollment": 205217,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Healthy Nevada",
-    "website": "Healthynv.org",
-    "pi_lead": "Joe Grzymski",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2016:-",
-    "current_enrollment": 35000,
-    "target_enrollment": 250000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Israel Genome Project",
-    "website": "https://www.academy.ac.il/Index3/Entry.aspx?nodeId=842&entryId=18745",
-    "pi_lead": "Gad Rennert",
-    "countries": [
-      "Israel"
-    ],
-    "current_enrollment": 140000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Japan Public Health Center-based Prospective Study for the Next Generation (JPHC-NEXT)",
-    "website": "https://epi.ncc.go.jp/jphcnext/en/index.html",
-    "pi_lead": "Shoichiro Tsugane, Norie Sawada",
-    "countries": [
-      "Japan"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2011:2016",
-    "current_enrollment": 115000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Kaiser Permanente Research Bank (KPRB)",
-    "website": "https://researchbank.kaiserpermanente.org/",
-    "pi_lead": "Sarah Rowell",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2008:-",
-    "current_enrollment": 380000,
-    "target_enrollment": 400000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Korean Cancer Prevention Study (KCPS-II Biobank)",
-    "website": "https://pubmed.ncbi.nlm.nih.gov/29186422/",
-    "pi_lead": "Sun Ha Jee",
-    "countries": [
-      "Korea"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2004:2013",
-    "current_enrollment": 156701,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "LIFEPATH (Lifecourse biological pathways underlying social differences in healthy aging)",
-    "website": "http://www.lifepathproject.eu/",
-    "pi_lead": "Terrence Simmons",
-    "countries": [
-      "Europe",
-      "Australia",
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "current_enrollment": 235000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Million Veteran Program",
-    "website": "https://www.mvp.va.gov/webapp/mvp-web-participant/#/public",
-    "pi_lead": "Mike Gaziano",
-    "countries": [
-      "USA"
-    ],
-    "enrollment_period": "2011:-",
-    "current_enrollment": 785000,
-    "target_enrollment": 1000000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Million Women Study",
-    "website": "http://www.millionwomenstudy.org/introduction/",
-    "pi_lead": "Valerie Beral",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1996:2001",
-    "current_enrollment": 1320000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Netherlands Twin Registry",
-    "website": "https://tweelingenregister.vu.nl/",
-    "pi_lead": "Dorret Boomsma",
-    "countries": [
-      "Netherlands"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1987:-",
-    "current_enrollment": 275000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "NHSII (Nurses' Health Study II, NCI)",
-    "website": "www.nurseshealthstudy.org",
-    "pi_lead": "Walter Willett, Heather Eliassen",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1989:1989",
-    "current_enrollment": 116430,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Norwegian Family Based Life Course Study",
-    "website": "https://pubmed.ncbi.nlm.nih.gov/22735991/",
-    "pi_lead": "\u00d8yvind N\u00e6ss",
-    "countries": [
-      "Norway"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1960:2011",
-    "current_enrollment": 5266270,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Norwegian Mother and Child Cohort Study (MoBa)",
-    "website": "https://www.fhi.no/en/studies/moba/",
-    "pi_lead": "Camilla Stoltenberg",
-    "countries": [
-      "Norway"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1999:2008",
-    "current_enrollment": 284000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Pakistan Genomic Resource (PGR)",
-    "website": "https://www.cncdpk.com/page/Pakistan-Genomic-Resource-(PGR)",
-    "pi_lead": "Danish Salaheen",
-    "countries": [
-      "Pakistan"
-    ],
-    "current_enrollment": 150000,
-    "target_enrollment": 1000000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "PERSIAN Cohort Study",
-    "website": "http://persiancohort.com",
-    "pi_lead": "Reza Malekzadeh, Hossein Poustchi, Farin Kamangar, Arash Etemadi",
-    "countries": [
-      "Iran"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2014:-",
-    "current_enrollment": 180000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Qatar Genome Project",
-    "website": "https://qatargenome.org.qa/",
-    "pi_lead": "Hamdi Mbarek",
-    "countries": [
-      "Qatar"
-    ],
-    "enrollment_period": "2015:-",
-    "current_enrollment": 15000,
-    "target_enrollment": 300000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "Saudi National Biobank",
-    "website": "https://kaimrc.med.sa/?page_id=1454#:~:text=The%20Saudi%20Biobank%20is%20a,platform%20for%20our%20kingdom's%20population.",
-    "pi_lead": "Jahad Alghamdi",
-    "countries": [
-      "Saudi Arabia"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "current_enrollment": 2000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "0%",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "UK Biobank",
-    "website": "http://www.ukbiobank.ac.uk/",
-    "pi_lead": "Rory Collins",
-    "countries": [
-      "UK"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "2006:2010",
-    "current_enrollment": 502713,
-    "target_enrollment": 500000,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
-  },
-  {
-    "cohort_name": "WHI (Women's Health Initiative)",
-    "website": "https://www.whi.org/",
-    "pi_lead": "Garnet Anderson",
-    "countries": [
-      "USA"
-    ],
-    "irb_approved_data_sharing": "% Unknown",
-    "enrollment_period": "1993:1998",
-    "current_enrollment": 161808,
-    "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
-    },
-    "cohort_ancestry": {
-      "asian": "% Unknown",
-      "black_african_american_or_african": "% Unknown",
-      "european_or_white": "% Unknown",
-      "hispanic_latino_or_spanish": "% Unknown",
-      "middle_eastern_or_north_african": "% Unknown",
-      "other": "% Unknown"
-    },
-    "available_data_types": {
-      "biospecimens": "% Unknown",
-      "genomic_data": "% Unknown",
-      "genomic_data_wgs": "% Unknown",
-      "genomic_data_wes": "% Unknown",
-      "genomic_data_array": "% Unknown",
-      "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
-      "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "% Unknown",
-      "electronic_health_record_data": "% Unknown",
-      "phenotypic_clinical_data": "% Unknown"
-    }
+    "target_enrollment": 130000,
+    "website": "https://www.ahri.org"
   }
 ]
