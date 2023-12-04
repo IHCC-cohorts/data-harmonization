@@ -133,9 +133,9 @@ def add_boolean_filed(cohort, field_name, field):
     if not pd.isna(field):
         field = clean_field(field)
 
-    if 'yes' in field.lower():
+    if field is str and 'yes' in field.lower():
         cohort[field_name] = field
-    elif 'no' in field.lower():
+    elif field is str and 'no' in field.lower():
         cohort[field_name] = field
     else:
         cohort[field_name] = 'Unknown'
