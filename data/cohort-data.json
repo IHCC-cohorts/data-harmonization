@@ -13,10 +13,10 @@
     "current_enrollment": 345000,
     "target_enrollment": 352000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -34,7 +34,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "1-25%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "1-25%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -113,15 +113,15 @@
     "countries": [
       "USA"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2006:-",
     "current_enrollment": 130000,
     "target_enrollment": 500000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -133,17 +133,17 @@
       "other": "0%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
-      "genomic_data": "100% of cohort",
+      "biospecimens": "% Unknown",
+      "genomic_data": "% Unknown",
       "genomic_data_wgs": "1-25%",
       "genomic_data_wes": "26-50%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "1-25%",
-      "demographic_data": "Unknown",
-      "imaging_data": "100% of cohort",
-      "participants_address_or_geocode_data": "100% of cohort",
-      "electronic_health_record_data": "100% of cohort",
-      "phenotypic_clinical_data": "100% of cohort"
+      "demographic_data": "Yes - 100% of cohort",
+      "imaging_data": "% Unknown",
+      "participants_address_or_geocode_data": "% Unknown",
+      "electronic_health_record_data": "% Unknown",
+      "phenotypic_clinical_data": "% Unknown"
     },
     "questionnaire_survey_data": {
       "cognitive_and_psychological_measurements": {
@@ -227,11 +227,11 @@
     "enrollment_period": "2002/2011:2017/2022",
     "current_enrollment": 210000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "% Unknown",
@@ -248,7 +248,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -330,15 +330,15 @@
     "countries": [
       "Brazil"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2008:2010",
     "current_enrollment": 13800,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "1-25%",
@@ -349,17 +349,17 @@
       "other": "1-25%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
+      "biospecimens": "% Unknown",
       "genomic_data": "76-100%",
       "genomic_data_wgs": "1-25%",
       "genomic_data_wes": "0%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "76-100%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     },
     "questionnaire_survey_data": {
       "cognitive_and_psychological_measurements": {
@@ -453,14 +453,14 @@
     "countries": [
       "Iran"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2004:2008",
     "current_enrollment": 505000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "Yes",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -472,17 +472,17 @@
       "other": "% Unknown"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
+      "biospecimens": "% Unknown",
       "genomic_data": "1-25%",
       "genomic_data_wgs": "0%",
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "76-100%",
-      "participants_address_or_geocode_data": "100% of cohort",
-      "electronic_health_record_data": "100% of cohort",
-      "phenotypic_clinical_data": "100% of cohort"
+      "participants_address_or_geocode_data": "% Unknown",
+      "electronic_health_record_data": "% Unknown",
+      "phenotypic_clinical_data": "% Unknown"
     },
     "questionnaire_survey_data": {
       "diseases": [
@@ -575,7 +575,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -663,7 +663,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -736,14 +736,14 @@
     "countries": [
       "Norway"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1984:1984",
     "current_enrollment": 240000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -761,11 +761,11 @@
       "genomic_data_wes": "51-75%",
       "genomic_data_array": "51-75%",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
-      "electronic_health_record_data": "100% of cohort",
-      "phenotypic_clinical_data": "100% of cohort"
+      "participants_address_or_geocode_data": "% Unknown",
+      "electronic_health_record_data": "% Unknown",
+      "phenotypic_clinical_data": "% Unknown"
     },
     "questionnaire_survey_data": {
       "cognitive_and_psychological_measurements": {
@@ -893,7 +893,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -955,10 +955,10 @@
     "enrollment_period": "1994:2001",
     "current_enrollment": 154000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -976,7 +976,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "26-50%",
       "participants_address_or_geocode_data": "51-75%",
       "electronic_health_record_data": "0%",
@@ -1042,15 +1042,15 @@
     "countries": [
       "South Africa"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1992:-",
     "current_enrollment": 400000,
     "target_enrollment": 700000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1068,11 +1068,11 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "51-75%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     },
     "questionnaire_survey_data": {
       "diseases": [
@@ -1108,11 +1108,11 @@
     "irb_approved_data_sharing": "76-100%",
     "current_enrollment": 202638,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "1-25%",
@@ -1129,7 +1129,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -1197,15 +1197,15 @@
     "countries": [
       "South Africa"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2000:-",
     "current_enrollment": 150000,
     "target_enrollment": 150000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1223,9 +1223,9 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "76-100%",
       "phenotypic_clinical_data": "1-25%"
     },
@@ -1285,10 +1285,10 @@
     "enrollment_period": "2008:-",
     "current_enrollment": 10000000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "No",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1306,7 +1306,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "1-25%",
@@ -1325,10 +1325,10 @@
     "enrollment_period": "2005:2009",
     "current_enrollment": 267000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1346,7 +1346,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "1-25%",
@@ -1361,15 +1361,15 @@
     "countries": [
       "USA"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2018:-",
     "current_enrollment": 650000,
     "target_enrollment": 1000000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1381,17 +1381,17 @@
       "other": "% Unknown"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
-      "genomic_data": "100% of cohort",
-      "genomic_data_wgs": "100% of cohort",
+      "biospecimens": "% Unknown",
+      "genomic_data": "% Unknown",
+      "genomic_data_wgs": "% Unknown",
       "genomic_data_wes": "0%",
-      "genomic_data_array": "100% of cohort",
+      "genomic_data_array": "% Unknown",
       "genomic_data_other": "10,000 proteomics and 10,000 mRNA",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
-      "electronic_health_record_data": "100% of cohort",
-      "phenotypic_clinical_data": "100% of cohort"
+      "participants_address_or_geocode_data": "% Unknown",
+      "electronic_health_record_data": "% Unknown",
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -1405,10 +1405,10 @@
     "enrollment_period": "2006/2013:ongoing",
     "current_enrollment": 303000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1426,7 +1426,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -1444,10 +1444,10 @@
     "enrollment_period": "1992/1993:2022",
     "current_enrollment": 184000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1465,7 +1465,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -1483,15 +1483,15 @@
       "Burkina Faso",
       "Kenya"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2012:2020/2022",
     "current_enrollment": 12000,
     "target_enrollment": 12000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1509,11 +1509,11 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -1527,10 +1527,10 @@
     "enrollment_period": "1978:-",
     "current_enrollment": 200000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1548,7 +1548,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -1568,10 +1568,10 @@
     "current_enrollment": 10000,
     "target_enrollment": 500000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1583,14 +1583,14 @@
       "other": "0%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
-      "genomic_data": "100% of cohort",
-      "genomic_data_wgs": "100% of cohort",
+      "biospecimens": "% Unknown",
+      "genomic_data": "% Unknown",
+      "genomic_data_wgs": "% Unknown",
       "genomic_data_wes": "26-50%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
-      "imaging_data": "100% of cohort",
+      "demographic_data": "Yes - 100% of cohort",
+      "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
       "phenotypic_clinical_data": "26-50%"
@@ -1606,10 +1606,10 @@
     ],
     "current_enrollment": 270000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1627,7 +1627,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -1645,10 +1645,10 @@
     "enrollment_period": "2020:2021",
     "current_enrollment": 3000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "Yes",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1666,7 +1666,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -1681,14 +1681,14 @@
     "countries": [
       "USA"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1995/1996:Ongoing",
     "current_enrollment": 133477,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1706,11 +1706,11 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -1725,9 +1725,9 @@
     "enrollment_period": "2004:2008",
     "current_enrollment": 512000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
       "health_records": "Unknown",
       "other": "Unknown"
     },
@@ -1746,7 +1746,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -1764,10 +1764,10 @@
     "enrollment_period": "2019:2019",
     "current_enrollment": 100,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "Yes",
+      "cross_sectional": "Yes",
+      "longitudinal": "No",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1785,7 +1785,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "No - 0% of cohort",
       "imaging_data": "1-25%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -1804,10 +1804,10 @@
     "enrollment_period": "2012:2023",
     "current_enrollment": 220000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1825,7 +1825,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -1845,10 +1845,10 @@
     "current_enrollment": 15000,
     "target_enrollment": 100000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "No",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1866,7 +1866,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -1885,11 +1885,11 @@
     "enrollment_period": "1950s:-",
     "current_enrollment": 4000000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "No",
+      "health_records": "No",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "1-25%",
@@ -1906,7 +1906,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "26-50%",
@@ -1924,11 +1924,11 @@
     "enrollment_period": "1996:2002",
     "current_enrollment": 180000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "% Unknown",
@@ -1945,7 +1945,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -1962,14 +1962,14 @@
       "France",
       "South Korea"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2014:Ongoing",
     "current_enrollment": 3600000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -1987,7 +1987,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "26-50%",
       "participants_address_or_geocode_data": "1-25%",
       "electronic_health_record_data": "1-25%",
@@ -2004,11 +2004,11 @@
     "enrollment_period": "2011:2018",
     "current_enrollment": 25000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "1-25%",
@@ -2025,7 +2025,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -2053,11 +2053,11 @@
     "enrollment_period": "1992:-",
     "current_enrollment": 521468,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "1-25%",
@@ -2074,7 +2074,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "51-75%",
       "genomic_data_other": "1-25%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "76-100%",
@@ -2094,11 +2094,11 @@
     "current_enrollment": 100000,
     "target_enrollment": 125000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "26-50%",
@@ -2115,7 +2115,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "0%",
@@ -2135,11 +2135,11 @@
     "current_enrollment": 50000,
     "target_enrollment": 100000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
-      "other": "Unknown"
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
+      "other": "No"
     },
     "cohort_ancestry": {
       "asian": "76-100%",
@@ -2156,7 +2156,7 @@
       "genomic_data_wes": "76-100%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "76-100%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -2175,10 +2175,10 @@
     "current_enrollment": 60000,
     "target_enrollment": 100000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2196,7 +2196,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -2210,15 +2210,15 @@
     "countries": [
       "Mexico"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2022:-",
     "current_enrollment": 200,
     "target_enrollment": 2000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "No",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2230,17 +2230,17 @@
       "other": "0%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
+      "biospecimens": "% Unknown",
       "genomic_data": "26-50%",
       "genomic_data_wgs": "1-25%",
       "genomic_data_wes": "26-50%",
       "genomic_data_array": "0%",
       "genomic_data_other": "1-25%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2255,10 +2255,10 @@
     "current_enrollment": 800000,
     "target_enrollment": 1500000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2276,7 +2276,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "No - 0% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -2291,14 +2291,14 @@
     "countries": [
       "Japan"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1990/2011:2011/2016",
     "current_enrollment": 115000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2316,7 +2316,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "26-50%",
       "electronic_health_record_data": "0%",
@@ -2331,15 +2331,15 @@
     "countries": [
       "USA"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2007:-",
     "current_enrollment": 419000,
     "target_enrollment": 450000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2351,16 +2351,16 @@
       "other": "1-25%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
-      "genomic_data": "100% of cohort",
+      "biospecimens": "% Unknown",
+      "genomic_data": "% Unknown",
       "genomic_data_wgs": "1-25%",
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
-      "imaging_data": "100% of cohort",
+      "demographic_data": "Yes - 100% of cohort",
+      "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "0%",
-      "electronic_health_record_data": "100% of cohort",
+      "electronic_health_record_data": "% Unknown",
       "phenotypic_clinical_data": "51-75%"
     }
   },
@@ -2372,15 +2372,15 @@
     "countries": [
       "Kenya"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2003:-",
     "current_enrollment": 300000,
     "target_enrollment": 300000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2398,11 +2398,11 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "1-25%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2416,10 +2416,10 @@
     "enrollment_period": "2008:-",
     "current_enrollment": 650000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "No",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2437,7 +2437,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 26-50% of cohort",
       "imaging_data": "1-25%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "1-25%",
@@ -2452,14 +2452,14 @@
     "countries": [
       "South Korea"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2004:2013",
     "current_enrollment": 160407,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2472,16 +2472,16 @@
     },
     "available_data_types": {
       "biospecimens": "% Unknown",
-      "genomic_data": "100% of cohort",
+      "genomic_data": "% Unknown",
       "genomic_data_wgs": "0%",
       "genomic_data_wes": "0%",
-      "genomic_data_array": "100% of cohort",
+      "genomic_data_array": "% Unknown",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "% Unknown",
-      "participants_address_or_geocode_data": "100% of cohort",
-      "electronic_health_record_data": "100% of cohort",
-      "phenotypic_clinical_data": "100% of cohort"
+      "participants_address_or_geocode_data": "% Unknown",
+      "electronic_health_record_data": "% Unknown",
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2492,14 +2492,14 @@
     "countries": [
       "Sweden"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2009:2016",
     "current_enrollment": 50000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2517,9 +2517,9 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "51-75%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "51-75%",
       "phenotypic_clinical_data": "0%"
     }
@@ -2532,15 +2532,15 @@
     "countries": [
       "Uganda"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2005:2024",
     "current_enrollment": 75000,
     "target_enrollment": 100000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2558,9 +2558,9 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "51-75%",
       "phenotypic_clinical_data": "0%"
     }
@@ -2578,10 +2578,10 @@
     "current_enrollment": 11700,
     "target_enrollment": 15000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2594,12 +2594,12 @@
     },
     "available_data_types": {
       "biospecimens": "76-100%",
-      "genomic_data": "Y - 40% of cohort",
+      "genomic_data": "26-50%",
       "genomic_data_wgs": "0%",
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "0%",
@@ -2614,14 +2614,14 @@
     "countries": [
       "Mexico"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1998:2004",
     "current_enrollment": 150000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2639,11 +2639,11 @@
       "genomic_data_wes": "76-100%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2658,10 +2658,10 @@
     "enrollment_period": "1993:1996",
     "current_enrollment": 215000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2679,7 +2679,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "26-50%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "1-25%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "1-25%",
@@ -2696,10 +2696,10 @@
     "enrollment_period": "2000:-",
     "current_enrollment": 50000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "Yes",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2717,7 +2717,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Uknown",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -2736,10 +2736,10 @@
     "enrollment_period": "1985:Ongoing",
     "current_enrollment": 125000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2757,7 +2757,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "51-75%",
@@ -2776,10 +2776,10 @@
     "enrollment_period": "2022:2022",
     "current_enrollment": 7400000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2797,7 +2797,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 51-75% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "51-75%",
       "electronic_health_record_data": "51-75%",
@@ -2812,14 +2812,14 @@
     "countries": [
       "USA"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1976:1976",
     "current_enrollment": 121701,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2837,11 +2837,11 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2852,14 +2852,14 @@
     "countries": [
       "USA"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1989:1989",
     "current_enrollment": 116430,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2877,11 +2877,11 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2892,14 +2892,14 @@
     "countries": [
       "USA"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2013:2013",
     "current_enrollment": 9414,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "No",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2917,11 +2917,11 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2932,14 +2932,14 @@
     "countries": [
       "Sweden"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "1987:-",
     "current_enrollment": 115501,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2957,11 +2957,11 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "26-50%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
-      "participants_address_or_geocode_data": "100% of cohort",
-      "electronic_health_record_data": "100% of cohort",
-      "phenotypic_clinical_data": "100% of cohort"
+      "participants_address_or_geocode_data": "% Unknown",
+      "electronic_health_record_data": "% Unknown",
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -2972,15 +2972,15 @@
     "countries": [
       "Qatar"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2013:-",
     "current_enrollment": 40000,
     "target_enrollment": 60000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -2992,17 +2992,17 @@
       "other": "0%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
+      "biospecimens": "% Unknown",
       "genomic_data": "76-100%",
       "genomic_data_wgs": "51-75%",
       "genomic_data_wes": "0%",
       "genomic_data_array": "51-75%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "26-50%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -3017,10 +3017,10 @@
     "current_enrollment": 30000,
     "target_enrollment": 100000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3032,14 +3032,14 @@
       "other": "0%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
-      "genomic_data": "100% of cohort",
-      "genomic_data_wgs": "100% of cohort",
+      "biospecimens": "% Unknown",
+      "genomic_data": "% Unknown",
+      "genomic_data_wgs": "% Unknown",
       "genomic_data_wes": "0%",
       "genomic_data_array": "51-75%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
-      "imaging_data": "100% of cohort",
+      "demographic_data": "Yes - 100% of cohort",
+      "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "51-75%",
       "phenotypic_clinical_data": "0%"
@@ -3058,10 +3058,10 @@
     "current_enrollment": 5000,
     "target_enrollment": 300000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "Yes",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3079,7 +3079,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "76-100%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -3098,10 +3098,10 @@
     "current_enrollment": 60000,
     "target_enrollment": 100000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3119,7 +3119,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "26-50%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -3139,10 +3139,10 @@
     "current_enrollment": 136000,
     "target_enrollment": 136000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3160,9 +3160,9 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "26-50%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
-      "participants_address_or_geocode_data": "Y - 100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "26-50%",
       "phenotypic_clinical_data": "76-100%"
     }
@@ -3181,10 +3181,10 @@
     "current_enrollment": 180000,
     "target_enrollment": 200000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3202,7 +3202,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "26-50%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -3222,10 +3222,10 @@
     "current_enrollment": 80000,
     "target_enrollment": 120000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3243,7 +3243,7 @@
       "genomic_data_wes": "51-75%",
       "genomic_data_array": "51-75%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "0%",
@@ -3263,10 +3263,10 @@
     "current_enrollment": 200000,
     "target_enrollment": 200000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3278,17 +3278,17 @@
       "other": "0%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
-      "genomic_data": "65% of cohort (undergoing)",
+      "biospecimens": "% Unknown",
+      "genomic_data": "51-75%",
       "genomic_data_wgs": "1-25%",
       "genomic_data_wes": "0%",
-      "genomic_data_array": "65% of cohort (undergoing)",
+      "genomic_data_array": "51-75%",
       "genomic_data_other": "1-25%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
-      "phenotypic_clinical_data": "100% of cohort"
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -3304,10 +3304,10 @@
     "current_enrollment": 120000,
     "target_enrollment": 120000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3325,7 +3325,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "1-25%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "0%",
@@ -3345,10 +3345,10 @@
     "current_enrollment": 150000,
     "target_enrollment": 157000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3366,7 +3366,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "1-25%",
       "participants_address_or_geocode_data": "51-75%",
       "electronic_health_record_data": "26-50%",
@@ -3384,10 +3384,10 @@
     "enrollment_period": "2001:2005",
     "current_enrollment": 202638,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3405,9 +3405,9 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "26-50%",
-      "participants_address_or_geocode_data": "100% of cohort",
+      "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "76-100%",
       "phenotypic_clinical_data": "0%"
     }
@@ -3425,10 +3425,10 @@
     "current_enrollment": 22000,
     "target_enrollment": 10000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "Yes",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3446,7 +3446,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "0%",
@@ -3461,14 +3461,14 @@
     "countries": [
       "United Kingdom"
     ],
-    "irb_approved_data_sharing": "100% of cohort",
+    "irb_approved_data_sharing": "% Unknown",
     "enrollment_period": "2006:2010",
     "current_enrollment": 501479,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3480,17 +3480,17 @@
       "other": "1-25%"
     },
     "available_data_types": {
-      "biospecimens": "100% of cohort",
-      "genomic_data": "100% of cohort",
-      "genomic_data_wgs": "100% of cohort",
-      "genomic_data_wes": "100% of cohort",
-      "genomic_data_array": "100% of cohort",
+      "biospecimens": "% Unknown",
+      "genomic_data": "% Unknown",
+      "genomic_data_wgs": "% Unknown",
+      "genomic_data_wes": "% Unknown",
+      "genomic_data_array": "% Unknown",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "1-25%",
-      "participants_address_or_geocode_data": "100% of cohort",
-      "electronic_health_record_data": "100% of cohort",
-      "phenotypic_clinical_data": "100% of cohort"
+      "participants_address_or_geocode_data": "% Unknown",
+      "electronic_health_record_data": "% Unknown",
+      "phenotypic_clinical_data": "% Unknown"
     }
   },
   {
@@ -3506,10 +3506,10 @@
     "current_enrollment": 100000,
     "target_enrollment": 300000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "Yes",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3527,7 +3527,7 @@
       "genomic_data_wes": "1-25%",
       "genomic_data_array": "76-100%",
       "genomic_data_other": "1-25%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "76-100%",
       "electronic_health_record_data": "76-100%",
@@ -3546,10 +3546,10 @@
     "current_enrollment": 105000,
     "target_enrollment": 135000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3567,7 +3567,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "26-50%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "1-25%",
@@ -3585,10 +3585,10 @@
     "irb_approved_data_sharing": "0%",
     "current_enrollment": 180000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3606,7 +3606,7 @@
       "genomic_data_wes": "0%",
       "genomic_data_array": "0%",
       "genomic_data_other": "0%",
-      "demographic_data": "Unknown",
+      "demographic_data": "Yes - 76-100% of cohort",
       "imaging_data": "0%",
       "participants_address_or_geocode_data": "0%",
       "electronic_health_record_data": "0%",
@@ -3624,10 +3624,10 @@
     "enrollment_period": "1993:1998",
     "current_enrollment": 54000,
     "type_of_cohort": {
-      "case_control": "Unknown",
-      "cross_sectional": "Unknown",
-      "longitudinal": "Unknown",
-      "health_records": "Unknown",
+      "case_control": "No",
+      "cross_sectional": "No",
+      "longitudinal": "Yes",
+      "health_records": "No",
       "other": "Unknown"
     },
     "cohort_ancestry": {
@@ -3645,7 +3645,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3684,7 +3684,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3723,7 +3723,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3762,7 +3762,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3802,7 +3802,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3840,7 +3840,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3877,7 +3877,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3917,7 +3917,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3956,7 +3956,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -3995,7 +3995,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -4034,7 +4034,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -4072,7 +4072,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -4111,7 +4111,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -4148,7 +4148,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -4188,7 +4188,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
@@ -4227,7 +4227,7 @@
       "genomic_data_wes": "% Unknown",
       "genomic_data_array": "% Unknown",
       "genomic_data_other": "% Unknown",
-      "demographic_data": "Unknown",
+      "demographic_data": "% Unknown",
       "imaging_data": "% Unknown",
       "participants_address_or_geocode_data": "% Unknown",
       "electronic_health_record_data": "% Unknown",
