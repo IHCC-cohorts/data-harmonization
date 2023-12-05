@@ -55,7 +55,7 @@ def main():
         add_percentage_field(available_data_types, 'genomic_data_wes', row['Genomic Data - WES'])
         add_percentage_field(available_data_types, 'genomic_data_array', row['Genomic Data - Genotype Array'])
         add_percentage_field(available_data_types, 'genomic_data_other', row['Genomic Data - Other'])
-        add_boolean_filed(available_data_types, 'demographic_data', row['Demographic data'])
+        add_percentage_field(available_data_types, 'demographic_data', row['Demographic data'])
         add_percentage_field(available_data_types, 'imaging_data', row['Imaging Data'])
         add_percentage_field(available_data_types, 'participants_address_or_geocode_data', row["Participants' Address or Geocode Data"])
         add_percentage_field(available_data_types, 'electronic_health_record_data', row['Electronic Health Record Data'])
